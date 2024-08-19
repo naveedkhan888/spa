@@ -17,7 +17,7 @@ class Spalisho_Elementor_Testimonial_2 extends Widget_Base {
 
 	
 	public function get_title() {
-		return esc_html__( 'Ova Testimonial 2', 'spalisho' );
+		return esc_html__( 'Xp Testimonial 2', 'spalisho' );
 	}
 
 	
@@ -55,8 +55,8 @@ class Spalisho_Elementor_Testimonial_2 extends Widget_Base {
 					'label' => esc_html__( 'Icon Quote', 'spalisho' ),
 					'type' => Controls_Manager::ICONS,
 					'default' 	=> [
-						'value' 	=> 'ovaicon ovaicon-left-quotes-sign',
-						'library' 	=> 'ovaicon',
+						'value' 	=> 'xpicon xpicon-left-quotes-sign',
+						'library' 	=> 'xpicon',
 					],
 				]
 			);

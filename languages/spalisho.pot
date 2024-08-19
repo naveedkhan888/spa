@@ -43,7 +43,7 @@ msgid ""
 msgstr ""
 
 #: elementor/widgets/menu-nav.php:152 elementor/widgets/menu-nav.php:210
-msgid "( Use with class ova-menu-custom-line )"
+msgid "( Use with class xp-menu-custom-line )"
 msgstr ""
 
 #: elementor/widgets/contact-info.php:128
@@ -165,7 +165,7 @@ msgstr ""
 msgid "Additional Options"
 msgstr ""
 
-#: elementor/widgets/ova-before-after.php:57
+#: elementor/widgets/xp-before-after.php:57
 msgid "After Image"
 msgstr ""
 
@@ -177,7 +177,7 @@ msgstr ""
 #: elementor/widgets/contact-info.php:479
 #: elementor/widgets/contact-info.php:520 elementor/widgets/counter.php:110
 #: elementor/widgets/header-banner.php:266 elementor/widgets/heading.php:155
-#: elementor/widgets/logo.php:79 elementor/widgets/ova-image-box.php:131
+#: elementor/widgets/logo.php:79 elementor/widgets/xp-image-box.php:131
 #: elementor/widgets/progress-circle.php:197
 #: elementor/widgets/progress-circle.php:297
 #: elementor/widgets/promotions.php:365 elementor/widgets/tabs.php:166
@@ -270,7 +270,7 @@ msgstr ""
 msgid "Author Name - Job"
 msgstr ""
 
-#: elementor/widgets/gallery-slide.php:240 elementor/widgets/ova-video.php:177
+#: elementor/widgets/gallery-slide.php:240 elementor/widgets/xp-video.php:177
 #: elementor/widgets/testimonial-2.php:156
 #: elementor/widgets/testimonial-3.php:215
 #: elementor/widgets/testimonial.php:208
@@ -299,8 +299,8 @@ msgstr ""
 #: elementor/widgets/gallery-slide.php:892 elementor/widgets/heading.php:417
 #: elementor/widgets/image.php:76 elementor/widgets/image.php:132
 #: elementor/widgets/menu-footer.php:102 elementor/widgets/menu-footer.php:212
-#: elementor/widgets/menu-nav.php:260 elementor/widgets/ova-video.php:389
-#: elementor/widgets/ova-video.php:430 elementor/widgets/product-list.php:192
+#: elementor/widgets/menu-nav.php:260 elementor/widgets/xp-video.php:389
+#: elementor/widgets/xp-video.php:430 elementor/widgets/product-list.php:192
 #: elementor/widgets/promotions.php:441 elementor/widgets/promotions.php:461
 #: elementor/widgets/promotions.php:470 elementor/widgets/promotions.php:651
 #: elementor/widgets/search-popup.php:73 elementor/widgets/search-popup.php:188
@@ -332,7 +332,7 @@ msgstr ""
 #: elementor/widgets/gallery-slide.php:477
 #: elementor/widgets/gallery-slide.php:542 elementor/widgets/icon-box.php:102
 #: elementor/widgets/icon-list.php:160 elementor/widgets/menu-cart.php:146
-#: elementor/widgets/ova-image-box.php:189 elementor/widgets/price-list.php:395
+#: elementor/widgets/xp-image-box.php:189 elementor/widgets/price-list.php:395
 #: elementor/widgets/pricing-tab.php:146 elementor/widgets/pricing.php:214
 #: elementor/widgets/pricing.php:702 elementor/widgets/process.php:215
 #: elementor/widgets/promotions.php:934 elementor/widgets/tabs.php:295
@@ -350,7 +350,7 @@ msgstr ""
 msgid "Background Cover Color"
 msgstr ""
 
-#: elementor/widgets/ova-video.php:401 elementor/widgets/ova-video.php:442
+#: elementor/widgets/xp-video.php:401 elementor/widgets/xp-video.php:442
 msgid "Background Gradient"
 msgstr ""
 
@@ -387,7 +387,7 @@ msgstr ""
 msgid "Background Size"
 msgstr ""
 
-#: elementor/widgets/ova-before-after.php:18
+#: elementor/widgets/xp-before-after.php:18
 msgid "Before After"
 msgstr ""
 
@@ -395,7 +395,7 @@ msgstr ""
 msgid "Before Icon"
 msgstr ""
 
-#: elementor/widgets/ova-before-after.php:46
+#: elementor/widgets/xp-before-after.php:46
 msgid "Before Image"
 msgstr ""
 
@@ -440,7 +440,7 @@ msgstr ""
 #: inc/class-elementor.php:73 inc/class-elementor.php:102
 #: elementor/widgets/blog-grid.php:579 elementor/widgets/client-stories.php:390
 #: elementor/widgets/contact-info.php:415 elementor/widgets/counter.php:336
-#: elementor/widgets/gallery.php:338 elementor/widgets/ova-video.php:451
+#: elementor/widgets/gallery.php:338 elementor/widgets/xp-video.php:451
 #: elementor/widgets/price-list.php:431 elementor/widgets/pricing.php:267
 #: elementor/widgets/pricing.php:523 elementor/widgets/pricing.php:760
 #: elementor/widgets/process.php:261 elementor/widgets/product-list.php:213
@@ -476,7 +476,7 @@ msgstr ""
 #: elementor/widgets/contact-info.php:402
 #: elementor/widgets/gallery-slide.php:690
 #: elementor/widgets/gallery-slide.php:821 elementor/widgets/icon-box.php:121
-#: elementor/widgets/ova-image-box.php:212 elementor/widgets/ova-video.php:482
+#: elementor/widgets/xp-image-box.php:212 elementor/widgets/xp-video.php:482
 #: elementor/widgets/pricing.php:747 elementor/widgets/product-list.php:222
 #: elementor/widgets/product-list.php:433 elementor/widgets/promotions.php:969
 #: elementor/widgets/search-popup.php:107 elementor/widgets/tabs.php:354
@@ -520,7 +520,7 @@ msgstr ""
 msgid "Bottom"
 msgstr ""
 
-#: elementor/widgets/contact-info.php:424 elementor/widgets/ova-video.php:474
+#: elementor/widgets/contact-info.php:424 elementor/widgets/xp-video.php:474
 #: elementor/widgets/pricing.php:258 elementor/widgets/product-list.php:204
 #: elementor/widgets/team-2.php:212 elementor/widgets/team-2.php:262
 #: elementor/widgets/testimonial-3.php:338
@@ -601,7 +601,7 @@ msgstr ""
 #: elementor/widgets/contact-info.php:487
 #: elementor/widgets/contact-info.php:528 elementor/widgets/counter.php:118
 #: elementor/widgets/header-banner.php:274 elementor/widgets/heading.php:163
-#: elementor/widgets/logo.php:87 elementor/widgets/ova-image-box.php:139
+#: elementor/widgets/logo.php:87 elementor/widgets/xp-image-box.php:139
 #: elementor/widgets/progress-circle.php:205
 #: elementor/widgets/progress-circle.php:305
 #: elementor/widgets/promotions.php:337 elementor/widgets/promotions.php:373
@@ -623,7 +623,7 @@ msgstr ""
 msgid "Choose Image"
 msgstr ""
 
-#: elementor/widgets/ova-video.php:64
+#: elementor/widgets/xp-video.php:64
 msgid "Choose Image Background"
 msgstr ""
 
@@ -684,9 +684,9 @@ msgstr ""
 #: elementor/widgets/menu-cart.php:135 elementor/widgets/menu-footer.php:122
 #: elementor/widgets/menu-footer.php:142 elementor/widgets/menu-footer.php:232
 #: elementor/widgets/menu-footer.php:252
-#: elementor/widgets/ova-image-box.php:281
-#: elementor/widgets/ova-image-box.php:321 elementor/widgets/ova-video.php:378
-#: elementor/widgets/ova-video.php:419 elementor/widgets/price-list.php:203
+#: elementor/widgets/xp-image-box.php:281
+#: elementor/widgets/xp-image-box.php:321 elementor/widgets/xp-video.php:378
+#: elementor/widgets/xp-video.php:419 elementor/widgets/price-list.php:203
 #: elementor/widgets/price-list.php:245 elementor/widgets/price-list.php:299
 #: elementor/widgets/price-list.php:372 elementor/widgets/pricing-tab.php:101
 #: elementor/widgets/pricing-tab.php:135 elementor/widgets/pricing.php:296
@@ -910,9 +910,9 @@ msgstr ""
 #: elementor/widgets/header-banner.php:92 elementor/widgets/heading.php:43
 #: elementor/widgets/icon-box.php:40 elementor/widgets/icon-list.php:39
 #: elementor/widgets/image.php:43 elementor/widgets/latest-products.php:47
-#: elementor/widgets/menu-cart.php:37 elementor/widgets/ova-before-after.php:39
-#: elementor/widgets/ova-image-box.php:39
-#: elementor/widgets/ova-image-box.php:242 elementor/widgets/ova-video.php:43
+#: elementor/widgets/menu-cart.php:37 elementor/widgets/xp-before-after.php:39
+#: elementor/widgets/xp-image-box.php:39
+#: elementor/widgets/xp-image-box.php:242 elementor/widgets/xp-video.php:43
 #: elementor/widgets/price-list.php:44 elementor/widgets/pricing-tab.php:38
 #: elementor/widgets/pricing.php:43 elementor/widgets/pricing.php:206
 #: elementor/widgets/process.php:46 elementor/widgets/product-list.php:38
@@ -1139,11 +1139,11 @@ msgstr ""
 msgid "DIV"
 msgstr ""
 
-#: elementor/widgets/heading.php:145 elementor/widgets/ova-video.php:121
+#: elementor/widgets/heading.php:145 elementor/widgets/xp-video.php:121
 msgid "Div"
 msgstr ""
 
-#: elementor/widgets/ova-image-box.php:121
+#: elementor/widgets/xp-image-box.php:121
 msgid "div"
 msgstr ""
 
@@ -1253,7 +1253,7 @@ msgstr ""
 msgid "Enter the product category IDs. IDs are separated by \"|\". Ex: 1|2|3."
 msgstr ""
 
-#: elementor/widgets/ova-video.php:143
+#: elementor/widgets/xp-video.php:143
 msgid "Enter your URL"
 msgstr ""
 
@@ -1293,7 +1293,7 @@ msgstr ""
 msgid "Font"
 msgstr ""
 
-#: elementor/widgets/ova-video.php:88 elementor/widgets/promotions.php:89
+#: elementor/widgets/xp-video.php:88 elementor/widgets/promotions.php:89
 msgid "Font Family"
 msgstr ""
 
@@ -1345,7 +1345,7 @@ msgstr ""
 #: elementor/widgets/blog-grid.php:262 elementor/widgets/gallery-slide.php:308
 #: elementor/widgets/icon-box.php:94 elementor/widgets/image.php:122
 #: elementor/widgets/image.php:181 elementor/widgets/latest-products.php:140
-#: elementor/widgets/ova-image-box.php:158 elementor/widgets/pricing.php:495
+#: elementor/widgets/xp-image-box.php:158 elementor/widgets/pricing.php:495
 #: elementor/widgets/promotions.php:321 elementor/widgets/tabs.php:233
 #: elementor/widgets/team.php:225 elementor/widgets/testimonial-3.php:270
 #: elementor/widgets/testimonial.php:283 elementor/widgets/text-marquee.php:114
@@ -1373,32 +1373,32 @@ msgid "Grid Sizer"
 msgstr ""
 
 #: elementor/widgets/header-banner.php:171 elementor/widgets/heading.php:139
-#: elementor/widgets/ova-image-box.php:115 elementor/widgets/ova-video.php:115
+#: elementor/widgets/xp-image-box.php:115 elementor/widgets/xp-video.php:115
 msgid "H1"
 msgstr ""
 
 #: elementor/widgets/header-banner.php:172 elementor/widgets/heading.php:140
-#: elementor/widgets/ova-image-box.php:116 elementor/widgets/ova-video.php:116
+#: elementor/widgets/xp-image-box.php:116 elementor/widgets/xp-video.php:116
 msgid "H2"
 msgstr ""
 
 #: elementor/widgets/header-banner.php:173 elementor/widgets/heading.php:141
-#: elementor/widgets/ova-image-box.php:117 elementor/widgets/ova-video.php:117
+#: elementor/widgets/xp-image-box.php:117 elementor/widgets/xp-video.php:117
 msgid "H3"
 msgstr ""
 
 #: elementor/widgets/header-banner.php:174 elementor/widgets/heading.php:142
-#: elementor/widgets/ova-image-box.php:118 elementor/widgets/ova-video.php:118
+#: elementor/widgets/xp-image-box.php:118 elementor/widgets/xp-video.php:118
 msgid "H4"
 msgstr ""
 
 #: elementor/widgets/header-banner.php:175 elementor/widgets/heading.php:143
-#: elementor/widgets/ova-image-box.php:119 elementor/widgets/ova-video.php:119
+#: elementor/widgets/xp-image-box.php:119 elementor/widgets/xp-video.php:119
 msgid "H5"
 msgstr ""
 
 #: elementor/widgets/header-banner.php:176 elementor/widgets/heading.php:144
-#: elementor/widgets/ova-image-box.php:120 elementor/widgets/ova-video.php:120
+#: elementor/widgets/xp-image-box.php:120 elementor/widgets/xp-video.php:120
 msgid "H6"
 msgstr ""
 
@@ -1426,8 +1426,8 @@ msgstr ""
 
 #: elementor/widgets/gallery.php:130 elementor/widgets/heading.php:447
 #: elementor/widgets/latest-products.php:256
-#: elementor/widgets/ova-before-after.php:68
-#: elementor/widgets/ova-video.php:337 elementor/widgets/promotions.php:392
+#: elementor/widgets/xp-before-after.php:68
+#: elementor/widgets/xp-video.php:337 elementor/widgets/promotions.php:392
 #: elementor/widgets/promotions.php:893 elementor/widgets/tabs.php:938
 #: elementor/widgets/toggle.php:600
 msgid "Height"
@@ -1472,7 +1472,7 @@ msgstr ""
 #: elementor/widgets/latest-products.php:198
 #: elementor/widgets/menu-canvas.php:205 elementor/widgets/menu-footer.php:135
 #: elementor/widgets/menu-footer.php:245 elementor/widgets/menu-nav.php:164
-#: elementor/widgets/menu-nav.php:320 elementor/widgets/ova-video.php:412
+#: elementor/widgets/menu-nav.php:320 elementor/widgets/xp-video.php:412
 #: elementor/widgets/product-list.php:286
 #: elementor/widgets/product-list.php:447 elementor/widgets/promotions.php:992
 #: elementor/widgets/tabs.php:477 elementor/widgets/tabs.php:832
@@ -1496,8 +1496,8 @@ msgstr ""
 msgid "Hover Color"
 msgstr ""
 
-#: elementor/widgets/heading.php:135 elementor/widgets/ova-image-box.php:111
-#: elementor/widgets/ova-video.php:111
+#: elementor/widgets/heading.php:135 elementor/widgets/xp-image-box.php:111
+#: elementor/widgets/xp-video.php:111
 msgid "HTML Tag"
 msgstr ""
 
@@ -1513,7 +1513,7 @@ msgstr ""
 
 #: elementor/widgets/gallery-slide.php:66
 #: elementor/widgets/gallery-slide.php:85 elementor/widgets/logo.php:68
-#: elementor/widgets/ova-image-box.php:95 elementor/widgets/price-list.php:68
+#: elementor/widgets/xp-image-box.php:95 elementor/widgets/price-list.php:68
 #: elementor/widgets/pricing.php:186 elementor/widgets/process.php:87
 #: elementor/widgets/promotions.php:249 elementor/widgets/team-2.php:87
 #: elementor/widgets/team-2.php:116 elementor/widgets/toggle-content.php:127
@@ -1533,8 +1533,8 @@ msgstr ""
 #: elementor/widgets/gallery.php:310 elementor/widgets/icon-box.php:60
 #: elementor/widgets/icon-box.php:149 elementor/widgets/icon-list.php:50
 #: elementor/widgets/icon-list.php:141 elementor/widgets/menu-cart.php:45
-#: elementor/widgets/menu-cart.php:68 elementor/widgets/ova-image-box.php:72
-#: elementor/widgets/ova-image-box.php:250 elementor/widgets/ova-video.php:303
+#: elementor/widgets/menu-cart.php:68 elementor/widgets/xp-image-box.php:72
+#: elementor/widgets/xp-image-box.php:250 elementor/widgets/xp-video.php:303
 #: elementor/widgets/pricing.php:76 elementor/widgets/pricing.php:136
 #: elementor/widgets/pricing.php:334 elementor/widgets/pricing.php:556
 #: elementor/widgets/tabs.php:59 elementor/widgets/tabs.php:790
@@ -1564,7 +1564,7 @@ msgstr ""
 msgid "Icon 4"
 msgstr ""
 
-#: elementor/widgets/ova-video.php:131
+#: elementor/widgets/xp-video.php:131
 msgid "Icon Class"
 msgstr ""
 
@@ -1605,8 +1605,8 @@ msgid "ID"
 msgstr ""
 
 #: elementor/widgets/gallery.php:236 elementor/widgets/latest-products.php:230
-#: elementor/widgets/logo.php:39 elementor/widgets/ova-image-box.php:61
-#: elementor/widgets/ova-video.php:264 elementor/widgets/process.php:71
+#: elementor/widgets/logo.php:39 elementor/widgets/xp-image-box.php:61
+#: elementor/widgets/xp-video.php:264 elementor/widgets/process.php:71
 #: elementor/widgets/tabs.php:63 elementor/widgets/tabs.php:901
 #: elementor/widgets/team-2.php:303
 msgid "Image"
@@ -1758,7 +1758,7 @@ msgstr ""
 #: elementor/widgets/contact-info.php:524 elementor/widgets/counter.php:114
 #: elementor/widgets/header-banner.php:270 elementor/widgets/heading.php:159
 #: elementor/widgets/logo.php:83 elementor/widgets/menu-canvas.php:69
-#: elementor/widgets/ova-image-box.php:135 elementor/widgets/pricing.php:430
+#: elementor/widgets/xp-image-box.php:135 elementor/widgets/pricing.php:430
 #: elementor/widgets/progress-circle.php:201
 #: elementor/widgets/progress-circle.php:301
 #: elementor/widgets/promotions.php:181 elementor/widgets/team.php:237
@@ -1826,7 +1826,7 @@ msgstr ""
 #: elementor/widgets/client-stories.php:88
 #: elementor/widgets/contact-info.php:90 elementor/widgets/gallery-slide.php:64
 #: elementor/widgets/heading.php:121 elementor/widgets/logo.php:47
-#: elementor/widgets/logo.php:63 elementor/widgets/ova-video.php:151
+#: elementor/widgets/logo.php:63 elementor/widgets/xp-video.php:151
 #: elementor/widgets/price-list.php:63 elementor/widgets/pricing.php:181
 #: elementor/widgets/process.php:82 elementor/widgets/team-2.php:85
 #: elementor/widgets/team-2.php:111 elementor/widgets/toggle-content.php:125
@@ -1867,7 +1867,7 @@ msgstr ""
 msgid "Link Label"
 msgstr ""
 
-#: elementor/widgets/ova-image-box.php:93
+#: elementor/widgets/xp-image-box.php:93
 msgid "Link Title"
 msgstr ""
 
@@ -1895,7 +1895,7 @@ msgstr ""
 msgid "Logo Default"
 msgstr ""
 
-#: elementor/widgets/ova-video.php:205
+#: elementor/widgets/xp-video.php:205
 msgid "Loop"
 msgstr ""
 
@@ -1949,8 +1949,8 @@ msgstr ""
 #: elementor/widgets/latest-products.php:164
 #: elementor/widgets/latest-products.php:315
 #: elementor/widgets/menu-footer.php:156 elementor/widgets/menu-footer.php:266
-#: elementor/widgets/ova-image-box.php:292
-#: elementor/widgets/ova-image-box.php:332 elementor/widgets/ova-video.php:494
+#: elementor/widgets/xp-image-box.php:292
+#: elementor/widgets/xp-image-box.php:332 elementor/widgets/xp-video.php:494
 #: elementor/widgets/pricing-tab.php:157 elementor/widgets/pricing.php:531
 #: elementor/widgets/pricing.php:594 elementor/widgets/pricing.php:646
 #: elementor/widgets/pricing.php:735 elementor/widgets/product-list.php:307
@@ -2004,7 +2004,7 @@ msgstr ""
 msgid "Massages & Prices"
 msgstr ""
 
-#: elementor/widgets/counter.php:206 elementor/widgets/ova-image-box.php:166
+#: elementor/widgets/counter.php:206 elementor/widgets/xp-image-box.php:166
 #: elementor/widgets/price-list.php:333 elementor/widgets/testimonial-3.php:278
 msgid "Max Width"
 msgstr ""
@@ -2076,7 +2076,7 @@ msgstr ""
 msgid "Mike hardson"
 msgstr ""
 
-#: elementor/widgets/ova-video.php:274
+#: elementor/widgets/xp-video.php:274
 msgid "Min Height"
 msgstr ""
 
@@ -2092,7 +2092,7 @@ msgstr ""
 msgid "Mobile Logo Width"
 msgstr ""
 
-#: elementor/widgets/ova-video.php:233
+#: elementor/widgets/xp-video.php:233
 msgid "Modest Branding"
 msgstr ""
 
@@ -2121,7 +2121,7 @@ msgstr ""
 msgid "Move Up"
 msgstr ""
 
-#: elementor/widgets/ova-video.php:191
+#: elementor/widgets/xp-video.php:191
 msgid "Mute"
 msgstr ""
 
@@ -2159,10 +2159,10 @@ msgstr ""
 #: elementor/widgets/gallery-slide.php:245
 #: elementor/widgets/gallery-slide.php:282
 #: elementor/widgets/gallery-slide.php:296 elementor/widgets/icon-list.php:83
-#: elementor/widgets/latest-products.php:90 elementor/widgets/ova-video.php:180
-#: elementor/widgets/ova-video.php:194 elementor/widgets/ova-video.php:208
-#: elementor/widgets/ova-video.php:222 elementor/widgets/ova-video.php:236
-#: elementor/widgets/ova-video.php:250 elementor/widgets/pricing.php:68
+#: elementor/widgets/latest-products.php:90 elementor/widgets/xp-video.php:180
+#: elementor/widgets/xp-video.php:194 elementor/widgets/xp-video.php:208
+#: elementor/widgets/xp-video.php:222 elementor/widgets/xp-video.php:236
+#: elementor/widgets/xp-video.php:250 elementor/widgets/pricing.php:68
 #: elementor/widgets/testimonial-2.php:147
 #: elementor/widgets/testimonial-2.php:161
 #: elementor/widgets/testimonial-2.php:198
@@ -2205,7 +2205,7 @@ msgstr ""
 #: elementor/widgets/latest-products.php:180
 #: elementor/widgets/menu-canvas.php:182 elementor/widgets/menu-footer.php:115
 #: elementor/widgets/menu-footer.php:225 elementor/widgets/menu-nav.php:127
-#: elementor/widgets/menu-nav.php:295 elementor/widgets/ova-video.php:371
+#: elementor/widgets/menu-nav.php:295 elementor/widgets/xp-video.php:371
 #: elementor/widgets/process.php:135 elementor/widgets/product-list.php:266
 #: elementor/widgets/product-list.php:385 elementor/widgets/promotions.php:917
 #: elementor/widgets/tabs.php:422 elementor/widgets/tabs.php:811
@@ -2305,7 +2305,7 @@ msgstr ""
 msgid "Xp Image"
 msgstr ""
 
-#: elementor/widgets/ova-image-box.php:18
+#: elementor/widgets/xp-image-box.php:18
 msgid "Xp Image Box"
 msgstr ""
 
@@ -2341,16 +2341,16 @@ msgstr ""
 msgid "Xp Text Editor"
 msgstr ""
 
-#: elementor/widgets/ova-video.php:20
+#: elementor/widgets/xp-video.php:20
 msgid "Xp Video"
 msgstr ""
 
 #: elementor/widgets/team-2.php:144
-msgid "xpicon ovaicon-facebook-logo"
+msgid "xpicon xpicon-facebook-logo"
 msgstr ""
 
 #: elementor/widgets/team-2.php:149
-msgid "xpicon ovaicon-instagram-1"
+msgid "xpicon xpicon-instagram-1"
 msgstr ""
 
 #: elementor/widgets/team-2.php:103 elementor/widgets/team-2.php:139
@@ -2377,8 +2377,8 @@ msgstr ""
 msgid "Overlay"
 msgstr ""
 
-#: elementor/widgets/heading.php:147 elementor/widgets/ova-image-box.php:123
-#: elementor/widgets/ova-video.php:123
+#: elementor/widgets/heading.php:147 elementor/widgets/xp-image-box.php:123
+#: elementor/widgets/xp-video.php:123
 msgid "p"
 msgstr ""
 
@@ -2400,7 +2400,7 @@ msgstr ""
 #: elementor/widgets/icon-box.php:133 elementor/widgets/icon-list.php:200
 #: elementor/widgets/image.php:164 elementor/widgets/menu-footer.php:168
 #: elementor/widgets/menu-footer.php:278 elementor/widgets/menu-nav.php:84
-#: elementor/widgets/ova-image-box.php:200 elementor/widgets/price-list.php:214
+#: elementor/widgets/xp-image-box.php:200 elementor/widgets/price-list.php:214
 #: elementor/widgets/price-list.php:267 elementor/widgets/price-list.php:310
 #: elementor/widgets/price-list.php:406 elementor/widgets/pricing.php:236
 #: elementor/widgets/pricing.php:318 elementor/widgets/pricing.php:543
@@ -2473,11 +2473,11 @@ msgstr ""
 msgid "Phone Label"
 msgstr ""
 
-#: elementor/widgets/ova-video.php:80
+#: elementor/widgets/xp-video.php:80
 msgid "Place of beauty"
 msgstr ""
 
-#: elementor/widgets/ova-video.php:219
+#: elementor/widgets/xp-video.php:219
 msgid "Player Controls"
 msgstr ""
 
@@ -2559,7 +2559,7 @@ msgstr ""
 msgid "Professional & Expert Staff"
 msgstr ""
 
-#: elementor/widgets/ova-image-box.php:86
+#: elementor/widgets/xp-image-box.php:86
 msgid "Professional Facial Treatment For Men & Women"
 msgstr ""
 
@@ -2652,7 +2652,7 @@ msgstr ""
 #: elementor/widgets/contact-info.php:532 elementor/widgets/counter.php:122
 #: elementor/widgets/gallery.php:379 elementor/widgets/header-banner.php:278
 #: elementor/widgets/heading.php:167 elementor/widgets/logo.php:91
-#: elementor/widgets/menu-canvas.php:73 elementor/widgets/ova-image-box.php:143
+#: elementor/widgets/menu-canvas.php:73 elementor/widgets/xp-image-box.php:143
 #: elementor/widgets/pricing.php:435 elementor/widgets/progress-circle.php:209
 #: elementor/widgets/progress-circle.php:309
 #: elementor/widgets/promotions.php:185 elementor/widgets/team.php:245
@@ -2840,7 +2840,7 @@ msgstr ""
 msgid "Show Excerpt"
 msgstr ""
 
-#: elementor/widgets/ova-video.php:247
+#: elementor/widgets/xp-video.php:247
 msgid "Show Info"
 msgstr ""
 
@@ -2914,7 +2914,7 @@ msgid "Single Layout"
 msgstr ""
 
 #: elementor/widgets/counter.php:237 elementor/widgets/menu-cart.php:76
-#: elementor/widgets/ova-image-box.php:258 elementor/widgets/pricing.php:342
+#: elementor/widgets/xp-image-box.php:258 elementor/widgets/pricing.php:342
 #: elementor/widgets/pricing.php:564 elementor/widgets/team-2.php:567
 #: elementor/widgets/team.php:328 elementor/widgets/testimonial-2.php:234
 #: elementor/widgets/testimonial-2.php:276
@@ -3017,8 +3017,8 @@ msgstr ""
 msgid "Spacing"
 msgstr ""
 
-#: elementor/widgets/heading.php:146 elementor/widgets/ova-image-box.php:122
-#: elementor/widgets/ova-video.php:122
+#: elementor/widgets/heading.php:146 elementor/widgets/xp-image-box.php:122
+#: elementor/widgets/xp-video.php:122
 msgid "span"
 msgstr ""
 
@@ -3146,7 +3146,7 @@ msgstr ""
 #: elementor/widgets/blog-grid.php:60 elementor/widgets/contact-info.php:47
 #: elementor/widgets/counter.php:57 elementor/widgets/heading.php:50
 #: elementor/widgets/icon-box.php:47 elementor/widgets/image.php:50
-#: elementor/widgets/ova-image-box.php:48 elementor/widgets/pricing.php:52
+#: elementor/widgets/xp-image-box.php:48 elementor/widgets/pricing.php:52
 #: elementor/widgets/progress-circle.php:57 elementor/widgets/promotions.php:52
 #: elementor/widgets/team.php:50 elementor/widgets/testimonial-3.php:46
 msgid "Template"
@@ -3155,7 +3155,7 @@ msgstr ""
 #: elementor/widgets/blog-grid.php:64 elementor/widgets/contact-info.php:51
 #: elementor/widgets/counter.php:61 elementor/widgets/heading.php:54
 #: elementor/widgets/icon-box.php:51 elementor/widgets/image.php:54
-#: elementor/widgets/ova-image-box.php:52 elementor/widgets/pricing.php:56
+#: elementor/widgets/xp-image-box.php:52 elementor/widgets/pricing.php:56
 #: elementor/widgets/progress-circle.php:61 elementor/widgets/promotions.php:56
 #: elementor/widgets/team.php:54 elementor/widgets/testimonial-3.php:50
 msgid "Template 1"
@@ -3164,7 +3164,7 @@ msgstr ""
 #: elementor/widgets/blog-grid.php:65 elementor/widgets/contact-info.php:52
 #: elementor/widgets/counter.php:62 elementor/widgets/heading.php:55
 #: elementor/widgets/icon-box.php:52 elementor/widgets/image.php:55
-#: elementor/widgets/ova-image-box.php:53 elementor/widgets/pricing.php:57
+#: elementor/widgets/xp-image-box.php:53 elementor/widgets/pricing.php:57
 #: elementor/widgets/progress-circle.php:62 elementor/widgets/promotions.php:57
 #: elementor/widgets/team.php:55 elementor/widgets/testimonial-3.php:51
 msgid "Template 2"
@@ -3270,8 +3270,8 @@ msgstr ""
 #: elementor/widgets/icon-list.php:62 elementor/widgets/icon-list.php:173
 #: elementor/widgets/latest-products.php:126
 #: elementor/widgets/latest-products.php:278
-#: elementor/widgets/ova-image-box.php:84
-#: elementor/widgets/ova-image-box.php:304 elementor/widgets/ova-video.php:78
+#: elementor/widgets/xp-image-box.php:84
+#: elementor/widgets/xp-image-box.php:304 elementor/widgets/xp-video.php:78
 #: elementor/widgets/price-list.php:84 elementor/widgets/price-list.php:229
 #: elementor/widgets/pricing.php:88 elementor/widgets/pricing.php:280
 #: elementor/widgets/process.php:104 elementor/widgets/process.php:272
@@ -3299,7 +3299,7 @@ msgstr ""
 msgid "Title - Template 2"
 msgstr ""
 
-#: elementor/widgets/header-banner.php:145 elementor/widgets/ova-video.php:100
+#: elementor/widgets/header-banner.php:145 elementor/widgets/xp-video.php:100
 msgid "Title Color"
 msgstr ""
 
@@ -3394,20 +3394,20 @@ msgstr ""
 msgid "Unit"
 msgstr ""
 
-#: elementor/widgets/ova-video.php:141
+#: elementor/widgets/xp-video.php:141
 msgid "URL Video"
 msgstr ""
 
-#: elementor/widgets/ova-video.php:51 elementor/widgets/testimonial.php:52
+#: elementor/widgets/xp-video.php:51 elementor/widgets/testimonial.php:52
 msgid "Version"
 msgstr ""
 
-#: elementor/widgets/ova-video.php:55 elementor/widgets/promotions.php:483
+#: elementor/widgets/xp-video.php:55 elementor/widgets/promotions.php:483
 #: elementor/widgets/testimonial.php:56
 msgid "Version 1"
 msgstr ""
 
-#: elementor/widgets/ova-video.php:56 elementor/widgets/promotions.php:484
+#: elementor/widgets/xp-video.php:56 elementor/widgets/promotions.php:484
 #: elementor/widgets/testimonial.php:57
 msgid "Version 2"
 msgstr ""
@@ -3416,7 +3416,7 @@ msgstr ""
 msgid "Vertical"
 msgstr ""
 
-#: elementor/widgets/ova-video.php:165
+#: elementor/widgets/xp-video.php:165
 msgid "Video Options"
 msgstr ""
 
@@ -3451,7 +3451,7 @@ msgstr ""
 #: elementor/widgets/contact-info.php:315 elementor/widgets/gallery.php:97
 #: elementor/widgets/heading.php:428 elementor/widgets/image.php:144
 #: elementor/widgets/latest-products.php:237
-#: elementor/widgets/ova-video.php:311 elementor/widgets/promotions.php:701
+#: elementor/widgets/xp-video.php:311 elementor/widgets/promotions.php:701
 #: elementor/widgets/promotions.php:873 elementor/widgets/tabs.php:910
 #: elementor/widgets/team.php:309 elementor/widgets/toggle.php:570
 #: elementor/widgets/toggle.php:932
@@ -3495,10 +3495,10 @@ msgstr ""
 #: elementor/widgets/gallery-slide.php:244
 #: elementor/widgets/gallery-slide.php:281
 #: elementor/widgets/gallery-slide.php:295 elementor/widgets/icon-list.php:82
-#: elementor/widgets/latest-products.php:89 elementor/widgets/ova-video.php:179
-#: elementor/widgets/ova-video.php:193 elementor/widgets/ova-video.php:207
-#: elementor/widgets/ova-video.php:221 elementor/widgets/ova-video.php:235
-#: elementor/widgets/ova-video.php:249 elementor/widgets/pricing.php:67
+#: elementor/widgets/latest-products.php:89 elementor/widgets/xp-video.php:179
+#: elementor/widgets/xp-video.php:193 elementor/widgets/xp-video.php:207
+#: elementor/widgets/xp-video.php:221 elementor/widgets/xp-video.php:235
+#: elementor/widgets/xp-video.php:249 elementor/widgets/pricing.php:67
 #: elementor/widgets/testimonial-2.php:146
 #: elementor/widgets/testimonial-2.php:160
 #: elementor/widgets/testimonial-2.php:197

@@ -784,7 +784,7 @@ class Spalisho_Elementor_Blog_Grid extends Widget_Base {
 
 		?>
 		
-		<ul class="xp-blog ova-blog-<?php echo esc_attr($template); ?> ova-<?php echo esc_attr( $number_column ) ?> <?php echo esc_attr($template_2_style); ?>">
+		<ul class="xp-blog xp-blog-<?php echo esc_attr($template); ?> xp-<?php echo esc_attr( $number_column ) ?> <?php echo esc_attr($template_2_style); ?>">
 			<?php
 				if($blog->have_posts()) : while($blog->have_posts()) : $blog->the_post();
 

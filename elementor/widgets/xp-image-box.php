@@ -8,14 +8,14 @@ use Elementor\Group_Control_Border;
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
-class Spalisho_Elementor_Ova_Image_Box extends Widget_Base {
+class Spalisho_Elementor_Xp_Image_Box extends Widget_Base {
 
 	public function get_name() {
-		return 'spalisho_elementor_ova_image_box';
+		return 'spalisho_elementor_xp_image_box';
 	}
 
 	public function get_title() {
-		return esc_html__( 'Ova Image Box', 'spalisho' );
+		return esc_html__( 'Xp Image Box', 'spalisho' );
 	}
 
 	public function get_icon() {
@@ -361,7 +361,7 @@ class Spalisho_Elementor_Ova_Image_Box extends Widget_Base {
 
 		?>
 
-		<div class="xp-image-box ova-image-box-<?php echo esc_attr( $template ); ?>">
+		<div class="xp-image-box xp-image-box-<?php echo esc_attr( $template ); ?>">
 
 			<?php if( !empty( $url ) ) : ?>
 				<div class="img-wrapper">
@@ -405,4 +405,4 @@ class Spalisho_Elementor_Ova_Image_Box extends Widget_Base {
 	}
 }
 
-$widgets_manager->register( new Spalisho_Elementor_Ova_Image_Box() );
+$widgets_manager->register( new Spalisho_Elementor_Xp_Image_Box() );

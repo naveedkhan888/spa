@@ -15,7 +15,7 @@ class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
 	}
 
 	public function get_title() {
-		return esc_html__( 'Ova Gallery Slide', 'spalisho' );
+		return esc_html__( 'Xp Gallery Slide', 'spalisho' );
 	}
 
 	public function get_icon() {
@@ -52,7 +52,7 @@ class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
 					'label' => esc_html__( 'Icon', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::ICONS,
 					'default' => [
-						'value' => 'ovaicon-diagonal-arrow',
+						'value' => 'xpicon-diagonal-arrow',
 						'library' => 'all',
 					],		
 				]

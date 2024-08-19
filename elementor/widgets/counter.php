@@ -18,7 +18,7 @@ class Spalisho_Elementor_Counter extends Widget_Base {
 
 	
 	public function get_title() {
-		return esc_html__( 'Ova Counter', 'spalisho' );
+		return esc_html__( 'Xp Counter', 'spalisho' );
 	}
 
 	
@@ -46,7 +46,7 @@ class Spalisho_Elementor_Counter extends Widget_Base {
 		$this->start_controls_section(
 			'section_content',
 			[
-				'label' => esc_html__( 'Ova Counter', 'spalisho' ),
+				'label' => esc_html__( 'Xp Counter', 'spalisho' ),
 			]
 		);	
 			
@@ -147,7 +147,7 @@ class Spalisho_Elementor_Counter extends Widget_Base {
 		$this->start_controls_section(
             'counter_style',
             [
-               'label' => esc_html__( 'Ova Counter', 'spalisho' ),
+               'label' => esc_html__( 'Xp Counter', 'spalisho' ),
                'tab' 	=> Controls_Manager::TAB_STYLE,
             ]
         );
@@ -459,7 +459,7 @@ class Spalisho_Elementor_Counter extends Widget_Base {
 
 		?>
            
-           <div class="xp-counter ova-counter-<?php echo esc_attr( $template ); ?>" 
+           <div class="xp-counter xp-counter-<?php echo esc_attr( $template ); ?>" 
                 data-count="<?php echo esc_attr( $number ); ?>">
         
                 <?php if (!empty( $icon['value'] )): ?>

@@ -74,7 +74,7 @@ if( !class_exists('Spalisho_Main') ){
 
 		    add_theme_support( 'woocommerce' );
 		    
-		    add_theme_support( 'ova_framework_hf_el' );
+		    add_theme_support( 'xp_framework_hf_el' );
 
 		    add_filter('gutenberg_use_widgets_block_editor', '__return_false');
             add_filter('use_widgets_block_editor', '__return_false');
@@ -98,7 +98,7 @@ if( !class_exists('Spalisho_Main') ){
 		    $default_primary_font = json_decode( spalisho_default_primary_font() );
 		    $default_second_font = json_decode( spalisho_default_second_font() );
 
-		    $custom_fonts = get_theme_mod('ova_custom_font','');
+		    $custom_fonts = get_theme_mod('xp_custom_font','');
 
 		    // Primary Font 
 		    $primary_font = json_decode( get_theme_mod( 'primary_font' ) ) ? json_decode( get_theme_mod( 'primary_font' ) ) : $default_primary_font;
@@ -139,7 +139,7 @@ if( !class_exists('Spalisho_Main') ){
 		    /**
 			 * Load google font from customize
 			 */
-			wp_enqueue_style( 'ova-google-fonts', $google_fonts, array(), null );
+			wp_enqueue_style( 'xp-google-fonts', $google_fonts, array(), null );
 
 		}
 
@@ -209,10 +209,10 @@ if( !class_exists('Spalisho_Main') ){
 
 
 		    // Font Icon
-		    wp_enqueue_style('ovaicon', SPALISHO_URI.'/assets/libs/ovaicon/font/ovaicon.css', array(), null);
+		    wp_enqueue_style('xpicon', SPALISHO_URI.'/assets/libs/xpicon/font/xpicon.css', array(), null);
 
 		    // Flaticon
-		    wp_enqueue_style('ova-flaticon', SPALISHO_URI.'/assets/libs/flaticon/font/flaticon.css', array(), null);
+		    wp_enqueue_style('xp-flaticon', SPALISHO_URI.'/assets/libs/flaticon/font/flaticon.css', array(), null);
 
 		    wp_enqueue_script('masonry', SPALISHO_URI.'/assets/libs/masonry.min.js', array('jquery'),null,true);
 		    

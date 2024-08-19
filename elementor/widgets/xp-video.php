@@ -8,16 +8,16 @@ use Elementor\Utils;
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 
-class Spalisho_Elementor_Ova_Video extends Widget_Base {
+class Spalisho_Elementor_Xp_Video extends Widget_Base {
 
 	
 	public function get_name() {
-		return 'spalisho_elementor_ova_video';
+		return 'spalisho_elementor_xp_video';
 	}
 
 	
 	public function get_title() {
-		return esc_html__( 'Ova Video', 'spalisho' );
+		return esc_html__( 'Xp Video', 'spalisho' );
 	}
 
 	
@@ -31,7 +31,7 @@ class Spalisho_Elementor_Ova_Video extends Widget_Base {
 	}
 
 	public function get_script_depends() {
-		return [ 'spalisho-elementor-ova-video' ];
+		return [ 'spalisho-elementor-xp-video' ];
 	}
 	
 	// Add Your Controll In This Function
@@ -59,7 +59,7 @@ class Spalisho_Elementor_Ova_Video extends Widget_Base {
 			);
 
 			$this->add_control(
-				'ova_image',
+				'xp_image',
 				[
 					'label' => esc_html__( 'Choose Image Background', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::MEDIA,
@@ -533,8 +533,8 @@ class Spalisho_Elementor_Ova_Video extends Widget_Base {
 		//version 2
 		$title     		= $settings['title'];
 		$html_tag  		= $settings['html_tag'];
-		$image 			= $settings['ova_image']['url'];
-		$alt 	    	= isset( $settings['ova_image']['alt'] ) ? $settings['ova_image']['alt'] : '';
+		$image 			= $settings['xp_image']['url'];
+		$alt 	    	= isset( $settings['xp_image']['alt'] ) ? $settings['xp_image']['alt'] : '';
 		?>
          
         <div class="xp-video <?php echo esc_html($version); ?>">
@@ -585,4 +585,4 @@ class Spalisho_Elementor_Ova_Video extends Widget_Base {
 
 	
 }
-$widgets_manager->register( new Spalisho_Elementor_Ova_Video() );
+$widgets_manager->register( new Spalisho_Elementor_Xp_Video() );

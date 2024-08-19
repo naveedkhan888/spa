@@ -11,7 +11,7 @@
 
 		        var owlsl 		= $(this);
 		        var owlsl_ops 	= owlsl.data('options') ? owlsl.data('options') : {};
-		        var navCon 		= '#ova-testimonial-slider3-control';
+		        var navCon 		= '#xp-testimonial-slider3-control';
 
 		        var isRTL = $('body').hasClass('rtl');
 

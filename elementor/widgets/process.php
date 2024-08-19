@@ -452,7 +452,7 @@ class Spalisho_Elementor_Process extends Widget_Base {
 				  
 			    ?>
 
-				    <div class="item-process<?php if ( $animation_content ) echo ' ova-invisible'; ?>" data-animation='<?php echo json_encode( $data_animation_content ); ?>'>
+				    <div class="item-process<?php if ( $animation_content ) echo ' xp-invisible'; ?>" data-animation='<?php echo json_encode( $data_animation_content ); ?>'>
 
 	                    <div class="image-process">
 				 			<?php if (!empty( $text_number )): ?>

@@ -149,7 +149,7 @@ class Spalisho_Elementor_Menu_Nav extends Widget_Base {
 							'selectors' => [
 								'{{WRAPPER}} .main-navigation ul.menu > li > a:before' => 'background-color: {{VALUE}};',
 							],
-							'description' => esc_html__( '( Use with class ova-menu-custom-line )', 'spalisho' ),
+							'description' => esc_html__( '( Use with class xp-menu-custom-line )', 'spalisho' ),
 						]
 					);
 
@@ -207,7 +207,7 @@ class Spalisho_Elementor_Menu_Nav extends Widget_Base {
 						'custom_line_width',
 						[
 							'label' => esc_html__( 'Line Width', 'spalisho' ),
-							'description' => esc_html__( '( Use with class ova-menu-custom-line )', 'spalisho' ),
+							'description' => esc_html__( '( Use with class xp-menu-custom-line )', 'spalisho' ),
 							'type' => Controls_Manager::SLIDER,
 							'size_units' => [ 'px', '%' ],
 							'range' => [
@@ -390,9 +390,9 @@ class Spalisho_Elementor_Menu_Nav extends Widget_Base {
             	</span>
             </button>
 			<?php $fallback_cb = $walker = '';
-			 	if ( class_exists('Ova_Megamenu_Walker_Nav_Menu') ) {
-			      	$fallback_cb = 'Ova_Megamenu_Walker_Nav_Menu::fallback';
-			      	$walker = new Ova_Megamenu_Walker_Nav_Menu;
+			 	if ( class_exists('Xp_Megamenu_Walker_Nav_Menu') ) {
+			      	$fallback_cb = 'Xp_Megamenu_Walker_Nav_Menu::fallback';
+			      	$walker = new Xp_Megamenu_Walker_Nav_Menu;
 			    }
 
 				wp_nav_menu( [

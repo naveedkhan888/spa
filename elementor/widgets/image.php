@@ -17,7 +17,7 @@ class Spalisho_Elementor_Image extends Widget_Base {
 
 	
 	public function get_title() {
-		return esc_html__( 'Ova Image', 'spalisho' );
+		return esc_html__( 'Xp Image', 'spalisho' );
 	}
 
 	
@@ -59,7 +59,7 @@ class Spalisho_Elementor_Image extends Widget_Base {
 			);
 			
 			$this->add_control(
-				'ova_image',
+				'xp_image',
 				[
 					'label' => esc_html__( 'Choose Image', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::MEDIA,
@@ -318,8 +318,8 @@ class Spalisho_Elementor_Image extends Widget_Base {
 		$settings 	= $this->get_settings();
 
 		$template 		= $settings['template'];
-		$image 			= $settings['ova_image']['url'];
-		$alt 	    	= isset( $settings['ova_image']['alt'] ) ? $settings['ova_image']['alt'] : '';
+		$image 			= $settings['xp_image']['url'];
+		$alt 	    	= isset( $settings['xp_image']['alt'] ) ? $settings['xp_image']['alt'] : '';
 		$show_line_l 	= $settings['show_line_left'];
 		$show_line_r 	= $settings['show_line_right'];
 

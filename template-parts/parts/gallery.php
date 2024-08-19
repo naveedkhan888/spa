@@ -2,7 +2,7 @@
 
 	$post_id = get_the_ID();
 
-	$gallery = get_post_meta($post_id, 'ova_met_gallery_id', true) ? get_post_meta($post_id, 'ova_met_gallery_id', true) : '';
+	$gallery = get_post_meta($post_id, 'xp_met_gallery_id', true) ? get_post_meta($post_id, 'xp_met_gallery_id', true) : '';
 
 	$carousel_id = 'carousel'.$post_id.'gallery';
 

@@ -243,7 +243,7 @@ class Spalisho_Elementor_Toggle extends Widget_Toggle {
 		);
 
 		$this->add_responsive_control(
-            'ova_toggle_padding',
+            'xp_toggle_padding',
             [
                 'label'         => esc_html__( 'Padding', 'spalisho' ),
                 'type'          => Controls_Manager::DIMENSIONS,
@@ -255,7 +255,7 @@ class Spalisho_Elementor_Toggle extends Widget_Toggle {
         );
 
 		$this->add_responsive_control(
-            'ova_toggle_margin',
+            'xp_toggle_margin',
             [
                 'label'         => esc_html__( 'Margin', 'spalisho' ),
                 'type'          => Controls_Manager::DIMENSIONS,
@@ -268,9 +268,9 @@ class Spalisho_Elementor_Toggle extends Widget_Toggle {
 
 		$this->end_controls_section();
 
-		/* Begin Ova Title Style */
+		/* Begin Xp Title Style */
         $this->start_controls_section(
-            'section_ova_title_style',
+            'section_xp_title_style',
             [
                 'label' => esc_html__( 'Title', 'spalisho' ),
                 'tab'   => Controls_Manager::TAB_STYLE,
@@ -280,7 +280,7 @@ class Spalisho_Elementor_Toggle extends Widget_Toggle {
         	$this->add_group_control(
                 Group_Control_Typography::get_type(),
                 [
-                    'name'      => 'ova_title_typography',
+                    'name'      => 'xp_title_typography',
                     'selector'  => '{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title .elementor-toggle-title',
                 ]
             );
@@ -288,24 +288,24 @@ class Spalisho_Elementor_Toggle extends Widget_Toggle {
             $this->add_group_control(
 				Group_Control_Text_Shadow::get_type(),
 				[
-					'name' => 'ova_title_shadow',
+					'name' => 'xp_title_shadow',
 					'selector' => '{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title .elementor-toggle-title',
 				]
 			);
 
             $this->start_controls_tabs(
-                'style_ova_title_tabs'
+                'style_xp_title_tabs'
             );
 
                 $this->start_controls_tab(
-                    'ova_title_normal_tab',
+                    'xp_title_normal_tab',
                     [
                         'label' => esc_html__( 'Normal', 'spalisho' ),
                     ]
                 );
 
                     $this->add_control(
-                        'ova_title_color_normal',
+                        'xp_title_color_normal',
                         [
                             'label'     => esc_html__( 'Color', 'spalisho' ),
                             'type'      => Controls_Manager::COLOR,
@@ -316,7 +316,7 @@ class Spalisho_Elementor_Toggle extends Widget_Toggle {
                     );
 
                     $this->add_control(
-                        'ova_title_background_normal',
+                        'xp_title_background_normal',
                         [
                             'label'     => esc_html__( 'Background', 'spalisho' ),
                             'type'      => Controls_Manager::COLOR,
@@ -329,14 +329,14 @@ class Spalisho_Elementor_Toggle extends Widget_Toggle {
                 $this->end_controls_tab();
 
                 $this->start_controls_tab(
-                    'ova_title_hover_tab',
+                    'xp_title_hover_tab',
                     [
                         'label' => esc_html__( 'Hover', 'spalisho' ),
                     ]
                 );
 
                     $this->add_control(
-                        'ova_title_color_hover',
+                        'xp_title_color_hover',
                         [
                             'label'     => esc_html__( 'Color', 'spalisho' ),
                             'type'      => Controls_Manager::COLOR,
@@ -347,7 +347,7 @@ class Spalisho_Elementor_Toggle extends Widget_Toggle {
                     );
 
                     $this->add_control(
-                        'ova_title_background_hover',
+                        'xp_title_background_hover',
                         [
                             'label'     => esc_html__( 'Background', 'spalisho' ),
                             'type'      => Controls_Manager::COLOR,
@@ -360,14 +360,14 @@ class Spalisho_Elementor_Toggle extends Widget_Toggle {
                 $this->end_controls_tab();
 
                 $this->start_controls_tab(
-                    'ova_title_active_tab',
+                    'xp_title_active_tab',
                     [
                         'label' => esc_html__( 'Active', 'spalisho' ),
                     ]
                 );
 
                     $this->add_control(
-                        'ova_title_color_active',
+                        'xp_title_color_active',
                         [
                             'label'     => esc_html__( 'Color', 'spalisho' ),
                             'type'      => Controls_Manager::COLOR,
@@ -378,7 +378,7 @@ class Spalisho_Elementor_Toggle extends Widget_Toggle {
                     );
 
                     $this->add_control(
-                        'ova_title_background_active',
+                        'xp_title_background_active',
                         [
                             'label'     => esc_html__( 'Background', 'spalisho' ),
                             'type'      => Controls_Manager::COLOR,
@@ -394,7 +394,7 @@ class Spalisho_Elementor_Toggle extends Widget_Toggle {
             $this->add_group_control(
                 Group_Control_Border::get_type(),
                 [
-                    'name'      => 'ova_title_border',
+                    'name'      => 'xp_title_border',
                     'label'     => esc_html__( 'Border', 'spalisho' ),
                     'selector'  => '{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item:not(:last-child) .elementor-tab-title',
                     'separator' => 'before',
@@ -402,7 +402,7 @@ class Spalisho_Elementor_Toggle extends Widget_Toggle {
             );
 
             $this->add_control(
-                'ova_title_border_color_hover',
+                'xp_title_border_color_hover',
                 [
                     'label'     => esc_html__( 'Border Color Hover', 'spalisho' ),
                     'type'      => Controls_Manager::COLOR,
@@ -413,7 +413,7 @@ class Spalisho_Elementor_Toggle extends Widget_Toggle {
             );
 
             $this->add_control(
-                'ova_title_border_color_active',
+                'xp_title_border_color_active',
                 [
                     'label'     => esc_html__( 'Border Color Active', 'spalisho' ),
                     'type'      => Controls_Manager::COLOR,
@@ -424,7 +424,7 @@ class Spalisho_Elementor_Toggle extends Widget_Toggle {
             );
 
             $this->add_responsive_control(
-                'ova_title_border_radius',
+                'xp_title_border_radius',
                 [
                     'label'         => esc_html__( 'Border Radius', 'spalisho' ),
                     'type'          => Controls_Manager::DIMENSIONS,
@@ -436,7 +436,7 @@ class Spalisho_Elementor_Toggle extends Widget_Toggle {
             );
 
             $this->add_responsive_control(
-                'ova_title_border_radius_active',
+                'xp_title_border_radius_active',
                 [
                     'label'         => esc_html__( 'Border Radius Active', 'spalisho' ),
                     'type'          => Controls_Manager::DIMENSIONS,
@@ -448,7 +448,7 @@ class Spalisho_Elementor_Toggle extends Widget_Toggle {
             );
 
             $this->add_responsive_control(
-                'ova_title_padding',
+                'xp_title_padding',
                 [
                     'label'         => esc_html__( 'Padding', 'spalisho' ),
                     'type'          => Controls_Manager::DIMENSIONS,
@@ -460,7 +460,7 @@ class Spalisho_Elementor_Toggle extends Widget_Toggle {
             );
 
             $this->add_responsive_control(
-                'ova_title_margin',
+                'xp_title_margin',
                 [
                     'label'         => esc_html__( 'Margin', 'spalisho' ),
                     'type'          => Controls_Manager::DIMENSIONS,
@@ -484,7 +484,7 @@ class Spalisho_Elementor_Toggle extends Widget_Toggle {
 			);
 
             $this->add_control(
-                'ova_before_title',
+                'xp_before_title',
                 [
                     'label'     => esc_html__( 'Before Title Style', 'spalisho' ),
                     'type'      => \Elementor\Controls_Manager::HEADING,
@@ -495,7 +495,7 @@ class Spalisho_Elementor_Toggle extends Widget_Toggle {
             );
 
 		        $this->start_controls_tabs(
-	                'style_ova_before_title_tabs',
+	                'style_xp_before_title_tabs',
 	                [
 	                	'condition' => [
 	                    	'show_before_title' => 'yes',
@@ -504,14 +504,14 @@ class Spalisho_Elementor_Toggle extends Widget_Toggle {
 	            );
 
 	                $this->start_controls_tab(
-	                    'ova_before_title_normal_tab',
+	                    'xp_before_title_normal_tab',
 	                    [
 	                        'label' => esc_html__( 'Normal', 'spalisho' ),
 	                    ]
 	                );
 
 	                    $this->add_control(
-				            'ova_before_title_background_normal',
+				            'xp_before_title_background_normal',
 				            [
 				                'label' => esc_html__( 'Background', 'spalisho' ),
 				                'type' => Controls_Manager::COLOR,
@@ -524,14 +524,14 @@ class Spalisho_Elementor_Toggle extends Widget_Toggle {
 	                $this->end_controls_tab();
 
 	                $this->start_controls_tab(
-	                    'ova_before_title_hover_tab',
+	                    'xp_before_title_hover_tab',
 	                    [
 	                        'label' => esc_html__( 'Hover', 'spalisho' ),
 	                    ]
 	                );
 
 	                	$this->add_control(
-				            'ova_before_title_background_hover',
+				            'xp_before_title_background_hover',
 				            [
 				                'label' => esc_html__( 'Background', 'spalisho' ),
 				                'type' => Controls_Manager::COLOR,
@@ -544,14 +544,14 @@ class Spalisho_Elementor_Toggle extends Widget_Toggle {
 	                $this->end_controls_tab();
 
 	                $this->start_controls_tab(
-	                    'ova_before_title_active_tab',
+	                    'xp_before_title_active_tab',
 	                    [
 	                        'label' => esc_html__( 'Active', 'spalisho' ),
 	                    ]
 	                );
 
 	                	$this->add_control(
-				            'ova_before_title_background_active',
+				            'xp_before_title_background_active',
 				            [
 				                'label' => esc_html__( 'Background', 'spalisho' ),
 				                'type' => Controls_Manager::COLOR,
@@ -565,7 +565,7 @@ class Spalisho_Elementor_Toggle extends Widget_Toggle {
 	            $this->end_controls_tabs();
 
             	$this->add_responsive_control(
-                    'ova_before_title_width',
+                    'xp_before_title_width',
                     [
                         'label'         => esc_html__( 'Width', 'spalisho' ),
                         'type'          => Controls_Manager::SLIDER,
@@ -595,7 +595,7 @@ class Spalisho_Elementor_Toggle extends Widget_Toggle {
                 );
 
                 $this->add_responsive_control(
-                    'ova_before_title_height',
+                    'xp_before_title_height',
                     [
                         'label'         => esc_html__( 'Height', 'spalisho' ),
                         'type'          => Controls_Manager::SLIDER,
@@ -625,7 +625,7 @@ class Spalisho_Elementor_Toggle extends Widget_Toggle {
                 );
 
                 $this->add_responsive_control(
-                    'ova_before_title_top',
+                    'xp_before_title_top',
                     [
                         'label'         => esc_html__( 'Top', 'spalisho' ),
                         'type'          => Controls_Manager::SLIDER,
@@ -651,7 +651,7 @@ class Spalisho_Elementor_Toggle extends Widget_Toggle {
                 );
 
                 $this->add_responsive_control(
-                    'ova_before_title_left',
+                    'xp_before_title_left',
                     [
                         'label'         => esc_html__( 'Left', 'spalisho' ),
                         'type'          => Controls_Manager::SLIDER,
@@ -677,7 +677,7 @@ class Spalisho_Elementor_Toggle extends Widget_Toggle {
                 );
 
                 $this->add_responsive_control(
-                    'ova_before_title_margin',
+                    'xp_before_title_margin',
                     [
                         'label'         => esc_html__( 'Margin', 'spalisho' ),
                         'type'          => Controls_Manager::DIMENSIONS,
@@ -692,7 +692,7 @@ class Spalisho_Elementor_Toggle extends Widget_Toggle {
                 );
 
         $this->end_controls_section();
-        /* End Ova Title Style */
+        /* End Xp Title Style */
 
 		$this->start_controls_section(
 			'section_toggle_style_icon',
@@ -812,7 +812,7 @@ class Spalisho_Elementor_Toggle extends Widget_Toggle {
         );
 
 		$this->add_control(
-			'ova_before_icon',
+			'xp_before_icon',
 			[
 				'label' 	=> esc_html__( 'Before Icon', 'spalisho' ),
 				'type' 		=> Controls_Manager::HEADING,
@@ -821,7 +821,7 @@ class Spalisho_Elementor_Toggle extends Widget_Toggle {
 		);
 
 			$this->add_control(
-				'ova_icon',
+				'xp_icon',
 				[
 					'label' 	=> esc_html__( 'Icon', 'spalisho' ),
 					'type' 		=> Controls_Manager::ICONS,
@@ -831,16 +831,16 @@ class Spalisho_Elementor_Toggle extends Widget_Toggle {
 			$this->add_group_control(
 	            Group_Control_Typography::get_type(),
 	            [
-	                'name'      => 'ova_icon_typography',
+	                'name'      => 'xp_icon_typography',
 	                'selector'  => '{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title .xp-icon i',
 	                'condition' => [
-	                	'ova_icon[value]!' => '',
+	                	'xp_icon[value]!' => '',
 	                ],
 	            ]
 	        );
 
 			$this->add_control(
-				'ova_icon_color',
+				'xp_icon_color',
 				[
 					'label' 	=> esc_html__( 'Color', 'spalisho' ),
 					'type' 		=> Controls_Manager::COLOR,
@@ -849,13 +849,13 @@ class Spalisho_Elementor_Toggle extends Widget_Toggle {
 						'{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title .xp-icon svg' => 'fill: {{VALUE}};',
 					],
 					'condition' => [
-	                	'ova_icon[value]!' => '',
+	                	'xp_icon[value]!' => '',
 	                ],
 				]
 			);
 
 			$this->add_control(
-				'ova_icon_hover_color',
+				'xp_icon_hover_color',
 				[
 					'label' 	=> esc_html__( 'Hover Color', 'spalisho' ),
 					'type' 		=> Controls_Manager::COLOR,
@@ -864,13 +864,13 @@ class Spalisho_Elementor_Toggle extends Widget_Toggle {
 						'{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title:hover .xp-icon svg' => 'fill: {{VALUE}};',
 					],
 					'condition' => [
-	                	'ova_icon[value]!' => '',
+	                	'xp_icon[value]!' => '',
 	                ],
 				]
 			);
 
 			$this->add_control(
-				'ova_icon_active_color',
+				'xp_icon_active_color',
 				[
 					'label' 	=> esc_html__( 'Active Color', 'spalisho' ),
 					'type' 		=> Controls_Manager::COLOR,
@@ -879,13 +879,13 @@ class Spalisho_Elementor_Toggle extends Widget_Toggle {
 						'{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title.elementor-active .xp-icon svg' => 'fill: {{VALUE}};',
 					],
 					'condition' => [
-	                	'ova_icon[value]!' => '',
+	                	'xp_icon[value]!' => '',
 	                ],
 				]
 			);
 
 			$this->add_responsive_control(
-	            'ova_icon_padding',
+	            'xp_icon_padding',
 	            [
 	                'label'         => esc_html__( 'Padding', 'spalisho' ),
 	                'type'          => Controls_Manager::DIMENSIONS,
@@ -894,13 +894,13 @@ class Spalisho_Elementor_Toggle extends Widget_Toggle {
 	                    '{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title .xp-icon' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 	                ],
 	                'condition' 	=> [
-	                	'ova_icon[value]!' => '',
+	                	'xp_icon[value]!' => '',
 	                ],
 	            ]
 	        );
 
 	        $this->add_responsive_control(
-	            'ova_icon_margin',
+	            'xp_icon_margin',
 	            [
 	                'label'         => esc_html__( 'Margin', 'spalisho' ),
 	                'type'          => Controls_Manager::DIMENSIONS,
@@ -909,7 +909,7 @@ class Spalisho_Elementor_Toggle extends Widget_Toggle {
 	                    '{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title .xp-icon' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 	                ],
 	                'condition' 	=> [
-	                	'ova_icon[value]!' => '',
+	                	'xp_icon[value]!' => '',
 	                ],
 	            ]
 	        );
@@ -1103,7 +1103,7 @@ class Spalisho_Elementor_Toggle extends Widget_Toggle {
 		$this->add_group_control(
             Group_Control_Border::get_type(),
             [
-                'name'      => 'ova_content_border',
+                'name'      => 'xp_content_border',
                 'label'     => esc_html__( 'Border', 'spalisho' ),
                 'selector'  => '{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-content',
                 'separator' => 'before',
@@ -1111,7 +1111,7 @@ class Spalisho_Elementor_Toggle extends Widget_Toggle {
         );
 
         $this->add_responsive_control(
-			'ova_content_border_radius',
+			'xp_content_border_radius',
 			[
 				'label' => esc_html__( 'Border Radius', 'spalisho' ),
 				'type' => Controls_Manager::DIMENSIONS,
@@ -1135,7 +1135,7 @@ class Spalisho_Elementor_Toggle extends Widget_Toggle {
 		);
 
 		$this->add_responsive_control(
-			'ova_content_margin',
+			'xp_content_margin',
 			[
 				'label' => esc_html__( 'Margin', 'spalisho' ),
 				'type' => Controls_Manager::DIMENSIONS,
@@ -1147,7 +1147,7 @@ class Spalisho_Elementor_Toggle extends Widget_Toggle {
 		);
 
 		$this->add_responsive_control(
-			'ova_content_margin_tags',
+			'xp_content_margin_tags',
 			[
 				'label' => esc_html__( 'Margin (p, h1... h6)', 'spalisho' ),
 				'type' => Controls_Manager::DIMENSIONS,
@@ -1193,8 +1193,8 @@ class Spalisho_Elementor_Toggle extends Widget_Toggle {
 		$is_new = empty( $settings['icon'] ) && Icons_Manager::is_migration_allowed();
 		$has_icon = ( ! $is_new || ! empty( $settings['selected_icon']['value'] ) );
 
-		$class_before_title = ( 'yes' == $settings['show_before_title'] ) ? ' ova-before-title' : '';
-		$class_boxes_icon 	= ( 'yes' == $settings['show_boxes_icon'] ) ? ' ova-boxes-icon' : '';
+		$class_before_title = ( 'yes' == $settings['show_before_title'] ) ? ' xp-before-title' : '';
+		$class_boxes_icon 	= ( 'yes' == $settings['show_boxes_icon'] ) ? ' xp-boxes-icon' : '';
 
 		?>
 		<div class="elementor-toggle" role="tablist">
@@ -1244,9 +1244,9 @@ class Spalisho_Elementor_Toggle extends Widget_Toggle {
 						</span>
 						<?php endif; ?>
 						<div class="xp-toggle-title">
-							<?php if ( $settings['ova_icon'] ): ?>
+							<?php if ( $settings['xp_icon'] ): ?>
 								<span class="xp-icon">
-									<i class="<?php echo esc_attr( $settings['ova_icon']['value'] ); ?>"></i>
+									<i class="<?php echo esc_attr( $settings['xp_icon']['value'] ); ?>"></i>
 								</span>
 							<?php endif; ?>
 							<a href="" class="elementor-toggle-title<?php echo esc_attr( $class_before_title ); ?>">
@@ -1332,7 +1332,7 @@ class Spalisho_Elementor_Toggle extends Widget_Toggle {
 						<{{{ titleHTMLTag }}} {{{ view.getRenderAttributeString( tabTitleKey ) }}}>
 							<# if ( settings.icon || settings.selected_icon ) { #>
 								<# if ( 'yes' == settings.show_boxes_icon ) { #>
-									<span class="elementor-toggle-icon elementor-toggle-icon-{{ settings.icon_align }} ova-boxes-icon" aria-hidden="true">
+									<span class="elementor-toggle-icon elementor-toggle-icon-{{ settings.icon_align }} xp-boxes-icon" aria-hidden="true">
 								<# } else { #>
 									<span class="elementor-toggle-icon elementor-toggle-icon-{{ settings.icon_align }}" aria-hidden="true">
 								<# } #>
@@ -1353,7 +1353,7 @@ class Spalisho_Elementor_Toggle extends Widget_Toggle {
 									</span>
 								<# } #>
 								<# if ( 'yes' == settings.show_before_title ) { #>
-									<a href="" class="elementor-toggle-title ova-before-title">{{{ item.tab_title }}}</a>
+									<a href="" class="elementor-toggle-title xp-before-title">{{{ item.tab_title }}}</a>
 								<# } else { #>
 									<a href="" class="elementor-toggle-title">{{{ item.tab_title }}}</a>
 								<# } #>

@@ -53,7 +53,7 @@ if( !class_exists('Spalisho_Hooks') ){
 			$global_header = get_theme_mod('global_header','default');
 
 			// Header in Metabox of Post, Page
-		    $meta_header = get_post_meta($current_id, 'ova_met_header_version', 'true');
+		    $meta_header = get_post_meta($current_id, 'xp_met_header_version', 'true');
 		  	
 		    // Header use in post,page
 		    if( $current_id != '' && $meta_header != 'global'  && $meta_header != '' ){
@@ -82,7 +82,7 @@ if( !class_exists('Spalisho_Hooks') ){
 
 				// Check WPML 
 				if( function_exists( 'icl_object_id' ) ){
-					$post_id_header = icl_object_id($post_id_header, 'ova_framework_hf_el', false);
+					$post_id_header = icl_object_id($post_id_header, 'xp_framework_hf_el', false);
 
 					if ( ! $post_id_header ) {
 						$post_id_header = spalisho_get_id_by_slug( $header_split[1] );
@@ -113,7 +113,7 @@ if( !class_exists('Spalisho_Hooks') ){
 			$global_footer = get_theme_mod('global_footer', 'default' );
 
 			// Footer in Metabox of Post, Page
-		    $meta_footer =  get_post_meta( $current_id, 'ova_met_footer_version', 'true' );
+		    $meta_footer =  get_post_meta( $current_id, 'xp_met_footer_version', 'true' );
 			
 		  	
 
@@ -144,7 +144,7 @@ if( !class_exists('Spalisho_Hooks') ){
 
 				// Check WPML 
 				if( function_exists( 'icl_object_id' ) ){
-					$post_id_footer = icl_object_id($post_id_footer, 'ova_framework_hf_el', false);
+					$post_id_footer = icl_object_id($post_id_footer, 'xp_framework_hf_el', false);
 
 					if ( ! $post_id_footer ) {
 						$post_id_footer = spalisho_get_id_by_slug( $footer_split[1] );
@@ -169,7 +169,7 @@ if( !class_exists('Spalisho_Hooks') ){
 		    if ( ! spalisho_is_elementor_active() ) return $hf_header_array;
 
 		    $args_hf = array(
-		        'post_type' 		=> 'ova_framework_hf_el',
+		        'post_type' 		=> 'xp_framework_hf_el',
 		        'post_status'   	=> 'publish',
 		        'posts_per_page' 	=> '-1',
 		        'meta_query' 		=> array(
@@ -185,7 +185,7 @@ if( !class_exists('Spalisho_Hooks') ){
 
 		    foreach ( $hf as $post ) {
 		    	setup_postdata( $post );
-		    	$hf_header_array[ 'ova,'.$post->post_name ] = get_the_title( $post->ID );
+		    	$hf_header_array[ 'xp,'.$post->post_name ] = get_the_title( $post->ID );
 		    }
 
 		    wp_reset_postdata();
@@ -199,7 +199,7 @@ if( !class_exists('Spalisho_Hooks') ){
 		    if ( ! spalisho_is_elementor_active() ) return $hf_footer_array;
 
 		    $args_hf = array(
-		        'post_type' 		=> 'ova_framework_hf_el',
+		        'post_type' 		=> 'xp_framework_hf_el',
 		        'post_status'   	=> 'publish',
 		        'posts_per_page' 	=> '-1',
 		        'meta_query' 		=> array(
@@ -215,7 +215,7 @@ if( !class_exists('Spalisho_Hooks') ){
 
 		    foreach ( $hf as $post ) {
 		    	setup_postdata( $post );
-		    	$hf_footer_array[ 'ova,'.$post->post_name ] = get_the_title( $post->ID );
+		    	$hf_footer_array[ 'xp,'.$post->post_name ] = get_the_title( $post->ID );
 		    }
 
 		    wp_reset_postdata();
@@ -264,7 +264,7 @@ if( !class_exists('Spalisho_Hooks') ){
 
 			if( $current_id ){
 
-			    $layout_in_post = get_post_meta( $current_id, 'ova_met_main_layout', true );
+			    $layout_in_post = get_post_meta( $current_id, 'xp_met_main_layout', true );
 
 			    if( $layout_in_post != 'global' && $layout_in_post != '' ){
 			    	$layout = $layout_in_post;
@@ -275,7 +275,7 @@ if( !class_exists('Spalisho_Hooks') ){
 			// Check if page is posts (settings >> reading >> posts page)
 			if( get_option( 'page_for_posts' ) == $current_id ){
 				
-				$layout_in_post = get_post_meta( $current_id, 'ova_met_main_layout', true );
+				$layout_in_post = get_post_meta( $current_id, 'xp_met_main_layout', true );
 
 				if( $layout_in_post == 'global' ){
 					$layout = get_theme_mod( 'blog_layout', 'layout_2r' );
@@ -319,7 +319,7 @@ if( !class_exists('Spalisho_Hooks') ){
 
 		function spalisho_wide_site(){
 			$current_id = spalisho_get_current_id();
-			$width_site = get_post_meta( $current_id, 'ova_met_wide_site', true );
+			$width_site = get_post_meta( $current_id, 'xp_met_wide_site', true );
 
 			if( $current_id && $width_site != 'global' ){
 			    $width = $width_site;

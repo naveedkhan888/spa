@@ -65,7 +65,7 @@ class Spalisho_Elementor_Toggle_Content extends Widget_Base {
 					'label' => esc_html__( 'Icon', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::ICONS,
 					'default' 	=> [
-						'value' 	=> 'ovaicon-menu-1',
+						'value' 	=> 'xpicon-menu-1',
 						'library' 	=> 'all',
 					],
 				]
@@ -254,8 +254,8 @@ class Spalisho_Elementor_Toggle_Content extends Widget_Base {
 							],
 							[
 								'contact_icon' => [
-									'value'    => 'ovaicon ovaicon-placeholder',
-									'library'  => 'ovaicon',
+									'value'    => 'xpicon xpicon-placeholder',
+									'library'  => 'xpicon',
 								],
 								'contact_label'  => '57 Main Street, 2nd Block, USA',
 								'contact_link'  => [
@@ -312,7 +312,7 @@ class Spalisho_Elementor_Toggle_Content extends Widget_Base {
 							],
 							[
 								'social_icon' => [
-									'value'    => 'ovaicon ovaicon-facebook-logo-1',
+									'value'    => 'xpicon xpicon-facebook-logo-1',
 									'library'  => 'all',
 								],
 								'social_link'  =>[
@@ -334,7 +334,7 @@ class Spalisho_Elementor_Toggle_Content extends Widget_Base {
 							],
 							[
 								'social_icon' => [
-									'value'    => 'ovaicon ovaicon-instagram',
+									'value'    => 'xpicon xpicon-instagram',
 									'library'  => 'all',
 								],
 								'social_link'  =>[

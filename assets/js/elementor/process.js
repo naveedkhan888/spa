@@ -11,7 +11,7 @@
 	      		var that = $(this);
 
 	      		if ( $(window).width() <= 1024 ) {
-	      			that.removeClass('ova-invisible')
+	      			that.removeClass('xp-invisible')
 	      		} else {
 	      			that.appear(function(){
 		   				var data_animation = that.data('animation');
@@ -22,7 +22,7 @@
 		   					var delay 		= data_animation['delay'] ? data_animation['delay'] : 0;
 
 		   					setTimeout(function () {
-		   						that.removeClass('ova-invisible').addClass('animated').addClass(animation);
+		   						that.removeClass('xp-invisible').addClass('animated').addClass(animation);
 		   						if ( duration ) {
 		   							that.addClass(  'animated-' + duration );
 		   						}

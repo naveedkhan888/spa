@@ -17,7 +17,7 @@ class Spalisho_Elementor_Pricing extends Widget_Base {
 
 	
 	public function get_title() {
-		return esc_html__( 'Ova Pricing', 'spalisho' );
+		return esc_html__( 'Xp Pricing', 'spalisho' );
 	}
 
 	

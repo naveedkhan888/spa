@@ -47,14 +47,14 @@ class Spalisho_Google_Font_Select_Custom_Control extends WP_Customize_Control {
 				$this->fontCount = ( abs( (int) $this->input_attrs['font_count'] ) > 0 ? abs( (int) $this->input_attrs['font_count'] ) : 'all' );
 			}
 		}
-		$this->fontList = $this->ova_getGoogleFontsx( 'all' );
+		$this->fontList = $this->xp_getGoogleFontsx( 'all' );
 
-		$this->get_all_fonts = $this->ova_getGoogleFont( 'all' );
+		$this->get_all_fonts = $this->xp_getGoogleFont( 'all' );
 
 		// Decode the default json font value
 		$this->fontValues = json_decode( $this->value() );
 		// Find the index of our default font within our list of Google fonts
-		$this->fontListIndex = $this->Ova_getFontIndex( $this->fontList, $this->fontValues->font );
+		$this->fontListIndex = $this->Xp_getFontIndex( $this->fontList, $this->fontValues->font );
 
 	}
 
@@ -65,8 +65,8 @@ class Spalisho_Google_Font_Select_Custom_Control extends WP_Customize_Control {
 	 */
 	public function enqueue() {
 		
-		wp_enqueue_script( 'ova-custom-controls', SPALISHO_URI . '/customize/assets/customizer.js', array( 'jquery' ), '1.0', true );
-		wp_enqueue_style( 'ova-custom-controls', SPALISHO_URI . '/customize/assets/customizer.css', array(), '1.1', 'all' );
+		wp_enqueue_script( 'xp-custom-controls', SPALISHO_URI . '/customize/assets/customizer.js', array( 'jquery' ), '1.0', true );
+		wp_enqueue_style( 'xp-custom-controls', SPALISHO_URI . '/customize/assets/customizer.css', array(), '1.1', 'all' );
 		
 
 	}
@@ -75,7 +75,7 @@ class Spalisho_Google_Font_Select_Custom_Control extends WP_Customize_Control {
 	 */
 	public function to_json() {
 		parent::to_json();
-		$this->json['ovafontslist'] = $this->fontList;
+		$this->json['xpfontslist'] = $this->fontList;
 	}
 	/**
 	 * Render the control in the customizer
@@ -140,7 +140,7 @@ class Spalisho_Google_Font_Select_Custom_Control extends WP_Customize_Control {
 	/**
 	 * Find the index of the saved font in our multidimensional array of Google Fonts
 	 */
-	public function Ova_getFontIndex( $haystack, $needle ) {
+	public function Xp_getFontIndex( $haystack, $needle ) {
 		foreach( $haystack as $key => $value ) {
 			if( $value->family == $needle ) {
 				return $key;
@@ -152,7 +152,7 @@ class Spalisho_Google_Font_Select_Custom_Control extends WP_Customize_Control {
 	/**
 	 * Return the list of Google Fonts from our json file. Unless otherwise specfied, list will be limited to 30 fonts.
 	 */
-	public function ova_getGoogleFontsx( $count = 30 ) {
+	public function xp_getGoogleFontsx( $count = 30 ) {
 		// Google Fonts json generated from https://www.googleapis.com/webfonts/v1/webfonts?sort=popularity&key=YOUR-API-KEY
 		$fontFile = SPALISHO_URI . '/customize/custom-control/api/google-fonts-alphabetical.json';
 		if ( $this->fontOrderBy === 'popular' ) {
@@ -170,9 +170,9 @@ class Spalisho_Google_Font_Select_Custom_Control extends WP_Customize_Control {
 
 		$all_fonts = $content->items;
 
-        if( get_theme_mod('ova_custom_font','') != '' ){
+        if( get_theme_mod('xp_custom_font','') != '' ){
 
-        	$list_custom_font = explode( '|', get_theme_mod('ova_custom_font' ) );
+        	$list_custom_font = explode( '|', get_theme_mod('xp_custom_font' ) );
 
         	foreach ($list_custom_font as $key => $font) {
 
@@ -197,7 +197,7 @@ class Spalisho_Google_Font_Select_Custom_Control extends WP_Customize_Control {
 	}
 
 
-	public function ova_getGoogleFont( $count = 30 ) {
+	public function xp_getGoogleFont( $count = 30 ) {
 		// Google Fonts json generated from https://www.googleapis.com/webfonts/v1/webfonts?sort=popularity&key=YOUR-API-KEY
 		$fontFile = SPALISHO_URI . '/customize/custom-control/api/google-fonts-alphabetical.json';
 		if ( $this->fontOrderBy === 'popular' ) {
@@ -215,9 +215,9 @@ class Spalisho_Google_Font_Select_Custom_Control extends WP_Customize_Control {
 
 		$all_fonts = $content->items;
 
-        if( get_theme_mod('ova_custom_font','') != '' ){
+        if( get_theme_mod('xp_custom_font','') != '' ){
 
-        	$list_custom_font = explode( '|', get_theme_mod('ova_custom_font' ) );
+        	$list_custom_font = explode( '|', get_theme_mod('xp_custom_font' ) );
 
         	foreach ($list_custom_font as $key => $font) {
 

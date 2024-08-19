@@ -4,7 +4,7 @@
 
 	$(window).on('elementor/frontend/init', function () {
 		
-        elementorFrontend.hooks.addAction('frontend/element_ready/spalisho_elementor_ova_video.default', function(){
+        elementorFrontend.hooks.addAction('frontend/element_ready/spalisho_elementor_xp_video.default', function(){
 	       
 	        $('.xp-video').each( function() {
 	        	var that = $(this);
@@ -39,9 +39,9 @@
 	        	});
 
 	        	// trigger click btn video ( text path video )
-	        	$("[data-link-url='#ova_video_play']").css('cursor','pointer');
+	        	$("[data-link-url='#xp_video_play']").css('cursor','pointer');
 
-	        	$("[data-link-url='#ova_video_play']").on( "click", function() {
+	        	$("[data-link-url='#xp_video_play']").on( "click", function() {
 				  	video_active.trigger( "click" );
 				} );
  

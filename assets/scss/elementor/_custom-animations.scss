@@ -1,11 +1,11 @@
 /* Custom Animation */
 
 .xp-move-up {
-  animation-name: ovaMoveUp;
-  -moz-animation-name: ovaMoveUp;
-  -webkit-animation-name: ovaMoveUp; }
+  animation-name: xpMoveUp;
+  -moz-animation-name: xpMoveUp;
+  -webkit-animation-name: xpMoveUp; }
 
-@-webkit-keyframes ovaMoveUp {
+@-webkit-keyframes xpMoveUp {
   from {
     -webkit-transform: translateY(100px);
     -ms-transform: translateY(100px);
@@ -17,7 +17,7 @@
     -ms-transform: translateY(0);
     transform: translateY(0); } }
 
-@-moz-keyframes ovaMoveUp {
+@-moz-keyframes xpMoveUp {
   from {
     -webkit-transform: translateY(100px);
     -ms-transform: translateY(100px);
@@ -29,7 +29,7 @@
     -ms-transform: translateY(0);
     transform: translateY(0); } }
 
-@-ms-keyframes ovaMoveUp {
+@-ms-keyframes xpMoveUp {
   from {
     -webkit-transform: translateY(100px);
     -ms-transform: translateY(100px);
@@ -41,7 +41,7 @@
     -ms-transform: translateY(0);
     transform: translateY(0); } }
 
-@keyframes ovaMoveUp {
+@keyframes xpMoveUp {
   from {
     -webkit-transform: translateY(100px);
     -ms-transform: translateY(100px);
@@ -54,11 +54,11 @@
     transform: translateY(0); } }
 
 .xp-move-down {
-  animation-name: ovaMoveDown;
-  -moz-animation-name: ovaMoveDown;
-  -webkit-animation-name: ovaMoveDown; }
+  animation-name: xpMoveDown;
+  -moz-animation-name: xpMoveDown;
+  -webkit-animation-name: xpMoveDown; }
 
-@-webkit-keyframes ovaMoveDown {
+@-webkit-keyframes xpMoveDown {
   from {
     -webkit-transform: translateY(-100px);
     -ms-transform: translateY(-100px);
@@ -70,7 +70,7 @@
     -ms-transform: translateY(0);
     transform: translateY(0); } }
 
-@-moz-keyframes ovaMoveDown {
+@-moz-keyframes xpMoveDown {
   from {
     -webkit-transform: translateY(-100px);
     -ms-transform: translateY(-100px);
@@ -82,7 +82,7 @@
     -ms-transform: translateY(0);
     transform: translateY(0); } }
 
-@-ms-keyframes ovaMoveDown {
+@-ms-keyframes xpMoveDown {
   from {
     -webkit-transform: translateY(-100px);
     -ms-transform: translateY(-100px);
@@ -94,7 +94,7 @@
     -ms-transform: translateY(0);
     transform: translateY(0); } }
 
-@keyframes ovaMoveDown {
+@keyframes xpMoveDown {
   from {
     -webkit-transform: translateY(-100px);
     -ms-transform: translateY(-100px);
@@ -107,11 +107,11 @@
     transform: translateY(0); } }
 
 .xp-move-left {
-  animation-name: ovaMoveLeft;
-  -moz-animation-name: ovaMoveLeft;
-  -webkit-animation-name: ovaMoveLeft; }
+  animation-name: xpMoveLeft;
+  -moz-animation-name: xpMoveLeft;
+  -webkit-animation-name: xpMoveLeft; }
 
-@-webkit-keyframes ovaMoveLeft {
+@-webkit-keyframes xpMoveLeft {
   from {
     -webkit-transform: translateX(100px);
     -ms-transform: translateX(100px);
@@ -123,7 +123,7 @@
     -ms-transform: translateX(0);
     transform: translateX(0); } }
 
-@-moz-keyframes ovaMoveLeft {
+@-moz-keyframes xpMoveLeft {
   from {
     -webkit-transform: translateX(100px);
     -ms-transform: translateX(100px);
@@ -135,7 +135,7 @@
     -ms-transform: translateX(0);
     transform: translateX(0); } }
 
-@-ms-keyframes ovaMoveLeft {
+@-ms-keyframes xpMoveLeft {
   from {
     -webkit-transform: translateX(100px);
     -ms-transform: translateX(100px);
@@ -147,7 +147,7 @@
     -ms-transform: translateX(0);
     transform: translateX(0); } }
 
-@keyframes ovaMoveLeft {
+@keyframes xpMoveLeft {
   from {
     -webkit-transform: translateX(100px);
     -ms-transform: translateX(100px);
@@ -160,11 +160,11 @@
     transform: translateX(0); } }
 
 .xp-move-right {
-  animation-name: ovaMoveRight;
-  -moz-animation-name: ovaMoveRight;
-  -webkit-animation-name: ovaMoveRight; }
+  animation-name: xpMoveRight;
+  -moz-animation-name: xpMoveRight;
+  -webkit-animation-name: xpMoveRight; }
 
-@-webkit-keyframes ovaMoveRight {
+@-webkit-keyframes xpMoveRight {
   from {
     -webkit-transform: translateX(-100px);
     -ms-transform: translateX(-100px);
@@ -176,7 +176,7 @@
     -ms-transform: translateX(0);
     transform: translateX(0); } }
 
-@-moz-keyframes ovaMoveRight {
+@-moz-keyframes xpMoveRight {
   from {
     -webkit-transform: translateX(-100px);
     -ms-transform: translateX(-100px);
@@ -188,7 +188,7 @@
     -ms-transform: translateX(0);
     transform: translateX(0); } }
 
-@-ms-keyframes ovaMoveRight {
+@-ms-keyframes xpMoveRight {
   from {
     -webkit-transform: translateX(-100px);
     -ms-transform: translateX(-100px);
@@ -200,7 +200,7 @@
     -ms-transform: translateX(0);
     transform: translateX(0); } }
 
-@keyframes ovaMoveRight {
+@keyframes xpMoveRight {
   from {
     -webkit-transform: translateX(-100px);
     -ms-transform: translateX(-100px);
@@ -213,11 +213,11 @@
     transform: translateX(0); } }
 
 .xp-scale-up {
-  animation-name: ovaScaleUp;
-  -moz-animation-name: ovaScaleUp;
-  -webkit-animation-name: ovaScaleUp; }
+  animation-name: xpScaleUp;
+  -moz-animation-name: xpScaleUp;
+  -webkit-animation-name: xpScaleUp; }
 
-@-webkit-keyframes ovaScaleUp {
+@-webkit-keyframes xpScaleUp {
   from {
     opacity: 0;
     -webkit-transform: scale(0.6);
@@ -229,7 +229,7 @@
     transform: scale(1);
     opacity: 1; } }
 
-@-moz-keyframes ovaScaleUp {
+@-moz-keyframes xpScaleUp {
   from {
     opacity: 0;
     -webkit-transform: scale(0.6);
@@ -241,7 +241,7 @@
     transform: scale(1);
     opacity: 1; } }
 
-@-ms-keyframes ovaScaleUp {
+@-ms-keyframes xpScaleUp {
   from {
     opacity: 0;
     -webkit-transform: scale(0.6);
@@ -253,7 +253,7 @@
     transform: scale(1);
     opacity: 1; } }
 
-@keyframes ovaScaleUp {
+@keyframes xpScaleUp {
   from {
     opacity: 0;
     -webkit-transform: scale(0.6);
@@ -266,11 +266,11 @@
     opacity: 1; } }
 
 .xp-flip {
-  animation-name: ovaFlip;
-  -moz-animation-name: ovaFlip;
-  -webkit-animation-name: ovaFlip; }
+  animation-name: xpFlip;
+  -moz-animation-name: xpFlip;
+  -webkit-animation-name: xpFlip; }
 
-@-webkit-keyframes ovaFlip {
+@-webkit-keyframes xpFlip {
   from {
     opacity: 0;
     -webkit-perspective: 1300px;
@@ -284,7 +284,7 @@
     transform: rotateX(0deg);
     opacity: 1; } }
 
-@-moz-keyframes ovaFlip {
+@-moz-keyframes xpFlip {
   from {
     opacity: 0;
     -webkit-perspective: 1300px;
@@ -298,7 +298,7 @@
     transform: rotateX(0deg);
     opacity: 1; } }
 
-@-ms-keyframes ovaFlip {
+@-ms-keyframes xpFlip {
   from {
     opacity: 0;
     -webkit-perspective: 1300px;
@@ -312,7 +312,7 @@
     transform: rotateX(0deg);
     opacity: 1; } }
 
-@keyframes ovaFlip {
+@keyframes xpFlip {
   from {
     opacity: 0;
     -webkit-perspective: 1300px;
@@ -327,11 +327,11 @@
     opacity: 1; } }
 
 .xp-helix {
-  animation-name: ovaHelix;
-  -moz-animation-name: ovaHelix;
-  -webkit-animation-name: ovaHelix; }
+  animation-name: xpHelix;
+  -moz-animation-name: xpHelix;
+  -webkit-animation-name: xpHelix; }
 
-@-webkit-keyframes ovaHelix {
+@-webkit-keyframes xpHelix {
   from {
     opacity: 0;
     -webkit-perspective: 1300px;
@@ -345,7 +345,7 @@
     transform: rotateY(0deg);
     opacity: 1; } }
 
-@-moz-keyframes ovaHelix {
+@-moz-keyframes xpHelix {
   from {
     opacity: 0;
     -webkit-perspective: 1300px;
@@ -359,7 +359,7 @@
     transform: rotateY(0deg);
     opacity: 1; } }
 
-@-ms-keyframes ovaHelix {
+@-ms-keyframes xpHelix {
   from {
     opacity: 0;
     -webkit-perspective: 1300px;
@@ -373,7 +373,7 @@
     transform: rotateY(0deg);
     opacity: 1; } }
 
-@keyframes ovaHelix {
+@keyframes xpHelix {
   from {
     opacity: 0;
     -webkit-perspective: 1300px;
@@ -388,11 +388,11 @@
     opacity: 1; } }
 
 .xp-popup {
-  animation: ovaPopup;
-  -moz-animation-name: ovaPopup;
-  -webkit-animation-name: ovaPopup; }
+  animation: xpPopup;
+  -moz-animation-name: xpPopup;
+  -webkit-animation-name: xpPopup; }
 
-@-webkit-keyframes ovaPopup {
+@-webkit-keyframes xpPopup {
   from {
     opacity: 0;
     -webkit-transform: scale(0.4);
@@ -413,7 +413,7 @@
     -webkit-transform: scale(1);
     opacity: 1; } }
 
-@-moz-keyframes ovaPopup {
+@-moz-keyframes xpPopup {
   from {
     opacity: 0;
     -webkit-transform: scale(0.4);
@@ -434,7 +434,7 @@
     -webkit-transform: scale(1);
     opacity: 1; } }
 
-@-ms-keyframes ovaPopup {
+@-ms-keyframes xpPopup {
   from {
     opacity: 0;
     -webkit-transform: scale(0.4);
@@ -455,7 +455,7 @@
     -webkit-transform: scale(1);
     opacity: 1; } }
 
-@keyframes ovaPopup {
+@keyframes xpPopup {
   from {
     opacity: 0;
     -webkit-transform: scale(0.4);

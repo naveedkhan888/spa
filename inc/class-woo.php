@@ -68,7 +68,7 @@ if( !class_exists('Spalisho_Woo') ){
         function spalisho_woocommerce_share_social_product(){
 
 			if( is_singular( 'product' ) ) {
-				apply_filters( 'ova_share_social', get_the_permalink(), get_the_title() );
+				apply_filters( 'xp_share_social', get_the_permalink(), get_the_title() );
 			}
 
 		}

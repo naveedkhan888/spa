@@ -91,7 +91,7 @@ class Spalisho_Elementor_Before_After extends Widget_Base {
 
 		?>
 
-			<div class='ova_before_after'>
+			<div class='xp_before_after'>
 
 				<div id="comparison">
 					<figure style="background-image: url(<?php echo esc_attr($settings['image_after']['url'])?>);">

@@ -218,14 +218,14 @@ class Spalisho_Elementor_Search_Popup extends Widget_Base {
 
 		?>
 			<div class="xp_wrap_search_popup">
-				<i class="xpicon ovaicon-search"></i>
+				<i class="xpicon xpicon-search"></i>
 				<div class="xp_search_popup">
 					<div class="search-popup__overlay"></div>
 					<div class="container">
 						<form role="search" method="get" class="search-form" action="<?php echo esc_url( home_url( '/' ) ) ; ?>">
 						        <input type="search" class="search-field" placeholder="<?php esc_attr_e( 'Search …', 'spalisho' ) ?>" value="<?php echo get_search_query() ?>" name="s" title="<?php esc_attr_e( 'Search for:', 'spalisho' ) ?>" />
 				   			 	<button type="submit" class="search-submit">
-				   			 		<i class="xpicon ovaicon-search"></i>
+				   			 		<i class="xpicon xpicon-search"></i>
 				   			 	</button>
 						</form>									
 					</div>

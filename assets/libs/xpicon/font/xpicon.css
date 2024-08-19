@@ -1,14 +1,14 @@
 @font-face {
     font-family: "xpicon";
-    src: url("./ovaicon.ttf?6ca22e33a1539df94eb08a25c1c3a8e3") format("truetype"),
-url("./ovaicon.woff?6ca22e33a1539df94eb08a25c1c3a8e3") format("woff"),
-url("./ovaicon.woff2?6ca22e33a1539df94eb08a25c1c3a8e3") format("woff2"),
-url("./ovaicon.eot?6ca22e33a1539df94eb08a25c1c3a8e3#iefix") format("embedded-opentype"),
-url("./ovaicon.svg?6ca22e33a1539df94eb08a25c1c3a8e3#ovaicon") format("svg");
+    src: url("./xpicon.ttf?6ca22e33a1539df94eb08a25c1c3a8e3") format("truetype"),
+url("./xpicon.woff?6ca22e33a1539df94eb08a25c1c3a8e3") format("woff"),
+url("./xpicon.woff2?6ca22e33a1539df94eb08a25c1c3a8e3") format("woff2"),
+url("./xpicon.eot?6ca22e33a1539df94eb08a25c1c3a8e3#iefix") format("embedded-opentype"),
+url("./xpicon.svg?6ca22e33a1539df94eb08a25c1c3a8e3#xpicon") format("svg");
 }
 
-[class^="xpicon-"]:before, [class*=" ovaicon-"]:before {
-    font-family: ovaicon !important;
+[class^="xpicon-"]:before, [class*=" xpicon-"]:before {
+    font-family: xpicon !important;
     font-style: normal;
     font-weight: normal !important;
     font-variant: normal;

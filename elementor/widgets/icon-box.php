@@ -15,7 +15,7 @@ class Spalisho_Elementor_Icon_Box extends Widget_Base {
 	}
 
 	public function get_title() {
-		return esc_html__( 'Ova Icon Box', 'spalisho' );
+		return esc_html__( 'Xp Icon Box', 'spalisho' );
 	}
 
 	public function get_icon() {

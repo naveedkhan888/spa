@@ -68,8 +68,8 @@
                     smartSpeed: owlsl_ops.smartSpeed,
                     rtl: owlsl_ops.rtl,
                     navText:[
-                    '<i class="xpicon ovaicon-back" ></i>',
-                    '<i class="xpicon ovaicon-next" ></i>'
+                    '<i class="xpicon xpicon-back" ></i>',
+                    '<i class="xpicon xpicon-next" ></i>'
                     ],
                     responsive: responsive_value,
                 });

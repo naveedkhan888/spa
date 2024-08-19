@@ -16,7 +16,7 @@ class Spalisho_Elementor_Team_2 extends Widget_Base {
 	}
 
 	public function get_title() {
-		return esc_html__( 'Ova Team 2', 'spalisho' );
+		return esc_html__( 'Xp Team 2', 'spalisho' );
 	}
 
 	public function get_icon() {
@@ -100,7 +100,7 @@ class Spalisho_Elementor_Team_2 extends Widget_Base {
 				[
 					'label' 	=> esc_html__( 'Class Icon', 'spalisho' ),
 					'type' 		=> Controls_Manager::TEXT,
-					'default' 	=>  esc_html__( 'ovaicon-twitter', 'spalisho' ),
+					'default' 	=>  esc_html__( 'xpicon-twitter', 'spalisho' ),
 					
 				]
 			);
@@ -136,17 +136,17 @@ class Spalisho_Elementor_Team_2 extends Widget_Base {
 					'default' 	=> [
 						[	
 							'list_title_icon' 	=> esc_html__( 'Twitter', 'spalisho' ),
-							'class_icon' 		=> esc_html__( 'ovaicon-twitter', 'spalisho' ),
+							'class_icon' 		=> esc_html__( 'xpicon-twitter', 'spalisho' ),
 							'link' 				=> ['url' => '#'],
 						],
 						[	
 							'list_title_icon' 	=> esc_html__( 'Facebook', 'spalisho' ),
-							'class_icon' 		=> esc_html__( 'ovaicon ovaicon-facebook-logo', 'spalisho' ),
+							'class_icon' 		=> esc_html__( 'xpicon xpicon-facebook-logo', 'spalisho' ),
 							'link' 				=> ['url' => '#'],
 						],
 						[	
 							'list_title_icon' 	=> esc_html__( 'Instagram', 'spalisho' ),
-							'class_icon' 		=> esc_html__( 'ovaicon ovaicon-instagram-1', 'spalisho' ),
+							'class_icon' 		=> esc_html__( 'xpicon xpicon-instagram-1', 'spalisho' ),
 							'link' 				=> ['url' => '#'],
 						],
 	

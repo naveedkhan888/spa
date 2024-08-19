@@ -11,15 +11,15 @@ if (!class_exists( 'Spalisho_Customize' )){
 	    public function spalisho_customize_register($wp_customize) {
 	        
 	        $this->spalisho_init_remove_setting( $wp_customize );
-	        $this->spalisho_init_ova_typography( $wp_customize );
-	        $this->spalisho_init_ova_color( $wp_customize );
-	        $this->spalisho_init_ova_layout( $wp_customize );
-	        $this->spalisho_init_ova_header( $wp_customize );
-	        $this->spalisho_init_ova_footer( $wp_customize );
-	        $this->spalisho_init_ova_blog( $wp_customize );
+	        $this->spalisho_init_xp_typography( $wp_customize );
+	        $this->spalisho_init_xp_color( $wp_customize );
+	        $this->spalisho_init_xp_layout( $wp_customize );
+	        $this->spalisho_init_xp_header( $wp_customize );
+	        $this->spalisho_init_xp_footer( $wp_customize );
+	        $this->spalisho_init_xp_blog( $wp_customize );
 	        
 	        if( spalisho_is_woo_active() ){
-	        	$this->spalisho_init_ova_woo( $wp_customize );	
+	        	$this->spalisho_init_xp_woo( $wp_customize );	
 	        }
 	   
 	        do_action( 'spalisho_customize_register', $wp_customize );
@@ -47,7 +47,7 @@ if (!class_exists( 'Spalisho_Customize' )){
 	    }
 	    
 	    /* Typo */
-	    public function spalisho_init_ova_typography($wp_customize){
+	    public function spalisho_init_xp_typography($wp_customize){
 
 	    		/* Body Pane ******************************/
 				$wp_customize->add_section( 'typo_general' , array(
@@ -242,7 +242,7 @@ if (!class_exists( 'Spalisho_Customize' )){
 						) )
 					);
 
-					$wp_customize->add_setting( 'ova_custom_font', array(
+					$wp_customize->add_setting( 'xp_custom_font', array(
 						'type' 				=> 'theme_mod', // or 'option'
 						'capability' 		=> 'edit_theme_options',
 						'theme_supports' 	=> '', // Rarely needed.
@@ -251,19 +251,19 @@ if (!class_exists( 'Spalisho_Customize' )){
 						'sanitize_callback' => 'sanitize_text_field' // Get function name 
 					) );
 
-					$wp_customize->add_control('ova_custom_font', array(
+					$wp_customize->add_control('xp_custom_font', array(
 						'label' 		=> esc_html__('Custom Font','spalisho'),
 						'description' 	=> esc_html__('Step 1: Insert font-face in style.css file: Refer https://www.w3schools.com/cssref/css3_pr_font-face_rule.asp. Step 2: Insert font-family and font-weight like format: 
 							["Perpetua", "Regular:Bold:Italic:Light"] | ["Name-Font", "Regular:Bold:Italic:Light"]. Step 3: Refresh customize page to display new font in dropdown font field.','spalisho'),
 						'section' 		=> 'typo_general',
-						'settings' 		=> 'ova_custom_font',
+						'settings' 		=> 'xp_custom_font',
 						'type' 			=>'textarea'
 					));
 	    }
 
 
 	     /* Color */
-	    public function spalisho_init_ova_color( $wp_customize ){
+	    public function spalisho_init_xp_color( $wp_customize ){
 
 	    	/* Body Pane ******************************/
 			$wp_customize->add_section( 'color_section' , array(
@@ -354,7 +354,7 @@ if (!class_exists( 'Spalisho_Customize' )){
 
 
 	    /* Layout */
-	    public function spalisho_init_ova_layout( $wp_customize ){
+	    public function spalisho_init_xp_layout( $wp_customize ){
 
 	    	$wp_customize->add_section( 'layout_section' , array(
 			    'title'      => esc_html__( 'Layout', 'spalisho' ),
@@ -444,7 +444,7 @@ if (!class_exists( 'Spalisho_Customize' )){
 	    }
 
 	    /* Header */
-	    public function spalisho_init_ova_header( $wp_customize ){
+	    public function spalisho_init_xp_header( $wp_customize ){
 
 	    	$wp_customize->add_section( 'header_section' , array(
 			    'title'      => esc_html__( 'Header', 'spalisho' ),
@@ -470,7 +470,7 @@ if (!class_exists( 'Spalisho_Customize' )){
 	    }
 
 	    /* Footer */
-	    public function spalisho_init_ova_footer( $wp_customize ){
+	    public function spalisho_init_xp_footer( $wp_customize ){
 
 	    	$wp_customize->add_section( 'footer_section' , array(
 			    'title'      => esc_html__( 'Footer', 'spalisho' ),
@@ -497,7 +497,7 @@ if (!class_exists( 'Spalisho_Customize' )){
 
 
 	    /* Blog */
-	    public function spalisho_init_ova_blog( $wp_customize ){
+	    public function spalisho_init_xp_blog( $wp_customize ){
 
 	    	$wp_customize->add_panel( 'blog_panel', array(
 			    'title'		=> esc_html__( 'Blog', 'spalisho' ),
@@ -937,7 +937,7 @@ if (!class_exists( 'Spalisho_Customize' )){
 					));
 	    }
 
-	    public function spalisho_init_ova_woo( $wp_customize ){
+	    public function spalisho_init_xp_woo( $wp_customize ){
 
 			$wp_customize->add_setting( 'woo_archive_layout', array(
 				'type'              => 'theme_mod', // or 'option'

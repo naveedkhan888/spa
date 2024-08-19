@@ -12,35 +12,35 @@
     &.direction-ltr {
     	direction: rtl;
     	.content-wrapper {
-			animation: ova_scroll_ltr 20s linear infinite;
+			animation: xp_scroll_ltr 20s linear infinite;
 			animation-delay: -20s;
 		}
 
 		.content-wrapper-2 {
-			animation: ova_scroll2_ltr 20s linear infinite;
+			animation: xp_scroll2_ltr 20s linear infinite;
 			animation-delay: -10s;
 		}
 
 		&.duration-slow{
 			.content-wrapper {
-				animation: ova_scroll_ltr 30s linear infinite;
+				animation: xp_scroll_ltr 30s linear infinite;
 				animation-delay: -30s;
 			}
 
 			.content-wrapper-2 {
-				animation: ova_scroll2_ltr 30s linear infinite;
+				animation: xp_scroll2_ltr 30s linear infinite;
 				animation-delay: -15s;
 			}
 		}
 
 		&.duration-fast{
 			.content-wrapper {
-				animation: ova_scroll_ltr 10s linear infinite;
+				animation: xp_scroll_ltr 10s linear infinite;
 				animation-delay: -10s;
 			}
 
 			.content-wrapper-2 {
-				animation: ova_scroll2_ltr 10s linear infinite;
+				animation: xp_scroll2_ltr 10s linear infinite;
 				animation-delay: -5s;
 			}
 		}
@@ -74,7 +74,7 @@
 	}
 
 	.content-wrapper {
-		animation: ova_scroll 20s linear infinite;
+		animation: xp_scroll 20s linear infinite;
 		animation-delay: -20s;
 	}
 
@@ -86,37 +86,37 @@
 	}
 
 	.content-wrapper-2 {
-		animation: ova_scroll2 20s linear infinite;
+		animation: xp_scroll2 20s linear infinite;
 		animation-delay: -10s;
 	}
 
 	&.duration-slow{
 		.content-wrapper {
-			animation: ova_scroll 30s linear infinite;
+			animation: xp_scroll 30s linear infinite;
 			animation-delay: -30s;
 		}
 
 		.content-wrapper-2 {
-			animation: ova_scroll2 30s linear infinite;
+			animation: xp_scroll2 30s linear infinite;
 			animation-delay: -15s;
 		}
 	}
 
 	&.duration-fast{
 		.content-wrapper {
-			animation: ova_scroll 10s linear infinite;
+			animation: xp_scroll 10s linear infinite;
 			animation-delay: -10s;
 		}
 
 		.content-wrapper-2 {
-			animation: ova_scroll2 10s linear infinite;
+			animation: xp_scroll2 10s linear infinite;
 			animation-delay: -5s;
 		}
 	}
 }
 
 
-@keyframes ova_scroll {
+@keyframes xp_scroll {
     0% {
       	transform: translateX(100%);
     }
@@ -125,7 +125,7 @@
     }
 }
 
-@keyframes ova_scroll2 {
+@keyframes xp_scroll2 {
     0% {
       transform: translateX(0);
     }
@@ -134,7 +134,7 @@
     }
 }
 
-@keyframes ova_scroll_ltr {
+@keyframes xp_scroll_ltr {
     0% {
       	transform: translateX(-100%);
     }
@@ -143,7 +143,7 @@
     }
 }
 
-@keyframes ova_scroll2_ltr {
+@keyframes xp_scroll2_ltr {
     0% {
       transform: translateX(0);
     }

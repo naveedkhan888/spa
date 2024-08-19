@@ -17,7 +17,7 @@ class Spalisho_Elementor_Team extends Widget_Base {
 
 	
 	public function get_title() {
-		return esc_html__( 'Ova Team', 'spalisho' );
+		return esc_html__( 'Xp Team', 'spalisho' );
 	}
 
 	
@@ -75,7 +75,7 @@ class Spalisho_Elementor_Team extends Widget_Base {
 
 				// Add Class control
 				$repeater->add_control(
-					'ova_team_image',
+					'xp_team_image',
 					[
 						'label' => esc_html__( 'Choose Image', 'spalisho' ),
 						'type' => \Elementor\Controls_Manager::MEDIA,
@@ -87,7 +87,7 @@ class Spalisho_Elementor_Team extends Widget_Base {
 
 				// Name
 				$repeater->add_control(
-					'ova_team_name',
+					'xp_team_name',
 					[
 						'label' => esc_html__( 'Name', 'spalisho' ),
 						'type' => Controls_Manager::TEXT,
@@ -98,7 +98,7 @@ class Spalisho_Elementor_Team extends Widget_Base {
 
 				// job
 				$repeater->add_control(
-					'ova_team_job',
+					'xp_team_job',
 					[
 						'label' => esc_html__( 'Job', 'spalisho' ),
 						'type' => Controls_Manager::TEXT,
@@ -108,19 +108,19 @@ class Spalisho_Elementor_Team extends Widget_Base {
 				);
 
 				$repeater->add_control(
-					'ova_team_class_icon_1',
+					'xp_team_class_icon_1',
 					[
 						'label' => esc_html__( 'Icon 1', 'spalisho' ),
 						'type' => \Elementor\Controls_Manager::ICONS,
 						'default' 	=> [
-							'value' 	=> 'ovaicon ovaicon-twitter',
+							'value' 	=> 'xpicon xpicon-twitter',
 							'library' 	=> 'all',
 						],
 					]
 				);
 
 				$repeater->add_control(
-					'ova_team_link_icon_1',
+					'xp_team_link_icon_1',
 					[
 						'label'   => esc_html__( 'Link Icon 1', 'spalisho' ),
 						'type'    => \Elementor\Controls_Manager::TEXT,
@@ -129,19 +129,19 @@ class Spalisho_Elementor_Team extends Widget_Base {
 				);
 
 				$repeater->add_control(
-					'ova_team_class_icon_2',
+					'xp_team_class_icon_2',
 					[
 						'label' => esc_html__( 'Icon 2', 'spalisho' ),
 						'type' => \Elementor\Controls_Manager::ICONS,
 						'default' 	=> [
-							'value' 	=> 'ovaicon ovaicon-facebook-logo',
+							'value' 	=> 'xpicon xpicon-facebook-logo',
 							'library' 	=> 'all',
 						],
 					]
 				);
 
 				$repeater->add_control(
-					'ova_team_link_icon_2',
+					'xp_team_link_icon_2',
 					[
 						'label'   => esc_html__( 'Link Icon 2', 'spalisho' ),
 						'type'    => \Elementor\Controls_Manager::TEXT,
@@ -150,19 +150,19 @@ class Spalisho_Elementor_Team extends Widget_Base {
 				);
 
 				$repeater->add_control(
-					'ova_team_class_icon_3',
+					'xp_team_class_icon_3',
 					[
 						'label' => esc_html__( 'Icon 3', 'spalisho' ),
 						'type' => \Elementor\Controls_Manager::ICONS,
 						'default' 	=> [
-							'value' 	=> 'ovaicon ovaicon-instagram-1',
+							'value' 	=> 'xpicon xpicon-instagram-1',
 							'library' 	=> 'all',
 						],
 					]
 				);
 
 				$repeater->add_control(
-					'ova_team_link_icon_3',
+					'xp_team_link_icon_3',
 					[
 						'label'   => esc_html__( 'Link Icon 3', 'spalisho' ),
 						'type'    => \Elementor\Controls_Manager::TEXT,
@@ -171,7 +171,7 @@ class Spalisho_Elementor_Team extends Widget_Base {
 				);
 
 				$repeater->add_control(
-					'ova_team_class_icon_4',
+					'xp_team_class_icon_4',
 					[
 						'label' => esc_html__( 'Icon 4', 'spalisho' ),
 						'type' => \Elementor\Controls_Manager::ICONS,
@@ -183,7 +183,7 @@ class Spalisho_Elementor_Team extends Widget_Base {
 				);
 
 				$repeater->add_control(
-					'ova_team_link_icon_4',
+					'xp_team_link_icon_4',
 					[
 						'label'   => esc_html__( 'Link Icon 4', 'spalisho' ),
 						'type'    => \Elementor\Controls_Manager::TEXT,
@@ -199,16 +199,16 @@ class Spalisho_Elementor_Team extends Widget_Base {
 					'fields' => $repeater->get_controls(),
 					'default' => [
 						[
-							'ova_team_name'	=> 	esc_html__( 'Aleesha Brown', 'spalisho' ),
-							'ova_team_job'	=> 	esc_html__( 'THERAPIST', 'spalisho' ),
+							'xp_team_name'	=> 	esc_html__( 'Aleesha Brown', 'spalisho' ),
+							'xp_team_job'	=> 	esc_html__( 'THERAPIST', 'spalisho' ),
 						],
 						[
-							'ova_team_name'	=> 	esc_html__( 'David Cooper', 'spalisho' ),
-							'ova_team_job'	=> 	esc_html__( 'THERAPIST', 'spalisho' ),		
+							'xp_team_name'	=> 	esc_html__( 'David Cooper', 'spalisho' ),
+							'xp_team_job'	=> 	esc_html__( 'THERAPIST', 'spalisho' ),		
 						],
 						[
-							'ova_team_name'	=> 	esc_html__( 'Jessica Rose', 'spalisho' ),
-							'ova_team_job'	=> 	esc_html__( 'THERAPIST', 'spalisho' ),		
+							'xp_team_name'	=> 	esc_html__( 'Jessica Rose', 'spalisho' ),
+							'xp_team_job'	=> 	esc_html__( 'THERAPIST', 'spalisho' ),		
 						],
 					],
 				]
@@ -565,29 +565,29 @@ class Spalisho_Elementor_Team extends Widget_Base {
 
 		<div class="xp-team">
 
-			<div class="xp-team-box ova-team-box-<?php echo esc_attr($template); ?> ova-<?php echo esc_html( $columns ); ?>">
+			<div class="xp-team-box xp-team-box-<?php echo esc_attr($template); ?> xp-<?php echo esc_html( $columns ); ?>">
 
 				<?php foreach( $list as $item ):
 
-					$image_url 		= $item['ova_team_image']['url'];
-					$ova_team_name	= $item['ova_team_name'];
+					$image_url 		= $item['xp_team_image']['url'];
+					$xp_team_name	= $item['xp_team_name'];
 
-					$icon_1 		= $item['ova_team_class_icon_1'];
-					$link_1 		= $item['ova_team_link_icon_1'] ;
+					$icon_1 		= $item['xp_team_class_icon_1'];
+					$link_1 		= $item['xp_team_link_icon_1'] ;
 
-					$icon_2 		= $item['ova_team_class_icon_2'];
-					$link_2 		= $item['ova_team_link_icon_2'] ;
+					$icon_2 		= $item['xp_team_class_icon_2'];
+					$link_2 		= $item['xp_team_link_icon_2'] ;
 
-					$icon_3 		= $item['ova_team_class_icon_3'];
-					$link_3 		= $item['ova_team_link_icon_3'] ;
+					$icon_3 		= $item['xp_team_class_icon_3'];
+					$link_3 		= $item['xp_team_link_icon_3'] ;
 
-					$icon_4 		= $item['ova_team_class_icon_4'];
-					$link_4 		= $item['ova_team_link_icon_4'] ;
+					$icon_4 		= $item['xp_team_class_icon_4'];
+					$link_4 		= $item['xp_team_link_icon_4'] ;
 				?>
 
 					<div class="item">
 						<div class="img">
-							<img src="<?php echo esc_url( $image_url ); ?>" alt="<?php echo esc_html( $ova_team_name );  ?>">
+							<img src="<?php echo esc_url( $image_url ); ?>" alt="<?php echo esc_html( $xp_team_name );  ?>">
 							
 							<?php if( $template == 'template_2' ) { ?>
 								<div class="share-button">
@@ -659,8 +659,8 @@ class Spalisho_Elementor_Team extends Widget_Base {
 						</div>
 						
 						<div class="info">
-							<h3 class="name"><?php echo esc_html( $item['ova_team_name'] ); ?></h3>
-							<p class="job"><?php echo esc_html($item['ova_team_job'] ); ?></p>
+							<h3 class="name"><?php echo esc_html( $item['xp_team_name'] ); ?></h3>
+							<p class="job"><?php echo esc_html($item['xp_team_job'] ); ?></p>
 						</div>
 					</div>
 

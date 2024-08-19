@@ -15,7 +15,7 @@ class Spalisho_Elementor_Testimonial_3 extends Widget_Base {
 	}
 
 	public function get_title() {
-		return esc_html__( 'Ova Testimonial 3', 'spalisho' );
+		return esc_html__( 'Xp Testimonial 3', 'spalisho' );
 	}
 
 	public function get_icon() {
@@ -695,7 +695,7 @@ class Spalisho_Elementor_Testimonial_3 extends Widget_Base {
 
 	?>
 
-		<section class="xp-testimonial-3 ova-testimonial-3-<?php echo esc_attr( $template ); ?>">
+		<section class="xp-testimonial-3 xp-testimonial-3-<?php echo esc_attr( $template ); ?>">
 
 			<div class="slide-testimonials-3 owl-carousel owl-theme " data-options="<?php echo esc_attr(json_encode($data_options)); ?>">
 

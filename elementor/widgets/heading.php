@@ -17,7 +17,7 @@ class Spalisho_Elementor_Heading extends Widget_Base {
 
 	
 	public function get_title() {
-		return esc_html__( 'Ova Heading', 'spalisho' );
+		return esc_html__( 'Xp Heading', 'spalisho' );
 	}
 
 	

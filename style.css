@@ -4700,7 +4700,7 @@ body.woocommerce #woo_sidebar {
 }
 
 @media (max-width: 1023px) {
-  .elementor-widget-ova_menu .primary-navigation {
+  .elementor-widget-xp_menu .primary-navigation {
     position: absolute;
     left: 0;
     top: 0;
@@ -5372,12 +5372,12 @@ body.woocommerce #woo_sidebar {
 
 /* Custom Animation */
 .xp-move-up {
-  animation-name: ovaMoveUp;
-  -moz-animation-name: ovaMoveUp;
-  -webkit-animation-name: ovaMoveUp;
+  animation-name: xpMoveUp;
+  -moz-animation-name: xpMoveUp;
+  -webkit-animation-name: xpMoveUp;
 }
 
-@-webkit-keyframes ovaMoveUp {
+@-webkit-keyframes xpMoveUp {
   from {
     -webkit-transform: translateY(100px);
     -ms-transform: translateY(100px);
@@ -5391,7 +5391,7 @@ body.woocommerce #woo_sidebar {
     transform: translateY(0);
   }
 }
-@-moz-keyframes ovaMoveUp {
+@-moz-keyframes xpMoveUp {
   from {
     -webkit-transform: translateY(100px);
     -ms-transform: translateY(100px);
@@ -5405,7 +5405,7 @@ body.woocommerce #woo_sidebar {
     transform: translateY(0);
   }
 }
-@-ms-keyframes ovaMoveUp {
+@-ms-keyframes xpMoveUp {
   from {
     -webkit-transform: translateY(100px);
     -ms-transform: translateY(100px);
@@ -5419,7 +5419,7 @@ body.woocommerce #woo_sidebar {
     transform: translateY(0);
   }
 }
-@keyframes ovaMoveUp {
+@keyframes xpMoveUp {
   from {
     -webkit-transform: translateY(100px);
     -ms-transform: translateY(100px);
@@ -5434,12 +5434,12 @@ body.woocommerce #woo_sidebar {
   }
 }
 .xp-move-down {
-  animation-name: ovaMoveDown;
-  -moz-animation-name: ovaMoveDown;
-  -webkit-animation-name: ovaMoveDown;
+  animation-name: xpMoveDown;
+  -moz-animation-name: xpMoveDown;
+  -webkit-animation-name: xpMoveDown;
 }
 
-@-webkit-keyframes ovaMoveDown {
+@-webkit-keyframes xpMoveDown {
   from {
     -webkit-transform: translateY(-100px);
     -ms-transform: translateY(-100px);
@@ -5453,7 +5453,7 @@ body.woocommerce #woo_sidebar {
     transform: translateY(0);
   }
 }
-@-moz-keyframes ovaMoveDown {
+@-moz-keyframes xpMoveDown {
   from {
     -webkit-transform: translateY(-100px);
     -ms-transform: translateY(-100px);
@@ -5467,7 +5467,7 @@ body.woocommerce #woo_sidebar {
     transform: translateY(0);
   }
 }
-@-ms-keyframes ovaMoveDown {
+@-ms-keyframes xpMoveDown {
   from {
     -webkit-transform: translateY(-100px);
     -ms-transform: translateY(-100px);
@@ -5481,7 +5481,7 @@ body.woocommerce #woo_sidebar {
     transform: translateY(0);
   }
 }
-@keyframes ovaMoveDown {
+@keyframes xpMoveDown {
   from {
     -webkit-transform: translateY(-100px);
     -ms-transform: translateY(-100px);
@@ -5496,12 +5496,12 @@ body.woocommerce #woo_sidebar {
   }
 }
 .xp-move-left {
-  animation-name: ovaMoveLeft;
-  -moz-animation-name: ovaMoveLeft;
-  -webkit-animation-name: ovaMoveLeft;
+  animation-name: xpMoveLeft;
+  -moz-animation-name: xpMoveLeft;
+  -webkit-animation-name: xpMoveLeft;
 }
 
-@-webkit-keyframes ovaMoveLeft {
+@-webkit-keyframes xpMoveLeft {
   from {
     -webkit-transform: translateX(100px);
     -ms-transform: translateX(100px);
@@ -5515,7 +5515,7 @@ body.woocommerce #woo_sidebar {
     transform: translateX(0);
   }
 }
-@-moz-keyframes ovaMoveLeft {
+@-moz-keyframes xpMoveLeft {
   from {
     -webkit-transform: translateX(100px);
     -ms-transform: translateX(100px);
@@ -5529,7 +5529,7 @@ body.woocommerce #woo_sidebar {
     transform: translateX(0);
   }
 }
-@-ms-keyframes ovaMoveLeft {
+@-ms-keyframes xpMoveLeft {
   from {
     -webkit-transform: translateX(100px);
     -ms-transform: translateX(100px);
@@ -5543,7 +5543,7 @@ body.woocommerce #woo_sidebar {
     transform: translateX(0);
   }
 }
-@keyframes ovaMoveLeft {
+@keyframes xpMoveLeft {
   from {
     -webkit-transform: translateX(100px);
     -ms-transform: translateX(100px);
@@ -5558,12 +5558,12 @@ body.woocommerce #woo_sidebar {
   }
 }
 .xp-move-right {
-  animation-name: ovaMoveRight;
-  -moz-animation-name: ovaMoveRight;
-  -webkit-animation-name: ovaMoveRight;
+  animation-name: xpMoveRight;
+  -moz-animation-name: xpMoveRight;
+  -webkit-animation-name: xpMoveRight;
 }
 
-@-webkit-keyframes ovaMoveRight {
+@-webkit-keyframes xpMoveRight {
   from {
     -webkit-transform: translateX(-100px);
     -ms-transform: translateX(-100px);
@@ -5577,7 +5577,7 @@ body.woocommerce #woo_sidebar {
     transform: translateX(0);
   }
 }
-@-moz-keyframes ovaMoveRight {
+@-moz-keyframes xpMoveRight {
   from {
     -webkit-transform: translateX(-100px);
     -ms-transform: translateX(-100px);
@@ -5591,7 +5591,7 @@ body.woocommerce #woo_sidebar {
     transform: translateX(0);
   }
 }
-@-ms-keyframes ovaMoveRight {
+@-ms-keyframes xpMoveRight {
   from {
     -webkit-transform: translateX(-100px);
     -ms-transform: translateX(-100px);
@@ -5605,7 +5605,7 @@ body.woocommerce #woo_sidebar {
     transform: translateX(0);
   }
 }
-@keyframes ovaMoveRight {
+@keyframes xpMoveRight {
   from {
     -webkit-transform: translateX(-100px);
     -ms-transform: translateX(-100px);
@@ -5620,12 +5620,12 @@ body.woocommerce #woo_sidebar {
   }
 }
 .xp-scale-up {
-  animation-name: ovaScaleUp;
-  -moz-animation-name: ovaScaleUp;
-  -webkit-animation-name: ovaScaleUp;
+  animation-name: xpScaleUp;
+  -moz-animation-name: xpScaleUp;
+  -webkit-animation-name: xpScaleUp;
 }
 
-@-webkit-keyframes ovaScaleUp {
+@-webkit-keyframes xpScaleUp {
   from {
     opacity: 0;
     -webkit-transform: scale(0.6);
@@ -5639,7 +5639,7 @@ body.woocommerce #woo_sidebar {
     opacity: 1;
   }
 }
-@-moz-keyframes ovaScaleUp {
+@-moz-keyframes xpScaleUp {
   from {
     opacity: 0;
     -webkit-transform: scale(0.6);
@@ -5653,7 +5653,7 @@ body.woocommerce #woo_sidebar {
     opacity: 1;
   }
 }
-@-ms-keyframes ovaScaleUp {
+@-ms-keyframes xpScaleUp {
   from {
     opacity: 0;
     -webkit-transform: scale(0.6);
@@ -5667,7 +5667,7 @@ body.woocommerce #woo_sidebar {
     opacity: 1;
   }
 }
-@keyframes ovaScaleUp {
+@keyframes xpScaleUp {
   from {
     opacity: 0;
     -webkit-transform: scale(0.6);
@@ -5682,12 +5682,12 @@ body.woocommerce #woo_sidebar {
   }
 }
 .xp-flip {
-  animation-name: ovaFlip;
-  -moz-animation-name: ovaFlip;
-  -webkit-animation-name: ovaFlip;
+  animation-name: xpFlip;
+  -moz-animation-name: xpFlip;
+  -webkit-animation-name: xpFlip;
 }
 
-@-webkit-keyframes ovaFlip {
+@-webkit-keyframes xpFlip {
   from {
     opacity: 0;
     -webkit-perspective: 1300px;
@@ -5703,7 +5703,7 @@ body.woocommerce #woo_sidebar {
     opacity: 1;
   }
 }
-@-moz-keyframes ovaFlip {
+@-moz-keyframes xpFlip {
   from {
     opacity: 0;
     -webkit-perspective: 1300px;
@@ -5719,7 +5719,7 @@ body.woocommerce #woo_sidebar {
     opacity: 1;
   }
 }
-@-ms-keyframes ovaFlip {
+@-ms-keyframes xpFlip {
   from {
     opacity: 0;
     -webkit-perspective: 1300px;
@@ -5735,7 +5735,7 @@ body.woocommerce #woo_sidebar {
     opacity: 1;
   }
 }
-@keyframes ovaFlip {
+@keyframes xpFlip {
   from {
     opacity: 0;
     -webkit-perspective: 1300px;
@@ -5752,12 +5752,12 @@ body.woocommerce #woo_sidebar {
   }
 }
 .xp-helix {
-  animation-name: ovaHelix;
-  -moz-animation-name: ovaHelix;
-  -webkit-animation-name: ovaHelix;
+  animation-name: xpHelix;
+  -moz-animation-name: xpHelix;
+  -webkit-animation-name: xpHelix;
 }
 
-@-webkit-keyframes ovaHelix {
+@-webkit-keyframes xpHelix {
   from {
     opacity: 0;
     -webkit-perspective: 1300px;
@@ -5773,7 +5773,7 @@ body.woocommerce #woo_sidebar {
     opacity: 1;
   }
 }
-@-moz-keyframes ovaHelix {
+@-moz-keyframes xpHelix {
   from {
     opacity: 0;
     -webkit-perspective: 1300px;
@@ -5789,7 +5789,7 @@ body.woocommerce #woo_sidebar {
     opacity: 1;
   }
 }
-@-ms-keyframes ovaHelix {
+@-ms-keyframes xpHelix {
   from {
     opacity: 0;
     -webkit-perspective: 1300px;
@@ -5805,7 +5805,7 @@ body.woocommerce #woo_sidebar {
     opacity: 1;
   }
 }
-@keyframes ovaHelix {
+@keyframes xpHelix {
   from {
     opacity: 0;
     -webkit-perspective: 1300px;
@@ -5822,12 +5822,12 @@ body.woocommerce #woo_sidebar {
   }
 }
 .xp-popup {
-  animation: ovaPopup;
-  -moz-animation-name: ovaPopup;
-  -webkit-animation-name: ovaPopup;
+  animation: xpPopup;
+  -moz-animation-name: xpPopup;
+  -webkit-animation-name: xpPopup;
 }
 
-@-webkit-keyframes ovaPopup {
+@-webkit-keyframes xpPopup {
   from {
     opacity: 0;
     -webkit-transform: scale(0.4);
@@ -5851,7 +5851,7 @@ body.woocommerce #woo_sidebar {
     opacity: 1;
   }
 }
-@-moz-keyframes ovaPopup {
+@-moz-keyframes xpPopup {
   from {
     opacity: 0;
     -webkit-transform: scale(0.4);
@@ -5875,7 +5875,7 @@ body.woocommerce #woo_sidebar {
     opacity: 1;
   }
 }
-@-ms-keyframes ovaPopup {
+@-ms-keyframes xpPopup {
   from {
     opacity: 0;
     -webkit-transform: scale(0.4);
@@ -5899,7 +5899,7 @@ body.woocommerce #woo_sidebar {
     opacity: 1;
   }
 }
-@keyframes ovaPopup {
+@keyframes xpPopup {
   from {
     opacity: 0;
     -webkit-transform: scale(0.4);
@@ -5949,7 +5949,7 @@ body.woocommerce #woo_sidebar {
   font-size: 14px;
   float: right;
   content: "";
-  font-family: ovaicon !important;
+  font-family: xpicon !important;
   font-style: normal;
   font-weight: normal !important;
   font-variant: normal;
@@ -6500,25 +6500,25 @@ body.woocommerce #woo_sidebar {
   color: var(--primary);
 }
 
-.mc4wp-form-ova-style2 .visuallyhidden {
+.mc4wp-form-xp-style2 .visuallyhidden {
   position: static;
   overflow: visible;
   width: auto;
   height: auto;
 }
-.mc4wp-form-ova-style2 .xp-mc4wp-form .email {
+.mc4wp-form-xp-style2 .xp-mc4wp-form .email {
   margin-bottom: 20px;
 }
-.mc4wp-form-ova-style2 .xp-mc4wp-form .email input {
+.mc4wp-form-xp-style2 .xp-mc4wp-form .email input {
   border: 1px solid rgba(39, 37, 42, 0.1);
   background-color: #FCF5F5;
 }
-.mc4wp-form-ova-style2 .xp-mc4wp-form .submit {
+.mc4wp-form-xp-style2 .xp-mc4wp-form .submit {
   margin-bottom: 25px;
   position: static;
   transform: none;
 }
-.mc4wp-form-ova-style2 .xp-mc4wp-form .submit button {
+.mc4wp-form-xp-style2 .xp-mc4wp-form .submit button {
   font-size: 12px;
   text-transform: uppercase;
   width: 100%;
@@ -6527,67 +6527,67 @@ body.woocommerce #woo_sidebar {
   border: 1px solid var(--primary);
   border-radius: 0;
 }
-.mc4wp-form-ova-style2 .xp-mc4wp-form .submit button:hover {
+.mc4wp-form-xp-style2 .xp-mc4wp-form .submit button:hover {
   background-color: transparent;
 }
-.mc4wp-form-ova-style2 .xp-mc4wp-form .submit i {
+.mc4wp-form-xp-style2 .xp-mc4wp-form .submit i {
   display: none;
 }
 
-.mc4wp-form-ova-style3 .xp-mc4wp-form .email input {
+.mc4wp-form-xp-style3 .xp-mc4wp-form .email input {
   font-size: 16px;
   font-weight: 400;
   border: 1px solid rgba(255, 255, 255, 0.1);
   background: #45414B;
 }
-.mc4wp-form-ova-style3 .xp-mc4wp-form .email input::placeholder {
+.mc4wp-form-xp-style3 .xp-mc4wp-form .email input::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
   font-weight: 400;
 }
-.mc4wp-form-ova-style3 .xp-mc4wp-form .submit {
+.mc4wp-form-xp-style3 .xp-mc4wp-form .submit {
   right: 5px;
 }
-.mc4wp-form-ova-style3 .xp-mc4wp-form .submit button {
+.mc4wp-form-xp-style3 .xp-mc4wp-form .submit button {
   padding: 12px 16px;
   background-color: var(--primary);
   border-radius: 0;
 }
-.mc4wp-form-ova-style3 .xp-mc4wp-form .submit button:hover {
+.mc4wp-form-xp-style3 .xp-mc4wp-form .submit button:hover {
   background-color: #fff;
 }
-.mc4wp-form-ova-style3 .xp-mc4wp-form .submit button:hover i {
+.mc4wp-form-xp-style3 .xp-mc4wp-form .submit button:hover i {
   color: var(--primary);
 }
-.mc4wp-form-ova-style3 .xp-mc4wp-form .submit i {
+.mc4wp-form-xp-style3 .xp-mc4wp-form .submit i {
   font-size: 16px;
   color: #fff;
 }
 
-.mc4wp-form-ova-style3b .xp-mc4wp-form .email input {
+.mc4wp-form-xp-style3b .xp-mc4wp-form .email input {
   font-size: 16px;
   font-weight: 400;
   border: 1px solid rgba(39, 37, 42, 0.07);
   background: #fff;
 }
-.mc4wp-form-ova-style3b .xp-mc4wp-form .email input::placeholder {
+.mc4wp-form-xp-style3b .xp-mc4wp-form .email input::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
   font-weight: 400;
 }
-.mc4wp-form-ova-style3b .xp-mc4wp-form .submit {
+.mc4wp-form-xp-style3b .xp-mc4wp-form .submit {
   right: 5px;
 }
-.mc4wp-form-ova-style3b .xp-mc4wp-form .submit button {
+.mc4wp-form-xp-style3b .xp-mc4wp-form .submit button {
   padding: 12px 16px;
   background-color: var(--primary);
   border-radius: 0;
 }
-.mc4wp-form-ova-style3b .xp-mc4wp-form .submit button:hover {
+.mc4wp-form-xp-style3b .xp-mc4wp-form .submit button:hover {
   background-color: #fff;
 }
-.mc4wp-form-ova-style3b .xp-mc4wp-form .submit button:hover i {
+.mc4wp-form-xp-style3b .xp-mc4wp-form .submit button:hover i {
   color: var(--primary);
 }
-.mc4wp-form-ova-style3b .xp-mc4wp-form .submit i {
+.mc4wp-form-xp-style3b .xp-mc4wp-form .submit i {
   font-size: 16px;
   color: #fff;
 }
@@ -6601,7 +6601,7 @@ body.woocommerce #woo_sidebar {
   right: unset;
   left: 0;
 }
-.rtl .mc4wp-form-ova-style3 .xp-mc4wp-form .submit {
+.rtl .mc4wp-form-xp-style3 .xp-mc4wp-form .submit {
   left: 5px;
 }
 
@@ -8598,7 +8598,7 @@ body.woocommerce #woo_sidebar {
   opacity: 0;
 }
 
-.elementor-widget-spalisho_elementor_ova_video .elementor-widget-container {
+.elementor-widget-spalisho_elementor_xp_video .elementor-widget-container {
   display: flex;
 }
 
@@ -9385,7 +9385,7 @@ body.woocommerce #woo_sidebar {
   -moz-transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
-  font-family: ovaicon !important;
+  font-family: xpicon !important;
   font-size: 14px;
   color: var(--text);
 }
@@ -9645,7 +9645,7 @@ body.woocommerce #woo_sidebar {
   text-align: center;
 }
 
-.elementor-widget-container #ova-testimonial-slider3-control button {
+.elementor-widget-container #xp-testimonial-slider3-control button {
   transition: all 0.3s ease;
   width: 60px;
   height: 60px;
@@ -9658,21 +9658,21 @@ body.woocommerce #woo_sidebar {
   padding: 0;
   border-radius: 50%;
 }
-.elementor-widget-container #ova-testimonial-slider3-control button i {
+.elementor-widget-container #xp-testimonial-slider3-control button i {
   display: inline-flex;
   font-size: 18px;
   color: var(--text);
 }
-.elementor-widget-container #ova-testimonial-slider3-control button:hover {
+.elementor-widget-container #xp-testimonial-slider3-control button:hover {
   transition: all 0.3s ease;
   border: 1px solid var(--primary);
 }
-.elementor-widget-container #ova-testimonial-slider3-control button:hover i {
+.elementor-widget-container #xp-testimonial-slider3-control button:hover i {
   transition: all 0.3s ease;
   color: var(--primary);
 }
 
-.slider3-control-small .elementor-widget-container #ova-testimonial-slider3-control button {
+.slider3-control-small .elementor-widget-container #xp-testimonial-slider3-control button {
   width: 40px;
   height: 40px;
   border: none;
@@ -10237,27 +10237,27 @@ body.woocommerce #woo_sidebar {
   direction: rtl;
 }
 .xp-text-marquee.direction-ltr .content-wrapper {
-  animation: ova_scroll_ltr 20s linear infinite;
+  animation: xp_scroll_ltr 20s linear infinite;
   animation-delay: -20s;
 }
 .xp-text-marquee.direction-ltr .content-wrapper-2 {
-  animation: ova_scroll2_ltr 20s linear infinite;
+  animation: xp_scroll2_ltr 20s linear infinite;
   animation-delay: -10s;
 }
 .xp-text-marquee.direction-ltr.duration-slow .content-wrapper {
-  animation: ova_scroll_ltr 30s linear infinite;
+  animation: xp_scroll_ltr 30s linear infinite;
   animation-delay: -30s;
 }
 .xp-text-marquee.direction-ltr.duration-slow .content-wrapper-2 {
-  animation: ova_scroll2_ltr 30s linear infinite;
+  animation: xp_scroll2_ltr 30s linear infinite;
   animation-delay: -15s;
 }
 .xp-text-marquee.direction-ltr.duration-fast .content-wrapper {
-  animation: ova_scroll_ltr 10s linear infinite;
+  animation: xp_scroll_ltr 10s linear infinite;
   animation-delay: -10s;
 }
 .xp-text-marquee.direction-ltr.duration-fast .content-wrapper-2 {
-  animation: ova_scroll2_ltr 10s linear infinite;
+  animation: xp_scroll2_ltr 10s linear infinite;
   animation-delay: -5s;
 }
 .xp-text-marquee .content-wrapper, .xp-text-marquee .content-wrapper-2 {
@@ -10289,7 +10289,7 @@ body.woocommerce #woo_sidebar {
   width: 200%;
 }
 .xp-text-marquee .content-wrapper {
-  animation: ova_scroll 20s linear infinite;
+  animation: xp_scroll 20s linear infinite;
   animation-delay: -20s;
 }
 .xp-text-marquee .spacing {
@@ -10299,27 +10299,27 @@ body.woocommerce #woo_sidebar {
   width: 600px;
 }
 .xp-text-marquee .content-wrapper-2 {
-  animation: ova_scroll2 20s linear infinite;
+  animation: xp_scroll2 20s linear infinite;
   animation-delay: -10s;
 }
 .xp-text-marquee.duration-slow .content-wrapper {
-  animation: ova_scroll 30s linear infinite;
+  animation: xp_scroll 30s linear infinite;
   animation-delay: -30s;
 }
 .xp-text-marquee.duration-slow .content-wrapper-2 {
-  animation: ova_scroll2 30s linear infinite;
+  animation: xp_scroll2 30s linear infinite;
   animation-delay: -15s;
 }
 .xp-text-marquee.duration-fast .content-wrapper {
-  animation: ova_scroll 10s linear infinite;
+  animation: xp_scroll 10s linear infinite;
   animation-delay: -10s;
 }
 .xp-text-marquee.duration-fast .content-wrapper-2 {
-  animation: ova_scroll2 10s linear infinite;
+  animation: xp_scroll2 10s linear infinite;
   animation-delay: -5s;
 }
 
-@keyframes ova_scroll {
+@keyframes xp_scroll {
   0% {
     transform: translateX(100%);
   }
@@ -10327,7 +10327,7 @@ body.woocommerce #woo_sidebar {
     transform: translateX(-100%);
   }
 }
-@keyframes ova_scroll2 {
+@keyframes xp_scroll2 {
   0% {
     transform: translateX(0);
   }
@@ -10335,7 +10335,7 @@ body.woocommerce #woo_sidebar {
     transform: translateX(-200%);
   }
 }
-@keyframes ova_scroll_ltr {
+@keyframes xp_scroll_ltr {
   0% {
     transform: translateX(-100%);
   }
@@ -10343,7 +10343,7 @@ body.woocommerce #woo_sidebar {
     transform: translateX(100%);
   }
 }
-@keyframes ova_scroll2_ltr {
+@keyframes xp_scroll2_ltr {
   0% {
     transform: translateX(0);
   }

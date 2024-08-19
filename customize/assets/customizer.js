@@ -44,14 +44,14 @@ jQuery( document ).ready(function($) {
 		$(this).parent().parent().find('.google-fonts-category').val(bodyfontcontrol.xpfontslist[index].category);
 		
 
-		ovaGetAllSelects($(this).parent().parent());
+		xpGetAllSelects($(this).parent().parent());
 	});
 
 	$('.google_fonts_select_control select').on('change', function() {
-		ovaGetAllSelects($(this).parent().parent());
+		xpGetAllSelects($(this).parent().parent());
 	});
 
-	function ovaGetAllSelects($element) {
+	function xpGetAllSelects($element) {
 		var regularweight = $element.find('.google-fonts-regularweight-style').val();
 		if( regularweight != null ) regularweight = regularweight.join();
 

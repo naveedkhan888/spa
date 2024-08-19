@@ -3,7 +3,7 @@
 				<?php echo apply_filters( 'spalisho_render_footer', '' ); ?>
 			</div>
 			
-		</div> <!-- Ova Wrapper -->	
+		</div> <!-- Xp Wrapper -->	
 		<?php wp_footer(); ?>
 	</body><!-- /body -->
 </html>

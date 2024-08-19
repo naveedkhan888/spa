@@ -35,14 +35,14 @@ class Spalisho_Elementor {
 	}
 
 
-	// Ova accordion custom 
+	// Xp accordion custom 
     function spalisho_accordion_custom( $element, $args ) {
 		/** @var \Elementor\Element_Base $element */
 		$element->start_controls_section(
-			'ova_accordion',
+			'xp_accordion',
 			[
 				'tab' 	=> \Elementor\Controls_Manager::TAB_STYLE,
-				'label' => esc_html__( 'Ova Accordion', 'spalisho' ),
+				'label' => esc_html__( 'Xp Accordion', 'spalisho' ),
 			]
 		);
 
@@ -149,15 +149,15 @@ class Spalisho_Elementor {
 	function spalisho_icon_box_customize($element, $args) {
 
 		$element->start_controls_section(
-			'ova_icon_box_customize',
+			'xp_icon_box_customize',
 			[
 				'tab' 	=> \Elementor\Controls_Manager::TAB_STYLE,
-				'label' => esc_html__( 'Ova Icon Box', 'spalisho' ),
+				'label' => esc_html__( 'Xp Icon Box', 'spalisho' ),
 			]
 		);
 
 			$element->add_responsive_control(
-				'ova_icon_box_margin_title',
+				'xp_icon_box_margin_title',
 				[
 					'label' => esc_html__( 'Margin Title', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::DIMENSIONS,
@@ -176,15 +176,15 @@ class Spalisho_Elementor {
 	function spalisho_social_icons_custom ( $element, $args ) {
 
 	$element->start_controls_section(
-		'ova_social_icons',
+		'xp_social_icons',
 		[
 			'tab' 	=> \Elementor\Controls_Manager::TAB_STYLE,
-			'label' => esc_html__( 'Ova Social Icon', 'spalisho' ),
+			'label' => esc_html__( 'Xp Social Icon', 'spalisho' ),
 		]
 	);
 
 		$element->add_responsive_control(
-            'ova_social_icons_display',
+            'xp_social_icons_display',
             [
                 'label' 	=> esc_html__( 'Display', 'spalisho' ),
                 'type' 		=> \Elementor\Controls_Manager::CHOOSE,
@@ -211,10 +211,10 @@ class Spalisho_Elementor {
     function spalisho_text_editor_custom( $element, $args ) {
 		/** @var \Elementor\Element_Base $element */
 		$element->start_controls_section(
-			'ova_tabs',
+			'xp_tabs',
 			[
 				'tab' 	=> \Elementor\Controls_Manager::TAB_STYLE,
-				'label' => esc_html__( 'Ova Text Editor', 'spalisho' ),
+				'label' => esc_html__( 'Xp Text Editor', 'spalisho' ),
 			]
 		);
 
@@ -296,14 +296,14 @@ class Spalisho_Elementor {
     function spalisho_add_animations(){
     	$animations = array(
             'Spalisho' => array(
-                'ova-move-up' 		=> esc_html__('Move Up', 'spalisho'),
-                'ova-move-down' 	=> esc_html__( 'Move Down', 'spalisho' ),
-                'ova-move-left'     => esc_html__('Move Left', 'spalisho'),
-                'ova-move-right'    => esc_html__('Move Right', 'spalisho'),
-                'ova-scale-up'      => esc_html__('Scale Up', 'spalisho'),
-                'ova-flip'          => esc_html__('Flip', 'spalisho'),
-                'ova-helix'         => esc_html__('Helix', 'spalisho'),
-                'ova-popup'			=> esc_html__( 'PopUp','spalisho' )
+                'xp-move-up' 		=> esc_html__('Move Up', 'spalisho'),
+                'xp-move-down' 	=> esc_html__( 'Move Down', 'spalisho' ),
+                'xp-move-left'     => esc_html__('Move Left', 'spalisho'),
+                'xp-move-right'    => esc_html__('Move Right', 'spalisho'),
+                'xp-scale-up'      => esc_html__('Scale Up', 'spalisho'),
+                'xp-flip'          => esc_html__('Flip', 'spalisho'),
+                'xp-helix'         => esc_html__('Helix', 'spalisho'),
+                'xp-popup'			=> esc_html__( 'PopUp','spalisho' )
             ),
         );
 
@@ -314,10 +314,10 @@ class Spalisho_Elementor {
 
 	function spalisho_enqueue_footer_scripts(){
 		 // Font Icon
-	    wp_enqueue_style('ovaicon', SPALISHO_URI.'/assets/libs/ovaicon/font/ovaicon.css', array(), null);
+	    wp_enqueue_style('xpicon', SPALISHO_URI.'/assets/libs/xpicon/font/xpicon.css', array(), null);
 
 	    // Flaticon
-	    wp_enqueue_style('ova-flaticon', SPALISHO_URI.'/assets/libs/flaticon/font/flaticon.css', array(), null);
+	    wp_enqueue_style('xp-flaticon', SPALISHO_URI.'/assets/libs/flaticon/font/flaticon.css', array(), null);
 	}
 	
 	
@@ -325,15 +325,15 @@ class Spalisho_Elementor {
 	public function spalisho_icons_filters_new( $tabs = array() ) {
 		$newicons = [];
 
-		$font_data['json_url'] = SPALISHO_URI.'/assets/libs/ovaicon/ovaicon.json';
-		$font_data['name'] = 'ovaicon';
+		$font_data['json_url'] = SPALISHO_URI.'/assets/libs/xpicon/xpicon.json';
+		$font_data['name'] = 'xpicon';
 
 		$newicons[ $font_data['name'] ] = [
 			'name'          => $font_data['name'],
 			'label'         => esc_html__( 'Default', 'spalisho' ),
 			'url'           => '',
 			'enqueue'       => '',
-			'prefix'        => 'ovaicon-',
+			'prefix'        => 'xpicon-',
 			'displayPrefix' => '',
 			'ver'           => '1.0',
 			'fetchJson'     => $font_data['json_url'],
@@ -359,14 +359,14 @@ class Spalisho_Elementor {
 
 	public function spalisho_icon_custom($element, $args){
 		$element->start_controls_section(
-			'ova_icon_customize',
+			'xp_icon_customize',
 			[
 				'tab' 	=> \Elementor\Controls_Manager::TAB_STYLE,
-				'label' => esc_html__( 'Ova Icon', 'spalisho' ),
+				'label' => esc_html__( 'Xp Icon', 'spalisho' ),
 			]
 		);
 			$element->add_control(
-				'ova_icon_wrapper_line_height',
+				'xp_icon_wrapper_line_height',
 				[
 					'label' => esc_html__( 'Line Height', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::SLIDER,

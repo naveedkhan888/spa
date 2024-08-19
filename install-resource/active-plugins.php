@@ -51,9 +51,9 @@ function spalisho_register_required_plugins() {
         ),
         array(
             'name'                     => esc_html__('XpertTheme Framework','spalisho'),
-            'slug'                     => 'ova-framework',
+            'slug'                     => 'xp-framework',
             'required'                 => true,
-            'source'                   => get_template_directory() . '/install-resource/plugins/ova-framework.zip',
+            'source'                   => get_template_directory() . '/install-resource/plugins/xp-framework.zip',
             'version'                  => '1.0.2',
         ),
         array(
@@ -65,9 +65,9 @@ function spalisho_register_required_plugins() {
         ),
         array(
             'name'                     => esc_html__('XpertTheme Service','spalisho'),
-            'slug'                     => 'ova-sev',
+            'slug'                     => 'xp-sev',
             'required'                 => true,
-            'source'                   => get_template_directory() . '/install-resource/plugins/ova-sev.zip',
+            'source'                   => get_template_directory() . '/install-resource/plugins/xp-sev.zip',
             'version'                  => '1.0.7',
         ),
         array(
@@ -77,9 +77,9 @@ function spalisho_register_required_plugins() {
         ),
         array(
             'name'                     => esc_html__('Xperttheme MegaMenu','spalisho'),
-            'slug'                     => 'ova-megamenu',
+            'slug'                     => 'xp-megamenu',
             'required'                 => true,
-            'source'                   => get_template_directory() . '/install-resource/plugins/ova-megamenu.zip',
+            'source'                   => get_template_directory() . '/install-resource/plugins/xp-megamenu.zip',
             'version'                  => '1.0.0',
         ),
     );
@@ -103,7 +103,7 @@ add_action( 'ocdi/before_content_import', 'spalisho_before_content_import' );
 function spalisho_before_content_import() { 
 
     // update option elementor cpt support
-    $post_types = array('post','page','ova_sev','ova_framework_hf_el');
+    $post_types = array('post','page','xp_sev','xp_framework_hf_el');
     update_option( 'elementor_cpt_support', $post_types );
 
    

@@ -154,7 +154,7 @@
 			
 			&:before {
 				@include transaction( all, 0.3s, ease);
-				font-family: 'ovaicon';
+				font-family: 'xpicon';
 				font-size: 32px;
 				color: var(--text);
 			}

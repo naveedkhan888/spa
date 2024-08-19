@@ -12,7 +12,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 class Spalisho_Elementor_Logo extends Widget_Base {
 
 	public function get_name() {
-		return 'ova_logo';
+		return 'xp_logo';
 	}
 
 	public function get_title() {

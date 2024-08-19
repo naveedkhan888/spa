@@ -60,7 +60,7 @@ if (!function_exists('spalisho_is_blog_archive')) {
 
 /* Get ID from Slug of Header Footer Builder - Post Type */
 function spalisho_get_id_by_slug( $page_slug ) {
-    $page = get_page_by_path( $page_slug, OBJECT, 'ova_framework_hf_el' ) ;
+    $page = get_page_by_path( $page_slug, OBJECT, 'xp_framework_hf_el' ) ;
     if ($page) {
         return $page->ID;
     } else {
@@ -266,13 +266,13 @@ function xperttheme_add_cpt_support() {
     
     //check if option DOESN'T exist in db
     if( ! $cpt_support ) {
-        $cpt_support = [ 'page', 'post', 'ova_framework_hf_el' ]; //create array of our default supported post types
+        $cpt_support = [ 'page', 'post', 'xp_framework_hf_el' ]; //create array of our default supported post types
         update_option( 'elementor_cpt_support', $cpt_support ); //write it to the database
     }
     
     //if it DOES exist, but cpt is NOT defined
-    else if( ! in_array( 'ova_framework_hf_el', $cpt_support ) ) {
-        $cpt_support[] = 'ova_framework_hf_el'; //append to array
+    else if( ! in_array( 'xp_framework_hf_el', $cpt_support ) ) {
+        $cpt_support[] = 'xp_framework_hf_el'; //append to array
         update_option( 'elementor_cpt_support', $cpt_support ); //update database
     }
     
