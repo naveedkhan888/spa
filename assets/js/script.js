@@ -24,7 +24,7 @@
 	}
 
 	function spalisho_set_menu_direction($item) {
-        var sub = $item.children('.sub-menu').filter(':not(.ova-mega-menu)'),
+        var sub = $item.children('.sub-menu').filter(':not(.xp-mega-menu)'),
             offset = $item.offset(),
             width = $item.outerWidth(),
             screen_width = $(window).width(),
@@ -59,7 +59,7 @@
 		    animation: 'fade', 
 		    animationInSpeed: 200, 
 		    animationOutSpeed: 200, 
-		    scrollText: '<i class="ovaicon-up-arrow"></i>', 
+		    scrollText: '<i class="xpicon-up-arrow"></i>', 
 		    scrollImg: false, 
 		    activeOverlay: false 
 		};

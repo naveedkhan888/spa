@@ -7,9 +7,9 @@
         
 		elementorFrontend.hooks.addAction('frontend/element_ready/spalisho_elementor_counter.default', function(){
 
-			$(".ova-counter").appear(function(){
+			$(".xp-counter").appear(function(){
 				var count    = $(this).attr('data-count');
-				var odometer = $(this).closest('.ova-counter').find('.odometer');
+				var odometer = $(this).closest('.xp-counter').find('.odometer');
 
 		        setTimeout(function(){
 				    odometer.html(count);

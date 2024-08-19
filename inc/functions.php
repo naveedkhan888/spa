@@ -259,7 +259,7 @@ if( !function_exists( 'spalisho_post_show_tag' ) ){
 }
 
 // cpt registering on theme activation elementor post types support
-function ovatheme_add_cpt_support() {
+function xperttheme_add_cpt_support() {
     
     //if exists, assign to $cpt_support var
     $cpt_support = get_option( 'elementor_cpt_support' );
@@ -283,4 +283,4 @@ function ovatheme_add_cpt_support() {
     update_option('elementor_disable_typography_schemes','yes');
 
 }
-add_action( 'after_switch_theme', 'ovatheme_add_cpt_support' );
+add_action( 'after_switch_theme', 'xperttheme_add_cpt_support' );

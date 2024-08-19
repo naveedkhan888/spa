@@ -84,7 +84,7 @@ class Spalisho_Elementor_Menu_Cart extends Widget_Base {
 						]
 					],
 					'selectors' => [
-						'{{WRAPPER}} .ova-menu-cart .cart-total i' => 'font-size: {{SIZE}}{{UNIT}};',
+						'{{WRAPPER}} .xp-menu-cart .cart-total i' => 'font-size: {{SIZE}}{{UNIT}};',
 					],
 				]
 			);
@@ -95,7 +95,7 @@ class Spalisho_Elementor_Menu_Cart extends Widget_Base {
 					'label' 	=> esc_html__( 'Color', 'spalisho' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-menu-cart .cart-total i' => 'color : {{VALUE}};',
+						'{{WRAPPER}} .xp-menu-cart .cart-total i' => 'color : {{VALUE}};',
 					],
 				]
 			);
@@ -124,7 +124,7 @@ class Spalisho_Elementor_Menu_Cart extends Widget_Base {
 						]
 					],
 					'selectors' => [
-						'{{WRAPPER}} .ova-menu-cart .cart-total .items' => 'width: {{SIZE}}{{UNIT}};height: {{SIZE}}{{UNIT}};',
+						'{{WRAPPER}} .xp-menu-cart .cart-total .items' => 'width: {{SIZE}}{{UNIT}};height: {{SIZE}}{{UNIT}};',
 					],
 				]
 			);
@@ -135,7 +135,7 @@ class Spalisho_Elementor_Menu_Cart extends Widget_Base {
 					'label' 	=> esc_html__( 'Color', 'spalisho' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-menu-cart .cart-total .items' => 'color : {{VALUE}};',
+						'{{WRAPPER}} .xp-menu-cart .cart-total .items' => 'color : {{VALUE}};',
 					],
 				]
 			);
@@ -146,7 +146,7 @@ class Spalisho_Elementor_Menu_Cart extends Widget_Base {
 					'label' 	=> esc_html__( 'Background Color', 'spalisho' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-menu-cart .cart-total .items' => 'background-color : {{VALUE}};',
+						'{{WRAPPER}} .xp-menu-cart .cart-total .items' => 'background-color : {{VALUE}};',
 					],
 				]
 			);
@@ -160,7 +160,7 @@ class Spalisho_Elementor_Menu_Cart extends Widget_Base {
 		$text_empty = $settings['text_empty'];
 		
 		?>
-			<div class="ova-menu-cart">
+			<div class="xp-menu-cart">
                 <div class="cart-total">
                     <?php 
 				        \Elementor\Icons_Manager::render_icon( $settings['icon'], [ 'aria-hidden' => 'true' ] );

@@ -7,7 +7,7 @@
         
 		elementorFrontend.hooks.addAction('frontend/element_ready/spalisho_elementor_testimonial_3.default', function(){
 
-			$(".ova-testimonial-3 .slide-testimonials-3").each(function(){
+			$(".xp-testimonial-3 .slide-testimonials-3").each(function(){
 
 		        var owlsl 		= $(this);
 		        var owlsl_ops 	= owlsl.data('options') ? owlsl.data('options') : {};
@@ -45,8 +45,8 @@
 		          	smartSpeed: owlsl_ops.smartSpeed,
 		          	rtl: isRTL,
 		          	navText:[
-		          		'<i class="ovaicon-back-2"></i>',
-		          		'<i class="ovaicon-next-4"></i>'
+		          		'<i class="xpicon-back-2"></i>',
+		          		'<i class="xpicon-next-4"></i>'
 		          	],
 		          	responsive: responsive_value,
 		        });

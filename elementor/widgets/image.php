@@ -75,7 +75,7 @@ class Spalisho_Elementor_Image extends Widget_Base {
 					'name' => 'background_image',
 					'label' => esc_html__( 'Background', 'spalisho' ),
 					'types' => [ 'classic'],
-					'selector' => '{{WRAPPER}} .ova-img',
+					'selector' => '{{WRAPPER}} .xp-img',
 					'condition' =>[
 						'template' =>'template_1',
 					]
@@ -132,7 +132,7 @@ class Spalisho_Elementor_Image extends Widget_Base {
 					'label'	 	=> esc_html__( 'Background', 'spalisho' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-img:before' => 'background-color : {{VALUE}};'	
+						'{{WRAPPER}} .xp-img:before' => 'background-color : {{VALUE}};'	
 					],
 
 				]
@@ -152,7 +152,7 @@ class Spalisho_Elementor_Image extends Widget_Base {
 						]
 					],
 					'selectors' => [
-						'{{WRAPPER}} .ova-img:before' => 'width: {{SIZE}}{{UNIT}};',
+						'{{WRAPPER}} .xp-img:before' => 'width: {{SIZE}}{{UNIT}};',
 					],
 				
 				]
@@ -165,7 +165,7 @@ class Spalisho_Elementor_Image extends Widget_Base {
 	                'type' 			=> Controls_Manager::DIMENSIONS,
 	                'size_units' 	=> [ 'px', '%', 'em' ],
 	                'selectors' 	=> [
-	                    '{{WRAPPER}} .ova-img' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+	                    '{{WRAPPER}} .xp-img' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 	                ],
 	            ]
 	        );      
@@ -200,7 +200,7 @@ class Spalisho_Elementor_Image extends Widget_Base {
 						]
 					],
 					'selectors' => [
-						'{{WRAPPER}} .image-box.template_2 .ova-img img' => 'height: {{SIZE}}{{UNIT}};',
+						'{{WRAPPER}} .image-box.template_2 .xp-img img' => 'height: {{SIZE}}{{UNIT}};',
 					],
 					'condition' => [
 						'template' => 'template_2',
@@ -225,7 +225,7 @@ class Spalisho_Elementor_Image extends Widget_Base {
 							'label' => esc_html__( 'Color', 'spalisho' ),
 							'type' => Controls_Manager::COLOR,
 							'selectors' => [
-								'{{WRAPPER}} .image-box.template_2 .ova-img .line-left' => 'background-color : {{VALUE}};',
+								'{{WRAPPER}} .image-box.template_2 .xp-img .line-left' => 'background-color : {{VALUE}};',
 							],
 							'condition' => [
 								'show_line_left' => 'yes',
@@ -248,7 +248,7 @@ class Spalisho_Elementor_Image extends Widget_Base {
 								]
 							],
 							'selectors' => [
-								'{{WRAPPER}} .ova-img .line.line-left' => 'width: {{SIZE}}{{UNIT}};',
+								'{{WRAPPER}} .xp-img .line.line-left' => 'width: {{SIZE}}{{UNIT}};',
 							],
 							'condition' => [
 								'show_line_left' => 'yes',
@@ -271,7 +271,7 @@ class Spalisho_Elementor_Image extends Widget_Base {
 							'label' => esc_html__( 'Color', 'spalisho' ),
 							'type' => Controls_Manager::COLOR,
 							'selectors' => [
-								'{{WRAPPER}} .image-box.template_2 .ova-img .line-right' => 'background-color : {{VALUE}};',
+								'{{WRAPPER}} .image-box.template_2 .xp-img .line-right' => 'background-color : {{VALUE}};',
 							],
 							'condition' => [
 								'show_line_right' => 'yes',
@@ -294,7 +294,7 @@ class Spalisho_Elementor_Image extends Widget_Base {
 								]
 							],
 							'selectors' => [
-								'{{WRAPPER}} .ova-img .line.line-right' => 'width: {{SIZE}}{{UNIT}};',
+								'{{WRAPPER}} .xp-img .line.line-right' => 'width: {{SIZE}}{{UNIT}};',
 							],
 							'condition' => [
 								'show_line_right' => 'yes',
@@ -328,7 +328,7 @@ class Spalisho_Elementor_Image extends Widget_Base {
 
 		<?php if( !empty( $image) ): ?>
 			<div class="image-box <?php echo esc_html( $template); ?>">
-				<div class="ova-img">
+				<div class="xp-img">
 				 	<img src="<?php echo esc_url( $image ); ?>" alt="<?php echo esc_html( $alt );  ?>">
 				 	<?php if($template == 'template_2' && $show_line_l == 'yes' ):  ?>
 				 		<div class="line-left line"></div>

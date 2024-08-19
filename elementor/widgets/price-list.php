@@ -193,7 +193,7 @@ class Spalisho_Elementor_Price_List extends Widget_Base {
 				Group_Control_Typography::get_type(),
 				[
 					'name' 		=> 'heading_typography',
-					'selector' 	=> '{{WRAPPER}} .ova-price-list .heading',
+					'selector' 	=> '{{WRAPPER}} .xp-price-list .heading',
 				]
 			);
 
@@ -203,7 +203,7 @@ class Spalisho_Elementor_Price_List extends Widget_Base {
 					'label' 	=> esc_html__( 'Color', 'spalisho' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-price-list .heading' => 'color: {{VALUE}};',
+						'{{WRAPPER}} .xp-price-list .heading' => 'color: {{VALUE}};',
 					],
 				]
 			);
@@ -215,7 +215,7 @@ class Spalisho_Elementor_Price_List extends Widget_Base {
 	                'type' 			=> Controls_Manager::DIMENSIONS,
 	                'size_units' 	=> [ 'px', '%', 'em' ],
 	                'selectors' 	=> [
-	                    '{{WRAPPER}} .ova-price-list .heading' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+	                    '{{WRAPPER}} .xp-price-list .heading' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 	                ],
 	            ]
 	        );
@@ -235,7 +235,7 @@ class Spalisho_Elementor_Price_List extends Widget_Base {
 				Group_Control_Typography::get_type(),
 				[
 					'name' 		=> 'title_typography',
-					'selector' 	=> '{{WRAPPER}} .ova-price-list .item-price-list .title-time .title',
+					'selector' 	=> '{{WRAPPER}} .xp-price-list .item-price-list .title-time .title',
 				]
 			);
 
@@ -245,7 +245,7 @@ class Spalisho_Elementor_Price_List extends Widget_Base {
 					'label' 	=> esc_html__( 'Color', 'spalisho' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-price-list .item-price-list .title-time .title' => 'color: {{VALUE}};',
+						'{{WRAPPER}} .xp-price-list .item-price-list .title-time .title' => 'color: {{VALUE}};',
 					],
 				]
 			);
@@ -256,7 +256,7 @@ class Spalisho_Elementor_Price_List extends Widget_Base {
 					'label' 	=> esc_html__( 'Color Hover', 'spalisho' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-price-list .item-price-list:hover .title-time .title' => 'color: {{VALUE}};',
+						'{{WRAPPER}} .xp-price-list .item-price-list:hover .title-time .title' => 'color: {{VALUE}};',
 					],
 				]
 			);
@@ -268,7 +268,7 @@ class Spalisho_Elementor_Price_List extends Widget_Base {
 	                'type' 			=> Controls_Manager::DIMENSIONS,
 	                'size_units' 	=> [ 'px', '%', 'em' ],
 	                'selectors' 	=> [
-	                    '{{WRAPPER}} .ova-price-list .item-price-list .title-time .title' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+	                    '{{WRAPPER}} .xp-price-list .item-price-list .title-time .title' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 	                ],
 	            ]
 	        );
@@ -289,7 +289,7 @@ class Spalisho_Elementor_Price_List extends Widget_Base {
 				Group_Control_Typography::get_type(),
 				[
 					'name' 		=> 'time_typography',
-					'selector' 	=> '{{WRAPPER}} .ova-price-list .item-price-list .title-time .time',
+					'selector' 	=> '{{WRAPPER}} .xp-price-list .item-price-list .title-time .time',
 				]
 			);
 
@@ -299,7 +299,7 @@ class Spalisho_Elementor_Price_List extends Widget_Base {
 					'label' 	=> esc_html__( 'Color', 'spalisho' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-price-list .item-price-list .title-time .time' => 'color: {{VALUE}};',
+						'{{WRAPPER}} .xp-price-list .item-price-list .title-time .time' => 'color: {{VALUE}};',
 					],
 				]
 			);
@@ -311,7 +311,7 @@ class Spalisho_Elementor_Price_List extends Widget_Base {
 	                'type' 			=> Controls_Manager::DIMENSIONS,
 	                'size_units' 	=> [ 'px', '%', 'em' ],
 	                'selectors' 	=> [
-	                    '{{WRAPPER}} .ova-price-list .item-price-list .title-time .time' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+	                    '{{WRAPPER}} .xp-price-list .item-price-list .title-time .time' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 	                ],
 	            ]
 	        );
@@ -341,7 +341,7 @@ class Spalisho_Elementor_Price_List extends Widget_Base {
 						]
 					],
 					'selectors' => [
-						'{{WRAPPER}} .ova-price-list .item-price-list .title-time' => 'max-width: {{SIZE}}{{UNIT}};',
+						'{{WRAPPER}} .xp-price-list .item-price-list .title-time' => 'max-width: {{SIZE}}{{UNIT}};',
 						
 					],
 				]
@@ -362,7 +362,7 @@ class Spalisho_Elementor_Price_List extends Widget_Base {
 				Group_Control_Typography::get_type(),
 				[
 					'name' 		=> 'price_typography',
-					'selector' 	=> '{{WRAPPER}} .ova-price-list .item-price-list .price-wrapper .price',
+					'selector' 	=> '{{WRAPPER}} .xp-price-list .item-price-list .price-wrapper .price',
 				]
 			);
 
@@ -372,7 +372,7 @@ class Spalisho_Elementor_Price_List extends Widget_Base {
 					'label' 	=> esc_html__( 'Color', 'spalisho' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-price-list .item-price-list .price-wrapper .price' => 'color: {{VALUE}};',
+						'{{WRAPPER}} .xp-price-list .item-price-list .price-wrapper .price' => 'color: {{VALUE}};',
 					],
 				]
 			);
@@ -395,7 +395,7 @@ class Spalisho_Elementor_Price_List extends Widget_Base {
 					'label' 	=> esc_html__( 'Background Color', 'spalisho' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-price-list' => 'background-color: {{VALUE}};',
+						'{{WRAPPER}} .xp-price-list' => 'background-color: {{VALUE}};',
 					],
 				]
 			);
@@ -407,7 +407,7 @@ class Spalisho_Elementor_Price_List extends Widget_Base {
 	                'type' 			=> Controls_Manager::DIMENSIONS,
 	                'size_units' 	=> [ 'px', '%', 'em' ],
 	                'selectors' 	=> [
-	                    '{{WRAPPER}} .ova-price-list' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+	                    '{{WRAPPER}} .xp-price-list' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 	                ],
 	            ]
 	        );
@@ -419,7 +419,7 @@ class Spalisho_Elementor_Price_List extends Widget_Base {
 	                'type' 			=> Controls_Manager::DIMENSIONS,
 	                'size_units' 	=> [ 'px', '%', 'em' ],
 	                'selectors' 	=> [
-	                    '{{WRAPPER}} .ova-price-list .item-price-list' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+	                    '{{WRAPPER}} .xp-price-list .item-price-list' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 	                ],
 	            ]
 	        );
@@ -429,7 +429,7 @@ class Spalisho_Elementor_Price_List extends Widget_Base {
 				[
 					'name' => 'item_price_list_border',
 					'label' => esc_html__( 'Border', 'spalisho' ),
-					'selector' => '{{WRAPPER}} .ova-price-list .item-price-list',
+					'selector' => '{{WRAPPER}} .xp-price-list .item-price-list',
 				]
 			);
 
@@ -471,7 +471,7 @@ class Spalisho_Elementor_Price_List extends Widget_Base {
 
 		?>
 
-		 	<div class="ova-price-list">
+		 	<div class="xp-price-list">
                 
                 <?php if (!empty( $heading )): ?>
 					<h3 class="heading">

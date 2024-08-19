@@ -91,7 +91,7 @@ class Spalisho_Elementor_Menu_Footer extends Widget_Base {
 					],
 					'toggle' => true,
 					'selectors' => [
-						'{{WRAPPER}} .ova-menu-footer ul.menu' => 'display: {{VALUE}};',
+						'{{WRAPPER}} .xp-menu-footer ul.menu' => 'display: {{VALUE}};',
 					],
 				]
 			);
@@ -102,7 +102,7 @@ class Spalisho_Elementor_Menu_Footer extends Widget_Base {
 	                'label' 	=> esc_html__( 'Background', 'spalisho' ),
 	                'type' 		=> Controls_Manager::COLOR,
 	                'selectors' => [
-	                    '{{WRAPPER}} .ova-menu-footer .menu' => 'background-color: {{VALUE}}',
+	                    '{{WRAPPER}} .xp-menu-footer .menu' => 'background-color: {{VALUE}}',
 	                ],
 	            ]
 	        );
@@ -122,7 +122,7 @@ class Spalisho_Elementor_Menu_Footer extends Widget_Base {
 			                'label' 	=> esc_html__( 'Color', 'spalisho' ),
 			                'type' 		=> Controls_Manager::COLOR,
 			                'selectors' => [
-			                    '{{WRAPPER}} .ova-menu-footer .menu li > a' => 'color: {{VALUE}}',
+			                    '{{WRAPPER}} .xp-menu-footer .menu li > a' => 'color: {{VALUE}}',
 			                ],
 			            ]
 			        );
@@ -142,7 +142,7 @@ class Spalisho_Elementor_Menu_Footer extends Widget_Base {
 			                'label' 	=> esc_html__( 'Color', 'spalisho' ),
 			                'type' 		=> Controls_Manager::COLOR,
 			                'selectors' => [
-			                    '{{WRAPPER}} .ova-menu-footer .menu li:hover > a' => 'color: {{VALUE}}',
+			                    '{{WRAPPER}} .xp-menu-footer .menu li:hover > a' => 'color: {{VALUE}}',
 			                ],
 			            ]
 			        );
@@ -157,7 +157,7 @@ class Spalisho_Elementor_Menu_Footer extends Widget_Base {
 	                'type' 			=> Controls_Manager::DIMENSIONS,
 	                'size_units' 	=> [ 'px', '%', 'em' ],
 	                'selectors' 	=> [
-	                    '{{WRAPPER}} .ova-menu-footer .menu li' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+	                    '{{WRAPPER}} .xp-menu-footer .menu li' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 	                ],
 	            ]
 	        );
@@ -169,7 +169,7 @@ class Spalisho_Elementor_Menu_Footer extends Widget_Base {
 	                'type' 			=> Controls_Manager::DIMENSIONS,
 	                'size_units' 	=> [ 'px', '%', 'em' ],
 	                'selectors' 	=> [
-	                    '{{WRAPPER}} .ova-menu-footer .menu li' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+	                    '{{WRAPPER}} .xp-menu-footer .menu li' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 	                ],
 	            ]
 	        );
@@ -181,7 +181,7 @@ class Spalisho_Elementor_Menu_Footer extends Widget_Base {
 	                'type' 			=> Controls_Manager::DIMENSIONS,
 	                'size_units' 	=> [ 'px', '%', 'em' ],
 	                'selectors' 	=> [
-	                    '{{WRAPPER}} .ova-menu-footer .menu li a' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+	                    '{{WRAPPER}} .xp-menu-footer .menu li a' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 	                ],
 	            ]
 	        );
@@ -190,7 +190,7 @@ class Spalisho_Elementor_Menu_Footer extends Widget_Base {
 				Group_Control_Typography::get_type(),
 				[
 					'name' 		=> 'text_typography',
-					'selector' 	=> '{{WRAPPER}} .ova-menu-footer .menu li a',
+					'selector' 	=> '{{WRAPPER}} .xp-menu-footer .menu li a',
 				]
 			);
 
@@ -212,7 +212,7 @@ class Spalisho_Elementor_Menu_Footer extends Widget_Base {
 	                'label' 	=> esc_html__( 'Background', 'spalisho' ),
 	                'type' 		=> Controls_Manager::COLOR,
 	                'selectors' => [
-	                    '{{WRAPPER}} .ova-menu-footer .menu li .sub-menu' => 'background-color: {{VALUE}}',
+	                    '{{WRAPPER}} .xp-menu-footer .menu li .sub-menu' => 'background-color: {{VALUE}}',
 	                ],
 	            ]
 	        );
@@ -232,7 +232,7 @@ class Spalisho_Elementor_Menu_Footer extends Widget_Base {
 			                'label' 	=> esc_html__( 'Color', 'spalisho' ),
 			                'type' 		=> Controls_Manager::COLOR,
 			                'selectors' => [
-			                    '{{WRAPPER}} .ova-menu-footer .menu li .sub-menu li a' => 'color: {{VALUE}}',
+			                    '{{WRAPPER}} .xp-menu-footer .menu li .sub-menu li a' => 'color: {{VALUE}}',
 			                ],
 			            ]
 			        );
@@ -252,7 +252,7 @@ class Spalisho_Elementor_Menu_Footer extends Widget_Base {
 			                'label' 	=> esc_html__( 'Color', 'spalisho' ),
 			                'type' 		=> Controls_Manager::COLOR,
 			                'selectors' => [
-			                    '{{WRAPPER}} .ova-menu-footer .menu li .sub-menu li:hover a' => 'color: {{VALUE}}',
+			                    '{{WRAPPER}} .xp-menu-footer .menu li .sub-menu li:hover a' => 'color: {{VALUE}}',
 			                ],
 			            ]
 			        );
@@ -267,7 +267,7 @@ class Spalisho_Elementor_Menu_Footer extends Widget_Base {
 	                'type' 			=> Controls_Manager::DIMENSIONS,
 	                'size_units' 	=> [ 'px', '%', 'em' ],
 	                'selectors' 	=> [
-	                    '{{WRAPPER}} .ova-menu-footer .menu li .sub-menu li' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+	                    '{{WRAPPER}} .xp-menu-footer .menu li .sub-menu li' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 	                ],
 	            ]
 	        );
@@ -279,7 +279,7 @@ class Spalisho_Elementor_Menu_Footer extends Widget_Base {
 	                'type' 			=> Controls_Manager::DIMENSIONS,
 	                'size_units' 	=> [ 'px', '%', 'em' ],
 	                'selectors' 	=> [
-	                    '{{WRAPPER}} .ova-menu-footer .menu li .sub-menu li' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+	                    '{{WRAPPER}} .xp-menu-footer .menu li .sub-menu li' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 	                ],
 	            ]
 	        );
@@ -288,7 +288,7 @@ class Spalisho_Elementor_Menu_Footer extends Widget_Base {
 				Group_Control_Typography::get_type(),
 				[
 					'name' 		=> 'subtext_typography',
-					'selector' 	=> '{{WRAPPER}} .ova-menu-footer .menu li .sub-menu li a',
+					'selector' 	=> '{{WRAPPER}} .xp-menu-footer .menu li .sub-menu li a',
 				]
 			);
 
@@ -305,7 +305,7 @@ class Spalisho_Elementor_Menu_Footer extends Widget_Base {
 		$menu_slug 	= $settings['menu_slug'];
 
 		?>
-		<div class="ova-menu-footer">
+		<div class="xp-menu-footer">
 			<?php
 				wp_nav_menu( array(
 					'menu'              => $menu_slug,

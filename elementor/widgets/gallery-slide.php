@@ -317,7 +317,7 @@ class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
 					'type' => \Elementor\Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', '%', 'em', 'rem', 'custom' ],
 					'selectors' => [
-						'{{WRAPPER}} .ova-gallery-slide .gallery-slide .gallery-box .list-gallery .icon-box' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+						'{{WRAPPER}} .xp-gallery-slide .gallery-slide .gallery-box .list-gallery .icon-box' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 					],
 				]
 			);
@@ -345,8 +345,8 @@ class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
 						],
 					],
 					'selectors' => [
-						'{{WRAPPER}} .ova-gallery-slide .gallery-slide .gallery-box .list-gallery .icon-box .icon i' => 'font-size: {{SIZE}}{{UNIT}};',
-						'{{WRAPPER}} .ova-gallery-slide .gallery-slide .gallery-box .list-gallery .icon-box .icon svg' => 'width: {{SIZE}}{{UNIT}};',
+						'{{WRAPPER}} .xp-gallery-slide .gallery-slide .gallery-box .list-gallery .icon-box .icon i' => 'font-size: {{SIZE}}{{UNIT}};',
+						'{{WRAPPER}} .xp-gallery-slide .gallery-slide .gallery-box .list-gallery .icon-box .icon svg' => 'width: {{SIZE}}{{UNIT}};',
 					],
 				]
 			);
@@ -367,7 +367,7 @@ class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
 						'unit' => 'deg',
 					],
 					'selectors' => [
-						'{{WRAPPER}} .ova-gallery-slide .gallery-slide .gallery-box .list-gallery .icon-box .icon i, {{WRAPPER}} .ova-gallery-slide .gallery-slide .gallery-box .list-gallery .icon-box .icon svg' => 'transform: rotate({{SIZE}}{{UNIT}});',
+						'{{WRAPPER}} .xp-gallery-slide .gallery-slide .gallery-box .list-gallery .icon-box .icon i, {{WRAPPER}} .xp-gallery-slide .gallery-slide .gallery-box .list-gallery .icon-box .icon svg' => 'transform: rotate({{SIZE}}{{UNIT}});',
 					],
 				]
 			);
@@ -378,9 +378,9 @@ class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
 					'label' => esc_html__( 'Icon Color', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-gallery-slide .gallery-slide .gallery-box .list-gallery .icon-box .icon i' => 'color: {{VALUE}}',
-						'{{WRAPPER}} .ova-gallery-slide .gallery-slide .gallery-box .list-gallery .icon-box .icon svg' => 'fill: {{VALUE}}',
-						'{{WRAPPER}} .ova-gallery-slide .gallery-slide .gallery-box .list-gallery .icon-box .icon svg path' => 'fill: {{VALUE}}',
+						'{{WRAPPER}} .xp-gallery-slide .gallery-slide .gallery-box .list-gallery .icon-box .icon i' => 'color: {{VALUE}}',
+						'{{WRAPPER}} .xp-gallery-slide .gallery-slide .gallery-box .list-gallery .icon-box .icon svg' => 'fill: {{VALUE}}',
+						'{{WRAPPER}} .xp-gallery-slide .gallery-slide .gallery-box .list-gallery .icon-box .icon svg path' => 'fill: {{VALUE}}',
 					],
 				]
 			);
@@ -391,7 +391,7 @@ class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
 					'label' => esc_html__( 'Background Color', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-gallery-slide .gallery-slide .gallery-box .list-gallery .icon-box .icon' => 'background-color: {{VALUE}}',
+						'{{WRAPPER}} .xp-gallery-slide .gallery-slide .gallery-box .list-gallery .icon-box .icon' => 'background-color: {{VALUE}}',
 					],
 				]
 			);
@@ -411,7 +411,7 @@ class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
 					'label' => esc_html__( 'Background Color', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-gallery-slide .gallery-slide .gallery-box .list-gallery:before' => 'background-color: {{VALUE}}',
+						'{{WRAPPER}} .xp-gallery-slide .gallery-slide .gallery-box .list-gallery:before' => 'background-color: {{VALUE}}',
 					],
 				]
 			);
@@ -435,7 +435,7 @@ class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
 					'type' => \Elementor\Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', '%', 'em', 'rem', 'custom' ],
 					'selectors' => [
-						'{{WRAPPER}} .ova-gallery-slide .gallery-slide .gallery-box .list-gallery .icon-box .title' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+						'{{WRAPPER}} .xp-gallery-slide .gallery-slide .gallery-box .list-gallery .icon-box .title' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 					],
 				]
 			);
@@ -447,7 +447,7 @@ class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
 					'type' => \Elementor\Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', '%', 'em', 'rem', 'custom' ],
 					'selectors' => [
-						'{{WRAPPER}} .ova-gallery-slide .gallery-slide .gallery-box .list-gallery .icon-box .title' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+						'{{WRAPPER}} .xp-gallery-slide .gallery-slide .gallery-box .list-gallery .icon-box .title' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 					],
 				]
 			);
@@ -456,7 +456,7 @@ class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
 				\Elementor\Group_Control_Typography::get_type(),
 				[
 					'name' => 'title_typography',
-					'selector' => '{{WRAPPER}} .ova-gallery-slide .gallery-slide .gallery-box .list-gallery .icon-box .title',
+					'selector' => '{{WRAPPER}} .xp-gallery-slide .gallery-slide .gallery-box .list-gallery .icon-box .title',
 				]
 			);
 
@@ -466,7 +466,7 @@ class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
 					'label' => esc_html__( 'Color', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-gallery-slide .gallery-slide .gallery-box .list-gallery .icon-box .title' => 'color: {{VALUE}}',
+						'{{WRAPPER}} .xp-gallery-slide .gallery-slide .gallery-box .list-gallery .icon-box .title' => 'color: {{VALUE}}',
 					],
 				]
 			);
@@ -477,7 +477,7 @@ class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
 					'label' => esc_html__( 'Background Color', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-gallery-slide .gallery-slide .gallery-box .list-gallery .icon-box .title' => 'background-color: {{VALUE}}',
+						'{{WRAPPER}} .xp-gallery-slide .gallery-slide .gallery-box .list-gallery .icon-box .title' => 'background-color: {{VALUE}}',
 					],
 				]
 			);
@@ -500,7 +500,7 @@ class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
 					'type' => \Elementor\Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', '%', 'em', 'rem', 'custom' ],
 					'selectors' => [
-						'{{WRAPPER}} .ova-gallery-slide .gallery-slide .gallery-box .list-gallery .icon-box .category' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+						'{{WRAPPER}} .xp-gallery-slide .gallery-slide .gallery-box .list-gallery .icon-box .category' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 					],
 				]
 			);
@@ -512,7 +512,7 @@ class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
 					'type' => \Elementor\Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', '%', 'em', 'rem', 'custom' ],
 					'selectors' => [
-						'{{WRAPPER}} .ova-gallery-slide .gallery-slide .gallery-box .list-gallery .icon-box .category' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+						'{{WRAPPER}} .xp-gallery-slide .gallery-slide .gallery-box .list-gallery .icon-box .category' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 					],
 				]
 			);
@@ -521,7 +521,7 @@ class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
 				\Elementor\Group_Control_Typography::get_type(),
 				[
 					'name' => 'category_typography',
-					'selector' => '{{WRAPPER}} .ova-gallery-slide .gallery-slide .gallery-box .list-gallery .icon-box .category',
+					'selector' => '{{WRAPPER}} .xp-gallery-slide .gallery-slide .gallery-box .list-gallery .icon-box .category',
 				]
 			);
 
@@ -531,7 +531,7 @@ class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
 					'label' => esc_html__( 'Color', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-gallery-slide .gallery-slide .gallery-box .list-gallery .icon-box .category' => 'color: {{VALUE}}',
+						'{{WRAPPER}} .xp-gallery-slide .gallery-slide .gallery-box .list-gallery .icon-box .category' => 'color: {{VALUE}}',
 					],
 				]
 			);
@@ -542,7 +542,7 @@ class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
 					'label' => esc_html__( 'Background Color', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-gallery-slide .gallery-slide .gallery-box .list-gallery .icon-box .category' => 'background-color: {{VALUE}}',
+						'{{WRAPPER}} .xp-gallery-slide .gallery-slide .gallery-box .list-gallery .icon-box .category' => 'background-color: {{VALUE}}',
 					],
 				]
 			);
@@ -579,7 +579,7 @@ class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
 				  	],
 				  	'toggle' 	=> true,
 				  	'selectors' => [
-					  	'{{WRAPPER}} .ova-gallery-slide .gallery-slide .owl-dots' => 'position: {{VALUE}};',
+					  	'{{WRAPPER}} .xp-gallery-slide .gallery-slide .owl-dots' => 'position: {{VALUE}};',
 				  	],
 			  	]
 			);
@@ -598,7 +598,7 @@ class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
 						]
 					],
 					'selectors' 	=> [
-						'{{WRAPPER}} .ova-gallery-slide .gallery-slide .owl-dots' => 'bottom: {{SIZE}}{{UNIT}};',
+						'{{WRAPPER}} .xp-gallery-slide .gallery-slide .owl-dots' => 'bottom: {{SIZE}}{{UNIT}};',
 					],
 				]
 			);
@@ -610,7 +610,7 @@ class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
 					'type' => Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', 'em', '%' ],
 					'selectors' => [
-						'{{WRAPPER}} .ova-gallery-slide .gallery-slide .owl-dots' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+						'{{WRAPPER}} .xp-gallery-slide .gallery-slide .owl-dots' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 					],
 					'condition' => [
 						'position_dots' => 'relative',
@@ -637,7 +637,7 @@ class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
 					'label'     => esc_html__( 'Dot Color', 'spalisho' ),
 					'type'      => Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-gallery-slide .owl-carousel .owl-dots button' => 'background-color : {{VALUE}};',
+						'{{WRAPPER}} .xp-gallery-slide .owl-carousel .owl-dots button' => 'background-color : {{VALUE}};',
 						
 					],
 					'condition' => [
@@ -660,7 +660,7 @@ class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
 						]
 					],
 					'selectors' 	=> [
-						'{{WRAPPER}} .ova-gallery-slide .gallery-slide .owl-dots button' => 'width: {{SIZE}}{{UNIT}};',
+						'{{WRAPPER}} .xp-gallery-slide .gallery-slide .owl-dots button' => 'width: {{SIZE}}{{UNIT}};',
 					],
 				]
 			);
@@ -679,7 +679,7 @@ class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
 						]
 					],
 					'selectors' 	=> [
-						'{{WRAPPER}} .ova-gallery-slide .gallery-slide .owl-dots button' => 'height: {{SIZE}}{{UNIT}};',
+						'{{WRAPPER}} .xp-gallery-slide .gallery-slide .owl-dots button' => 'height: {{SIZE}}{{UNIT}};',
 					],
 				]
 			);
@@ -691,7 +691,7 @@ class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
 					'type'       => Controls_Manager::DIMENSIONS,
 					'size_units' => array( 'px', '%' ),
 					'selectors'  => array(
-						'{{WRAPPER}} .ova-gallery-slide .gallery-slide .owl-dots button' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+						'{{WRAPPER}} .xp-gallery-slide .gallery-slide .owl-dots button' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 					),
 				)
 			);
@@ -714,7 +714,7 @@ class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
 					'label'     => esc_html__( 'Dot Color Active', 'spalisho' ),
 					'type'      => Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-gallery-slide .gallery-slide .owl-dots button.active' => 'background-color : {{VALUE}};',
+						'{{WRAPPER}} .xp-gallery-slide .gallery-slide .owl-dots button.active' => 'background-color : {{VALUE}};',
 						
 					],
 					'condition' => [
@@ -737,7 +737,7 @@ class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
 						]
 					],
 					'selectors' 	=> [
-						'{{WRAPPER}} .ova-gallery-slide .gallery-slide .owl-dots button.active' => 'width: {{SIZE}}{{UNIT}};',
+						'{{WRAPPER}} .xp-gallery-slide .gallery-slide .owl-dots button.active' => 'width: {{SIZE}}{{UNIT}};',
 					],
 				]
 			);
@@ -755,7 +755,7 @@ class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
 						]
 					],
 					'selectors' 	=> [
-						'{{WRAPPER}} .ova-gallery-slide .gallery-slide .owl-dots button.active' => 'height: {{SIZE}}{{UNIT}};',
+						'{{WRAPPER}} .xp-gallery-slide .gallery-slide .owl-dots button.active' => 'height: {{SIZE}}{{UNIT}};',
 					],
 				]
 			);
@@ -790,7 +790,7 @@ class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
 						]
 					],
 					'selectors' 	=> [
-						'{{WRAPPER}} .ova-gallery-slide .gallery-slide .owl-nav button' => 'width: {{SIZE}}{{UNIT}};height: {{SIZE}}{{UNIT}};',
+						'{{WRAPPER}} .xp-gallery-slide .gallery-slide .owl-nav button' => 'width: {{SIZE}}{{UNIT}};height: {{SIZE}}{{UNIT}};',
 					],
 				]
 			);
@@ -809,7 +809,7 @@ class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
 						]
 					],
 					'selectors' 	=> [
-						'{{WRAPPER}} .ova-gallery-slide .gallery-slide .owl-nav button i' => 'font-size: {{SIZE}}{{UNIT}};',
+						'{{WRAPPER}} .xp-gallery-slide .gallery-slide .owl-nav button i' => 'font-size: {{SIZE}}{{UNIT}};',
 					],
 				]
 			);
@@ -822,7 +822,7 @@ class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
 					'type'       => Controls_Manager::DIMENSIONS,
 					'size_units' => array( 'px', '%' ),
 					'selectors'  => array(
-						'{{WRAPPER}} .ova-gallery-slide .gallery-slide .owl-nav button' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+						'{{WRAPPER}} .xp-gallery-slide .gallery-slide .owl-nav button' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 					),
 				)
 			);
@@ -842,7 +842,7 @@ class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
 							'label'     => esc_html__( 'Color', 'spalisho' ),
 							'type'      => Controls_Manager::COLOR,
 							'selectors' => [
-								'{{WRAPPER}} .ova-gallery-slide .gallery-slide .owl-nav button' => 'color : {{VALUE}};',		
+								'{{WRAPPER}} .xp-gallery-slide .gallery-slide .owl-nav button' => 'color : {{VALUE}};',		
 							],
 							'condition' => [
 								'nav_control' => 'yes',
@@ -856,7 +856,7 @@ class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
 							'label'     => esc_html__( 'Background', 'spalisho' ),
 							'type'      => Controls_Manager::COLOR,
 							'selectors' => [
-								'{{WRAPPER}} .ova-gallery-slide .gallery-slide .owl-nav button' => 'background-color : {{VALUE}};',
+								'{{WRAPPER}} .xp-gallery-slide .gallery-slide .owl-nav button' => 'background-color : {{VALUE}};',
 							],
 							'condition' => [
 								'nav_control' => 'yes',
@@ -878,7 +878,7 @@ class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
 							'label'     => esc_html__( 'Color', 'spalisho' ),
 							'type'      => Controls_Manager::COLOR,
 							'selectors' => [
-								'{{WRAPPER}} .ova-gallery-slide .gallery-slide .owl-nav button:hover ' => 'color : {{VALUE}};',		
+								'{{WRAPPER}} .xp-gallery-slide .gallery-slide .owl-nav button:hover ' => 'color : {{VALUE}};',		
 							],
 							'condition' => [
 								'nav_control' => 'yes',
@@ -892,7 +892,7 @@ class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
 							'label'     => esc_html__( 'Background', 'spalisho' ),
 							'type'      => Controls_Manager::COLOR,
 							'selectors' => [
-								'{{WRAPPER}} .ova-gallery-slide .gallery-slide .owl-nav button:hover' => 'background-color : {{VALUE}};',
+								'{{WRAPPER}} .xp-gallery-slide .gallery-slide .owl-nav button:hover' => 'background-color : {{VALUE}};',
 								
 							],
 							'condition' => [
@@ -933,7 +933,7 @@ class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
 
 		<?php if ( !empty($list) ) : ?>
 
-			<div class="ova-gallery-slide">
+			<div class="xp-gallery-slide">
 				<div class="gallery-slide owl-carousel" data-options="<?php echo esc_attr(json_encode($data_options)); ?>" >
 
 					<?php foreach ( $list as $key => $item ) :

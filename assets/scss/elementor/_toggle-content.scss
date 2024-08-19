@@ -1,4 +1,4 @@
-.ova-toggle-content{
+.xp-toggle-content{
 	line-height: 1; 
 
 	&.toggled{
@@ -242,7 +242,7 @@
 
         &::after {
             content: "\f104";
-            font-family: "ovaicon";
+            font-family: "xpicon";
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
             display: inline-block;
@@ -262,7 +262,7 @@
         &.toggled-on {
             &:after {
                 content: "\f10c";
-                font-family: "ovaicon";
+                font-family: "xpicon";
             }
         }
     }

@@ -7,7 +7,7 @@
         
 		elementorFrontend.hooks.addAction('frontend/element_ready/spalisho_elementor_testimonial.default', function(){
 
-			$(".ova-testimonial .slider-version_1").each(function(){
+			$(".xp-testimonial .slider-version_1").each(function(){
 		        var slk = $(this) ;
 		        var slk_ops = slk.data('options') ? slk.data('options') : {};
 
@@ -58,7 +58,7 @@
 		    });
 
 		    // slide syncing
-		    $(".ova-testimonial .slide-for").each(function(){
+		    $(".xp-testimonial .slide-for").each(function(){
 
 		        var slk2 = $(this);
 
@@ -81,7 +81,7 @@
 		    });
             
             // slider 2
-		    $(".ova-testimonial .slider-version_2").each(function(){
+		    $(".xp-testimonial .slider-version_2").each(function(){
 
 		        var slk 	= $(this) ;
 		        var slk_ops = slk.data('options') ? slk.data('options') : {};

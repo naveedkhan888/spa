@@ -273,7 +273,7 @@ class Spalisho_Elementor_Canvas_Menu extends Widget_Base {
             </button>
             <nav class="container-menu <?php echo  esc_attr( $settings['menu_dir'] ); ?>" >
 	            <div class="close-menu">
-	            	<i class="ovaicon-cancel"></i>
+	            	<i class="xpicon-cancel"></i>
 	            </div>
 				<?php
 					wp_nav_menu( [

@@ -181,7 +181,7 @@ class Spalisho_Elementor_Product_List extends Widget_Base {
 						'unit' => 'px',
 					],
 					'selectors' => [
-						'{{WRAPPER}} .ova-product-list' => 'grid-gap: {{SIZE}}{{UNIT}};',
+						'{{WRAPPER}} .xp-product-list' => 'grid-gap: {{SIZE}}{{UNIT}};',
 					],
 				]
 			);
@@ -192,7 +192,7 @@ class Spalisho_Elementor_Product_List extends Widget_Base {
 					'label' 	=> esc_html__( 'Background', 'spalisho' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-product-list li.product' => 'background-color: {{VALUE}}',
+						'{{WRAPPER}} .xp-product-list li.product' => 'background-color: {{VALUE}}',
 					],
 				]
 			);
@@ -202,7 +202,7 @@ class Spalisho_Elementor_Product_List extends Widget_Base {
 				[
 					'name' 		=> 'content_box_shadow',
 					'label' 	=> esc_html__( 'Box Shadow', 'spalisho' ),
-					'selector' 	=> '{{WRAPPER}} .ova-product-list li.product',
+					'selector' 	=> '{{WRAPPER}} .xp-product-list li.product',
 				]
 			);
 
@@ -211,7 +211,7 @@ class Spalisho_Elementor_Product_List extends Widget_Base {
 				[
 					'name' 		=> 'content_border',
 					'label' 	=> esc_html__( 'Border', 'spalisho' ),
-					'selector' 	=> '{{WRAPPER}} .ova-product-list li.product',
+					'selector' 	=> '{{WRAPPER}} .xp-product-list li.product',
 					'separator' => 'before',
 				]
 			);
@@ -223,7 +223,7 @@ class Spalisho_Elementor_Product_List extends Widget_Base {
 					'type' 			=> Controls_Manager::DIMENSIONS,
 					'size_units' 	=> [ 'px', '%', 'em' ],
 					'selectors' 	=> [
-						'{{WRAPPER}} .ova-product-list li.product' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+						'{{WRAPPER}} .xp-product-list li.product' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 					],
 				]
 			);
@@ -235,7 +235,7 @@ class Spalisho_Elementor_Product_List extends Widget_Base {
 					'type' 			=> Controls_Manager::DIMENSIONS,
 					'size_units' 	=> [ 'px', '%', 'em' ],
 					'selectors' 	=> [
-						'{{WRAPPER}} .ova-product-list li.product' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+						'{{WRAPPER}} .xp-product-list li.product' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 					],
 				]
 			);
@@ -255,7 +255,7 @@ class Spalisho_Elementor_Product_List extends Widget_Base {
 				Group_Control_Typography::get_type(),
 				[
 					'name' 		=> 'title_typography',
-					'selector' 	=> '{{WRAPPER}} .ova-product-list li.product .woocommerce-loop-product__title',
+					'selector' 	=> '{{WRAPPER}} .xp-product-list li.product .woocommerce-loop-product__title',
 				]
 			);
 
@@ -273,7 +273,7 @@ class Spalisho_Elementor_Product_List extends Widget_Base {
 							'label' 	=> esc_html__( 'Color', 'spalisho' ),
 							'type' 		=> Controls_Manager::COLOR,
 							'selectors' => [
-								'{{WRAPPER}} .ova-product-list li.product .woocommerce-loop-product__title' => 'color: {{VALUE}}',
+								'{{WRAPPER}} .xp-product-list li.product .woocommerce-loop-product__title' => 'color: {{VALUE}}',
 							],
 						]
 					);
@@ -293,7 +293,7 @@ class Spalisho_Elementor_Product_List extends Widget_Base {
 							'label' 	=> esc_html__( 'Color', 'spalisho' ),
 							'type' 		=> Controls_Manager::COLOR,
 							'selectors' => [
-								'{{WRAPPER}} .ova-product-list li.product .woocommerce-loop-product__title:hover' => 'color: {{VALUE}}',
+								'{{WRAPPER}} .xp-product-list li.product .woocommerce-loop-product__title:hover' => 'color: {{VALUE}}',
 							],
 						]
 					);
@@ -308,7 +308,7 @@ class Spalisho_Elementor_Product_List extends Widget_Base {
 					'type' 			=> Controls_Manager::DIMENSIONS,
 					'size_units' 	=> [ 'px', '%', 'em' ],
 					'selectors' 	=> [
-						'{{WRAPPER}} .ova-product-list li.product .woocommerce-loop-product__title' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+						'{{WRAPPER}} .xp-product-list li.product .woocommerce-loop-product__title' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 					],
 				]
 			);
@@ -329,7 +329,7 @@ class Spalisho_Elementor_Product_List extends Widget_Base {
 					'label' 	=> esc_html__( 'Star Color', 'spalisho' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-product-list li.product .star-rating' => 'color: {{VALUE}}',
+						'{{WRAPPER}} .xp-product-list li.product .star-rating' => 'color: {{VALUE}}',
 					],
 				]
 			);
@@ -349,7 +349,7 @@ class Spalisho_Elementor_Product_List extends Widget_Base {
 				Group_Control_Typography::get_type(),
 				[
 					'name' 		=> 'price_typography',
-					'selector' 	=> '{{WRAPPER}} .ova-product-list li.product .price',
+					'selector' 	=> '{{WRAPPER}} .xp-product-list li.product .price',
 				]
 			);
 
@@ -359,7 +359,7 @@ class Spalisho_Elementor_Product_List extends Widget_Base {
 					'label' 	=> esc_html__( 'Color', 'spalisho' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-product-list li.product .price' => 'color: {{VALUE}}',
+						'{{WRAPPER}} .xp-product-list li.product .price' => 'color: {{VALUE}}',
 					],
 				]
 			);
@@ -391,7 +391,7 @@ class Spalisho_Elementor_Product_List extends Widget_Base {
 					[
 						'name' => 'button_typography',		
 						'label' => esc_html__( 'Typography', 'spalisho' ),
-						'selector' => '{{WRAPPER}} .ova-product-list li.product a.add_to_cart_button',
+						'selector' => '{{WRAPPER}} .xp-product-list li.product a.add_to_cart_button',
 						
 					]
 				);
@@ -402,7 +402,7 @@ class Spalisho_Elementor_Product_List extends Widget_Base {
 						'label' => esc_html__( 'Color', 'spalisho' ),
 						'type' => Controls_Manager::COLOR,
 						'selectors' => [
-							'{{WRAPPER}} .ova-product-list li.product a.add_to_cart_button' => 'color : {{VALUE}};',
+							'{{WRAPPER}} .xp-product-list li.product a.add_to_cart_button' => 'color : {{VALUE}};',
 						],
 					]
 				);
@@ -413,7 +413,7 @@ class Spalisho_Elementor_Product_List extends Widget_Base {
 						'label' => esc_html__( 'Background ', 'spalisho' ),
 						'type' => Controls_Manager::COLOR,
 						'selectors' => [
-							'{{WRAPPER}} .ova-product-list li.product a.add_to_cart_button' => 'background-color : {{VALUE}};',
+							'{{WRAPPER}} .xp-product-list li.product a.add_to_cart_button' => 'background-color : {{VALUE}};',
 						],
 					]
 				);
@@ -423,7 +423,7 @@ class Spalisho_Elementor_Product_List extends Widget_Base {
 					[
 						'name' => 'button_border',
 						'label' => esc_html__( 'Border', 'spalisho' ),
-						'selector' => '{{WRAPPER}} .ova-product-list li.product a.add_to_cart_button',
+						'selector' => '{{WRAPPER}} .xp-product-list li.product a.add_to_cart_button',
 					]
 				);
 				
@@ -434,7 +434,7 @@ class Spalisho_Elementor_Product_List extends Widget_Base {
 						'type'       => Controls_Manager::DIMENSIONS,
 						'size_units' => array( 'px', '%' ),
 						'selectors'  => array(
-							'{{WRAPPER}} .ova-product-list li.product a.add_to_cart_button' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+							'{{WRAPPER}} .xp-product-list li.product a.add_to_cart_button' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 						),
 					)
 				);
@@ -454,7 +454,7 @@ class Spalisho_Elementor_Product_List extends Widget_Base {
 						'label' => esc_html__( 'Color', 'spalisho' ),
 						'type' => Controls_Manager::COLOR,
 						'selectors' => [
-							'{{WRAPPER}} .ova-product-list li.product:hover a.add_to_cart_button' => 'color : {{VALUE}};',
+							'{{WRAPPER}} .xp-product-list li.product:hover a.add_to_cart_button' => 'color : {{VALUE}};',
 						],
 					]
 				);
@@ -465,7 +465,7 @@ class Spalisho_Elementor_Product_List extends Widget_Base {
 						'label' => esc_html__( 'Background ', 'spalisho' ),
 						'type' => Controls_Manager::COLOR,
 						'selectors' => [
-							'{{WRAPPER}} .ova-product-list li.product:hover a.add_to_cart_button' => 'background-color : {{VALUE}};',
+							'{{WRAPPER}} .xp-product-list li.product:hover a.add_to_cart_button' => 'background-color : {{VALUE}};',
 						],
 					]
 				);
@@ -475,7 +475,7 @@ class Spalisho_Elementor_Product_List extends Widget_Base {
 					[
 						'name' => 'button_border_hover',
 						'label' => esc_html__( 'Border', 'spalisho' ),
-						'selector' => '{{WRAPPER}} .ova-product-list li.product:hover a.add_to_cart_button',
+						'selector' => '{{WRAPPER}} .xp-product-list li.product:hover a.add_to_cart_button',
 					]
 				);
 
@@ -568,14 +568,14 @@ class Spalisho_Elementor_Product_List extends Widget_Base {
 		?>
 
 		<?php if ( $products->have_posts() ): ?>
-			<ul class="ova-product-list <?php echo esc_attr( $column ); ?>">
+			<ul class="xp-product-list <?php echo esc_attr( $column ); ?>">
 				<?php while( $products->have_posts() ) : $products->the_post(); ?>
 					<?php wc_get_template_part( 'content', 'product' ); ?>
 				<?php endwhile; ?>
 			</ul>
 
 		<?php else: ?>
-			<div class="ova-no-products-found">
+			<div class="xp-no-products-found">
 				<?php echo esc_html__( 'No products found', 'spalisho' ); ?>
 			</div>
 		<?php endif; wp_reset_postdata(); ?>

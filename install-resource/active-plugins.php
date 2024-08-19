@@ -50,7 +50,7 @@ function spalisho_register_required_plugins() {
             'required'                 => true,
         ),
         array(
-            'name'                     => esc_html__('OvaTheme Framework','spalisho'),
+            'name'                     => esc_html__('XpertTheme Framework','spalisho'),
             'slug'                     => 'ova-framework',
             'required'                 => true,
             'source'                   => get_template_directory() . '/install-resource/plugins/ova-framework.zip',
@@ -64,7 +64,7 @@ function spalisho_register_required_plugins() {
             'version'                  => '6.7.15',
         ),
         array(
-            'name'                     => esc_html__('OvaTheme Service','spalisho'),
+            'name'                     => esc_html__('XpertTheme Service','spalisho'),
             'slug'                     => 'ova-sev',
             'required'                 => true,
             'source'                   => get_template_directory() . '/install-resource/plugins/ova-sev.zip',
@@ -76,7 +76,7 @@ function spalisho_register_required_plugins() {
             'required'                 => true,
         ),
         array(
-            'name'                     => esc_html__('Ovatheme MegaMenu','spalisho'),
+            'name'                     => esc_html__('Xperttheme MegaMenu','spalisho'),
             'slug'                     => 'ova-megamenu',
             'required'                 => true,
             'source'                   => get_template_directory() . '/install-resource/plugins/ova-megamenu.zip',
@@ -198,14 +198,14 @@ if ( ! function_exists('spalisho_replace_url_after_import') ) {
     function spalisho_replace_url_after_import(){
         global $wpdb;
         $site_url       = get_site_url();
-        $ovatheme_url   = "https://demo.ovatheme.com/spalisho";
-        $wpdb->get_results( "UPDATE {$wpdb->prefix}options SET option_value = replace(option_value, '{$ovatheme_url}', '{$site_url}' )" );
-        $wpdb->get_results( "UPDATE {$wpdb->prefix}postmeta SET meta_value = replace(meta_value, '{$ovatheme_url}', '{$site_url}' )" );
-        $wpdb->get_results( "UPDATE {$wpdb->prefix}posts SET post_content = replace(post_content, '{$ovatheme_url}', '{$site_url}' )" );
-        $wpdb->get_results( "UPDATE {$wpdb->prefix}posts SET guid = replace(guid, '{$ovatheme_url}', '{$site_url}' )" );
+        $xperttheme_url   = "https://demo.xperttheme.com/spalisho";
+        $wpdb->get_results( "UPDATE {$wpdb->prefix}options SET option_value = replace(option_value, '{$xperttheme_url}', '{$site_url}' )" );
+        $wpdb->get_results( "UPDATE {$wpdb->prefix}postmeta SET meta_value = replace(meta_value, '{$xperttheme_url}', '{$site_url}' )" );
+        $wpdb->get_results( "UPDATE {$wpdb->prefix}posts SET post_content = replace(post_content, '{$xperttheme_url}', '{$site_url}' )" );
+        $wpdb->get_results( "UPDATE {$wpdb->prefix}posts SET guid = replace(guid, '{$xperttheme_url}', '{$site_url}' )" );
 
         // Elementor replace
-        $escaped_from       = str_replace( '/', '\\/', $ovatheme_url );
+        $escaped_from       = str_replace( '/', '\\/', $xperttheme_url );
         $escaped_to         = str_replace( '/', '\\/', $site_url );
         $meta_value_like    = '[%'; // meta_value LIKE '[%' are json formatted
 

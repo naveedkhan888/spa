@@ -242,7 +242,7 @@ class Spalisho_Elementor_Testimonial_2 extends Widget_Base {
 						],
 					],
 					'selectors' => [
-						'{{WRAPPER}} .ova-testimonial-2 .slide-testimonials-2 .client-info .info .icon-star i' => 'font-size: {{SIZE}}{{UNIT}};',
+						'{{WRAPPER}} .xp-testimonial-2 .slide-testimonials-2 .client-info .info .icon-star i' => 'font-size: {{SIZE}}{{UNIT}};',
 					],
 				]
 			);
@@ -253,7 +253,7 @@ class Spalisho_Elementor_Testimonial_2 extends Widget_Base {
 					'label' 	=> esc_html__( 'Color', 'spalisho' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-testimonial-2 .slide-testimonials-2 .client-info .info .icon-star i' => 'color: {{VALUE}};',
+						'{{WRAPPER}} .xp-testimonial-2 .slide-testimonials-2 .client-info .info .icon-star i' => 'color: {{VALUE}};',
 					],
 				]
 			);
@@ -284,7 +284,7 @@ class Spalisho_Elementor_Testimonial_2 extends Widget_Base {
 						],
 					],
 					'selectors' => [
-						'{{WRAPPER}} .ova-testimonial-2 .slide-testimonials-2 .client-info .client .icon i' => 'font-size: {{SIZE}}{{UNIT}};',
+						'{{WRAPPER}} .xp-testimonial-2 .slide-testimonials-2 .client-info .client .icon i' => 'font-size: {{SIZE}}{{UNIT}};',
 					],
 				]
 			);
@@ -295,7 +295,7 @@ class Spalisho_Elementor_Testimonial_2 extends Widget_Base {
 					'label' 	=> esc_html__( 'Color', 'spalisho' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-testimonial-2 .slide-testimonials-2 .client-info .client .icon i' => 'color: {{VALUE}};',
+						'{{WRAPPER}} .xp-testimonial-2 .slide-testimonials-2 .client-info .client .icon i' => 'color: {{VALUE}};',
 					],
 				]
 			);
@@ -306,7 +306,7 @@ class Spalisho_Elementor_Testimonial_2 extends Widget_Base {
 					'name' => 'background_icon',
 					'label' => esc_html__( 'Background', 'spalisho' ),
 					'types' => [ 'classic', 'gradient',],
-					'selector' => '{{WRAPPER}} .ova-testimonial-2 .slide-testimonials-2 .client-info .client .icon',
+					'selector' => '{{WRAPPER}} .xp-testimonial-2 .slide-testimonials-2 .client-info .client .icon',
 				]
 			);
 
@@ -317,7 +317,7 @@ class Spalisho_Elementor_Testimonial_2 extends Widget_Base {
 	                'type' 			=> Controls_Manager::DIMENSIONS,
 	                'size_units' 	=> [ 'px', '%', 'em' ],
 	                'selectors' 	=> [
-	                    '{{WRAPPER}} .ova-testimonial-2 .slide-testimonials-2 .client-info .client .icon' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+	                    '{{WRAPPER}} .xp-testimonial-2 .slide-testimonials-2 .client-info .client .icon' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 	                ],
 	            ]
 	        );
@@ -329,7 +329,7 @@ class Spalisho_Elementor_Testimonial_2 extends Widget_Base {
 	                'type' 			=> Controls_Manager::DIMENSIONS,
 	                'size_units' 	=> [ 'px', '%', 'em' ],
 	                'selectors' 	=> [
-	                    '{{WRAPPER}} .ova-testimonial-2 .slide-testimonials-2 .client-info .client .icon' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+	                    '{{WRAPPER}} .xp-testimonial-2 .slide-testimonials-2 .client-info .client .icon' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 	                ],
 	            ]
 	        );
@@ -353,7 +353,7 @@ class Spalisho_Elementor_Testimonial_2 extends Widget_Base {
 					'type'       => Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', 'em', '%' ],
 					'selectors'  => [
-						'{{WRAPPER}} .ova-testimonial-2 .slide-testimonials-2 .client-info .info .name-job' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+						'{{WRAPPER}} .xp-testimonial-2 .slide-testimonials-2 .client-info .info .name-job' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 					],
 				]
 			);
@@ -371,7 +371,7 @@ class Spalisho_Elementor_Testimonial_2 extends Widget_Base {
 				Group_Control_Typography::get_type(),
 				[
 					'name'     => 'author_name_typography',
-					'selector' => '{{WRAPPER}} .ova-testimonial-2 .slide-testimonials-2 .client-info .info .name-job .name',
+					'selector' => '{{WRAPPER}} .xp-testimonial-2 .slide-testimonials-2 .client-info .info .name-job .name',
 				]
 			);
 
@@ -382,7 +382,7 @@ class Spalisho_Elementor_Testimonial_2 extends Widget_Base {
 					'type'      => Controls_Manager::COLOR,
 					'selectors' => [
 						'
-						{{WRAPPER}} .ova-testimonial-2 .slide-testimonials-2 .client-info .info .name-job .name' => 'color : {{VALUE}};',
+						{{WRAPPER}} .xp-testimonial-2 .slide-testimonials-2 .client-info .info .name-job .name' => 'color : {{VALUE}};',
 					],
 				]
 			);
@@ -400,7 +400,7 @@ class Spalisho_Elementor_Testimonial_2 extends Widget_Base {
 				Group_Control_Typography::get_type(),
 				[
 					'name'     => 'job_typography',
-					'selector' => '{{WRAPPER}} .ova-testimonial-2 .slide-testimonials-2 .client-info .info .name-job .job',
+					'selector' => '{{WRAPPER}} .xp-testimonial-2 .slide-testimonials-2 .client-info .info .name-job .job',
 				]
 			);
 
@@ -411,7 +411,7 @@ class Spalisho_Elementor_Testimonial_2 extends Widget_Base {
 					'type'      => Controls_Manager::COLOR,
 					'selectors' => [
 						'
-						{{WRAPPER}} .ova-testimonial-2 .slide-testimonials-2 .client-info .info .name-job .job' => 'color : {{VALUE}};',
+						{{WRAPPER}} .xp-testimonial-2 .slide-testimonials-2 .client-info .info .name-job .job' => 'color : {{VALUE}};',
 					],
 				]
 			);
@@ -434,7 +434,7 @@ class Spalisho_Elementor_Testimonial_2 extends Widget_Base {
 				Group_Control_Typography::get_type(),
 				[
 					'name'     => 'content_testimonial_typography',
-					'selector' => '{{WRAPPER}} .ova-testimonial-2 .slide-testimonials-2 .client-info p.ova-evaluate',
+					'selector' => '{{WRAPPER}} .xp-testimonial-2 .slide-testimonials-2 .client-info p.xp-evaluate',
 				]
 			);
 
@@ -444,7 +444,7 @@ class Spalisho_Elementor_Testimonial_2 extends Widget_Base {
 					'label'     => esc_html__( 'Color', 'spalisho' ),
 					'type'      => Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-testimonial-2 .slide-testimonials-2 .client-info p.ova-evaluate' => 'color : {{VALUE}};',
+						'{{WRAPPER}} .xp-testimonial-2 .slide-testimonials-2 .client-info p.xp-evaluate' => 'color : {{VALUE}};',
 					],
 				]
 			);
@@ -456,7 +456,7 @@ class Spalisho_Elementor_Testimonial_2 extends Widget_Base {
 					'type'       => Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', 'em', '%' ],
 					'selectors'  => [
-						'{{WRAPPER}} .ova-testimonial-2 .slide-testimonials-2 .client-info p.ova-evaluate' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+						'{{WRAPPER}} .xp-testimonial-2 .slide-testimonials-2 .client-info p.xp-evaluate' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 					],
 				]
 			);
@@ -491,7 +491,7 @@ class Spalisho_Elementor_Testimonial_2 extends Widget_Base {
 						],
 					],
 					'selectors' => [
-						'{{WRAPPER}} .ova-testimonial-2 .slide-testimonials-2 .slick-next:before, {{WRAPPER}} .ova-testimonial-2 .slide-testimonials-2 .slick-prev:before' => 'font-size: {{SIZE}}{{UNIT}};',
+						'{{WRAPPER}} .xp-testimonial-2 .slide-testimonials-2 .slick-next:before, {{WRAPPER}} .xp-testimonial-2 .slide-testimonials-2 .slick-prev:before' => 'font-size: {{SIZE}}{{UNIT}};',
 					],
 				]
 			);
@@ -503,7 +503,7 @@ class Spalisho_Elementor_Testimonial_2 extends Widget_Base {
 					'type'       => Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', 'em', '%' ],
 					'selectors'  => [
-						'{{WRAPPER}} .ova-testimonial-2 .slide-testimonials-2 .slick-next, {{WRAPPER}} .ova-testimonial-2 .slide-testimonials-2 .slick-prev' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+						'{{WRAPPER}} .xp-testimonial-2 .slide-testimonials-2 .slick-next, {{WRAPPER}} .xp-testimonial-2 .slide-testimonials-2 .slick-prev' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 					],
 				]
 			);
@@ -515,7 +515,7 @@ class Spalisho_Elementor_Testimonial_2 extends Widget_Base {
 					'type'       => Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', 'em', '%' ],
 					'selectors'  => [
-						'{{WRAPPER}} .ova-testimonial-2 .slide-testimonials-2 .slick-next, {{WRAPPER}} .ova-testimonial-2 .slide-testimonials-2 .slick-prev' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+						'{{WRAPPER}} .xp-testimonial-2 .slide-testimonials-2 .slick-next, {{WRAPPER}} .xp-testimonial-2 .slide-testimonials-2 .slick-prev' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 					],
 				]
 			);
@@ -535,7 +535,7 @@ class Spalisho_Elementor_Testimonial_2 extends Widget_Base {
 							'label' => esc_html__( 'Color', 'spalisho' ),
 							'type' => Controls_Manager::COLOR,
 							'selectors' => [
-								'{{WRAPPER}} .ova-testimonial-2 .slide-testimonials-2 .slick-next:before, {{WRAPPER}} .ova-testimonial-2 .slide-testimonials-2 .slick-prev:before' => 'color : {{VALUE}};',
+								'{{WRAPPER}} .xp-testimonial-2 .slide-testimonials-2 .slick-next:before, {{WRAPPER}} .xp-testimonial-2 .slide-testimonials-2 .slick-prev:before' => 'color : {{VALUE}};',
 							],
 						]
 					);
@@ -546,7 +546,7 @@ class Spalisho_Elementor_Testimonial_2 extends Widget_Base {
 							'label' => esc_html__( 'Color Border', 'spalisho' ),
 							'type' => Controls_Manager::COLOR,
 							'selectors' => [
-								'{{WRAPPER}} .ova-testimonial-2 .slide-testimonials-2 .slick-next, {{WRAPPER}} .ova-testimonial-2 .slide-testimonials-2 .slick-prev' => 'border-color : {{VALUE}};',
+								'{{WRAPPER}} .xp-testimonial-2 .slide-testimonials-2 .slick-next, {{WRAPPER}} .xp-testimonial-2 .slide-testimonials-2 .slick-prev' => 'border-color : {{VALUE}};',
 							],
 						]
 					);
@@ -566,7 +566,7 @@ class Spalisho_Elementor_Testimonial_2 extends Widget_Base {
 							'label' => esc_html__( 'Color Hover', 'spalisho' ),
 							'type' => Controls_Manager::COLOR,
 							'selectors' => [
-								'{{WRAPPER}} .ova-testimonial-2 .slide-testimonials-2 .slick-next:hover:before, {{WRAPPER}} .ova-testimonial-2 .slide-testimonials-2 .slick-prev:hover:before' => 'color : {{VALUE}};',
+								'{{WRAPPER}} .xp-testimonial-2 .slide-testimonials-2 .slick-next:hover:before, {{WRAPPER}} .xp-testimonial-2 .slide-testimonials-2 .slick-prev:hover:before' => 'color : {{VALUE}};',
 							],
 						]
 					);
@@ -577,7 +577,7 @@ class Spalisho_Elementor_Testimonial_2 extends Widget_Base {
 							'label' => esc_html__( 'Color Border Hover', 'spalisho' ),
 							'type' => Controls_Manager::COLOR,
 							'selectors' => [
-								'{{WRAPPER}} .ova-testimonial-2 .slide-testimonials-2 .slick-next:hover, {{WRAPPER}} .ova-testimonial-2 .slide-testimonials-2 .slick-prev:hover' => 'border-color : {{VALUE}};',
+								'{{WRAPPER}} .xp-testimonial-2 .slide-testimonials-2 .slick-next:hover, {{WRAPPER}} .xp-testimonial-2 .slide-testimonials-2 .slick-prev:hover' => 'border-color : {{VALUE}};',
 							],
 						]
 					);
@@ -610,7 +610,7 @@ class Spalisho_Elementor_Testimonial_2 extends Widget_Base {
 
 		?>
          
-         <div class="ova-testimonial-2">
+         <div class="xp-testimonial-2">
 
 			<div class="slide-testimonials-2" data-options="<?php echo esc_attr(json_encode($data_options)) ; ?>">
 
@@ -641,7 +641,7 @@ class Spalisho_Elementor_Testimonial_2 extends Widget_Base {
 								</div>
 
 								<?php if( $item['testimonial'] != '' ) : ?>
-									<p class="ova-evaluate">
+									<p class="xp-evaluate">
 										<?php echo esc_html($item['testimonial']) ; ?>
 									</p>
 								<?php endif; ?>

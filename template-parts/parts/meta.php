@@ -21,14 +21,14 @@
  		
  		<?php if( $show_date ){ ?>
 	 		<li class="date">
-	 			<i class="ovaicon-calendar-1"></i>
+	 			<i class="xpicon-calendar-1"></i>
 			    <?php the_time( get_option( 'date_format' ));?>
 	 		</li>
  		<?php } ?>
 
  		<?php if( $show_cat ){ ?>
 	 		<li class="category">
-	 			<i class="ovaicon-folder-1"></i>
+	 			<i class="xpicon-folder-1"></i>
 	 			<?php 
 	 				$categories = get_the_category();
 	 				if ( !empty( $categories ) && is_array( $categories ) ) {
@@ -40,7 +40,7 @@
 
  		<?php if( $show_author ){ ?>
 	 		<li class="author">
-	 			<i class="ovaicon-user-1"></i>
+	 			<i class="xpicon-user-1"></i>
 	 			<a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>">
 	 				<?php the_author_meta( 'display_name' ); ?>
 	 			</a>
@@ -49,7 +49,7 @@
  		
  		<?php if( $show_comment ){ ?>
 	 		<li class="comment">
-	 			<i class="ovaicon-chat-comment-oval-speech-bubble-with-text-lines"></i>
+	 			<i class="xpicon-chat-comment-oval-speech-bubble-with-text-lines"></i>
 	            <?php comments_popup_link(
 	            	esc_html__(' 0 Comments', 'spalisho'), 
 	            	esc_html__(' 1 Comment', 'spalisho'), 

@@ -7,7 +7,7 @@
         elementorFrontend.hooks.addAction('frontend/element_ready/spalisho_elementor_process.default', function(){
 	       
 	        /* Add your code here */
-	      	$('.ova-process .ova-invisible').each(function() {
+	      	$('.xp-process .xp-invisible').each(function() {
 	      		var that = $(this);
 
 	      		if ( $(window).width() <= 1024 ) {

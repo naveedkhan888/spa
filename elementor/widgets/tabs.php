@@ -797,7 +797,7 @@ class Spalisho_Elementor_Tabs extends Widget_Tabs {
                     Group_Control_Typography::get_type(),
                     [
                         'name'      => 'ova_tab_icon_typography',
-                        'selector'  => '{{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-wrapper > .elementor-tab-desktop-title span.ova-tab-icon i, {{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-content-wrapper > .elementor-tab-mobile-title span.ova-tab-icon i',
+                        'selector'  => '{{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-wrapper > .elementor-tab-desktop-title span.xp-tab-icon i, {{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-content-wrapper > .elementor-tab-mobile-title span.xp-tab-icon i',
                     ]
                 );
 
@@ -818,8 +818,8 @@ class Spalisho_Elementor_Tabs extends Widget_Tabs {
                                 'label'     => esc_html__( 'Color', 'spalisho' ),
                                 'type'      => Controls_Manager::COLOR,
                                 'selectors' => [
-                                    '{{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-wrapper > .elementor-tab-desktop-title span.ova-tab-icon i' => 'color: {{VALUE}}',
-                                    '{{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-content-wrapper > .elementor-tab-mobile-title span.ova-tab-icon i' => 'color: {{VALUE}}',
+                                    '{{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-wrapper > .elementor-tab-desktop-title span.xp-tab-icon i' => 'color: {{VALUE}}',
+                                    '{{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-content-wrapper > .elementor-tab-mobile-title span.xp-tab-icon i' => 'color: {{VALUE}}',
                                 ],
                             ]
                         );
@@ -839,8 +839,8 @@ class Spalisho_Elementor_Tabs extends Widget_Tabs {
                                 'label'     => esc_html__( 'Color', 'spalisho' ),
                                 'type'      => Controls_Manager::COLOR,
                                 'selectors' => [
-                                    '{{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-wrapper > .elementor-tab-desktop-title:hover span.ova-tab-icon i' => 'color: {{VALUE}}',
-                                    '{{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-content-wrapper > .elementor-tab-mobile-title:hover span.ova-tab-icon i' => 'color: {{VALUE}}',
+                                    '{{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-wrapper > .elementor-tab-desktop-title:hover span.xp-tab-icon i' => 'color: {{VALUE}}',
+                                    '{{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-content-wrapper > .elementor-tab-mobile-title:hover span.xp-tab-icon i' => 'color: {{VALUE}}',
                                 ],
                             ]
                         );
@@ -860,8 +860,8 @@ class Spalisho_Elementor_Tabs extends Widget_Tabs {
                                 'label'     => esc_html__( 'Color', 'spalisho' ),
                                 'type'      => Controls_Manager::COLOR,
                                 'selectors' => [
-                                    '{{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-wrapper > .elementor-tab-desktop-title.elementor-active span.ova-tab-icon i' => 'color: {{VALUE}}',
-                                    '{{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-content-wrapper > .elementor-tab-mobile-title.elementor-active span.ova-tab-icon i' => 'color: {{VALUE}}',
+                                    '{{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-wrapper > .elementor-tab-desktop-title.elementor-active span.xp-tab-icon i' => 'color: {{VALUE}}',
+                                    '{{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-content-wrapper > .elementor-tab-mobile-title.elementor-active span.xp-tab-icon i' => 'color: {{VALUE}}',
                                 ],
                             ]
                         );
@@ -876,8 +876,8 @@ class Spalisho_Elementor_Tabs extends Widget_Tabs {
                         'type'          => Controls_Manager::DIMENSIONS,
                         'size_units'    => [ 'px', '%', 'em' ],
                         'selectors'     => [
-                            '{{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-wrapper > .elementor-tab-desktop-title span.ova-tab-icon i' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
-                            '{{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-content-wrapper > .elementor-tab-mobile-title span.ova-tab-icon i' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+                            '{{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-wrapper > .elementor-tab-desktop-title span.xp-tab-icon i' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+                            '{{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-content-wrapper > .elementor-tab-mobile-title span.xp-tab-icon i' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
                         ],
                     ]
                 );
@@ -889,8 +889,8 @@ class Spalisho_Elementor_Tabs extends Widget_Tabs {
                         'type'          => Controls_Manager::DIMENSIONS,
                         'size_units'    => [ 'px', '%', 'em' ],
                         'selectors'     => [
-                            '{{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-wrapper > .elementor-tab-desktop-title span.ova-tab-icon i' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
-                            '{{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-content-wrapper > .elementor-tab-mobile-title span.ova-tab-icon i' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+                            '{{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-wrapper > .elementor-tab-desktop-title span.xp-tab-icon i' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+                            '{{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-content-wrapper > .elementor-tab-mobile-title span.xp-tab-icon i' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
                         ],
                     ]
                 );
@@ -926,8 +926,8 @@ class Spalisho_Elementor_Tabs extends Widget_Tabs {
                             ],
                         ],
                         'selectors' => [
-                            '{{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-wrapper > .elementor-tab-desktop-title span.ova-tab-image img' => 'width: {{SIZE}}{{UNIT}};min-width: {{SIZE}}{{UNIT}};',
-                            '{{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-content-wrapper > .elementor-tab-mobile-title span.ova-tab-image img' => 'width: {{SIZE}}{{UNIT}};min-width: {{SIZE}}{{UNIT}};',
+                            '{{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-wrapper > .elementor-tab-desktop-title span.xp-tab-image img' => 'width: {{SIZE}}{{UNIT}};min-width: {{SIZE}}{{UNIT}};',
+                            '{{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-content-wrapper > .elementor-tab-mobile-title span.xp-tab-image img' => 'width: {{SIZE}}{{UNIT}};min-width: {{SIZE}}{{UNIT}};',
                         ],
                     ]
                 );
@@ -954,8 +954,8 @@ class Spalisho_Elementor_Tabs extends Widget_Tabs {
                             ],
                         ],
                         'selectors' => [
-                            '{{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-wrapper > .elementor-tab-desktop-title span.ova-tab-image img' => 'height: {{SIZE}}{{UNIT}};',
-                            '{{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-content-wrapper > .elementor-tab-mobile-title span.ova-tab-image img' => 'height: {{SIZE}}{{UNIT}};',
+                            '{{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-wrapper > .elementor-tab-desktop-title span.xp-tab-image img' => 'height: {{SIZE}}{{UNIT}};',
+                            '{{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-content-wrapper > .elementor-tab-mobile-title span.xp-tab-image img' => 'height: {{SIZE}}{{UNIT}};',
                         ],
                     ]
                 );
@@ -967,8 +967,8 @@ class Spalisho_Elementor_Tabs extends Widget_Tabs {
                         'type'          => Controls_Manager::DIMENSIONS,
                         'size_units'    => [ 'px', '%', 'em' ],
                         'selectors'     => [
-                            '{{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-wrapper > .elementor-tab-desktop-title span.ova-tab-image img' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
-                            '{{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-content-wrapper > .elementor-tab-mobile-title span.ova-tab-image img' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+                            '{{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-wrapper > .elementor-tab-desktop-title span.xp-tab-image img' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+                            '{{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-content-wrapper > .elementor-tab-mobile-title span.xp-tab-image img' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
                         ],
                     ]
                 );
@@ -980,8 +980,8 @@ class Spalisho_Elementor_Tabs extends Widget_Tabs {
                         'type'          => Controls_Manager::DIMENSIONS,
                         'size_units'    => [ 'px', '%', 'em' ],
                         'selectors'     => [
-                            '{{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-wrapper > .elementor-tab-desktop-title span.ova-tab-image img' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
-                            '{{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-content-wrapper > .elementor-tab-mobile-title span.ova-tab-image img' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+                            '{{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-wrapper > .elementor-tab-desktop-title span.xp-tab-image img' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+                            '{{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-content-wrapper > .elementor-tab-mobile-title span.xp-tab-image img' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
                         ],
                     ]
                 );
@@ -993,8 +993,8 @@ class Spalisho_Elementor_Tabs extends Widget_Tabs {
                         'type'          => Controls_Manager::DIMENSIONS,
                         'size_units'    => [ 'px', '%', 'em' ],
                         'selectors'     => [
-                            '{{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-wrapper > .elementor-tab-desktop-title span.ova-tab-image img' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
-                            '{{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-content-wrapper > .elementor-tab-mobile-title span.ova-tab-image img' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+                            '{{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-wrapper > .elementor-tab-desktop-title span.xp-tab-image img' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+                            '{{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-content-wrapper > .elementor-tab-mobile-title span.xp-tab-image img' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
                         ],
                     ]
                 );
@@ -1049,17 +1049,17 @@ class Spalisho_Elementor_Tabs extends Widget_Tabs {
                     <div <?php $this->print_render_attribute_string( $tab_title_setting_key ); ?>><?php
                         if ( 'icon' === $item['tab_icon_image'] && $tab_icon ) {
                             if ( 'left' === $settings['icon_image_align'] ) { ?>
-                                <span class="ova-tab-icon"><i class="<?php echo esc_attr( $tab_icon ); ?>"></i></span>
+                                <span class="xp-tab-icon"><i class="<?php echo esc_attr( $tab_icon ); ?>"></i></span>
                             <?php
                             }
                             printf( $tab_title );
                             
                             if ( 'right' === $settings['icon_image_align'] ) { ?>
-                                <span class="ova-tab-icon"><i class="<?php echo esc_attr( $tab_icon ); ?>"></i></span>
+                                <span class="xp-tab-icon"><i class="<?php echo esc_attr( $tab_icon ); ?>"></i></span>
                             <?php }
                         } elseif ( 'image' === $item['tab_icon_image'] && $img_url ) {
                             if ( 'left' === $settings['icon_image_align'] ) { ?>
-                                <span class="ova-tab-image">
+                                <span class="xp-tab-image">
                                     <img src="<?php echo esc_url( $img_url ); ?>" alt="<?php echo esc_attr( $img_alt ); ?>">
                                 </span>
                             <?php
@@ -1067,7 +1067,7 @@ class Spalisho_Elementor_Tabs extends Widget_Tabs {
                             printf( $tab_title );
                             
                             if ( 'right' === $settings['icon_image_align'] ) { ?>
-                                <span class="ova-tab-image">
+                                <span class="xp-tab-image">
                                     <img src="<?php echo esc_url( $img_url ); ?>" alt="<?php echo esc_attr( $img_alt ); ?>">
                                 </span>
                             <?php }
@@ -1119,17 +1119,17 @@ class Spalisho_Elementor_Tabs extends Widget_Tabs {
 
                         if ( 'icon' === $item['tab_icon_image'] && $tab_icon ) {
                             if ( 'left' === $settings['icon_image_align'] ) { ?>
-                                <span class="ova-tab-icon"><i class="<?php echo esc_attr( $tab_icon ); ?>"></i></span>
+                                <span class="xp-tab-icon"><i class="<?php echo esc_attr( $tab_icon ); ?>"></i></span>
                             <?php }
 
                             $this->print_unescaped_setting( 'tab_title', 'tabs', $index );
 
                             if ( 'right' === $settings['icon_image_align'] ) { ?>
-                                <span class="ova-tab-icon"><i class="<?php echo esc_attr( $tab_icon ); ?>"></i></span>
+                                <span class="xp-tab-icon"><i class="<?php echo esc_attr( $tab_icon ); ?>"></i></span>
                             <?php }
                         } elseif ( 'image' === $item['tab_icon_image'] && $img_url ) {
                             if ( 'left' === $settings['icon_image_align'] ) { ?>
-                                <span class="ova-tab-image">
+                                <span class="xp-tab-image">
                                     <img src="<?php echo esc_url( $img_url ); ?>" alt="<?php echo esc_attr( $img_alt ); ?>">
                                 </span>
                             <?php }
@@ -1137,7 +1137,7 @@ class Spalisho_Elementor_Tabs extends Widget_Tabs {
                             $this->print_unescaped_setting( 'tab_title', 'tabs', $index );
 
                             if ( 'right' === $settings['icon_image_align'] ) { ?>
-                                <span class="ova-tab-image">
+                                <span class="xp-tab-image">
                                     <img src="<?php echo esc_url( $img_url ); ?>" alt="<?php echo esc_attr( $img_alt ); ?>">
                                 </span>
                             <?php }
@@ -1186,28 +1186,28 @@ class Spalisho_Elementor_Tabs extends Widget_Tabs {
                     #>
                         <div {{{ view.getRenderAttributeString( tabTitleKey ) }}}>
                             <#
-                                if ( 'icon' === item.tab_icon_image && item.ova_icon.value ) {
+                                if ( 'icon' === item.tab_icon_image && item.xp_icon.value ) {
                                     if ( 'left' === settings.icon_image_align ) { #>
-                                        <span class="ova-tab-icon"><i class="{{{ item.ova_icon.value }}}"></i></span>
+                                        <span class="xp-tab-icon"><i class="{{{ item.xp_icon.value }}}"></i></span>
                                     <# } #>
 
                                     {{{ item.tab_title }}}
 
                                     <# if ( 'right' === settings.icon_image_align ) { #>
-                                        <span class="ova-tab-icon"><i class="{{{ item.ova_icon.value }}}"></i></span>
+                                        <span class="xp-tab-icon"><i class="{{{ item.xp_icon.value }}}"></i></span>
                                     <# } #>
-                                <# } else if ( 'image' === item.tab_icon_image && item.ova_image.url ) { 
+                                <# } else if ( 'image' === item.tab_icon_image && item.xp_image.url ) { 
                                     if ( 'left' === settings.icon_image_align ) { #>
-                                        <span class="ova-tab-image">
-                                            <img src="{{{ item.ova_image.url }}}" alt="{{{ item.ova_image.alt }}}">
+                                        <span class="xp-tab-image">
+                                            <img src="{{{ item.xp_image.url }}}" alt="{{{ item.xp_image.alt }}}">
                                         </span>
                                     <# } #>
 
                                     {{{ item.tab_title }}}
 
                                     <# if ( 'right' === settings.icon_image_align ) { #>
-                                        <span class="ova-tab-image">
-                                            <img src="{{{ item.ova_image.url }}}" alt="{{{ item.ova_image.alt }}}">
+                                        <span class="xp-tab-image">
+                                            <img src="{{{ item.xp_image.url }}}" alt="{{{ item.xp_image.alt }}}">
                                         </span>
                                     <# } #>
 
@@ -1233,28 +1233,28 @@ class Spalisho_Elementor_Tabs extends Widget_Tabs {
                         view.addInlineEditingAttributes( tabContentKey, 'advanced' ); #>
                         <div class="elementor-tab-title elementor-tab-mobile-title" data-tab="{{ tabCount }}" role="tab">
                         <#
-                            if ( 'icon' === item.tab_icon_image && item.ova_icon.value ) {
+                            if ( 'icon' === item.tab_icon_image && item.xp_icon.value ) {
                                 if ( 'left' === settings.icon_image_align ) { #>
-                                    <span class="ova-tab-icon"><i class="{{{ item.ova_icon.value }}}"></i></span>
+                                    <span class="xp-tab-icon"><i class="{{{ item.xp_icon.value }}}"></i></span>
                                 <# } #>
 
                                 {{{ item.tab_title }}}
 
                                 <# if ( 'right' === settings.icon_image_align ) { #>
-                                    <span class="ova-tab-icon"><i class="{{{ item.ova_icon.value }}}"></i></span>
+                                    <span class="xp-tab-icon"><i class="{{{ item.xp_icon.value }}}"></i></span>
                                 <# } #>
-                            <# } else if ( 'image' === item.tab_icon_image && item.ova_image.url ) { 
+                            <# } else if ( 'image' === item.tab_icon_image && item.xp_image.url ) { 
                                 if ( 'left' === settings.icon_image_align ) { #>
-                                    <span class="ova-tab-image">
-                                        <img src="{{{ item.ova_image.url }}}" alt="{{{ item.ova_image.alt }}}">
+                                    <span class="xp-tab-image">
+                                        <img src="{{{ item.xp_image.url }}}" alt="{{{ item.xp_image.alt }}}">
                                     </span>
                                 <# } #>
 
                                 {{{ item.tab_title }}}
 
                                 <# if ( 'right' === settings.icon_image_align ) { #>
-                                    <span class="ova-tab-image">
-                                        <img src="{{{ item.ova_image.url }}}" alt="{{{ item.ova_image.alt }}}">
+                                    <span class="xp-tab-image">
+                                        <img src="{{{ item.xp_image.url }}}" alt="{{{ item.xp_image.alt }}}">
                                     </span>
                                 <# } #>
 

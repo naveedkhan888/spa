@@ -516,7 +516,7 @@ class Spalisho_Elementor_Toggle extends Widget_Toggle {
 				                'label' => esc_html__( 'Background', 'spalisho' ),
 				                'type' => Controls_Manager::COLOR,
 				                'selectors' => [
-				                    '{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title .ova-before-title:before' => 'background-color: {{VALUE}};',
+				                    '{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title .xp-before-title:before' => 'background-color: {{VALUE}};',
 				                ],
 				            ]
 				        );
@@ -536,7 +536,7 @@ class Spalisho_Elementor_Toggle extends Widget_Toggle {
 				                'label' => esc_html__( 'Background', 'spalisho' ),
 				                'type' => Controls_Manager::COLOR,
 				                'selectors' => [
-				                    '{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title:hover .ova-before-title:before' => 'background-color: {{VALUE}};',
+				                    '{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title:hover .xp-before-title:before' => 'background-color: {{VALUE}};',
 				                ],
 				            ]
 				        );
@@ -556,7 +556,7 @@ class Spalisho_Elementor_Toggle extends Widget_Toggle {
 				                'label' => esc_html__( 'Background', 'spalisho' ),
 				                'type' => Controls_Manager::COLOR,
 				                'selectors' => [
-				                    '{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title.elementor-active .ova-before-title:before' => 'background-color: {{VALUE}};',
+				                    '{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title.elementor-active .xp-before-title:before' => 'background-color: {{VALUE}};',
 				                ],
 				            ]
 				        );
@@ -586,7 +586,7 @@ class Spalisho_Elementor_Toggle extends Widget_Toggle {
                             ],
                         ],
                         'selectors' => [
-                            '{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title .ova-before-title:before' => 'width: {{SIZE}}{{UNIT}};',
+                            '{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title .xp-before-title:before' => 'width: {{SIZE}}{{UNIT}};',
                         ],
                         'condition' => [
 	                    	'show_before_title' => 'yes',
@@ -616,7 +616,7 @@ class Spalisho_Elementor_Toggle extends Widget_Toggle {
                             ],
                         ],
                         'selectors' => [
-                            '{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title .ova-before-title:before' => 'height: {{SIZE}}{{UNIT}};',
+                            '{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title .xp-before-title:before' => 'height: {{SIZE}}{{UNIT}};',
                         ],
                         'condition' => [
 	                    	'show_before_title' => 'yes',
@@ -642,7 +642,7 @@ class Spalisho_Elementor_Toggle extends Widget_Toggle {
                             ],
                         ],
                         'selectors' => [
-                            '{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title .ova-before-title:before' => 'top: {{SIZE}}{{UNIT}};',
+                            '{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title .xp-before-title:before' => 'top: {{SIZE}}{{UNIT}};',
                         ],
                         'condition' => [
 	                    	'show_before_title' => 'yes',
@@ -668,7 +668,7 @@ class Spalisho_Elementor_Toggle extends Widget_Toggle {
                             ],
                         ],
                         'selectors' => [
-                            '{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title .ova-before-title:before' => 'left: {{SIZE}}{{UNIT}};',
+                            '{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title .xp-before-title:before' => 'left: {{SIZE}}{{UNIT}};',
                         ],
                         'condition' => [
 	                    	'show_before_title' => 'yes',
@@ -683,7 +683,7 @@ class Spalisho_Elementor_Toggle extends Widget_Toggle {
                         'type'          => Controls_Manager::DIMENSIONS,
                         'size_units'    => [ 'px', '%', 'em' ],
                         'selectors'     => [
-                            '{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title .ova-before-title:before' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+                            '{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title .xp-before-title:before' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
                         ],
                         'condition' 	=> [
 	                    	'show_before_title' => 'yes',
@@ -832,7 +832,7 @@ class Spalisho_Elementor_Toggle extends Widget_Toggle {
 	            Group_Control_Typography::get_type(),
 	            [
 	                'name'      => 'ova_icon_typography',
-	                'selector'  => '{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title .ova-icon i',
+	                'selector'  => '{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title .xp-icon i',
 	                'condition' => [
 	                	'ova_icon[value]!' => '',
 	                ],
@@ -845,8 +845,8 @@ class Spalisho_Elementor_Toggle extends Widget_Toggle {
 					'label' 	=> esc_html__( 'Color', 'spalisho' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title .ova-icon i' => 'color: {{VALUE}};',
-						'{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title .ova-icon svg' => 'fill: {{VALUE}};',
+						'{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title .xp-icon i' => 'color: {{VALUE}};',
+						'{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title .xp-icon svg' => 'fill: {{VALUE}};',
 					],
 					'condition' => [
 	                	'ova_icon[value]!' => '',
@@ -860,8 +860,8 @@ class Spalisho_Elementor_Toggle extends Widget_Toggle {
 					'label' 	=> esc_html__( 'Hover Color', 'spalisho' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title:hover .ova-icon i' => 'color: {{VALUE}};',
-						'{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title:hover .ova-icon svg' => 'fill: {{VALUE}};',
+						'{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title:hover .xp-icon i' => 'color: {{VALUE}};',
+						'{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title:hover .xp-icon svg' => 'fill: {{VALUE}};',
 					],
 					'condition' => [
 	                	'ova_icon[value]!' => '',
@@ -875,8 +875,8 @@ class Spalisho_Elementor_Toggle extends Widget_Toggle {
 					'label' 	=> esc_html__( 'Active Color', 'spalisho' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title.elementor-active .ova-icon i' => 'color: {{VALUE}};',
-						'{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title.elementor-active .ova-icon svg' => 'fill: {{VALUE}};',
+						'{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title.elementor-active .xp-icon i' => 'color: {{VALUE}};',
+						'{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title.elementor-active .xp-icon svg' => 'fill: {{VALUE}};',
 					],
 					'condition' => [
 	                	'ova_icon[value]!' => '',
@@ -891,7 +891,7 @@ class Spalisho_Elementor_Toggle extends Widget_Toggle {
 	                'type'          => Controls_Manager::DIMENSIONS,
 	                'size_units'    => [ 'px', '%', 'em' ],
 	                'selectors'     => [
-	                    '{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title .ova-icon' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+	                    '{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title .xp-icon' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 	                ],
 	                'condition' 	=> [
 	                	'ova_icon[value]!' => '',
@@ -906,7 +906,7 @@ class Spalisho_Elementor_Toggle extends Widget_Toggle {
 	                'type'          => Controls_Manager::DIMENSIONS,
 	                'size_units'	=> [ 'px', '%', 'em' ],
 	                'selectors'     => [
-	                    '{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title .ova-icon' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+	                    '{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title .xp-icon' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 	                ],
 	                'condition' 	=> [
 	                	'ova_icon[value]!' => '',
@@ -938,7 +938,7 @@ class Spalisho_Elementor_Toggle extends Widget_Toggle {
 							],
 						],
 						'selectors' => [
-							'.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title .ova-boxes-icon' => 'width: {{SIZE}}{{UNIT}};height: {{SIZE}}{{UNIT}};',
+							'.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title .xp-boxes-icon' => 'width: {{SIZE}}{{UNIT}};height: {{SIZE}}{{UNIT}};',
 						],
 						'condition' => [
 							'show_boxes_icon' => 'yes',
@@ -968,7 +968,7 @@ class Spalisho_Elementor_Toggle extends Widget_Toggle {
 	                            'label'     => esc_html__( 'Background', 'spalisho' ),
 	                            'type'      => Controls_Manager::COLOR,
 	                            'selectors' => [
-	                                '{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title .ova-boxes-icon' => 'background-color: {{VALUE}}',
+	                                '{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title .xp-boxes-icon' => 'background-color: {{VALUE}}',
 	                            ],
 	                        ]
 	                    );
@@ -988,7 +988,7 @@ class Spalisho_Elementor_Toggle extends Widget_Toggle {
 	                            'label'     => esc_html__( 'Background', 'spalisho' ),
 	                            'type'      => Controls_Manager::COLOR,
 	                            'selectors' => [
-	                                '{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title:hover .ova-boxes-icon' => 'background-color: {{VALUE}}',
+	                                '{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title:hover .xp-boxes-icon' => 'background-color: {{VALUE}}',
 	                            ],
 	                        ]
 	                    );
@@ -1008,7 +1008,7 @@ class Spalisho_Elementor_Toggle extends Widget_Toggle {
 	                            'label'     => esc_html__( 'Background', 'spalisho' ),
 	                            'type'      => Controls_Manager::COLOR,
 	                            'selectors' => [
-	                                '{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title.elementor-active .ova-boxes-icon' => 'background-color: {{VALUE}}',
+	                                '{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title.elementor-active .xp-boxes-icon' => 'background-color: {{VALUE}}',
 	                            ],
 	                        ]
 	                    );
@@ -1023,7 +1023,7 @@ class Spalisho_Elementor_Toggle extends Widget_Toggle {
 	                    'type'          => Controls_Manager::DIMENSIONS,
 	                    'size_units'    => [ 'px', '%', 'em' ],
 	                    'selectors'     => [
-	                        '{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title .ova-boxes-icon' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+	                        '{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title .xp-boxes-icon' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 	                    ],
 	                    'condition' 	=> [
 							'show_boxes_icon' => 'yes',
@@ -1038,7 +1038,7 @@ class Spalisho_Elementor_Toggle extends Widget_Toggle {
 	                    'type'          => Controls_Manager::DIMENSIONS,
 	                    'size_units'    => [ 'px', '%', 'em' ],
 	                    'selectors'     => [
-	                        '{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title .ova-boxes-icon' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+	                        '{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title .xp-boxes-icon' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 	                    ],
 	                    'condition' 	=> [
 							'show_boxes_icon' => 'yes',
@@ -1243,9 +1243,9 @@ class Spalisho_Elementor_Toggle extends Widget_Toggle {
 							<?php } ?>
 						</span>
 						<?php endif; ?>
-						<div class="ova-toggle-title">
+						<div class="xp-toggle-title">
 							<?php if ( $settings['ova_icon'] ): ?>
-								<span class="ova-icon">
+								<span class="xp-icon">
 									<i class="<?php echo esc_attr( $settings['ova_icon']['value'] ); ?>"></i>
 								</span>
 							<?php endif; ?>
@@ -1346,10 +1346,10 @@ class Spalisho_Elementor_Toggle extends Widget_Toggle {
 								<# } #>
 							</span>
 							<# } #>
-							<div class="ova-toggle-title">
-								<# if ( settings.ova_icon ) { #>
-									<span class="ova-icon">
-										<i class="{{{ settings.ova_icon.value }}}"></i>
+							<div class="xp-toggle-title">
+								<# if ( settings.xp_icon ) { #>
+									<span class="xp-icon">
+										<i class="{{{ settings.xp_icon.value }}}"></i>
 									</span>
 								<# } #>
 								<# if ( 'yes' == settings.show_before_title ) { #>

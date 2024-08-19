@@ -124,7 +124,7 @@ class Spalisho_Elementor_Counter extends Widget_Base {
 						],
 					],
 					'selectors' => [
-						'{{WRAPPER}} .ova-counter' => 'justify-content: {{VALUE}};',
+						'{{WRAPPER}} .xp-counter' => 'justify-content: {{VALUE}};',
 					],
 				]
 			);
@@ -171,7 +171,7 @@ class Spalisho_Elementor_Counter extends Widget_Base {
 				
 					'toggle' 	=> true,
 					'selectors' => [
-						'{{WRAPPER}} .ova-counter .counter-content' => 'display: flex;flex-direction: {{VALUE}}',
+						'{{WRAPPER}} .xp-counter .counter-content' => 'display: flex;flex-direction: {{VALUE}}',
 
 					],
 				]
@@ -183,7 +183,7 @@ class Spalisho_Elementor_Counter extends Widget_Base {
 					'label' 	=> esc_html__( 'Background Color', 'spalisho' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-counter' => 'background-color: {{VALUE}};',
+						'{{WRAPPER}} .xp-counter' => 'background-color: {{VALUE}};',
 					],
 				]
 			);
@@ -195,7 +195,7 @@ class Spalisho_Elementor_Counter extends Widget_Base {
 	                'type' 			=> Controls_Manager::DIMENSIONS,
 	                'size_units' 	=> [ 'px', '%', 'em' ],
 	                'selectors' 	=> [
-	                    '{{WRAPPER}} .ova-counter' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+	                    '{{WRAPPER}} .xp-counter' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 	                ],
 	            ]
 	        );
@@ -214,7 +214,7 @@ class Spalisho_Elementor_Counter extends Widget_Base {
 						],
 					],
 					'selectors' => [
-						'{{WRAPPER}} .ova-counter' => 'max-width: {{SIZE}}{{UNIT}};',
+						'{{WRAPPER}} .xp-counter' => 'max-width: {{SIZE}}{{UNIT}};',
 					],
 				]
 			);
@@ -245,8 +245,8 @@ class Spalisho_Elementor_Counter extends Widget_Base {
 						],
 					],
 					'selectors' => [
-						'{{WRAPPER}} .ova-counter .icon i' => 'font-size: {{SIZE}}{{UNIT}};',
-						'{{WRAPPER}} .ova-counter .icon svg' => 'width: {{SIZE}}{{UNIT}};height: {{SIZE}}{{UNIT}};',
+						'{{WRAPPER}} .xp-counter .icon i' => 'font-size: {{SIZE}}{{UNIT}};',
+						'{{WRAPPER}} .xp-counter .icon svg' => 'width: {{SIZE}}{{UNIT}};height: {{SIZE}}{{UNIT}};',
 					],
 				]
 			);
@@ -257,8 +257,8 @@ class Spalisho_Elementor_Counter extends Widget_Base {
 					'label' 	=> esc_html__( 'Color', 'spalisho' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-counter .icon i' => 'color: {{VALUE}};',
-						'{{WRAPPER}} .ova-counter .icon svg path' => 'fill : {{VALUE}};',
+						'{{WRAPPER}} .xp-counter .icon i' => 'color: {{VALUE}};',
+						'{{WRAPPER}} .xp-counter .icon svg path' => 'fill : {{VALUE}};',
 					],
 				]
 			);
@@ -269,8 +269,8 @@ class Spalisho_Elementor_Counter extends Widget_Base {
 					'label' 	=> esc_html__( 'Color Hover', 'spalisho' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-counter:hover .icon i' => 'color: {{VALUE}};',
-						'{{WRAPPER}} .ova-counter:hover .icon svg path' => 'fill : {{VALUE}};',
+						'{{WRAPPER}} .xp-counter:hover .icon i' => 'color: {{VALUE}};',
+						'{{WRAPPER}} .xp-counter:hover .icon svg path' => 'fill : {{VALUE}};',
 					],
 				]
 			);
@@ -291,7 +291,7 @@ class Spalisho_Elementor_Counter extends Widget_Base {
 				Group_Control_Typography::get_type(),
 				[
 					'name' 		=> 'title_typography',
-					'selector' 	=> '{{WRAPPER}} .ova-counter .title',
+					'selector' 	=> '{{WRAPPER}} .xp-counter .title',
 				]
 			);
 
@@ -301,7 +301,7 @@ class Spalisho_Elementor_Counter extends Widget_Base {
 					'label' 	=> esc_html__( 'Color', 'spalisho' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-counter .title' => 'color: {{VALUE}};',
+						'{{WRAPPER}} .xp-counter .title' => 'color: {{VALUE}};',
 					],
 				]
 			);
@@ -312,7 +312,7 @@ class Spalisho_Elementor_Counter extends Widget_Base {
 					'label' 	=> esc_html__( 'Color Hover', 'spalisho' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-counter:hover .title' => 'color: {{VALUE}};',
+						'{{WRAPPER}} .xp-counter:hover .title' => 'color: {{VALUE}};',
 					],
 				]
 			);
@@ -324,7 +324,7 @@ class Spalisho_Elementor_Counter extends Widget_Base {
 	                'type' 			=> Controls_Manager::DIMENSIONS,
 	                'size_units' 	=> [ 'px', '%', 'em' ],
 	                'selectors' 	=> [
-	                    '{{WRAPPER}} .ova-counter .title' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+	                    '{{WRAPPER}} .xp-counter .title' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 	                ],
 	            ]
 	        );
@@ -334,7 +334,7 @@ class Spalisho_Elementor_Counter extends Widget_Base {
 				[
 					'name' => 'title_border',
 					'label' => esc_html__( 'Border', 'spalisho' ),
-					'selector' => '{{WRAPPER}} .ova-counter .title',
+					'selector' => '{{WRAPPER}} .xp-counter .title',
 				]
 			);
 
@@ -354,7 +354,7 @@ class Spalisho_Elementor_Counter extends Widget_Base {
 				Group_Control_Typography::get_type(),
 				[
 					'name' 		=> 'number_typography',
-					'selector' 	=> '{{WRAPPER}} .ova-counter .odometer',
+					'selector' 	=> '{{WRAPPER}} .xp-counter .odometer',
 				]
 			);
 
@@ -364,7 +364,7 @@ class Spalisho_Elementor_Counter extends Widget_Base {
 					'label' 	=> esc_html__( 'Color', 'spalisho' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-counter .odometer' => 'color: {{VALUE}};',
+						'{{WRAPPER}} .xp-counter .odometer' => 'color: {{VALUE}};',
 					],
 				]
 			);
@@ -375,7 +375,7 @@ class Spalisho_Elementor_Counter extends Widget_Base {
 					'label' 	=> esc_html__( 'Color Hover', 'spalisho' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-counter:hover .odometer' => 'color: {{VALUE}};',
+						'{{WRAPPER}} .xp-counter:hover .odometer' => 'color: {{VALUE}};',
 					],
 				]
 			);
@@ -396,7 +396,7 @@ class Spalisho_Elementor_Counter extends Widget_Base {
 				Group_Control_Typography::get_type(),
 				[
 					'name' 		=> 'suffix_typography',
-					'selector' 	=> '{{WRAPPER}} .ova-counter .suffix',
+					'selector' 	=> '{{WRAPPER}} .xp-counter .suffix',
 				]
 			);
 
@@ -406,7 +406,7 @@ class Spalisho_Elementor_Counter extends Widget_Base {
 					'label' 	=> esc_html__( 'Color', 'spalisho' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-counter .suffix' => 'color: {{VALUE}};',
+						'{{WRAPPER}} .xp-counter .suffix' => 'color: {{VALUE}};',
 					],
 				]
 			);
@@ -417,7 +417,7 @@ class Spalisho_Elementor_Counter extends Widget_Base {
 					'label' 	=> esc_html__( 'Color Hover', 'spalisho' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-counter:hover .suffix' => 'color: {{VALUE}};',
+						'{{WRAPPER}} .xp-counter:hover .suffix' => 'color: {{VALUE}};',
 					],
 				]
 			);
@@ -429,7 +429,7 @@ class Spalisho_Elementor_Counter extends Widget_Base {
 	                'type' 			=> Controls_Manager::DIMENSIONS,
 	                'size_units' 	=> [ 'px', '%', 'em' ],
 	                'selectors' 	=> [
-	                    '{{WRAPPER}} .ova-counter .suffix' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+	                    '{{WRAPPER}} .xp-counter .suffix' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 	                ],
 	            ]
 	        );
@@ -459,7 +459,7 @@ class Spalisho_Elementor_Counter extends Widget_Base {
 
 		?>
            
-           <div class="ova-counter ova-counter-<?php echo esc_attr( $template ); ?>" 
+           <div class="xp-counter ova-counter-<?php echo esc_attr( $template ); ?>" 
                 data-count="<?php echo esc_attr( $number ); ?>">
         
                 <?php if (!empty( $icon['value'] )): ?>

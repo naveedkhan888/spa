@@ -1,10 +1,10 @@
-.ova-team{
-	.ova-team-box{
+.xp-team{
+	.xp-team-box{
 	    display: grid;
 	    gap:30px;
 	    grid-template-columns: 1fr 1fr 1fr;
 
-	    &.ova-column_2{
+	    &.xp-column_2{
 	    	 grid-template-columns: 1fr 1fr;
 	    	 .item{
 	    	 	.img{
@@ -15,41 +15,41 @@
 	    	 }
 	    } 
 
-	    &.ova-column_4{
+	    &.xp-column_4{
 	    	grid-template-columns: 1fr 1fr 1fr 1fr;
 	    }
 
 	    @media (max-width: 1200px) {
-    		&.ova-column_2{
+    		&.xp-column_2{
 	    	    grid-template-columns: 1fr 1fr;
 		    }
 
-		    &.ova-column_3{
+		    &.xp-column_3{
 	    	    grid-template-columns: 1fr 1fr 1fr;
 		    }
 
-		    &.ova-column_4{
+		    &.xp-column_4{
 	    	    grid-template-columns: 1fr 1fr 1fr;
 		    }
     	}
 
     	@media (max-width: 1024px) {
-    		&.ova-column_2,
-    		&.ova-column_3,
-    		&.ova-column_4{
+    		&.xp-column_2,
+    		&.xp-column_3,
+    		&.xp-column_4{
 	    	    grid-template-columns: 1fr 1fr;
 		    }    
     	}
 
     	@media (max-width: 600px) {
-    		&.ova-column_2,
-    		&.ova-column_3,
-    		&.ova-column_4{
+    		&.xp-column_2,
+    		&.xp-column_3,
+    		&.xp-column_4{
 	    	    grid-template-columns: 1fr;
 		    }    
     	}
 
-    	&.ova-team-box-template_2 {
+    	&.xp-team-box-template_2 {
     		.item {
     			margin-top: 0;
     			background-color: transparent;

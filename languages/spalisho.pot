@@ -1104,7 +1104,7 @@ msgid "Description Words Total"
 msgstr ""
 
 #: template-parts/footer-default.php:4
-msgid "Design and Develop by Ovatheme"
+msgid "Design and Develop by Xperttheme"
 msgstr ""
 
 #: elementor/widgets/logo.php:105
@@ -1502,7 +1502,7 @@ msgid "HTML Tag"
 msgstr ""
 
 #. URI of the theme
-msgid "https://themeforest.net/user/ovatheme/portfolio"
+msgid "https://themeforest.net/user/xpertpoin8/portfolio"
 msgstr ""
 
 #: elementor/widgets/contact-info.php:154
@@ -2024,7 +2024,7 @@ msgid ""
 "color options with beautiful default color schemes, a harmonious fluid grid "
 "using a mobile-first approach, and impeccable polish in every detail. Spalisho "
 "will make your WordPress look beautiful everywhere. Created by <a "
-"href=\"https://themeforest.net/user/ovatheme\">Ovatheme</a>"
+"href=\"https://themeforest.net/user/xperttheme\">Xperttheme</a>"
 msgstr ""
 
 #: template-parts/header-default.php:22 elementor/widgets/menu-footer.php:44
@@ -2273,104 +2273,104 @@ msgid "Order By"
 msgstr ""
 
 #: inc/class-elementor.php:45
-msgid "Ova Accordion"
+msgid "Xp Accordion"
 msgstr ""
 
 #: elementor/widgets/counter.php:21 elementor/widgets/counter.php:49
 #: elementor/widgets/counter.php:150
-msgid "Ova Counter"
+msgid "Xp Counter"
 msgstr ""
 
 #: elementor/widgets/gallery-slide.php:18
-msgid "Ova Gallery Slide"
+msgid "Xp Gallery Slide"
 msgstr ""
 
 #: elementor/widgets/heading.php:20
-msgid "Ova Heading"
+msgid "Xp Heading"
 msgstr ""
 
 #: inc/class-elementor.php:365
-msgid "Ova Icon"
+msgid "Xp Icon"
 msgstr ""
 
 #: inc/class-elementor.php:155 elementor/widgets/icon-box.php:18
-msgid "Ova Icon Box"
+msgid "Xp Icon Box"
 msgstr ""
 
 #: elementor/widgets/icon-list.php:18
-msgid "Ova Icon List"
+msgid "Xp Icon List"
 msgstr ""
 
 #: elementor/widgets/image.php:20
-msgid "Ova Image"
+msgid "Xp Image"
 msgstr ""
 
 #: elementor/widgets/ova-image-box.php:18
-msgid "Ova Image Box"
+msgid "Xp Image Box"
 msgstr ""
 
 #: elementor/widgets/pricing.php:20
-msgid "Ova Pricing"
+msgid "Xp Pricing"
 msgstr ""
 
 #: inc/class-elementor.php:182
-msgid "Ova Social Icon"
+msgid "Xp Social Icon"
 msgstr ""
 
 #: elementor/widgets/team.php:20
-msgid "Ova Team"
+msgid "Xp Team"
 msgstr ""
 
 #: elementor/widgets/team-2.php:19
-msgid "Ova Team 2"
+msgid "Xp Team 2"
 msgstr ""
 
 #: elementor/widgets/testimonial.php:19
-msgid "Ova Testimonial"
+msgid "Xp Testimonial"
 msgstr ""
 
 #: elementor/widgets/testimonial-2.php:20
-msgid "Ova Testimonial 2"
+msgid "Xp Testimonial 2"
 msgstr ""
 
 #: elementor/widgets/testimonial-3.php:18
-msgid "Ova Testimonial 3"
+msgid "Xp Testimonial 3"
 msgstr ""
 
 #: inc/class-elementor.php:217
-msgid "Ova Text Editor"
+msgid "Xp Text Editor"
 msgstr ""
 
 #: elementor/widgets/ova-video.php:20
-msgid "Ova Video"
+msgid "Xp Video"
 msgstr ""
 
 #: elementor/widgets/team-2.php:144
-msgid "ovaicon ovaicon-facebook-logo"
+msgid "xpicon ovaicon-facebook-logo"
 msgstr ""
 
 #: elementor/widgets/team-2.php:149
-msgid "ovaicon ovaicon-instagram-1"
+msgid "xpicon ovaicon-instagram-1"
 msgstr ""
 
 #: elementor/widgets/team-2.php:103 elementor/widgets/team-2.php:139
-msgid "ovaicon-twitter"
+msgid "xpicon-twitter"
 msgstr ""
 
 #. Author of the theme
-msgid "Ovatheme"
+msgid "Xperttheme"
 msgstr ""
 
 #: install-resource/active-plugins.php:53
-msgid "OvaTheme Framework"
+msgid "XpertTheme Framework"
 msgstr ""
 
 #: install-resource/active-plugins.php:78
-msgid "OvaTheme MegaMenu"
+msgid "XpertTheme MegaMenu"
 msgstr ""
 
 #: install-resource/active-plugins.php:66
-msgid "OvaTheme Service"
+msgid "XpertTheme Service"
 msgstr ""
 
 #: elementor/widgets/gallery-slide.php:402

@@ -243,7 +243,7 @@ class Spalisho_Elementor_Contact_Info extends Widget_Base {
 					'toggle' 	=> true,
 					'separator' => 'before',
 					'selectors' => [
-						'{{WRAPPER}} .ova-contact-info' => 'align-items: {{VALUE}}',
+						'{{WRAPPER}} .xp-contact-info' => 'align-items: {{VALUE}}',
 					],
 				]
 			);
@@ -284,7 +284,7 @@ class Spalisho_Elementor_Contact_Info extends Widget_Base {
 					'default' 	=> 'center',
 					'toggle' 	=> true,
 					'selectors' => [
-						'{{WRAPPER}} .ova-contact-info .icon' => 'align-items: {{VALUE}}',
+						'{{WRAPPER}} .xp-contact-info .icon' => 'align-items: {{VALUE}}',
 					],
 				]
 			);
@@ -303,7 +303,7 @@ class Spalisho_Elementor_Contact_Info extends Widget_Base {
 						]
 					],
 					'selectors' => [
-						'{{WRAPPER}} .ova-contact-info .icon' => 'transform: rotate({{SIZE}}deg);', 
+						'{{WRAPPER}} .xp-contact-info .icon' => 'transform: rotate({{SIZE}}deg);', 
 						
 					],
 				]
@@ -323,7 +323,7 @@ class Spalisho_Elementor_Contact_Info extends Widget_Base {
 						]
 					],
 					'selectors' => [
-						'{{WRAPPER}} .ova-contact-info .icon' => 'width: {{SIZE}}{{UNIT}};height: {{SIZE}}{{UNIT}};',
+						'{{WRAPPER}} .xp-contact-info .icon' => 'width: {{SIZE}}{{UNIT}};height: {{SIZE}}{{UNIT}};',
 						
 					],
 				]
@@ -343,8 +343,8 @@ class Spalisho_Elementor_Contact_Info extends Widget_Base {
 						]
 					],
 					'selectors' => [
-						'{{WRAPPER}} .ova-contact-info .icon' => 'font-size: {{SIZE}}{{UNIT}};',
-						'{{WRAPPER}} .ova-contact-info .icon svg' => 'width: {{SIZE}}{{UNIT}};',
+						'{{WRAPPER}} .xp-contact-info .icon' => 'font-size: {{SIZE}}{{UNIT}};',
+						'{{WRAPPER}} .xp-contact-info .icon svg' => 'width: {{SIZE}}{{UNIT}};',
 					],
 				]
 			);
@@ -355,8 +355,8 @@ class Spalisho_Elementor_Contact_Info extends Widget_Base {
 					'label' => esc_html__( 'Color', 'spalisho' ),
 					'type' => Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-contact-info .icon' => 'color : {{VALUE}};',
-						'{{WRAPPER}} .ova-contact-info .icon svg, {{WRAPPER}} .ova-contact-info .icon svg path' => 'fill : {{VALUE}};'
+						'{{WRAPPER}} .xp-contact-info .icon' => 'color : {{VALUE}};',
+						'{{WRAPPER}} .xp-contact-info .icon svg, {{WRAPPER}} .xp-contact-info .icon svg path' => 'fill : {{VALUE}};'
 					],
 				]
 			);
@@ -367,7 +367,7 @@ class Spalisho_Elementor_Contact_Info extends Widget_Base {
 					'label' => esc_html__( 'Background', 'spalisho' ),
 					'type' => Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-contact-info .icon' => 'background-color : {{VALUE}};',
+						'{{WRAPPER}} .xp-contact-info .icon' => 'background-color : {{VALUE}};',
 					],
 				]
 			);
@@ -379,7 +379,7 @@ class Spalisho_Elementor_Contact_Info extends Widget_Base {
 					'type' => Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', 'em', '%' ],
 					'selectors' => [
-						'{{WRAPPER}} .ova-contact-info .icon' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+						'{{WRAPPER}} .xp-contact-info .icon' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 					],
 				]
 			);
@@ -391,7 +391,7 @@ class Spalisho_Elementor_Contact_Info extends Widget_Base {
 					'type' => Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', 'em', '%' ],
 					'selectors' => [
-						'{{WRAPPER}} .ova-contact-info .icon' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+						'{{WRAPPER}} .xp-contact-info .icon' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 					],
 				]
 			);
@@ -403,7 +403,7 @@ class Spalisho_Elementor_Contact_Info extends Widget_Base {
 					'type'       => Controls_Manager::DIMENSIONS,
 					'size_units' => array( 'px', '%' ),
 					'selectors'  => array(
-						'{{WRAPPER}} .ova-contact-info .icon' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+						'{{WRAPPER}} .xp-contact-info .icon' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 					),
 				)
 			);
@@ -413,7 +413,7 @@ class Spalisho_Elementor_Contact_Info extends Widget_Base {
 				[
 					'name' 		=> 'border_icon',
 					'label' 	=> esc_html__( 'Border', 'spalisho' ),
-					'selector' 	=> '{{WRAPPER}} .ova-contact-info .icon',
+					'selector' 	=> '{{WRAPPER}} .xp-contact-info .icon',
 				]
 			);
 
@@ -422,7 +422,7 @@ class Spalisho_Elementor_Contact_Info extends Widget_Base {
 				[
 					'name' => 'icon_box_shadow',
 					'label' => esc_html__( 'Box Shadow', 'spalisho' ),
-					'selector' => '{{WRAPPER}}  .ova-contact-info .icon',
+					'selector' => '{{WRAPPER}}  .xp-contact-info .icon',
 				]
 			);
 
@@ -448,7 +448,7 @@ class Spalisho_Elementor_Contact_Info extends Widget_Base {
 					'label' => esc_html__( 'Color', 'spalisho' ),
 					'type' => Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-contact-info .contact .label' => 'color : {{VALUE}};',
+						'{{WRAPPER}} .xp-contact-info .contact .label' => 'color : {{VALUE}};',
 					],
 				]
 			);
@@ -457,7 +457,7 @@ class Spalisho_Elementor_Contact_Info extends Widget_Base {
 				Group_Control_Typography::get_type(),
 				[
 					'name' => 'label_typography',
-					'selector' => '{{WRAPPER}} .ova-contact-info .contact .label',
+					'selector' => '{{WRAPPER}} .xp-contact-info .contact .label',
 				]
 			);
 
@@ -468,7 +468,7 @@ class Spalisho_Elementor_Contact_Info extends Widget_Base {
 					'type' => Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', 'em', '%' ],
 					'selectors' => [
-						'{{WRAPPER}} .ova-contact-info .contact .label' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+						'{{WRAPPER}} .xp-contact-info .contact .label' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 					],
 				]
 			);
@@ -495,7 +495,7 @@ class Spalisho_Elementor_Contact_Info extends Widget_Base {
 					
 					'toggle' 	=> true,
 					'selectors' => [
-						'{{WRAPPER}} .ova-contact-info .contact .label' => 'text-align: {{VALUE}}',
+						'{{WRAPPER}} .xp-contact-info .contact .label' => 'text-align: {{VALUE}}',
 					],
 				]
 			);
@@ -536,8 +536,8 @@ class Spalisho_Elementor_Contact_Info extends Widget_Base {
 					],
 					'toggle' 	=> true,
 					'selectors' => [
-						'{{WRAPPER}} .ova-contact-info .contact .info .item ' => 'text-align: {{VALUE}};',
-						'{{WRAPPER}} .ova-contact-info .contact .info .item a' => 'text-align: {{VALUE}};',
+						'{{WRAPPER}} .xp-contact-info .contact .info .item ' => 'text-align: {{VALUE}};',
+						'{{WRAPPER}} .xp-contact-info .contact .info .item a' => 'text-align: {{VALUE}};',
 					],
 					'condition' => [
 						'template' => [
@@ -551,7 +551,7 @@ class Spalisho_Elementor_Contact_Info extends Widget_Base {
 				Group_Control_Typography::get_type(),
 				[
 					'name' => 'info_typography',
-					'selector' => '{{WRAPPER}} .ova-contact-info .contact .info .item, {{WRAPPER}} .ova-contact-info .contact .info .item a',
+					'selector' => '{{WRAPPER}} .xp-contact-info .contact .info .item, {{WRAPPER}} .xp-contact-info .contact .info .item a',
 				]
 			);
 
@@ -561,8 +561,8 @@ class Spalisho_Elementor_Contact_Info extends Widget_Base {
 					'label' => esc_html__( 'Color', 'spalisho' ),
 					'type' => Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-contact-info .contact .info .item' => 'color : {{VALUE}};',
-						'{{WRAPPER}} .ova-contact-info .contact .info .item a' => 'color : {{VALUE}};',
+						'{{WRAPPER}} .xp-contact-info .contact .info .item' => 'color : {{VALUE}};',
+						'{{WRAPPER}} .xp-contact-info .contact .info .item a' => 'color : {{VALUE}};',
 					],
 				]
 			);
@@ -573,7 +573,7 @@ class Spalisho_Elementor_Contact_Info extends Widget_Base {
 					'label' => esc_html__( 'Link Color hover', 'spalisho' ),
 					'type' => Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-contact-info .contact .info .item a:hover' => 'color : {{VALUE}};',
+						'{{WRAPPER}} .xp-contact-info .contact .info .item a:hover' => 'color : {{VALUE}};',
 					],
 				]
 			);
@@ -584,7 +584,7 @@ class Spalisho_Elementor_Contact_Info extends Widget_Base {
 					'label' => esc_html__( 'Underline Color hover', 'spalisho' ),
 					'type' => Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-contact-info .contact .info .item a:before' => 'background-color : {{VALUE}};',
+						'{{WRAPPER}} .xp-contact-info .contact .info .item a:before' => 'background-color : {{VALUE}};',
 					],
 				]
 			);
@@ -596,7 +596,7 @@ class Spalisho_Elementor_Contact_Info extends Widget_Base {
 					'type' => Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', 'em', '%' ],
 					'selectors' => [
-						'{{WRAPPER}} .ova-contact-info .contact .info .item' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+						'{{WRAPPER}} .xp-contact-info .contact .info .item' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 					],
 				]
 			);
@@ -608,7 +608,7 @@ class Spalisho_Elementor_Contact_Info extends Widget_Base {
 					'type' => Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', 'em', '%' ],
 					'selectors' => [
-						'{{WRAPPER}} .ova-contact-info .contact .info .item' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+						'{{WRAPPER}} .xp-contact-info .contact .info .item' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 					],
 				]
 			);
@@ -632,7 +632,7 @@ class Spalisho_Elementor_Contact_Info extends Widget_Base {
 					'name' => 'contact_info_bgcolor',
 					'label' => esc_html__( 'Background', 'spalisho' ),
 					'types' => [ 'classic' ],
-					'selector' => '{{WRAPPER}} .ova-contact-info',
+					'selector' => '{{WRAPPER}} .xp-contact-info',
 				]
 			);
 
@@ -643,7 +643,7 @@ class Spalisho_Elementor_Contact_Info extends Widget_Base {
 					'type' => Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', 'em', '%' ],
 					'selectors' => [
-						'{{WRAPPER}} .ova-contact-info' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+						'{{WRAPPER}} .xp-contact-info' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 					],
 				]
 			);
@@ -662,7 +662,7 @@ class Spalisho_Elementor_Contact_Info extends Widget_Base {
 
 		?>
 
-			<div class="ova-contact-info <?php echo esc_html( $template ); ?>">
+			<div class="xp-contact-info <?php echo esc_html( $template ); ?>">
 				
 				<?php if( $icon['value'] ){ ?>
 					<div class="icon">

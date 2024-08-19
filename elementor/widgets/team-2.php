@@ -181,7 +181,7 @@ class Spalisho_Elementor_Team_2 extends Widget_Base {
 			                'label' 	=> esc_html__( 'Background', 'spalisho' ),
 			                'type' 		=> Controls_Manager::COLOR,
 			                'selectors' => [
-			                    '{{WRAPPER}} .ova-team2-v2' => 'background-color: {{VALUE}};',
+			                    '{{WRAPPER}} .xp-team2-v2' => 'background-color: {{VALUE}};',
 			                ],
 			            ]
 			        );
@@ -189,7 +189,7 @@ class Spalisho_Elementor_Team_2 extends Widget_Base {
 			        $this->add_group_control(
 			            Group_Control_Border::get_type(), [
 			                'name' 		=> 'content_v2_border_normal',
-			                'selector' 	=> '{{WRAPPER}} .ova-team2-v2',
+			                'selector' 	=> '{{WRAPPER}} .xp-team2-v2',
 			            ]
 			        );
 
@@ -200,7 +200,7 @@ class Spalisho_Elementor_Team_2 extends Widget_Base {
 			                'type' 			=> Controls_Manager::DIMENSIONS,
 			                'size_units' 	=> [ 'px', '%' ],
 			                'selectors' 	=> [
-			                    '{{WRAPPER}} .ova-team2-v2' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+			                    '{{WRAPPER}} .xp-team2-v2' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 			                ],
 			            ]
 			        );
@@ -210,7 +210,7 @@ class Spalisho_Elementor_Team_2 extends Widget_Base {
 						[
 							'name' 		=> 'content_v2_box_shadow_normal',
 							'label' 	=> esc_html__( 'Box Shadow', 'spalisho' ),
-							'selector' 	=> '{{WRAPPER}} .ova-team2-v2',
+							'selector' 	=> '{{WRAPPER}} .xp-team2-v2',
 						]
 					);
 
@@ -229,7 +229,7 @@ class Spalisho_Elementor_Team_2 extends Widget_Base {
 			                'label' 	=> esc_html__( 'Background', 'spalisho' ),
 			                'type' 		=> Controls_Manager::COLOR,
 			                'selectors' => [
-			                    '{{WRAPPER}} .ova-team2-v2:hover' => 'background-color: {{VALUE}};',
+			                    '{{WRAPPER}} .xp-team2-v2:hover' => 'background-color: {{VALUE}};',
 			                    
 			                ],
 			            ]
@@ -238,7 +238,7 @@ class Spalisho_Elementor_Team_2 extends Widget_Base {
 			        $this->add_group_control(
 			            Group_Control_Border::get_type(), [
 			                'name' 		=> 'content_v2_border_hover',
-			                'selector' 	=> '{{WRAPPER}} .ova-team2-v2:hover',
+			                'selector' 	=> '{{WRAPPER}} .xp-team2-v2:hover',
 			            ]
 			        );
 
@@ -249,7 +249,7 @@ class Spalisho_Elementor_Team_2 extends Widget_Base {
 			                'type' 			=> Controls_Manager::DIMENSIONS,
 			                'size_units' 	=> [ 'px', '%' ],
 			                'selectors' 	=> [
-			                    '{{WRAPPER}} .ova-team2-v2:hover' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+			                    '{{WRAPPER}} .xp-team2-v2:hover' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 			                    
 			                ],
 			            ]
@@ -260,7 +260,7 @@ class Spalisho_Elementor_Team_2 extends Widget_Base {
 						[
 							'name' 		=> 'content_v2_box_shadow_hover',
 							'label' 	=> esc_html__( 'Box Shadow', 'spalisho' ),
-							'selector' 	=> '{{WRAPPER}} .ova-team2-v2:hover',
+							'selector' 	=> '{{WRAPPER}} .xp-team2-v2:hover',
 						]
 					);
 
@@ -274,7 +274,7 @@ class Spalisho_Elementor_Team_2 extends Widget_Base {
 	                'type' 			=> Controls_Manager::DIMENSIONS,
 	                'size_units' 	=> [ 'px', '%', 'em' ],
 	                'selectors' 	=> [
-	                    '{{WRAPPER}} .ova-team2-v2' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+	                    '{{WRAPPER}} .xp-team2-v2' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 	                 
 	                ],
 	                'separator' 	=> 'before',
@@ -288,7 +288,7 @@ class Spalisho_Elementor_Team_2 extends Widget_Base {
 	                'type' 			=> Controls_Manager::DIMENSIONS,
 	                'size_units' 	=> [ 'px', '%', 'em' ],
 	                'selectors' 	=> [
-	                    '{{WRAPPER}} .ova-team2-v2' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+	                    '{{WRAPPER}} .xp-team2-v2' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 	                ],
 	                'separator' 	=> 'before',
 	            ]
@@ -312,7 +312,7 @@ class Spalisho_Elementor_Team_2 extends Widget_Base {
 	                'type' 			=> Controls_Manager::DIMENSIONS,
 	                'size_units' 	=> [ 'px', '%' ],
 	                'selectors' 	=> [
-	                    '{{WRAPPER}} .ova-team2-v2 .avatar' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+	                    '{{WRAPPER}} .xp-team2-v2 .avatar' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 	                ],
 	            ]
 	        );
@@ -324,7 +324,7 @@ class Spalisho_Elementor_Team_2 extends Widget_Base {
 	                'type' 			=> Controls_Manager::DIMENSIONS,
 	                'size_units' 	=> [ 'px', '%', 'em' ],
 	                'selectors' 	=> [
-	                    '{{WRAPPER}} .ova-team2-v2 .avatar' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+	                    '{{WRAPPER}} .xp-team2-v2 .avatar' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 	                ],
 	            ]
 	        );
@@ -344,7 +344,7 @@ class Spalisho_Elementor_Team_2 extends Widget_Base {
 				Group_Control_Typography::get_type(),
 				[
 					'name' 		=> 'title_typography',
-					'selector' 	=> '{{WRAPPER}} .ova-team2-v2 .title',
+					'selector' 	=> '{{WRAPPER}} .xp-team2-v2 .title',
 				]
 			);
 
@@ -363,7 +363,7 @@ class Spalisho_Elementor_Team_2 extends Widget_Base {
 			                'label' 	=> esc_html__( 'Color', 'spalisho' ),
 			                'type' 		=> Controls_Manager::COLOR,
 			                'selectors' => [
-			                    '{{WRAPPER}} .ova-team2-v2 .title' => 'color: {{VALUE}}',
+			                    '{{WRAPPER}} .xp-team2-v2 .title' => 'color: {{VALUE}}',
 			                ],
 			            ]
 			        );
@@ -383,7 +383,7 @@ class Spalisho_Elementor_Team_2 extends Widget_Base {
 			                'label' 	=> esc_html__( 'Color', 'spalisho' ),
 			                'type' 		=> Controls_Manager::COLOR,
 			                'selectors' => [
-			                    '{{WRAPPER}} .ova-team2-v2:hover .title' => 'color: {{VALUE}}',
+			                    '{{WRAPPER}} .xp-team2-v2:hover .title' => 'color: {{VALUE}}',
 			                ],
 			            ]
 			        );
@@ -398,7 +398,7 @@ class Spalisho_Elementor_Team_2 extends Widget_Base {
 	                'type' 			=> Controls_Manager::DIMENSIONS,
 	                'size_units' 	=> [ 'px', '%', 'em' ],
 	                'selectors' 	=> [
-	                    '{{WRAPPER}} .ova-team2-v2 .title' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+	                    '{{WRAPPER}} .xp-team2-v2 .title' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 	                ],
 	            ]
 	        );
@@ -418,7 +418,7 @@ class Spalisho_Elementor_Team_2 extends Widget_Base {
 				Group_Control_Typography::get_type(),
 				[
 					'name' 		=> 'subtitle_typography',
-					'selector' 	=> '{{WRAPPER}} .ova-team2-v2 .job',
+					'selector' 	=> '{{WRAPPER}} .xp-team2-v2 .job',
 				]
 			);
 
@@ -437,7 +437,7 @@ class Spalisho_Elementor_Team_2 extends Widget_Base {
 			                'label' 	=> esc_html__( 'Color', 'spalisho' ),
 			                'type' 		=> Controls_Manager::COLOR,
 			                'selectors' => [
-			                    '{{WRAPPER}} .ova-team2-v2 .job' => 'color: {{VALUE}}',
+			                    '{{WRAPPER}} .xp-team2-v2 .job' => 'color: {{VALUE}}',
 			                ],
 			            ]
 			        );
@@ -457,7 +457,7 @@ class Spalisho_Elementor_Team_2 extends Widget_Base {
 			                'label' 	=> esc_html__( 'Color', 'spalisho' ),
 			                'type' 		=> Controls_Manager::COLOR,
 			                'selectors' => [
-			                    '{{WRAPPER}} .ova-team2-v2:hover .job' => 'color: {{VALUE}}',
+			                    '{{WRAPPER}} .xp-team2-v2:hover .job' => 'color: {{VALUE}}',
 			                ],
 			            ]
 			        );
@@ -472,7 +472,7 @@ class Spalisho_Elementor_Team_2 extends Widget_Base {
 	                'type' 			=> Controls_Manager::DIMENSIONS,
 	                'size_units' 	=> [ 'px', '%', 'em' ],
 	                'selectors' 	=> [
-	                    '{{WRAPPER}} .ova-team2-v2 .job' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+	                    '{{WRAPPER}} .xp-team2-v2 .job' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 	                ],
 	            ]
 	        );
@@ -492,7 +492,7 @@ class Spalisho_Elementor_Team_2 extends Widget_Base {
 				Group_Control_Typography::get_type(),
 				[
 					'name' 		=> 'social_typography',
-					'selector' 	=> '{{WRAPPER}} .ova-team2-v2 .social-list .social i',
+					'selector' 	=> '{{WRAPPER}} .xp-team2-v2 .social-list .social i',
 				]
 			);
 
@@ -511,7 +511,7 @@ class Spalisho_Elementor_Team_2 extends Widget_Base {
 			                'label' 	=> esc_html__( 'Color', 'spalisho' ),
 			                'type' 		=> Controls_Manager::COLOR,
 			                'selectors' => [
-			                    '{{WRAPPER}} .ova-team2-v2 .social-list .social i' => 'color: {{VALUE}};',
+			                    '{{WRAPPER}} .xp-team2-v2 .social-list .social i' => 'color: {{VALUE}};',
 			                ],
 			            ]
 			        );
@@ -522,7 +522,7 @@ class Spalisho_Elementor_Team_2 extends Widget_Base {
 			                'label' 	=> esc_html__( 'Background', 'spalisho' ),
 			                'type' 		=> Controls_Manager::COLOR,
 			                'selectors' => [
-			                    '{{WRAPPER}} .ova-team2-v2 .social-list .social' => 'background-color: {{VALUE}};',
+			                    '{{WRAPPER}} .xp-team2-v2 .social-list .social' => 'background-color: {{VALUE}};',
 			                ],
 			            ]
 			        );
@@ -542,7 +542,7 @@ class Spalisho_Elementor_Team_2 extends Widget_Base {
 			                'label' 	=> esc_html__( 'Color', 'spalisho' ),
 			                'type' 		=> Controls_Manager::COLOR,
 			                'selectors' => [
-			                    '{{WRAPPER}} .ova-team2-v2 .social-list .social:hover i' => 'color: {{VALUE}};',
+			                    '{{WRAPPER}} .xp-team2-v2 .social-list .social:hover i' => 'color: {{VALUE}};',
 			                ],
 			            ]
 			        );
@@ -553,7 +553,7 @@ class Spalisho_Elementor_Team_2 extends Widget_Base {
 			                'label' 	=> esc_html__( 'Background', 'spalisho' ),
 			                'type' 		=> Controls_Manager::COLOR,
 			                'selectors' => [
-			                    '{{WRAPPER}} .ova-team2-v2 .social-list .social:hover' => 'background-color: {{VALUE}} !important;',
+			                    '{{WRAPPER}} .xp-team2-v2 .social-list .social:hover' => 'background-color: {{VALUE}} !important;',
 			                ],
 			            ]
 			        );
@@ -574,7 +574,7 @@ class Spalisho_Elementor_Team_2 extends Widget_Base {
 					],
 					'size_units' 	=> [ 'px' ],
 					'selectors' 	=> [
-						'{{WRAPPER}} .ova-team2-v2 .social-list .social' => 'width: {{SIZE}}{{UNIT}};height: {{SIZE}}{{UNIT}};min-width: {{SIZE}}{{UNIT}};',
+						'{{WRAPPER}} .xp-team2-v2 .social-list .social' => 'width: {{SIZE}}{{UNIT}};height: {{SIZE}}{{UNIT}};min-width: {{SIZE}}{{UNIT}};',
 					],
 				]
 			);
@@ -592,7 +592,7 @@ class Spalisho_Elementor_Team_2 extends Widget_Base {
 					],
 					'size_units' 	=> [ 'px' ],
 					'selectors' 	=> [
-						'{{WRAPPER}} .ova-team2-v2 .avatar .social-list .social i' => 'font-size: {{SIZE}}{{UNIT}};',
+						'{{WRAPPER}} .xp-team2-v2 .avatar .social-list .social i' => 'font-size: {{SIZE}}{{UNIT}};',
 					],
 				]
 			);
@@ -600,7 +600,7 @@ class Spalisho_Elementor_Team_2 extends Widget_Base {
 			$this->add_group_control(
 	            Group_Control_Border::get_type(), [
 	                'name' 		=> 'social_border',
-	                'selector' 	=> '{{WRAPPER}} .ova-team2-v2 .social-list .social',
+	                'selector' 	=> '{{WRAPPER}} .xp-team2-v2 .social-list .social',
 	                'separator' => 'before',
 	            ]
 	        );
@@ -611,7 +611,7 @@ class Spalisho_Elementor_Team_2 extends Widget_Base {
 	                'label' 	=> esc_html__( 'Border Color Hover', 'spalisho' ),
 	                'type' 		=> Controls_Manager::COLOR,
 	                'selectors' => [
-	                    '{{WRAPPER}} .ova-team2-v2 .social-list .social:hover' => 'border-color: {{VALUE}}',
+	                    '{{WRAPPER}} .xp-team2-v2 .social-list .social:hover' => 'border-color: {{VALUE}}',
 	                ],
 	            ]
 	        );
@@ -623,7 +623,7 @@ class Spalisho_Elementor_Team_2 extends Widget_Base {
 	                'type' 			=> Controls_Manager::DIMENSIONS,
 	                'size_units' 	=> [ 'px', '%' ],
 	                'selectors' 	=> [
-	                    '{{WRAPPER}} .ova-team2-v2 .social-list .social' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+	                    '{{WRAPPER}} .xp-team2-v2 .social-list .social' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 	                ],
 	            ]
 	        );
@@ -635,7 +635,7 @@ class Spalisho_Elementor_Team_2 extends Widget_Base {
 	                'type' 			=> Controls_Manager::DIMENSIONS,
 	                'size_units' 	=> [ 'px', '%', 'em' ],
 	                'selectors' 	=> [
-	                    '{{WRAPPER}} .ova-team2-v2 .social-list .social' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+	                    '{{WRAPPER}} .xp-team2-v2 .social-list .social' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 	                ],
 	            ]
 	        );
@@ -673,7 +673,7 @@ class Spalisho_Elementor_Team_2 extends Widget_Base {
 		?>
         
 		
-			<div class="ova-team2-v2">
+			<div class="xp-team2-v2">
 				
 				<div class="avatar">
 

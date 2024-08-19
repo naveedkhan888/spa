@@ -7,7 +7,7 @@
         
 		elementorFrontend.hooks.addAction('frontend/element_ready/spalisho_elementor_progress_circle.default', function(){
 
-			$(".ova-progress-circle").appear(function(){
+			$(".xp-progress-circle").appear(function(){
 				var circle = $(this);
 
 				var start_angle = circle.data('start_angle');

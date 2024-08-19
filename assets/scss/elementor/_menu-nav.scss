@@ -21,14 +21,14 @@
 
 
 /* Button Open Canvas */
-.ova_openNav{
+.xp_openNav{
 	display: none;
 }
 
 
-.ova_nav{
+.xp_nav{
 	width: 100%;
-	.ova_closeNav{
+	.xp_closeNav{
 		display: none;
 	}
 
@@ -152,7 +152,7 @@
 
 
 /* Cover page when open canvas */
-.ova_closeCanvas{
+.xp_closeCanvas{
 	height: 100%;
 	width: 100%;
 	position: fixed;
@@ -182,7 +182,7 @@
 
 @media( min-width: 1025px ){
 	/* Vertical Menu Desktop */
-	.ova_wrap_nav.column{
+	.xp_wrap_nav.column{
 		
 		ul.menu{
 			&.sub_menu_dir_right{
@@ -210,7 +210,7 @@
 		}
 	}
 
-	.ova_nav{
+	.xp_nav{
 		ul.menu{
 			
 			/* Sub Menu */
@@ -255,7 +255,7 @@
 	}
 
 	/* Custom Line Parent Menu */
-	.ova-menu-custom-line {
+	.xp-menu-custom-line {
         .main-navigation ul.menu > li > a {
 			position: relative;
 			&:before {
@@ -293,11 +293,11 @@
 @media( max-width: 1024px ){
 
 	/*transition when display nav*/
-	.ova-wrapp{
+	.xp-wrapp{
 		transition: margin-left .5s;
 	}
 	
-	.ova_openNav{
+	.xp_openNav{
 		display: block;
 		border: none;
 		outline: none;
@@ -326,11 +326,11 @@
 	/* Hide Menu */
 
 	.logged-in{
-		.ova_nav{
+		.xp_nav{
 			padding-top: 60px;
 		}
 	}
-	.ova_nav{
+	.xp_nav{
 		height: 100%;
 	    width: 250px;
 	    position: fixed;
@@ -420,7 +420,7 @@
 				
 			}
 
-			.ova_closeNav{
+			.xp_closeNav{
 				display: block;
 				padding-left: 20px;
 				padding-right: 20px;
@@ -471,7 +471,7 @@
 				
 			}
 
-			.ova_closeNav{
+			.xp_closeNav{
 				display: block;
 				padding-left: 20px;
 				padding-right: 20px;

@@ -6,7 +6,7 @@
 		
 		elementorFrontend.hooks.addAction('frontend/element_ready/spalisho_elementor_before_after.default', function(){
 
-			$(".ova_before_after").each(function(){
+			$(".xp_before_after").each(function(){
 
 				var divisor 	= document.getElementById("divisor");
 				var handle 		= document.getElementById("handle");

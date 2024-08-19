@@ -3,7 +3,7 @@
 if ( ! ( class_exists( 'woocommerce' ) && is_woocommerce() ) ) {
     if ( get_post_meta(  spalisho_get_current_id() ,'spalisho_met_show_breadcrumbs', true ) != 'no' ) {
 
-		$separator = '<li class="li_separator"><span class="separator"><i class="ovaicon-next"></i></span></li>';
+		$separator = '<li class="li_separator"><span class="separator"><i class="xpicon-next"></i></span></li>';
 
 		$html = '<div id="breadcrumbs">';
 			$html .= '<ul class="breadcrumb">';
@@ -52,7 +52,7 @@ if ( ! ( class_exists( 'woocommerce' ) && is_woocommerce() ) ) {
 				        	$term  = isset( $terms[0] ) ? $terms[0] : '';
 				        	
 					        if( !empty($term) ){
-					        	$html .= $separator.'<li>'.get_term_parents_list( $term->term_id, $post_type->taxonomies[0], array('separator' => ' <span class="separator"><i class="ovaicon-next"></i></span> ') ).'</li>';
+					        	$html .= $separator.'<li>'.get_term_parents_list( $term->term_id, $post_type->taxonomies[0], array('separator' => ' <span class="separator"><i class="xpicon-next"></i></span> ') ).'</li>';
 					        } else {
 					        	$html .= $separator;
 					        }
@@ -187,7 +187,7 @@ if ( ! ( class_exists( 'woocommerce' ) && is_woocommerce() ) ) {
 	}
 } else {
     $args = array(
-        'delimiter' 	=> '<li><span class="separator"><i class="ovaicon-next"></i></span></li>',
+        'delimiter' 	=> '<li><span class="separator"><i class="xpicon-next"></i></span></li>',
         'wrap_before' 	=> '<div id="breadcrumbs" ><ul class="breadcrumb">',
         'wrap_after' 	=> '</ul></div>',
         'before' 		=> '<li>',

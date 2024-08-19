@@ -126,7 +126,7 @@ class Spalisho_Elementor_Icon_List extends Widget_Base {
 				[
 					'name' => 'line_background',
 					'types' => [ 'classic', 'gradient' ],
-					'selector' => '{{WRAPPER}} .ova-icon-list .item:before',
+					'selector' => '{{WRAPPER}} .xp-icon-list .item:before',
 					'condition' => [
 						'show_line_before' => 'yes'
 					]
@@ -149,7 +149,7 @@ class Spalisho_Elementor_Icon_List extends Widget_Base {
 					'label' => esc_html__( 'Color', 'spalisho' ),
 					'type' 	=> Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-icon-list .item i' => 'color : {{VALUE}};',
+						'{{WRAPPER}} .xp-icon-list .item i' => 'color : {{VALUE}};',
 					],
 				]
 			);
@@ -160,7 +160,7 @@ class Spalisho_Elementor_Icon_List extends Widget_Base {
 					'label' 	=> esc_html__( 'Background Color', 'spalisho' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-icon-list .item i' => 'background-color : {{VALUE}};',
+						'{{WRAPPER}} .xp-icon-list .item i' => 'background-color : {{VALUE}};',
 					],
 				]
 			);
@@ -179,7 +179,7 @@ class Spalisho_Elementor_Icon_List extends Widget_Base {
 				Group_Control_Typography::get_type(),
 				[
 					'name' 		=> 'title_typography',
-					'selector' 	=> '{{WRAPPER}} .ova-icon-list .item .title',
+					'selector' 	=> '{{WRAPPER}} .xp-icon-list .item .title',
 				]
 			);
 
@@ -189,7 +189,7 @@ class Spalisho_Elementor_Icon_List extends Widget_Base {
 					'label' 	=> esc_html__( 'Color', 'spalisho' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-icon-list .item .title' => 'color : {{VALUE}};',
+						'{{WRAPPER}} .xp-icon-list .item .title' => 'color : {{VALUE}};',
 					],
 				]
 			);
@@ -201,7 +201,7 @@ class Spalisho_Elementor_Icon_List extends Widget_Base {
 					'type' 			=> Controls_Manager::DIMENSIONS,
 					'size_units' 	=> [ 'px', 'em', '%' ],
 					'selectors' 	=> [
-						'{{WRAPPER}} .ova-icon-list .title' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+						'{{WRAPPER}} .xp-icon-list .title' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 					],
 				]
 			);
@@ -213,7 +213,7 @@ class Spalisho_Elementor_Icon_List extends Widget_Base {
 					'type' 			=> Controls_Manager::DIMENSIONS,
 					'size_units' 	=> [ 'px', 'em', '%' ],
 					'selectors' 	=> [
-						'{{WRAPPER}} .ova-icon-list .title' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+						'{{WRAPPER}} .xp-icon-list .title' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 					],
 				]
 			);
@@ -232,7 +232,7 @@ class Spalisho_Elementor_Icon_List extends Widget_Base {
 				Group_Control_Typography::get_type(),
 				[
 					'name' 		=> 'desc_typography',
-					'selector' 	=> '{{WRAPPER}} .ova-icon-list .item .desc',
+					'selector' 	=> '{{WRAPPER}} .xp-icon-list .item .desc',
 				]
 			);
 
@@ -242,7 +242,7 @@ class Spalisho_Elementor_Icon_List extends Widget_Base {
 					'label' 	=> esc_html__( 'Color', 'spalisho' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-icon-list .item .desc' => 'color : {{VALUE}};',
+						'{{WRAPPER}} .xp-icon-list .item .desc' => 'color : {{VALUE}};',
 					],
 				]
 			);
@@ -259,7 +259,7 @@ class Spalisho_Elementor_Icon_List extends Widget_Base {
 
 		?>
 
-			<div class="ova-icon-list">
+			<div class="xp-icon-list">
 				<?php if( !empty( $items ) ) : ?>
 					<?php foreach( $items as $item ): ?>
 						<div class="item <?php if ('yes' == $show_line_before) echo 'item-line'; ?> <?php if ('yes' == $item['active_mode']) echo 'active'; ?>">

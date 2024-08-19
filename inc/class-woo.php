@@ -133,8 +133,8 @@ if( !class_exists('Spalisho_Woo') ){
 		function spalisho_woocommerce_pagination_args( $array ) { 
 
 			$args = array(
-                'next_text' => '<i class="ovaicon-next"></i>',
-                'prev_text' => '<i class="ovaicon-back"></i>',
+                'next_text' => '<i class="xpicon-next"></i>',
+                'prev_text' => '<i class="xpicon-back"></i>',
             );
 
 		    $agrs = array_merge( $array, $args );
@@ -180,7 +180,7 @@ if( !class_exists('Spalisho_Woo') ){
 		
 		function spalisho_woocommerce_before_customer_login_form(){ ?>
 			
-			<ul class="ova-login-register-woo">
+			<ul class="xp-login-register-woo">
 				<li class="active">
 					<a href="javascript:void(0)" data-type="login">
 						<?php esc_html_e( 'Login', 'spalisho' ); ?>

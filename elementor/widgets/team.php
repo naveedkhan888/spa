@@ -249,7 +249,7 @@ class Spalisho_Elementor_Team extends Widget_Base {
 					],
 					'toggle' 	=> true,
 					'selectors' => [
-						'{{WRAPPER}} .ova-team .ova-team-box .item .info' => 'text-align: {{VALUE}};',
+						'{{WRAPPER}} .xp-team .xp-team-box .item .info' => 'text-align: {{VALUE}};',
 						
 					],
 				]
@@ -262,7 +262,7 @@ class Spalisho_Elementor_Team extends Widget_Base {
 					'type' => Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', 'em', '%' ],
 					'selectors' => [
-						'{{WRAPPER}} .ova-team .ova-team-box .item' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+						'{{WRAPPER}} .xp-team .xp-team-box .item' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 					],				
 				]
 			);
@@ -274,7 +274,7 @@ class Spalisho_Elementor_Team extends Widget_Base {
 					'label'	 	=> esc_html__( 'Background', 'spalisho' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-team .ova-team-box .item' => 'background-color : {{VALUE}};'	
+						'{{WRAPPER}} .xp-team .xp-team-box .item' => 'background-color : {{VALUE}};'	
 					],
 				]
 			);
@@ -286,7 +286,7 @@ class Spalisho_Elementor_Team extends Widget_Base {
 					'type' => Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', 'em', '%' ],
 					'selectors' => [
-						'{{WRAPPER}} .ova-team .ova-team-box .item .img' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+						'{{WRAPPER}} .xp-team .xp-team-box .item .img' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 					],				
 				]
 			);
@@ -317,7 +317,7 @@ class Spalisho_Elementor_Team extends Widget_Base {
 						]
 					],
 					'selectors' => [
-						'{{WRAPPER}} .ova-team .ova-team-box .item .img .social .icon' => 'width: {{SIZE}}{{UNIT}};height: {{SIZE}}{{UNIT}};',
+						'{{WRAPPER}} .xp-team .xp-team-box .item .img .social .icon' => 'width: {{SIZE}}{{UNIT}};height: {{SIZE}}{{UNIT}};',
 					],
 				]
 			);
@@ -336,7 +336,7 @@ class Spalisho_Elementor_Team extends Widget_Base {
 						]
 					],
 					'selectors' => [
-						'{{WRAPPER}} .ova-team .ova-team-box .item .img .social .icon i' => 'font-size: {{SIZE}}{{UNIT}}',
+						'{{WRAPPER}} .xp-team .xp-team-box .item .img .social .icon i' => 'font-size: {{SIZE}}{{UNIT}}',
 					],
 				]
 			);
@@ -355,7 +355,7 @@ class Spalisho_Elementor_Team extends Widget_Base {
 						]
 					],
 					'selectors' => [
-						'{{WRAPPER}} .ova-team .ova-team-box .item .img .social' => 'gap: {{SIZE}}{{UNIT}}',
+						'{{WRAPPER}} .xp-team .xp-team-box .item .img .social' => 'gap: {{SIZE}}{{UNIT}}',
 					],
 				]
 			);
@@ -374,7 +374,7 @@ class Spalisho_Elementor_Team extends Widget_Base {
 						]
 					],
 					'selectors' => [
-						'{{WRAPPER}} .ova-team .ova-team-box .item:hover .img .social' => 'bottom: {{SIZE}}{{UNIT}}',
+						'{{WRAPPER}} .xp-team .xp-team-box .item:hover .img .social' => 'bottom: {{SIZE}}{{UNIT}}',
 					],
 				]
 			);
@@ -398,7 +398,7 @@ class Spalisho_Elementor_Team extends Widget_Base {
 							'label'	 	=> esc_html__( 'Color', 'spalisho' ),
 							'type' 		=> Controls_Manager::COLOR,
 							'selectors' => [
-								'{{WRAPPER}} .ova-team .ova-team-box .item .img .social .icon' => 'color : {{VALUE}};'	
+								'{{WRAPPER}} .xp-team .xp-team-box .item .img .social .icon' => 'color : {{VALUE}};'	
 							],
 						]
 					);
@@ -409,7 +409,7 @@ class Spalisho_Elementor_Team extends Widget_Base {
 							'label'	 	=> esc_html__( 'Background', 'spalisho' ),
 							'type' 		=> Controls_Manager::COLOR,
 							'selectors' => [
-								'{{WRAPPER}} .ova-team .ova-team-box .item .img .social .icon' => 'background-color : {{VALUE}};'	
+								'{{WRAPPER}} .xp-team .xp-team-box .item .img .social .icon' => 'background-color : {{VALUE}};'	
 							],
 						]
 					);
@@ -429,7 +429,7 @@ class Spalisho_Elementor_Team extends Widget_Base {
 							'label'	 	=> esc_html__( 'Color', 'spalisho' ),
 							'type' 		=> Controls_Manager::COLOR,
 							'selectors' => [
-								'{{WRAPPER}} .ova-team .ova-team-box .item .img .social .icon a:hover' => 'color : {{VALUE}};'	
+								'{{WRAPPER}} .xp-team .xp-team-box .item .img .social .icon a:hover' => 'color : {{VALUE}};'	
 							],
 						]
 					);
@@ -440,7 +440,7 @@ class Spalisho_Elementor_Team extends Widget_Base {
 							'label'	 	=> esc_html__( 'Background', 'spalisho' ),
 							'type' 		=> Controls_Manager::COLOR,
 							'selectors' => [
-								'{{WRAPPER}} .ova-team .ova-team-box .item .img .social .icon a:hover' => 'background-color : {{VALUE}};'	
+								'{{WRAPPER}} .xp-team .xp-team-box .item .img .social .icon a:hover' => 'background-color : {{VALUE}};'	
 							],
 						]
 					);
@@ -475,7 +475,7 @@ class Spalisho_Elementor_Team extends Widget_Base {
 						[
 							'name' 		=> 'content_typography_name',
 							'label' 	=> esc_html__( 'Typography', 'spalisho' ),
-							'selector' 	=> '{{WRAPPER}} .ova-team .ova-team-box .item .info .name',
+							'selector' 	=> '{{WRAPPER}} .xp-team .xp-team-box .item .info .name',
 						]
 					);
 
@@ -485,7 +485,7 @@ class Spalisho_Elementor_Team extends Widget_Base {
 							'label'	 	=> esc_html__( 'Color', 'spalisho' ),
 							'type' 		=> Controls_Manager::COLOR,
 							'selectors' => [
-								'{{WRAPPER}} .ova-team .ova-team-box .item .info .name' => 'color : {{VALUE}};'
+								'{{WRAPPER}} .xp-team .xp-team-box .item .info .name' => 'color : {{VALUE}};'
 								
 								
 							],
@@ -499,7 +499,7 @@ class Spalisho_Elementor_Team extends Widget_Base {
 							'type' 		 => Controls_Manager::DIMENSIONS,
 							'size_units' => [ 'px', 'em', '%' ],
 							'selectors'  => [
-								'{{WRAPPER}} .ova-team .ova-team-box .item .info .name' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+								'{{WRAPPER}} .xp-team .xp-team-box .item .info .name' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 							],
 						]
 					);
@@ -517,7 +517,7 @@ class Spalisho_Elementor_Team extends Widget_Base {
 						[
 							'name' 		=> 'content_typography_job',
 							'label' 	=> esc_html__( 'Typography', 'spalisho' ),
-							'selector' 	=> '{{WRAPPER}} .ova-team .ova-team-box .item .info .job',
+							'selector' 	=> '{{WRAPPER}} .xp-team .xp-team-box .item .info .job',
 						]
 					);
 
@@ -527,7 +527,7 @@ class Spalisho_Elementor_Team extends Widget_Base {
 							'label'	 	=> esc_html__( 'Color', 'spalisho' ),
 							'type' 		=> Controls_Manager::COLOR,
 							'selectors' => [
-								'{{WRAPPER}} .ova-team .ova-team-box .item .info .job' => 'color : {{VALUE}};'
+								'{{WRAPPER}} .xp-team .xp-team-box .item .info .job' => 'color : {{VALUE}};'
 							],
 						]
 					);
@@ -539,7 +539,7 @@ class Spalisho_Elementor_Team extends Widget_Base {
 							'type' 		 => Controls_Manager::DIMENSIONS,
 							'size_units' => [ 'px', 'em', '%' ],
 							'selectors'  => [
-								'{{WRAPPER}} .ova-team .ova-team-box .item .info .job' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+								'{{WRAPPER}} .xp-team .xp-team-box .item .info .job' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 							],
 						]
 					);
@@ -563,9 +563,9 @@ class Spalisho_Elementor_Team extends Widget_Base {
 
 		?>
 
-		<div class="ova-team">
+		<div class="xp-team">
 
-			<div class="ova-team-box ova-team-box-<?php echo esc_attr($template); ?> ova-<?php echo esc_html( $columns ); ?>">
+			<div class="xp-team-box ova-team-box-<?php echo esc_attr($template); ?> ova-<?php echo esc_html( $columns ); ?>">
 
 				<?php foreach( $list as $item ):
 

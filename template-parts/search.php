@@ -16,8 +16,8 @@
 			    	<?php 
 			    		 $args = array(
 			                'type'      => 'list',
-			                'next_text' => '<i class="ovaicon-next"></i>',
-			                'prev_text' => '<i class="ovaicon-back"></i>',
+			                'next_text' => '<i class="xpicon-next"></i>',
+			                'prev_text' => '<i class="xpicon-back"></i>',
 			            );
 
 			            the_posts_pagination($args);

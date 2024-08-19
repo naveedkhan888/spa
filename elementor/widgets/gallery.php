@@ -119,7 +119,7 @@ class Spalisho_Elementor_Gallery extends Widget_Base {
 						],
 					],
 					'selectors' => [
-						'{{WRAPPER}} .ova-gallery .grid {{CURRENT_ITEM}}' => 'width: {{SIZE}}{{UNIT}}!important',
+						'{{WRAPPER}} .xp-gallery .grid {{CURRENT_ITEM}}' => 'width: {{SIZE}}{{UNIT}}!important',
 					],
 				]
 			);
@@ -152,7 +152,7 @@ class Spalisho_Elementor_Gallery extends Widget_Base {
 						],
 					],
 					'selectors' => [
-						'{{WRAPPER}} .ova-gallery .grid {{CURRENT_ITEM}} img' => 'height: {{SIZE}}{{UNIT}}',
+						'{{WRAPPER}} .xp-gallery .grid {{CURRENT_ITEM}} img' => 'height: {{SIZE}}{{UNIT}}',
 					],
 				]
 			);
@@ -164,7 +164,7 @@ class Spalisho_Elementor_Gallery extends Widget_Base {
 					'type'       => Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', 'em', '%' ],
 					'selectors'  => [
-						'{{WRAPPER}} .ova-gallery .grid {{CURRENT_ITEM}}' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+						'{{WRAPPER}} .xp-gallery .grid {{CURRENT_ITEM}}' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 					],
 				]
 			);
@@ -221,7 +221,7 @@ class Spalisho_Elementor_Gallery extends Widget_Base {
 						],
 					],
 					'selectors' => [
-						'{{WRAPPER}} .ova-gallery .grid .grid-sizer, {{WRAPPER}} .ova-gallery .grid .grid-item' => 'width: {{SIZE}}{{UNIT}}',
+						'{{WRAPPER}} .xp-gallery .grid .grid-sizer, {{WRAPPER}} .xp-gallery .grid .grid-item' => 'width: {{SIZE}}{{UNIT}}',
 					],
 					'description' => esc_html__('Default grid sizer is 25% (4 columns)','spalisho'),
 					'separator'   => 'before'
@@ -245,7 +245,7 @@ class Spalisho_Elementor_Gallery extends Widget_Base {
 					'type'       => Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', 'em', '%' ],
 					'selectors'  => [
-						'{{WRAPPER}} .ova-gallery .grid .grid-item' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+						'{{WRAPPER}} .xp-gallery .grid .grid-item' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 					],
 				]
 			);
@@ -257,7 +257,7 @@ class Spalisho_Elementor_Gallery extends Widget_Base {
 					'type'       => Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', 'em', '%' ],
 					'selectors'  => [
-						'{{WRAPPER}} .ova-gallery .grid .grid-item' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+						'{{WRAPPER}} .xp-gallery .grid .grid-item' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 					],
 				]
 			);
@@ -278,7 +278,7 @@ class Spalisho_Elementor_Gallery extends Widget_Base {
 					'label'     => esc_html__( 'Background Hover', 'spalisho' ),
 					'type'      => Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-gallery .grid .grid-item .gallery-fancybox .gallery-container:before' => 'background-color : {{VALUE}};',
+						'{{WRAPPER}} .xp-gallery .grid .grid-item .gallery-fancybox .gallery-container:before' => 'background-color : {{VALUE}};',
 					],
 				]
 			);
@@ -297,7 +297,7 @@ class Spalisho_Elementor_Gallery extends Widget_Base {
 						],
 					],
 					'selectors' => [
-						'{{WRAPPER}} .ova-gallery .grid .grid-item:hover .gallery-fancybox .gallery-container:before' => 'opacity: {{SIZE}}',
+						'{{WRAPPER}} .xp-gallery .grid .grid-item:hover .gallery-fancybox .gallery-container:before' => 'opacity: {{SIZE}}',
 					],
 				]
 			);
@@ -316,7 +316,7 @@ class Spalisho_Elementor_Gallery extends Widget_Base {
 				Group_Control_Typography::get_type(),
 				[
 					'name'     => 'icon_typography',
-					'selector' => '{{WRAPPER}} .ova-gallery .grid .grid-item .gallery-fancybox .gallery-container .gallery-icon i',
+					'selector' => '{{WRAPPER}} .xp-gallery .grid .grid-item .gallery-fancybox .gallery-container .gallery-icon i',
 				]
 			);
 
@@ -326,7 +326,7 @@ class Spalisho_Elementor_Gallery extends Widget_Base {
 					'label'     => esc_html__( 'Color', 'spalisho' ),
 					'type'      => Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-gallery .grid .grid-item .gallery-fancybox .gallery-container .gallery-icon i' => 'color : {{VALUE}};',
+						'{{WRAPPER}} .xp-gallery .grid .grid-item .gallery-fancybox .gallery-container .gallery-icon i' => 'color : {{VALUE}};',
 					],
 				]
 			);
@@ -336,7 +336,7 @@ class Spalisho_Elementor_Gallery extends Widget_Base {
 				[
 					'name' 		=> 'icon_border',
 					'label' 	=> esc_html__( 'Border', 'spalisho' ),
-					'selector' 	=> '{{WRAPPER}} .ova-gallery .grid .grid-item .gallery-fancybox .gallery-container .gallery-icon',
+					'selector' 	=> '{{WRAPPER}} .xp-gallery .grid .grid-item .gallery-fancybox .gallery-container .gallery-icon',
 				]
 			);
 			
@@ -368,7 +368,7 @@ class Spalisho_Elementor_Gallery extends Widget_Base {
 						],
 					],
 					'selectors' => [
-						'{{WRAPPER}} .ova-gallery .grid .grid-item .gallery-fancybox .gallery-container .gallery-icon' => 'top: {{SIZE}}{{UNIT}}',
+						'{{WRAPPER}} .xp-gallery .grid .grid-item .gallery-fancybox .gallery-container .gallery-icon' => 'top: {{SIZE}}{{UNIT}}',
 					],
 				]
 			);
@@ -401,7 +401,7 @@ class Spalisho_Elementor_Gallery extends Widget_Base {
 						],
 					],
 					'selectors' => [
-						'{{WRAPPER}} .ova-gallery .grid .grid-item .gallery-fancybox .gallery-container .gallery-icon' => 'right: {{SIZE}}{{UNIT}}',
+						'{{WRAPPER}} .xp-gallery .grid .grid-item .gallery-fancybox .gallery-container .gallery-icon' => 'right: {{SIZE}}{{UNIT}}',
 					],
 				]
 			);
@@ -421,7 +421,7 @@ class Spalisho_Elementor_Gallery extends Widget_Base {
 		?>
 
 		<?php if ( $tabs && is_array( $tabs ) ): ?>
-	        <div class="ova-gallery">
+	        <div class="xp-gallery">
 	        	<div class="grid">
 	        		<div class="grid-sizer"></div>
 	        		

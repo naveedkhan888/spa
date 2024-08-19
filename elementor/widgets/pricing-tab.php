@@ -91,7 +91,7 @@ class Spalisho_Elementor_Pricing_Tab extends Widget_Base {
 				Group_Control_Typography::get_type(),
 				[
 					'name' 		=> 'label_typography',
-					'selector' 	=> '{{WRAPPER}} .ova-pricing-tab .tab-pricing-switch .price-label',
+					'selector' 	=> '{{WRAPPER}} .xp-pricing-tab .tab-pricing-switch .price-label',
 				]
 			);
 
@@ -101,7 +101,7 @@ class Spalisho_Elementor_Pricing_Tab extends Widget_Base {
 					'label' 	=> esc_html__( 'Color', 'spalisho' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-pricing-tab .tab-pricing-switch .price-label' => 'color: {{VALUE}};',
+						'{{WRAPPER}} .xp-pricing-tab .tab-pricing-switch .price-label' => 'color: {{VALUE}};',
 					],
 				]
 			);
@@ -112,7 +112,7 @@ class Spalisho_Elementor_Pricing_Tab extends Widget_Base {
 					'label' 	=> esc_html__( 'Color Active', 'spalisho' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-pricing-tab .tab-pricing-switch .price-label.label-active' => 'color: {{VALUE}};',
+						'{{WRAPPER}} .xp-pricing-tab .tab-pricing-switch .price-label.label-active' => 'color: {{VALUE}};',
 					],
 				]
 			);
@@ -135,7 +135,7 @@ class Spalisho_Elementor_Pricing_Tab extends Widget_Base {
 					'label' 	=> esc_html__( 'Color', 'spalisho' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-pricing-tab .tab-pricing-switch .slider:before' => 'background-color: {{VALUE}};',
+						'{{WRAPPER}} .xp-pricing-tab .tab-pricing-switch .slider:before' => 'background-color: {{VALUE}};',
 					],
 				]
 			);
@@ -146,7 +146,7 @@ class Spalisho_Elementor_Pricing_Tab extends Widget_Base {
 					'label' 	=> esc_html__( 'Background Color', 'spalisho' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-pricing-tab .tab-pricing-switch .slider' => 'background-color: {{VALUE}};',
+						'{{WRAPPER}} .xp-pricing-tab .tab-pricing-switch .slider' => 'background-color: {{VALUE}};',
 					],
 				]
 			);
@@ -158,7 +158,7 @@ class Spalisho_Elementor_Pricing_Tab extends Widget_Base {
 	                'type' 			=> Controls_Manager::DIMENSIONS,
 	                'size_units' 	=> [ 'px', '%', 'em' ],
 	                'selectors' 	=> [
-	                    '{{WRAPPER}} .ova-pricing-tab .tab-pricing-switch .switch' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+	                    '{{WRAPPER}} .xp-pricing-tab .tab-pricing-switch .switch' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 	                ],
 	            ]
 	        );
@@ -170,7 +170,7 @@ class Spalisho_Elementor_Pricing_Tab extends Widget_Base {
 	                'type' 			=> Controls_Manager::DIMENSIONS,
 	                'size_units' 	=> [ 'px', '%', 'em' ],
 	                'selectors' 	=> [
-	                    '{{WRAPPER}} .ova-pricing-tab .tab-pricing-switch .switch .slider.round' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+	                    '{{WRAPPER}} .xp-pricing-tab .tab-pricing-switch .switch .slider.round' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 	                ],
 	            ]
 	        );
@@ -193,7 +193,7 @@ class Spalisho_Elementor_Pricing_Tab extends Widget_Base {
 
 		?>
 
-		    <div class="ova-pricing-tab">
+		    <div class="xp-pricing-tab">
 
 			    <div class="tab-pricing-switch">
 			    	<label class="price-label pricing-tab1 label-active">

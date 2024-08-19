@@ -249,7 +249,7 @@ class Spalisho_Elementor_Toggle_Content extends Widget_Base {
 								],
 								'contact_label'  => 'www.example.com',
 								'contact_link'  => [
-									'url' => 'https://ovatheme.com/',
+									'url' => 'https://xperttheme.com/',
 								]
 							],
 							[
@@ -375,7 +375,7 @@ class Spalisho_Elementor_Toggle_Content extends Widget_Base {
 						],
 					],
 					'selectors' => [
-						'{{WRAPPER}} .ova-toggle-content .button-toggle' => 'width: {{SIZE}}{{UNIT}};min-width: {{SIZE}}{{UNIT}};height: {{SIZE}}{{UNIT}};',
+						'{{WRAPPER}} .xp-toggle-content .button-toggle' => 'width: {{SIZE}}{{UNIT}};min-width: {{SIZE}}{{UNIT}};height: {{SIZE}}{{UNIT}};',
 					],
 				]
 			);
@@ -398,8 +398,8 @@ class Spalisho_Elementor_Toggle_Content extends Widget_Base {
 						],
 					],
 					'selectors' => [
-						'{{WRAPPER}} .ova-toggle-content .button-toggle i' => 'font-size: {{SIZE}}{{UNIT}}',
-						'{{WRAPPER}} .ova-toggle-content .button-toggle svg' => 'width: {{SIZE}}{{UNIT}}; height: {{SIZE}}{{UNIT}}',
+						'{{WRAPPER}} .xp-toggle-content .button-toggle i' => 'font-size: {{SIZE}}{{UNIT}}',
+						'{{WRAPPER}} .xp-toggle-content .button-toggle svg' => 'width: {{SIZE}}{{UNIT}}; height: {{SIZE}}{{UNIT}}',
 					],
 				]
 			);
@@ -410,9 +410,9 @@ class Spalisho_Elementor_Toggle_Content extends Widget_Base {
 					'label' => esc_html__( 'Color', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-toggle-content .button-toggle i' => 'color: {{VALUE}}',
-						'{{WRAPPER}} .ova-toggle-content .button-toggle svg' => 'fill: {{VALUE}}',
-						'{{WRAPPER}} .ova-toggle-content .button-toggle svg path' => 'fill: {{VALUE}}',
+						'{{WRAPPER}} .xp-toggle-content .button-toggle i' => 'color: {{VALUE}}',
+						'{{WRAPPER}} .xp-toggle-content .button-toggle svg' => 'fill: {{VALUE}}',
+						'{{WRAPPER}} .xp-toggle-content .button-toggle svg path' => 'fill: {{VALUE}}',
 					],
 				]
 			);
@@ -423,9 +423,9 @@ class Spalisho_Elementor_Toggle_Content extends Widget_Base {
 					'label' => esc_html__( 'Color Hover', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-toggle-content .button-toggle:hover i' => 'color: {{VALUE}}',
-						'{{WRAPPER}} .ova-toggle-content .button-toggle:hover svg' => 'fill: {{VALUE}}',
-						'{{WRAPPER}} .ova-toggle-content .button-toggle:hover svg path' => 'fill: {{VALUE}}',
+						'{{WRAPPER}} .xp-toggle-content .button-toggle:hover i' => 'color: {{VALUE}}',
+						'{{WRAPPER}} .xp-toggle-content .button-toggle:hover svg' => 'fill: {{VALUE}}',
+						'{{WRAPPER}} .xp-toggle-content .button-toggle:hover svg path' => 'fill: {{VALUE}}',
 					],
 				]
 			);
@@ -434,7 +434,7 @@ class Spalisho_Elementor_Toggle_Content extends Widget_Base {
 				\Elementor\Group_Control_Border::get_type(),
 				[
 					'name' => 'icon_border',
-					'selector' => '{{WRAPPER}} .ova-toggle-content .button-toggle',
+					'selector' => '{{WRAPPER}} .xp-toggle-content .button-toggle',
 				]
 			);
 
@@ -442,7 +442,7 @@ class Spalisho_Elementor_Toggle_Content extends Widget_Base {
 				\Elementor\Group_Control_Box_Shadow::get_type(),
 				[
 					'name' => 'icon_box_shadow',
-					'selector' => '{{WRAPPER}} .ova-toggle-content .button-toggle',
+					'selector' => '{{WRAPPER}} .xp-toggle-content .button-toggle',
 				]
 			);
 
@@ -452,7 +452,7 @@ class Spalisho_Elementor_Toggle_Content extends Widget_Base {
 					'label' => esc_html__( 'Border Color Hover', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-toggle-content .button-toggle:hover' => 'border-color: {{VALUE}}',
+						'{{WRAPPER}} .xp-toggle-content .button-toggle:hover' => 'border-color: {{VALUE}}',
 					],
 				]
 			);
@@ -464,7 +464,7 @@ class Spalisho_Elementor_Toggle_Content extends Widget_Base {
 					'type' => \Elementor\Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', '%', 'em', 'rem' ],
 					'selectors' => [
-						'{{WRAPPER}} .ova-toggle-content .button-toggle' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+						'{{WRAPPER}} .xp-toggle-content .button-toggle' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 					],
 				]
 			);
@@ -483,7 +483,7 @@ class Spalisho_Elementor_Toggle_Content extends Widget_Base {
 				\Elementor\Group_Control_Typography::get_type(),
 				[
 					'name' => 'content_title_typography',
-					'selector' => '{{WRAPPER}} .ova-toggle-content .content .wrap-content .content-title',
+					'selector' => '{{WRAPPER}} .xp-toggle-content .content .wrap-content .content-title',
 				]
 			);
 
@@ -493,7 +493,7 @@ class Spalisho_Elementor_Toggle_Content extends Widget_Base {
 					'label' => esc_html__( 'Color', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-toggle-content .content .wrap-content .content-title' => 'color: {{VALUE}}',
+						'{{WRAPPER}} .xp-toggle-content .content .wrap-content .content-title' => 'color: {{VALUE}}',
 					],
 				]
 			);
@@ -505,7 +505,7 @@ class Spalisho_Elementor_Toggle_Content extends Widget_Base {
 					'type' => \Elementor\Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', '%', 'em', 'rem' ],
 					'selectors' => [
-						'{{WRAPPER}} .ova-toggle-content .content .wrap-content .content-title' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+						'{{WRAPPER}} .xp-toggle-content .content .wrap-content .content-title' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 					],
 				]
 			);
@@ -524,7 +524,7 @@ class Spalisho_Elementor_Toggle_Content extends Widget_Base {
 				\Elementor\Group_Control_Typography::get_type(),
 				[
 					'name' => 'content_description_typography',
-					'selector' => '{{WRAPPER}} .ova-toggle-content .content .wrap-content .description',
+					'selector' => '{{WRAPPER}} .xp-toggle-content .content .wrap-content .description',
 				]
 			);
 
@@ -534,7 +534,7 @@ class Spalisho_Elementor_Toggle_Content extends Widget_Base {
 					'label' => esc_html__( 'Color', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-toggle-content .content .wrap-content .description' => 'color: {{VALUE}}',
+						'{{WRAPPER}} .xp-toggle-content .content .wrap-content .description' => 'color: {{VALUE}}',
 					],
 				]
 			);
@@ -546,7 +546,7 @@ class Spalisho_Elementor_Toggle_Content extends Widget_Base {
 					'type' => \Elementor\Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', '%', 'em', 'rem' ],
 					'selectors' => [
-						'{{WRAPPER}} .ova-toggle-content .content .wrap-content .description' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+						'{{WRAPPER}} .xp-toggle-content .content .wrap-content .description' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 					],
 				]
 			);
@@ -565,7 +565,7 @@ class Spalisho_Elementor_Toggle_Content extends Widget_Base {
 				\Elementor\Group_Control_Typography::get_type(),
 				[
 					'name' => 'button_contact_typography',
-					'selector' => '{{WRAPPER}} .ova-toggle-content .content .wrap-content .button-contact',
+					'selector' => '{{WRAPPER}} .xp-toggle-content .content .wrap-content .button-contact',
 				]
 			);
 
@@ -575,7 +575,7 @@ class Spalisho_Elementor_Toggle_Content extends Widget_Base {
 					'label' => esc_html__( 'Color', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-toggle-content .content .wrap-content .button-contact' => 'color: {{VALUE}}',
+						'{{WRAPPER}} .xp-toggle-content .content .wrap-content .button-contact' => 'color: {{VALUE}}',
 					],
 				]
 			);
@@ -586,7 +586,7 @@ class Spalisho_Elementor_Toggle_Content extends Widget_Base {
 					'label' => esc_html__( 'Color Hover', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-toggle-content .content .wrap-content .button-contact:hover' => 'color: {{VALUE}}',
+						'{{WRAPPER}} .xp-toggle-content .content .wrap-content .button-contact:hover' => 'color: {{VALUE}}',
 					],
 				]
 			);
@@ -597,7 +597,7 @@ class Spalisho_Elementor_Toggle_Content extends Widget_Base {
 					'label' => esc_html__( 'Background Color', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-toggle-content .content .wrap-content .button-contact' => 'background-color: {{VALUE}}',
+						'{{WRAPPER}} .xp-toggle-content .content .wrap-content .button-contact' => 'background-color: {{VALUE}}',
 					],
 				]
 			);
@@ -608,7 +608,7 @@ class Spalisho_Elementor_Toggle_Content extends Widget_Base {
 					'label' => esc_html__( 'Background Color Hover', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-toggle-content .content .wrap-content .button-contact:hover' => 'background-color: {{VALUE}}',
+						'{{WRAPPER}} .xp-toggle-content .content .wrap-content .button-contact:hover' => 'background-color: {{VALUE}}',
 					],
 				]
 			);
@@ -620,7 +620,7 @@ class Spalisho_Elementor_Toggle_Content extends Widget_Base {
 					'type' => \Elementor\Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', '%', 'em', 'rem' ],
 					'selectors' => [
-						'{{WRAPPER}} .ova-toggle-content .content .wrap-content .button-contact' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+						'{{WRAPPER}} .xp-toggle-content .content .wrap-content .button-contact' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 					],
 				]
 			);
@@ -632,7 +632,7 @@ class Spalisho_Elementor_Toggle_Content extends Widget_Base {
 					'type' => \Elementor\Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', '%', 'em', 'rem' ],
 					'selectors' => [
-						'{{WRAPPER}} .ova-toggle-content .content .wrap-content .button-contact' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+						'{{WRAPPER}} .xp-toggle-content .content .wrap-content .button-contact' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 					],
 				]
 			);
@@ -651,7 +651,7 @@ class Spalisho_Elementor_Toggle_Content extends Widget_Base {
 				\Elementor\Group_Control_Typography::get_type(),
 				[
 					'name' => 'contact_info_title_typography',
-					'selector' => '{{WRAPPER}} .ova-toggle-content .content .wrap-content .contact-info-title',
+					'selector' => '{{WRAPPER}} .xp-toggle-content .content .wrap-content .contact-info-title',
 				]
 			);
 
@@ -661,7 +661,7 @@ class Spalisho_Elementor_Toggle_Content extends Widget_Base {
 					'label' => esc_html__( 'Color', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-toggle-content .content .wrap-content .contact-info-title' => 'color: {{VALUE}}',
+						'{{WRAPPER}} .xp-toggle-content .content .wrap-content .contact-info-title' => 'color: {{VALUE}}',
 					],
 				]
 			);
@@ -673,7 +673,7 @@ class Spalisho_Elementor_Toggle_Content extends Widget_Base {
 					'type' => \Elementor\Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', '%', 'em', 'rem' ],
 					'selectors' => [
-						'{{WRAPPER}} .ova-toggle-content .content .wrap-content .contact-info-title' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+						'{{WRAPPER}} .xp-toggle-content .content .wrap-content .contact-info-title' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 					],
 				]
 			);
@@ -692,7 +692,7 @@ class Spalisho_Elementor_Toggle_Content extends Widget_Base {
 				\Elementor\Group_Control_Typography::get_type(),
 				[
 					'name' => 'contact_item_typography',
-					'selector' => '{{WRAPPER}} .ova-toggle-content .content .wrap-content .contact-item',
+					'selector' => '{{WRAPPER}} .xp-toggle-content .content .wrap-content .contact-item',
 				]
 			);
 
@@ -702,7 +702,7 @@ class Spalisho_Elementor_Toggle_Content extends Widget_Base {
 					'label' => esc_html__( 'Color', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-toggle-content .content .wrap-content .contact-item' => 'color: {{VALUE}}',
+						'{{WRAPPER}} .xp-toggle-content .content .wrap-content .contact-item' => 'color: {{VALUE}}',
 					],
 				]
 			);
@@ -725,7 +725,7 @@ class Spalisho_Elementor_Toggle_Content extends Widget_Base {
 						],
 					],
 					'selectors' => [
-						'{{WRAPPER}} .ova-toggle-content .content .wrap-content .contact-item' => 'gap: {{SIZE}}{{UNIT}};',
+						'{{WRAPPER}} .xp-toggle-content .content .wrap-content .contact-item' => 'gap: {{SIZE}}{{UNIT}};',
 					],
 				]
 			);
@@ -737,7 +737,7 @@ class Spalisho_Elementor_Toggle_Content extends Widget_Base {
 					'type' => \Elementor\Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', '%', 'em', 'rem' ],
 					'selectors' => [
-						'{{WRAPPER}} .ova-toggle-content .content .wrap-content .contact-item' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+						'{{WRAPPER}} .xp-toggle-content .content .wrap-content .contact-item' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 					],
 				]
 			);
@@ -770,7 +770,7 @@ class Spalisho_Elementor_Toggle_Content extends Widget_Base {
 						],
 					],
 					'selectors' => [
-						'{{WRAPPER}} .ova-toggle-content .content .wrap-content .list-social' => 'gap: {{SIZE}}{{UNIT}};',
+						'{{WRAPPER}} .xp-toggle-content .content .wrap-content .list-social' => 'gap: {{SIZE}}{{UNIT}};',
 					],
 				]
 			);
@@ -782,7 +782,7 @@ class Spalisho_Elementor_Toggle_Content extends Widget_Base {
 					'type' => \Elementor\Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', '%', 'em', 'rem' ],
 					'selectors' => [
-						'{{WRAPPER}} .ova-toggle-content .content .wrap-content .list-social ' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+						'{{WRAPPER}} .xp-toggle-content .content .wrap-content .list-social ' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 					],
 				]
 			);
@@ -814,7 +814,7 @@ class Spalisho_Elementor_Toggle_Content extends Widget_Base {
 						],
 					],
 					'selectors' => [
-						'{{WRAPPER}} .ova-toggle-content .content .wrap-content .list-social .social' => 'width: {{SIZE}}{{UNIT}};height: {{SIZE}}{{UNIT}};',
+						'{{WRAPPER}} .xp-toggle-content .content .wrap-content .list-social .social' => 'width: {{SIZE}}{{UNIT}};height: {{SIZE}}{{UNIT}};',
 					],
 				]
 			);
@@ -825,7 +825,7 @@ class Spalisho_Elementor_Toggle_Content extends Widget_Base {
 					'label' => esc_html__( 'Color', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-toggle-content .content .wrap-content .list-social .social' => 'background-color: {{VALUE}}',
+						'{{WRAPPER}} .xp-toggle-content .content .wrap-content .list-social .social' => 'background-color: {{VALUE}}',
 					],
 				]
 			);
@@ -836,7 +836,7 @@ class Spalisho_Elementor_Toggle_Content extends Widget_Base {
 					'label' => esc_html__( 'Color Hover', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-toggle-content .content .wrap-content .list-social .social:hover ' => 'background-color: {{VALUE}}',
+						'{{WRAPPER}} .xp-toggle-content .content .wrap-content .list-social .social:hover ' => 'background-color: {{VALUE}}',
 					],
 				]
 			);
@@ -848,7 +848,7 @@ class Spalisho_Elementor_Toggle_Content extends Widget_Base {
 					'type' => \Elementor\Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', '%', 'em', 'rem' ],
 					'selectors' => [
-						'{{WRAPPER}} .ova-toggle-content .content .wrap-content .list-social .social' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+						'{{WRAPPER}} .xp-toggle-content .content .wrap-content .list-social .social' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 					],
 				]
 			);
@@ -880,8 +880,8 @@ class Spalisho_Elementor_Toggle_Content extends Widget_Base {
 						],
 					],
 					'selectors' => [
-						'{{WRAPPER}} .ova-toggle-content .content .wrap-content .list-social .social i' => 'font-size: {{SIZE}}{{UNIT}};',
-						'{{WRAPPER}} .ova-toggle-content .content .wrap-content .list-social .social svg' => 'width: {{SIZE}}{{UNIT}}; height: {{SIZE}}{{UNIT}};',
+						'{{WRAPPER}} .xp-toggle-content .content .wrap-content .list-social .social i' => 'font-size: {{SIZE}}{{UNIT}};',
+						'{{WRAPPER}} .xp-toggle-content .content .wrap-content .list-social .social svg' => 'width: {{SIZE}}{{UNIT}}; height: {{SIZE}}{{UNIT}};',
 					],
 				]
 			);
@@ -892,8 +892,8 @@ class Spalisho_Elementor_Toggle_Content extends Widget_Base {
 					'label' => esc_html__( 'Color', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-toggle-content .content .wrap-content .list-social .social i' => 'color: {{VALUE}}',
-						'{{WRAPPER}} .ova-toggle-content .content .wrap-content .list-social .social svg' => 'fill: {{VALUE}}',
+						'{{WRAPPER}} .xp-toggle-content .content .wrap-content .list-social .social i' => 'color: {{VALUE}}',
+						'{{WRAPPER}} .xp-toggle-content .content .wrap-content .list-social .social svg' => 'fill: {{VALUE}}',
 					],
 				]
 			);
@@ -904,8 +904,8 @@ class Spalisho_Elementor_Toggle_Content extends Widget_Base {
 					'label' => esc_html__( 'Color Hover', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-toggle-content .content .wrap-content .list-social .social:hover i' => 'color: {{VALUE}}',
-						'{{WRAPPER}} .ova-toggle-content .content .wrap-content .list-social .social:hover svg' => 'fill: {{VALUE}}',
+						'{{WRAPPER}} .xp-toggle-content .content .wrap-content .list-social .social:hover i' => 'color: {{VALUE}}',
+						'{{WRAPPER}} .xp-toggle-content .content .wrap-content .list-social .social:hover svg' => 'fill: {{VALUE}}',
 					],
 				]
 			);
@@ -937,7 +937,7 @@ class Spalisho_Elementor_Toggle_Content extends Widget_Base {
 		$items_2 		= $settings['items_2'];
 
 		?>
-			<nav class="ova-toggle-content">
+			<nav class="xp-toggle-content">
 	            <button class="button-toggle" aria-label="<?php echo esc_html__( 'Button toggle', 'spalisho' );?>">
 	            	<?php if( !empty($icon['value']) ) :
 					    \Elementor\Icons_Manager::render_icon( $icon, [ 'aria-hidden' => 'true' ] );
@@ -945,7 +945,7 @@ class Spalisho_Elementor_Toggle_Content extends Widget_Base {
 	            </button>
 	            <nav class="content <?php echo  esc_attr( $settings['menu_pos'] ); ?>" >
 		            <div class="close-menu">
-		            	<i class="ovaicon-cancel"></i>
+		            	<i class="xpicon-cancel"></i>
 		            </div>
 					<div class="wrap-content">
 						<?php if( !empty( $url ) ) : ?>

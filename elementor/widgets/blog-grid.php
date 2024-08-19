@@ -286,7 +286,7 @@ class Spalisho_Elementor_Blog_Grid extends Widget_Base {
 					],
 					'toggle' 	=> true,
 					'selectors' => [
-						'{{WRAPPER}} .ova-blog .item .content' => 'text-align: {{VALUE}};',
+						'{{WRAPPER}} .xp-blog .item .content' => 'text-align: {{VALUE}};',
 						
 					],
 				]
@@ -299,7 +299,7 @@ class Spalisho_Elementor_Blog_Grid extends Widget_Base {
 					'type' => Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', 'em', '%' ],
 					'selectors' => [
-						'{{WRAPPER}} .ova-blog .item .content' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+						'{{WRAPPER}} .xp-blog .item .content' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 					],
 				]
 			);
@@ -312,7 +312,7 @@ class Spalisho_Elementor_Blog_Grid extends Widget_Base {
 					'type' => Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', 'em', '%' ],
 					'selectors' => [
-						'{{WRAPPER}} .ova-blog .item .content' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+						'{{WRAPPER}} .xp-blog .item .content' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 					],
 				]
 			);
@@ -323,7 +323,7 @@ class Spalisho_Elementor_Blog_Grid extends Widget_Base {
 					'label'	 	=> esc_html__( 'Background', 'spalisho' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-blog .item .content' => 'background-color : {{VALUE}};'	
+						'{{WRAPPER}} .xp-blog .item .content' => 'background-color : {{VALUE}};'	
 					],
 				]
 			);
@@ -346,7 +346,7 @@ class Spalisho_Elementor_Blog_Grid extends Widget_Base {
 			\Elementor\Group_Control_Typography::get_type(),
 			[
 				'name' => 'title_typography',
-				'selector' => '{{WRAPPER}} .ova-blog .item .content .post-title a',
+				'selector' => '{{WRAPPER}} .xp-blog .item .content .post-title a',
 				
 			]
 		);
@@ -357,7 +357,7 @@ class Spalisho_Elementor_Blog_Grid extends Widget_Base {
 				'label' => esc_html__( 'Color', 'spalisho' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
-					'{{WRAPPER}} .ova-blog .item .content .post-title a' => 'color : {{VALUE}};',
+					'{{WRAPPER}} .xp-blog .item .content .post-title a' => 'color : {{VALUE}};',
 				],
 			]
 		);
@@ -368,7 +368,7 @@ class Spalisho_Elementor_Blog_Grid extends Widget_Base {
 				'label' => esc_html__( 'Color Hover', 'spalisho' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
-					'{{WRAPPER}} .ova-blog .item .content .post-title a:hover' => 'color : {{VALUE}};',
+					'{{WRAPPER}} .xp-blog .item .content .post-title a:hover' => 'color : {{VALUE}};',
 				],
 			]
 		);
@@ -380,7 +380,7 @@ class Spalisho_Elementor_Blog_Grid extends Widget_Base {
 				'type' => \Elementor\Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', 'em', '%' ],
 				'selectors' => [
-					'{{WRAPPER}} .ova-blog .item .content .post-title' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+					'{{WRAPPER}} .xp-blog .item .content .post-title' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 				],
 			]
 		);
@@ -392,7 +392,7 @@ class Spalisho_Elementor_Blog_Grid extends Widget_Base {
 				'type' => \Elementor\Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', 'em', '%' ],
 				'selectors' => [
-					'{{WRAPPER}} .ova-blog .item .content .post-title' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+					'{{WRAPPER}} .xp-blog .item .content .post-title' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 				],
 			]
 		);
@@ -413,7 +413,7 @@ class Spalisho_Elementor_Blog_Grid extends Widget_Base {
 			\Elementor\Group_Control_Typography::get_type(),
 			[
 				'name' => 'short_desc_typography',
-				'selector' => '{{WRAPPER}} .ova-blog .item .content .short_desc p',
+				'selector' => '{{WRAPPER}} .xp-blog .item .content .short_desc p',
 				
 			]
 		);
@@ -424,7 +424,7 @@ class Spalisho_Elementor_Blog_Grid extends Widget_Base {
 				'label' => esc_html__( 'Color', 'spalisho' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
-					'{{WRAPPER}} .ova-blog .short_desc p' => 'color : {{VALUE}};',
+					'{{WRAPPER}} .xp-blog .short_desc p' => 'color : {{VALUE}};',
 				],
 			]
 		);
@@ -436,7 +436,7 @@ class Spalisho_Elementor_Blog_Grid extends Widget_Base {
 				'type' => \Elementor\Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', 'em', '%' ],
 				'selectors' => [
-					'{{WRAPPER}} .ova-blog .item .content .short_desc' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+					'{{WRAPPER}} .xp-blog .item .content .short_desc' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 				],
 			]
 		);
@@ -448,7 +448,7 @@ class Spalisho_Elementor_Blog_Grid extends Widget_Base {
 				'type' => \Elementor\Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', 'em', '%' ],
 				'selectors' => [
-					'{{WRAPPER}} .ova-blog .item .content .short_desc' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+					'{{WRAPPER}} .xp-blog .item .content .short_desc' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 				],
 			]
 		);
@@ -469,7 +469,7 @@ class Spalisho_Elementor_Blog_Grid extends Widget_Base {
 			\Elementor\Group_Control_Typography::get_type(),
 			[
 				'name' => 'meta_typography',
-				'selector' => '{{WRAPPER}} .ova-blog .item .content .post-meta .item-meta .right a, .ova-blog .item .content .post-meta .item-meta .left i',
+				'selector' => '{{WRAPPER}} .xp-blog .item .content .post-meta .item-meta .right a, .xp-blog .item .content .post-meta .item-meta .left i',
 				
 			]
 		);
@@ -480,7 +480,7 @@ class Spalisho_Elementor_Blog_Grid extends Widget_Base {
 				'label' => esc_html__( 'Text Color', 'spalisho' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
-					'{{WRAPPER}} .ova-blog .item .content .post-meta .item-meta .right a' => 'color : {{VALUE}};',
+					'{{WRAPPER}} .xp-blog .item .content .post-meta .item-meta .right a' => 'color : {{VALUE}};',
 				],
 			]
 		);
@@ -491,7 +491,7 @@ class Spalisho_Elementor_Blog_Grid extends Widget_Base {
 				'label' => esc_html__( 'Link Color hover', 'spalisho' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
-					'{{WRAPPER}} .ova-blog .item .post-meta .item-meta .right a:hover' => 'color : {{VALUE}};',
+					'{{WRAPPER}} .xp-blog .item .post-meta .item-meta .right a:hover' => 'color : {{VALUE}};',
 				],
 			]
 		);
@@ -502,7 +502,7 @@ class Spalisho_Elementor_Blog_Grid extends Widget_Base {
 				'label' => esc_html__( 'Icon Color', 'spalisho' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
-					'{{WRAPPER}} .ova-blog .item .post-meta .item-meta .left' => 'color : {{VALUE}};',
+					'{{WRAPPER}} .xp-blog .item .post-meta .item-meta .left' => 'color : {{VALUE}};',
 				],
 			]
 		);
@@ -514,7 +514,7 @@ class Spalisho_Elementor_Blog_Grid extends Widget_Base {
 				'type' => \Elementor\Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', 'em', '%' ],
 				'selectors' => [
-					'{{WRAPPER}} .ova-blog .item .content .post-meta' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+					'{{WRAPPER}} .xp-blog .item .content .post-meta' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 				],
 			]
 		);
@@ -534,7 +534,7 @@ class Spalisho_Elementor_Blog_Grid extends Widget_Base {
 			\Elementor\Group_Control_Typography::get_type(),
 			[
 				'name' => 'category_typography',
-				'selector' => '{{WRAPPER}} .ova-blog .item .content .post-meta .category',
+				'selector' => '{{WRAPPER}} .xp-blog .item .content .post-meta .category',
 			]
 		);
 
@@ -544,7 +544,7 @@ class Spalisho_Elementor_Blog_Grid extends Widget_Base {
 				'label' => esc_html__( 'Color', 'spalisho' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
-					'{{WRAPPER}} .ova-blog .item .content .post-meta .category a' => 'color : {{VALUE}};',
+					'{{WRAPPER}} .xp-blog .item .content .post-meta .category a' => 'color : {{VALUE}};',
 				],
 			]
 		);
@@ -555,7 +555,7 @@ class Spalisho_Elementor_Blog_Grid extends Widget_Base {
 				'label' => esc_html__( 'Background', 'spalisho' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
-					'{{WRAPPER}} .ova-blog .item .content .post-meta .category' => 'background-color : {{VALUE}};',
+					'{{WRAPPER}} .xp-blog .item .content .post-meta .category' => 'background-color : {{VALUE}};',
 				],
 			]
 		);
@@ -567,7 +567,7 @@ class Spalisho_Elementor_Blog_Grid extends Widget_Base {
 				'type' => \Elementor\Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', 'em', '%' ],
 				'selectors' => [
-					'{{WRAPPER}} .ova-blog .item .content .post-meta .category' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+					'{{WRAPPER}} .xp-blog .item .content .post-meta .category' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 				],
 			]
 		);
@@ -577,7 +577,7 @@ class Spalisho_Elementor_Blog_Grid extends Widget_Base {
 			[
 				'name' 		=> 'border_category',
 				'label' 	=> esc_html__( 'Border', 'spalisho' ),
-				'selector' 	=> '{{WRAPPER}} .ova-blog .item .content .post-meta .category',
+				'selector' 	=> '{{WRAPPER}} .xp-blog .item .content .post-meta .category',
 			]
 		);
 
@@ -596,7 +596,7 @@ class Spalisho_Elementor_Blog_Grid extends Widget_Base {
 			\Elementor\Group_Control_Typography::get_type(),
 			[
 				'name' => 'date_typography',
-				'selector' => '{{WRAPPER}} .ova-blog .item .content .post-date',
+				'selector' => '{{WRAPPER}} .xp-blog .item .content .post-date',
 				
 			]
 		);
@@ -607,7 +607,7 @@ class Spalisho_Elementor_Blog_Grid extends Widget_Base {
 				'label' => esc_html__( 'Color', 'spalisho' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
-					'{{WRAPPER}} .ova-blog .item .content .post-date' => 'color : {{VALUE}};',
+					'{{WRAPPER}} .xp-blog .item .content .post-date' => 'color : {{VALUE}};',
 				],
 			]
 		);
@@ -618,7 +618,7 @@ class Spalisho_Elementor_Blog_Grid extends Widget_Base {
 				'label' => esc_html__( 'Color Hover', 'spalisho' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
-					'{{WRAPPER}} .ova-blog .item .content .post-date:hover' => 'color : {{VALUE}};',
+					'{{WRAPPER}} .xp-blog .item .content .post-date:hover' => 'color : {{VALUE}};',
 				],
 			]
 		);
@@ -629,7 +629,7 @@ class Spalisho_Elementor_Blog_Grid extends Widget_Base {
 				'label' => esc_html__( 'Background', 'spalisho' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
-					'{{WRAPPER}} .ova-blog .item .content .post-date' => 'background-color : {{VALUE}};',
+					'{{WRAPPER}} .xp-blog .item .content .post-date' => 'background-color : {{VALUE}};',
 				],
 			]
 		);
@@ -640,7 +640,7 @@ class Spalisho_Elementor_Blog_Grid extends Widget_Base {
 				'label' => esc_html__( 'Background Hover', 'spalisho' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
-					'{{WRAPPER}} .ova-blog .item .content .post-date:hover' => 'background-color : {{VALUE}};',
+					'{{WRAPPER}} .xp-blog .item .content .post-date:hover' => 'background-color : {{VALUE}};',
 				],
 			]
 		);
@@ -652,7 +652,7 @@ class Spalisho_Elementor_Blog_Grid extends Widget_Base {
 				'type' => \Elementor\Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', 'em', '%' ],
 				'selectors' => [
-					'{{WRAPPER}} .ova-blog .item .content .post-date' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+					'{{WRAPPER}} .xp-blog .item .content .post-date' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 				],
 			]
 		);
@@ -664,7 +664,7 @@ class Spalisho_Elementor_Blog_Grid extends Widget_Base {
 				'type' => \Elementor\Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', 'em', '%' ],
 				'selectors' => [
-					'{{WRAPPER}} .ova-blog .item .content .post-date' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+					'{{WRAPPER}} .xp-blog .item .content .post-date' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 				],
 			]
 		);
@@ -685,7 +685,7 @@ class Spalisho_Elementor_Blog_Grid extends Widget_Base {
 			\Elementor\Group_Control_Typography::get_type(),
 			[
 				'name' => 'readmore_typography',
-				'selector' => '{{WRAPPER}} .ova-blog .item .content .read-more',
+				'selector' => '{{WRAPPER}} .xp-blog .item .content .read-more',
 				
 			]
 		);
@@ -696,7 +696,7 @@ class Spalisho_Elementor_Blog_Grid extends Widget_Base {
 				'label' => esc_html__( 'Color', 'spalisho' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
-					'{{WRAPPER}} .ova-blog .item .content .read-more' => 'color : {{VALUE}};',
+					'{{WRAPPER}} .xp-blog .item .content .read-more' => 'color : {{VALUE}};',
 				],
 			]
 		);
@@ -707,7 +707,7 @@ class Spalisho_Elementor_Blog_Grid extends Widget_Base {
 				'label' => esc_html__( 'Color Hover', 'spalisho' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
-					'{{WRAPPER}} .ova-blog .item .content .read-more:hover' => 'color : {{VALUE}};',
+					'{{WRAPPER}} .xp-blog .item .content .read-more:hover' => 'color : {{VALUE}};',
 				],
 			]
 		);
@@ -719,7 +719,7 @@ class Spalisho_Elementor_Blog_Grid extends Widget_Base {
 				'type' => \Elementor\Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', 'em', '%' ],
 				'selectors' => [
-					'{{WRAPPER}} .ova-blog .item .content .read-more' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+					'{{WRAPPER}} .xp-blog .item .content .read-more' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 				],
 			]
 		);
@@ -784,7 +784,7 @@ class Spalisho_Elementor_Blog_Grid extends Widget_Base {
 
 		?>
 		
-		<ul class="ova-blog ova-blog-<?php echo esc_attr($template); ?> ova-<?php echo esc_attr( $number_column ) ?> <?php echo esc_attr($template_2_style); ?>">
+		<ul class="xp-blog ova-blog-<?php echo esc_attr($template); ?> ova-<?php echo esc_attr( $number_column ) ?> <?php echo esc_attr($template_2_style); ?>">
 			<?php
 				if($blog->have_posts()) : while($blog->have_posts()) : $blog->the_post();
 

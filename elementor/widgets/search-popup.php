@@ -51,7 +51,7 @@ class Spalisho_Elementor_Search_Popup extends Widget_Base {
 					'label' => __( 'Icon Color', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova_wrap_search_popup i' => 'color: {{VALUE}}',
+						'{{WRAPPER}} .xp_wrap_search_popup i' => 'color: {{VALUE}}',
 					],
 				]
 			);
@@ -62,7 +62,7 @@ class Spalisho_Elementor_Search_Popup extends Widget_Base {
 					'label' => __( 'Icon Hover Color', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova_wrap_search_popup i:hover' => 'color: {{VALUE}}',
+						'{{WRAPPER}} .xp_wrap_search_popup i:hover' => 'color: {{VALUE}}',
 					],
 				]
 			);
@@ -73,7 +73,7 @@ class Spalisho_Elementor_Search_Popup extends Widget_Base {
 					'label' => __( 'Background', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova_wrap_search_popup i' => 'background-color: {{VALUE}}',
+						'{{WRAPPER}} .xp_wrap_search_popup i' => 'background-color: {{VALUE}}',
 					],
 				]
 			);
@@ -84,7 +84,7 @@ class Spalisho_Elementor_Search_Popup extends Widget_Base {
 					'label' => __( 'Background hover', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova_wrap_search_popup i:hover' => 'background-color: {{VALUE}}',
+						'{{WRAPPER}} .xp_wrap_search_popup i:hover' => 'background-color: {{VALUE}}',
 					],
 				]
 			);
@@ -96,7 +96,7 @@ class Spalisho_Elementor_Search_Popup extends Widget_Base {
 					'type'       => Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', 'em', '%' ],
 					'selectors'  => [
-						'{{WRAPPER}} .ova_wrap_search_popup i' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+						'{{WRAPPER}} .xp_wrap_search_popup i' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 					],
 				]
 			);
@@ -108,7 +108,7 @@ class Spalisho_Elementor_Search_Popup extends Widget_Base {
 					'type'       => Controls_Manager::DIMENSIONS,
 					'size_units' => array( 'px', '%' ),
 					'selectors'  => array(
-						'{{WRAPPER}} .ova_wrap_search_popup i' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+						'{{WRAPPER}} .xp_wrap_search_popup i' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 					),
 				)
 			);
@@ -118,7 +118,7 @@ class Spalisho_Elementor_Search_Popup extends Widget_Base {
 				[
 					'name' 		=> 'border_icon',
 					'label' 	=> esc_html__( 'Border', 'spalisho' ),
-					'selector' 	=> '{{WRAPPER}} .ova_wrap_search_popup',
+					'selector' 	=> '{{WRAPPER}} .xp_wrap_search_popup',
 				]
 			);
 
@@ -144,7 +144,7 @@ class Spalisho_Elementor_Search_Popup extends Widget_Base {
 						'unit' => 'px',
 					],
 					'selectors' => [
-						'{{WRAPPER}} .ova_wrap_search_popup i' => 'font-size: {{SIZE}}{{UNIT}};',
+						'{{WRAPPER}} .xp_wrap_search_popup i' => 'font-size: {{SIZE}}{{UNIT}};',
 					],
 				]
 			);
@@ -166,7 +166,7 @@ class Spalisho_Elementor_Search_Popup extends Widget_Base {
 					'label' => __( 'Icon Color', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova_wrap_search_popup .ova_search_popup .container .search-form .search-submit i' => 'color: {{VALUE}}',
+						'{{WRAPPER}} .xp_wrap_search_popup .xp_search_popup .container .search-form .search-submit i' => 'color: {{VALUE}}',
 					],
 				]
 			);
@@ -177,7 +177,7 @@ class Spalisho_Elementor_Search_Popup extends Widget_Base {
 					'label' => __( 'Icon Hover Color', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova_wrap_search_popup .ova_search_popup .container .search-form .search-submit:hover i' => 'color: {{VALUE}}',
+						'{{WRAPPER}} .xp_wrap_search_popup .xp_search_popup .container .search-form .search-submit:hover i' => 'color: {{VALUE}}',
 					],
 				]
 			);
@@ -188,7 +188,7 @@ class Spalisho_Elementor_Search_Popup extends Widget_Base {
 					'label' => __( 'Background', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova_wrap_search_popup .ova_search_popup .container .search-form .search-submit' => 'background-color: {{VALUE}}',
+						'{{WRAPPER}} .xp_wrap_search_popup .xp_search_popup .container .search-form .search-submit' => 'background-color: {{VALUE}}',
 					],
 				]
 			);
@@ -199,7 +199,7 @@ class Spalisho_Elementor_Search_Popup extends Widget_Base {
 					'label' => __( 'Background hover', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova_wrap_search_popup .ova_search_popup .container .search-form .search-submit:hover' => 'background-color: {{VALUE}}',
+						'{{WRAPPER}} .xp_wrap_search_popup .xp_search_popup .container .search-form .search-submit:hover' => 'background-color: {{VALUE}}',
 					],
 				]
 			);
@@ -217,15 +217,15 @@ class Spalisho_Elementor_Search_Popup extends Widget_Base {
 		$settings = $this->get_settings();
 
 		?>
-			<div class="ova_wrap_search_popup">
-				<i class="ovaicon ovaicon-search"></i>
-				<div class="ova_search_popup">
+			<div class="xp_wrap_search_popup">
+				<i class="xpicon ovaicon-search"></i>
+				<div class="xp_search_popup">
 					<div class="search-popup__overlay"></div>
 					<div class="container">
 						<form role="search" method="get" class="search-form" action="<?php echo esc_url( home_url( '/' ) ) ; ?>">
 						        <input type="search" class="search-field" placeholder="<?php esc_attr_e( 'Search …', 'spalisho' ) ?>" value="<?php echo get_search_query() ?>" name="s" title="<?php esc_attr_e( 'Search for:', 'spalisho' ) ?>" />
 				   			 	<button type="submit" class="search-submit">
-				   			 		<i class="ovaicon ovaicon-search"></i>
+				   			 		<i class="xpicon ovaicon-search"></i>
 				   			 	</button>
 						</form>									
 					</div>

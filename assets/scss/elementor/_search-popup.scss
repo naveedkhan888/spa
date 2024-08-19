@@ -1,14 +1,14 @@
-.ova_wrap_search_popup {
+.xp_wrap_search_popup {
 	position: relative;
 	display: inline-flex;
 	vertical-align: middle;
 
-	.ova_search_close{
+	.xp_search_close{
 		display: none;
 	}
 	
 	&.show {
-		.ova_search_popup{
+		.xp_search_popup{
 			@include transaction( all, 0.5s, ease);
 			-webkit-transform: translateY(0%);
             transform: translateY(0%);
@@ -29,7 +29,7 @@
 		}
 	}
 
-	.ova_search_popup{
+	.xp_search_popup{
 		@include transaction( all, 0.5s, ease);
 	    position: fixed;
 	    top: 0;

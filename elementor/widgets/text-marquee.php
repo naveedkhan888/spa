@@ -121,7 +121,7 @@ class Spalisho_Elementor_Text_Marquee extends Widget_Base {
 				[
 					'name' => 'general_background',
 					'types' => [ 'classic', 'gradient' ],
-					'selector' => '{{WRAPPER}} .ova-text-marquee',
+					'selector' => '{{WRAPPER}} .xp-text-marquee',
 				]
 			);
 
@@ -139,7 +139,7 @@ class Spalisho_Elementor_Text_Marquee extends Widget_Base {
 						],
 					],
 					'selectors' => [
-						'{{WRAPPER}} .ova-text-marquee' => 'opacity: {{SIZE}};',
+						'{{WRAPPER}} .xp-text-marquee' => 'opacity: {{SIZE}};',
 					],
 				]
 			);
@@ -151,7 +151,7 @@ class Spalisho_Elementor_Text_Marquee extends Widget_Base {
 					'type' => \Elementor\Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', '%', 'em', 'rem' ],
 					'selectors' => [
-						'{{WRAPPER}} .ova-text-marquee' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+						'{{WRAPPER}} .xp-text-marquee' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 					],
 				]
 			);
@@ -180,8 +180,8 @@ class Spalisho_Elementor_Text_Marquee extends Widget_Base {
 						]
 					],
 					'selectors' => [
-						'{{WRAPPER}} .ova-text-marquee .icon i' => 'font-size: {{SIZE}}{{UNIT}};',
-						'{{WRAPPER}} .ova-text-marquee .icon svg' => 'width: {{SIZE}}{{UNIT}};height: {{SIZE}}{{UNIT}};',
+						'{{WRAPPER}} .xp-text-marquee .icon i' => 'font-size: {{SIZE}}{{UNIT}};',
+						'{{WRAPPER}} .xp-text-marquee .icon svg' => 'width: {{SIZE}}{{UNIT}};height: {{SIZE}}{{UNIT}};',
 					],
 				]
 			);
@@ -192,8 +192,8 @@ class Spalisho_Elementor_Text_Marquee extends Widget_Base {
 					'label' => esc_html__( 'Color', 'spalisho' ),
 					'type' => Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-text-marquee .icon i' => 'color : {{VALUE}};',
-						'{{WRAPPER}} .ova-text-marquee .icon svg path' => 'fill : {{VALUE}};'
+						'{{WRAPPER}} .xp-text-marquee .icon i' => 'color : {{VALUE}};',
+						'{{WRAPPER}} .xp-text-marquee .icon svg path' => 'fill : {{VALUE}};'
 					],
 				]
 			);
@@ -205,7 +205,7 @@ class Spalisho_Elementor_Text_Marquee extends Widget_Base {
 					'type' => Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', 'em', '%' ],
 					'selectors' => [
-					   '{{WRAPPER}} .ova-text-marquee .icon' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+					   '{{WRAPPER}} .xp-text-marquee .icon' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 					],
 				]
 			);
@@ -224,7 +224,7 @@ class Spalisho_Elementor_Text_Marquee extends Widget_Base {
 				\Elementor\Group_Control_Typography::get_type(),
 				[
 					'name' => 'content_typography',
-					'selector' => '{{WRAPPER}} .ova-text-marquee .content .text',
+					'selector' => '{{WRAPPER}} .xp-text-marquee .content .text',
 				]
 			);
 
@@ -234,7 +234,7 @@ class Spalisho_Elementor_Text_Marquee extends Widget_Base {
 					'label' => esc_html__( 'Color', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-text-marquee .content .text' => 'color: {{VALUE}}',
+						'{{WRAPPER}} .xp-text-marquee .content .text' => 'color: {{VALUE}}',
 					],
 				]
 			);
@@ -255,8 +255,8 @@ class Spalisho_Elementor_Text_Marquee extends Widget_Base {
 						'unit' => '%',
 					],
 					'selectors' => [
-						'{{WRAPPER}} .ova-text-marquee .content-wrapper' => 'width: {{SIZE}}{{UNIT}};',
-						'{{WRAPPER}} .ova-text-marquee .content-wrapper-2' => 'width: {{SIZE}}{{UNIT}};',
+						'{{WRAPPER}} .xp-text-marquee .content-wrapper' => 'width: {{SIZE}}{{UNIT}};',
+						'{{WRAPPER}} .xp-text-marquee .content-wrapper-2' => 'width: {{SIZE}}{{UNIT}};',
 					],
 				]
 			);
@@ -279,7 +279,7 @@ class Spalisho_Elementor_Text_Marquee extends Widget_Base {
 						],
 					],
 					'selectors' => [
-						'{{WRAPPER}} .ova-text-marquee .spacing' => 'width: {{SIZE}}{{UNIT}};',
+						'{{WRAPPER}} .xp-text-marquee .spacing' => 'width: {{SIZE}}{{UNIT}};',
 					],
 				]
 			);
@@ -324,7 +324,7 @@ class Spalisho_Elementor_Text_Marquee extends Widget_Base {
 
 		?>
 
-			<div class="ova-text-marquee duration-<?php echo esc_attr($time_duration); ?> direction-<?php echo esc_attr($direction); ?>">
+			<div class="xp-text-marquee duration-<?php echo esc_attr($time_duration); ?> direction-<?php echo esc_attr($direction); ?>">
 
 				<?php if( is_array($items) && $items ) : ?>
 

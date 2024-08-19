@@ -8,12 +8,12 @@
 	       
 	        /* Add your code here */
 	    	
-	    	$( '.ova_wrap_search_popup i' ).on( 'click', function(){
-                $( this ).closest( '.ova_wrap_search_popup' ).toggleClass( 'show' );
+	    	$( '.xp_wrap_search_popup i' ).on( 'click', function(){
+                $( this ).closest( '.xp_wrap_search_popup' ).toggleClass( 'show' );
             });
 
             $( '.search-popup__overlay' ).on( 'click', function(){
-                $( this ).closest( '.ova_wrap_search_popup' ).removeClass( 'show' );
+                $( this ).closest( '.xp_wrap_search_popup' ).removeClass( 'show' );
             });
       
         });

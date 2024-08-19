@@ -17,7 +17,7 @@
 	    }
     ?>
 
-    <div class="ovamegamenu_container_default"></div>
+    <div class="xpmegamenu_container_default"></div>
 	<div class="wrap-fullwidth"><div class="inside-content">
 
 	

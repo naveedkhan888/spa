@@ -153,7 +153,7 @@ class Spalisho_Elementor_Latest_Products extends Widget_Base {
 						],
 					],
 					'selectors' => [
-						'{{WRAPPER}} .ova-latest-products .item' => 'gap: {{SIZE}}{{UNIT}}',
+						'{{WRAPPER}} .xp-latest-products .item' => 'gap: {{SIZE}}{{UNIT}}',
 					],
 				]
 			);
@@ -165,7 +165,7 @@ class Spalisho_Elementor_Latest_Products extends Widget_Base {
 					'type' 			=> \Elementor\Controls_Manager::DIMENSIONS,
 					'size_units' 	=> [ 'px', 'em', '%' ],
 					'selectors' 	=> [
-						'{{WRAPPER}} .ova-latest-products .item ' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+						'{{WRAPPER}} .xp-latest-products .item ' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 					],
 				]
 			);
@@ -186,7 +186,7 @@ class Spalisho_Elementor_Latest_Products extends Widget_Base {
 					[
 						'name' => 'general_background',
 						'types' => [ 'classic', 'gradient'],
-						'selector' => '{{WRAPPER}} .ova-latest-products .item',
+						'selector' => '{{WRAPPER}} .xp-latest-products .item',
 					]
 				);
 
@@ -204,7 +204,7 @@ class Spalisho_Elementor_Latest_Products extends Widget_Base {
 					[
 						'name' => 'general_background_hover',
 						'types' => [ 'classic', 'gradient'],
-						'selector' => '{{WRAPPER}} .ova-latest-products .item:hover',
+						'selector' => '{{WRAPPER}} .xp-latest-products .item:hover',
 					]
 				);
 
@@ -216,7 +216,7 @@ class Spalisho_Elementor_Latest_Products extends Widget_Base {
 				\Elementor\Group_Control_Box_Shadow::get_type(),
 				[
 					'name' => 'general_box_shadow',
-					'selector' => '{{WRAPPER}} .ova-latest-products .item',
+					'selector' => '{{WRAPPER}} .xp-latest-products .item',
 				]
 			);
 
@@ -245,7 +245,7 @@ class Spalisho_Elementor_Latest_Products extends Widget_Base {
 						]
 					],
 					'selectors' 	=> [
-						'{{WRAPPER}} .ova-latest-products .item .media a img' => 'width: {{SIZE}}{{UNIT}}; min-width: {{SIZE}}{{UNIT}};',
+						'{{WRAPPER}} .xp-latest-products .item .media a img' => 'width: {{SIZE}}{{UNIT}}; min-width: {{SIZE}}{{UNIT}};',
 					],
 				]
 			);
@@ -264,7 +264,7 @@ class Spalisho_Elementor_Latest_Products extends Widget_Base {
 						]
 					],
 					'selectors' 	=> [
-						'{{WRAPPER}} .ova-latest-products .item .media a img' => 'height: {{SIZE}}{{UNIT}};',
+						'{{WRAPPER}} .xp-latest-products .item .media a img' => 'height: {{SIZE}}{{UNIT}};',
 					],
 				]
 			);
@@ -283,7 +283,7 @@ class Spalisho_Elementor_Latest_Products extends Widget_Base {
 				\Elementor\Group_Control_Typography::get_type(),
 				[
 					'name' 		=> 'title_typography',
-					'selector' 	=> '{{WRAPPER}} .ova-latest-products .item .info .title',
+					'selector' 	=> '{{WRAPPER}} .xp-latest-products .item .info .title',
 				]
 			);
 
@@ -293,7 +293,7 @@ class Spalisho_Elementor_Latest_Products extends Widget_Base {
 					'label' 	=> esc_html__( 'Color', 'spalisho' ),
 					'type' 		=> \Elementor\Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-latest-products .item .info .title' => 'color : {{VALUE}};',
+						'{{WRAPPER}} .xp-latest-products .item .info .title' => 'color : {{VALUE}};',
 					],
 				]
 			);
@@ -304,7 +304,7 @@ class Spalisho_Elementor_Latest_Products extends Widget_Base {
 					'label' 	=> esc_html__( 'Color Hover', 'spalisho' ),
 					'type' 		=> \Elementor\Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-latest-products .item:hover .info .title' => 'color : {{VALUE}};',
+						'{{WRAPPER}} .xp-latest-products .item:hover .info .title' => 'color : {{VALUE}};',
 					],
 				]
 			);
@@ -316,7 +316,7 @@ class Spalisho_Elementor_Latest_Products extends Widget_Base {
 					'type' 		=> \Elementor\Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', 'em', '%' ],
 					'selectors' => [
-						'{{WRAPPER}} .ova-latest-products .item .info .title' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+						'{{WRAPPER}} .xp-latest-products .item .info .title' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 					],
 				]
 			);
@@ -336,7 +336,7 @@ class Spalisho_Elementor_Latest_Products extends Widget_Base {
 				\Elementor\Group_Control_Typography::get_type(),
 				[
 					'name' 		=> 'price_typography',
-					'selector' 	=> '{{WRAPPER}} .ova-latest-products .item .info .price',
+					'selector' 	=> '{{WRAPPER}} .xp-latest-products .item .info .price',
 				]
 			);
 
@@ -346,7 +346,7 @@ class Spalisho_Elementor_Latest_Products extends Widget_Base {
 					'label' 	=> esc_html__( 'Color', 'spalisho' ),
 					'type' 		=> \Elementor\Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-latest-products .item .info .price' => 'color : {{VALUE}};',
+						'{{WRAPPER}} .xp-latest-products .item .info .price' => 'color : {{VALUE}};',
 					],
 				]
 			);
@@ -399,7 +399,7 @@ class Spalisho_Elementor_Latest_Products extends Widget_Base {
 
 		?>
 
-		<div class="ova-latest-products">
+		<div class="xp-latest-products">
 
 			<?php if($products->have_posts()) : while($products->have_posts()) : $products->the_post(); 
 				$pid = get_the_ID();

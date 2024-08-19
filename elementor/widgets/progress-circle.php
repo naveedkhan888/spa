@@ -211,7 +211,7 @@ class Spalisho_Elementor_Progress_Circle extends Widget_Base {
 							],
 						],
 						'selectors' => [
-							'{{WRAPPER}} .ova-progress-circle-wrapper' => 'text-align: {{VALUE}};',
+							'{{WRAPPER}} .xp-progress-circle-wrapper' => 'text-align: {{VALUE}};',
 						],
 					]
 			   );
@@ -231,7 +231,7 @@ class Spalisho_Elementor_Progress_Circle extends Widget_Base {
 				Group_Control_Typography::get_type(),
 				[
 					'name' 		=> 'percent_typography',
-					'selector' 	=> '{{WRAPPER}} .ova-progress-circle-wrapper .ova-progress-circle .percent',
+					'selector' 	=> '{{WRAPPER}} .xp-progress-circle-wrapper .xp-progress-circle .percent',
 				]
 			);
 
@@ -241,7 +241,7 @@ class Spalisho_Elementor_Progress_Circle extends Widget_Base {
 					'label' 	=> esc_html__( 'Color', 'spalisho' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-progress-circle-wrapper .ova-progress-circle .percent' => 'color: {{VALUE}};',
+						'{{WRAPPER}} .xp-progress-circle-wrapper .xp-progress-circle .percent' => 'color: {{VALUE}};',
 					],
 				]
 			);
@@ -265,7 +265,7 @@ class Spalisho_Elementor_Progress_Circle extends Widget_Base {
 						],
 					],
 					'selectors' => [
-						'{{WRAPPER}} .ova-progress-circle-wrapper .ova-progress-circle:before' => 'width: {{SIZE}}{{UNIT}}; height: {{SIZE}}{{UNIT}};',
+						'{{WRAPPER}} .xp-progress-circle-wrapper .xp-progress-circle:before' => 'width: {{SIZE}}{{UNIT}}; height: {{SIZE}}{{UNIT}};',
 					],
 				]
 			);
@@ -275,7 +275,7 @@ class Spalisho_Elementor_Progress_Circle extends Widget_Base {
 				[
 					'name' => 'percent_border',
 					'label' => esc_html__( 'Border', 'spalisho' ),
-					'selector' => '{{WRAPPER}} .ova-progress-circle-wrapper .ova-progress-circle:before',
+					'selector' => '{{WRAPPER}} .xp-progress-circle-wrapper .xp-progress-circle:before',
 				]
 			);
 
@@ -312,7 +312,7 @@ class Spalisho_Elementor_Progress_Circle extends Widget_Base {
 					],
 					'default' => '',
 					'selectors' => [
-						'{{WRAPPER}} .ova-progress-circle-wrapper .title' => 'text-align: {{VALUE}};',
+						'{{WRAPPER}} .xp-progress-circle-wrapper .title' => 'text-align: {{VALUE}};',
 					],
 				]
 			);
@@ -321,7 +321,7 @@ class Spalisho_Elementor_Progress_Circle extends Widget_Base {
 				Group_Control_Typography::get_type(),
 				[
 					'name' 		=> 'title_typography',
-					'selector' 	=> '{{WRAPPER}} .ova-progress-circle-wrapper .title',
+					'selector' 	=> '{{WRAPPER}} .xp-progress-circle-wrapper .title',
 				]
 			);
 
@@ -331,7 +331,7 @@ class Spalisho_Elementor_Progress_Circle extends Widget_Base {
 					'label' 	=> esc_html__( 'Color', 'spalisho' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-progress-circle-wrapper .title' => 'color: {{VALUE}};',
+						'{{WRAPPER}} .xp-progress-circle-wrapper .title' => 'color: {{VALUE}};',
 					],
 				]
 			);
@@ -343,7 +343,7 @@ class Spalisho_Elementor_Progress_Circle extends Widget_Base {
 					'type' 			=> Controls_Manager::DIMENSIONS,
 					'size_units' 	=> [ 'px', '%', 'em' ],
 					'selectors' 	=> [
-						'{{WRAPPER}} .ova-progress-circle-wrapper .title' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+						'{{WRAPPER}} .xp-progress-circle-wrapper .title' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 					],
 				]
 			);
@@ -373,9 +373,9 @@ class Spalisho_Elementor_Progress_Circle extends Widget_Base {
 
 		?>
 
-            <div class="ova-progress-circle-wrapper <?php echo esc_attr( $template ); ?>">
+            <div class="xp-progress-circle-wrapper <?php echo esc_attr( $template ); ?>">
             	
-        	    <div class="ova-progress-circle"  
+        	    <div class="xp-progress-circle"  
 	                data-thickness="<?php echo esc_attr( $thickness ); ?>" 
 	                data-start_angle="<?php echo esc_attr( $start_angle ); ?>"
 	                data-size="<?php echo esc_attr( $size ); ?>"

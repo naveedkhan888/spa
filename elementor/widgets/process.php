@@ -194,7 +194,7 @@ class Spalisho_Elementor_Process extends Widget_Base {
 				Group_Control_Typography::get_type(),
 				[
 					'name' 		=> 'textnumber_typography',
-					'selector' 	=> '{{WRAPPER}} .ova-process .item-process .image-process .text_number',
+					'selector' 	=> '{{WRAPPER}} .xp-process .item-process .image-process .text_number',
 				]
 			);
 
@@ -204,7 +204,7 @@ class Spalisho_Elementor_Process extends Widget_Base {
 					'label' 	=> esc_html__( 'Color', 'spalisho' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-process .item-process .image-process .text_number' => 'color: {{VALUE}};',
+						'{{WRAPPER}} .xp-process .item-process .image-process .text_number' => 'color: {{VALUE}};',
 					],
 				]
 			);
@@ -215,7 +215,7 @@ class Spalisho_Elementor_Process extends Widget_Base {
 					'label' 	=> esc_html__( 'Background Color', 'spalisho' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-process .item-process .image-process .text_number' => 'background-color: {{VALUE}};',
+						'{{WRAPPER}} .xp-process .item-process .image-process .text_number' => 'background-color: {{VALUE}};',
 					],
 				]
 			);
@@ -226,7 +226,7 @@ class Spalisho_Elementor_Process extends Widget_Base {
 					'label' 	=> esc_html__( 'Color Hover', 'spalisho' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-process .item-process:hover .image-process .text_number' => 'color: {{VALUE}};',
+						'{{WRAPPER}} .xp-process .item-process:hover .image-process .text_number' => 'color: {{VALUE}};',
 					],
 				]
 			);
@@ -237,7 +237,7 @@ class Spalisho_Elementor_Process extends Widget_Base {
 					'label' 	=> esc_html__( 'Background Color Hover', 'spalisho' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-process .item-process:hover .image-process .text_number' => 'background-color: {{VALUE}};',
+						'{{WRAPPER}} .xp-process .item-process:hover .image-process .text_number' => 'background-color: {{VALUE}};',
 					],
 				]
 			);
@@ -249,7 +249,7 @@ class Spalisho_Elementor_Process extends Widget_Base {
 	                'type' 			=> Controls_Manager::DIMENSIONS,
 	                'size_units' 	=> [ 'px', '%', 'em' ],
 	                'selectors' 	=> [
-	                    '{{WRAPPER}} .ova-process .item-process .image-process .text_number' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+	                    '{{WRAPPER}} .xp-process .item-process .image-process .text_number' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 	                ],
 	            ]
 	        );
@@ -259,7 +259,7 @@ class Spalisho_Elementor_Process extends Widget_Base {
 				[
 					'name' => 'text_number_border',
 					'label' => esc_html__( 'Border', 'spalisho' ),
-					'selector' => '{{WRAPPER}} .ova-process .item-process .image-process .text_number',
+					'selector' => '{{WRAPPER}} .xp-process .item-process .image-process .text_number',
 				]
 			);
 
@@ -278,7 +278,7 @@ class Spalisho_Elementor_Process extends Widget_Base {
 				Group_Control_Typography::get_type(),
 				[
 					'name' 		=> 'title_typography',
-					'selector' 	=> '{{WRAPPER}} .ova-process .item-process .info .title',
+					'selector' 	=> '{{WRAPPER}} .xp-process .item-process .info .title',
 				]
 			);
 
@@ -288,7 +288,7 @@ class Spalisho_Elementor_Process extends Widget_Base {
 					'label' 	=> esc_html__( 'Color', 'spalisho' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-process .item-process .info .title' => 'color: {{VALUE}};',
+						'{{WRAPPER}} .xp-process .item-process .info .title' => 'color: {{VALUE}};',
 					],
 				]
 			);
@@ -299,7 +299,7 @@ class Spalisho_Elementor_Process extends Widget_Base {
 					'label' 	=> esc_html__( 'Color Hover', 'spalisho' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-process .item-process:hover .info .title' => 'color: {{VALUE}};',
+						'{{WRAPPER}} .xp-process .item-process:hover .info .title' => 'color: {{VALUE}};',
 					],
 				]
 			);
@@ -311,7 +311,7 @@ class Spalisho_Elementor_Process extends Widget_Base {
 	                'type' 			=> Controls_Manager::DIMENSIONS,
 	                'size_units' 	=> [ 'px', '%', 'em' ],
 	                'selectors' 	=> [
-	                    '{{WRAPPER}} .ova-process .item-process .info .title' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+	                    '{{WRAPPER}} .xp-process .item-process .info .title' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 	                ],
 	            ]
 	        );
@@ -332,7 +332,7 @@ class Spalisho_Elementor_Process extends Widget_Base {
 				Group_Control_Typography::get_type(),
 				[
 					'name' 		=> 'description_typography',
-					'selector' 	=> '{{WRAPPER}} .ova-process .item-process .info .description',
+					'selector' 	=> '{{WRAPPER}} .xp-process .item-process .info .description',
 				]
 			);
 
@@ -342,7 +342,7 @@ class Spalisho_Elementor_Process extends Widget_Base {
 					'label' 	=> esc_html__( 'Color', 'spalisho' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-process .item-process .info .description' => 'color: {{VALUE}};',
+						'{{WRAPPER}} .xp-process .item-process .info .description' => 'color: {{VALUE}};',
 					],
 				]
 			);
@@ -353,7 +353,7 @@ class Spalisho_Elementor_Process extends Widget_Base {
 					'label' 	=> esc_html__( 'Color Hover', 'spalisho' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-process .item-process:hover .info .description' => 'color: {{VALUE}};',
+						'{{WRAPPER}} .xp-process .item-process:hover .info .description' => 'color: {{VALUE}};',
 					],
 				]
 			);
@@ -365,7 +365,7 @@ class Spalisho_Elementor_Process extends Widget_Base {
 	                'type' 			=> Controls_Manager::DIMENSIONS,
 	                'size_units' 	=> [ 'px', '%', 'em' ],
 	                'selectors' 	=> [
-	                    '{{WRAPPER}} .ova-process .item-process .info .description' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+	                    '{{WRAPPER}} .xp-process .item-process .info .description' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 	                ],
 	            ]
 	        );
@@ -388,7 +388,7 @@ class Spalisho_Elementor_Process extends Widget_Base {
 					'label' 	=> esc_html__( 'Color Circle', 'spalisho' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-process .item-process .image-process:before' => 'border-color: {{VALUE}};',
+						'{{WRAPPER}} .xp-process .item-process .image-process:before' => 'border-color: {{VALUE}};',
 					],
 				]
 			);
@@ -399,7 +399,7 @@ class Spalisho_Elementor_Process extends Widget_Base {
 					'label' 	=> esc_html__( 'Background Line', 'spalisho' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-process .item-process:before, {{WRAPPER}} .ova-process .item-process:first-child:after, {{WRAPPER}} .ova-process .item-process:last-child:after' => 'background-color: {{VALUE}};',
+						'{{WRAPPER}} .xp-process .item-process:before, {{WRAPPER}} .xp-process .item-process:first-child:after, {{WRAPPER}} .xp-process .item-process:last-child:after' => 'background-color: {{VALUE}};',
 					],
 				]
 			);
@@ -418,7 +418,7 @@ class Spalisho_Elementor_Process extends Widget_Base {
 
 		?>
 
-		 	<div class="ova-process <?php echo esc_attr( $number_column ); ?>">
+		 	<div class="xp-process <?php echo esc_attr( $number_column ); ?>">
 
 		 		<?php 
 

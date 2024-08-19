@@ -178,7 +178,7 @@ class Spalisho_Elementor_Client_Stories extends Widget_Base {
 					'label'     => esc_html__( 'Color', 'spalisho' ),
 					'type'      => Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-client-stories .item-client-stories .quote-icon i' => 'color : {{VALUE}};',
+						'{{WRAPPER}} .xp-client-stories .item-client-stories .quote-icon i' => 'color : {{VALUE}};',
 					],
 				]
 			);
@@ -189,7 +189,7 @@ class Spalisho_Elementor_Client_Stories extends Widget_Base {
 					'label'     => esc_html__( 'Background Color', 'spalisho' ),
 					'type'      => Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-client-stories .item-client-stories .quote-icon' => 'background-color : {{VALUE}};',
+						'{{WRAPPER}} .xp-client-stories .item-client-stories .quote-icon' => 'background-color : {{VALUE}};',
 					],
 				]
 			);
@@ -210,7 +210,7 @@ class Spalisho_Elementor_Client_Stories extends Widget_Base {
 				Group_Control_Typography::get_type(),
 				[
 					'name'     => 'name_typography',
-					'selector' => '{{WRAPPER}} .ova-client-stories .item-client-stories .client_info .name',
+					'selector' => '{{WRAPPER}} .xp-client-stories .item-client-stories .client_info .name',
 				]
 			);
 
@@ -220,7 +220,7 @@ class Spalisho_Elementor_Client_Stories extends Widget_Base {
 					'label'     => esc_html__( 'Color', 'spalisho' ),
 					'type'      => Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-client-stories .item-client-stories .client_info .name' => 'color : {{VALUE}};',
+						'{{WRAPPER}} .xp-client-stories .item-client-stories .client_info .name' => 'color : {{VALUE}};',
 					],
 				]
 			);
@@ -232,7 +232,7 @@ class Spalisho_Elementor_Client_Stories extends Widget_Base {
 					'type'       => Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', 'em', '%' ],
 					'selectors'  => [
-						'{{WRAPPER}} .ova-client-stories .item-client-stories .client_info .name' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+						'{{WRAPPER}} .xp-client-stories .item-client-stories .client_info .name' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 					],
 				]
 			);
@@ -253,7 +253,7 @@ class Spalisho_Elementor_Client_Stories extends Widget_Base {
 				Group_Control_Typography::get_type(),
 				[
 					'name'     => 'date_typography',
-					'selector' => '{{WRAPPER}} .ova-client-stories .item-client-stories .client_info .date',
+					'selector' => '{{WRAPPER}} .xp-client-stories .item-client-stories .client_info .date',
 				]
 			);
 
@@ -263,7 +263,7 @@ class Spalisho_Elementor_Client_Stories extends Widget_Base {
 					'label'     => esc_html__( 'Color', 'spalisho' ),
 					'type'      => Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-client-stories .item-client-stories .client_info .date' => 'color : {{VALUE}};',
+						'{{WRAPPER}} .xp-client-stories .item-client-stories .client_info .date' => 'color : {{VALUE}};',
 					],
 				]
 			);
@@ -274,7 +274,7 @@ class Spalisho_Elementor_Client_Stories extends Widget_Base {
 					'label'     => esc_html__( 'Background Color', 'spalisho' ),
 					'type'      => Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-client-stories .item-client-stories .client_info .date' => 'background-color : {{VALUE}};',
+						'{{WRAPPER}} .xp-client-stories .item-client-stories .client_info .date' => 'background-color : {{VALUE}};',
 					],
 				]
 			);
@@ -286,7 +286,7 @@ class Spalisho_Elementor_Client_Stories extends Widget_Base {
 					'type'       => Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', 'em', '%' ],
 					'selectors'  => [
-						'{{WRAPPER}} .ova-client-stories .item-client-stories .client_info .date' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+						'{{WRAPPER}} .xp-client-stories .item-client-stories .client_info .date' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 					],
 				]
 			);
@@ -307,7 +307,7 @@ class Spalisho_Elementor_Client_Stories extends Widget_Base {
 				Group_Control_Typography::get_type(),
 				[
 					'name'     => 'content_story_typography',
-					'selector' => '{{WRAPPER}} .ova-client-stories .item-client-stories .story',
+					'selector' => '{{WRAPPER}} .xp-client-stories .item-client-stories .story',
 				]
 			);
 
@@ -317,7 +317,7 @@ class Spalisho_Elementor_Client_Stories extends Widget_Base {
 					'label'     => esc_html__( 'Color', 'spalisho' ),
 					'type'      => Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-client-stories .item-client-stories .story' => 'color : {{VALUE}};',
+						'{{WRAPPER}} .xp-client-stories .item-client-stories .story' => 'color : {{VALUE}};',
 					],
 				]
 			);
@@ -329,7 +329,7 @@ class Spalisho_Elementor_Client_Stories extends Widget_Base {
 					'type'       => Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', 'em', '%' ],
 					'selectors'  => [
-						'{{WRAPPER}} .ova-client-stories .item-client-stories .story' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+						'{{WRAPPER}} .xp-client-stories .item-client-stories .story' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 					],
 				]
 			);
@@ -341,7 +341,7 @@ class Spalisho_Elementor_Client_Stories extends Widget_Base {
 					'type'       => Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', 'em', '%' ],
 					'selectors'  => [
-						'{{WRAPPER}} .ova-client-stories .item-client-stories .story' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+						'{{WRAPPER}} .xp-client-stories .item-client-stories .story' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 					],
 				]
 			);
@@ -366,7 +366,7 @@ class Spalisho_Elementor_Client_Stories extends Widget_Base {
 					'label'     => esc_html__( 'Background Color', 'spalisho' ),
 					'type'      => Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-client-stories .item-client-stories' => 'background-color : {{VALUE}};',
+						'{{WRAPPER}} .xp-client-stories .item-client-stories' => 'background-color : {{VALUE}};',
 					],
 				]
 			);
@@ -378,7 +378,7 @@ class Spalisho_Elementor_Client_Stories extends Widget_Base {
 					'type'       => Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', 'em', '%' ],
 					'selectors'  => [
-						'{{WRAPPER}} .ova-client-stories .item-client-stories' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+						'{{WRAPPER}} .xp-client-stories .item-client-stories' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 					],
 				]
 			);
@@ -388,7 +388,7 @@ class Spalisho_Elementor_Client_Stories extends Widget_Base {
 				[
 					'name' => 'item_client_stories_border',
 					'label' => esc_html__( 'Border', 'spalisho' ),
-					'selector' => '{{WRAPPER}} .ova-client-stories .item-client-stories',
+					'selector' => '{{WRAPPER}} .xp-client-stories .item-client-stories',
 				]
 			);
 
@@ -409,7 +409,7 @@ class Spalisho_Elementor_Client_Stories extends Widget_Base {
 		$background_image = $settings['background_image']['url'];
 
 		 ?>
-		    <div class="ova-client-stories <?php echo esc_attr( $column ); ?>">
+		    <div class="xp-client-stories <?php echo esc_attr( $column ); ?>">
 
 				<?php if(!empty($tab_item)) : foreach ($tab_item as $item) :
                     
