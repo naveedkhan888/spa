@@ -8,16 +8,16 @@ use Elementor\Utils;
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 
-class Mellis_Elementor_Promotions extends Widget_Base {
+class Spalisho_Elementor_Promotions extends Widget_Base {
 
 	
 	public function get_name() {
-		return 'mellis_elementor_promotions';
+		return 'spalisho_elementor_promotions';
 	}
 
 	
 	public function get_title() {
-		return esc_html__( 'Promotions', 'mellis' );
+		return esc_html__( 'Promotions', 'spalisho' );
 	}
 
 	
@@ -27,7 +27,7 @@ class Mellis_Elementor_Promotions extends Widget_Base {
 
 	
 	public function get_categories() {
-		return [ 'mellis' ];
+		return [ 'spalisho' ];
 	}
 
 	public function get_script_depends() {
@@ -40,7 +40,7 @@ class Mellis_Elementor_Promotions extends Widget_Base {
 		$this->start_controls_section(
 			'section_content',
 			[
-				'label' => esc_html__( 'Content', 'mellis' ),
+				'label' => esc_html__( 'Content', 'spalisho' ),
 			]
 		);	
 			
@@ -49,13 +49,13 @@ class Mellis_Elementor_Promotions extends Widget_Base {
 			$this->add_control(
 				'template',
 				[
-					'label' => esc_html__( 'Template', 'mellis' ),
+					'label' => esc_html__( 'Template', 'spalisho' ),
 					'type' => Controls_Manager::SELECT,
 					'default' => 'template_1',
 					'options' => [
-						'template_1' => esc_html__( 'Template 1', 'mellis' ),
-						'template_2' => esc_html__( 'Template 2', 'mellis' ),
-						'template_3' => esc_html__( 'Template 3', 'mellis' ),
+						'template_1' => esc_html__( 'Template 1', 'spalisho' ),
+						'template_2' => esc_html__( 'Template 2', 'spalisho' ),
+						'template_3' => esc_html__( 'Template 3', 'spalisho' ),
 					]
 				]
 			);
@@ -63,7 +63,7 @@ class Mellis_Elementor_Promotions extends Widget_Base {
 			$this->add_control(
 				'sub_title',
 				[
-					'label' => esc_html__( 'Sub Title', 'mellis' ),
+					'label' => esc_html__( 'Sub Title', 'spalisho' ),
 					'type' => Controls_Manager::TEXT,
 					'condition' => [
 						'template' => [
@@ -77,20 +77,20 @@ class Mellis_Elementor_Promotions extends Widget_Base {
 			$this->add_control(
 				'title',
 				[
-					'label' => esc_html__( 'Title', 'mellis' ),
+					'label' => esc_html__( 'Title', 'spalisho' ),
 					'type' => Controls_Manager::TEXTAREA,
-					'default' => esc_html__( 'Title', 'mellis' ),
+					'default' => esc_html__( 'Title', 'spalisho' ),
 				]
 			);
 
 			$this->add_control(
 				'title_font_family_v2',
 				[
-					'label' 	=> esc_html__( 'Font Family', 'mellis' ),
+					'label' 	=> esc_html__( 'Font Family', 'spalisho' ),
 					'type' 		=> \Elementor\Controls_Manager::FONT,
 					'default' 	=> "Parisienne",
 					'selectors' => [
-						'{{WRAPPER}} .ova-promotions .promotion .pricing-title' => 'font-family: {{VALUE}}',
+						'{{WRAPPER}} .xp-promotions .promotion .pricing-title' => 'font-family: {{VALUE}}',
 					],
 					'condition' => [
 						'template' => [
@@ -103,9 +103,9 @@ class Mellis_Elementor_Promotions extends Widget_Base {
 			$this->add_control(
 				'promo_code_number',
 				[
-					'label' => esc_html__( 'Promo Code', 'mellis' ),
+					'label' => esc_html__( 'Promo Code', 'spalisho' ),
 					'type' => Controls_Manager::TEXT,
-					'default' => esc_html__( '6578980', 'mellis' ),
+					'default' => esc_html__( '6578980', 'spalisho' ),
 					'condition' => [
 						'template' => [
 							'template_3'
@@ -117,9 +117,9 @@ class Mellis_Elementor_Promotions extends Widget_Base {
 			$this->add_control(
 				'promo_code_text',
 				[
-					'label' => esc_html__( 'Promo Code Text', 'mellis' ),
+					'label' => esc_html__( 'Promo Code Text', 'spalisho' ),
 					'type' => Controls_Manager::TEXT,
-					'default' => esc_html__( 'Promo Code', 'mellis' ),
+					'default' => esc_html__( 'Promo Code', 'spalisho' ),
 					'condition' => [
 						'template' => [
 							'template_3'
@@ -132,28 +132,28 @@ class Mellis_Elementor_Promotions extends Widget_Base {
 			$this->add_control(
 	            'currency_symbol',
 	            [
-	                'label' => __( 'Currency Symbol', 'mellis' ),
+	                'label' => __( 'Currency Symbol', 'spalisho' ),
 	                'type' => Controls_Manager::SELECT,
 	                'options' => [
-	                    '' => __( 'None', 'mellis' ),
-	                    'dollar' => '&#36; ' . _x( 'Dollar', 'Currency Symbol', 'mellis' ),
-	                    'euro' => '&#128; ' . _x( 'Euro', 'Currency Symbol', 'mellis' ),
-	                    'baht' => '&#3647; ' . _x( 'Baht', 'Currency Symbol', 'mellis' ),
-	                    'franc' => '&#8355; ' . _x( 'Franc', 'Currency Symbol', 'mellis' ),
-	                    'guilder' => '&fnof; ' . _x( 'Guilder', 'Currency Symbol', 'mellis' ),
-	                    'krona' => 'kr ' . _x( 'Krona', 'Currency Symbol', 'mellis' ),
-	                    'lira' => '&#8356; ' . _x( 'Lira', 'Currency Symbol', 'mellis' ),
-	                    'peseta' => '&#8359 ' . _x( 'Peseta', 'Currency Symbol', 'mellis' ),
-	                    'peso' => '&#8369; ' . _x( 'Peso', 'Currency Symbol', 'mellis' ),
-	                    'pound' => '&#163; ' . _x( 'Pound Sterling', 'Currency Symbol', 'mellis' ),
-	                    'real' => 'R$ ' . _x( 'Real', 'Currency Symbol', 'mellis' ),
-	                    'ruble' => '&#8381; ' . _x( 'Ruble', 'Currency Symbol', 'mellis' ),
-	                    'rupee' => '&#8360; ' . _x( 'Rupee', 'Currency Symbol', 'mellis' ),
-	                    'indian_rupee' => '&#8377; ' . _x( 'Rupee (Indian)', 'Currency Symbol', 'mellis' ),
-	                    'shekel' => '&#8362; ' . _x( 'Shekel', 'Currency Symbol', 'mellis' ),
-	                    'yen' => '&#165; ' . _x( 'Yen/Yuan', 'Currency Symbol', 'mellis' ),
-	                    'won' => '&#8361; ' . _x( 'Won', 'Currency Symbol', 'mellis' ),
-	                    'custom' => __( 'Custom', 'mellis' ),
+	                    '' => __( 'None', 'spalisho' ),
+	                    'dollar' => '&#36; ' . _x( 'Dollar', 'Currency Symbol', 'spalisho' ),
+	                    'euro' => '&#128; ' . _x( 'Euro', 'Currency Symbol', 'spalisho' ),
+	                    'baht' => '&#3647; ' . _x( 'Baht', 'Currency Symbol', 'spalisho' ),
+	                    'franc' => '&#8355; ' . _x( 'Franc', 'Currency Symbol', 'spalisho' ),
+	                    'guilder' => '&fnof; ' . _x( 'Guilder', 'Currency Symbol', 'spalisho' ),
+	                    'krona' => 'kr ' . _x( 'Krona', 'Currency Symbol', 'spalisho' ),
+	                    'lira' => '&#8356; ' . _x( 'Lira', 'Currency Symbol', 'spalisho' ),
+	                    'peseta' => '&#8359 ' . _x( 'Peseta', 'Currency Symbol', 'spalisho' ),
+	                    'peso' => '&#8369; ' . _x( 'Peso', 'Currency Symbol', 'spalisho' ),
+	                    'pound' => '&#163; ' . _x( 'Pound Sterling', 'Currency Symbol', 'spalisho' ),
+	                    'real' => 'R$ ' . _x( 'Real', 'Currency Symbol', 'spalisho' ),
+	                    'ruble' => '&#8381; ' . _x( 'Ruble', 'Currency Symbol', 'spalisho' ),
+	                    'rupee' => '&#8360; ' . _x( 'Rupee', 'Currency Symbol', 'spalisho' ),
+	                    'indian_rupee' => '&#8377; ' . _x( 'Rupee (Indian)', 'Currency Symbol', 'spalisho' ),
+	                    'shekel' => '&#8362; ' . _x( 'Shekel', 'Currency Symbol', 'spalisho' ),
+	                    'yen' => '&#165; ' . _x( 'Yen/Yuan', 'Currency Symbol', 'spalisho' ),
+	                    'won' => '&#8361; ' . _x( 'Won', 'Currency Symbol', 'spalisho' ),
+	                    'custom' => __( 'Custom', 'spalisho' ),
 	                ],
 	                'default' => 'dollar',
 	            ]
@@ -162,7 +162,7 @@ class Mellis_Elementor_Promotions extends Widget_Base {
 			$this->add_control(
 				'currency_symbol_custom',
 				[
-					'label' => esc_html__( 'Custom Symbol', 'mellis' ),
+					'label' => esc_html__( 'Custom Symbol', 'spalisho' ),
 					'type' => Controls_Manager::TEXT,
 					'default' => '%',
 					'condition' => [
@@ -174,22 +174,22 @@ class Mellis_Elementor_Promotions extends Widget_Base {
 			$this->add_responsive_control(
 				'position_currency',
 				[
-					'label' 	=> esc_html__( 'Position', 'mellis' ),
+					'label' 	=> esc_html__( 'Position', 'spalisho' ),
 					'type' 		=> \Elementor\Controls_Manager::CHOOSE,
 					'options' 	=> [
 						'row' => [
-							'title' => esc_html__( 'Left', 'mellis' ),
+							'title' => esc_html__( 'Left', 'spalisho' ),
 							'icon' 	=> 'eicon-h-align-left',
 						],
 						'row-reverse' => [
-							'title' => esc_html__( 'Right', 'mellis' ),
+							'title' => esc_html__( 'Right', 'spalisho' ),
 							'icon' 	=> 'eicon-h-align-right',
 						],
 					],
 				
 					'toggle' 	=> true,
 					'selectors' => [
-						'{{WRAPPER}} .ova-promotions .promotion .price .number-symbol' => 'flex-direction: {{VALUE}}',
+						'{{WRAPPER}} .xp-promotions .promotion .price .number-symbol' => 'flex-direction: {{VALUE}}',
 
 					],
 				]
@@ -198,7 +198,7 @@ class Mellis_Elementor_Promotions extends Widget_Base {
 			$this->add_control(
 				'price',
 				[
-					'label' => esc_html__( 'Price', 'mellis' ),
+					'label' => esc_html__( 'Price', 'spalisho' ),
 					'type' => Controls_Manager::NUMBER,
 					'default' => 30,
 					'condition' => [
@@ -212,7 +212,7 @@ class Mellis_Elementor_Promotions extends Widget_Base {
 			$this->add_control(
 				'price_v3',
 				[
-					'label' => esc_html__( 'Price', 'mellis' ),
+					'label' => esc_html__( 'Price', 'spalisho' ),
 					'type' => Controls_Manager::NUMBER,
 					'default' => 10,
 					'condition' => [
@@ -226,9 +226,9 @@ class Mellis_Elementor_Promotions extends Widget_Base {
 			$this->add_control(
 				'suffix',
 				[
-					'label' => esc_html__( 'Suffix', 'mellis' ),
+					'label' => esc_html__( 'Suffix', 'spalisho' ),
 					'type' => Controls_Manager::TEXT,
-					'default' => esc_html__( 'Off', 'mellis' ),
+					'default' => esc_html__( 'Off', 'spalisho' ),
 					'condition' => [
 						'template' => [
 							'template_2'
@@ -241,12 +241,12 @@ class Mellis_Elementor_Promotions extends Widget_Base {
 			$this->add_control(
 				'link',
 				[
-					'label' => esc_html__( 'Link Button', 'mellis' ),
+					'label' => esc_html__( 'Link Button', 'spalisho' ),
 					'type' => Controls_Manager::URL,
 					'dynamic' => [
 						'active' => true,
 					],
-					'placeholder' => esc_html__( 'https://your-link.com', 'mellis' ),
+					'placeholder' => esc_html__( 'https://your-link.com', 'spalisho' ),
 					'show_label' => true,
 				]
 			);
@@ -254,9 +254,9 @@ class Mellis_Elementor_Promotions extends Widget_Base {
 			$this->add_control(
 				'text_button',
 				[
-					'label' 	=> esc_html__( 'Text Button', 'mellis' ),
+					'label' 	=> esc_html__( 'Text Button', 'spalisho' ),
 					'type' 		=> Controls_Manager::TEXT,
-					'default' 	=> esc_html__( 'visit now', 'mellis' ),
+					'default' 	=> esc_html__( 'visit now', 'spalisho' ),
 					'condition' => [
 						'template' => [
 							'template_1'
@@ -268,9 +268,9 @@ class Mellis_Elementor_Promotions extends Widget_Base {
 			$this->add_control(
 				'text_button_v2',
 				[
-					'label' 	=> esc_html__( 'Text Button', 'mellis' ),
+					'label' 	=> esc_html__( 'Text Button', 'spalisho' ),
 					'type' 		=> Controls_Manager::TEXT,
-					'default' 	=> esc_html__( 'Book now', 'mellis' ),
+					'default' 	=> esc_html__( 'Book now', 'spalisho' ),
 					'condition' => [
 						'template' => [
 							'template_2'
@@ -282,9 +282,9 @@ class Mellis_Elementor_Promotions extends Widget_Base {
 			$this->add_control(
 				'text_button_v3',
 				[
-					'label' 	=> esc_html__( 'Text Button', 'mellis' ),
+					'label' 	=> esc_html__( 'Text Button', 'spalisho' ),
 					'type' 		=> Controls_Manager::TEXT,
-					'default' 	=> esc_html__( 'Apply code', 'mellis' ),
+					'default' 	=> esc_html__( 'Apply code', 'spalisho' ),
 					'condition' => [
 						'template' => [
 							'template_3'
@@ -296,9 +296,9 @@ class Mellis_Elementor_Promotions extends Widget_Base {
 			$this->add_control(
 				'conditions_apply',
 				[
-					'label' 	=> esc_html__( 'Conditions Apply', 'mellis' ),
+					'label' 	=> esc_html__( 'Conditions Apply', 'spalisho' ),
 					'type' 		=> Controls_Manager::TEXT,
-					'default' 	=> esc_html__( 'Conditions apply', 'mellis' ),
+					'default' 	=> esc_html__( 'Conditions apply', 'spalisho' ),
 					'condition' => [
 						'template' => [
 							'template_3'
@@ -318,7 +318,7 @@ class Mellis_Elementor_Promotions extends Widget_Base {
 		$this->start_controls_section(
             'general',
             [
-                'label' => esc_html__( 'General', 'mellis' ),
+                'label' => esc_html__( 'General', 'spalisho' ),
                 'tab' 	=> Controls_Manager::TAB_STYLE,
             ]
         );
@@ -326,34 +326,34 @@ class Mellis_Elementor_Promotions extends Widget_Base {
         	$this->add_responsive_control(
 				'general_justify',
 				[
-					'label' 	=> esc_html__( 'Justify', 'mellis' ),
+					'label' 	=> esc_html__( 'Justify', 'spalisho' ),
 					'type' 		=> \Elementor\Controls_Manager::CHOOSE,
 					'options' 	=> [
 						'flex-start' => [
-							'title' => esc_html__( 'Start', 'mellis' ),
+							'title' => esc_html__( 'Start', 'spalisho' ),
 							'icon' 	=> 'eicon-v-align-top',
 						],
 						'center' => [
-							'title' => esc_html__( 'Center', 'mellis' ),
+							'title' => esc_html__( 'Center', 'spalisho' ),
 							'icon' 	=> 'eicon-v-align-middle',
 						],
 						'flex-end' => [
-							'title' => esc_html__( 'End', 'mellis' ),
+							'title' => esc_html__( 'End', 'spalisho' ),
 							'icon' 	=> 'eicon-v-align-bottom',
 						],
 						'space-around' => [
-							'title' => esc_html__( 'Space Around', 'mellis' ),
+							'title' => esc_html__( 'Space Around', 'spalisho' ),
 							'icon' 	=> 'eicon-justify-space-around-v',
 						],
 						'space-between' => [
-							'title' => esc_html__( 'Space Between', 'mellis' ),
+							'title' => esc_html__( 'Space Between', 'spalisho' ),
 							'icon' 	=> 'eicon-justify-space-between-v',
 						],
 						
 					],
 					'toggle' 	=> true,
 					'selectors' => [
-						'{{WRAPPER}} .ova-promotions .promotion' => 'justify-content: {{VALUE}};',
+						'{{WRAPPER}} .xp-promotions .promotion' => 'justify-content: {{VALUE}};',
 						
 					],
 				]
@@ -362,25 +362,25 @@ class Mellis_Elementor_Promotions extends Widget_Base {
 			$this->add_responsive_control(
 				'general_align',
 				[
-					'label' 	=> esc_html__( 'Alignment', 'mellis' ),
+					'label' 	=> esc_html__( 'Alignment', 'spalisho' ),
 					'type' 		=> \Elementor\Controls_Manager::CHOOSE,
 					'options' 	=> [
 						'flex-start' => [
-							'title' => esc_html__( 'Start', 'mellis' ),
+							'title' => esc_html__( 'Start', 'spalisho' ),
 							'icon' 	=> 'eicon-order-start',
 						],
 						'center' => [
-							'title' => esc_html__( 'Center', 'mellis' ),
+							'title' => esc_html__( 'Center', 'spalisho' ),
 							'icon' 	=> 'eicon-align-center-v',
 						],
 						'flex-end' => [
-							'title' => esc_html__( 'End', 'mellis' ),
+							'title' => esc_html__( 'End', 'spalisho' ),
 							'icon' 	=> 'eicon-order-end',
 						],
 					],
 					'toggle' 	=> true,
 					'selectors' => [
-						'{{WRAPPER}} .ova-promotions .promotion' => 'align-items: {{VALUE}};',
+						'{{WRAPPER}} .xp-promotions .promotion' => 'align-items: {{VALUE}};',
 						
 					],
 				]
@@ -389,7 +389,7 @@ class Mellis_Elementor_Promotions extends Widget_Base {
 			$this->add_responsive_control(
 				'promotion_height',
 				[
-					'label' => esc_html__( 'Height', 'mellis' ),
+					'label' => esc_html__( 'Height', 'spalisho' ),
 					'type' => Controls_Manager::SLIDER,
 					'size_units' => [ 'px' ],
 					'range' => [
@@ -400,7 +400,7 @@ class Mellis_Elementor_Promotions extends Widget_Base {
 						]
 					],
 					'selectors' => [
-						'{{WRAPPER}} .ova-promotions .promotion' => 'height: {{SIZE}}{{UNIT}};',
+						'{{WRAPPER}} .xp-promotions .promotion' => 'height: {{SIZE}}{{UNIT}};',
 					],
 				]
 			);
@@ -408,11 +408,11 @@ class Mellis_Elementor_Promotions extends Widget_Base {
         	$this->add_responsive_control(
 				'template_1_general_padding',
 				[
-					'label' => esc_html__( 'Padding', 'mellis' ),
+					'label' => esc_html__( 'Padding', 'spalisho' ),
 					'type' => Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', 'em', '%' ],
 					'selectors' => [
-						'{{WRAPPER}} .ova-promotions .promotion' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+						'{{WRAPPER}} .xp-promotions .promotion' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 					],
 				]
 			);
@@ -421,11 +421,11 @@ class Mellis_Elementor_Promotions extends Widget_Base {
 			$this->add_responsive_control(
 				'template_3_general_margin',
 				[
-					'label' => esc_html__( 'Margin', 'mellis' ),
+					'label' => esc_html__( 'Margin', 'spalisho' ),
 					'type' => Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', 'em', '%' ],
 					'selectors' => [
-						'{{WRAPPER}} .ova-promotions .promotion.template_3' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+						'{{WRAPPER}} .xp-promotions .promotion.template_3' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 					],
 					'condition' => [
 						'template' => [
@@ -438,10 +438,10 @@ class Mellis_Elementor_Promotions extends Widget_Base {
 			$this->add_control(
 				'template_3_general_background',
 				[
-					'label'	 	=> esc_html__( 'Background', 'mellis' ),
+					'label'	 	=> esc_html__( 'Background', 'spalisho' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-promotions .promotion.template_3' => 'background-color : {{VALUE}};'	
+						'{{WRAPPER}} .xp-promotions .promotion.template_3' => 'background-color : {{VALUE}};'	
 					],
 					'condition' => [
 						'template' => [
@@ -458,7 +458,7 @@ class Mellis_Elementor_Promotions extends Widget_Base {
         $this->start_controls_section(
             'background',
             [
-                'label' => esc_html__( 'Background', 'mellis' ),
+                'label' => esc_html__( 'Background', 'spalisho' ),
                 'tab' 	=> Controls_Manager::TAB_STYLE,
             ]
         );
@@ -467,23 +467,23 @@ class Mellis_Elementor_Promotions extends Widget_Base {
 				\Elementor\Group_Control_Background::get_type(),
 				[
 					'name' => 'background_image',
-					'label' => esc_html__( 'Background', 'mellis' ),
+					'label' => esc_html__( 'Background', 'spalisho' ),
 					'types' => [ 'classic'],
-					'selector' => '{{WRAPPER}} .ova-promotions',
+					'selector' => '{{WRAPPER}} .xp-promotions',
 				]
 			);
 
 			$this->add_control(
 				'background_v2',
 				[
-					'label' => esc_html__( 'Background Secondary', 'mellis' ),
+					'label' => esc_html__( 'Background Secondary', 'spalisho' ),
 					'type' => Controls_Manager::SELECT,
 					'default' => 'background_1',
 					'options' => [
-						'background_1' => esc_html__( 'Version 1', 'mellis' ),
-						'background_2' => esc_html__( 'Version 2', 'mellis' ),
-						'default' => esc_html__( 'Default', 'mellis' ),
-						'bg_none' => esc_html__( 'None', 'mellis' ),
+						'background_1' => esc_html__( 'Version 1', 'spalisho' ),
+						'background_2' => esc_html__( 'Version 2', 'spalisho' ),
+						'default' => esc_html__( 'Default', 'spalisho' ),
+						'bg_none' => esc_html__( 'None', 'spalisho' ),
 					],
 					'condition' => [
 						'template' => [
@@ -500,7 +500,7 @@ class Mellis_Elementor_Promotions extends Widget_Base {
 		$this->start_controls_section(
 			'section_sub_title',
 			[
-				'label' => esc_html__( 'Sub Title', 'mellis' ),
+				'label' => esc_html__( 'Sub Title', 'spalisho' ),
 				'tab' 	=> Controls_Manager::TAB_STYLE,
 				'condition' => [
 					'template' => [
@@ -515,18 +515,18 @@ class Mellis_Elementor_Promotions extends Widget_Base {
 				\Elementor\Group_Control_Typography::get_type(),
 				[
 					'name' 		=> 'content_typography_sub_title',
-					'label' 	=> esc_html__( 'Typography', 'mellis' ),
-					'selector' 	=> '{{WRAPPER}} .ova-promotions .promotion .sub-title',
+					'label' 	=> esc_html__( 'Typography', 'spalisho' ),
+					'selector' 	=> '{{WRAPPER}} .xp-promotions .promotion .sub-title',
 				]
 			);
 
 			$this->add_control(
 				'color_sub_title',
 				[
-					'label'	 	=> esc_html__( 'Color', 'mellis' ),
+					'label'	 	=> esc_html__( 'Color', 'spalisho' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-promotions .promotion .sub-title' => 'color : {{VALUE}};'	
+						'{{WRAPPER}} .xp-promotions .promotion .sub-title' => 'color : {{VALUE}};'	
 					],
 				]
 			);
@@ -534,11 +534,11 @@ class Mellis_Elementor_Promotions extends Widget_Base {
 			$this->add_responsive_control(
 				'margin_sub_title',
 				[
-					'label' 	 => esc_html__( 'Margin', 'mellis' ),
+					'label' 	 => esc_html__( 'Margin', 'spalisho' ),
 					'type' 		 => Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', 'em', '%' ],
 					'selectors'  => [
-						'{{WRAPPER}} .ova-promotions .promotion .sub-title' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+						'{{WRAPPER}} .xp-promotions .promotion .sub-title' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 					],
 				]
 			);
@@ -550,7 +550,7 @@ class Mellis_Elementor_Promotions extends Widget_Base {
 		$this->start_controls_section(
 			'section_title',
 			[
-				'label' => esc_html__( 'Title', 'mellis' ),
+				'label' => esc_html__( 'Title', 'spalisho' ),
 				'tab' 	=> Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -559,18 +559,18 @@ class Mellis_Elementor_Promotions extends Widget_Base {
 				\Elementor\Group_Control_Typography::get_type(),
 				[
 					'name' 		=> 'content_typography_title',
-					'label' 	=> esc_html__( 'Typography', 'mellis' ),
-					'selector' 	=> '{{WRAPPER}} .ova-promotions .promotion .pricing-title',
+					'label' 	=> esc_html__( 'Typography', 'spalisho' ),
+					'selector' 	=> '{{WRAPPER}} .xp-promotions .promotion .pricing-title',
 				]
 			);
 
 			$this->add_control(
 				'color_title',
 				[
-					'label'	 	=> esc_html__( 'Color', 'mellis' ),
+					'label'	 	=> esc_html__( 'Color', 'spalisho' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-promotions .promotion .pricing-title' => 'color : {{VALUE}};'
+						'{{WRAPPER}} .xp-promotions .promotion .pricing-title' => 'color : {{VALUE}};'
 					],
 				]
 			);
@@ -578,11 +578,11 @@ class Mellis_Elementor_Promotions extends Widget_Base {
 			$this->add_responsive_control(
 				'margin_title',
 				[
-					'label' 	 => esc_html__( 'Margin', 'mellis' ),
+					'label' 	 => esc_html__( 'Margin', 'spalisho' ),
 					'type' 		 => Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', 'em', '%' ],
 					'selectors'  => [
-						'{{WRAPPER}} .ova-promotions .promotion .pricing-title' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+						'{{WRAPPER}} .xp-promotions .promotion .pricing-title' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 					],
 				]
 			);
@@ -590,11 +590,11 @@ class Mellis_Elementor_Promotions extends Widget_Base {
 			$this->add_responsive_control(
 				'template_2_title_padding',
 				[
-					'label' 	 => esc_html__( 'Padding', 'mellis' ),
+					'label' 	 => esc_html__( 'Padding', 'spalisho' ),
 					'type' 		 => Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', 'em', '%' ],
 					'selectors'  => [
-						'{{WRAPPER}} .ova-promotions .promotion .pricing-title' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+						'{{WRAPPER}} .xp-promotions .promotion .pricing-title' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 					],
 					'condition' => [
 						'template' => [
@@ -611,7 +611,7 @@ class Mellis_Elementor_Promotions extends Widget_Base {
 		$this->start_controls_section(
 			'section_price',
 			[
-				'label' => esc_html__( 'Price', 'mellis' ),
+				'label' => esc_html__( 'Price', 'spalisho' ),
 				'tab' 	=> Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -620,8 +620,8 @@ class Mellis_Elementor_Promotions extends Widget_Base {
 				\Elementor\Group_Control_Typography::get_type(),
 				[
 					'name' 		=> 'content_typography_price',
-					'label' 	=> esc_html__( 'Typography Price', 'mellis' ),
-					'selector' 	=> '{{WRAPPER}} .ova-promotions .promotion .price .number-symbol',
+					'label' 	=> esc_html__( 'Typography Price', 'spalisho' ),
+					'selector' 	=> '{{WRAPPER}} .xp-promotions .promotion .price .number-symbol',
 				]
 			);
 
@@ -629,18 +629,18 @@ class Mellis_Elementor_Promotions extends Widget_Base {
 				\Elementor\Group_Control_Typography::get_type(),
 				[
 					'name' 		=> 'template_2_price_suffix_typo',
-					'label' 	=> esc_html__( 'Typography Suffix', 'mellis' ),
-					'selector' 	=> '{{WRAPPER}} .ova-promotions .promotion.template_2 .price .suffix',
+					'label' 	=> esc_html__( 'Typography Suffix', 'spalisho' ),
+					'selector' 	=> '{{WRAPPER}} .xp-promotions .promotion.template_2 .price .suffix',
 				]
 			);
 
 			$this->add_control(
 				'color_price',
 				[
-					'label'	 	=> esc_html__( 'Color', 'mellis' ),
+					'label'	 	=> esc_html__( 'Color', 'spalisho' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-promotions .promotion .price' => 'color : {{VALUE}};'	
+						'{{WRAPPER}} .xp-promotions .promotion .price' => 'color : {{VALUE}};'	
 					],
 				]
 			);
@@ -648,10 +648,10 @@ class Mellis_Elementor_Promotions extends Widget_Base {
 			$this->add_control(
 				'template_2_price_background',
 				[
-					'label'	 	=> esc_html__( 'Background', 'mellis' ),
+					'label'	 	=> esc_html__( 'Background', 'spalisho' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-promotions .promotion .price' => 'background-color : {{VALUE}};'	
+						'{{WRAPPER}} .xp-promotions .promotion .price' => 'background-color : {{VALUE}};'	
 					],
 					'condition' => [
 						'template' => [
@@ -664,10 +664,10 @@ class Mellis_Elementor_Promotions extends Widget_Base {
 			$this->add_control(
 				'template_2_show_mask',
 				[
-					'label' => esc_html__( 'Show Mask', 'mellis' ),
+					'label' => esc_html__( 'Show Mask', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::SWITCHER,
-					'label_on' => esc_html__( 'Show', 'mellis' ),
-					'label_off' => esc_html__( 'Hide', 'mellis' ),
+					'label_on' => esc_html__( 'Show', 'spalisho' ),
+					'label_off' => esc_html__( 'Hide', 'spalisho' ),
 					'return_value' => 'yes',
 					'default' => 'no',
 					'condition' => [
@@ -681,11 +681,11 @@ class Mellis_Elementor_Promotions extends Widget_Base {
 			$this->add_responsive_control(
 				'margin_price_general',
 				[
-					'label' 	 => esc_html__( 'Margin', 'mellis' ),
+					'label' 	 => esc_html__( 'Margin', 'spalisho' ),
 					'type' 		 => Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', 'em', '%' ],
 					'selectors'  => [
-						'{{WRAPPER}} .ova-promotions .promotion .price' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+						'{{WRAPPER}} .xp-promotions .promotion .price' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 					],
 					'condition' => [
 						'template!' => [
@@ -698,7 +698,7 @@ class Mellis_Elementor_Promotions extends Widget_Base {
 			$this->add_control(
 				'template_2_price_fontsize',
 				[
-					'label' => esc_html__( 'Width', 'mellis' ),
+					'label' => esc_html__( 'Width', 'spalisho' ),
 					'type' => Controls_Manager::SLIDER,
 					'size_units' => [ 'px' ],
 					'range' => [
@@ -709,7 +709,7 @@ class Mellis_Elementor_Promotions extends Widget_Base {
 						]
 					],
 					'selectors' => [
-						'{{WRAPPER}} .ova-promotions .promotion.template_2 .price' => 'width: {{SIZE}}{{UNIT}};height: {{SIZE}}{{UNIT}};',
+						'{{WRAPPER}} .xp-promotions .promotion.template_2 .price' => 'width: {{SIZE}}{{UNIT}};height: {{SIZE}}{{UNIT}};',
 					],
 					'condition' => [
 						'template' => [
@@ -722,7 +722,7 @@ class Mellis_Elementor_Promotions extends Widget_Base {
 			$this->add_control(
 				'template_2_price_position',
 				[
-					'label' => esc_html__( 'Top', 'mellis' ),
+					'label' => esc_html__( 'Top', 'spalisho' ),
 					'type' => Controls_Manager::SLIDER,
 					'size_units' => [ 'px' ],
 					'range' => [
@@ -733,7 +733,7 @@ class Mellis_Elementor_Promotions extends Widget_Base {
 						]
 					],
 					'selectors' => [
-						'{{WRAPPER}} .ova-promotions .promotion.template_2 .price' => 'top: {{SIZE}}{{UNIT}};',
+						'{{WRAPPER}} .xp-promotions .promotion.template_2 .price' => 'top: {{SIZE}}{{UNIT}};',
 					],
 					'condition' => [
 						'template' => [
@@ -750,7 +750,7 @@ class Mellis_Elementor_Promotions extends Widget_Base {
 		$this->start_controls_section(
 			'section_promo',
 			[
-				'label' => esc_html__( 'Promo', 'mellis' ),
+				'label' => esc_html__( 'Promo', 'spalisho' ),
 				'tab' 	=> Controls_Manager::TAB_STYLE,
 				'condition' => [
 					'template' => [
@@ -766,25 +766,25 @@ class Mellis_Elementor_Promotions extends Widget_Base {
 				$this->start_controls_tab(
 					'style_promo_code_tab',
 					[
-						'label' => esc_html__( 'Code', 'mellis' ),
+						'label' => esc_html__( 'Code', 'spalisho' ),
 					]
 				);
 					$this->add_group_control(
 						\Elementor\Group_Control_Typography::get_type(),
 						[
 							'name' 		=> 'content_typography_promo_code',
-							'label' 	=> esc_html__( 'Typography', 'mellis' ),
-							'selector' 	=> '{{WRAPPER}} .ova-promotions .promotion.template_3 .promo-code',
+							'label' 	=> esc_html__( 'Typography', 'spalisho' ),
+							'selector' 	=> '{{WRAPPER}} .xp-promotions .promotion.template_3 .promo-code',
 						]
 					);
 
 					$this->add_control(
 						'color_promo_code',
 						[
-							'label'	 	=> esc_html__( 'Color', 'mellis' ),
+							'label'	 	=> esc_html__( 'Color', 'spalisho' ),
 							'type' 		=> Controls_Manager::COLOR,
 							'selectors' => [
-								'{{WRAPPER}} .ova-promotions .promotion.template_3 .promo-code' => 'color : {{VALUE}};'
+								'{{WRAPPER}} .xp-promotions .promotion.template_3 .promo-code' => 'color : {{VALUE}};'
 								
 								
 							],
@@ -794,11 +794,11 @@ class Mellis_Elementor_Promotions extends Widget_Base {
 					$this->add_responsive_control(
 						'margin_promo_code',
 						[
-							'label' 	 => esc_html__( 'Margin', 'mellis' ),
+							'label' 	 => esc_html__( 'Margin', 'spalisho' ),
 							'type' 		 => Controls_Manager::DIMENSIONS,
 							'size_units' => [ 'px', 'em', '%' ],
 							'selectors'  => [
-								'{{WRAPPER}} .ova-promotions .promotion.template_3 .promo-code' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+								'{{WRAPPER}} .xp-promotions .promotion.template_3 .promo-code' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 							],
 						]
 					);
@@ -808,25 +808,25 @@ class Mellis_Elementor_Promotions extends Widget_Base {
 				$this->start_controls_tab(
 					'style_promo_text_tab',
 					[
-						'label' => esc_html__( 'Text', 'mellis' ),
+						'label' => esc_html__( 'Text', 'spalisho' ),
 					]
 				);
 					$this->add_group_control(
 						\Elementor\Group_Control_Typography::get_type(),
 						[
 							'name' 		=> 'content_typography_promo_text',
-							'label' 	=> esc_html__( 'Typography', 'mellis' ),
-							'selector' 	=> '{{WRAPPER}} .ova-promotions .promotion.template_3 .promo-text',
+							'label' 	=> esc_html__( 'Typography', 'spalisho' ),
+							'selector' 	=> '{{WRAPPER}} .xp-promotions .promotion.template_3 .promo-text',
 						]
 					);
 
 					$this->add_control(
 						'color_promo_text',
 						[
-							'label'	 	=> esc_html__( 'Color', 'mellis' ),
+							'label'	 	=> esc_html__( 'Color', 'spalisho' ),
 							'type' 		=> Controls_Manager::COLOR,
 							'selectors' => [
-								'{{WRAPPER}} .ova-promotions .promotion.template_3 .promo-text' => 'color : {{VALUE}};'
+								'{{WRAPPER}} .xp-promotions .promotion.template_3 .promo-text' => 'color : {{VALUE}};'
 							],
 						]
 					);
@@ -834,11 +834,11 @@ class Mellis_Elementor_Promotions extends Widget_Base {
 					$this->add_responsive_control(
 						'margin_promo_text',
 						[
-							'label' 	 => esc_html__( 'Margin', 'mellis' ),
+							'label' 	 => esc_html__( 'Margin', 'spalisho' ),
 							'type' 		 => Controls_Manager::DIMENSIONS,
 							'size_units' => [ 'px', 'em', '%' ],
 							'selectors'  => [
-								'{{WRAPPER}} .ova-promotions .promotion.template_3 .promo-text' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+								'{{WRAPPER}} .xp-promotions .promotion.template_3 .promo-text' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 							],
 						]
 					);
@@ -854,7 +854,7 @@ class Mellis_Elementor_Promotions extends Widget_Base {
 		$this->start_controls_section(
             'button_style',
             [
-                'label' => esc_html__( 'Button', 'mellis' ),
+                'label' => esc_html__( 'Button', 'spalisho' ),
                 'tab' 	=> Controls_Manager::TAB_STYLE,
             ]
         );
@@ -863,14 +863,14 @@ class Mellis_Elementor_Promotions extends Widget_Base {
 				Group_Control_Typography::get_type(),
 				[
 					'name' 		=> 'text_button_typography',
-					'selector' 	=> '{{WRAPPER}} .ova-promotions .promotion .pricing-btn',
+					'selector' 	=> '{{WRAPPER}} .xp-promotions .promotion .pricing-btn',
 				]
 			);
 
 			$this->add_control(
 				'button_width',
 				[
-					'label' => esc_html__( 'Width', 'mellis' ),
+					'label' => esc_html__( 'Width', 'spalisho' ),
 					'type' => Controls_Manager::SLIDER,
 					'size_units' => [ 'px' ],
 					'range' => [
@@ -881,7 +881,7 @@ class Mellis_Elementor_Promotions extends Widget_Base {
 						]
 					],
 					'selectors' => [
-						'{{WRAPPER}} .ova-promotions .promotion .pricing-btn' => 'width: {{SIZE}}{{UNIT}};',
+						'{{WRAPPER}} .xp-promotions .promotion .pricing-btn' => 'width: {{SIZE}}{{UNIT}};',
 					],
 				
 				]
@@ -890,7 +890,7 @@ class Mellis_Elementor_Promotions extends Widget_Base {
 			$this->add_control(
 				'button_height',
 				[
-					'label' => esc_html__( 'Height', 'mellis' ),
+					'label' => esc_html__( 'Height', 'spalisho' ),
 					'type' => Controls_Manager::SLIDER,
 					'size_units' => [ 'px' ],
 					'range' => [
@@ -901,7 +901,7 @@ class Mellis_Elementor_Promotions extends Widget_Base {
 						]
 					],
 					'selectors' => [
-						'{{WRAPPER}} .ova-promotions .promotion .pricing-btn' => 'height: {{SIZE}}{{UNIT}};',
+						'{{WRAPPER}} .xp-promotions .promotion .pricing-btn' => 'height: {{SIZE}}{{UNIT}};',
 					],
 				
 				]
@@ -914,16 +914,16 @@ class Mellis_Elementor_Promotions extends Widget_Base {
 				$this->start_controls_tab(
 					'style_button_normal_tab',
 						[
-							'label' => esc_html__( 'Normal', 'mellis' ),
+							'label' => esc_html__( 'Normal', 'spalisho' ),
 						]
 					);
 						$this->add_control(
 							'button_text_color',
 							[
-								'label' 	=> esc_html__( 'Color', 'mellis' ),
+								'label' 	=> esc_html__( 'Color', 'spalisho' ),
 								'type' 		=> Controls_Manager::COLOR,
 								'selectors' => [
-									'{{WRAPPER}} .ova-promotions .promotion .pricing-btn' => 'color: {{VALUE}};',
+									'{{WRAPPER}} .xp-promotions .promotion .pricing-btn' => 'color: {{VALUE}};',
 								],
 							]
 						);
@@ -931,10 +931,10 @@ class Mellis_Elementor_Promotions extends Widget_Base {
 						 $this->add_control(
 							'button_bgcolor',
 							[
-								'label' 	=> esc_html__( 'Background Color', 'mellis' ),
+								'label' 	=> esc_html__( 'Background Color', 'spalisho' ),
 								'type' 		=> Controls_Manager::COLOR,
 								'selectors' => [
-									'{{WRAPPER}} .ova-promotions .promotion .pricing-btn' => 'background-color: {{VALUE}};',
+									'{{WRAPPER}} .xp-promotions .promotion .pricing-btn' => 'background-color: {{VALUE}};',
 								],
 							]
 						);
@@ -942,11 +942,11 @@ class Mellis_Elementor_Promotions extends Widget_Base {
 						$this->add_responsive_control(
 				            'button_padding',
 				            [
-				                'label' 		=> esc_html__( 'Padding', 'mellis' ),
+				                'label' 		=> esc_html__( 'Padding', 'spalisho' ),
 				                'type' 			=> Controls_Manager::DIMENSIONS,
 				                'size_units' 	=> [ 'px', '%', 'em' ],
 				                'selectors' 	=> [
-				                    '{{WRAPPER}} .ova-promotions .promotion .pricing-btn' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+				                    '{{WRAPPER}} .xp-promotions .promotion .pricing-btn' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 				                ],
 				            ]
 				        );
@@ -954,11 +954,11 @@ class Mellis_Elementor_Promotions extends Widget_Base {
 				        $this->add_responsive_control(
 				            'button_margin',
 				            [
-				                'label' 		=> esc_html__( 'Margin', 'mellis' ),
+				                'label' 		=> esc_html__( 'Margin', 'spalisho' ),
 				                'type' 			=> Controls_Manager::DIMENSIONS,
 				                'size_units' 	=> [ 'px', '%', 'em' ],
 				                'selectors' 	=> [
-				                    '{{WRAPPER}} .ova-promotions .promotion .pricing-btn' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+				                    '{{WRAPPER}} .xp-promotions .promotion .pricing-btn' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 				                ],
 				            ]
 				        );
@@ -966,11 +966,11 @@ class Mellis_Elementor_Promotions extends Widget_Base {
 				        $this->add_responsive_control(
 				            'button_border_radius',
 				            [
-				                'label' 		=> esc_html__( 'Border Radius', 'mellis' ),
+				                'label' 		=> esc_html__( 'Border Radius', 'spalisho' ),
 				                'type' 			=> Controls_Manager::DIMENSIONS,
 				                'size_units' 	=> [ 'px', '%', 'em' ],
 				                'selectors' 	=> [
-				                    '{{WRAPPER}} .ova-promotions .promotion .pricing-btn' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+				                    '{{WRAPPER}} .xp-promotions .promotion .pricing-btn' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 				                ],
 				            ]
 				        );
@@ -979,8 +979,8 @@ class Mellis_Elementor_Promotions extends Widget_Base {
 							\Elementor\Group_Control_Border::get_type(),
 							[
 								'name' => 'button_border',
-								'label' => esc_html__( 'Border', 'mellis' ),
-								'selector' => '{{WRAPPER}} .ova-promotions .promotion .pricing-btn',
+								'label' => esc_html__( 'Border', 'spalisho' ),
+								'selector' => '{{WRAPPER}} .xp-promotions .promotion .pricing-btn',
 							]
 						);
 
@@ -989,17 +989,17 @@ class Mellis_Elementor_Promotions extends Widget_Base {
 				$this->start_controls_tab(
 					'style_button_hover_tab',
 						[
-							'label' => esc_html__( 'Hover', 'mellis' ),
+							'label' => esc_html__( 'Hover', 'spalisho' ),
 						]
 					);
 
 						$this->add_control(
 							'button_text_color_hover',
 							[
-								'label' 	=> esc_html__( 'Color Hover', 'mellis' ),
+								'label' 	=> esc_html__( 'Color Hover', 'spalisho' ),
 								'type' 		=> Controls_Manager::COLOR,
 								'selectors' => [
-									'{{WRAPPER}} .ova-promotions .promotion .pricing-btn:hover' => 'color: {{VALUE}};',
+									'{{WRAPPER}} .xp-promotions .promotion .pricing-btn:hover' => 'color: {{VALUE}};',
 								],
 							]
 						);
@@ -1007,10 +1007,10 @@ class Mellis_Elementor_Promotions extends Widget_Base {
 						$this->add_control(
 							'button_bgcolor_hover',
 							[
-								'label' 	=> esc_html__( 'Background Color Hover', 'mellis' ),
+								'label' 	=> esc_html__( 'Background Color Hover', 'spalisho' ),
 								'type' 		=> Controls_Manager::COLOR,
 								'selectors' => [
-									'{{WRAPPER}} .ova-promotions .promotion .pricing-btn:hover' => 'background-color: {{VALUE}};',
+									'{{WRAPPER}} .xp-promotions .promotion .pricing-btn:hover' => 'background-color: {{VALUE}};',
 								],
 							]
 						);
@@ -1018,10 +1018,10 @@ class Mellis_Elementor_Promotions extends Widget_Base {
 						$this->add_control(
 							'button_border_hover',
 							[
-								'label' 	=> esc_html__( 'Border Color', 'mellis' ),
+								'label' 	=> esc_html__( 'Border Color', 'spalisho' ),
 								'type' 		=> Controls_Manager::COLOR,
 								'selectors' => [
-									'{{WRAPPER}} .ova-promotions .promotion .pricing-btn:hover' => 'border-color: {{VALUE}};',
+									'{{WRAPPER}} .xp-promotions .promotion .pricing-btn:hover' => 'border-color: {{VALUE}};',
 								],
 							]
 						);
@@ -1037,7 +1037,7 @@ class Mellis_Elementor_Promotions extends Widget_Base {
 		$this->start_controls_section(
             'condition_style',
             [
-                'label' => esc_html__( 'Conditions', 'mellis' ),
+                'label' => esc_html__( 'Conditions', 'spalisho' ),
                 'tab' 	=> Controls_Manager::TAB_STYLE,
                 'condition' => [
 					'template' => [
@@ -1050,17 +1050,17 @@ class Mellis_Elementor_Promotions extends Widget_Base {
 				Group_Control_Typography::get_type(),
 				[
 					'name' 		=> 'condition_typography',
-					'selector' 	=> '{{WRAPPER}} .ova-promotions .promotion.template_3 .promo-condition',
+					'selector' 	=> '{{WRAPPER}} .xp-promotions .promotion.template_3 .promo-condition',
 				]
 			);
 
 			$this->add_control(
 				'condition_text_color',
 				[
-					'label' 	=> esc_html__( 'Color', 'mellis' ),
+					'label' 	=> esc_html__( 'Color', 'spalisho' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-promotions .promotion.template_3 .promo-condition' => 'color: {{VALUE}};',
+						'{{WRAPPER}} .xp-promotions .promotion.template_3 .promo-condition' => 'color: {{VALUE}};',
 					],
 				]
 			);
@@ -1068,11 +1068,11 @@ class Mellis_Elementor_Promotions extends Widget_Base {
 			$this->add_responsive_control(
 	            'condition_margin',
 	            [
-	                'label' 		=> esc_html__( 'Margin', 'mellis' ),
+	                'label' 		=> esc_html__( 'Margin', 'spalisho' ),
 	                'type' 			=> Controls_Manager::DIMENSIONS,
 	                'size_units' 	=> [ 'px', '%', 'em' ],
 	                'selectors' 	=> [
-	                    '{{WRAPPER}} .ova-promotions .promotion.template_3 .promo-condition' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+	                    '{{WRAPPER}} .xp-promotions .promotion.template_3 .promo-condition' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 	                ],
 	            ]
 	        );
@@ -1156,7 +1156,7 @@ class Mellis_Elementor_Promotions extends Widget_Base {
 
 		<?php if($template == 'template_1' || $template == 'template_2'): ?>
 
-			<div class="ova-promotions" >
+			<div class="xp-promotions" >
 				<div class="promotion <?php echo esc_html( $template ); echo ' ' . esc_html( $background_2 ); ?>">
 
 					<?php if( !empty( $sub_title ) && $template == 'template_1' ) :?>
@@ -1210,7 +1210,7 @@ class Mellis_Elementor_Promotions extends Widget_Base {
 		<!-- version 3 -->
  		<?php if($template == 'template_3'): ?>
 
- 			<div class="ova-promotions" >
+ 			<div class="xp-promotions" >
 				<div class="promotion template_3 ">
 
 					<?php if( !empty( $price ) ) :?>
@@ -1274,4 +1274,4 @@ class Mellis_Elementor_Promotions extends Widget_Base {
 
 	
 }
-$widgets_manager->register( new Mellis_Elementor_Promotions() );
+$widgets_manager->register( new Spalisho_Elementor_Promotions() );

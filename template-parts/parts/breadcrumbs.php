@@ -1,16 +1,16 @@
 <?php 
 
 if ( ! ( class_exists( 'woocommerce' ) && is_woocommerce() ) ) {
-    if ( get_post_meta(  mellis_get_current_id() ,'mellis_met_show_breadcrumbs', true ) != 'no' ) {
+    if ( get_post_meta(  spalisho_get_current_id() ,'spalisho_met_show_breadcrumbs', true ) != 'no' ) {
 
-		$separator = '<li class="li_separator"><span class="separator"><i class="ovaicon-next"></i></span></li>';
+		$separator = '<li class="li_separator"><span class="separator"><i class="xpicon-next"></i></span></li>';
 
 		$html = '<div id="breadcrumbs">';
 			$html .= '<ul class="breadcrumb">';
 
 				global $post;
 		        
-		        $html .= '<li><a href="' . esc_url( home_url('/') ) . '" title="'.esc_attr__('Home', 'mellis').'">' . esc_attr__('Home', 'mellis') . '</a></li> ';
+		        $html .= '<li><a href="' . esc_url( home_url('/') ) . '" title="'.esc_attr__('Home', 'spalisho').'">' . esc_attr__('Home', 'spalisho') . '</a></li> ';
 		        
 		        if ( is_category() ) {
 
@@ -52,7 +52,7 @@ if ( ! ( class_exists( 'woocommerce' ) && is_woocommerce() ) ) {
 				        	$term  = isset( $terms[0] ) ? $terms[0] : '';
 				        	
 					        if( !empty($term) ){
-					        	$html .= $separator.'<li>'.get_term_parents_list( $term->term_id, $post_type->taxonomies[0], array('separator' => ' <span class="separator"><i class="ovaicon-next"></i></span> ') ).'</li>';
+					        	$html .= $separator.'<li>'.get_term_parents_list( $term->term_id, $post_type->taxonomies[0], array('separator' => ' <span class="separator"><i class="xpicon-next"></i></span> ') ).'</li>';
 					        } else {
 					        	$html .= $separator;
 					        }
@@ -83,7 +83,7 @@ if ( ! ( class_exists( 'woocommerce' ) && is_woocommerce() ) ) {
 
 		        } elseif ( is_search()) {
 
-		            $html .=  $separator.'<li>' . esc_html__('Search results for', 'mellis').' ' . get_search_query() . '</li>';
+		            $html .=  $separator.'<li>' . esc_html__('Search results for', 'spalisho').' ' . get_search_query() . '</li>';
 
 		        } elseif ( !is_single() && !is_page() && get_post_type() != 'post' && !is_404() ) {
 
@@ -131,21 +131,21 @@ if ( ! ( class_exists( 'woocommerce' ) && is_woocommerce() ) ) {
 
 		        } elseif ( is_tag() ) {
 
-		        	$html .= $separator.'<li>' . esc_html__('Archive by tag', 'mellis').' ' . single_tag_title('', false) . '</li>';
+		        	$html .= $separator.'<li>' . esc_html__('Archive by tag', 'spalisho').' ' . single_tag_title('', false) . '</li>';
 
 		        } elseif ( is_author() ) {
 
 		        	global $author;
 		        	$userdata = get_userdata($author);
-		        	$html .= $separator.'<li>' . esc_html__('Articles posted by', 'mellis').' ' . $userdata->display_name . '</li>';
+		        	$html .= $separator.'<li>' . esc_html__('Articles posted by', 'spalisho').' ' . $userdata->display_name . '</li>';
 
 		        } elseif ( is_home() ){
 
-		        	$html .= $separator.'<li>' . esc_html__('Blog', 'mellis').'&nbsp;' . '</li>';
+		        	$html .= $separator.'<li>' . esc_html__('Blog', 'spalisho').'&nbsp;' . '</li>';
 
 		        } elseif ( is_404() ) {
 
-		        	$html .= $separator.'<li>' . esc_html__('Page not found', 'mellis') . '</li>';
+		        	$html .= $separator.'<li>' . esc_html__('Page not found', 'spalisho') . '</li>';
 
 		        }
 		        
@@ -187,12 +187,12 @@ if ( ! ( class_exists( 'woocommerce' ) && is_woocommerce() ) ) {
 	}
 } else {
     $args = array(
-        'delimiter' 	=> '<li><span class="separator"><i class="ovaicon-next"></i></span></li>',
+        'delimiter' 	=> '<li><span class="separator"><i class="xpicon-next"></i></span></li>',
         'wrap_before' 	=> '<div id="breadcrumbs" ><ul class="breadcrumb">',
         'wrap_after' 	=> '</ul></div>',
         'before' 		=> '<li>',
         'after' 		=> '</li>',
-        'home' 			=> esc_html__( 'Home', 'mellis' )
+        'home' 			=> esc_html__( 'Home', 'spalisho' )
     );
 
     woocommerce_breadcrumb( $args );

@@ -17,8 +17,8 @@
 	    }
     ?>
 
-    <div class="ovamegamenu_container_default"></div>
+    <div class="xpmegamenu_container_default"></div>
 	<div class="wrap-fullwidth"><div class="inside-content">
 
 	
-<?php echo apply_filters( 'mellis_render_header', '' ); ?>
+<?php echo apply_filters( 'spalisho_render_header', '' ); ?>

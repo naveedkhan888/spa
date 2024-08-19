@@ -6,14 +6,14 @@ use Elementor\Controls_Manager;
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
-class Mellis_Elementor_Canvas_Menu extends Widget_Base {
+class Spalisho_Elementor_Canvas_Menu extends Widget_Base {
 
 	public function get_name() {
-		return 'mellis_elementor_menu_canvas';
+		return 'spalisho_elementor_menu_canvas';
 	}
 
 	public function get_title() {
-		return esc_html__( 'Menu Canvas', 'mellis' );
+		return esc_html__( 'Menu Canvas', 'spalisho' );
 	}
 
 	public function get_icon() {
@@ -25,7 +25,7 @@ class Mellis_Elementor_Canvas_Menu extends Widget_Base {
 	}
 
 	public function get_script_depends() {
-		return [ 'mellis-elementor-menu-canvas' ];
+		return [ 'spalisho-elementor-menu-canvas' ];
 	}
 	
 
@@ -37,7 +37,7 @@ class Mellis_Elementor_Canvas_Menu extends Widget_Base {
 		$this->start_controls_section(
 			'section_menu_type',
 			[
-				'label' => esc_html__( 'Global', 'mellis' ),
+				'label' => esc_html__( 'Global', 'spalisho' ),
 			]
 		);
 
@@ -51,7 +51,7 @@ class Mellis_Elementor_Canvas_Menu extends Widget_Base {
 			$this->add_control(
 				'menu_slug',
 				[
-					'label' => esc_html__( 'Select Menu', 'mellis' ),
+					'label' => esc_html__( 'Select Menu', 'spalisho' ),
 					'type' => Controls_Manager::SELECT,
 					'options' => $list_menu,
 					'default' => '',
@@ -62,15 +62,15 @@ class Mellis_Elementor_Canvas_Menu extends Widget_Base {
 			$this->add_control(
 				'menu_dir',
 				[
-					'label' => esc_html__( 'Menu Direction', 'mellis' ),
+					'label' => esc_html__( 'Menu Direction', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::CHOOSE,
 					'options' => [
 						'dir_left' => [
-							'title' => esc_html__( 'Left', 'mellis' ),
+							'title' => esc_html__( 'Left', 'spalisho' ),
 							'icon' => 'eicon-h-align-left',
 						],
 						'dir_right' => [
-							'title' => esc_html__( 'Right', 'mellis' ),
+							'title' => esc_html__( 'Right', 'spalisho' ),
 							'icon' => 'eicon-h-align-right',
 						],
 					],
@@ -81,10 +81,10 @@ class Mellis_Elementor_Canvas_Menu extends Widget_Base {
 			$this->add_control(
 				'show_button',
 				[
-					'label' 		=> __( 'Show Button', 'mellis' ),
+					'label' 		=> __( 'Show Button', 'spalisho' ),
 					'type' 			=> \Elementor\Controls_Manager::SWITCHER,
-					'label_on' 		=> __( 'Show', 'mellis' ),
-					'label_off' 	=> __( 'Hide', 'mellis' ),
+					'label_on' 		=> __( 'Show', 'spalisho' ),
+					'label_off' 	=> __( 'Hide', 'spalisho' ),
 					'default' 		=> 'no',
 				]
 			);
@@ -92,9 +92,9 @@ class Mellis_Elementor_Canvas_Menu extends Widget_Base {
 			$this->add_control(
 				'link_button',
 				[
-					'label'   => esc_html__( 'Link Button', 'mellis' ),
+					'label'   => esc_html__( 'Link Button', 'spalisho' ),
 					'type'    => \Elementor\Controls_Manager::URL,
-					'description' => esc_html__( 'https://your-domain.com', 'mellis' ),
+					'description' => esc_html__( 'https://your-domain.com', 'spalisho' ),
 					'show_external' => false,
 					'default' => [
 						'url' => '#',
@@ -110,9 +110,9 @@ class Mellis_Elementor_Canvas_Menu extends Widget_Base {
 			$this->add_control(
 				'text_button',
 				[
-					'label' 	=> esc_html__( 'Text Button', 'mellis' ),
+					'label' 	=> esc_html__( 'Text Button', 'spalisho' ),
 					'type' 		=> Controls_Manager::TEXT,
-					'default' => esc_html__('Book Now','mellis'),
+					'default' => esc_html__('Book Now','spalisho'),
 					'condition' => [
 						'show_button' => 'yes'
 					]
@@ -127,7 +127,7 @@ class Mellis_Elementor_Canvas_Menu extends Widget_Base {
 		$this->start_controls_section(
 			'section_content',
 			[
-				'label' => esc_html__( 'Style', 'mellis' ),
+				'label' => esc_html__( 'Style', 'spalisho' ),
 			]
 		);
 			
@@ -136,7 +136,7 @@ class Mellis_Elementor_Canvas_Menu extends Widget_Base {
 			$this->add_control(
 				'btn_color',
 				[
-					'label' => esc_html__( 'Button', 'mellis' ),
+					'label' => esc_html__( 'Button', 'spalisho' ),
 					'type' => Controls_Manager::COLOR,
 					'default' => '',
 					'selectors' => [
@@ -151,7 +151,7 @@ class Mellis_Elementor_Canvas_Menu extends Widget_Base {
 			$this->add_control(
 				'bg_color',
 				[
-					'label' => esc_html__( 'Menu Background', 'mellis' ),
+					'label' => esc_html__( 'Menu Background', 'spalisho' ),
 					'type' => Controls_Manager::COLOR,
 					'default' => '',
 					'selectors' => [
@@ -179,14 +179,14 @@ class Mellis_Elementor_Canvas_Menu extends Widget_Base {
 				$this->start_controls_tab(
 					'style_normal_tab_text',
 					[
-						'label' => esc_html__( 'Normal', 'mellis' ),
+						'label' => esc_html__( 'Normal', 'spalisho' ),
 					]
 				);
 			
 					$this->add_control(
 						'text_color',
 						[
-							'label' => esc_html__( 'Menu Color', 'mellis' ),
+							'label' => esc_html__( 'Menu Color', 'spalisho' ),
 							'type' => Controls_Manager::COLOR,
 							'default' => '',
 							'selectors' => [
@@ -202,14 +202,14 @@ class Mellis_Elementor_Canvas_Menu extends Widget_Base {
 				$this->start_controls_tab(
 					'style_hover_tab_text',
 					[
-						'label' => esc_html__( 'Hover', 'mellis' ),
+						'label' => esc_html__( 'Hover', 'spalisho' ),
 					]
 				);
 
 					$this->add_control(
 						'text_color_hover',
 						[
-							'label' => esc_html__( 'Menu Color', 'mellis' ),
+							'label' => esc_html__( 'Menu Color', 'spalisho' ),
 							'type' => Controls_Manager::COLOR,
 							'default' => '',
 							'selectors' => [
@@ -226,14 +226,14 @@ class Mellis_Elementor_Canvas_Menu extends Widget_Base {
 				$this->start_controls_tab(
 					'style_active_tab_text',
 					[
-						'label' => esc_html__( 'Active', 'mellis' ),
+						'label' => esc_html__( 'Active', 'spalisho' ),
 					]
 				);
 
 					$this->add_control(
 						'text_color_active',
 						[
-							'label' => esc_html__( 'Menu Color', 'mellis' ),
+							'label' => esc_html__( 'Menu Color', 'spalisho' ),
 							'type' => Controls_Manager::COLOR,
 							'default' => '',
 							'selectors' => [
@@ -273,7 +273,7 @@ class Mellis_Elementor_Canvas_Menu extends Widget_Base {
             </button>
             <nav class="container-menu <?php echo  esc_attr( $settings['menu_dir'] ); ?>" >
 	            <div class="close-menu">
-	            	<i class="ovaicon-cancel"></i>
+	            	<i class="xpicon-cancel"></i>
 	            </div>
 				<?php
 					wp_nav_menu( [
@@ -299,6 +299,6 @@ class Mellis_Elementor_Canvas_Menu extends Widget_Base {
 }
 
 
-$widgets_manager->register( new Mellis_Elementor_Canvas_Menu() );
+$widgets_manager->register( new Spalisho_Elementor_Canvas_Menu() );
 
 

@@ -1,4 +1,4 @@
-.ova-pricing{
+.xp-pricing{
 	@include transaction(all, 0.3s, ease);
 	position: relative;
 	border: 1px solid rgb(240, 232, 232);
@@ -17,7 +17,7 @@
 			}
 		}
 		.price {
-			.ova-price {
+			.xp-price {
 				@include transaction(all, 0.3s, ease);
 			}
 		}
@@ -52,7 +52,7 @@
 				}
 			}
 			.price{
-				.ova-price{
+				.xp-price{
 					color: #fff;
 				}
 			}
@@ -86,7 +86,7 @@
 			}
 		}
 		.price{
-			.ova-price{
+			.xp-price{
 				font-size: 36px;
 			}
 		}
@@ -152,7 +152,7 @@
 	    justify-content: flex-start;
         align-items: flex-end;
         padding-bottom: 24px;
-		.ova-price{
+		.xp-price{
 			@include transaction(all, 0.3s, ease);
 			display: flex;
 			font-size: 34px;

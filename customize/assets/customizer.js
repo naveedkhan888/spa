@@ -26,7 +26,7 @@ jQuery( document ).ready(function($) {
 		var bodyfontcontrol = _wpCustomizeSettings.controls[customizerControlName];
 
 		// Find the index of the selected font
-		var indexes = $.map(bodyfontcontrol.ovafontslist, function(obj, index) {
+		var indexes = $.map(bodyfontcontrol.xpfontslist, function(obj, index) {
 			if(obj.family === selectedFont) {
 				return index;
 			}
@@ -34,14 +34,14 @@ jQuery( document ).ready(function($) {
 		var index = indexes[0];
 
 		// For the selected Google font show the available weight/style variants
-		$.each(bodyfontcontrol.ovafontslist[index].variants, function(val, text) {
+		$.each(bodyfontcontrol.xpfontslist[index].variants, function(val, text) {
 			elementRegularWeight.append(
 				$('<option></option>').val(text).html(text)
 			);
 		});
 
 		// Update the font category based on the selected font
-		$(this).parent().parent().find('.google-fonts-category').val(bodyfontcontrol.ovafontslist[index].category);
+		$(this).parent().parent().find('.google-fonts-category').val(bodyfontcontrol.xpfontslist[index].category);
 		
 
 		ovaGetAllSelects($(this).parent().parent());

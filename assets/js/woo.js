@@ -8,9 +8,9 @@
 		});
 	} 
 
-	$('.ova-login-register-woo li a').on('click', function(){
+	$('.xp-login-register-woo li a').on('click', function(){
 		var type = $(this).data('type');
-		$('.ova-login-register-woo li').removeClass('active');
+		$('.xp-login-register-woo li').removeClass('active');
 		$(this).parent('li').addClass('active');
 		if( type === 'login' ){
 			$('.woocommerce #customer_login .woocommerce-form.woocommerce-form-login').css('display', 'block');

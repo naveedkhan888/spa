@@ -1,5 +1,5 @@
 <?php
-$sidebar = apply_filters( 'mellis_theme_sidebar', '' );
+$sidebar = apply_filters( 'spalisho_theme_sidebar', '' );
 if ($sidebar == 'layout_1c' || $sidebar == ''){
     return;
 }

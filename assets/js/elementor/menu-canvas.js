@@ -6,7 +6,7 @@
         
 		
 		/* Menu */
-        elementorFrontend.hooks.addAction('frontend/element_ready/mellis_elementor_menu_canvas.default', function(){
+        elementorFrontend.hooks.addAction('frontend/element_ready/spalisho_elementor_menu_canvas.default', function(){
 	        
 	        $('.menu-canvas .menu-toggle').on('click', function (e) {
 	        	e.stopPropagation();

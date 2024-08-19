@@ -1,4 +1,4 @@
-.ova-counter {
+.xp-counter {
 	display: -webkit-flex;
 	display: flex;
 	flex-wrap: wrap;
@@ -77,7 +77,7 @@
 	}
 
 	// template2 
-    &.ova-counter-template2 { 
+    &.xp-counter-template2 { 
         .odometer {
             font-size: 24px;
             font-weight: 700;
@@ -94,7 +94,7 @@
     }
 
     // template3
-    &.ova-counter-template3 { 
+    &.xp-counter-template3 { 
         .counter-content {
         	display: flex;
         	align-items: center;

@@ -8,15 +8,15 @@ use Elementor\Utils;
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
-class Mellis_Elementor_Gallery extends Widget_Base {
+class Spalisho_Elementor_Gallery extends Widget_Base {
 
 	
 	public function get_name() {
-		return 'mellis_elementor_gallery';
+		return 'spalisho_elementor_gallery';
 	}
 
 	public function get_title() {
-		return esc_html__( 'Gallery', 'mellis' );
+		return esc_html__( 'Gallery', 'spalisho' );
 	}
 
 	public function get_icon() {
@@ -24,14 +24,14 @@ class Mellis_Elementor_Gallery extends Widget_Base {
 	}
 
 	public function get_categories() {
-		return [ 'mellis' ];
+		return [ 'spalisho' ];
 	}
 
 	public function get_script_depends() {
 		wp_enqueue_style('fancybox', get_template_directory_uri().'/assets/libs/fancybox/fancybox.css');
 		wp_enqueue_script('fancybox', get_template_directory_uri().'/assets/libs/fancybox/fancybox.umd.js', array('jquery'),null,true);
 		wp_enqueue_script('masonry', get_template_directory_uri().'/assets/libs/masonry.min.js', array('jquery'), false, true );
-		return ['mellis-elementor-gallery'];
+		return ['spalisho-elementor-gallery'];
 	}
 	
 	// Add Your Controll In This Function
@@ -40,14 +40,14 @@ class Mellis_Elementor_Gallery extends Widget_Base {
 		$this->start_controls_section(
 			'section_content',
 			[
-				'label' => esc_html__( 'Content', 'mellis' ),
+				'label' => esc_html__( 'Content', 'spalisho' ),
 			]
 		);	
 
 			$this->add_control(
 				'class_icon',
 				[
-					'label' => __( 'Icon', 'mellis' ),
+					'label' => __( 'Icon', 'spalisho' ),
 					'type' => Controls_Manager::ICONS,
 					'default' => [
 						'value' => 'flaticon flaticon-add',
@@ -63,16 +63,16 @@ class Mellis_Elementor_Gallery extends Widget_Base {
 			$repeater->add_control(
 				'caption',
 				[
-					'label'   => esc_html__( 'Caption Image', 'mellis' ),
+					'label'   => esc_html__( 'Caption Image', 'spalisho' ),
 					'type'    => Controls_Manager::TEXT,
-					'default' => esc_html__( 'Caption', 'mellis' ),
+					'default' => esc_html__( 'Caption', 'spalisho' ),
 				]
 			);
 
 			$repeater->add_control(
 				'image',
 				[
-					'label'   => esc_html__( 'Gallery Image', 'mellis' ),
+					'label'   => esc_html__( 'Gallery Image', 'spalisho' ),
 					'type'    => Controls_Manager::MEDIA,
 					'default' => [
 						'url' => Utils::get_placeholder_image_src(),
@@ -83,7 +83,7 @@ class Mellis_Elementor_Gallery extends Widget_Base {
 			$repeater->add_control(
 				'image_popup',
 				[
-					'label'   => esc_html__( 'Popup Image', 'mellis' ),
+					'label'   => esc_html__( 'Popup Image', 'spalisho' ),
 					'type'    => Controls_Manager::MEDIA,
 					'default' => [
 						'url' => Utils::get_placeholder_image_src(),
@@ -94,7 +94,7 @@ class Mellis_Elementor_Gallery extends Widget_Base {
 			$repeater->add_responsive_control(
 				'image_width',
 				[
-					'label' 		=> esc_html__( 'Width', 'mellis' ),
+					'label' 		=> esc_html__( 'Width', 'spalisho' ),
 					'type' 			=> Controls_Manager::SLIDER,
 					'size_units' 	=> [ '%', 'px' ],
 					'default' => [
@@ -119,7 +119,7 @@ class Mellis_Elementor_Gallery extends Widget_Base {
 						],
 					],
 					'selectors' => [
-						'{{WRAPPER}} .ova-gallery .grid {{CURRENT_ITEM}}' => 'width: {{SIZE}}{{UNIT}}!important',
+						'{{WRAPPER}} .xp-gallery .grid {{CURRENT_ITEM}}' => 'width: {{SIZE}}{{UNIT}}!important',
 					],
 				]
 			);
@@ -127,7 +127,7 @@ class Mellis_Elementor_Gallery extends Widget_Base {
 			$repeater->add_responsive_control(
 				'image_height',
 				[
-					'label' 		=> esc_html__( 'Height', 'mellis' ),
+					'label' 		=> esc_html__( 'Height', 'spalisho' ),
 					'type' 			=> Controls_Manager::SLIDER,
 					'size_units' 	=> [ '%', 'px' ],
 					'default' => [
@@ -152,7 +152,7 @@ class Mellis_Elementor_Gallery extends Widget_Base {
 						],
 					],
 					'selectors' => [
-						'{{WRAPPER}} .ova-gallery .grid {{CURRENT_ITEM}} img' => 'height: {{SIZE}}{{UNIT}}',
+						'{{WRAPPER}} .xp-gallery .grid {{CURRENT_ITEM}} img' => 'height: {{SIZE}}{{UNIT}}',
 					],
 				]
 			);
@@ -160,11 +160,11 @@ class Mellis_Elementor_Gallery extends Widget_Base {
 			$repeater->add_responsive_control(
 				'image_padding',
 				[
-					'label'      => esc_html__( 'Padding', 'mellis' ),
+					'label'      => esc_html__( 'Padding', 'spalisho' ),
 					'type'       => Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', 'em', '%' ],
 					'selectors'  => [
-						'{{WRAPPER}} .ova-gallery .grid {{CURRENT_ITEM}}' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+						'{{WRAPPER}} .xp-gallery .grid {{CURRENT_ITEM}}' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 					],
 				]
 			);
@@ -172,21 +172,21 @@ class Mellis_Elementor_Gallery extends Widget_Base {
 			$this->add_control(
 				'tab_item',
 				[
-					'label'		=> esc_html__( 'Items Gallery', 'mellis' ),
+					'label'		=> esc_html__( 'Items Gallery', 'spalisho' ),
 					'type'		=> Controls_Manager::REPEATER,
 					'fields'  	=> $repeater->get_controls(),
 					'default' 	=> [
 						[
-							'caption' 	=>  esc_html__( 'Gallery 01', 'mellis' ),
+							'caption' 	=>  esc_html__( 'Gallery 01', 'spalisho' ),
 						],
 						[
-							'caption' 	=>  esc_html__( 'Gallery 02', 'mellis' ),
+							'caption' 	=>  esc_html__( 'Gallery 02', 'spalisho' ),
 						],
 						[
-							'caption' 	=>  esc_html__( 'Gallery 03', 'mellis' ),
+							'caption' 	=>  esc_html__( 'Gallery 03', 'spalisho' ),
 						],
 						[
-							'caption' 	=>  esc_html__( 'Gallery 04', 'mellis' ),
+							'caption' 	=>  esc_html__( 'Gallery 04', 'spalisho' ),
 						],
 					],
 					'title_field' => '{{{ caption }}}',
@@ -196,7 +196,7 @@ class Mellis_Elementor_Gallery extends Widget_Base {
 			$this->add_responsive_control(
 				'grid_sizer',
 				[
-					'label' 		=> esc_html__( 'Grid Sizer', 'mellis' ),
+					'label' 		=> esc_html__( 'Grid Sizer', 'spalisho' ),
 					'type' 			=> Controls_Manager::SLIDER,
 					'size_units' 	=> [ '%', 'px' ],
 					'default' => [
@@ -221,9 +221,9 @@ class Mellis_Elementor_Gallery extends Widget_Base {
 						],
 					],
 					'selectors' => [
-						'{{WRAPPER}} .ova-gallery .grid .grid-sizer, {{WRAPPER}} .ova-gallery .grid .grid-item' => 'width: {{SIZE}}{{UNIT}}',
+						'{{WRAPPER}} .xp-gallery .grid .grid-sizer, {{WRAPPER}} .xp-gallery .grid .grid-item' => 'width: {{SIZE}}{{UNIT}}',
 					],
-					'description' => esc_html__('Default grid sizer is 25% (4 columns)','mellis'),
+					'description' => esc_html__('Default grid sizer is 25% (4 columns)','spalisho'),
 					'separator'   => 'before'
 				]
 			);
@@ -233,7 +233,7 @@ class Mellis_Elementor_Gallery extends Widget_Base {
 		$this->start_controls_section(
 			'section_image_style',
 			[
-				'label' => esc_html__( 'Image', 'mellis' ),
+				'label' => esc_html__( 'Image', 'spalisho' ),
 				'tab'   => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -241,11 +241,11 @@ class Mellis_Elementor_Gallery extends Widget_Base {
 			$this->add_responsive_control(
 				'image_margin',
 				[
-					'label'      => esc_html__( 'Margin', 'mellis' ),
+					'label'      => esc_html__( 'Margin', 'spalisho' ),
 					'type'       => Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', 'em', '%' ],
 					'selectors'  => [
-						'{{WRAPPER}} .ova-gallery .grid .grid-item' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+						'{{WRAPPER}} .xp-gallery .grid .grid-item' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 					],
 				]
 			);
@@ -253,11 +253,11 @@ class Mellis_Elementor_Gallery extends Widget_Base {
 			$this->add_responsive_control(
 				'image_padding',
 				[
-					'label'      => esc_html__( 'Padding', 'mellis' ),
+					'label'      => esc_html__( 'Padding', 'spalisho' ),
 					'type'       => Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', 'em', '%' ],
 					'selectors'  => [
-						'{{WRAPPER}} .ova-gallery .grid .grid-item' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+						'{{WRAPPER}} .xp-gallery .grid .grid-item' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 					],
 				]
 			);
@@ -267,7 +267,7 @@ class Mellis_Elementor_Gallery extends Widget_Base {
 		$this->start_controls_section(
 			'section_content_style',
 			[
-				'label' => esc_html__( 'Content', 'mellis' ),
+				'label' => esc_html__( 'Content', 'spalisho' ),
 				'tab' 	=> Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -275,10 +275,10 @@ class Mellis_Elementor_Gallery extends Widget_Base {
 			$this->add_control(
 				'content_bg_hover',
 				[
-					'label'     => esc_html__( 'Background Hover', 'mellis' ),
+					'label'     => esc_html__( 'Background Hover', 'spalisho' ),
 					'type'      => Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-gallery .grid .grid-item .gallery-fancybox .gallery-container:before' => 'background-color : {{VALUE}};',
+						'{{WRAPPER}} .xp-gallery .grid .grid-item .gallery-fancybox .gallery-container:before' => 'background-color : {{VALUE}};',
 					],
 				]
 			);
@@ -286,7 +286,7 @@ class Mellis_Elementor_Gallery extends Widget_Base {
 			$this->add_responsive_control(
 				'content_opacity',
 				[
-					'label' => esc_html__( 'Opacity', 'mellis' ),
+					'label' => esc_html__( 'Opacity', 'spalisho' ),
 					'type' 	=> Controls_Manager::SLIDER,
 					
 					'range' => [
@@ -297,7 +297,7 @@ class Mellis_Elementor_Gallery extends Widget_Base {
 						],
 					],
 					'selectors' => [
-						'{{WRAPPER}} .ova-gallery .grid .grid-item:hover .gallery-fancybox .gallery-container:before' => 'opacity: {{SIZE}}',
+						'{{WRAPPER}} .xp-gallery .grid .grid-item:hover .gallery-fancybox .gallery-container:before' => 'opacity: {{SIZE}}',
 					],
 				]
 			);
@@ -307,7 +307,7 @@ class Mellis_Elementor_Gallery extends Widget_Base {
 		$this->start_controls_section(
 			'icon_style',
 			[
-				'label' => esc_html__( 'Icon', 'mellis' ),
+				'label' => esc_html__( 'Icon', 'spalisho' ),
 				'tab' 	=> Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -316,17 +316,17 @@ class Mellis_Elementor_Gallery extends Widget_Base {
 				Group_Control_Typography::get_type(),
 				[
 					'name'     => 'icon_typography',
-					'selector' => '{{WRAPPER}} .ova-gallery .grid .grid-item .gallery-fancybox .gallery-container .gallery-icon i',
+					'selector' => '{{WRAPPER}} .xp-gallery .grid .grid-item .gallery-fancybox .gallery-container .gallery-icon i',
 				]
 			);
 
 			$this->add_control(
 				'icon_color',
 				[
-					'label'     => esc_html__( 'Color', 'mellis' ),
+					'label'     => esc_html__( 'Color', 'spalisho' ),
 					'type'      => Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-gallery .grid .grid-item .gallery-fancybox .gallery-container .gallery-icon i' => 'color : {{VALUE}};',
+						'{{WRAPPER}} .xp-gallery .grid .grid-item .gallery-fancybox .gallery-container .gallery-icon i' => 'color : {{VALUE}};',
 					],
 				]
 			);
@@ -335,15 +335,15 @@ class Mellis_Elementor_Gallery extends Widget_Base {
 				\Elementor\Group_Control_Border::get_type(),
 				[
 					'name' 		=> 'icon_border',
-					'label' 	=> esc_html__( 'Border', 'mellis' ),
-					'selector' 	=> '{{WRAPPER}} .ova-gallery .grid .grid-item .gallery-fancybox .gallery-container .gallery-icon',
+					'label' 	=> esc_html__( 'Border', 'spalisho' ),
+					'selector' 	=> '{{WRAPPER}} .xp-gallery .grid .grid-item .gallery-fancybox .gallery-container .gallery-icon',
 				]
 			);
 			
 			$this->add_responsive_control(
 				'icon_top',
 				[
-					'label' => esc_html__( 'Top', 'mellis' ),
+					'label' => esc_html__( 'Top', 'spalisho' ),
 					'type' 	=> Controls_Manager::SLIDER,
 					'size_units' => [ '%', 'px' ],
 					'default' => [
@@ -368,7 +368,7 @@ class Mellis_Elementor_Gallery extends Widget_Base {
 						],
 					],
 					'selectors' => [
-						'{{WRAPPER}} .ova-gallery .grid .grid-item .gallery-fancybox .gallery-container .gallery-icon' => 'top: {{SIZE}}{{UNIT}}',
+						'{{WRAPPER}} .xp-gallery .grid .grid-item .gallery-fancybox .gallery-container .gallery-icon' => 'top: {{SIZE}}{{UNIT}}',
 					],
 				]
 			);
@@ -376,7 +376,7 @@ class Mellis_Elementor_Gallery extends Widget_Base {
 			$this->add_responsive_control(
 				'icon_right',
 				[
-					'label' => esc_html__( 'Right', 'mellis' ),
+					'label' => esc_html__( 'Right', 'spalisho' ),
 					'type' => Controls_Manager::SLIDER,
 					'size_units' => [ '%', 'px' ],
 					'default' => [
@@ -401,7 +401,7 @@ class Mellis_Elementor_Gallery extends Widget_Base {
 						],
 					],
 					'selectors' => [
-						'{{WRAPPER}} .ova-gallery .grid .grid-item .gallery-fancybox .gallery-container .gallery-icon' => 'right: {{SIZE}}{{UNIT}}',
+						'{{WRAPPER}} .xp-gallery .grid .grid-item .gallery-fancybox .gallery-container .gallery-icon' => 'right: {{SIZE}}{{UNIT}}',
 					],
 				]
 			);
@@ -421,7 +421,7 @@ class Mellis_Elementor_Gallery extends Widget_Base {
 		?>
 
 		<?php if ( $tabs && is_array( $tabs ) ): ?>
-	        <div class="ova-gallery">
+	        <div class="xp-gallery">
 	        	<div class="grid">
 	        		<div class="grid-sizer"></div>
 	        		
@@ -461,4 +461,4 @@ class Mellis_Elementor_Gallery extends Widget_Base {
 
 	
 }
-$widgets_manager->register( new Mellis_Elementor_Gallery() );
+$widgets_manager->register( new Spalisho_Elementor_Gallery() );

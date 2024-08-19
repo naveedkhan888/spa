@@ -16,7 +16,7 @@ use Elementor\Core\Kits\Documents\Tabs\Global_Typography;
  *
  * @since 1.0.0
  */
-class Mellis_Elementor_Toggle extends Widget_Toggle {
+class Spalisho_Elementor_Toggle extends Widget_Toggle {
 
 	/**
 	 * Register toggle widget controls.
@@ -30,7 +30,7 @@ class Mellis_Elementor_Toggle extends Widget_Toggle {
 		$this->start_controls_section(
 			'section_toggle',
 			[
-				'label' => esc_html__( 'Toggle', 'mellis' ),
+				'label' => esc_html__( 'Toggle', 'spalisho' ),
 			]
 		);
 
@@ -39,9 +39,9 @@ class Mellis_Elementor_Toggle extends Widget_Toggle {
 		$repeater->add_control(
 			'tab_title',
 			[
-				'label' => esc_html__( 'Title & Description', 'mellis' ),
+				'label' => esc_html__( 'Title & Description', 'spalisho' ),
 				'type' => Controls_Manager::TEXT,
-				'default' => esc_html__( 'Toggle Title', 'mellis' ),
+				'default' => esc_html__( 'Toggle Title', 'spalisho' ),
 				'label_block' => true,
 				'dynamic' => [
 					'active' => true,
@@ -52,9 +52,9 @@ class Mellis_Elementor_Toggle extends Widget_Toggle {
 		$repeater->add_control(
 			'tab_content',
 			[
-				'label' => esc_html__( 'Content', 'mellis' ),
+				'label' => esc_html__( 'Content', 'spalisho' ),
 				'type' => Controls_Manager::WYSIWYG,
-				'default' => esc_html__( 'Toggle Content', 'mellis' ),
+				'default' => esc_html__( 'Toggle Content', 'spalisho' ),
 				'show_label' => false,
 				'dynamic' => [
 					'active' => true,
@@ -65,17 +65,17 @@ class Mellis_Elementor_Toggle extends Widget_Toggle {
 		$this->add_control(
 			'tabs',
 			[
-				'label' => esc_html__( 'Toggle Items', 'mellis' ),
+				'label' => esc_html__( 'Toggle Items', 'spalisho' ),
 				'type' => Controls_Manager::REPEATER,
 				'fields' => $repeater->get_controls(),
 				'default' => [
 					[
-						'tab_title' => esc_html__( 'Toggle #1', 'mellis' ),
-						'tab_content' => esc_html__( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.', 'mellis' ),
+						'tab_title' => esc_html__( 'Toggle #1', 'spalisho' ),
+						'tab_content' => esc_html__( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.', 'spalisho' ),
 					],
 					[
-						'tab_title' => esc_html__( 'Toggle #2', 'mellis' ),
-						'tab_content' => esc_html__( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.', 'mellis' ),
+						'tab_title' => esc_html__( 'Toggle #2', 'spalisho' ),
+						'tab_content' => esc_html__( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.', 'spalisho' ),
 					],
 				],
 				'title_field' => '{{{ tab_title }}}',
@@ -85,7 +85,7 @@ class Mellis_Elementor_Toggle extends Widget_Toggle {
 		$this->add_control(
 			'view',
 			[
-				'label' => esc_html__( 'View', 'mellis' ),
+				'label' => esc_html__( 'View', 'spalisho' ),
 				'type' => Controls_Manager::HIDDEN,
 				'default' => 'traditional',
 			]
@@ -94,7 +94,7 @@ class Mellis_Elementor_Toggle extends Widget_Toggle {
 		$this->add_control(
 			'selected_icon',
 			[
-				'label' => esc_html__( 'Icon', 'mellis' ),
+				'label' => esc_html__( 'Icon', 'spalisho' ),
 				'type' => Controls_Manager::ICONS,
 				'separator' => 'before',
 				'fa4compatibility' => 'icon',
@@ -122,7 +122,7 @@ class Mellis_Elementor_Toggle extends Widget_Toggle {
 		$this->add_control(
 			'selected_active_icon',
 			[
-				'label' => esc_html__( 'Active Icon', 'mellis' ),
+				'label' => esc_html__( 'Active Icon', 'spalisho' ),
 				'type' => Controls_Manager::ICONS,
 				'fa4compatibility' => 'icon_active',
 				'default' => [
@@ -152,7 +152,7 @@ class Mellis_Elementor_Toggle extends Widget_Toggle {
 		$this->add_control(
 			'title_html_tag',
 			[
-				'label' => esc_html__( 'Title HTML Tag', 'mellis' ),
+				'label' => esc_html__( 'Title HTML Tag', 'spalisho' ),
 				'type' => Controls_Manager::SELECT,
 				'options' => [
 					'h1' => 'H1',
@@ -171,7 +171,7 @@ class Mellis_Elementor_Toggle extends Widget_Toggle {
 		$this->add_control(
 			'faq_schema',
 			[
-				'label' => esc_html__( 'FAQ Schema', 'mellis' ),
+				'label' => esc_html__( 'FAQ Schema', 'spalisho' ),
 				'type' => Controls_Manager::SWITCHER,
 				'separator' => 'before',
 			]
@@ -182,7 +182,7 @@ class Mellis_Elementor_Toggle extends Widget_Toggle {
 		$this->start_controls_section(
 			'section_toggle_style',
 			[
-				'label' => esc_html__( 'Toggle', 'mellis' ),
+				'label' => esc_html__( 'Toggle', 'spalisho' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -190,7 +190,7 @@ class Mellis_Elementor_Toggle extends Widget_Toggle {
 		$this->add_control(
 			'border_width',
 			[
-				'label' => esc_html__( 'Border Width', 'mellis' ),
+				'label' => esc_html__( 'Border Width', 'spalisho' ),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [
@@ -208,7 +208,7 @@ class Mellis_Elementor_Toggle extends Widget_Toggle {
 		$this->add_control(
 			'border_color',
 			[
-				'label' => esc_html__( 'Border Color', 'mellis' ),
+				'label' => esc_html__( 'Border Color', 'spalisho' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-tab-content' => 'border-bottom-color: {{VALUE}};',
@@ -220,7 +220,7 @@ class Mellis_Elementor_Toggle extends Widget_Toggle {
 		$this->add_responsive_control(
 			'space_between',
 			[
-				'label' => esc_html__( 'Space Between', 'mellis' ),
+				'label' => esc_html__( 'Space Between', 'spalisho' ),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [
@@ -245,7 +245,7 @@ class Mellis_Elementor_Toggle extends Widget_Toggle {
 		$this->add_responsive_control(
             'ova_toggle_padding',
             [
-                'label'         => esc_html__( 'Padding', 'mellis' ),
+                'label'         => esc_html__( 'Padding', 'spalisho' ),
                 'type'          => Controls_Manager::DIMENSIONS,
                 'size_units'    => [ 'px', '%', 'em' ],
                 'selectors'     => [
@@ -257,7 +257,7 @@ class Mellis_Elementor_Toggle extends Widget_Toggle {
 		$this->add_responsive_control(
             'ova_toggle_margin',
             [
-                'label'         => esc_html__( 'Margin', 'mellis' ),
+                'label'         => esc_html__( 'Margin', 'spalisho' ),
                 'type'          => Controls_Manager::DIMENSIONS,
                 'size_units'    => [ 'px', '%', 'em' ],
                 'selectors'     => [
@@ -272,7 +272,7 @@ class Mellis_Elementor_Toggle extends Widget_Toggle {
         $this->start_controls_section(
             'section_ova_title_style',
             [
-                'label' => esc_html__( 'Title', 'mellis' ),
+                'label' => esc_html__( 'Title', 'spalisho' ),
                 'tab'   => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -300,14 +300,14 @@ class Mellis_Elementor_Toggle extends Widget_Toggle {
                 $this->start_controls_tab(
                     'ova_title_normal_tab',
                     [
-                        'label' => esc_html__( 'Normal', 'mellis' ),
+                        'label' => esc_html__( 'Normal', 'spalisho' ),
                     ]
                 );
 
                     $this->add_control(
                         'ova_title_color_normal',
                         [
-                            'label'     => esc_html__( 'Color', 'mellis' ),
+                            'label'     => esc_html__( 'Color', 'spalisho' ),
                             'type'      => Controls_Manager::COLOR,
                             'selectors' => [
                                 '{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title .elementor-toggle-title' => 'color: {{VALUE}}',
@@ -318,7 +318,7 @@ class Mellis_Elementor_Toggle extends Widget_Toggle {
                     $this->add_control(
                         'ova_title_background_normal',
                         [
-                            'label'     => esc_html__( 'Background', 'mellis' ),
+                            'label'     => esc_html__( 'Background', 'spalisho' ),
                             'type'      => Controls_Manager::COLOR,
                             'selectors' => [
                                 '{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title' => 'background-color: {{VALUE}}',
@@ -331,14 +331,14 @@ class Mellis_Elementor_Toggle extends Widget_Toggle {
                 $this->start_controls_tab(
                     'ova_title_hover_tab',
                     [
-                        'label' => esc_html__( 'Hover', 'mellis' ),
+                        'label' => esc_html__( 'Hover', 'spalisho' ),
                     ]
                 );
 
                     $this->add_control(
                         'ova_title_color_hover',
                         [
-                            'label'     => esc_html__( 'Color', 'mellis' ),
+                            'label'     => esc_html__( 'Color', 'spalisho' ),
                             'type'      => Controls_Manager::COLOR,
                             'selectors' => [
                                 '{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title:hover .elementor-toggle-title' => 'color: {{VALUE}}',
@@ -349,7 +349,7 @@ class Mellis_Elementor_Toggle extends Widget_Toggle {
                     $this->add_control(
                         'ova_title_background_hover',
                         [
-                            'label'     => esc_html__( 'Background', 'mellis' ),
+                            'label'     => esc_html__( 'Background', 'spalisho' ),
                             'type'      => Controls_Manager::COLOR,
                             'selectors' => [
                                 '{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title:hover' => 'background-color: {{VALUE}}',
@@ -362,14 +362,14 @@ class Mellis_Elementor_Toggle extends Widget_Toggle {
                 $this->start_controls_tab(
                     'ova_title_active_tab',
                     [
-                        'label' => esc_html__( 'Active', 'mellis' ),
+                        'label' => esc_html__( 'Active', 'spalisho' ),
                     ]
                 );
 
                     $this->add_control(
                         'ova_title_color_active',
                         [
-                            'label'     => esc_html__( 'Color', 'mellis' ),
+                            'label'     => esc_html__( 'Color', 'spalisho' ),
                             'type'      => Controls_Manager::COLOR,
                             'selectors' => [
                                 '{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title.elementor-active .elementor-toggle-title' => 'color: {{VALUE}}',
@@ -380,7 +380,7 @@ class Mellis_Elementor_Toggle extends Widget_Toggle {
                     $this->add_control(
                         'ova_title_background_active',
                         [
-                            'label'     => esc_html__( 'Background', 'mellis' ),
+                            'label'     => esc_html__( 'Background', 'spalisho' ),
                             'type'      => Controls_Manager::COLOR,
                             'selectors' => [
                                 '{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title.elementor-active' => 'background-color: {{VALUE}}',
@@ -395,7 +395,7 @@ class Mellis_Elementor_Toggle extends Widget_Toggle {
                 Group_Control_Border::get_type(),
                 [
                     'name'      => 'ova_title_border',
-                    'label'     => esc_html__( 'Border', 'mellis' ),
+                    'label'     => esc_html__( 'Border', 'spalisho' ),
                     'selector'  => '{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item:not(:last-child) .elementor-tab-title',
                     'separator' => 'before',
                 ]
@@ -404,7 +404,7 @@ class Mellis_Elementor_Toggle extends Widget_Toggle {
             $this->add_control(
                 'ova_title_border_color_hover',
                 [
-                    'label'     => esc_html__( 'Border Color Hover', 'mellis' ),
+                    'label'     => esc_html__( 'Border Color Hover', 'spalisho' ),
                     'type'      => Controls_Manager::COLOR,
                     'selectors' => [
                         '{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item:not(:last-child) .elementor-tab-title:hover' => 'border-color: {{VALUE}}',
@@ -415,7 +415,7 @@ class Mellis_Elementor_Toggle extends Widget_Toggle {
             $this->add_control(
                 'ova_title_border_color_active',
                 [
-                    'label'     => esc_html__( 'Border Color Active', 'mellis' ),
+                    'label'     => esc_html__( 'Border Color Active', 'spalisho' ),
                     'type'      => Controls_Manager::COLOR,
                     'selectors' => [
                         '{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item:not(:last-child) .elementor-tab-title.elementor-active' => 'border-color: {{VALUE}}',
@@ -426,7 +426,7 @@ class Mellis_Elementor_Toggle extends Widget_Toggle {
             $this->add_responsive_control(
                 'ova_title_border_radius',
                 [
-                    'label'         => esc_html__( 'Border Radius', 'mellis' ),
+                    'label'         => esc_html__( 'Border Radius', 'spalisho' ),
                     'type'          => Controls_Manager::DIMENSIONS,
                     'size_units'    => [ 'px', '%', 'em' ],
                     'selectors'     => [
@@ -438,7 +438,7 @@ class Mellis_Elementor_Toggle extends Widget_Toggle {
             $this->add_responsive_control(
                 'ova_title_border_radius_active',
                 [
-                    'label'         => esc_html__( 'Border Radius Active', 'mellis' ),
+                    'label'         => esc_html__( 'Border Radius Active', 'spalisho' ),
                     'type'          => Controls_Manager::DIMENSIONS,
                     'size_units'    => [ 'px', '%', 'em' ],
                     'selectors'     => [
@@ -450,7 +450,7 @@ class Mellis_Elementor_Toggle extends Widget_Toggle {
             $this->add_responsive_control(
                 'ova_title_padding',
                 [
-                    'label'         => esc_html__( 'Padding', 'mellis' ),
+                    'label'         => esc_html__( 'Padding', 'spalisho' ),
                     'type'          => Controls_Manager::DIMENSIONS,
                     'size_units'    => [ 'px', '%', 'em' ],
                     'selectors'     => [
@@ -462,7 +462,7 @@ class Mellis_Elementor_Toggle extends Widget_Toggle {
             $this->add_responsive_control(
                 'ova_title_margin',
                 [
-                    'label'         => esc_html__( 'Margin', 'mellis' ),
+                    'label'         => esc_html__( 'Margin', 'spalisho' ),
                     'type'          => Controls_Manager::DIMENSIONS,
                     'size_units'    => [ 'px', '%', 'em' ],
                     'selectors'     => [
@@ -474,10 +474,10 @@ class Mellis_Elementor_Toggle extends Widget_Toggle {
             $this->add_control(
 				'show_before_title',
 				[
-					'label' 	=> esc_html__( 'Show Before Title', 'mellis' ),
+					'label' 	=> esc_html__( 'Show Before Title', 'spalisho' ),
 					'type' 		=> \Elementor\Controls_Manager::SWITCHER,
-					'label_on' 	=> esc_html__( 'Show', 'mellis' ),
-					'label_off' => esc_html__( 'Hide', 'mellis' ),
+					'label_on' 	=> esc_html__( 'Show', 'spalisho' ),
+					'label_off' => esc_html__( 'Hide', 'spalisho' ),
 					'default' 	=> 'no',
 					'separator' => 'before',
 				]
@@ -486,7 +486,7 @@ class Mellis_Elementor_Toggle extends Widget_Toggle {
             $this->add_control(
                 'ova_before_title',
                 [
-                    'label'     => esc_html__( 'Before Title Style', 'mellis' ),
+                    'label'     => esc_html__( 'Before Title Style', 'spalisho' ),
                     'type'      => \Elementor\Controls_Manager::HEADING,
                     'condition' => [
                     	'show_before_title' => 'yes',
@@ -506,17 +506,17 @@ class Mellis_Elementor_Toggle extends Widget_Toggle {
 	                $this->start_controls_tab(
 	                    'ova_before_title_normal_tab',
 	                    [
-	                        'label' => esc_html__( 'Normal', 'mellis' ),
+	                        'label' => esc_html__( 'Normal', 'spalisho' ),
 	                    ]
 	                );
 
 	                    $this->add_control(
 				            'ova_before_title_background_normal',
 				            [
-				                'label' => esc_html__( 'Background', 'mellis' ),
+				                'label' => esc_html__( 'Background', 'spalisho' ),
 				                'type' => Controls_Manager::COLOR,
 				                'selectors' => [
-				                    '{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title .ova-before-title:before' => 'background-color: {{VALUE}};',
+				                    '{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title .xp-before-title:before' => 'background-color: {{VALUE}};',
 				                ],
 				            ]
 				        );
@@ -526,17 +526,17 @@ class Mellis_Elementor_Toggle extends Widget_Toggle {
 	                $this->start_controls_tab(
 	                    'ova_before_title_hover_tab',
 	                    [
-	                        'label' => esc_html__( 'Hover', 'mellis' ),
+	                        'label' => esc_html__( 'Hover', 'spalisho' ),
 	                    ]
 	                );
 
 	                	$this->add_control(
 				            'ova_before_title_background_hover',
 				            [
-				                'label' => esc_html__( 'Background', 'mellis' ),
+				                'label' => esc_html__( 'Background', 'spalisho' ),
 				                'type' => Controls_Manager::COLOR,
 				                'selectors' => [
-				                    '{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title:hover .ova-before-title:before' => 'background-color: {{VALUE}};',
+				                    '{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title:hover .xp-before-title:before' => 'background-color: {{VALUE}};',
 				                ],
 				            ]
 				        );
@@ -546,17 +546,17 @@ class Mellis_Elementor_Toggle extends Widget_Toggle {
 	                $this->start_controls_tab(
 	                    'ova_before_title_active_tab',
 	                    [
-	                        'label' => esc_html__( 'Active', 'mellis' ),
+	                        'label' => esc_html__( 'Active', 'spalisho' ),
 	                    ]
 	                );
 
 	                	$this->add_control(
 				            'ova_before_title_background_active',
 				            [
-				                'label' => esc_html__( 'Background', 'mellis' ),
+				                'label' => esc_html__( 'Background', 'spalisho' ),
 				                'type' => Controls_Manager::COLOR,
 				                'selectors' => [
-				                    '{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title.elementor-active .ova-before-title:before' => 'background-color: {{VALUE}};',
+				                    '{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title.elementor-active .xp-before-title:before' => 'background-color: {{VALUE}};',
 				                ],
 				            ]
 				        );
@@ -567,7 +567,7 @@ class Mellis_Elementor_Toggle extends Widget_Toggle {
             	$this->add_responsive_control(
                     'ova_before_title_width',
                     [
-                        'label'         => esc_html__( 'Width', 'mellis' ),
+                        'label'         => esc_html__( 'Width', 'spalisho' ),
                         'type'          => Controls_Manager::SLIDER,
                         'size_units'    => [ 'px', '%', 'vw' ],
                         'range' => [
@@ -586,7 +586,7 @@ class Mellis_Elementor_Toggle extends Widget_Toggle {
                             ],
                         ],
                         'selectors' => [
-                            '{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title .ova-before-title:before' => 'width: {{SIZE}}{{UNIT}};',
+                            '{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title .xp-before-title:before' => 'width: {{SIZE}}{{UNIT}};',
                         ],
                         'condition' => [
 	                    	'show_before_title' => 'yes',
@@ -597,7 +597,7 @@ class Mellis_Elementor_Toggle extends Widget_Toggle {
                 $this->add_responsive_control(
                     'ova_before_title_height',
                     [
-                        'label'         => esc_html__( 'Height', 'mellis' ),
+                        'label'         => esc_html__( 'Height', 'spalisho' ),
                         'type'          => Controls_Manager::SLIDER,
                         'size_units'    => [ 'px', '%', 'vh' ],
                         'range' => [
@@ -616,7 +616,7 @@ class Mellis_Elementor_Toggle extends Widget_Toggle {
                             ],
                         ],
                         'selectors' => [
-                            '{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title .ova-before-title:before' => 'height: {{SIZE}}{{UNIT}};',
+                            '{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title .xp-before-title:before' => 'height: {{SIZE}}{{UNIT}};',
                         ],
                         'condition' => [
 	                    	'show_before_title' => 'yes',
@@ -627,7 +627,7 @@ class Mellis_Elementor_Toggle extends Widget_Toggle {
                 $this->add_responsive_control(
                     'ova_before_title_top',
                     [
-                        'label'         => esc_html__( 'Top', 'mellis' ),
+                        'label'         => esc_html__( 'Top', 'spalisho' ),
                         'type'          => Controls_Manager::SLIDER,
                         'size_units'    => [ 'px', '%' ],
                         'range' => [
@@ -642,7 +642,7 @@ class Mellis_Elementor_Toggle extends Widget_Toggle {
                             ],
                         ],
                         'selectors' => [
-                            '{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title .ova-before-title:before' => 'top: {{SIZE}}{{UNIT}};',
+                            '{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title .xp-before-title:before' => 'top: {{SIZE}}{{UNIT}};',
                         ],
                         'condition' => [
 	                    	'show_before_title' => 'yes',
@@ -653,7 +653,7 @@ class Mellis_Elementor_Toggle extends Widget_Toggle {
                 $this->add_responsive_control(
                     'ova_before_title_left',
                     [
-                        'label'         => esc_html__( 'Left', 'mellis' ),
+                        'label'         => esc_html__( 'Left', 'spalisho' ),
                         'type'          => Controls_Manager::SLIDER,
                         'size_units'    => [ 'px', '%' ],
                         'range' => [
@@ -668,7 +668,7 @@ class Mellis_Elementor_Toggle extends Widget_Toggle {
                             ],
                         ],
                         'selectors' => [
-                            '{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title .ova-before-title:before' => 'left: {{SIZE}}{{UNIT}};',
+                            '{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title .xp-before-title:before' => 'left: {{SIZE}}{{UNIT}};',
                         ],
                         'condition' => [
 	                    	'show_before_title' => 'yes',
@@ -679,11 +679,11 @@ class Mellis_Elementor_Toggle extends Widget_Toggle {
                 $this->add_responsive_control(
                     'ova_before_title_margin',
                     [
-                        'label'         => esc_html__( 'Margin', 'mellis' ),
+                        'label'         => esc_html__( 'Margin', 'spalisho' ),
                         'type'          => Controls_Manager::DIMENSIONS,
                         'size_units'    => [ 'px', '%', 'em' ],
                         'selectors'     => [
-                            '{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title .ova-before-title:before' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+                            '{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title .xp-before-title:before' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
                         ],
                         'condition' 	=> [
 	                    	'show_before_title' => 'yes',
@@ -697,7 +697,7 @@ class Mellis_Elementor_Toggle extends Widget_Toggle {
 		$this->start_controls_section(
 			'section_toggle_style_icon',
 			[
-				'label' => esc_html__( 'Icon', 'mellis' ),
+				'label' => esc_html__( 'Icon', 'spalisho' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 				'condition' => [
 					'selected_icon[value]!' => '',
@@ -708,15 +708,15 @@ class Mellis_Elementor_Toggle extends Widget_Toggle {
 		$this->add_control(
 			'icon_align',
 			[
-				'label' => esc_html__( 'Alignment', 'mellis' ),
+				'label' => esc_html__( 'Alignment', 'spalisho' ),
 				'type' => Controls_Manager::CHOOSE,
 				'options' => [
 					'left' => [
-						'title' => esc_html__( 'Start', 'mellis' ),
+						'title' => esc_html__( 'Start', 'spalisho' ),
 						'icon' => 'eicon-h-align-left',
 					],
 					'right' => [
-						'title' => esc_html__( 'End', 'mellis' ),
+						'title' => esc_html__( 'End', 'spalisho' ),
 						'icon' => 'eicon-h-align-right',
 					],
 				],
@@ -736,7 +736,7 @@ class Mellis_Elementor_Toggle extends Widget_Toggle {
 		$this->add_control(
 			'icon_color',
 			[
-				'label' => esc_html__( 'Color', 'mellis' ),
+				'label' => esc_html__( 'Color', 'spalisho' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-tab-title .elementor-toggle-icon i:before' => 'color: {{VALUE}};',
@@ -748,7 +748,7 @@ class Mellis_Elementor_Toggle extends Widget_Toggle {
 		$this->add_control(
 			'icon_hover_color',
 			[
-				'label' => esc_html__( 'Hover Color', 'mellis' ),
+				'label' => esc_html__( 'Hover Color', 'spalisho' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-tab-title:hover .elementor-toggle-icon i:before' => 'color: {{VALUE}};',
@@ -760,7 +760,7 @@ class Mellis_Elementor_Toggle extends Widget_Toggle {
 		$this->add_control(
 			'icon_active_color',
 			[
-				'label' => esc_html__( 'Active Color', 'mellis' ),
+				'label' => esc_html__( 'Active Color', 'spalisho' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-tab-title.elementor-active .elementor-toggle-icon i:before' => 'color: {{VALUE}};',
@@ -772,7 +772,7 @@ class Mellis_Elementor_Toggle extends Widget_Toggle {
 		$this->add_responsive_control(
 			'icon_space',
 			[
-				'label' => esc_html__( 'Spacing', 'mellis' ),
+				'label' => esc_html__( 'Spacing', 'spalisho' ),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [
@@ -790,7 +790,7 @@ class Mellis_Elementor_Toggle extends Widget_Toggle {
 		$this->add_responsive_control(
             'icon_padding',
             [
-                'label'         => esc_html__( 'Padding', 'mellis' ),
+                'label'         => esc_html__( 'Padding', 'spalisho' ),
                 'type'          => Controls_Manager::DIMENSIONS,
                 'size_units'    => [ 'px', '%', 'em' ],
                 'selectors'     => [
@@ -802,7 +802,7 @@ class Mellis_Elementor_Toggle extends Widget_Toggle {
         $this->add_responsive_control(
             'icon_margin',
             [
-                'label'         => esc_html__( 'Margin', 'mellis' ),
+                'label'         => esc_html__( 'Margin', 'spalisho' ),
                 'type'          => Controls_Manager::DIMENSIONS,
                 'size_units'    => [ 'px', '%', 'em' ],
                 'selectors'     => [
@@ -814,7 +814,7 @@ class Mellis_Elementor_Toggle extends Widget_Toggle {
 		$this->add_control(
 			'ova_before_icon',
 			[
-				'label' 	=> esc_html__( 'Before Icon', 'mellis' ),
+				'label' 	=> esc_html__( 'Before Icon', 'spalisho' ),
 				'type' 		=> Controls_Manager::HEADING,
 				'separator' => 'before',
 			]
@@ -823,7 +823,7 @@ class Mellis_Elementor_Toggle extends Widget_Toggle {
 			$this->add_control(
 				'ova_icon',
 				[
-					'label' 	=> esc_html__( 'Icon', 'mellis' ),
+					'label' 	=> esc_html__( 'Icon', 'spalisho' ),
 					'type' 		=> Controls_Manager::ICONS,
 				]
 			);
@@ -832,7 +832,7 @@ class Mellis_Elementor_Toggle extends Widget_Toggle {
 	            Group_Control_Typography::get_type(),
 	            [
 	                'name'      => 'ova_icon_typography',
-	                'selector'  => '{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title .ova-icon i',
+	                'selector'  => '{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title .xp-icon i',
 	                'condition' => [
 	                	'ova_icon[value]!' => '',
 	                ],
@@ -842,11 +842,11 @@ class Mellis_Elementor_Toggle extends Widget_Toggle {
 			$this->add_control(
 				'ova_icon_color',
 				[
-					'label' 	=> esc_html__( 'Color', 'mellis' ),
+					'label' 	=> esc_html__( 'Color', 'spalisho' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title .ova-icon i' => 'color: {{VALUE}};',
-						'{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title .ova-icon svg' => 'fill: {{VALUE}};',
+						'{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title .xp-icon i' => 'color: {{VALUE}};',
+						'{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title .xp-icon svg' => 'fill: {{VALUE}};',
 					],
 					'condition' => [
 	                	'ova_icon[value]!' => '',
@@ -857,11 +857,11 @@ class Mellis_Elementor_Toggle extends Widget_Toggle {
 			$this->add_control(
 				'ova_icon_hover_color',
 				[
-					'label' 	=> esc_html__( 'Hover Color', 'mellis' ),
+					'label' 	=> esc_html__( 'Hover Color', 'spalisho' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title:hover .ova-icon i' => 'color: {{VALUE}};',
-						'{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title:hover .ova-icon svg' => 'fill: {{VALUE}};',
+						'{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title:hover .xp-icon i' => 'color: {{VALUE}};',
+						'{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title:hover .xp-icon svg' => 'fill: {{VALUE}};',
 					],
 					'condition' => [
 	                	'ova_icon[value]!' => '',
@@ -872,11 +872,11 @@ class Mellis_Elementor_Toggle extends Widget_Toggle {
 			$this->add_control(
 				'ova_icon_active_color',
 				[
-					'label' 	=> esc_html__( 'Active Color', 'mellis' ),
+					'label' 	=> esc_html__( 'Active Color', 'spalisho' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title.elementor-active .ova-icon i' => 'color: {{VALUE}};',
-						'{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title.elementor-active .ova-icon svg' => 'fill: {{VALUE}};',
+						'{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title.elementor-active .xp-icon i' => 'color: {{VALUE}};',
+						'{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title.elementor-active .xp-icon svg' => 'fill: {{VALUE}};',
 					],
 					'condition' => [
 	                	'ova_icon[value]!' => '',
@@ -887,11 +887,11 @@ class Mellis_Elementor_Toggle extends Widget_Toggle {
 			$this->add_responsive_control(
 	            'ova_icon_padding',
 	            [
-	                'label'         => esc_html__( 'Padding', 'mellis' ),
+	                'label'         => esc_html__( 'Padding', 'spalisho' ),
 	                'type'          => Controls_Manager::DIMENSIONS,
 	                'size_units'    => [ 'px', '%', 'em' ],
 	                'selectors'     => [
-	                    '{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title .ova-icon' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+	                    '{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title .xp-icon' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 	                ],
 	                'condition' 	=> [
 	                	'ova_icon[value]!' => '',
@@ -902,11 +902,11 @@ class Mellis_Elementor_Toggle extends Widget_Toggle {
 	        $this->add_responsive_control(
 	            'ova_icon_margin',
 	            [
-	                'label'         => esc_html__( 'Margin', 'mellis' ),
+	                'label'         => esc_html__( 'Margin', 'spalisho' ),
 	                'type'          => Controls_Manager::DIMENSIONS,
 	                'size_units'	=> [ 'px', '%', 'em' ],
 	                'selectors'     => [
-	                    '{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title .ova-icon' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+	                    '{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title .xp-icon' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 	                ],
 	                'condition' 	=> [
 	                	'ova_icon[value]!' => '',
@@ -917,10 +917,10 @@ class Mellis_Elementor_Toggle extends Widget_Toggle {
 	        $this->add_control(
 				'show_boxes_icon',
 				[
-					'label' 	=> esc_html__( 'Show Border Icon', 'mellis' ),
+					'label' 	=> esc_html__( 'Show Border Icon', 'spalisho' ),
 					'type' 		=> \Elementor\Controls_Manager::SWITCHER,
-					'label_on' 	=> esc_html__( 'Show', 'mellis' ),
-					'label_off' => esc_html__( 'Hide', 'mellis' ),
+					'label_on' 	=> esc_html__( 'Show', 'spalisho' ),
+					'label_off' => esc_html__( 'Hide', 'spalisho' ),
 					'default' 	=> 'no',
 					'separator' => 'before',
 				]
@@ -929,7 +929,7 @@ class Mellis_Elementor_Toggle extends Widget_Toggle {
 				$this->add_responsive_control(
 					'boxes_icon_width',
 					[
-						'label' => esc_html__( 'Width', 'mellis' ),
+						'label' => esc_html__( 'Width', 'spalisho' ),
 						'type' => Controls_Manager::SLIDER,
 						'range' => [
 							'px' => [
@@ -938,7 +938,7 @@ class Mellis_Elementor_Toggle extends Widget_Toggle {
 							],
 						],
 						'selectors' => [
-							'.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title .ova-boxes-icon' => 'width: {{SIZE}}{{UNIT}};height: {{SIZE}}{{UNIT}};',
+							'.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title .xp-boxes-icon' => 'width: {{SIZE}}{{UNIT}};height: {{SIZE}}{{UNIT}};',
 						],
 						'condition' => [
 							'show_boxes_icon' => 'yes',
@@ -958,17 +958,17 @@ class Mellis_Elementor_Toggle extends Widget_Toggle {
 	                $this->start_controls_tab(
 	                    'boxes_icon_normal_tab',
 	                    [
-	                        'label' => esc_html__( 'Normal', 'mellis' ),
+	                        'label' => esc_html__( 'Normal', 'spalisho' ),
 	                    ]
 	                );
 
 	                    $this->add_control(
 	                        'boxes_icon_background_normal',
 	                        [
-	                            'label'     => esc_html__( 'Background', 'mellis' ),
+	                            'label'     => esc_html__( 'Background', 'spalisho' ),
 	                            'type'      => Controls_Manager::COLOR,
 	                            'selectors' => [
-	                                '{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title .ova-boxes-icon' => 'background-color: {{VALUE}}',
+	                                '{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title .xp-boxes-icon' => 'background-color: {{VALUE}}',
 	                            ],
 	                        ]
 	                    );
@@ -978,17 +978,17 @@ class Mellis_Elementor_Toggle extends Widget_Toggle {
 	                $this->start_controls_tab(
 	                    'boxes_icon_hover_tab',
 	                    [
-	                        'label' => esc_html__( 'Hover', 'mellis' ),
+	                        'label' => esc_html__( 'Hover', 'spalisho' ),
 	                    ]
 	                );
 
 	                	$this->add_control(
 	                        'boxes_icon_background_hover',
 	                        [
-	                            'label'     => esc_html__( 'Background', 'mellis' ),
+	                            'label'     => esc_html__( 'Background', 'spalisho' ),
 	                            'type'      => Controls_Manager::COLOR,
 	                            'selectors' => [
-	                                '{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title:hover .ova-boxes-icon' => 'background-color: {{VALUE}}',
+	                                '{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title:hover .xp-boxes-icon' => 'background-color: {{VALUE}}',
 	                            ],
 	                        ]
 	                    );
@@ -998,17 +998,17 @@ class Mellis_Elementor_Toggle extends Widget_Toggle {
 	                $this->start_controls_tab(
 	                    'boxes_icon_active_tab',
 	                    [
-	                        'label' => esc_html__( 'Active', 'mellis' ),
+	                        'label' => esc_html__( 'Active', 'spalisho' ),
 	                    ]
 	                );
 
 	                	$this->add_control(
 	                        'boxes_icon_background_active',
 	                        [
-	                            'label'     => esc_html__( 'Background', 'mellis' ),
+	                            'label'     => esc_html__( 'Background', 'spalisho' ),
 	                            'type'      => Controls_Manager::COLOR,
 	                            'selectors' => [
-	                                '{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title.elementor-active .ova-boxes-icon' => 'background-color: {{VALUE}}',
+	                                '{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title.elementor-active .xp-boxes-icon' => 'background-color: {{VALUE}}',
 	                            ],
 	                        ]
 	                    );
@@ -1019,11 +1019,11 @@ class Mellis_Elementor_Toggle extends Widget_Toggle {
 	            $this->add_responsive_control(
 	                'boxes_icon_border_radius',
 	                [
-	                    'label'         => esc_html__( 'Border Radius', 'mellis' ),
+	                    'label'         => esc_html__( 'Border Radius', 'spalisho' ),
 	                    'type'          => Controls_Manager::DIMENSIONS,
 	                    'size_units'    => [ 'px', '%', 'em' ],
 	                    'selectors'     => [
-	                        '{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title .ova-boxes-icon' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+	                        '{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title .xp-boxes-icon' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 	                    ],
 	                    'condition' 	=> [
 							'show_boxes_icon' => 'yes',
@@ -1034,11 +1034,11 @@ class Mellis_Elementor_Toggle extends Widget_Toggle {
 	            $this->add_responsive_control(
 	                'boxes_icon_margin',
 	                [
-	                    'label'         => esc_html__( 'Margin', 'mellis' ),
+	                    'label'         => esc_html__( 'Margin', 'spalisho' ),
 	                    'type'          => Controls_Manager::DIMENSIONS,
 	                    'size_units'    => [ 'px', '%', 'em' ],
 	                    'selectors'     => [
-	                        '{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title .ova-boxes-icon' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+	                        '{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-title .xp-boxes-icon' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 	                    ],
 	                    'condition' 	=> [
 							'show_boxes_icon' => 'yes',
@@ -1051,7 +1051,7 @@ class Mellis_Elementor_Toggle extends Widget_Toggle {
 		$this->start_controls_section(
 			'section_toggle_style_content',
 			[
-				'label' => esc_html__( 'Content', 'mellis' ),
+				'label' => esc_html__( 'Content', 'spalisho' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -1059,7 +1059,7 @@ class Mellis_Elementor_Toggle extends Widget_Toggle {
 		$this->add_control(
 			'content_background_color',
 			[
-				'label' => esc_html__( 'Background', 'mellis' ),
+				'label' => esc_html__( 'Background', 'spalisho' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-tab-content' => 'background-color: {{VALUE}};',
@@ -1070,7 +1070,7 @@ class Mellis_Elementor_Toggle extends Widget_Toggle {
 		$this->add_control(
 			'content_color',
 			[
-				'label' => esc_html__( 'Color', 'mellis' ),
+				'label' => esc_html__( 'Color', 'spalisho' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-tab-content' => 'color: {{VALUE}};',
@@ -1104,7 +1104,7 @@ class Mellis_Elementor_Toggle extends Widget_Toggle {
             Group_Control_Border::get_type(),
             [
                 'name'      => 'ova_content_border',
-                'label'     => esc_html__( 'Border', 'mellis' ),
+                'label'     => esc_html__( 'Border', 'spalisho' ),
                 'selector'  => '{{WRAPPER}}.elementor-widget-toggle .elementor-toggle .elementor-toggle-item .elementor-tab-content',
                 'separator' => 'before',
             ]
@@ -1113,7 +1113,7 @@ class Mellis_Elementor_Toggle extends Widget_Toggle {
         $this->add_responsive_control(
 			'ova_content_border_radius',
 			[
-				'label' => esc_html__( 'Border Radius', 'mellis' ),
+				'label' => esc_html__( 'Border Radius', 'spalisho' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', 'em', '%' ],
 				'selectors' => [
@@ -1125,7 +1125,7 @@ class Mellis_Elementor_Toggle extends Widget_Toggle {
 		$this->add_responsive_control(
 			'content_padding',
 			[
-				'label' => esc_html__( 'Padding', 'mellis' ),
+				'label' => esc_html__( 'Padding', 'spalisho' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', 'em', '%' ],
 				'selectors' => [
@@ -1137,7 +1137,7 @@ class Mellis_Elementor_Toggle extends Widget_Toggle {
 		$this->add_responsive_control(
 			'ova_content_margin',
 			[
-				'label' => esc_html__( 'Margin', 'mellis' ),
+				'label' => esc_html__( 'Margin', 'spalisho' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', 'em', '%' ],
 				'selectors' => [
@@ -1149,7 +1149,7 @@ class Mellis_Elementor_Toggle extends Widget_Toggle {
 		$this->add_responsive_control(
 			'ova_content_margin_tags',
 			[
-				'label' => esc_html__( 'Margin (p, h1... h6)', 'mellis' ),
+				'label' => esc_html__( 'Margin (p, h1... h6)', 'spalisho' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', 'em', '%' ],
 				'selectors' => [
@@ -1243,9 +1243,9 @@ class Mellis_Elementor_Toggle extends Widget_Toggle {
 							<?php } ?>
 						</span>
 						<?php endif; ?>
-						<div class="ova-toggle-title">
+						<div class="xp-toggle-title">
 							<?php if ( $settings['ova_icon'] ): ?>
-								<span class="ova-icon">
+								<span class="xp-icon">
 									<i class="<?php echo esc_attr( $settings['ova_icon']['value'] ); ?>"></i>
 								</span>
 							<?php endif; ?>
@@ -1346,10 +1346,10 @@ class Mellis_Elementor_Toggle extends Widget_Toggle {
 								<# } #>
 							</span>
 							<# } #>
-							<div class="ova-toggle-title">
-								<# if ( settings.ova_icon ) { #>
-									<span class="ova-icon">
-										<i class="{{{ settings.ova_icon.value }}}"></i>
+							<div class="xp-toggle-title">
+								<# if ( settings.xp_icon ) { #>
+									<span class="xp-icon">
+										<i class="{{{ settings.xp_icon.value }}}"></i>
 									</span>
 								<# } #>
 								<# if ( 'yes' == settings.show_before_title ) { #>
@@ -1368,4 +1368,4 @@ class Mellis_Elementor_Toggle extends Widget_Toggle {
 		<?php
 	}
 }
-$widgets_manager->register(new Mellis_Elementor_Toggle());
+$widgets_manager->register(new Spalisho_Elementor_Toggle());

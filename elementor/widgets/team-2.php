@@ -9,14 +9,14 @@ use Elementor\Group_Control_Box_Shadow;
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
-class Mellis_Elementor_Team_2 extends Widget_Base {
+class Spalisho_Elementor_Team_2 extends Widget_Base {
 	
 	public function get_name() {
-		return 'mellis_elementor_team_2';
+		return 'spalisho_elementor_team_2';
 	}
 
 	public function get_title() {
-		return esc_html__( 'Ova Team 2', 'mellis' );
+		return esc_html__( 'Ova Team 2', 'spalisho' );
 	}
 
 	public function get_icon() {
@@ -24,7 +24,7 @@ class Mellis_Elementor_Team_2 extends Widget_Base {
 	}
 
 	public function get_categories() {
-		return [ 'mellis' ];
+		return [ 'spalisho' ];
 	}
 
 	public function get_keywords() {
@@ -41,7 +41,7 @@ class Mellis_Elementor_Team_2 extends Widget_Base {
 		$this->start_controls_section(
 			'section_content',
 			[
-				'label' => esc_html__( 'Content', 'mellis' ),
+				'label' => esc_html__( 'Content', 'spalisho' ),
 			]
 		);
 
@@ -49,7 +49,7 @@ class Mellis_Elementor_Team_2 extends Widget_Base {
 		    $this->add_control(
 				'image',
 				[
-					'label' 	=> esc_html__( 'Image Team', 'mellis' ),
+					'label' 	=> esc_html__( 'Image Team', 'spalisho' ),
 					'type' 		=> Controls_Manager::MEDIA,
 					'dynamic' 	=> [
 						'active' 	=> true,
@@ -64,27 +64,27 @@ class Mellis_Elementor_Team_2 extends Widget_Base {
 			$this->add_control(
 				'title',
 				[
-					'label' 	=> esc_html__( 'Title', 'mellis' ),
+					'label' 	=> esc_html__( 'Title', 'spalisho' ),
 					'type' 		=> Controls_Manager::TEXT,
-					'default' 	=> esc_html__( 'Kevin Martin', 'mellis' ),
+					'default' 	=> esc_html__( 'Kevin Martin', 'spalisho' ),
 				]
 			);
 
 			$this->add_control(
 				'sub-title',
 				[
-					'label' 	=> esc_html__( 'Sub Title', 'mellis' ),
+					'label' 	=> esc_html__( 'Sub Title', 'spalisho' ),
 					'type' 		=> Controls_Manager::TEXT,
-					'default' 	=> esc_html__( 'THERAPIST', 'mellis' ),
+					'default' 	=> esc_html__( 'THERAPIST', 'spalisho' ),
 				]
 			);
 
 			$this->add_control(
 				'link_team',
 				[
-					'label' 		=> esc_html__( 'Link', 'mellis' ),
+					'label' 		=> esc_html__( 'Link', 'spalisho' ),
 					'type' 			=> Controls_Manager::URL,
-					'placeholder' 	=> esc_html__( 'https://your-link.com', 'mellis' ),
+					'placeholder' 	=> esc_html__( 'https://your-link.com', 'spalisho' ),
 					'show_external' => true,
 					'default' => [
 						'url' => '#',
@@ -98,9 +98,9 @@ class Mellis_Elementor_Team_2 extends Widget_Base {
 			$repeater->add_control(
 				'class_icon',
 				[
-					'label' 	=> esc_html__( 'Class Icon', 'mellis' ),
+					'label' 	=> esc_html__( 'Class Icon', 'spalisho' ),
 					'type' 		=> Controls_Manager::TEXT,
-					'default' 	=>  esc_html__( 'ovaicon-twitter', 'mellis' ),
+					'default' 	=>  esc_html__( 'ovaicon-twitter', 'spalisho' ),
 					
 				]
 			);
@@ -108,21 +108,21 @@ class Mellis_Elementor_Team_2 extends Widget_Base {
 			$repeater->add_control(
 				'link',
 				[
-					'label' 	=> esc_html__( 'Link', 'mellis' ),
+					'label' 	=> esc_html__( 'Link', 'spalisho' ),
 					'type' 		=> Controls_Manager::URL,
 					'dynamic' => [
 						'active' => true,
 					],
-					'placeholder' => esc_html__( 'https://your-link.com', 'mellis' ),
+					'placeholder' => esc_html__( 'https://your-link.com', 'spalisho' ),
 				]
 			);
 
 			$repeater->add_control(
 				'list_title_icon', 
 				[
-					'label' 		=> esc_html__( 'Title Icon', 'mellis' ),
+					'label' 		=> esc_html__( 'Title Icon', 'spalisho' ),
 					'type' 			=> Controls_Manager::TEXT,
-					'default' 		=> esc_html__( 'Item #1' , 'mellis' ),
+					'default' 		=> esc_html__( 'Item #1' , 'spalisho' ),
 					'label_block' 	=> true,
 				]
 			);
@@ -130,23 +130,23 @@ class Mellis_Elementor_Team_2 extends Widget_Base {
             $this->add_control(
 				'icons',
 				[
-					'label' 	=> esc_html__( 'Social Icons', 'mellis' ),
+					'label' 	=> esc_html__( 'Social Icons', 'spalisho' ),
 					'type' 		=> Controls_Manager::REPEATER,
 					'fields' 	=> $repeater->get_controls(),
 					'default' 	=> [
 						[	
-							'list_title_icon' 	=> esc_html__( 'Twitter', 'mellis' ),
-							'class_icon' 		=> esc_html__( 'ovaicon-twitter', 'mellis' ),
+							'list_title_icon' 	=> esc_html__( 'Twitter', 'spalisho' ),
+							'class_icon' 		=> esc_html__( 'ovaicon-twitter', 'spalisho' ),
 							'link' 				=> ['url' => '#'],
 						],
 						[	
-							'list_title_icon' 	=> esc_html__( 'Facebook', 'mellis' ),
-							'class_icon' 		=> esc_html__( 'ovaicon ovaicon-facebook-logo', 'mellis' ),
+							'list_title_icon' 	=> esc_html__( 'Facebook', 'spalisho' ),
+							'class_icon' 		=> esc_html__( 'ovaicon ovaicon-facebook-logo', 'spalisho' ),
 							'link' 				=> ['url' => '#'],
 						],
 						[	
-							'list_title_icon' 	=> esc_html__( 'Instagram', 'mellis' ),
-							'class_icon' 		=> esc_html__( 'ovaicon ovaicon-instagram-1', 'mellis' ),
+							'list_title_icon' 	=> esc_html__( 'Instagram', 'spalisho' ),
+							'class_icon' 		=> esc_html__( 'ovaicon ovaicon-instagram-1', 'spalisho' ),
 							'link' 				=> ['url' => '#'],
 						],
 	
@@ -161,7 +161,7 @@ class Mellis_Elementor_Team_2 extends Widget_Base {
 		$this->start_controls_section(
 			'section_content_v2_style',
 			[
-				'label' 	=> esc_html__( 'Content', 'mellis' ),
+				'label' 	=> esc_html__( 'Content', 'spalisho' ),
 				'tab' 		=> Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -171,17 +171,17 @@ class Mellis_Elementor_Team_2 extends Widget_Base {
 				$this->start_controls_tab(
 		            'tab_content_v2_normal',
 		            [
-		                'label' => esc_html__( 'Normal', 'mellis' ),
+		                'label' => esc_html__( 'Normal', 'spalisho' ),
 		            ]
 		        );
 
 		        	$this->add_control(
 			            'content_v2_background_normal',
 			            [
-			                'label' 	=> esc_html__( 'Background', 'mellis' ),
+			                'label' 	=> esc_html__( 'Background', 'spalisho' ),
 			                'type' 		=> Controls_Manager::COLOR,
 			                'selectors' => [
-			                    '{{WRAPPER}} .ova-team2-v2' => 'background-color: {{VALUE}};',
+			                    '{{WRAPPER}} .xp-team2-v2' => 'background-color: {{VALUE}};',
 			                ],
 			            ]
 			        );
@@ -189,18 +189,18 @@ class Mellis_Elementor_Team_2 extends Widget_Base {
 			        $this->add_group_control(
 			            Group_Control_Border::get_type(), [
 			                'name' 		=> 'content_v2_border_normal',
-			                'selector' 	=> '{{WRAPPER}} .ova-team2-v2',
+			                'selector' 	=> '{{WRAPPER}} .xp-team2-v2',
 			            ]
 			        );
 
 			        $this->add_control(
 			            'content_v2_border_radius_normal',
 			            [
-			                'label' 		=> esc_html__( 'Border Radius', 'mellis' ),
+			                'label' 		=> esc_html__( 'Border Radius', 'spalisho' ),
 			                'type' 			=> Controls_Manager::DIMENSIONS,
 			                'size_units' 	=> [ 'px', '%' ],
 			                'selectors' 	=> [
-			                    '{{WRAPPER}} .ova-team2-v2' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+			                    '{{WRAPPER}} .xp-team2-v2' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 			                ],
 			            ]
 			        );
@@ -209,8 +209,8 @@ class Mellis_Elementor_Team_2 extends Widget_Base {
 						Group_Control_Box_Shadow::get_type(),
 						[
 							'name' 		=> 'content_v2_box_shadow_normal',
-							'label' 	=> esc_html__( 'Box Shadow', 'mellis' ),
-							'selector' 	=> '{{WRAPPER}} .ova-team2-v2',
+							'label' 	=> esc_html__( 'Box Shadow', 'spalisho' ),
+							'selector' 	=> '{{WRAPPER}} .xp-team2-v2',
 						]
 					);
 
@@ -219,17 +219,17 @@ class Mellis_Elementor_Team_2 extends Widget_Base {
 		        $this->start_controls_tab(
 		            'tab_content_v2_hover',
 		            [
-		                'label' => esc_html__( 'Hover', 'mellis' ),
+		                'label' => esc_html__( 'Hover', 'spalisho' ),
 		            ]
 		        );
 
 		        	$this->add_control(
 			            'content_v2_background_hover',
 			            [
-			                'label' 	=> esc_html__( 'Background', 'mellis' ),
+			                'label' 	=> esc_html__( 'Background', 'spalisho' ),
 			                'type' 		=> Controls_Manager::COLOR,
 			                'selectors' => [
-			                    '{{WRAPPER}} .ova-team2-v2:hover' => 'background-color: {{VALUE}};',
+			                    '{{WRAPPER}} .xp-team2-v2:hover' => 'background-color: {{VALUE}};',
 			                    
 			                ],
 			            ]
@@ -238,18 +238,18 @@ class Mellis_Elementor_Team_2 extends Widget_Base {
 			        $this->add_group_control(
 			            Group_Control_Border::get_type(), [
 			                'name' 		=> 'content_v2_border_hover',
-			                'selector' 	=> '{{WRAPPER}} .ova-team2-v2:hover',
+			                'selector' 	=> '{{WRAPPER}} .xp-team2-v2:hover',
 			            ]
 			        );
 
 			        $this->add_control(
 			            'content_v2_border_radius_hover',
 			            [
-			                'label' 		=> esc_html__( 'Border Radius', 'mellis' ),
+			                'label' 		=> esc_html__( 'Border Radius', 'spalisho' ),
 			                'type' 			=> Controls_Manager::DIMENSIONS,
 			                'size_units' 	=> [ 'px', '%' ],
 			                'selectors' 	=> [
-			                    '{{WRAPPER}} .ova-team2-v2:hover' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+			                    '{{WRAPPER}} .xp-team2-v2:hover' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 			                    
 			                ],
 			            ]
@@ -259,8 +259,8 @@ class Mellis_Elementor_Team_2 extends Widget_Base {
 						Group_Control_Box_Shadow::get_type(),
 						[
 							'name' 		=> 'content_v2_box_shadow_hover',
-							'label' 	=> esc_html__( 'Box Shadow', 'mellis' ),
-							'selector' 	=> '{{WRAPPER}} .ova-team2-v2:hover',
+							'label' 	=> esc_html__( 'Box Shadow', 'spalisho' ),
+							'selector' 	=> '{{WRAPPER}} .xp-team2-v2:hover',
 						]
 					);
 
@@ -270,11 +270,11 @@ class Mellis_Elementor_Team_2 extends Widget_Base {
 			$this->add_responsive_control(
 	            'content_v2_padding',
 	            [
-	                'label' 		=> esc_html__( 'Padding', 'mellis' ),
+	                'label' 		=> esc_html__( 'Padding', 'spalisho' ),
 	                'type' 			=> Controls_Manager::DIMENSIONS,
 	                'size_units' 	=> [ 'px', '%', 'em' ],
 	                'selectors' 	=> [
-	                    '{{WRAPPER}} .ova-team2-v2' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+	                    '{{WRAPPER}} .xp-team2-v2' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 	                 
 	                ],
 	                'separator' 	=> 'before',
@@ -284,11 +284,11 @@ class Mellis_Elementor_Team_2 extends Widget_Base {
 	        $this->add_responsive_control(
 	            'content_v2_margin',
 	            [
-	                'label' 		=> esc_html__( 'Margin', 'mellis' ),
+	                'label' 		=> esc_html__( 'Margin', 'spalisho' ),
 	                'type' 			=> Controls_Manager::DIMENSIONS,
 	                'size_units' 	=> [ 'px', '%', 'em' ],
 	                'selectors' 	=> [
-	                    '{{WRAPPER}} .ova-team2-v2' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+	                    '{{WRAPPER}} .xp-team2-v2' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 	                ],
 	                'separator' 	=> 'before',
 	            ]
@@ -300,7 +300,7 @@ class Mellis_Elementor_Team_2 extends Widget_Base {
 		$this->start_controls_section(
 			'section_img_v2_style',
 			[
-				'label' 	=> esc_html__( 'Image', 'mellis' ),
+				'label' 	=> esc_html__( 'Image', 'spalisho' ),
 				'tab' 		=> Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -308,11 +308,11 @@ class Mellis_Elementor_Team_2 extends Widget_Base {
 			$this->add_control(
 	            'img_border_radius',
 	            [
-	                'label' 		=> esc_html__( 'Border Radius', 'mellis' ),
+	                'label' 		=> esc_html__( 'Border Radius', 'spalisho' ),
 	                'type' 			=> Controls_Manager::DIMENSIONS,
 	                'size_units' 	=> [ 'px', '%' ],
 	                'selectors' 	=> [
-	                    '{{WRAPPER}} .ova-team2-v2 .avatar' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+	                    '{{WRAPPER}} .xp-team2-v2 .avatar' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 	                ],
 	            ]
 	        );
@@ -320,11 +320,11 @@ class Mellis_Elementor_Team_2 extends Widget_Base {
 	        $this->add_responsive_control(
 	            'img_margin',
 	            [
-	                'label' 		=> esc_html__( 'Margin', 'mellis' ),
+	                'label' 		=> esc_html__( 'Margin', 'spalisho' ),
 	                'type' 			=> Controls_Manager::DIMENSIONS,
 	                'size_units' 	=> [ 'px', '%', 'em' ],
 	                'selectors' 	=> [
-	                    '{{WRAPPER}} .ova-team2-v2 .avatar' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+	                    '{{WRAPPER}} .xp-team2-v2 .avatar' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 	                ],
 	            ]
 	        );
@@ -335,7 +335,7 @@ class Mellis_Elementor_Team_2 extends Widget_Base {
 		$this->start_controls_section(
             'title_style',
             [
-                'label' => esc_html__( 'Title', 'mellis' ),
+                'label' => esc_html__( 'Title', 'spalisho' ),
                 'tab' 	=> Controls_Manager::TAB_STYLE,
             ]
         );
@@ -344,7 +344,7 @@ class Mellis_Elementor_Team_2 extends Widget_Base {
 				Group_Control_Typography::get_type(),
 				[
 					'name' 		=> 'title_typography',
-					'selector' 	=> '{{WRAPPER}} .ova-team2-v2 .title',
+					'selector' 	=> '{{WRAPPER}} .xp-team2-v2 .title',
 				]
 			);
 
@@ -353,17 +353,17 @@ class Mellis_Elementor_Team_2 extends Widget_Base {
 				$this->start_controls_tab(
 		            'tab_title_normal',
 		            [
-		                'label' => esc_html__( 'Normal', 'mellis' ),
+		                'label' => esc_html__( 'Normal', 'spalisho' ),
 		            ]
 		        );
 
 					$this->add_control(
 			            'title_color_normal',
 			            [
-			                'label' 	=> esc_html__( 'Color', 'mellis' ),
+			                'label' 	=> esc_html__( 'Color', 'spalisho' ),
 			                'type' 		=> Controls_Manager::COLOR,
 			                'selectors' => [
-			                    '{{WRAPPER}} .ova-team2-v2 .title' => 'color: {{VALUE}}',
+			                    '{{WRAPPER}} .xp-team2-v2 .title' => 'color: {{VALUE}}',
 			                ],
 			            ]
 			        );
@@ -373,17 +373,17 @@ class Mellis_Elementor_Team_2 extends Widget_Base {
 				$this->start_controls_tab(
 		            'tab_title_hover',
 		            [
-		                'label' => esc_html__( 'Hover', 'mellis' ),
+		                'label' => esc_html__( 'Hover', 'spalisho' ),
 		            ]
 		        );
 
 					$this->add_control(
 			            'title_color_hover',
 			            [
-			                'label' 	=> esc_html__( 'Color', 'mellis' ),
+			                'label' 	=> esc_html__( 'Color', 'spalisho' ),
 			                'type' 		=> Controls_Manager::COLOR,
 			                'selectors' => [
-			                    '{{WRAPPER}} .ova-team2-v2:hover .title' => 'color: {{VALUE}}',
+			                    '{{WRAPPER}} .xp-team2-v2:hover .title' => 'color: {{VALUE}}',
 			                ],
 			            ]
 			        );
@@ -394,11 +394,11 @@ class Mellis_Elementor_Team_2 extends Widget_Base {
 	        $this->add_responsive_control(
 	            'title_margin',
 	            [
-	                'label' 		=> esc_html__( 'Margin', 'mellis' ),
+	                'label' 		=> esc_html__( 'Margin', 'spalisho' ),
 	                'type' 			=> Controls_Manager::DIMENSIONS,
 	                'size_units' 	=> [ 'px', '%', 'em' ],
 	                'selectors' 	=> [
-	                    '{{WRAPPER}} .ova-team2-v2 .title' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+	                    '{{WRAPPER}} .xp-team2-v2 .title' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 	                ],
 	            ]
 	        );
@@ -409,7 +409,7 @@ class Mellis_Elementor_Team_2 extends Widget_Base {
 		$this->start_controls_section(
             'subtitle_style',
             [
-                'label' => esc_html__( 'Sub Title', 'mellis' ),
+                'label' => esc_html__( 'Sub Title', 'spalisho' ),
                 'tab' 	=> Controls_Manager::TAB_STYLE,
             ]
         );
@@ -418,7 +418,7 @@ class Mellis_Elementor_Team_2 extends Widget_Base {
 				Group_Control_Typography::get_type(),
 				[
 					'name' 		=> 'subtitle_typography',
-					'selector' 	=> '{{WRAPPER}} .ova-team2-v2 .job',
+					'selector' 	=> '{{WRAPPER}} .xp-team2-v2 .job',
 				]
 			);
 
@@ -427,17 +427,17 @@ class Mellis_Elementor_Team_2 extends Widget_Base {
 				$this->start_controls_tab(
 		            'tab_subtitle_normal',
 		            [
-		                'label' => esc_html__( 'Normal', 'mellis' ),
+		                'label' => esc_html__( 'Normal', 'spalisho' ),
 		            ]
 		        );
 
 					$this->add_control(
 			            'subtitle_color_normal',
 			            [
-			                'label' 	=> esc_html__( 'Color', 'mellis' ),
+			                'label' 	=> esc_html__( 'Color', 'spalisho' ),
 			                'type' 		=> Controls_Manager::COLOR,
 			                'selectors' => [
-			                    '{{WRAPPER}} .ova-team2-v2 .job' => 'color: {{VALUE}}',
+			                    '{{WRAPPER}} .xp-team2-v2 .job' => 'color: {{VALUE}}',
 			                ],
 			            ]
 			        );
@@ -447,17 +447,17 @@ class Mellis_Elementor_Team_2 extends Widget_Base {
 				$this->start_controls_tab(
 		            'tab_subtitle_hover',
 		            [
-		                'label' => esc_html__( 'Hover', 'mellis' ),
+		                'label' => esc_html__( 'Hover', 'spalisho' ),
 		            ]
 		        );
 
 					$this->add_control(
 			            'subtitle_color_hover',
 			            [
-			                'label' 	=> esc_html__( 'Color', 'mellis' ),
+			                'label' 	=> esc_html__( 'Color', 'spalisho' ),
 			                'type' 		=> Controls_Manager::COLOR,
 			                'selectors' => [
-			                    '{{WRAPPER}} .ova-team2-v2:hover .job' => 'color: {{VALUE}}',
+			                    '{{WRAPPER}} .xp-team2-v2:hover .job' => 'color: {{VALUE}}',
 			                ],
 			            ]
 			        );
@@ -468,11 +468,11 @@ class Mellis_Elementor_Team_2 extends Widget_Base {
 	        $this->add_responsive_control(
 	            'subtitle_margin',
 	            [
-	                'label' 		=> esc_html__( 'Margin', 'mellis' ),
+	                'label' 		=> esc_html__( 'Margin', 'spalisho' ),
 	                'type' 			=> Controls_Manager::DIMENSIONS,
 	                'size_units' 	=> [ 'px', '%', 'em' ],
 	                'selectors' 	=> [
-	                    '{{WRAPPER}} .ova-team2-v2 .job' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+	                    '{{WRAPPER}} .xp-team2-v2 .job' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 	                ],
 	            ]
 	        );
@@ -483,7 +483,7 @@ class Mellis_Elementor_Team_2 extends Widget_Base {
 		$this->start_controls_section(
             'social_style',
             [
-                'label' => esc_html__( 'Social', 'mellis' ),
+                'label' => esc_html__( 'Social', 'spalisho' ),
                 'tab' 	=> Controls_Manager::TAB_STYLE,
             ]
         );
@@ -492,7 +492,7 @@ class Mellis_Elementor_Team_2 extends Widget_Base {
 				Group_Control_Typography::get_type(),
 				[
 					'name' 		=> 'social_typography',
-					'selector' 	=> '{{WRAPPER}} .ova-team2-v2 .social-list .social i',
+					'selector' 	=> '{{WRAPPER}} .xp-team2-v2 .social-list .social i',
 				]
 			);
 
@@ -501,17 +501,17 @@ class Mellis_Elementor_Team_2 extends Widget_Base {
 				$this->start_controls_tab(
 		            'tab_social_normal',
 		            [
-		                'label' => esc_html__( 'Normal', 'mellis' ),
+		                'label' => esc_html__( 'Normal', 'spalisho' ),
 		            ]
 		        );
 
 		        	$this->add_control(
 			            'social_color_normal',
 			            [
-			                'label' 	=> esc_html__( 'Color', 'mellis' ),
+			                'label' 	=> esc_html__( 'Color', 'spalisho' ),
 			                'type' 		=> Controls_Manager::COLOR,
 			                'selectors' => [
-			                    '{{WRAPPER}} .ova-team2-v2 .social-list .social i' => 'color: {{VALUE}};',
+			                    '{{WRAPPER}} .xp-team2-v2 .social-list .social i' => 'color: {{VALUE}};',
 			                ],
 			            ]
 			        );
@@ -519,10 +519,10 @@ class Mellis_Elementor_Team_2 extends Widget_Base {
 		        	$this->add_control(
 			            'social_background_normal',
 			            [
-			                'label' 	=> esc_html__( 'Background', 'mellis' ),
+			                'label' 	=> esc_html__( 'Background', 'spalisho' ),
 			                'type' 		=> Controls_Manager::COLOR,
 			                'selectors' => [
-			                    '{{WRAPPER}} .ova-team2-v2 .social-list .social' => 'background-color: {{VALUE}};',
+			                    '{{WRAPPER}} .xp-team2-v2 .social-list .social' => 'background-color: {{VALUE}};',
 			                ],
 			            ]
 			        );
@@ -532,17 +532,17 @@ class Mellis_Elementor_Team_2 extends Widget_Base {
 		        $this->start_controls_tab(
 		            'tab_social_hover',
 		            [
-		                'label' => esc_html__( 'Hover', 'mellis' ),
+		                'label' => esc_html__( 'Hover', 'spalisho' ),
 		            ]
 		        );
 
 		        	$this->add_control(
 			            'social_color_hover',
 			            [
-			                'label' 	=> esc_html__( 'Color', 'mellis' ),
+			                'label' 	=> esc_html__( 'Color', 'spalisho' ),
 			                'type' 		=> Controls_Manager::COLOR,
 			                'selectors' => [
-			                    '{{WRAPPER}} .ova-team2-v2 .social-list .social:hover i' => 'color: {{VALUE}};',
+			                    '{{WRAPPER}} .xp-team2-v2 .social-list .social:hover i' => 'color: {{VALUE}};',
 			                ],
 			            ]
 			        );
@@ -550,10 +550,10 @@ class Mellis_Elementor_Team_2 extends Widget_Base {
 		        	$this->add_control(
 			            'social_background_hover',
 			            [
-			                'label' 	=> esc_html__( 'Background', 'mellis' ),
+			                'label' 	=> esc_html__( 'Background', 'spalisho' ),
 			                'type' 		=> Controls_Manager::COLOR,
 			                'selectors' => [
-			                    '{{WRAPPER}} .ova-team2-v2 .social-list .social:hover' => 'background-color: {{VALUE}} !important;',
+			                    '{{WRAPPER}} .xp-team2-v2 .social-list .social:hover' => 'background-color: {{VALUE}} !important;',
 			                ],
 			            ]
 			        );
@@ -564,7 +564,7 @@ class Mellis_Elementor_Team_2 extends Widget_Base {
 			$this->add_responsive_control(
 				'social_size',
 				[
-					'label' 	=> esc_html__( 'Size', 'mellis' ),
+					'label' 	=> esc_html__( 'Size', 'spalisho' ),
 					'type' 		=> Controls_Manager::SLIDER,
 					'range' => [
 						'px' => [
@@ -574,7 +574,7 @@ class Mellis_Elementor_Team_2 extends Widget_Base {
 					],
 					'size_units' 	=> [ 'px' ],
 					'selectors' 	=> [
-						'{{WRAPPER}} .ova-team2-v2 .social-list .social' => 'width: {{SIZE}}{{UNIT}};height: {{SIZE}}{{UNIT}};min-width: {{SIZE}}{{UNIT}};',
+						'{{WRAPPER}} .xp-team2-v2 .social-list .social' => 'width: {{SIZE}}{{UNIT}};height: {{SIZE}}{{UNIT}};min-width: {{SIZE}}{{UNIT}};',
 					],
 				]
 			);
@@ -582,7 +582,7 @@ class Mellis_Elementor_Team_2 extends Widget_Base {
 			$this->add_responsive_control(
 				'icon_social_size',
 				[
-					'label' 	=> esc_html__( 'Icon Size', 'mellis' ),
+					'label' 	=> esc_html__( 'Icon Size', 'spalisho' ),
 					'type' 		=> Controls_Manager::SLIDER,
 					'range' => [
 						'px' => [
@@ -592,7 +592,7 @@ class Mellis_Elementor_Team_2 extends Widget_Base {
 					],
 					'size_units' 	=> [ 'px' ],
 					'selectors' 	=> [
-						'{{WRAPPER}} .ova-team2-v2 .avatar .social-list .social i' => 'font-size: {{SIZE}}{{UNIT}};',
+						'{{WRAPPER}} .xp-team2-v2 .avatar .social-list .social i' => 'font-size: {{SIZE}}{{UNIT}};',
 					],
 				]
 			);
@@ -600,7 +600,7 @@ class Mellis_Elementor_Team_2 extends Widget_Base {
 			$this->add_group_control(
 	            Group_Control_Border::get_type(), [
 	                'name' 		=> 'social_border',
-	                'selector' 	=> '{{WRAPPER}} .ova-team2-v2 .social-list .social',
+	                'selector' 	=> '{{WRAPPER}} .xp-team2-v2 .social-list .social',
 	                'separator' => 'before',
 	            ]
 	        );
@@ -608,10 +608,10 @@ class Mellis_Elementor_Team_2 extends Widget_Base {
 	        $this->add_control(
 	            'social_border_color_hover',
 	            [
-	                'label' 	=> esc_html__( 'Border Color Hover', 'mellis' ),
+	                'label' 	=> esc_html__( 'Border Color Hover', 'spalisho' ),
 	                'type' 		=> Controls_Manager::COLOR,
 	                'selectors' => [
-	                    '{{WRAPPER}} .ova-team2-v2 .social-list .social:hover' => 'border-color: {{VALUE}}',
+	                    '{{WRAPPER}} .xp-team2-v2 .social-list .social:hover' => 'border-color: {{VALUE}}',
 	                ],
 	            ]
 	        );
@@ -619,11 +619,11 @@ class Mellis_Elementor_Team_2 extends Widget_Base {
 	        $this->add_control(
 	            'social_border_radius',
 	            [
-	                'label' 		=> esc_html__( 'Border Radius', 'mellis' ),
+	                'label' 		=> esc_html__( 'Border Radius', 'spalisho' ),
 	                'type' 			=> Controls_Manager::DIMENSIONS,
 	                'size_units' 	=> [ 'px', '%' ],
 	                'selectors' 	=> [
-	                    '{{WRAPPER}} .ova-team2-v2 .social-list .social' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+	                    '{{WRAPPER}} .xp-team2-v2 .social-list .social' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 	                ],
 	            ]
 	        );
@@ -631,11 +631,11 @@ class Mellis_Elementor_Team_2 extends Widget_Base {
 	        $this->add_responsive_control(
 	            'social_margin',
 	            [
-	                'label' 		=> esc_html__( 'Margin', 'mellis' ),
+	                'label' 		=> esc_html__( 'Margin', 'spalisho' ),
 	                'type' 			=> Controls_Manager::DIMENSIONS,
 	                'size_units' 	=> [ 'px', '%', 'em' ],
 	                'selectors' 	=> [
-	                    '{{WRAPPER}} .ova-team2-v2 .social-list .social' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+	                    '{{WRAPPER}} .xp-team2-v2 .social-list .social' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 	                ],
 	            ]
 	        );
@@ -660,7 +660,7 @@ class Mellis_Elementor_Team_2 extends Widget_Base {
 		$subtitle 	= $settings['sub-title'];
 
 		if ( empty( $alt ) ) {
-			$alt = $title ? $title : esc_html__( 'Avatar', 'mellis' );
+			$alt = $title ? $title : esc_html__( 'Avatar', 'spalisho' );
 		}
 
         // list social icons
@@ -673,7 +673,7 @@ class Mellis_Elementor_Team_2 extends Widget_Base {
 		?>
         
 		
-			<div class="ova-team2-v2">
+			<div class="xp-team2-v2">
 				
 				<div class="avatar">
 
@@ -725,4 +725,4 @@ class Mellis_Elementor_Team_2 extends Widget_Base {
 
 	
 }
-$widgets_manager->register( new Mellis_Elementor_Team_2() );
+$widgets_manager->register( new Spalisho_Elementor_Team_2() );

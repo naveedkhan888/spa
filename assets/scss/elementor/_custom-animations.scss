@@ -1,6 +1,6 @@
 /* Custom Animation */
 
-.ova-move-up {
+.xp-move-up {
   animation-name: ovaMoveUp;
   -moz-animation-name: ovaMoveUp;
   -webkit-animation-name: ovaMoveUp; }
@@ -53,7 +53,7 @@
     -ms-transform: translateY(0);
     transform: translateY(0); } }
 
-.ova-move-down {
+.xp-move-down {
   animation-name: ovaMoveDown;
   -moz-animation-name: ovaMoveDown;
   -webkit-animation-name: ovaMoveDown; }
@@ -106,7 +106,7 @@
     -ms-transform: translateY(0);
     transform: translateY(0); } }
 
-.ova-move-left {
+.xp-move-left {
   animation-name: ovaMoveLeft;
   -moz-animation-name: ovaMoveLeft;
   -webkit-animation-name: ovaMoveLeft; }
@@ -159,7 +159,7 @@
     -ms-transform: translateX(0);
     transform: translateX(0); } }
 
-.ova-move-right {
+.xp-move-right {
   animation-name: ovaMoveRight;
   -moz-animation-name: ovaMoveRight;
   -webkit-animation-name: ovaMoveRight; }
@@ -212,7 +212,7 @@
     -ms-transform: translateX(0);
     transform: translateX(0); } }
 
-.ova-scale-up {
+.xp-scale-up {
   animation-name: ovaScaleUp;
   -moz-animation-name: ovaScaleUp;
   -webkit-animation-name: ovaScaleUp; }
@@ -265,7 +265,7 @@
     transform: scale(1);
     opacity: 1; } }
 
-.ova-flip {
+.xp-flip {
   animation-name: ovaFlip;
   -moz-animation-name: ovaFlip;
   -webkit-animation-name: ovaFlip; }
@@ -326,7 +326,7 @@
     transform: rotateX(0deg);
     opacity: 1; } }
 
-.ova-helix {
+.xp-helix {
   animation-name: ovaHelix;
   -moz-animation-name: ovaHelix;
   -webkit-animation-name: ovaHelix; }
@@ -387,7 +387,7 @@
     transform: rotateY(0deg);
     opacity: 1; } }
 
-.ova-popup {
+.xp-popup {
   animation: ovaPopup;
   -moz-animation-name: ovaPopup;
   -webkit-animation-name: ovaPopup; }

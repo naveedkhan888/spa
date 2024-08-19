@@ -8,14 +8,14 @@ use Elementor\Group_Control_Border;
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
-class Mellis_Elementor_Toggle_Content extends Widget_Base {
+class Spalisho_Elementor_Toggle_Content extends Widget_Base {
 
 	public function get_name() {
-		return 'mellis_elementor_toggle_content';
+		return 'spalisho_elementor_toggle_content';
 	}
 
 	public function get_title() {
-		return esc_html__( 'Toggle Content', 'mellis' );
+		return esc_html__( 'Toggle Content', 'spalisho' );
 	}
 
 	public function get_icon() {
@@ -23,11 +23,11 @@ class Mellis_Elementor_Toggle_Content extends Widget_Base {
 	}
 
 	public function get_categories() {
-		return [ 'mellis' ];
+		return [ 'spalisho' ];
 	}
 
 	public function get_script_depends() {
-		return [ 'mellis-elementor-toggle-content' ];
+		return [ 'spalisho-elementor-toggle-content' ];
 	}
 	
 	// Add Your Controll In This Function
@@ -36,22 +36,22 @@ class Mellis_Elementor_Toggle_Content extends Widget_Base {
 		$this->start_controls_section(
 			'section_content',
 			[
-				'label' => esc_html__( 'Toggle Content', 'mellis' ),
+				'label' => esc_html__( 'Toggle Content', 'spalisho' ),
 			]
 		);	
 			
 			$this->add_control(
 				'menu_pos',
 				[
-					'label' => esc_html__( 'Menu Direction', 'mellis' ),
+					'label' => esc_html__( 'Menu Direction', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::CHOOSE,
 					'options' => [
 						'pos_left' => [
-							'title' => esc_html__( 'Left', 'mellis' ),
+							'title' => esc_html__( 'Left', 'spalisho' ),
 							'icon' => 'eicon-h-align-left',
 						],
 						'pos_right' => [
-							'title' => esc_html__( 'Right', 'mellis' ),
+							'title' => esc_html__( 'Right', 'spalisho' ),
 							'icon' => 'eicon-h-align-right',
 						],
 					],
@@ -62,7 +62,7 @@ class Mellis_Elementor_Toggle_Content extends Widget_Base {
 			$this->add_control(
 				'icon',
 				[
-					'label' => esc_html__( 'Icon', 'mellis' ),
+					'label' => esc_html__( 'Icon', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::ICONS,
 					'default' 	=> [
 						'value' 	=> 'ovaicon-menu-1',
@@ -74,7 +74,7 @@ class Mellis_Elementor_Toggle_Content extends Widget_Base {
 			$this->add_control(
 				'content_heading',
 				[
-					'label' => esc_html__( 'Content', 'mellis' ),
+					'label' => esc_html__( 'Content', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::HEADING,
 					'separator' => 'before',
 				]
@@ -83,7 +83,7 @@ class Mellis_Elementor_Toggle_Content extends Widget_Base {
 			$this->add_control(
 				'image',
 				[
-					'label' => esc_html__( 'Choose Image', 'mellis' ),
+					'label' => esc_html__( 'Choose Image', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::MEDIA,
 					'default' => [
 						'url' => \Elementor\Utils::get_placeholder_image_src(),
@@ -94,26 +94,26 @@ class Mellis_Elementor_Toggle_Content extends Widget_Base {
 			$this->add_control(
 				'content_title',
 				[
-					'label' => esc_html__( 'Title', 'mellis' ),
+					'label' => esc_html__( 'Title', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::TEXT,
-					'default' => esc_html__( 'About Us', 'mellis' ),
+					'default' => esc_html__( 'About Us', 'spalisho' ),
 				]
 			);
 
 			$this->add_control(
 				'description',
 				[
-					'label' => esc_html__( 'Description', 'mellis' ),
+					'label' => esc_html__( 'Description', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::TEXTAREA,
 					'rows' => 10,
-					'default' => esc_html__( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'mellis' ),
+					'default' => esc_html__( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'spalisho' ),
 				]
 			);
 
 			$this->add_control(
 				'button_contact_heading',
 				[
-					'label' => esc_html__( 'Button Contact', 'mellis' ),
+					'label' => esc_html__( 'Button Contact', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::HEADING,
 					'separator' => 'before',
 				]
@@ -122,9 +122,9 @@ class Mellis_Elementor_Toggle_Content extends Widget_Base {
 			$this->add_control(
 				'button_contact_link',
 				[
-					'label' => esc_html__( 'Link', 'mellis' ),
+					'label' => esc_html__( 'Link', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::URL,
-					'placeholder' => esc_html__( 'https://your-link.com', 'mellis' ),
+					'placeholder' => esc_html__( 'https://your-link.com', 'spalisho' ),
 					'options' => [ 'url', 'is_external', 'nofollow' ],
 					'default' => [
 						'url' => '#',
@@ -137,9 +137,9 @@ class Mellis_Elementor_Toggle_Content extends Widget_Base {
 			$this->add_control(
 				'button_contact_text',
 				[
-					'label' => esc_html__( 'Text', 'mellis' ),
+					'label' => esc_html__( 'Text', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::TEXT,
-					'default' => esc_html__( ' Get a Quote ', 'mellis' ),
+					'default' => esc_html__( ' Get a Quote ', 'spalisho' ),
 					'condition' => [
 						'button_contact_link[url]!' => '',
 					],
@@ -149,7 +149,7 @@ class Mellis_Elementor_Toggle_Content extends Widget_Base {
 			$this->add_control(
 				'button_contact_icon',
 				[
-					'label' => esc_html__( 'Icon', 'mellis' ),
+					'label' => esc_html__( 'Icon', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::ICONS,
 					'default' => [
 						'value' => 'fas fa-angle-double-right',
@@ -164,7 +164,7 @@ class Mellis_Elementor_Toggle_Content extends Widget_Base {
 			$this->add_control(
 				'social_heading',
 				[
-					'label' => esc_html__( 'Contact Info', 'mellis' ),
+					'label' => esc_html__( 'Contact Info', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::HEADING,
 					'separator' => 'before',
 				]
@@ -173,9 +173,9 @@ class Mellis_Elementor_Toggle_Content extends Widget_Base {
 			$this->add_control(
 				'social_title',
 				[
-					'label' => esc_html__( 'Title', 'mellis' ),
+					'label' => esc_html__( 'Title', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::TEXT,
-					'default' => esc_html__( 'Contact Us', 'mellis' ),
+					'default' => esc_html__( 'Contact Us', 'spalisho' ),
 				]
 			);
 
@@ -184,7 +184,7 @@ class Mellis_Elementor_Toggle_Content extends Widget_Base {
 				$repeater1->add_control(
 					'contact_icon',
 					[
-						'label' => esc_html__( 'Icon', 'mellis' ),
+						'label' => esc_html__( 'Icon', 'spalisho' ),
 						'type' => \Elementor\Controls_Manager::ICONS,
 						'default' => [
 							'value' => 'far fa-bell',
@@ -196,7 +196,7 @@ class Mellis_Elementor_Toggle_Content extends Widget_Base {
 				$repeater1->add_control(
 					'contact_label',
 					[
-						'label'   => esc_html__( 'Label', 'mellis' ),
+						'label'   => esc_html__( 'Label', 'spalisho' ),
 						'type'    => \Elementor\Controls_Manager::TEXT,
 					]
 				);
@@ -204,9 +204,9 @@ class Mellis_Elementor_Toggle_Content extends Widget_Base {
 				$repeater1->add_control(
 					'contact_link',
 					[
-						'label'   => esc_html__( 'Link', 'mellis' ),
+						'label'   => esc_html__( 'Link', 'spalisho' ),
 						'type'    => \Elementor\Controls_Manager::URL,
-						'description' => esc_html__( 'https://your-domain.com', 'mellis' ),
+						'description' => esc_html__( 'https://your-domain.com', 'spalisho' ),
 						'default' => [
 							'url' => '#',
 							'is_external' => false,
@@ -218,7 +218,7 @@ class Mellis_Elementor_Toggle_Content extends Widget_Base {
 				$this->add_control(
 					'items_1',
 					[
-						'label'       => esc_html__( 'Contact', 'mellis' ),
+						'label'       => esc_html__( 'Contact', 'spalisho' ),
 						'type'        => Controls_Manager::REPEATER,
 						'fields'      => $repeater1->get_controls(),
 						'default' => [
@@ -249,7 +249,7 @@ class Mellis_Elementor_Toggle_Content extends Widget_Base {
 								],
 								'contact_label'  => 'www.example.com',
 								'contact_link'  => [
-									'url' => 'https://ovatheme.com/',
+									'url' => 'https://xperttheme.com/',
 								]
 							],
 							[
@@ -272,7 +272,7 @@ class Mellis_Elementor_Toggle_Content extends Widget_Base {
 				$repeater2->add_control(
 					'social_icon',
 					[
-						'label' => esc_html__( 'Icon', 'mellis' ),
+						'label' => esc_html__( 'Icon', 'spalisho' ),
 						'type' => \Elementor\Controls_Manager::ICONS,
 						'default' => [
 							'value' => 'fab fa-twitter',
@@ -284,9 +284,9 @@ class Mellis_Elementor_Toggle_Content extends Widget_Base {
 				$repeater2->add_control(
 					'social_link',
 					[
-						'label' => esc_html__( 'Link', 'mellis' ),
+						'label' => esc_html__( 'Link', 'spalisho' ),
 						'type' => \Elementor\Controls_Manager::URL,
-						'placeholder' => esc_html__( 'https://your-link.com', 'mellis' ),
+						'placeholder' => esc_html__( 'https://your-link.com', 'spalisho' ),
 						'options' => [ 'url', 'is_external', 'nofollow' ],
 						'default' => [
 							'url' => '#',
@@ -299,7 +299,7 @@ class Mellis_Elementor_Toggle_Content extends Widget_Base {
 				$this->add_control(
 					'items_2',
 					[
-						'label'       => esc_html__( 'Socials', 'mellis' ),
+						'label'       => esc_html__( 'Socials', 'spalisho' ),
 						'type'        => Controls_Manager::REPEATER,
 						'fields'      => $repeater2->get_controls(),
 						'default' => [
@@ -352,7 +352,7 @@ class Mellis_Elementor_Toggle_Content extends Widget_Base {
 		$this->start_controls_section(
 			'icon_section',
 			[
-				'label' => esc_html__( 'Toggle Button Icon', 'mellis' ),
+				'label' => esc_html__( 'Toggle Button Icon', 'spalisho' ),
 				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -360,7 +360,7 @@ class Mellis_Elementor_Toggle_Content extends Widget_Base {
 			$this->add_control(
 				'button_size',
 				[
-					'label' => esc_html__( 'Button Size', 'mellis' ),
+					'label' => esc_html__( 'Button Size', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::SLIDER,
 					'size_units' => [ 'px', '%', 'em', 'rem' ],
 					'range' => [
@@ -375,7 +375,7 @@ class Mellis_Elementor_Toggle_Content extends Widget_Base {
 						],
 					],
 					'selectors' => [
-						'{{WRAPPER}} .ova-toggle-content .button-toggle' => 'width: {{SIZE}}{{UNIT}};min-width: {{SIZE}}{{UNIT}};height: {{SIZE}}{{UNIT}};',
+						'{{WRAPPER}} .xp-toggle-content .button-toggle' => 'width: {{SIZE}}{{UNIT}};min-width: {{SIZE}}{{UNIT}};height: {{SIZE}}{{UNIT}};',
 					],
 				]
 			);
@@ -383,7 +383,7 @@ class Mellis_Elementor_Toggle_Content extends Widget_Base {
 			$this->add_control(
 				'icon_size',
 				[
-					'label' => esc_html__( 'Icon Size', 'mellis' ),
+					'label' => esc_html__( 'Icon Size', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::SLIDER,
 					'size_units' => [ 'px', '%', 'em', 'rem' ],
 					'range' => [
@@ -398,8 +398,8 @@ class Mellis_Elementor_Toggle_Content extends Widget_Base {
 						],
 					],
 					'selectors' => [
-						'{{WRAPPER}} .ova-toggle-content .button-toggle i' => 'font-size: {{SIZE}}{{UNIT}}',
-						'{{WRAPPER}} .ova-toggle-content .button-toggle svg' => 'width: {{SIZE}}{{UNIT}}; height: {{SIZE}}{{UNIT}}',
+						'{{WRAPPER}} .xp-toggle-content .button-toggle i' => 'font-size: {{SIZE}}{{UNIT}}',
+						'{{WRAPPER}} .xp-toggle-content .button-toggle svg' => 'width: {{SIZE}}{{UNIT}}; height: {{SIZE}}{{UNIT}}',
 					],
 				]
 			);
@@ -407,12 +407,12 @@ class Mellis_Elementor_Toggle_Content extends Widget_Base {
 			$this->add_control(
 				'icon_color',
 				[
-					'label' => esc_html__( 'Color', 'mellis' ),
+					'label' => esc_html__( 'Color', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-toggle-content .button-toggle i' => 'color: {{VALUE}}',
-						'{{WRAPPER}} .ova-toggle-content .button-toggle svg' => 'fill: {{VALUE}}',
-						'{{WRAPPER}} .ova-toggle-content .button-toggle svg path' => 'fill: {{VALUE}}',
+						'{{WRAPPER}} .xp-toggle-content .button-toggle i' => 'color: {{VALUE}}',
+						'{{WRAPPER}} .xp-toggle-content .button-toggle svg' => 'fill: {{VALUE}}',
+						'{{WRAPPER}} .xp-toggle-content .button-toggle svg path' => 'fill: {{VALUE}}',
 					],
 				]
 			);
@@ -420,12 +420,12 @@ class Mellis_Elementor_Toggle_Content extends Widget_Base {
 			$this->add_control(
 				'icon_color_hover',
 				[
-					'label' => esc_html__( 'Color Hover', 'mellis' ),
+					'label' => esc_html__( 'Color Hover', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-toggle-content .button-toggle:hover i' => 'color: {{VALUE}}',
-						'{{WRAPPER}} .ova-toggle-content .button-toggle:hover svg' => 'fill: {{VALUE}}',
-						'{{WRAPPER}} .ova-toggle-content .button-toggle:hover svg path' => 'fill: {{VALUE}}',
+						'{{WRAPPER}} .xp-toggle-content .button-toggle:hover i' => 'color: {{VALUE}}',
+						'{{WRAPPER}} .xp-toggle-content .button-toggle:hover svg' => 'fill: {{VALUE}}',
+						'{{WRAPPER}} .xp-toggle-content .button-toggle:hover svg path' => 'fill: {{VALUE}}',
 					],
 				]
 			);
@@ -434,7 +434,7 @@ class Mellis_Elementor_Toggle_Content extends Widget_Base {
 				\Elementor\Group_Control_Border::get_type(),
 				[
 					'name' => 'icon_border',
-					'selector' => '{{WRAPPER}} .ova-toggle-content .button-toggle',
+					'selector' => '{{WRAPPER}} .xp-toggle-content .button-toggle',
 				]
 			);
 
@@ -442,17 +442,17 @@ class Mellis_Elementor_Toggle_Content extends Widget_Base {
 				\Elementor\Group_Control_Box_Shadow::get_type(),
 				[
 					'name' => 'icon_box_shadow',
-					'selector' => '{{WRAPPER}} .ova-toggle-content .button-toggle',
+					'selector' => '{{WRAPPER}} .xp-toggle-content .button-toggle',
 				]
 			);
 
 			$this->add_control(
 				'icon_border_color_hover',
 				[
-					'label' => esc_html__( 'Border Color Hover', 'mellis' ),
+					'label' => esc_html__( 'Border Color Hover', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-toggle-content .button-toggle:hover' => 'border-color: {{VALUE}}',
+						'{{WRAPPER}} .xp-toggle-content .button-toggle:hover' => 'border-color: {{VALUE}}',
 					],
 				]
 			);
@@ -460,11 +460,11 @@ class Mellis_Elementor_Toggle_Content extends Widget_Base {
 			$this->add_control(
 				'icon_border_radius',
 				[
-					'label' => esc_html__( 'Border Radius', 'mellis' ),
+					'label' => esc_html__( 'Border Radius', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', '%', 'em', 'rem' ],
 					'selectors' => [
-						'{{WRAPPER}} .ova-toggle-content .button-toggle' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+						'{{WRAPPER}} .xp-toggle-content .button-toggle' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 					],
 				]
 			);
@@ -474,7 +474,7 @@ class Mellis_Elementor_Toggle_Content extends Widget_Base {
 		$this->start_controls_section(
 			'content_title_section',
 			[
-				'label' => esc_html__( 'Content Title', 'mellis' ),
+				'label' => esc_html__( 'Content Title', 'spalisho' ),
 				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -483,17 +483,17 @@ class Mellis_Elementor_Toggle_Content extends Widget_Base {
 				\Elementor\Group_Control_Typography::get_type(),
 				[
 					'name' => 'content_title_typography',
-					'selector' => '{{WRAPPER}} .ova-toggle-content .content .wrap-content .content-title',
+					'selector' => '{{WRAPPER}} .xp-toggle-content .content .wrap-content .content-title',
 				]
 			);
 
 			$this->add_control(
 				'content_title_color',
 				[
-					'label' => esc_html__( 'Color', 'mellis' ),
+					'label' => esc_html__( 'Color', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-toggle-content .content .wrap-content .content-title' => 'color: {{VALUE}}',
+						'{{WRAPPER}} .xp-toggle-content .content .wrap-content .content-title' => 'color: {{VALUE}}',
 					],
 				]
 			);
@@ -501,11 +501,11 @@ class Mellis_Elementor_Toggle_Content extends Widget_Base {
 			$this->add_responsive_control(
 				'content_title_margin',
 				[
-					'label' => esc_html__( 'Margin', 'mellis' ),
+					'label' => esc_html__( 'Margin', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', '%', 'em', 'rem' ],
 					'selectors' => [
-						'{{WRAPPER}} .ova-toggle-content .content .wrap-content .content-title' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+						'{{WRAPPER}} .xp-toggle-content .content .wrap-content .content-title' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 					],
 				]
 			);
@@ -515,7 +515,7 @@ class Mellis_Elementor_Toggle_Content extends Widget_Base {
 		$this->start_controls_section(
 			'content_description_section',
 			[
-				'label' => esc_html__( 'Description', 'mellis' ),
+				'label' => esc_html__( 'Description', 'spalisho' ),
 				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -524,17 +524,17 @@ class Mellis_Elementor_Toggle_Content extends Widget_Base {
 				\Elementor\Group_Control_Typography::get_type(),
 				[
 					'name' => 'content_description_typography',
-					'selector' => '{{WRAPPER}} .ova-toggle-content .content .wrap-content .description',
+					'selector' => '{{WRAPPER}} .xp-toggle-content .content .wrap-content .description',
 				]
 			);
 
 			$this->add_control(
 				'content_description_color',
 				[
-					'label' => esc_html__( 'Color', 'mellis' ),
+					'label' => esc_html__( 'Color', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-toggle-content .content .wrap-content .description' => 'color: {{VALUE}}',
+						'{{WRAPPER}} .xp-toggle-content .content .wrap-content .description' => 'color: {{VALUE}}',
 					],
 				]
 			);
@@ -542,11 +542,11 @@ class Mellis_Elementor_Toggle_Content extends Widget_Base {
 			$this->add_responsive_control(
 				'content_description_margin',
 				[
-					'label' => esc_html__( 'Margin', 'mellis' ),
+					'label' => esc_html__( 'Margin', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', '%', 'em', 'rem' ],
 					'selectors' => [
-						'{{WRAPPER}} .ova-toggle-content .content .wrap-content .description' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+						'{{WRAPPER}} .xp-toggle-content .content .wrap-content .description' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 					],
 				]
 			);
@@ -556,7 +556,7 @@ class Mellis_Elementor_Toggle_Content extends Widget_Base {
 		$this->start_controls_section(
 			'button_contact_section',
 			[
-				'label' => esc_html__( 'Button Contact', 'mellis' ),
+				'label' => esc_html__( 'Button Contact', 'spalisho' ),
 				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -565,17 +565,17 @@ class Mellis_Elementor_Toggle_Content extends Widget_Base {
 				\Elementor\Group_Control_Typography::get_type(),
 				[
 					'name' => 'button_contact_typography',
-					'selector' => '{{WRAPPER}} .ova-toggle-content .content .wrap-content .button-contact',
+					'selector' => '{{WRAPPER}} .xp-toggle-content .content .wrap-content .button-contact',
 				]
 			);
 
 			$this->add_control(
 				'button_contact_color',
 				[
-					'label' => esc_html__( 'Color', 'mellis' ),
+					'label' => esc_html__( 'Color', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-toggle-content .content .wrap-content .button-contact' => 'color: {{VALUE}}',
+						'{{WRAPPER}} .xp-toggle-content .content .wrap-content .button-contact' => 'color: {{VALUE}}',
 					],
 				]
 			);
@@ -583,10 +583,10 @@ class Mellis_Elementor_Toggle_Content extends Widget_Base {
 			$this->add_control(
 				'button_contact_color_hover',
 				[
-					'label' => esc_html__( 'Color Hover', 'mellis' ),
+					'label' => esc_html__( 'Color Hover', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-toggle-content .content .wrap-content .button-contact:hover' => 'color: {{VALUE}}',
+						'{{WRAPPER}} .xp-toggle-content .content .wrap-content .button-contact:hover' => 'color: {{VALUE}}',
 					],
 				]
 			);
@@ -594,10 +594,10 @@ class Mellis_Elementor_Toggle_Content extends Widget_Base {
 			$this->add_control(
 				'button_contact_background_color',
 				[
-					'label' => esc_html__( 'Background Color', 'mellis' ),
+					'label' => esc_html__( 'Background Color', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-toggle-content .content .wrap-content .button-contact' => 'background-color: {{VALUE}}',
+						'{{WRAPPER}} .xp-toggle-content .content .wrap-content .button-contact' => 'background-color: {{VALUE}}',
 					],
 				]
 			);
@@ -605,10 +605,10 @@ class Mellis_Elementor_Toggle_Content extends Widget_Base {
 			$this->add_control(
 				'button_contact_background_color_hover',
 				[
-					'label' => esc_html__( 'Background Color Hover', 'mellis' ),
+					'label' => esc_html__( 'Background Color Hover', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-toggle-content .content .wrap-content .button-contact:hover' => 'background-color: {{VALUE}}',
+						'{{WRAPPER}} .xp-toggle-content .content .wrap-content .button-contact:hover' => 'background-color: {{VALUE}}',
 					],
 				]
 			);
@@ -616,11 +616,11 @@ class Mellis_Elementor_Toggle_Content extends Widget_Base {
 			$this->add_responsive_control(
 				'button_contact_padding',
 				[
-					'label' => esc_html__( 'Padding', 'mellis' ),
+					'label' => esc_html__( 'Padding', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', '%', 'em', 'rem' ],
 					'selectors' => [
-						'{{WRAPPER}} .ova-toggle-content .content .wrap-content .button-contact' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+						'{{WRAPPER}} .xp-toggle-content .content .wrap-content .button-contact' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 					],
 				]
 			);
@@ -628,11 +628,11 @@ class Mellis_Elementor_Toggle_Content extends Widget_Base {
 			$this->add_responsive_control(
 				'button_contact_margin',
 				[
-					'label' => esc_html__( 'Margin', 'mellis' ),
+					'label' => esc_html__( 'Margin', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', '%', 'em', 'rem' ],
 					'selectors' => [
-						'{{WRAPPER}} .ova-toggle-content .content .wrap-content .button-contact' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+						'{{WRAPPER}} .xp-toggle-content .content .wrap-content .button-contact' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 					],
 				]
 			);
@@ -642,7 +642,7 @@ class Mellis_Elementor_Toggle_Content extends Widget_Base {
 		$this->start_controls_section(
 			'contact_info_title_section',
 			[
-				'label' => esc_html__( 'Contact Info Title', 'mellis' ),
+				'label' => esc_html__( 'Contact Info Title', 'spalisho' ),
 				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -651,17 +651,17 @@ class Mellis_Elementor_Toggle_Content extends Widget_Base {
 				\Elementor\Group_Control_Typography::get_type(),
 				[
 					'name' => 'contact_info_title_typography',
-					'selector' => '{{WRAPPER}} .ova-toggle-content .content .wrap-content .contact-info-title',
+					'selector' => '{{WRAPPER}} .xp-toggle-content .content .wrap-content .contact-info-title',
 				]
 			);
 
 			$this->add_control(
 				'contact_info_title_color',
 				[
-					'label' => esc_html__( 'Color', 'mellis' ),
+					'label' => esc_html__( 'Color', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-toggle-content .content .wrap-content .contact-info-title' => 'color: {{VALUE}}',
+						'{{WRAPPER}} .xp-toggle-content .content .wrap-content .contact-info-title' => 'color: {{VALUE}}',
 					],
 				]
 			);
@@ -669,11 +669,11 @@ class Mellis_Elementor_Toggle_Content extends Widget_Base {
 			$this->add_responsive_control(
 				'contact_info_title_margin',
 				[
-					'label' => esc_html__( 'Margin', 'mellis' ),
+					'label' => esc_html__( 'Margin', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', '%', 'em', 'rem' ],
 					'selectors' => [
-						'{{WRAPPER}} .ova-toggle-content .content .wrap-content .contact-info-title' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+						'{{WRAPPER}} .xp-toggle-content .content .wrap-content .contact-info-title' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 					],
 				]
 			);
@@ -683,7 +683,7 @@ class Mellis_Elementor_Toggle_Content extends Widget_Base {
 		$this->start_controls_section(
 			'contact_item_section',
 			[
-				'label' => esc_html__( 'Contact Item', 'mellis' ),
+				'label' => esc_html__( 'Contact Item', 'spalisho' ),
 				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -692,17 +692,17 @@ class Mellis_Elementor_Toggle_Content extends Widget_Base {
 				\Elementor\Group_Control_Typography::get_type(),
 				[
 					'name' => 'contact_item_typography',
-					'selector' => '{{WRAPPER}} .ova-toggle-content .content .wrap-content .contact-item',
+					'selector' => '{{WRAPPER}} .xp-toggle-content .content .wrap-content .contact-item',
 				]
 			);
 
 			$this->add_control(
 				'contact_item_color',
 				[
-					'label' => esc_html__( 'Color', 'mellis' ),
+					'label' => esc_html__( 'Color', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-toggle-content .content .wrap-content .contact-item' => 'color: {{VALUE}}',
+						'{{WRAPPER}} .xp-toggle-content .content .wrap-content .contact-item' => 'color: {{VALUE}}',
 					],
 				]
 			);
@@ -710,7 +710,7 @@ class Mellis_Elementor_Toggle_Content extends Widget_Base {
 			$this->add_responsive_control(
 				'icon_spacing',
 				[
-					'label' => esc_html__( 'Icon Spacing', 'mellis' ),
+					'label' => esc_html__( 'Icon Spacing', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::SLIDER,
 					'size_units' => [ 'px', '%', 'em', 'rem' ],
 					'range' => [
@@ -725,7 +725,7 @@ class Mellis_Elementor_Toggle_Content extends Widget_Base {
 						],
 					],
 					'selectors' => [
-						'{{WRAPPER}} .ova-toggle-content .content .wrap-content .contact-item' => 'gap: {{SIZE}}{{UNIT}};',
+						'{{WRAPPER}} .xp-toggle-content .content .wrap-content .contact-item' => 'gap: {{SIZE}}{{UNIT}};',
 					],
 				]
 			);
@@ -733,11 +733,11 @@ class Mellis_Elementor_Toggle_Content extends Widget_Base {
 			$this->add_responsive_control(
 				'contact_item_margin',
 				[
-					'label' => esc_html__( 'Margin', 'mellis' ),
+					'label' => esc_html__( 'Margin', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', '%', 'em', 'rem' ],
 					'selectors' => [
-						'{{WRAPPER}} .ova-toggle-content .content .wrap-content .contact-item' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+						'{{WRAPPER}} .xp-toggle-content .content .wrap-content .contact-item' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 					],
 				]
 			);
@@ -747,7 +747,7 @@ class Mellis_Elementor_Toggle_Content extends Widget_Base {
 		$this->start_controls_section(
 			'social_section',
 			[
-				'label' => esc_html__( 'Socials', 'mellis' ),
+				'label' => esc_html__( 'Socials', 'spalisho' ),
 				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -755,7 +755,7 @@ class Mellis_Elementor_Toggle_Content extends Widget_Base {
 			$this->add_responsive_control(
 				'social_spacing',
 				[
-					'label' => esc_html__( 'Spacing', 'mellis' ),
+					'label' => esc_html__( 'Spacing', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::SLIDER,
 					'size_units' => [ 'px', '%', 'em', 'rem' ],
 					'range' => [
@@ -770,7 +770,7 @@ class Mellis_Elementor_Toggle_Content extends Widget_Base {
 						],
 					],
 					'selectors' => [
-						'{{WRAPPER}} .ova-toggle-content .content .wrap-content .list-social' => 'gap: {{SIZE}}{{UNIT}};',
+						'{{WRAPPER}} .xp-toggle-content .content .wrap-content .list-social' => 'gap: {{SIZE}}{{UNIT}};',
 					],
 				]
 			);
@@ -778,11 +778,11 @@ class Mellis_Elementor_Toggle_Content extends Widget_Base {
 			$this->add_responsive_control(
 				'social_margin',
 				[
-					'label' => esc_html__( 'Margin', 'mellis' ),
+					'label' => esc_html__( 'Margin', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', '%', 'em', 'rem' ],
 					'selectors' => [
-						'{{WRAPPER}} .ova-toggle-content .content .wrap-content .list-social ' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+						'{{WRAPPER}} .xp-toggle-content .content .wrap-content .list-social ' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 					],
 				]
 			);
@@ -790,7 +790,7 @@ class Mellis_Elementor_Toggle_Content extends Widget_Base {
 			$this->add_control(
 				'social_background_heading',
 				[
-					'label' => esc_html__( 'Background', 'mellis' ),
+					'label' => esc_html__( 'Background', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::HEADING,
 					'separator' => 'before',
 				]
@@ -799,7 +799,7 @@ class Mellis_Elementor_Toggle_Content extends Widget_Base {
 			$this->add_responsive_control(
 				'social_background_size',
 				[
-					'label' => esc_html__( 'Size', 'mellis' ),
+					'label' => esc_html__( 'Size', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::SLIDER,
 					'size_units' => [ 'px', '%', 'em', 'rem' ],
 					'range' => [
@@ -814,7 +814,7 @@ class Mellis_Elementor_Toggle_Content extends Widget_Base {
 						],
 					],
 					'selectors' => [
-						'{{WRAPPER}} .ova-toggle-content .content .wrap-content .list-social .social' => 'width: {{SIZE}}{{UNIT}};height: {{SIZE}}{{UNIT}};',
+						'{{WRAPPER}} .xp-toggle-content .content .wrap-content .list-social .social' => 'width: {{SIZE}}{{UNIT}};height: {{SIZE}}{{UNIT}};',
 					],
 				]
 			);
@@ -822,10 +822,10 @@ class Mellis_Elementor_Toggle_Content extends Widget_Base {
 			$this->add_control(
 				'social_background_color',
 				[
-					'label' => esc_html__( 'Color', 'mellis' ),
+					'label' => esc_html__( 'Color', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-toggle-content .content .wrap-content .list-social .social' => 'background-color: {{VALUE}}',
+						'{{WRAPPER}} .xp-toggle-content .content .wrap-content .list-social .social' => 'background-color: {{VALUE}}',
 					],
 				]
 			);
@@ -833,10 +833,10 @@ class Mellis_Elementor_Toggle_Content extends Widget_Base {
 			$this->add_control(
 				'social_background_color_hover',
 				[
-					'label' => esc_html__( 'Color Hover', 'mellis' ),
+					'label' => esc_html__( 'Color Hover', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-toggle-content .content .wrap-content .list-social .social:hover ' => 'background-color: {{VALUE}}',
+						'{{WRAPPER}} .xp-toggle-content .content .wrap-content .list-social .social:hover ' => 'background-color: {{VALUE}}',
 					],
 				]
 			);
@@ -844,11 +844,11 @@ class Mellis_Elementor_Toggle_Content extends Widget_Base {
 			$this->add_responsive_control(
 				'social_background_border_radius',
 				[
-					'label' => esc_html__( 'Border Radius', 'mellis' ),
+					'label' => esc_html__( 'Border Radius', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', '%', 'em', 'rem' ],
 					'selectors' => [
-						'{{WRAPPER}} .ova-toggle-content .content .wrap-content .list-social .social' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+						'{{WRAPPER}} .xp-toggle-content .content .wrap-content .list-social .social' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 					],
 				]
 			);
@@ -856,7 +856,7 @@ class Mellis_Elementor_Toggle_Content extends Widget_Base {
 			$this->add_control(
 				'social_icon_heading',
 				[
-					'label' => esc_html__( 'Icon', 'mellis' ),
+					'label' => esc_html__( 'Icon', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::HEADING,
 					'separator' => 'before',
 				]
@@ -865,7 +865,7 @@ class Mellis_Elementor_Toggle_Content extends Widget_Base {
 			$this->add_responsive_control(
 				'social_icon_size',
 				[
-					'label' => esc_html__( 'Size', 'mellis' ),
+					'label' => esc_html__( 'Size', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::SLIDER,
 					'size_units' => [ 'px', '%', 'em', 'rem' ],
 					'range' => [
@@ -880,8 +880,8 @@ class Mellis_Elementor_Toggle_Content extends Widget_Base {
 						],
 					],
 					'selectors' => [
-						'{{WRAPPER}} .ova-toggle-content .content .wrap-content .list-social .social i' => 'font-size: {{SIZE}}{{UNIT}};',
-						'{{WRAPPER}} .ova-toggle-content .content .wrap-content .list-social .social svg' => 'width: {{SIZE}}{{UNIT}}; height: {{SIZE}}{{UNIT}};',
+						'{{WRAPPER}} .xp-toggle-content .content .wrap-content .list-social .social i' => 'font-size: {{SIZE}}{{UNIT}};',
+						'{{WRAPPER}} .xp-toggle-content .content .wrap-content .list-social .social svg' => 'width: {{SIZE}}{{UNIT}}; height: {{SIZE}}{{UNIT}};',
 					],
 				]
 			);
@@ -889,11 +889,11 @@ class Mellis_Elementor_Toggle_Content extends Widget_Base {
 			$this->add_control(
 				'social_icon_color',
 				[
-					'label' => esc_html__( 'Color', 'mellis' ),
+					'label' => esc_html__( 'Color', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-toggle-content .content .wrap-content .list-social .social i' => 'color: {{VALUE}}',
-						'{{WRAPPER}} .ova-toggle-content .content .wrap-content .list-social .social svg' => 'fill: {{VALUE}}',
+						'{{WRAPPER}} .xp-toggle-content .content .wrap-content .list-social .social i' => 'color: {{VALUE}}',
+						'{{WRAPPER}} .xp-toggle-content .content .wrap-content .list-social .social svg' => 'fill: {{VALUE}}',
 					],
 				]
 			);
@@ -901,11 +901,11 @@ class Mellis_Elementor_Toggle_Content extends Widget_Base {
 			$this->add_control(
 				'social_icon_color_hover',
 				[
-					'label' => esc_html__( 'Color Hover', 'mellis' ),
+					'label' => esc_html__( 'Color Hover', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-toggle-content .content .wrap-content .list-social .social:hover i' => 'color: {{VALUE}}',
-						'{{WRAPPER}} .ova-toggle-content .content .wrap-content .list-social .social:hover svg' => 'fill: {{VALUE}}',
+						'{{WRAPPER}} .xp-toggle-content .content .wrap-content .list-social .social:hover i' => 'color: {{VALUE}}',
+						'{{WRAPPER}} .xp-toggle-content .content .wrap-content .list-social .social:hover svg' => 'fill: {{VALUE}}',
 					],
 				]
 			);
@@ -921,7 +921,7 @@ class Mellis_Elementor_Toggle_Content extends Widget_Base {
 
 		$image 		 = 	$settings['image'];
 		$url		 = 	$settings['image']['url'];
-		$image_alt 	 =  ( isset( $settings['image']['alt']) &&  $settings['image']['alt'] != '' ) ?  $settings['image']['alt'] : esc_html__( 'Toggle content', 'mellis' );
+		$image_alt 	 =  ( isset( $settings['image']['alt']) &&  $settings['image']['alt'] != '' ) ?  $settings['image']['alt'] : esc_html__( 'Toggle content', 'spalisho' );
 
 		$content_title 	= $settings['content_title'];
 		$description 	= $settings['description'];
@@ -937,15 +937,15 @@ class Mellis_Elementor_Toggle_Content extends Widget_Base {
 		$items_2 		= $settings['items_2'];
 
 		?>
-			<nav class="ova-toggle-content">
-	            <button class="button-toggle" aria-label="<?php echo esc_html__( 'Button toggle', 'mellis' );?>">
+			<nav class="xp-toggle-content">
+	            <button class="button-toggle" aria-label="<?php echo esc_html__( 'Button toggle', 'spalisho' );?>">
 	            	<?php if( !empty($icon['value']) ) :
 					    \Elementor\Icons_Manager::render_icon( $icon, [ 'aria-hidden' => 'true' ] );
 	            	endif; ?>
 	            </button>
 	            <nav class="content <?php echo  esc_attr( $settings['menu_pos'] ); ?>" >
 		            <div class="close-menu">
-		            	<i class="ovaicon-cancel"></i>
+		            	<i class="xpicon-cancel"></i>
 		            </div>
 					<div class="wrap-content">
 						<?php if( !empty( $url ) ) : ?>
@@ -998,7 +998,7 @@ class Mellis_Elementor_Toggle_Content extends Widget_Base {
 				           	   	$social_nofollow  =  ( isset( $social_link['nofollow'] ) && $social_link['nofollow'] ) ? ' rel=nofollow' : '';
 		               			$social_target    =  ( $social_link['is_external'] != '' && $social_link['is_external'] == 'on' ) ? '_blank' : '_self';
 						    ?>
-						    	<a href="<?php echo esc_attr($social_link['url']); ?>" aria-label="<?php echo esc_html__( 'Socials', 'mellis' );?>"
+						    	<a href="<?php echo esc_attr($social_link['url']); ?>" aria-label="<?php echo esc_html__( 'Socials', 'spalisho' );?>"
 						    		class="social <?php echo 'elementor-repeater-item-'.$item_2['_id']; ?>" 
 						    		target="<?php echo esc_attr( $social_target ); ?>" <?php echo esc_attr( $social_nofollow ); ?>>
 						    		<i class="<?php echo esc_attr($social_icon); ?>"></i>
@@ -1014,4 +1014,4 @@ class Mellis_Elementor_Toggle_Content extends Widget_Base {
 		<?php
 	}
 }
-$widgets_manager->register( new Mellis_Elementor_Toggle_Content() );
+$widgets_manager->register( new Spalisho_Elementor_Toggle_Content() );

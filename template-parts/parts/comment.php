@@ -18,7 +18,7 @@ if ( 'div' === $args['style'] ) {
             </div>
             <?php if ( '0' === $comment->comment_approved ) : ?>
                 <em class="comment-awaiting-moderation">
-                    <?php esc_attr_e( 'Your comment is awaiting moderation.', 'mellis' ); ?>
+                    <?php esc_attr_e( 'Your comment is awaiting moderation.', 'spalisho' ); ?>
                 </em>
                 <br/>
             <?php endif; ?>
@@ -47,7 +47,7 @@ if ( 'div' === $args['style'] ) {
                     )
                 );
                 ?>
-                <?php edit_comment_link( esc_html__( 'Edit', 'mellis' ), '  ', '' ); ?>
+                <?php edit_comment_link( esc_html__( 'Edit', 'spalisho' ), '  ', '' ); ?>
             </div>
 
         </div>

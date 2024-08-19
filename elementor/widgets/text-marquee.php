@@ -8,14 +8,14 @@ use Elementor\Group_Control_Border;
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
-class Mellis_Elementor_Text_Marquee extends Widget_Base {
+class Spalisho_Elementor_Text_Marquee extends Widget_Base {
 
 	public function get_name() {
-		return 'mellis_elementor_text_marquee';
+		return 'spalisho_elementor_text_marquee';
 	}
 
 	public function get_title() {
-		return esc_html__( 'Text Marquee', 'mellis' );
+		return esc_html__( 'Text Marquee', 'spalisho' );
 	}
 
 	public function get_icon() {
@@ -23,7 +23,7 @@ class Mellis_Elementor_Text_Marquee extends Widget_Base {
 	}
 
 	public function get_categories() {
-		return [ 'mellis' ];
+		return [ 'spalisho' ];
 	}
 
 	public function get_script_depends() {
@@ -36,14 +36,14 @@ class Mellis_Elementor_Text_Marquee extends Widget_Base {
 		$this->start_controls_section(
 			'section_content',
 			[
-				'label' => esc_html__( 'Content', 'mellis' ),
+				'label' => esc_html__( 'Content', 'spalisho' ),
 			]
 		);	
 
 			$this->add_control(
 				'icon',
 				[
-					'label' => esc_html__( 'Icon', 'mellis' ),
+					'label' => esc_html__( 'Icon', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::ICONS,
 					'default' => [
 						'value' => 'flaticon flaticon-flower',
@@ -57,9 +57,9 @@ class Mellis_Elementor_Text_Marquee extends Widget_Base {
 			$repeater->add_control(
 				'text',
 				[
-					'label' => esc_html__( 'Text', 'mellis' ),
+					'label' => esc_html__( 'Text', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::TEXTAREA,
-					'default' => esc_html__( 'Your Text' , 'mellis' ),
+					'default' => esc_html__( 'Your Text' , 'spalisho' ),
 					'show_label' => true,
 				]
 			);
@@ -75,7 +75,7 @@ class Mellis_Elementor_Text_Marquee extends Widget_Base {
 			$repeater->add_control(
 				'color',
 				[
-					'label' => esc_html__( 'Color', 'mellis' ),
+					'label' => esc_html__( 'Color', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::COLOR,
 					'selectors' => [
 						'{{WRAPPER}} {{CURRENT_ITEM}}' => 'color: {{VALUE}}',
@@ -86,21 +86,21 @@ class Mellis_Elementor_Text_Marquee extends Widget_Base {
 			$this->add_control(
 				'items',
 				[
-					'label' => esc_html__( 'Items', 'mellis' ),
+					'label' => esc_html__( 'Items', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::REPEATER,
 					'fields' => $repeater->get_controls(),
 					'default' => [
 						[
-							'text' => esc_html__( '100% Natural & Paraben-Free','mellis' ),
+							'text' => esc_html__( '100% Natural & Paraben-Free','spalisho' ),
 						],
 						[
-							'text' => esc_html__( 'Get 20% Off For Your First Order','mellis' ),
+							'text' => esc_html__( 'Get 20% Off For Your First Order','spalisho' ),
 						],
 						[
-							'text' => esc_html__( 'No Artificial Fragrances', 'mellis' ),
+							'text' => esc_html__( 'No Artificial Fragrances', 'spalisho' ),
 						],
 						[
-							'text' => esc_html__( 'Completely Aluminum Free', 'mellis' ),
+							'text' => esc_html__( 'Completely Aluminum Free', 'spalisho' ),
 						],
 					],
 				]
@@ -111,7 +111,7 @@ class Mellis_Elementor_Text_Marquee extends Widget_Base {
 		$this->start_controls_section(
 			'general_section_style',
 			[
-				'label' => esc_html__( 'General', 'mellis' ),
+				'label' => esc_html__( 'General', 'spalisho' ),
 				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -121,14 +121,14 @@ class Mellis_Elementor_Text_Marquee extends Widget_Base {
 				[
 					'name' => 'general_background',
 					'types' => [ 'classic', 'gradient' ],
-					'selector' => '{{WRAPPER}} .ova-text-marquee',
+					'selector' => '{{WRAPPER}} .xp-text-marquee',
 				]
 			);
 
 			$this->add_responsive_control(
 				'general_opacity',
 				[
-					'label' => esc_html__( 'Opacity', 'mellis' ),
+					'label' => esc_html__( 'Opacity', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::SLIDER,
 					'size_units' => [ 'px' ],
 					'range' => [
@@ -139,7 +139,7 @@ class Mellis_Elementor_Text_Marquee extends Widget_Base {
 						],
 					],
 					'selectors' => [
-						'{{WRAPPER}} .ova-text-marquee' => 'opacity: {{SIZE}};',
+						'{{WRAPPER}} .xp-text-marquee' => 'opacity: {{SIZE}};',
 					],
 				]
 			);
@@ -147,11 +147,11 @@ class Mellis_Elementor_Text_Marquee extends Widget_Base {
 			$this->add_responsive_control(
 				'general_padding',
 				[
-					'label' => esc_html__( 'Padding', 'mellis' ),
+					'label' => esc_html__( 'Padding', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', '%', 'em', 'rem' ],
 					'selectors' => [
-						'{{WRAPPER}} .ova-text-marquee' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+						'{{WRAPPER}} .xp-text-marquee' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 					],
 				]
 			);
@@ -161,7 +161,7 @@ class Mellis_Elementor_Text_Marquee extends Widget_Base {
 		$this->start_controls_section(
 			'icon_section_style',
 			[
-				'label' => esc_html__( 'Icon', 'mellis' ),
+				'label' => esc_html__( 'Icon', 'spalisho' ),
 				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -169,7 +169,7 @@ class Mellis_Elementor_Text_Marquee extends Widget_Base {
 			$this->add_responsive_control(
 				'icon_size',
 				[
-					'label' => esc_html__( 'Size', 'mellis' ),
+					'label' => esc_html__( 'Size', 'spalisho' ),
 					'type' => Controls_Manager::SLIDER,
 					'size_units' => [ 'px' ],
 					'range' => [
@@ -180,8 +180,8 @@ class Mellis_Elementor_Text_Marquee extends Widget_Base {
 						]
 					],
 					'selectors' => [
-						'{{WRAPPER}} .ova-text-marquee .icon i' => 'font-size: {{SIZE}}{{UNIT}};',
-						'{{WRAPPER}} .ova-text-marquee .icon svg' => 'width: {{SIZE}}{{UNIT}};height: {{SIZE}}{{UNIT}};',
+						'{{WRAPPER}} .xp-text-marquee .icon i' => 'font-size: {{SIZE}}{{UNIT}};',
+						'{{WRAPPER}} .xp-text-marquee .icon svg' => 'width: {{SIZE}}{{UNIT}};height: {{SIZE}}{{UNIT}};',
 					],
 				]
 			);
@@ -189,11 +189,11 @@ class Mellis_Elementor_Text_Marquee extends Widget_Base {
 			$this->add_control(
 				'icon_color',
 				[
-					'label' => esc_html__( 'Color', 'mellis' ),
+					'label' => esc_html__( 'Color', 'spalisho' ),
 					'type' => Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-text-marquee .icon i' => 'color : {{VALUE}};',
-						'{{WRAPPER}} .ova-text-marquee .icon svg path' => 'fill : {{VALUE}};'
+						'{{WRAPPER}} .xp-text-marquee .icon i' => 'color : {{VALUE}};',
+						'{{WRAPPER}} .xp-text-marquee .icon svg path' => 'fill : {{VALUE}};'
 					],
 				]
 			);
@@ -201,11 +201,11 @@ class Mellis_Elementor_Text_Marquee extends Widget_Base {
 			$this->add_responsive_control(
 				'icon_margin',
 				[
-					'label' => esc_html__( 'Margin', 'mellis' ),
+					'label' => esc_html__( 'Margin', 'spalisho' ),
 					'type' => Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', 'em', '%' ],
 					'selectors' => [
-					   '{{WRAPPER}} .ova-text-marquee .icon' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+					   '{{WRAPPER}} .xp-text-marquee .icon' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 					],
 				]
 			);
@@ -215,7 +215,7 @@ class Mellis_Elementor_Text_Marquee extends Widget_Base {
 		$this->start_controls_section(
 			'text_section_style',
 			[
-				'label' => esc_html__( 'Text', 'mellis' ),
+				'label' => esc_html__( 'Text', 'spalisho' ),
 				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -224,17 +224,17 @@ class Mellis_Elementor_Text_Marquee extends Widget_Base {
 				\Elementor\Group_Control_Typography::get_type(),
 				[
 					'name' => 'content_typography',
-					'selector' => '{{WRAPPER}} .ova-text-marquee .content .text',
+					'selector' => '{{WRAPPER}} .xp-text-marquee .content .text',
 				]
 			);
 
 			$this->add_control(
 				'text_color',
 				[
-					'label' => esc_html__( 'Color', 'mellis' ),
+					'label' => esc_html__( 'Color', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .ova-text-marquee .content .text' => 'color: {{VALUE}}',
+						'{{WRAPPER}} .xp-text-marquee .content .text' => 'color: {{VALUE}}',
 					],
 				]
 			);
@@ -242,7 +242,7 @@ class Mellis_Elementor_Text_Marquee extends Widget_Base {
 			$this->add_responsive_control(
 				'text_wrapper_width',
 				[
-					'label' => esc_html__( 'Width (%)', 'mellis' ),
+					'label' => esc_html__( 'Width (%)', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::SLIDER,
 					'size_units' => [ '%' ],
 					'range' => [
@@ -255,8 +255,8 @@ class Mellis_Elementor_Text_Marquee extends Widget_Base {
 						'unit' => '%',
 					],
 					'selectors' => [
-						'{{WRAPPER}} .ova-text-marquee .content-wrapper' => 'width: {{SIZE}}{{UNIT}};',
-						'{{WRAPPER}} .ova-text-marquee .content-wrapper-2' => 'width: {{SIZE}}{{UNIT}};',
+						'{{WRAPPER}} .xp-text-marquee .content-wrapper' => 'width: {{SIZE}}{{UNIT}};',
+						'{{WRAPPER}} .xp-text-marquee .content-wrapper-2' => 'width: {{SIZE}}{{UNIT}};',
 					],
 				]
 			);
@@ -264,7 +264,7 @@ class Mellis_Elementor_Text_Marquee extends Widget_Base {
 			$this->add_responsive_control(
 				'space_between',
 				[
-					'label' => esc_html__( 'Space Between', 'mellis' ),
+					'label' => esc_html__( 'Space Between', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::SLIDER,
 					'size_units' => [ 'px', '%', 'em', 'rem' ],
 					'range' => [
@@ -279,7 +279,7 @@ class Mellis_Elementor_Text_Marquee extends Widget_Base {
 						],
 					],
 					'selectors' => [
-						'{{WRAPPER}} .ova-text-marquee .spacing' => 'width: {{SIZE}}{{UNIT}};',
+						'{{WRAPPER}} .xp-text-marquee .spacing' => 'width: {{SIZE}}{{UNIT}};',
 					],
 				]
 			);
@@ -287,13 +287,13 @@ class Mellis_Elementor_Text_Marquee extends Widget_Base {
 			$this->add_control(
 				'time_duration',
 				[
-					'label' => esc_html__( 'Time Duration', 'mellis' ),
+					'label' => esc_html__( 'Time Duration', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::SELECT,
 					'default' => 'normal',
 					'options' => [
-						'slow' => esc_html__( 'Slow', 'mellis' ),
-						'normal' => esc_html__( 'Normal', 'mellis' ),
-						'fast' => esc_html__( 'Fast', 'mellis' ),
+						'slow' => esc_html__( 'Slow', 'spalisho' ),
+						'normal' => esc_html__( 'Normal', 'spalisho' ),
+						'fast' => esc_html__( 'Fast', 'spalisho' ),
 					],
 				]
 			);
@@ -301,12 +301,12 @@ class Mellis_Elementor_Text_Marquee extends Widget_Base {
 			$this->add_control(
 				'direction',
 				[
-					'label' => esc_html__( 'Direction', 'mellis' ),
+					'label' => esc_html__( 'Direction', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::SELECT,
 					'default' => 'rtl',
 					'options' => [
-						'ltr' => esc_html__( 'Left to Right', 'mellis' ),
-						'rtl' => esc_html__( 'Right to Left', 'mellis' ),
+						'ltr' => esc_html__( 'Left to Right', 'spalisho' ),
+						'rtl' => esc_html__( 'Right to Left', 'spalisho' ),
 					],
 				]
 			);
@@ -324,7 +324,7 @@ class Mellis_Elementor_Text_Marquee extends Widget_Base {
 
 		?>
 
-			<div class="ova-text-marquee duration-<?php echo esc_attr($time_duration); ?> direction-<?php echo esc_attr($direction); ?>">
+			<div class="xp-text-marquee duration-<?php echo esc_attr($time_duration); ?> direction-<?php echo esc_attr($direction); ?>">
 
 				<?php if( is_array($items) && $items ) : ?>
 
@@ -376,4 +376,4 @@ class Mellis_Elementor_Text_Marquee extends Widget_Base {
 
 	
 }
-$widgets_manager->register( new Mellis_Elementor_Text_Marquee() );
+$widgets_manager->register( new Spalisho_Elementor_Text_Marquee() );

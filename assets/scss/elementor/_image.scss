@@ -1,7 +1,7 @@
 .image-box{
 
 	&.template_1{
-		.ova-img{
+		.xp-img{
 			display: flex;
 			justify-content: right;
 			padding-top: 70px;
@@ -45,7 +45,7 @@
 	&.template_2{
     	display: flex;
 
-		.ova-img{
+		.xp-img{
 			position: relative;
 			display: inline-flex;
 			height: auto;
@@ -74,7 +74,7 @@
 	}
 
 	&.template_3{
-		.ova-img{
+		.xp-img{
 		    display: inline-flex;
 		    background-position: bottom left; 
 			background-repeat: no-repeat; 
