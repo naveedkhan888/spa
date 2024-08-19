@@ -49,8 +49,8 @@ function ovasev_get_template( $template_name, $args = array(), $tempate_path = '
 }
 
 
-add_filter( 'mellis_header_customize', 'mellis_header_customize_sev', 10, 1 );
-function mellis_header_customize_sev( $header ){
+add_filter( 'spalisho_header_customize', 'spalisho_header_customize_sev', 10, 1 );
+function spalisho_header_customize_sev( $header ){
 
 
 	if( is_tax( 'cat_sev' ) ||  get_query_var( 'cat_sev' ) != '' || is_post_type_archive( 'ova_sev' ) ){
@@ -67,8 +67,8 @@ function mellis_header_customize_sev( $header ){
 }
 
 
-add_filter( 'mellis_header_bg_customize', 'mellis_header_bg_customize_sev', 10, 1 );
-function mellis_header_bg_customize_sev( $bg ){
+add_filter( 'spalisho_header_bg_customize', 'spalisho_header_bg_customize_sev', 10, 1 );
+function spalisho_header_bg_customize_sev( $bg ){
 
 	if( is_tax( 'cat_sev' ) ||  get_query_var( 'cat_sev' ) != '' || is_post_type_archive( 'ova_sev' ) ){
 
@@ -78,7 +78,7 @@ function mellis_header_bg_customize_sev( $bg ){
 
 		$bg = get_theme_mod( 'single_background_sev', '' );
 
-		$current_id = mellis_get_current_id();
+		$current_id = spalisho_get_current_id();
         $header_bg_source =  get_the_post_thumbnail_url( $current_id, 'full' );
 
         if( $header_bg_source ){
@@ -91,8 +91,8 @@ function mellis_header_bg_customize_sev( $bg ){
 }
 
 
-add_filter( 'mellis_footer_customize', 'mellis_footer_customize_sev', 10, 1 );
-function mellis_footer_customize_sev( $footer ){
+add_filter( 'spalisho_footer_customize', 'spalisho_footer_customize_sev', 10, 1 );
+function spalisho_footer_customize_sev( $footer ){
     
    if( is_tax( 'cat_sev' ) ||  get_query_var( 'cat_sev' ) != '' || is_post_type_archive( 'ova_sev' ) ){
 

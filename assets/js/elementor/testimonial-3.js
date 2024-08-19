@@ -5,7 +5,7 @@
 	$(window).on('elementor/frontend/init', function () {
 		
         
-		elementorFrontend.hooks.addAction('frontend/element_ready/mellis_elementor_testimonial_3.default', function(){
+		elementorFrontend.hooks.addAction('frontend/element_ready/spalisho_elementor_testimonial_3.default', function(){
 
 			$(".ova-testimonial-3 .slide-testimonials-3").each(function(){
 

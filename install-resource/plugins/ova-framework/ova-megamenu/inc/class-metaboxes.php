@@ -1,8 +1,8 @@
 <?php if (!defined( 'ABSPATH' )) exit;
 
-if( !class_exists('Mellis_Metaboxes') ){
+if( !class_exists('Spalisho_Metaboxes') ){
     
-    class Mellis_Metaboxes {
+    class Spalisho_Metaboxes {
 
         public $prefix = 'ova_met_';
 
@@ -21,7 +21,7 @@ if( !class_exists('Mellis_Metaboxes') ){
                 $this->prefix.'general_setting',          // Unique ID
                 esc_html__('General Setting', 'ova-framework'), // Box title
                 array( $this, 'general_setting' ),   // Content callback, must be of type callable
-                apply_filters( 'mellis_set_header_version' ,array( 'post', 'page' ) )                  // Post type
+                apply_filters( 'spalisho_set_header_version' ,array( 'post', 'page' ) )                  // Post type
             );
 
             // Post Format Setting
@@ -114,7 +114,7 @@ if( !class_exists('Mellis_Metaboxes') ){
             // Header Version
             $header_selected = get_post_meta( $post->ID, $this->prefix.'header_version', true );
 
-            $list_header = apply_filters('mellis_list_header', '') != '' ? array_merge( array( 'global' => 'Global' ),  apply_filters('mellis_list_header', '') ) : array( 'global' => 'Global' );
+            $list_header = apply_filters('spalisho_list_header', '') != '' ? array_merge( array( 'global' => 'Global' ),  apply_filters('spalisho_list_header', '') ) : array( 'global' => 'Global' );
             ?>
             <label for="<?php echo $this->prefix.'header_version' ?>">
                 <?php esc_html_e('Header Version', 'ova-framework'); ?>
@@ -134,7 +134,7 @@ if( !class_exists('Mellis_Metaboxes') ){
             // Footer Version
             $footer_selected = get_post_meta( $post->ID, $this->prefix.'footer_version', true );
 
-            $list_footer = apply_filters('mellis_list_footer', '') != '' ? array_merge( array( 'global' => 'Global' ),  apply_filters('mellis_list_footer', '') ) : array( 'global' => 'Global' );
+            $list_footer = apply_filters('spalisho_list_footer', '') != '' ? array_merge( array( 'global' => 'Global' ),  apply_filters('spalisho_list_footer', '') ) : array( 'global' => 'Global' );
             ?>
             <label for="<?php echo $this->prefix.'footer_version' ?>">
                 <?php esc_html_e('Footer Version', 'ova-framework'); ?>
@@ -154,7 +154,7 @@ if( !class_exists('Mellis_Metaboxes') ){
             // Main layout
             $layout_selected = get_post_meta( $post->ID, $this->prefix.'main_layout', true );
 
-            $layouts = apply_filters('mellis_define_layout', '') != '' ? array_merge( array( 'global' => 'Global' ),  apply_filters('mellis_define_layout', '') ) : array( 'global' => 'Global' );
+            $layouts = apply_filters('spalisho_define_layout', '') != '' ? array_merge( array( 'global' => 'Global' ),  apply_filters('spalisho_define_layout', '') ) : array( 'global' => 'Global' );
             ?>
             <label for="<?php echo $this->prefix.'main_layout' ?>">
                 <?php esc_html_e('Main layout', 'ova-framework'); ?>
@@ -174,7 +174,7 @@ if( !class_exists('Mellis_Metaboxes') ){
             // Wide site
             $wide_site_selected = get_post_meta( $post->ID, $this->prefix.'wide_site', true );
 
-            $wide_site = apply_filters('mellis_define_wide_boxed', '') != '' ? array_merge( array( 'global' => 'Global' ),  apply_filters('mellis_define_wide_boxed', '') ) : array( 'global' => 'Global' );
+            $wide_site = apply_filters('spalisho_define_wide_boxed', '') != '' ? array_merge( array( 'global' => 'Global' ),  apply_filters('spalisho_define_wide_boxed', '') ) : array( 'global' => 'Global' );
             ?>
             <label for="<?php echo $this->prefix.'wide_site' ?>">
                 <?php esc_html_e('Wide Site', 'ova-framework'); ?>
@@ -252,4 +252,4 @@ if( !class_exists('Mellis_Metaboxes') ){
 
 
 
-return new Mellis_Metaboxes();
+return new Spalisho_Metaboxes();

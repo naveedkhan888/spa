@@ -4,7 +4,7 @@
 
 			<header class="page-header">
 				<h1 class="page-title">
-					<?php esc_html_e('Search Results for: ','mellis'); printf( '<span>%s</span>', get_search_query() ); ?>
+					<?php esc_html_e('Search Results for: ','spalisho'); printf( '<span>%s</span>', get_search_query() ); ?>
 				</h1>
 			</header>
 
@@ -26,7 +26,7 @@
 				
 			<?php else : ?>
 			        <p>
-			        	<?php esc_html_e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'mellis' ); ?>
+			        	<?php esc_html_e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'spalisho' ); ?>
 			        </p>
 					<?php get_search_form(); ?>
 			<?php endif; ?>

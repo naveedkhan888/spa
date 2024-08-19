@@ -5,7 +5,7 @@
 	$(window).on('elementor/frontend/init', function () {
 		
         
-		elementorFrontend.hooks.addAction('frontend/element_ready/mellis_elementor_progress_circle.default', function(){
+		elementorFrontend.hooks.addAction('frontend/element_ready/spalisho_elementor_progress_circle.default', function(){
 
 			$(".ova-progress-circle").appear(function(){
 				var circle = $(this);

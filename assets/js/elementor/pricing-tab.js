@@ -5,7 +5,7 @@
 	$(window).on('elementor/frontend/init', function () {
 		
         
-		elementorFrontend.hooks.addAction('frontend/element_ready/mellis_elementor_pricing_tab.default', function(){
+		elementorFrontend.hooks.addAction('frontend/element_ready/spalisho_elementor_pricing_tab.default', function(){
 
 			$(".ova-pricing-tab .tab-pricing-switch .switch").each(function(){
 

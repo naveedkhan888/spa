@@ -479,7 +479,7 @@ msgstr ""
 #: admin/class-ova-metabox.php:38
 msgid ""
 "Use in Service Box Element ( Example : flaticon flaticon-massage .You can "
-"find here: https://ova-themes.gitbook.io/mellis/find-icons)"
+"find here: https://ova-themes.gitbook.io/spalisho/find-icons)"
 msgstr ""
 
 #: inc/class-ova-custom-post-type.php:32 inc/class-ova-custom-post-type.php:74

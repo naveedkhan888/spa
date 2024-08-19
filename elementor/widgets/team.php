@@ -8,16 +8,16 @@ use Elementor\Utils;
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 
-class Mellis_Elementor_Team extends Widget_Base {
+class Spalisho_Elementor_Team extends Widget_Base {
 
 	
 	public function get_name() {
-		return 'mellis_elementor_team';
+		return 'spalisho_elementor_team';
 	}
 
 	
 	public function get_title() {
-		return esc_html__( 'Ova Team', 'mellis' );
+		return esc_html__( 'Ova Team', 'spalisho' );
 	}
 
 	
@@ -27,7 +27,7 @@ class Mellis_Elementor_Team extends Widget_Base {
 
 	
 	public function get_categories() {
-		return [ 'mellis' ];
+		return [ 'spalisho' ];
 	}
 
 	public function get_script_depends() {
@@ -40,19 +40,19 @@ class Mellis_Elementor_Team extends Widget_Base {
 		$this->start_controls_section(
 			'section_content',
 			[
-				'label' => esc_html__( 'Content', 'mellis' ),
+				'label' => esc_html__( 'Content', 'spalisho' ),
 			]
 		);
 
 			$this->add_control(
 				'template',
 				[
-					'label' => esc_html__( 'Template', 'mellis' ),
+					'label' => esc_html__( 'Template', 'spalisho' ),
 					'type' => Controls_Manager::SELECT,
 					'default' => 'template_1',
 					'options' => [
-						'template_1' => esc_html__( 'Template 1', 'mellis' ),
-						'template_2' => esc_html__( 'Template 2', 'mellis' ),
+						'template_1' => esc_html__( 'Template 1', 'spalisho' ),
+						'template_2' => esc_html__( 'Template 2', 'spalisho' ),
 					]
 				]
 			);	
@@ -60,13 +60,13 @@ class Mellis_Elementor_Team extends Widget_Base {
 			$this->add_control(
 				'columns',
 				[
-					'label' => esc_html__( 'Columns', 'mellis' ),
+					'label' => esc_html__( 'Columns', 'spalisho' ),
 					'type' => Controls_Manager::SELECT,
 					'default' => 'column_3',
 					'options' => [
-						'column_2' => esc_html__( '2 Columns', 'mellis' ),
-						'column_3' => esc_html__( '3 Columns', 'mellis' ),
-						'column_4' => esc_html__( '4 Columns', 'mellis' ),
+						'column_2' => esc_html__( '2 Columns', 'spalisho' ),
+						'column_3' => esc_html__( '3 Columns', 'spalisho' ),
+						'column_4' => esc_html__( '4 Columns', 'spalisho' ),
 					]
 				]
 			);
@@ -77,7 +77,7 @@ class Mellis_Elementor_Team extends Widget_Base {
 				$repeater->add_control(
 					'ova_team_image',
 					[
-						'label' => esc_html__( 'Choose Image', 'mellis' ),
+						'label' => esc_html__( 'Choose Image', 'spalisho' ),
 						'type' => \Elementor\Controls_Manager::MEDIA,
 						'default' => [
 							'url' => \Elementor\Utils::get_placeholder_image_src(),
@@ -89,9 +89,9 @@ class Mellis_Elementor_Team extends Widget_Base {
 				$repeater->add_control(
 					'ova_team_name',
 					[
-						'label' => esc_html__( 'Name', 'mellis' ),
+						'label' => esc_html__( 'Name', 'spalisho' ),
 						'type' => Controls_Manager::TEXT,
-						'default' => esc_html__( '', 'mellis' ),
+						'default' => esc_html__( '', 'spalisho' ),
 						'label_block' => true,
 					]
 				);
@@ -100,9 +100,9 @@ class Mellis_Elementor_Team extends Widget_Base {
 				$repeater->add_control(
 					'ova_team_job',
 					[
-						'label' => esc_html__( 'Job', 'mellis' ),
+						'label' => esc_html__( 'Job', 'spalisho' ),
 						'type' => Controls_Manager::TEXT,
-						'default' => esc_html__( '', 'mellis' ),
+						'default' => esc_html__( '', 'spalisho' ),
 						'label_block' => true,
 					]
 				);
@@ -110,7 +110,7 @@ class Mellis_Elementor_Team extends Widget_Base {
 				$repeater->add_control(
 					'ova_team_class_icon_1',
 					[
-						'label' => esc_html__( 'Icon 1', 'mellis' ),
+						'label' => esc_html__( 'Icon 1', 'spalisho' ),
 						'type' => \Elementor\Controls_Manager::ICONS,
 						'default' 	=> [
 							'value' 	=> 'ovaicon ovaicon-twitter',
@@ -122,7 +122,7 @@ class Mellis_Elementor_Team extends Widget_Base {
 				$repeater->add_control(
 					'ova_team_link_icon_1',
 					[
-						'label'   => esc_html__( 'Link Icon 1', 'mellis' ),
+						'label'   => esc_html__( 'Link Icon 1', 'spalisho' ),
 						'type'    => \Elementor\Controls_Manager::TEXT,
 						'label_block' => true,
 					]
@@ -131,7 +131,7 @@ class Mellis_Elementor_Team extends Widget_Base {
 				$repeater->add_control(
 					'ova_team_class_icon_2',
 					[
-						'label' => esc_html__( 'Icon 2', 'mellis' ),
+						'label' => esc_html__( 'Icon 2', 'spalisho' ),
 						'type' => \Elementor\Controls_Manager::ICONS,
 						'default' 	=> [
 							'value' 	=> 'ovaicon ovaicon-facebook-logo',
@@ -143,7 +143,7 @@ class Mellis_Elementor_Team extends Widget_Base {
 				$repeater->add_control(
 					'ova_team_link_icon_2',
 					[
-						'label'   => esc_html__( 'Link Icon 2', 'mellis' ),
+						'label'   => esc_html__( 'Link Icon 2', 'spalisho' ),
 						'type'    => \Elementor\Controls_Manager::TEXT,
 						'label_block' => true,
 					]
@@ -152,7 +152,7 @@ class Mellis_Elementor_Team extends Widget_Base {
 				$repeater->add_control(
 					'ova_team_class_icon_3',
 					[
-						'label' => esc_html__( 'Icon 3', 'mellis' ),
+						'label' => esc_html__( 'Icon 3', 'spalisho' ),
 						'type' => \Elementor\Controls_Manager::ICONS,
 						'default' 	=> [
 							'value' 	=> 'ovaicon ovaicon-instagram-1',
@@ -164,7 +164,7 @@ class Mellis_Elementor_Team extends Widget_Base {
 				$repeater->add_control(
 					'ova_team_link_icon_3',
 					[
-						'label'   => esc_html__( 'Link Icon 3', 'mellis' ),
+						'label'   => esc_html__( 'Link Icon 3', 'spalisho' ),
 						'type'    => \Elementor\Controls_Manager::TEXT,
 						'label_block' => true,
 					]
@@ -173,7 +173,7 @@ class Mellis_Elementor_Team extends Widget_Base {
 				$repeater->add_control(
 					'ova_team_class_icon_4',
 					[
-						'label' => esc_html__( 'Icon 4', 'mellis' ),
+						'label' => esc_html__( 'Icon 4', 'spalisho' ),
 						'type' => \Elementor\Controls_Manager::ICONS,
 						'default' 	=> [
 							'value' 	=> 'fab fa-linkedin-in',
@@ -185,7 +185,7 @@ class Mellis_Elementor_Team extends Widget_Base {
 				$repeater->add_control(
 					'ova_team_link_icon_4',
 					[
-						'label'   => esc_html__( 'Link Icon 4', 'mellis' ),
+						'label'   => esc_html__( 'Link Icon 4', 'spalisho' ),
 						'type'    => \Elementor\Controls_Manager::TEXT,
 						'label_block' => true,
 					]
@@ -194,21 +194,21 @@ class Mellis_Elementor_Team extends Widget_Base {
 			$this->add_control(
 				'item_list',
 				[
-					'label' => esc_html__( 'Team List', 'mellis' ),
+					'label' => esc_html__( 'Team List', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::REPEATER,
 					'fields' => $repeater->get_controls(),
 					'default' => [
 						[
-							'ova_team_name'	=> 	esc_html__( 'Aleesha Brown', 'mellis' ),
-							'ova_team_job'	=> 	esc_html__( 'THERAPIST', 'mellis' ),
+							'ova_team_name'	=> 	esc_html__( 'Aleesha Brown', 'spalisho' ),
+							'ova_team_job'	=> 	esc_html__( 'THERAPIST', 'spalisho' ),
 						],
 						[
-							'ova_team_name'	=> 	esc_html__( 'David Cooper', 'mellis' ),
-							'ova_team_job'	=> 	esc_html__( 'THERAPIST', 'mellis' ),		
+							'ova_team_name'	=> 	esc_html__( 'David Cooper', 'spalisho' ),
+							'ova_team_job'	=> 	esc_html__( 'THERAPIST', 'spalisho' ),		
 						],
 						[
-							'ova_team_name'	=> 	esc_html__( 'Jessica Rose', 'mellis' ),
-							'ova_team_job'	=> 	esc_html__( 'THERAPIST', 'mellis' ),		
+							'ova_team_name'	=> 	esc_html__( 'Jessica Rose', 'spalisho' ),
+							'ova_team_job'	=> 	esc_html__( 'THERAPIST', 'spalisho' ),		
 						],
 					],
 				]
@@ -222,7 +222,7 @@ class Mellis_Elementor_Team extends Widget_Base {
 		$this->start_controls_section(
             'general',
             [
-                'label' => esc_html__( 'General', 'mellis' ),
+                'label' => esc_html__( 'General', 'spalisho' ),
                 'tab' 	=> Controls_Manager::TAB_STYLE,
             ]
         );
@@ -230,19 +230,19 @@ class Mellis_Elementor_Team extends Widget_Base {
 			$this->add_responsive_control(
 				'general_align',
 				[
-					'label' 	=> esc_html__( 'Alignment', 'mellis' ),
+					'label' 	=> esc_html__( 'Alignment', 'spalisho' ),
 					'type' 		=> \Elementor\Controls_Manager::CHOOSE,
 					'options' 	=> [
 						'left' => [
-							'title' => esc_html__( 'Left', 'mellis' ),
+							'title' => esc_html__( 'Left', 'spalisho' ),
 							'icon' 	=> 'eicon-order-start',
 						],
 						'center' => [
-							'title' => esc_html__( 'Center', 'mellis' ),
+							'title' => esc_html__( 'Center', 'spalisho' ),
 							'icon' 	=> ' eicon-align-center-v',
 						],
 						'right' => [
-							'title' => esc_html__( 'Right', 'mellis' ),
+							'title' => esc_html__( 'Right', 'spalisho' ),
 							'icon' 	=> 'eicon-order-end',
 						],
 						
@@ -258,7 +258,7 @@ class Mellis_Elementor_Team extends Widget_Base {
 			$this->add_responsive_control(
 				'general_margin',
 				[
-					'label' => esc_html__( 'Margin', 'mellis' ),
+					'label' => esc_html__( 'Margin', 'spalisho' ),
 					'type' => Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', 'em', '%' ],
 					'selectors' => [
@@ -271,7 +271,7 @@ class Mellis_Elementor_Team extends Widget_Base {
 			$this->add_control(
 				'general_background',
 				[
-					'label'	 	=> esc_html__( 'Background', 'mellis' ),
+					'label'	 	=> esc_html__( 'Background', 'spalisho' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
 						'{{WRAPPER}} .ova-team .ova-team-box .item' => 'background-color : {{VALUE}};'	
@@ -282,7 +282,7 @@ class Mellis_Elementor_Team extends Widget_Base {
 			$this->add_responsive_control(
 				'image_margin',
 				[
-					'label' => esc_html__( 'Image Margin', 'mellis' ),
+					'label' => esc_html__( 'Image Margin', 'spalisho' ),
 					'type' => Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', 'em', '%' ],
 					'selectors' => [
@@ -298,7 +298,7 @@ class Mellis_Elementor_Team extends Widget_Base {
 		$this->start_controls_section(
             'team_social',
             [
-                'label' => esc_html__( 'Social', 'mellis' ),
+                'label' => esc_html__( 'Social', 'spalisho' ),
                 'tab' 	=> Controls_Manager::TAB_STYLE,
             ]
         );	
@@ -306,7 +306,7 @@ class Mellis_Elementor_Team extends Widget_Base {
         	$this->add_control(
 				'team_social_width',
 				[
-					'label' => esc_html__( 'Width', 'mellis' ),
+					'label' => esc_html__( 'Width', 'spalisho' ),
 					'type' => Controls_Manager::SLIDER,
 					'size_units' => [ 'px' ],
 					'range' => [
@@ -325,7 +325,7 @@ class Mellis_Elementor_Team extends Widget_Base {
 			$this->add_control(
 				'team_social_fontsize',
 				[
-					'label' => esc_html__( 'Size', 'mellis' ),
+					'label' => esc_html__( 'Size', 'spalisho' ),
 					'type' => Controls_Manager::SLIDER,
 					'size_units' => [ 'px' ],
 					'range' => [
@@ -344,7 +344,7 @@ class Mellis_Elementor_Team extends Widget_Base {
 			$this->add_control(
 				'team_social_gap',
 				[
-					'label' => esc_html__( 'Gap', 'mellis' ),
+					'label' => esc_html__( 'Gap', 'spalisho' ),
 					'type' => Controls_Manager::SLIDER,
 					'size_units' => [ 'px' ],
 					'range' => [
@@ -363,7 +363,7 @@ class Mellis_Elementor_Team extends Widget_Base {
 			$this->add_control(
 				'team_social_bottom',
 				[
-					'label' => esc_html__( 'Bottom', 'mellis' ),
+					'label' => esc_html__( 'Bottom', 'spalisho' ),
 					'type' => Controls_Manager::SLIDER,
 					'size_units' => [ 'px' ],
 					'range' => [
@@ -388,14 +388,14 @@ class Mellis_Elementor_Team extends Widget_Base {
 				$this->start_controls_tab(
 					'social_style_normal_tab',
 					[
-						'label' => esc_html__( 'Normal', 'mellis' ),
+						'label' => esc_html__( 'Normal', 'spalisho' ),
 					]
 				);
 					//nomarl
 					$this->add_control(
 						'nomarl_color',
 						[
-							'label'	 	=> esc_html__( 'Color', 'mellis' ),
+							'label'	 	=> esc_html__( 'Color', 'spalisho' ),
 							'type' 		=> Controls_Manager::COLOR,
 							'selectors' => [
 								'{{WRAPPER}} .ova-team .ova-team-box .item .img .social .icon' => 'color : {{VALUE}};'	
@@ -406,7 +406,7 @@ class Mellis_Elementor_Team extends Widget_Base {
 					$this->add_control(
 						'nomarl_bg_color',
 						[
-							'label'	 	=> esc_html__( 'Background', 'mellis' ),
+							'label'	 	=> esc_html__( 'Background', 'spalisho' ),
 							'type' 		=> Controls_Manager::COLOR,
 							'selectors' => [
 								'{{WRAPPER}} .ova-team .ova-team-box .item .img .social .icon' => 'background-color : {{VALUE}};'	
@@ -420,13 +420,13 @@ class Mellis_Elementor_Team extends Widget_Base {
 				$this->start_controls_tab(
 					'social_style_hover_tab',
 					[
-						'label' => esc_html__( 'Hover', 'mellis' ),
+						'label' => esc_html__( 'Hover', 'spalisho' ),
 					]
 				);
 					$this->add_control(
 						'hover_color',
 						[
-							'label'	 	=> esc_html__( 'Color', 'mellis' ),
+							'label'	 	=> esc_html__( 'Color', 'spalisho' ),
 							'type' 		=> Controls_Manager::COLOR,
 							'selectors' => [
 								'{{WRAPPER}} .ova-team .ova-team-box .item .img .social .icon a:hover' => 'color : {{VALUE}};'	
@@ -437,7 +437,7 @@ class Mellis_Elementor_Team extends Widget_Base {
 					$this->add_control(
 						'hover_bg_color',
 						[
-							'label'	 	=> esc_html__( 'Background', 'mellis' ),
+							'label'	 	=> esc_html__( 'Background', 'spalisho' ),
 							'type' 		=> Controls_Manager::COLOR,
 							'selectors' => [
 								'{{WRAPPER}} .ova-team .ova-team-box .item .img .social .icon a:hover' => 'background-color : {{VALUE}};'	
@@ -455,7 +455,7 @@ class Mellis_Elementor_Team extends Widget_Base {
 		$this->start_controls_section(
 			'section_info',
 			[
-				'label' => esc_html__( 'Info', 'mellis' ),
+				'label' => esc_html__( 'Info', 'spalisho' ),
 				'tab' 	=> Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -467,14 +467,14 @@ class Mellis_Elementor_Team extends Widget_Base {
 				$this->start_controls_tab(
 					'style_name_tab',
 					[
-						'label' => esc_html__( 'Name', 'mellis' ),
+						'label' => esc_html__( 'Name', 'spalisho' ),
 					]
 				);
 					$this->add_group_control(
 						\Elementor\Group_Control_Typography::get_type(),
 						[
 							'name' 		=> 'content_typography_name',
-							'label' 	=> esc_html__( 'Typography', 'mellis' ),
+							'label' 	=> esc_html__( 'Typography', 'spalisho' ),
 							'selector' 	=> '{{WRAPPER}} .ova-team .ova-team-box .item .info .name',
 						]
 					);
@@ -482,7 +482,7 @@ class Mellis_Elementor_Team extends Widget_Base {
 					$this->add_control(
 						'color_name',
 						[
-							'label'	 	=> esc_html__( 'Color', 'mellis' ),
+							'label'	 	=> esc_html__( 'Color', 'spalisho' ),
 							'type' 		=> Controls_Manager::COLOR,
 							'selectors' => [
 								'{{WRAPPER}} .ova-team .ova-team-box .item .info .name' => 'color : {{VALUE}};'
@@ -495,7 +495,7 @@ class Mellis_Elementor_Team extends Widget_Base {
 					$this->add_responsive_control(
 						'margin_name',
 						[
-							'label' 	 => esc_html__( 'Margin', 'mellis' ),
+							'label' 	 => esc_html__( 'Margin', 'spalisho' ),
 							'type' 		 => Controls_Manager::DIMENSIONS,
 							'size_units' => [ 'px', 'em', '%' ],
 							'selectors'  => [
@@ -509,14 +509,14 @@ class Mellis_Elementor_Team extends Widget_Base {
 				$this->start_controls_tab(
 					'style_job_tab',
 					[
-						'label' => esc_html__( 'Job', 'mellis' ),
+						'label' => esc_html__( 'Job', 'spalisho' ),
 					]
 				);
 					$this->add_group_control(
 						\Elementor\Group_Control_Typography::get_type(),
 						[
 							'name' 		=> 'content_typography_job',
-							'label' 	=> esc_html__( 'Typography', 'mellis' ),
+							'label' 	=> esc_html__( 'Typography', 'spalisho' ),
 							'selector' 	=> '{{WRAPPER}} .ova-team .ova-team-box .item .info .job',
 						]
 					);
@@ -524,7 +524,7 @@ class Mellis_Elementor_Team extends Widget_Base {
 					$this->add_control(
 						'color_job',
 						[
-							'label'	 	=> esc_html__( 'Color', 'mellis' ),
+							'label'	 	=> esc_html__( 'Color', 'spalisho' ),
 							'type' 		=> Controls_Manager::COLOR,
 							'selectors' => [
 								'{{WRAPPER}} .ova-team .ova-team-box .item .info .job' => 'color : {{VALUE}};'
@@ -535,7 +535,7 @@ class Mellis_Elementor_Team extends Widget_Base {
 					$this->add_responsive_control(
 						'margin_job',
 						[
-							'label' 	 => esc_html__( 'Margin', 'mellis' ),
+							'label' 	 => esc_html__( 'Margin', 'spalisho' ),
 							'type' 		 => Controls_Manager::DIMENSIONS,
 							'size_units' => [ 'px', 'em', '%' ],
 							'selectors'  => [
@@ -674,4 +674,4 @@ class Mellis_Elementor_Team extends Widget_Base {
 	
 }
 
-$widgets_manager->register( new Mellis_Elementor_Team() );
+$widgets_manager->register( new Spalisho_Elementor_Team() );

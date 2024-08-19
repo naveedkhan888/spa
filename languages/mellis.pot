@@ -1,7 +1,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Mellis\n"
+"Project-Id-Version: Spalisho\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-31 02:25+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Loco https://localise.biz/\n"
 "X-Loco-Version: 2.6.6; wp-6.4.2\n"
-"X-Domain: mellis"
+"X-Domain: spalisho"
 
 #: template-parts/parts/meta.php:54
 msgid " 0 Comments"
@@ -2015,14 +2015,14 @@ msgstr ""
 
 #. Name of the theme
 #: inc/class-elementor.php:263
-msgid "Mellis"
+msgid "Spalisho"
 msgstr ""
 
 #. Description of the theme
 msgid ""
-"Mellis is a modernized take on an ever-popular WordPress. It has custom "
+"Spalisho is a modernized take on an ever-popular WordPress. It has custom "
 "color options with beautiful default color schemes, a harmonious fluid grid "
-"using a mobile-first approach, and impeccable polish in every detail. Mellis "
+"using a mobile-first approach, and impeccable polish in every detail. Spalisho "
 "will make your WordPress look beautiful everywhere. Created by <a "
 "href=\"https://themeforest.net/user/ovatheme\">Ovatheme</a>"
 msgstr ""

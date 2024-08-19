@@ -9,16 +9,16 @@ use Elementor\Utils;
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 
-class Mellis_Elementor_Progress_Circle extends Widget_Base {
+class Spalisho_Elementor_Progress_Circle extends Widget_Base {
 
 	
 	public function get_name() {
-		return 'mellis_elementor_progress_circle';
+		return 'spalisho_elementor_progress_circle';
 	}
 
 	
 	public function get_title() {
-		return esc_html__( 'Progress Circle', 'mellis' );
+		return esc_html__( 'Progress Circle', 'spalisho' );
 	}
 
 	
@@ -28,15 +28,15 @@ class Mellis_Elementor_Progress_Circle extends Widget_Base {
 
 	
 	public function get_categories() {
-		return [ 'mellis' ];
+		return [ 'spalisho' ];
 	}
 
 	public function get_script_depends() {
 		// appear js
-		wp_enqueue_script( 'mellis-counter-appear', get_theme_file_uri('/assets/libs/appear/appear.js'), array('jquery'), false, true);
+		wp_enqueue_script( 'spalisho-counter-appear', get_theme_file_uri('/assets/libs/appear/appear.js'), array('jquery'), false, true);
 
 		wp_enqueue_script( 'progress-circle', get_template_directory_uri().'/assets/libs/circle-progress/circle-progress.min.js', array('jquery'), false, true );
-		return [ 'mellis-elementor-progress-circle' ];
+		return [ 'spalisho-elementor-progress-circle' ];
 	}
 	
 	// Add Your Controll In This Function
@@ -45,7 +45,7 @@ class Mellis_Elementor_Progress_Circle extends Widget_Base {
 		$this->start_controls_section(
 			'section_content',
 			[
-				'label' => esc_html__( 'Progress Circle', 'mellis' ),
+				'label' => esc_html__( 'Progress Circle', 'spalisho' ),
 			]
 		);	
 			
@@ -54,12 +54,12 @@ class Mellis_Elementor_Progress_Circle extends Widget_Base {
 			$this->add_control(
 				'template',
 				[
-					'label' => esc_html__( 'Template', 'mellis' ),
+					'label' => esc_html__( 'Template', 'spalisho' ),
 					'type' => Controls_Manager::SELECT,
 					'default' => 'template1',
 					'options' => [
-						'template1' => esc_html__('Template 1', 'mellis'),
-						'template2' => esc_html__('Template 2', 'mellis'),
+						'template1' => esc_html__('Template 1', 'spalisho'),
+						'template2' => esc_html__('Template 2', 'spalisho'),
 					]
 				]
 			);
@@ -67,16 +67,16 @@ class Mellis_Elementor_Progress_Circle extends Widget_Base {
 			$this->add_control(
 				'title',
 				[
-					'label' => esc_html__( 'Title', 'mellis' ),
+					'label' => esc_html__( 'Title', 'spalisho' ),
 					'type' => Controls_Manager::TEXT,
-					'default' => esc_html__( 'Clients Satisficed', 'mellis' ),
+					'default' => esc_html__( 'Clients Satisficed', 'spalisho' ),
 				]
 			);
 
 			$this->add_control(
 				'percent',
 				[
-					'label' => esc_html__( 'Percent', 'mellis' ),
+					'label' => esc_html__( 'Percent', 'spalisho' ),
 					'type' => Controls_Manager::SLIDER,
 					'size_units' 	=> [ 'px'],
 					'default' => [
@@ -95,16 +95,16 @@ class Mellis_Elementor_Progress_Circle extends Widget_Base {
 			$this->add_control(
 				'unit',
 				[
-					'label' => esc_html__( 'Unit', 'mellis' ),
+					'label' => esc_html__( 'Unit', 'spalisho' ),
 					'type' => Controls_Manager::TEXT,
-					'default' => esc_html__( '%', 'mellis' ),
+					'default' => esc_html__( '%', 'spalisho' ),
 				]
 			);
 
 			$this->add_control(
 				'circle_heading',
 				[
-					'label' => esc_html__( 'Circle', 'mellis' ),
+					'label' => esc_html__( 'Circle', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::HEADING,
 					'separator' => 'before',
 				]
@@ -113,12 +113,12 @@ class Mellis_Elementor_Progress_Circle extends Widget_Base {
 			    $this->add_control(
 					'linecap',
 					[
-						'label' => esc_html__( 'LineCap', 'mellis' ),
+						'label' => esc_html__( 'LineCap', 'spalisho' ),
 						'type' => Controls_Manager::SELECT,
 						'default' => 'default',
 						'options' => [
-							'default' => esc_html__('Default', 'mellis'),
-							'round'   => esc_html__('Round', 'mellis'),
+							'default' => esc_html__('Default', 'spalisho'),
+							'round'   => esc_html__('Round', 'spalisho'),
 						]
 					]
 				);
@@ -126,7 +126,7 @@ class Mellis_Elementor_Progress_Circle extends Widget_Base {
 				$this->add_control(
 					'start_angle',
 					[
-						'label' => esc_html__( 'Start Angel', 'mellis' ),
+						'label' => esc_html__( 'Start Angel', 'spalisho' ),
 						'type' => Controls_Manager::SLIDER,
 						'size_units' 	=> [ 'px'],
 						'default' => [
@@ -145,7 +145,7 @@ class Mellis_Elementor_Progress_Circle extends Widget_Base {
 				$this->add_control(
 					'circle_size',
 					[
-						'label' => esc_html__( 'Size (px)', 'mellis' ),
+						'label' => esc_html__( 'Size (px)', 'spalisho' ),
 						'type' => Controls_Manager::SLIDER,
 						'size_units' 	=> [ 'px'],
 						'default' => [
@@ -164,7 +164,7 @@ class Mellis_Elementor_Progress_Circle extends Widget_Base {
 				$this->add_control(
 					'circle_thickness',
 					[
-						'label' => esc_html__( 'Thickness', 'mellis' ),
+						'label' => esc_html__( 'Thickness', 'spalisho' ),
 						'type' => Controls_Manager::NUMBER,
 						'min' => 3,
 						'max' => 50,
@@ -176,7 +176,7 @@ class Mellis_Elementor_Progress_Circle extends Widget_Base {
 				$this->add_control(
 					'color_circle',
 					[
-						'label' => esc_html__( 'Color', 'mellis' ),
+						'label' => esc_html__( 'Color', 'spalisho' ),
 						'type' => Controls_Manager::COLOR,
 						'default' => '#de968d'
 					]
@@ -185,7 +185,7 @@ class Mellis_Elementor_Progress_Circle extends Widget_Base {
 				$this->add_control(
 					'empty_color_circle',
 					[
-						'label' => esc_html__( 'Empty Color', 'mellis' ),
+						'label' => esc_html__( 'Empty Color', 'spalisho' ),
 						'type' => Controls_Manager::COLOR,
 						'default' => '#fff'
 					]
@@ -194,19 +194,19 @@ class Mellis_Elementor_Progress_Circle extends Widget_Base {
 				$this->add_responsive_control(
 					'align',
 					[
-						'label' => esc_html__( 'Alignment', 'mellis' ),
+						'label' => esc_html__( 'Alignment', 'spalisho' ),
 						'type' 	=> Controls_Manager::CHOOSE,
 						'options' => [
 							'left' => [
-								'title' => esc_html__( 'Left', 'mellis' ),
+								'title' => esc_html__( 'Left', 'spalisho' ),
 								'icon' 	=> 'eicon-text-align-left',
 							],
 							'center' => [
-								'title' => esc_html__( 'Center', 'mellis' ),
+								'title' => esc_html__( 'Center', 'spalisho' ),
 								'icon' 	=> 'eicon-text-align-center',
 							],
 							'right' => [
-								'title' => esc_html__( 'Right', 'mellis' ),
+								'title' => esc_html__( 'Right', 'spalisho' ),
 								'icon' 	=> 'eicon-text-align-right',
 							],
 						],
@@ -222,7 +222,7 @@ class Mellis_Elementor_Progress_Circle extends Widget_Base {
 		$this->start_controls_section(
             'percent_style',
             [
-                'label' => esc_html__( 'Percent', 'mellis' ),
+                'label' => esc_html__( 'Percent', 'spalisho' ),
                 'tab' 	=> Controls_Manager::TAB_STYLE,
             ]
         );
@@ -238,7 +238,7 @@ class Mellis_Elementor_Progress_Circle extends Widget_Base {
 			$this->add_control(
 				'percent_color',
 				[
-					'label' 	=> esc_html__( 'Color', 'mellis' ),
+					'label' 	=> esc_html__( 'Color', 'spalisho' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
 						'{{WRAPPER}} .ova-progress-circle-wrapper .ova-progress-circle .percent' => 'color: {{VALUE}};',
@@ -249,7 +249,7 @@ class Mellis_Elementor_Progress_Circle extends Widget_Base {
 			$this->add_control(
 				'percent_border_size',
 				[
-					'label' => esc_html__( 'Border Size', 'mellis' ),
+					'label' => esc_html__( 'Border Size', 'spalisho' ),
 					'type' => Controls_Manager::SLIDER,
 					'size_units' 	=> [ 'px', '%'],
 					'range' => [
@@ -274,7 +274,7 @@ class Mellis_Elementor_Progress_Circle extends Widget_Base {
 				\Elementor\Group_Control_Border::get_type(),
 				[
 					'name' => 'percent_border',
-					'label' => esc_html__( 'Border', 'mellis' ),
+					'label' => esc_html__( 'Border', 'spalisho' ),
 					'selector' => '{{WRAPPER}} .ova-progress-circle-wrapper .ova-progress-circle:before',
 				]
 			);
@@ -286,7 +286,7 @@ class Mellis_Elementor_Progress_Circle extends Widget_Base {
 		$this->start_controls_section(
             'title_style',
             [
-                'label' => esc_html__( 'Title', 'mellis' ),
+                'label' => esc_html__( 'Title', 'spalisho' ),
                 'tab' 	=> Controls_Manager::TAB_STYLE,
             ]
         );
@@ -294,19 +294,19 @@ class Mellis_Elementor_Progress_Circle extends Widget_Base {
             $this->add_responsive_control(
 				'title_align',
 				[
-					'label' => esc_html__( 'Alignment', 'mellis' ),
+					'label' => esc_html__( 'Alignment', 'spalisho' ),
 					'type' 	=> Controls_Manager::CHOOSE,
 					'options' => [
 						'left' => [
-							'title' => esc_html__( 'Left', 'mellis' ),
+							'title' => esc_html__( 'Left', 'spalisho' ),
 							'icon' 	=> 'eicon-text-align-left',
 						],
 						'center' => [
-							'title' => esc_html__( 'Center', 'mellis' ),
+							'title' => esc_html__( 'Center', 'spalisho' ),
 							'icon' 	=> 'eicon-text-align-center',
 						],
 						'right' => [
-							'title' => esc_html__( 'Right', 'mellis' ),
+							'title' => esc_html__( 'Right', 'spalisho' ),
 							'icon' 	=> 'eicon-text-align-right',
 						],
 					],
@@ -328,7 +328,7 @@ class Mellis_Elementor_Progress_Circle extends Widget_Base {
 			$this->add_control(
 				'title_color',
 				[
-					'label' 	=> esc_html__( 'Color', 'mellis' ),
+					'label' 	=> esc_html__( 'Color', 'spalisho' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
 						'{{WRAPPER}} .ova-progress-circle-wrapper .title' => 'color: {{VALUE}};',
@@ -339,7 +339,7 @@ class Mellis_Elementor_Progress_Circle extends Widget_Base {
 			$this->add_responsive_control(
 				'title_margin',
 				[
-					'label' 		=> esc_html__( 'Margin', 'mellis' ),
+					'label' 		=> esc_html__( 'Margin', 'spalisho' ),
 					'type' 			=> Controls_Manager::DIMENSIONS,
 					'size_units' 	=> [ 'px', '%', 'em' ],
 					'selectors' 	=> [
@@ -408,4 +408,4 @@ class Mellis_Elementor_Progress_Circle extends Widget_Base {
 
 	
 }
-$widgets_manager->register( new Mellis_Elementor_Progress_Circle() );
+$widgets_manager->register( new Spalisho_Elementor_Progress_Circle() );

@@ -9,16 +9,16 @@ use Elementor\Utils;
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 
-class Mellis_Elementor_Process extends Widget_Base {
+class Spalisho_Elementor_Process extends Widget_Base {
 
 	
 	public function get_name() {
-		return 'mellis_elementor_process';
+		return 'spalisho_elementor_process';
 	}
 
 	
 	public function get_title() {
-		return esc_html__( 'Process', 'mellis' );
+		return esc_html__( 'Process', 'spalisho' );
 	}
 
 	
@@ -28,13 +28,13 @@ class Mellis_Elementor_Process extends Widget_Base {
 
 	
 	public function get_categories() {
-		return [ 'mellis' ];
+		return [ 'spalisho' ];
 	}
 
 	public function get_script_depends() {
 		// appear js
-		wp_enqueue_script( 'mellis-counter-appear', get_theme_file_uri('/assets/libs/appear/appear.js'), array('jquery'), false, true);
-		return [ 'mellis-elementor-process' ];
+		wp_enqueue_script( 'spalisho-counter-appear', get_theme_file_uri('/assets/libs/appear/appear.js'), array('jquery'), false, true);
+		return [ 'spalisho-elementor-process' ];
 	}
 	
 	// Add Your Controll In This Function
@@ -43,7 +43,7 @@ class Mellis_Elementor_Process extends Widget_Base {
 		$this->start_controls_section(
 			'section_content',
 			[
-				'label' => esc_html__( 'Content', 'mellis' ),
+				'label' => esc_html__( 'Content', 'spalisho' ),
 			]
 		);		
 			
@@ -52,13 +52,13 @@ class Mellis_Elementor_Process extends Widget_Base {
 		    $this->add_control(
 				'number_column',
 				[
-					'label' => esc_html__( 'Number Column', 'mellis' ),
+					'label' => esc_html__( 'Number Column', 'spalisho' ),
 					'type' => Controls_Manager::SELECT,
 					'default' => 'three_column',
 					'options' => [
-						'one_column' => esc_html__('Single Column', 'mellis'),
-						'two_column' => esc_html__('2 Columns', 'mellis'),
-						'three_column' => esc_html__('3 Columns', 'mellis'),
+						'one_column' => esc_html__('Single Column', 'spalisho'),
+						'two_column' => esc_html__('2 Columns', 'spalisho'),
+						'three_column' => esc_html__('3 Columns', 'spalisho'),
 					]
 				]
 			);
@@ -68,7 +68,7 @@ class Mellis_Elementor_Process extends Widget_Base {
 		    $repeater->add_control(
 				'image',
 				[
-					'label'   => esc_html__( 'Image', 'mellis' ),
+					'label'   => esc_html__( 'Image', 'spalisho' ),
 					'type'    => \Elementor\Controls_Manager::MEDIA,
 					'default' => [
 						'url' => \Elementor\Utils::get_placeholder_image_src(),
@@ -79,12 +79,12 @@ class Mellis_Elementor_Process extends Widget_Base {
 			$repeater->add_control(
 				'link',
 				[
-					'label' => esc_html__( 'Link', 'mellis' ),
+					'label' => esc_html__( 'Link', 'spalisho' ),
 					'type' => Controls_Manager::URL,
 					'dynamic' => [
 						'active' => true,
 					],
-					'placeholder' => esc_html__( 'https://your-link.com', 'mellis' ),
+					'placeholder' => esc_html__( 'https://your-link.com', 'spalisho' ),
 					'show_label' => true,
 				]
 			);
@@ -92,16 +92,16 @@ class Mellis_Elementor_Process extends Widget_Base {
 			$repeater->add_control(
 				'text_number',
 				[
-					'label' => esc_html__( 'Text Number', 'mellis' ),
+					'label' => esc_html__( 'Text Number', 'spalisho' ),
 					'type' => Controls_Manager::TEXT,
-					'default' => esc_html__( '01', 'mellis' ),
+					'default' => esc_html__( '01', 'spalisho' ),
 				]
 			);
 
 			$repeater->add_control(
 				'title',
 				[
-					'label' => esc_html__( 'Title', 'mellis' ),
+					'label' => esc_html__( 'Title', 'spalisho' ),
 					'type' => Controls_Manager::TEXT,
 					'default' => 'Meeting',
 				]
@@ -110,16 +110,16 @@ class Mellis_Elementor_Process extends Widget_Base {
 			$repeater->add_control(
 				'description',
 				[
-					'label' 	=> esc_html__( 'Description', 'mellis' ),
+					'label' 	=> esc_html__( 'Description', 'spalisho' ),
 					'type' 		=> Controls_Manager::TEXTAREA,
-					'default' 	=> esc_html__( 'Lorem ipsum dolor sit amet, consectetur notted adipisicing elit sed do eiusmod.', 'mellis' ),
+					'default' 	=> esc_html__( 'Lorem ipsum dolor sit amet, consectetur notted adipisicing elit sed do eiusmod.', 'spalisho' ),
 				]
 			);
 
 			$repeater->add_responsive_control(
 				'animation_content',
 				[
-					'label' => esc_html__( 'Animation Content', 'mellis' ),
+					'label' => esc_html__( 'Animation Content', 'spalisho' ),
 					'type' 	=> Controls_Manager::ANIMATION,
 				]
 			);
@@ -127,13 +127,13 @@ class Mellis_Elementor_Process extends Widget_Base {
 			$repeater->add_control(
 				'animation_duration_content',
 				[
-					'label' 	=> esc_html__( 'Animation Duration', 'mellis' ),
+					'label' 	=> esc_html__( 'Animation Duration', 'spalisho' ),
 					'type' 		=> Controls_Manager::SELECT,
 					'default' 	=> '',
 					'options' 	=> [
-						'slow' 	=> esc_html__( 'Slow', 'mellis' ),
-						'' 		=> esc_html__( 'Normal', 'mellis' ),
-						'fast' 	=> esc_html__( 'Fast', 'mellis' ),
+						'slow' 	=> esc_html__( 'Slow', 'spalisho' ),
+						'' 		=> esc_html__( 'Normal', 'spalisho' ),
+						'fast' 	=> esc_html__( 'Fast', 'spalisho' ),
 					],
 					'condition' => [
 						'animation_content!' => '',
@@ -144,7 +144,7 @@ class Mellis_Elementor_Process extends Widget_Base {
 			$repeater->add_control(
 				'animation_delay_content',
 				[
-					'label' 	=> esc_html__( 'Animation Delay', 'mellis' ) . ' (ms)',
+					'label' 	=> esc_html__( 'Animation Delay', 'spalisho' ) . ' (ms)',
 					'type' 		=> Controls_Manager::NUMBER,
 					'default' 	=> '',
 					'min' 		=> 0,
@@ -158,20 +158,20 @@ class Mellis_Elementor_Process extends Widget_Base {
 			$this->add_control(
 				'items',
 				[
-					'label' => esc_html__( 'Items', 'mellis' ),
+					'label' => esc_html__( 'Items', 'spalisho' ),
 					'type' => Controls_Manager::REPEATER,
 					'fields' => $repeater->get_controls(),
 					'default' => [
 						[	
-							'text_number'  => esc_html__( '01', 'mellis' ),
-							'title'        => 'Meeting', 'mellis',
+							'text_number'  => esc_html__( '01', 'spalisho' ),
+							'title'        => 'Meeting', 'spalisho',
 						],
 						[	
-							'text_number'  => esc_html__( '02', 'mellis' ),
+							'text_number'  => esc_html__( '02', 'spalisho' ),
 							'title'        => 'Treatment',
 						],
 						[	
-							'text_number'  => esc_html__( '03', 'mellis' ),
+							'text_number'  => esc_html__( '03', 'spalisho' ),
 							'title'        => 'Finalizing',
 						],
 					],
@@ -185,7 +185,7 @@ class Mellis_Elementor_Process extends Widget_Base {
 		$this->start_controls_section(
             'textnumber_style',
             [
-                'label' => esc_html__( 'Text Number', 'mellis' ),
+                'label' => esc_html__( 'Text Number', 'spalisho' ),
                 'tab' 	=> Controls_Manager::TAB_STYLE,
             ]
         );
@@ -201,7 +201,7 @@ class Mellis_Elementor_Process extends Widget_Base {
 			$this->add_control(
 				'textnumber_color',
 				[
-					'label' 	=> esc_html__( 'Color', 'mellis' ),
+					'label' 	=> esc_html__( 'Color', 'spalisho' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
 						'{{WRAPPER}} .ova-process .item-process .image-process .text_number' => 'color: {{VALUE}};',
@@ -212,7 +212,7 @@ class Mellis_Elementor_Process extends Widget_Base {
 			$this->add_control(
 				'textnumber_bgcolor',
 				[
-					'label' 	=> esc_html__( 'Background Color', 'mellis' ),
+					'label' 	=> esc_html__( 'Background Color', 'spalisho' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
 						'{{WRAPPER}} .ova-process .item-process .image-process .text_number' => 'background-color: {{VALUE}};',
@@ -223,7 +223,7 @@ class Mellis_Elementor_Process extends Widget_Base {
 			$this->add_control(
 				'textnumber_color_hover',
 				[
-					'label' 	=> esc_html__( 'Color Hover', 'mellis' ),
+					'label' 	=> esc_html__( 'Color Hover', 'spalisho' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
 						'{{WRAPPER}} .ova-process .item-process:hover .image-process .text_number' => 'color: {{VALUE}};',
@@ -234,7 +234,7 @@ class Mellis_Elementor_Process extends Widget_Base {
 			$this->add_control(
 				'textnumber_bgcolor_hover',
 				[
-					'label' 	=> esc_html__( 'Background Color Hover', 'mellis' ),
+					'label' 	=> esc_html__( 'Background Color Hover', 'spalisho' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
 						'{{WRAPPER}} .ova-process .item-process:hover .image-process .text_number' => 'background-color: {{VALUE}};',
@@ -245,7 +245,7 @@ class Mellis_Elementor_Process extends Widget_Base {
 			$this->add_responsive_control(
 	            'textnumber_padding',
 	            [
-	                'label' 		=> esc_html__( 'Padding', 'mellis' ),
+	                'label' 		=> esc_html__( 'Padding', 'spalisho' ),
 	                'type' 			=> Controls_Manager::DIMENSIONS,
 	                'size_units' 	=> [ 'px', '%', 'em' ],
 	                'selectors' 	=> [
@@ -258,7 +258,7 @@ class Mellis_Elementor_Process extends Widget_Base {
 				\Elementor\Group_Control_Border::get_type(),
 				[
 					'name' => 'text_number_border',
-					'label' => esc_html__( 'Border', 'mellis' ),
+					'label' => esc_html__( 'Border', 'spalisho' ),
 					'selector' => '{{WRAPPER}} .ova-process .item-process .image-process .text_number',
 				]
 			);
@@ -269,7 +269,7 @@ class Mellis_Elementor_Process extends Widget_Base {
 		$this->start_controls_section(
             'title_style',
             [
-                'label' => esc_html__( 'Title', 'mellis' ),
+                'label' => esc_html__( 'Title', 'spalisho' ),
                 'tab' 	=> Controls_Manager::TAB_STYLE,
             ]
         );
@@ -285,7 +285,7 @@ class Mellis_Elementor_Process extends Widget_Base {
 			$this->add_control(
 				'title_color',
 				[
-					'label' 	=> esc_html__( 'Color', 'mellis' ),
+					'label' 	=> esc_html__( 'Color', 'spalisho' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
 						'{{WRAPPER}} .ova-process .item-process .info .title' => 'color: {{VALUE}};',
@@ -296,7 +296,7 @@ class Mellis_Elementor_Process extends Widget_Base {
 			$this->add_control(
 				'title_color_hover',
 				[
-					'label' 	=> esc_html__( 'Color Hover', 'mellis' ),
+					'label' 	=> esc_html__( 'Color Hover', 'spalisho' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
 						'{{WRAPPER}} .ova-process .item-process:hover .info .title' => 'color: {{VALUE}};',
@@ -307,7 +307,7 @@ class Mellis_Elementor_Process extends Widget_Base {
 			$this->add_responsive_control(
 	            'title_padding',
 	            [
-	                'label' 		=> esc_html__( 'Padding', 'mellis' ),
+	                'label' 		=> esc_html__( 'Padding', 'spalisho' ),
 	                'type' 			=> Controls_Manager::DIMENSIONS,
 	                'size_units' 	=> [ 'px', '%', 'em' ],
 	                'selectors' 	=> [
@@ -323,7 +323,7 @@ class Mellis_Elementor_Process extends Widget_Base {
 		$this->start_controls_section(
             'description_style',
             [
-                'label' => esc_html__( 'Description', 'mellis' ),
+                'label' => esc_html__( 'Description', 'spalisho' ),
                 'tab' 	=> Controls_Manager::TAB_STYLE,
             ]
         );
@@ -339,7 +339,7 @@ class Mellis_Elementor_Process extends Widget_Base {
 			$this->add_control(
 				'description_color',
 				[
-					'label' 	=> esc_html__( 'Color', 'mellis' ),
+					'label' 	=> esc_html__( 'Color', 'spalisho' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
 						'{{WRAPPER}} .ova-process .item-process .info .description' => 'color: {{VALUE}};',
@@ -350,7 +350,7 @@ class Mellis_Elementor_Process extends Widget_Base {
 			$this->add_control(
 				'description_color_hover',
 				[
-					'label' 	=> esc_html__( 'Color Hover', 'mellis' ),
+					'label' 	=> esc_html__( 'Color Hover', 'spalisho' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
 						'{{WRAPPER}} .ova-process .item-process:hover .info .description' => 'color: {{VALUE}};',
@@ -361,7 +361,7 @@ class Mellis_Elementor_Process extends Widget_Base {
 			$this->add_responsive_control(
 	            'description_padding',
 	            [
-	                'label' 		=> esc_html__( 'Padding', 'mellis' ),
+	                'label' 		=> esc_html__( 'Padding', 'spalisho' ),
 	                'type' 			=> Controls_Manager::DIMENSIONS,
 	                'size_units' 	=> [ 'px', '%', 'em' ],
 	                'selectors' 	=> [
@@ -377,7 +377,7 @@ class Mellis_Elementor_Process extends Widget_Base {
 		$this->start_controls_section(
             'item_process_style',
             [
-                'label' => esc_html__( 'Item Process', 'mellis' ),
+                'label' => esc_html__( 'Item Process', 'spalisho' ),
                 'tab' 	=> Controls_Manager::TAB_STYLE,
             ]
         );
@@ -385,7 +385,7 @@ class Mellis_Elementor_Process extends Widget_Base {
 			$this->add_control(
 				'circle_border_color',
 				[
-					'label' 	=> esc_html__( 'Color Circle', 'mellis' ),
+					'label' 	=> esc_html__( 'Color Circle', 'spalisho' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
 						'{{WRAPPER}} .ova-process .item-process .image-process:before' => 'border-color: {{VALUE}};',
@@ -396,7 +396,7 @@ class Mellis_Elementor_Process extends Widget_Base {
 			$this->add_control(
 				'line_process_bgcolor',
 				[
-					'label' 	=> esc_html__( 'Background Line', 'mellis' ),
+					'label' 	=> esc_html__( 'Background Line', 'spalisho' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
 						'{{WRAPPER}} .ova-process .item-process:before, {{WRAPPER}} .ova-process .item-process:first-child:after, {{WRAPPER}} .ova-process .item-process:last-child:after' => 'background-color: {{VALUE}};',
@@ -500,4 +500,4 @@ class Mellis_Elementor_Process extends Widget_Base {
 
 	
 }
-$widgets_manager->register( new Mellis_Elementor_Process() );
+$widgets_manager->register( new Spalisho_Elementor_Process() );

@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: Ovatheme MegaMenu
+Plugin Name: OvaTheme MegaMenu
 Plugin URI: https://themeforest.net/user/ovatheme
 Description: OvaTheme MegaMenu
 Author: Ovatheme

@@ -7,14 +7,14 @@ use Elementor\Utils;
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
-class Mellis_Elementor_Pricing_Tab extends Widget_Base {
+class Spalisho_Elementor_Pricing_Tab extends Widget_Base {
 
 	public function get_name() {
-		return 'mellis_elementor_pricing_tab';
+		return 'spalisho_elementor_pricing_tab';
 	}
 
 	public function get_title() {
-		return esc_html__( 'Pricing Tab', 'mellis' );
+		return esc_html__( 'Pricing Tab', 'spalisho' );
 	}
 
 	public function get_icon() {
@@ -22,11 +22,11 @@ class Mellis_Elementor_Pricing_Tab extends Widget_Base {
 	}
 
 	public function get_categories() {
-		return [ 'mellis' ];
+		return [ 'spalisho' ];
 	}
 
 	public function get_script_depends() {
-		return [ 'mellis-elementor-pricing-tab' ];
+		return [ 'spalisho-elementor-pricing-tab' ];
 	}
 	
 	// Add Your Controll In This Function
@@ -35,7 +35,7 @@ class Mellis_Elementor_Pricing_Tab extends Widget_Base {
 		$this->start_controls_section(
 			'section_content',
 			[
-				'label' => esc_html__( 'Content', 'mellis' ),
+				'label' => esc_html__( 'Content', 'spalisho' ),
 			]
 		);	
 			
@@ -43,36 +43,36 @@ class Mellis_Elementor_Pricing_Tab extends Widget_Base {
 		    $this->add_control(
 				'label_month',
 				[
-					'label' => esc_html__( 'Label', 'mellis' ),
+					'label' => esc_html__( 'Label', 'spalisho' ),
 					'type' => Controls_Manager::TEXT,
-					'default' => esc_html__( 'Monthly', 'mellis' ),
+					'default' => esc_html__( 'Monthly', 'spalisho' ),
 				]
 			);
 
 			$this->add_control(
 	            'tab_content_month',
 	            [
-	                'label' => esc_html__( 'Shortcode Pricing 1', 'mellis' ),     
+	                'label' => esc_html__( 'Shortcode Pricing 1', 'spalisho' ),     
 	                'type' => Controls_Manager::TEXTAREA,
-	                'description' => esc_html__( 'Shortcode Pricing', 'mellis' ),
+	                'description' => esc_html__( 'Shortcode Pricing', 'spalisho' ),
 	            ]
 	        );
 
 			$this->add_control(
 				'label_year',
 				[
-					'label' => esc_html__( 'Label', 'mellis' ),
+					'label' => esc_html__( 'Label', 'spalisho' ),
 					'type' => Controls_Manager::TEXT,
-					'default' => esc_html__( 'Yearly', 'mellis' ),
+					'default' => esc_html__( 'Yearly', 'spalisho' ),
 				]
 			);
 
 			$this->add_control(
 	            'tab_content_year',
 	            [
-	                'label' => esc_html__( 'Shortcode Pricing 2', 'mellis' ),
+	                'label' => esc_html__( 'Shortcode Pricing 2', 'spalisho' ),
 	                'type' => Controls_Manager::TEXTAREA,
-	                'description' => esc_html__( 'Shortcode Pricing 2', 'mellis' ),
+	                'description' => esc_html__( 'Shortcode Pricing 2', 'spalisho' ),
 	            ]
 	        );	
 
@@ -82,7 +82,7 @@ class Mellis_Elementor_Pricing_Tab extends Widget_Base {
 		$this->start_controls_section(
             'label_style',
             [
-                'label' => esc_html__( 'Label', 'mellis' ),
+                'label' => esc_html__( 'Label', 'spalisho' ),
                 'tab' 	=> Controls_Manager::TAB_STYLE,
             ]
         );
@@ -98,7 +98,7 @@ class Mellis_Elementor_Pricing_Tab extends Widget_Base {
 			$this->add_control(
 				'label_color',
 				[
-					'label' 	=> esc_html__( 'Color', 'mellis' ),
+					'label' 	=> esc_html__( 'Color', 'spalisho' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
 						'{{WRAPPER}} .ova-pricing-tab .tab-pricing-switch .price-label' => 'color: {{VALUE}};',
@@ -109,7 +109,7 @@ class Mellis_Elementor_Pricing_Tab extends Widget_Base {
 			$this->add_control(
 				'label_color_active',
 				[
-					'label' 	=> esc_html__( 'Color Active', 'mellis' ),
+					'label' 	=> esc_html__( 'Color Active', 'spalisho' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
 						'{{WRAPPER}} .ova-pricing-tab .tab-pricing-switch .price-label.label-active' => 'color: {{VALUE}};',
@@ -124,7 +124,7 @@ class Mellis_Elementor_Pricing_Tab extends Widget_Base {
 		$this->start_controls_section(
             'switch_button_style',
             [
-                'label' => esc_html__( 'Switch Button', 'mellis' ),
+                'label' => esc_html__( 'Switch Button', 'spalisho' ),
                 'tab' 	=> Controls_Manager::TAB_STYLE,
             ]
         );
@@ -132,7 +132,7 @@ class Mellis_Elementor_Pricing_Tab extends Widget_Base {
 			$this->add_control(
 				'switch_button_color',
 				[
-					'label' 	=> esc_html__( 'Color', 'mellis' ),
+					'label' 	=> esc_html__( 'Color', 'spalisho' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
 						'{{WRAPPER}} .ova-pricing-tab .tab-pricing-switch .slider:before' => 'background-color: {{VALUE}};',
@@ -143,7 +143,7 @@ class Mellis_Elementor_Pricing_Tab extends Widget_Base {
 			$this->add_control(
 				'switch_button_bgcolor',
 				[
-					'label' 	=> esc_html__( 'Background Color', 'mellis' ),
+					'label' 	=> esc_html__( 'Background Color', 'spalisho' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
 						'{{WRAPPER}} .ova-pricing-tab .tab-pricing-switch .slider' => 'background-color: {{VALUE}};',
@@ -154,7 +154,7 @@ class Mellis_Elementor_Pricing_Tab extends Widget_Base {
 			$this->add_responsive_control(
 	            'switch_button_margin',
 	            [
-	                'label' 		=> esc_html__( 'Margin', 'mellis' ),
+	                'label' 		=> esc_html__( 'Margin', 'spalisho' ),
 	                'type' 			=> Controls_Manager::DIMENSIONS,
 	                'size_units' 	=> [ 'px', '%', 'em' ],
 	                'selectors' 	=> [
@@ -166,7 +166,7 @@ class Mellis_Elementor_Pricing_Tab extends Widget_Base {
 	        $this->add_responsive_control(
 	            'switch_button_border_radius',
 	            [
-	                'label' 		=> esc_html__( 'Border Radisu', 'mellis' ),
+	                'label' 		=> esc_html__( 'Border Radisu', 'spalisho' ),
 	                'type' 			=> Controls_Manager::DIMENSIONS,
 	                'size_units' 	=> [ 'px', '%', 'em' ],
 	                'selectors' 	=> [
@@ -224,4 +224,4 @@ class Mellis_Elementor_Pricing_Tab extends Widget_Base {
 	}
 	
 }
-$widgets_manager->register( new Mellis_Elementor_Pricing_Tab() );
+$widgets_manager->register( new Spalisho_Elementor_Pricing_Tab() );

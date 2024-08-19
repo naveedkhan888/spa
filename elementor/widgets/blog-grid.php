@@ -6,14 +6,14 @@ use Elementor\Group_Control_Border;
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
-class Mellis_Elementor_Blog_Grid extends Widget_Base {
+class Spalisho_Elementor_Blog_Grid extends Widget_Base {
 
 	public function get_name() {
-		return 'mellis_elementor_blog_grid';
+		return 'spalisho_elementor_blog_grid';
 	}
 
 	public function get_title() {
-		return esc_html__( 'Blog Grid', 'mellis' );
+		return esc_html__( 'Blog Grid', 'spalisho' );
 	}
 
 	public function get_icon() {
@@ -21,7 +21,7 @@ class Mellis_Elementor_Blog_Grid extends Widget_Base {
 	}
 
 	public function get_categories() {
-		return [ 'mellis' ];
+		return [ 'spalisho' ];
 	}
 
 	public function get_script_depends() {
@@ -37,32 +37,32 @@ class Mellis_Elementor_Blog_Grid extends Widget_Base {
 
 		$categories=get_categories($args);
 		$cate_array = array();
-		$arrayCateAll = array( 'all' => esc_html__( 'All categories', 'mellis' ) );
+		$arrayCateAll = array( 'all' => esc_html__( 'All categories', 'spalisho' ) );
 		if ($categories) {
 			foreach ( $categories as $cate ) {
 				$cate_array[$cate->cat_name] = $cate->slug;
 			}
 		} else {
-			$cate_array[ esc_html__( 'No content Category found', 'mellis' ) ] = 0;
+			$cate_array[ esc_html__( 'No content Category found', 'spalisho' ) ] = 0;
 		}
 
 		//SECTION CONTENT
 		$this->start_controls_section(
 			'section_content',
 			[
-				'label' => esc_html__( 'Content', 'mellis' ),
+				'label' => esc_html__( 'Content', 'spalisho' ),
 			]
 		);
 
 			$this->add_control(
 				'template',
 				[
-					'label' => esc_html__( 'Template', 'mellis' ),
+					'label' => esc_html__( 'Template', 'spalisho' ),
 					'type' => Controls_Manager::SELECT,
 					'default' => 'template_1',
 					'options' => [
-						'template_1' => esc_html__( 'Template 1', 'mellis' ),
-						'template_2' => esc_html__( 'Template 2', 'mellis' ),
+						'template_1' => esc_html__( 'Template 1', 'spalisho' ),
+						'template_2' => esc_html__( 'Template 2', 'spalisho' ),
 					]
 				]
 			);	
@@ -70,12 +70,12 @@ class Mellis_Elementor_Blog_Grid extends Widget_Base {
 			$this->add_control(
 				'template_2_style',
 				[
-					'label' => esc_html__( 'Template 2 Style', 'mellis' ),
+					'label' => esc_html__( 'Template 2 Style', 'spalisho' ),
 					'type' => Controls_Manager::SELECT,
 					'default' => 'template_2_style1',
 					'options' => [
-						'template_2_style1' => esc_html__( 'Style 1', 'mellis' ),
-						'template_2_style2' => esc_html__( 'Style 2', 'mellis' ),
+						'template_2_style1' => esc_html__( 'Style 1', 'spalisho' ),
+						'template_2_style2' => esc_html__( 'Style 2', 'spalisho' ),
 					],
 					'condition' => [
 						'template' => 'template_2'
@@ -86,7 +86,7 @@ class Mellis_Elementor_Blog_Grid extends Widget_Base {
 			$this->add_control(
 				'category',
 				[
-					'label' => esc_html__( 'Category', 'mellis' ),
+					'label' => esc_html__( 'Category', 'spalisho' ),
 					'type' => Controls_Manager::SELECT,
 					'default' => 'all',
 					'options' => array_merge($arrayCateAll,$cate_array),
@@ -96,13 +96,13 @@ class Mellis_Elementor_Blog_Grid extends Widget_Base {
 			$this->add_control(
 				'number_column',
 				[
-					'label' => esc_html__( 'Columns', 'mellis' ),
+					'label' => esc_html__( 'Columns', 'spalisho' ),
 					'type' => Controls_Manager::SELECT,
 					'default' => 'column_3',
 					'options' => [
-						'column_2' => esc_html__( '2 Columns', 'mellis' ),
-						'column_3' => esc_html__( '3 Columns', 'mellis' ),
-						'column_4' => esc_html__( '4 Columns', 'mellis' ),
+						'column_2' => esc_html__( '2 Columns', 'spalisho' ),
+						'column_3' => esc_html__( '3 Columns', 'spalisho' ),
+						'column_4' => esc_html__( '4 Columns', 'spalisho' ),
 					]
 				]
 			);
@@ -110,7 +110,7 @@ class Mellis_Elementor_Blog_Grid extends Widget_Base {
 			$this->add_control(
 				'total_count',
 				[
-					'label' => esc_html__( 'Post Total', 'mellis' ),
+					'label' => esc_html__( 'Post Total', 'spalisho' ),
 					'type' => Controls_Manager::NUMBER,
 					'default' => 3,
 				]
@@ -119,15 +119,15 @@ class Mellis_Elementor_Blog_Grid extends Widget_Base {
 			$this->add_control(
 				'orderby',
 				[
-					'label' 	=> esc_html__('Order By', 'mellis'),
+					'label' 	=> esc_html__('Order By', 'spalisho'),
 					'type' 		=> \Elementor\Controls_Manager::SELECT,
 					'default' 	=> 'ID',
 					'options' 	=> [
-						'ID' 		=> esc_html__('ID', 'mellis'),
-						'title' 	=> esc_html__('Title', 'mellis'),
-						'date' 		=> esc_html__('Date', 'mellis'),
-						'modified' 	=> esc_html__('Modified', 'mellis'),
-						'rand' 		=> esc_html__('Rand', 'mellis'),
+						'ID' 		=> esc_html__('ID', 'spalisho'),
+						'title' 	=> esc_html__('Title', 'spalisho'),
+						'date' 		=> esc_html__('Date', 'spalisho'),
+						'modified' 	=> esc_html__('Modified', 'spalisho'),
+						'rand' 		=> esc_html__('Rand', 'spalisho'),
 					]
 				]
 			);
@@ -135,12 +135,12 @@ class Mellis_Elementor_Blog_Grid extends Widget_Base {
 			$this->add_control(
 				'order_by',
 				[
-					'label' => esc_html__('Order', 'mellis'),
+					'label' => esc_html__('Order', 'spalisho'),
 					'type' => Controls_Manager::SELECT,
 					'default' => 'desc',
 					'options' => [
-						'asc' => esc_html__('Ascending', 'mellis'),
-						'desc' => esc_html__('Descending', 'mellis'),
+						'asc' => esc_html__('Ascending', 'spalisho'),
+						'desc' => esc_html__('Descending', 'spalisho'),
 					]
 				]
 			);
@@ -148,19 +148,19 @@ class Mellis_Elementor_Blog_Grid extends Widget_Base {
 			$this->add_control(
 				'text_readmore',
 				[
-					'label' => esc_html__( 'Text Read More', 'mellis' ),
+					'label' => esc_html__( 'Text Read More', 'spalisho' ),
 					'type' => Controls_Manager::TEXT,
-					'default' => esc_html__('Read More', 'mellis'),
+					'default' => esc_html__('Read More', 'spalisho'),
 				]
 			);
 
 			$this->add_control(
 				'show_short_desc',
 				[
-					'label' => esc_html__( 'Show Short Description', 'mellis' ),
+					'label' => esc_html__( 'Show Short Description', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::SWITCHER,
-					'label_on' => esc_html__( 'Show', 'mellis' ),
-					'label_off' => esc_html__( 'Hide', 'mellis' ),
+					'label_on' => esc_html__( 'Show', 'spalisho' ),
+					'label_off' => esc_html__( 'Hide', 'spalisho' ),
 					'return_value' => 'yes',
 					'default' => 'yes',
 				]
@@ -169,10 +169,10 @@ class Mellis_Elementor_Blog_Grid extends Widget_Base {
 			$this->add_control(
 				'show_comment',
 				[
-					'label' => esc_html__( 'Show Comment', 'mellis' ),
+					'label' => esc_html__( 'Show Comment', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::SWITCHER,
-					'label_on' => esc_html__( 'Show', 'mellis' ),
-					'label_off' => esc_html__( 'Hide', 'mellis' ),
+					'label_on' => esc_html__( 'Show', 'spalisho' ),
+					'label_off' => esc_html__( 'Hide', 'spalisho' ),
 					'return_value' => 'yes',
 					'default' => 'yes',
 				]
@@ -181,7 +181,7 @@ class Mellis_Elementor_Blog_Grid extends Widget_Base {
 			$this->add_control(
 				'order_text',
 				[
-					'label' => esc_html__( 'Description Words Total', 'mellis' ),
+					'label' => esc_html__( 'Description Words Total', 'spalisho' ),
 					'type' => Controls_Manager::NUMBER,
 					'default' => 10,
 					'condition' => [
@@ -194,10 +194,10 @@ class Mellis_Elementor_Blog_Grid extends Widget_Base {
 			$this->add_control(
 				'show_date',
 				[
-					'label' => esc_html__( 'Show Date', 'mellis' ),
+					'label' => esc_html__( 'Show Date', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::SWITCHER,
-					'label_on' => esc_html__( 'Show', 'mellis' ),
-					'label_off' => esc_html__( 'Hide', 'mellis' ),
+					'label_on' => esc_html__( 'Show', 'spalisho' ),
+					'label_off' => esc_html__( 'Hide', 'spalisho' ),
 					'return_value' => 'yes',
 					'default' => 'yes',
 				]
@@ -206,10 +206,10 @@ class Mellis_Elementor_Blog_Grid extends Widget_Base {
 			$this->add_control(
 				'show_author',
 				[
-					'label' => esc_html__( 'Show Author', 'mellis' ),
+					'label' => esc_html__( 'Show Author', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::SWITCHER,
-					'label_on' => esc_html__( 'Show', 'mellis' ),
-					'label_off' => esc_html__( 'Hide', 'mellis' ),
+					'label_on' => esc_html__( 'Show', 'spalisho' ),
+					'label_off' => esc_html__( 'Hide', 'spalisho' ),
 					'return_value' => 'yes',
 					'default' => 'yes',
 				]
@@ -218,10 +218,10 @@ class Mellis_Elementor_Blog_Grid extends Widget_Base {
 			$this->add_control(
 				'show_title',
 				[
-					'label' => esc_html__( 'Show Title', 'mellis' ),
+					'label' => esc_html__( 'Show Title', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::SWITCHER,
-					'label_on' => esc_html__( 'Show', 'mellis' ),
-					'label_off' => esc_html__( 'Hide', 'mellis' ),
+					'label_on' => esc_html__( 'Show', 'spalisho' ),
+					'label_off' => esc_html__( 'Hide', 'spalisho' ),
 					'return_value' => 'yes',
 					'default' => 'yes',
 				]
@@ -230,10 +230,10 @@ class Mellis_Elementor_Blog_Grid extends Widget_Base {
 			$this->add_control(
 				'show_category',
 				[
-					'label' => esc_html__( 'Show Category', 'mellis' ),
+					'label' => esc_html__( 'Show Category', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::SWITCHER,
-					'label_on' => esc_html__( 'Show', 'mellis' ),
-					'label_off' => esc_html__( 'Hide', 'mellis' ),
+					'label_on' => esc_html__( 'Show', 'spalisho' ),
+					'label_off' => esc_html__( 'Hide', 'spalisho' ),
 					'return_value' => 'yes',
 					'default' => 'no',
 				]
@@ -242,10 +242,10 @@ class Mellis_Elementor_Blog_Grid extends Widget_Base {
 			$this->add_control(
 				'show_read_more',
 				[
-					'label' => esc_html__( 'Show Read More', 'mellis' ),
+					'label' => esc_html__( 'Show Read More', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::SWITCHER,
-					'label_on' => esc_html__( 'Show', 'mellis' ),
-					'label_off' => esc_html__( 'Hide', 'mellis' ),
+					'label_on' => esc_html__( 'Show', 'spalisho' ),
+					'label_off' => esc_html__( 'Hide', 'spalisho' ),
 					'return_value' => 'yes',
 					'default' => 'yes',
 				]
@@ -259,7 +259,7 @@ class Mellis_Elementor_Blog_Grid extends Widget_Base {
 		$this->start_controls_section(
             'general',
             [
-                'label' => esc_html__( 'General', 'mellis' ),
+                'label' => esc_html__( 'General', 'spalisho' ),
                 'tab' 	=> Controls_Manager::TAB_STYLE,
             ]
         );
@@ -267,19 +267,19 @@ class Mellis_Elementor_Blog_Grid extends Widget_Base {
         	$this->add_responsive_control(
 				'general_align',
 				[
-					'label' 	=> esc_html__( 'Alignment', 'mellis' ),
+					'label' 	=> esc_html__( 'Alignment', 'spalisho' ),
 					'type' 		=> \Elementor\Controls_Manager::CHOOSE,
 					'options' 	=> [
 						'left' => [
-							'title' => esc_html__( 'Left', 'mellis' ),
+							'title' => esc_html__( 'Left', 'spalisho' ),
 							'icon' 	=> 'eicon-text-align-left',
 						],
 						'center' => [
-							'title' => esc_html__( 'Center', 'mellis' ),
+							'title' => esc_html__( 'Center', 'spalisho' ),
 							'icon' 	=> 'eicon-text-align-center',
 						],
 						'right' => [
-							'title' => esc_html__( 'Right', 'mellis' ),
+							'title' => esc_html__( 'Right', 'spalisho' ),
 							'icon' 	=> 'eicon-text-align-right',
 						],
 						
@@ -295,7 +295,7 @@ class Mellis_Elementor_Blog_Grid extends Widget_Base {
         	$this->add_responsive_control(
 				'general_padding',
 				[
-					'label' => esc_html__( 'Padding', 'mellis' ),
+					'label' => esc_html__( 'Padding', 'spalisho' ),
 					'type' => Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', 'em', '%' ],
 					'selectors' => [
@@ -308,7 +308,7 @@ class Mellis_Elementor_Blog_Grid extends Widget_Base {
 			$this->add_responsive_control(
 				'general_margin',
 				[
-					'label' => esc_html__( 'Margin', 'mellis' ),
+					'label' => esc_html__( 'Margin', 'spalisho' ),
 					'type' => Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', 'em', '%' ],
 					'selectors' => [
@@ -320,7 +320,7 @@ class Mellis_Elementor_Blog_Grid extends Widget_Base {
 			$this->add_control(
 				'template_3_general_background',
 				[
-					'label'	 	=> esc_html__( 'Background', 'mellis' ),
+					'label'	 	=> esc_html__( 'Background', 'spalisho' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
 						'{{WRAPPER}} .ova-blog .item .content' => 'background-color : {{VALUE}};'	
@@ -337,7 +337,7 @@ class Mellis_Elementor_Blog_Grid extends Widget_Base {
 		$this->start_controls_section(
 			'section_title',
 			[
-				'label' => esc_html__( 'Title', 'mellis' ),
+				'label' => esc_html__( 'Title', 'spalisho' ),
 				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -354,7 +354,7 @@ class Mellis_Elementor_Blog_Grid extends Widget_Base {
 		$this->add_control(
 			'color_title',
 			[
-				'label' => esc_html__( 'Color', 'mellis' ),
+				'label' => esc_html__( 'Color', 'spalisho' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .ova-blog .item .content .post-title a' => 'color : {{VALUE}};',
@@ -365,7 +365,7 @@ class Mellis_Elementor_Blog_Grid extends Widget_Base {
 		$this->add_control(
 			'color_title_hover',
 			[
-				'label' => esc_html__( 'Color Hover', 'mellis' ),
+				'label' => esc_html__( 'Color Hover', 'spalisho' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .ova-blog .item .content .post-title a:hover' => 'color : {{VALUE}};',
@@ -376,7 +376,7 @@ class Mellis_Elementor_Blog_Grid extends Widget_Base {
 		$this->add_responsive_control(
 			'margin_title',
 			[
-				'label' => esc_html__( 'Margin', 'mellis' ),
+				'label' => esc_html__( 'Margin', 'spalisho' ),
 				'type' => \Elementor\Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', 'em', '%' ],
 				'selectors' => [
@@ -388,7 +388,7 @@ class Mellis_Elementor_Blog_Grid extends Widget_Base {
 		$this->add_responsive_control(
 			'padding_title',
 			[
-				'label' => esc_html__( 'Padding', 'mellis' ),
+				'label' => esc_html__( 'Padding', 'spalisho' ),
 				'type' => \Elementor\Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', 'em', '%' ],
 				'selectors' => [
@@ -404,7 +404,7 @@ class Mellis_Elementor_Blog_Grid extends Widget_Base {
 		$this->start_controls_section(
 			'section_short_desc',
 			[
-				'label' => esc_html__( 'Short Description', 'mellis' ),
+				'label' => esc_html__( 'Short Description', 'spalisho' ),
 				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -421,7 +421,7 @@ class Mellis_Elementor_Blog_Grid extends Widget_Base {
 		$this->add_control(
 			'color_short_desc',
 			[
-				'label' => esc_html__( 'Color', 'mellis' ),
+				'label' => esc_html__( 'Color', 'spalisho' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .ova-blog .short_desc p' => 'color : {{VALUE}};',
@@ -432,7 +432,7 @@ class Mellis_Elementor_Blog_Grid extends Widget_Base {
 		$this->add_responsive_control(
 			'margin_short_desc',
 			[
-				'label' => esc_html__( 'Margin', 'mellis' ),
+				'label' => esc_html__( 'Margin', 'spalisho' ),
 				'type' => \Elementor\Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', 'em', '%' ],
 				'selectors' => [
@@ -444,7 +444,7 @@ class Mellis_Elementor_Blog_Grid extends Widget_Base {
 		$this->add_responsive_control(
 			'padding_short_desc',
 			[
-				'label' => esc_html__( 'Padding', 'mellis' ),
+				'label' => esc_html__( 'Padding', 'spalisho' ),
 				'type' => \Elementor\Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', 'em', '%' ],
 				'selectors' => [
@@ -460,7 +460,7 @@ class Mellis_Elementor_Blog_Grid extends Widget_Base {
 		$this->start_controls_section(
 			'section_meta',
 			[
-				'label' => esc_html__( 'Meta', 'mellis' ),
+				'label' => esc_html__( 'Meta', 'spalisho' ),
 				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -477,7 +477,7 @@ class Mellis_Elementor_Blog_Grid extends Widget_Base {
 		$this->add_control(
 			'text_color_meta',
 			[
-				'label' => esc_html__( 'Text Color', 'mellis' ),
+				'label' => esc_html__( 'Text Color', 'spalisho' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .ova-blog .item .content .post-meta .item-meta .right a' => 'color : {{VALUE}};',
@@ -488,7 +488,7 @@ class Mellis_Elementor_Blog_Grid extends Widget_Base {
 		$this->add_control(
 			'link_color_meta_hover',
 			[
-				'label' => esc_html__( 'Link Color hover', 'mellis' ),
+				'label' => esc_html__( 'Link Color hover', 'spalisho' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .ova-blog .item .post-meta .item-meta .right a:hover' => 'color : {{VALUE}};',
@@ -499,7 +499,7 @@ class Mellis_Elementor_Blog_Grid extends Widget_Base {
 		$this->add_control(
 			'icon_color_meta',
 			[
-				'label' => esc_html__( 'Icon Color', 'mellis' ),
+				'label' => esc_html__( 'Icon Color', 'spalisho' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .ova-blog .item .post-meta .item-meta .left' => 'color : {{VALUE}};',
@@ -510,7 +510,7 @@ class Mellis_Elementor_Blog_Grid extends Widget_Base {
 		$this->add_responsive_control(
 			'margin_meta',
 			[
-				'label' => esc_html__( 'Margin', 'mellis' ),
+				'label' => esc_html__( 'Margin', 'spalisho' ),
 				'type' => \Elementor\Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', 'em', '%' ],
 				'selectors' => [
@@ -525,7 +525,7 @@ class Mellis_Elementor_Blog_Grid extends Widget_Base {
 		$this->start_controls_section(
 			'category_section',
 			[
-				'label' => esc_html__( 'Category', 'mellis' ),
+				'label' => esc_html__( 'Category', 'spalisho' ),
 				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -541,7 +541,7 @@ class Mellis_Elementor_Blog_Grid extends Widget_Base {
 		$this->add_control(
 			'category_color',
 			[
-				'label' => esc_html__( 'Color', 'mellis' ),
+				'label' => esc_html__( 'Color', 'spalisho' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .ova-blog .item .content .post-meta .category a' => 'color : {{VALUE}};',
@@ -552,7 +552,7 @@ class Mellis_Elementor_Blog_Grid extends Widget_Base {
 		$this->add_control(
 			'category_bgcolor',
 			[
-				'label' => esc_html__( 'Background', 'mellis' ),
+				'label' => esc_html__( 'Background', 'spalisho' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .ova-blog .item .content .post-meta .category' => 'background-color : {{VALUE}};',
@@ -563,7 +563,7 @@ class Mellis_Elementor_Blog_Grid extends Widget_Base {
 		$this->add_responsive_control(
 			'category_padding',
 			[
-				'label' => esc_html__( 'Padding', 'mellis' ),
+				'label' => esc_html__( 'Padding', 'spalisho' ),
 				'type' => \Elementor\Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', 'em', '%' ],
 				'selectors' => [
@@ -576,7 +576,7 @@ class Mellis_Elementor_Blog_Grid extends Widget_Base {
 			\Elementor\Group_Control_Border::get_type(),
 			[
 				'name' 		=> 'border_category',
-				'label' 	=> esc_html__( 'Border', 'mellis' ),
+				'label' 	=> esc_html__( 'Border', 'spalisho' ),
 				'selector' 	=> '{{WRAPPER}} .ova-blog .item .content .post-meta .category',
 			]
 		);
@@ -587,7 +587,7 @@ class Mellis_Elementor_Blog_Grid extends Widget_Base {
 		$this->start_controls_section(
 			'date_section',
 			[
-				'label' => esc_html__( 'Date', 'mellis' ),
+				'label' => esc_html__( 'Date', 'spalisho' ),
 				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -604,7 +604,7 @@ class Mellis_Elementor_Blog_Grid extends Widget_Base {
 		$this->add_control(
 			'date_color',
 			[
-				'label' => esc_html__( 'Color', 'mellis' ),
+				'label' => esc_html__( 'Color', 'spalisho' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .ova-blog .item .content .post-date' => 'color : {{VALUE}};',
@@ -615,7 +615,7 @@ class Mellis_Elementor_Blog_Grid extends Widget_Base {
 		$this->add_control(
 			'date_color_hover',
 			[
-				'label' => esc_html__( 'Color Hover', 'mellis' ),
+				'label' => esc_html__( 'Color Hover', 'spalisho' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .ova-blog .item .content .post-date:hover' => 'color : {{VALUE}};',
@@ -626,7 +626,7 @@ class Mellis_Elementor_Blog_Grid extends Widget_Base {
 		$this->add_control(
 			'date_cat_color',
 			[
-				'label' => esc_html__( 'Background', 'mellis' ),
+				'label' => esc_html__( 'Background', 'spalisho' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .ova-blog .item .content .post-date' => 'background-color : {{VALUE}};',
@@ -637,7 +637,7 @@ class Mellis_Elementor_Blog_Grid extends Widget_Base {
 		$this->add_control(
 			'bg_date_color_hover',
 			[
-				'label' => esc_html__( 'Background Hover', 'mellis' ),
+				'label' => esc_html__( 'Background Hover', 'spalisho' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .ova-blog .item .content .post-date:hover' => 'background-color : {{VALUE}};',
@@ -648,7 +648,7 @@ class Mellis_Elementor_Blog_Grid extends Widget_Base {
 		$this->add_responsive_control(
 			'date_padding',
 			[
-				'label' => esc_html__( 'Padding', 'mellis' ),
+				'label' => esc_html__( 'Padding', 'spalisho' ),
 				'type' => \Elementor\Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', 'em', '%' ],
 				'selectors' => [
@@ -660,7 +660,7 @@ class Mellis_Elementor_Blog_Grid extends Widget_Base {
 		$this->add_responsive_control(
 			'date_margin',
 			[
-				'label' => esc_html__( 'Margin', 'mellis' ),
+				'label' => esc_html__( 'Margin', 'spalisho' ),
 				'type' => \Elementor\Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', 'em', '%' ],
 				'selectors' => [
@@ -676,7 +676,7 @@ class Mellis_Elementor_Blog_Grid extends Widget_Base {
 		$this->start_controls_section(
 			'section_readmore',
 			[
-				'label' => esc_html__( 'Read More', 'mellis' ),
+				'label' => esc_html__( 'Read More', 'spalisho' ),
 				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -693,7 +693,7 @@ class Mellis_Elementor_Blog_Grid extends Widget_Base {
 		$this->add_control(
 			'color_readmore',
 			[
-				'label' => esc_html__( 'Color', 'mellis' ),
+				'label' => esc_html__( 'Color', 'spalisho' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .ova-blog .item .content .read-more' => 'color : {{VALUE}};',
@@ -704,7 +704,7 @@ class Mellis_Elementor_Blog_Grid extends Widget_Base {
 		$this->add_control(
 			'color_readmore_hover',
 			[
-				'label' => esc_html__( 'Color Hover', 'mellis' ),
+				'label' => esc_html__( 'Color Hover', 'spalisho' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .ova-blog .item .content .read-more:hover' => 'color : {{VALUE}};',
@@ -715,7 +715,7 @@ class Mellis_Elementor_Blog_Grid extends Widget_Base {
 		$this->add_responsive_control(
 			'margin_readmore',
 			[
-				'label' => esc_html__( 'Margin', 'mellis' ),
+				'label' => esc_html__( 'Margin', 'spalisho' ),
 				'type' => \Elementor\Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', 'em', '%' ],
 				'selectors' => [
@@ -788,7 +788,7 @@ class Mellis_Elementor_Blog_Grid extends Widget_Base {
 			<?php
 				if($blog->have_posts()) : while($blog->have_posts()) : $blog->the_post();
 
-				$thumbnail = wp_get_attachment_image_url(get_post_thumbnail_id() , 'mellis_thumbnail' );
+				$thumbnail = wp_get_attachment_image_url(get_post_thumbnail_id() , 'spalisho_thumbnail' );
 			    $url_thumb = $thumbnail ? $thumbnail : \Elementor\Utils::get_placeholder_image_src();
 
 				// get first category from post
@@ -853,11 +853,11 @@ class Mellis_Elementor_Blog_Grid extends Widget_Base {
 							        <span class="right comment">
 										<?php
 										comments_popup_link(
-											esc_html__('0 Comments', 'mellis'), 
-											esc_html__('1 Comments', 'mellis'), 
+											esc_html__('0 Comments', 'spalisho'), 
+											esc_html__('1 Comments', 'spalisho'), 
 											'(%)Comments',
 											'',
-											esc_html__( 'Comment off', 'mellis' ) )
+											esc_html__( 'Comment off', 'spalisho' ) )
 										; ?> 
 									</span>            
 								</li>
@@ -908,4 +908,4 @@ class Mellis_Elementor_Blog_Grid extends Widget_Base {
 	}
 }
 
-$widgets_manager->register( new Mellis_Elementor_Blog_Grid() );
+$widgets_manager->register( new Spalisho_Elementor_Blog_Grid() );

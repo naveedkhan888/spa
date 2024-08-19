@@ -8,14 +8,14 @@ use Elementor\Group_Control_Border;
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
-class Mellis_Elementor_Ova_Image_Box extends Widget_Base {
+class Spalisho_Elementor_Ova_Image_Box extends Widget_Base {
 
 	public function get_name() {
-		return 'mellis_elementor_ova_image_box';
+		return 'spalisho_elementor_ova_image_box';
 	}
 
 	public function get_title() {
-		return esc_html__( 'Ova Image Box', 'mellis' );
+		return esc_html__( 'Ova Image Box', 'spalisho' );
 	}
 
 	public function get_icon() {
@@ -23,7 +23,7 @@ class Mellis_Elementor_Ova_Image_Box extends Widget_Base {
 	}
 
 	public function get_categories() {
-		return [ 'mellis' ];
+		return [ 'spalisho' ];
 	}
 
 	public function get_script_depends() {
@@ -36,7 +36,7 @@ class Mellis_Elementor_Ova_Image_Box extends Widget_Base {
 		$this->start_controls_section(
 			'section_content',
 			[
-				'label' => esc_html__( 'Content', 'mellis' ),
+				'label' => esc_html__( 'Content', 'spalisho' ),
 			]
 		);	
 			
@@ -45,12 +45,12 @@ class Mellis_Elementor_Ova_Image_Box extends Widget_Base {
 			$this->add_control(
 				'template',
 				[
-					'label' => esc_html__( 'Template', 'mellis' ),
+					'label' => esc_html__( 'Template', 'spalisho' ),
 					'type' => Controls_Manager::SELECT,
 					'default' => 'template1',
 					'options' => [
-						'template1' => esc_html__('Template 1', 'mellis'),
-						'template2' => esc_html__('Template 2', 'mellis'),
+						'template1' => esc_html__('Template 1', 'spalisho'),
+						'template2' => esc_html__('Template 2', 'spalisho'),
 					]
 				]
 			);
@@ -58,7 +58,7 @@ class Mellis_Elementor_Ova_Image_Box extends Widget_Base {
 			$this->add_control(
 				'image',
 				[
-					'label' => esc_html__( 'Image', 'mellis' ),
+					'label' => esc_html__( 'Image', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::MEDIA,
 					'default' => [
 						'url' => \Elementor\Utils::get_placeholder_image_src(),
@@ -69,7 +69,7 @@ class Mellis_Elementor_Ova_Image_Box extends Widget_Base {
 			$this->add_control(
 				'icon',
 				[
-					'label' => esc_html__( 'Icon', 'mellis' ),
+					'label' => esc_html__( 'Icon', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::ICONS,
 					'default' 	=> [
 						'value' 	=> 'flaticon flaticon-facial-treatment-1',
@@ -81,18 +81,18 @@ class Mellis_Elementor_Ova_Image_Box extends Widget_Base {
 			$this->add_control(
 				'title',
 				[
-					'label' => esc_html__( 'Title', 'mellis' ),
+					'label' => esc_html__( 'Title', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::TEXTAREA,
-					'default' => esc_html__( 'Professional Facial Treatment For Men & Women', 'mellis' ),
+					'default' => esc_html__( 'Professional Facial Treatment For Men & Women', 'spalisho' ),
 				]
 			);
 
 			$this->add_control(
 				'link',
 				[
-					'label' => esc_html__( 'Link Title', 'mellis' ),
+					'label' => esc_html__( 'Link Title', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::URL,
-					'placeholder' => esc_html__( 'https://your-link.com', 'mellis' ),
+					'placeholder' => esc_html__( 'https://your-link.com', 'spalisho' ),
 					'options' => [ 'url', 'is_external', 'nofollow' ],
 					'default' => [
 						'url' => '',
@@ -108,19 +108,19 @@ class Mellis_Elementor_Ova_Image_Box extends Widget_Base {
 			$this->add_control(
 				'tag',
 				[
-					'label' => esc_html__( 'HTML Tag', 'mellis' ),
+					'label' => esc_html__( 'HTML Tag', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::SELECT,
 					'default' => 'h2',
 					'options' => [
-						'h1' => esc_html__( 'H1', 'mellis' ),
-						'h2' => esc_html__( 'H2', 'mellis' ),
-						'h3' => esc_html__( 'H3', 'mellis' ),
-						'h4' => esc_html__( 'H4', 'mellis' ),
-						'h5' => esc_html__( 'H5', 'mellis' ),
-						'h6' => esc_html__( 'H6', 'mellis' ),
-						'div' => esc_html__( 'div', 'mellis' ),
-						'span' => esc_html__( 'span', 'mellis' ),
-						'p' => esc_html__( 'p', 'mellis' ),
+						'h1' => esc_html__( 'H1', 'spalisho' ),
+						'h2' => esc_html__( 'H2', 'spalisho' ),
+						'h3' => esc_html__( 'H3', 'spalisho' ),
+						'h4' => esc_html__( 'H4', 'spalisho' ),
+						'h5' => esc_html__( 'H5', 'spalisho' ),
+						'h6' => esc_html__( 'H6', 'spalisho' ),
+						'div' => esc_html__( 'div', 'spalisho' ),
+						'span' => esc_html__( 'span', 'spalisho' ),
+						'p' => esc_html__( 'p', 'spalisho' ),
 					],
 				]
 			);
@@ -128,19 +128,19 @@ class Mellis_Elementor_Ova_Image_Box extends Widget_Base {
 			$this->add_responsive_control(
 				'align',
 				[
-					'label' 	=> esc_html__( 'Alignment', 'mellis' ),
+					'label' 	=> esc_html__( 'Alignment', 'spalisho' ),
 					'type' 		=> Controls_Manager::CHOOSE,
 					'options' 	=> [
 						'start' 	=> [
-							'title' => esc_html__( 'Left', 'mellis' ),
+							'title' => esc_html__( 'Left', 'spalisho' ),
 							'icon' 	=> 'eicon-text-align-left',
 						],
 						'center' => [
-							'title' => esc_html__( 'Center', 'mellis' ),
+							'title' => esc_html__( 'Center', 'spalisho' ),
 							'icon' 	=> 'eicon-text-align-center',
 						],
 						'end' => [
-							'title' => esc_html__( 'Right', 'mellis' ),
+							'title' => esc_html__( 'Right', 'spalisho' ),
 							'icon' 	=> 'eicon-text-align-right',
 						],
 					],
@@ -155,7 +155,7 @@ class Mellis_Elementor_Ova_Image_Box extends Widget_Base {
 		$this->start_controls_section(
 			'general_section',
 			[
-				'label' => esc_html__( 'General', 'mellis' ),
+				'label' => esc_html__( 'General', 'spalisho' ),
 				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -163,7 +163,7 @@ class Mellis_Elementor_Ova_Image_Box extends Widget_Base {
 		   $this->add_responsive_control(
 				'general_max_width',
 				[
-					'label' => esc_html__( 'Max Width', 'mellis' ),
+					'label' => esc_html__( 'Max Width', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::SLIDER,
 					'size_units' => [ 'px', '%', 'em', 'rem' ],
 					'range' => [
@@ -186,7 +186,7 @@ class Mellis_Elementor_Ova_Image_Box extends Widget_Base {
 			$this->add_control(
 				'general_background_color',
 				[
-					'label' => esc_html__( 'Background Color', 'mellis' ),
+					'label' => esc_html__( 'Background Color', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::COLOR,
 					'selectors' => [
 						'{{WRAPPER}} .ova-image-box' => 'background-color: {{VALUE}}',
@@ -197,7 +197,7 @@ class Mellis_Elementor_Ova_Image_Box extends Widget_Base {
 			$this->add_responsive_control(
 				'general_padding',
 				[
-					'label' => esc_html__( 'Padding', 'mellis' ),
+					'label' => esc_html__( 'Padding', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', '%', 'em', 'rem' ],
 					'selectors' => [
@@ -209,7 +209,7 @@ class Mellis_Elementor_Ova_Image_Box extends Widget_Base {
 			$this->add_responsive_control(
 				'general_border_radius',
 				[
-					'label' => esc_html__( 'Border Radius', 'mellis' ),
+					'label' => esc_html__( 'Border Radius', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', '%', 'em', 'rem' ],
 					'selectors' => [
@@ -239,7 +239,7 @@ class Mellis_Elementor_Ova_Image_Box extends Widget_Base {
 		$this->start_controls_section(
 			'content_section',
 			[
-				'label' => esc_html__( 'Content', 'mellis' ),
+				'label' => esc_html__( 'Content', 'spalisho' ),
 				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -247,7 +247,7 @@ class Mellis_Elementor_Ova_Image_Box extends Widget_Base {
 			$this->add_control(
 				'icon_options',
 				[
-					'label' => esc_html__( 'Icon', 'mellis' ),
+					'label' => esc_html__( 'Icon', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::HEADING,
 				]
 			);
@@ -255,7 +255,7 @@ class Mellis_Elementor_Ova_Image_Box extends Widget_Base {
 				$this->add_responsive_control(
 					'icon_size',
 					[
-						'label' => esc_html__( 'Size', 'mellis' ),
+						'label' => esc_html__( 'Size', 'spalisho' ),
 						'type' => \Elementor\Controls_Manager::SLIDER,
 						'size_units' => [ 'px', '%', 'em', 'rem' ],
 						'range' => [
@@ -278,7 +278,7 @@ class Mellis_Elementor_Ova_Image_Box extends Widget_Base {
 				$this->add_control(
 					'icon_color',
 					[
-						'label' => esc_html__( 'Color', 'mellis' ),
+						'label' => esc_html__( 'Color', 'spalisho' ),
 						'type' => \Elementor\Controls_Manager::COLOR,
 						'selectors' => [
 							'{{WRAPPER}} .ova-image-box .icon i' => 'color: {{VALUE}}',
@@ -289,7 +289,7 @@ class Mellis_Elementor_Ova_Image_Box extends Widget_Base {
 				$this->add_responsive_control(
 					'icon_margin',
 					[
-						'label' => esc_html__( 'Margin', 'mellis' ),
+						'label' => esc_html__( 'Margin', 'spalisho' ),
 						'type' => \Elementor\Controls_Manager::DIMENSIONS,
 						'size_units' => [ 'px', '%', 'em', 'rem' ],
 						'selectors' => [
@@ -301,7 +301,7 @@ class Mellis_Elementor_Ova_Image_Box extends Widget_Base {
 			$this->add_control(
 				'title_options',
 				[
-					'label' => esc_html__( 'Title', 'mellis' ),
+					'label' => esc_html__( 'Title', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::HEADING,
 					'separator' => 'before',
 				]
@@ -318,7 +318,7 @@ class Mellis_Elementor_Ova_Image_Box extends Widget_Base {
 				$this->add_control(
 					'title_color',
 					[
-						'label' => esc_html__( 'Color', 'mellis' ),
+						'label' => esc_html__( 'Color', 'spalisho' ),
 						'type' => \Elementor\Controls_Manager::COLOR,
 						'selectors' => [
 							'{{WRAPPER}} .ova-image-box .title' => 'color: {{VALUE}}',
@@ -329,7 +329,7 @@ class Mellis_Elementor_Ova_Image_Box extends Widget_Base {
 				$this->add_responsive_control(
 					'title_margin',
 					[
-						'label' => esc_html__( 'Margin', 'mellis' ),
+						'label' => esc_html__( 'Margin', 'spalisho' ),
 						'type' => \Elementor\Controls_Manager::DIMENSIONS,
 						'size_units' => [ 'px', '%', 'em', 'rem' ],
 						'selectors' => [
@@ -405,4 +405,4 @@ class Mellis_Elementor_Ova_Image_Box extends Widget_Base {
 	}
 }
 
-$widgets_manager->register( new Mellis_Elementor_Ova_Image_Box() );
+$widgets_manager->register( new Spalisho_Elementor_Ova_Image_Box() );

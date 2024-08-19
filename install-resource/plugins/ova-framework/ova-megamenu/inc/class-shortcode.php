@@ -1,16 +1,16 @@
 <?php if (!defined( 'ABSPATH' )) exit;
 
-if( !class_exists('Mellis_Shortcode') ){
+if( !class_exists('Spalisho_Shortcode') ){
     
-    class Mellis_Shortcode {
+    class Spalisho_Shortcode {
 
         public function __construct() {
 
-            add_shortcode( 'mellis-elementor-template', array( $this, 'mellis_elementor_template' ) );
+            add_shortcode( 'spalisho-elementor-template', array( $this, 'spalisho_elementor_template' ) );
             
         }
 
-        public function mellis_elementor_template( $atts ){
+        public function spalisho_elementor_template( $atts ){
 
             $atts = extract( shortcode_atts(
             array(
@@ -37,5 +37,5 @@ if( !class_exists('Mellis_Shortcode') ){
 
 
 
-return new Mellis_Shortcode();
+return new Spalisho_Shortcode();
 

@@ -8,18 +8,18 @@ use Elementor\Group_Control_Box_Shadow;
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
-if ( !mellis_is_woo_active() ) {
+if ( !spalisho_is_woo_active() ) {
 	return ;
 }
 
-class Mellis_Elementor_Product_List extends Widget_Base {
+class Spalisho_Elementor_Product_List extends Widget_Base {
 
 	public function get_name() {
-		return 'mellis_elementor_product_list';
+		return 'spalisho_elementor_product_list';
 	}
 
 	public function get_title() {
-		return esc_html__( 'Product List', 'mellis' );
+		return esc_html__( 'Product List', 'spalisho' );
 	}
 
 	public function get_icon() {
@@ -27,7 +27,7 @@ class Mellis_Elementor_Product_List extends Widget_Base {
 	}
 
 	public function get_categories() {
-		return [ 'mellis' ];
+		return [ 'spalisho' ];
 	}
 
 	protected function register_controls() {
@@ -35,17 +35,17 @@ class Mellis_Elementor_Product_List extends Widget_Base {
 		$this->start_controls_section(
 			'section_product_list_content',
 			[
-				'label' => esc_html__( 'Content', 'mellis' ),
+				'label' => esc_html__( 'Content', 'spalisho' ),
 			]
 		);
 
 			$this->add_control(
 				'show_featured',
 				[
-					'label' 		=> __( 'Only Show Featured', 'mellis' ),
+					'label' 		=> __( 'Only Show Featured', 'spalisho' ),
 					'type' 			=> \Elementor\Controls_Manager::SWITCHER,
-					'label_on' 		=> __( 'Show', 'mellis' ),
-					'label_off' 	=> __( 'Hide', 'mellis' ),
+					'label_on' 		=> __( 'Show', 'spalisho' ),
+					'label_off' 	=> __( 'Hide', 'spalisho' ),
 					'default' 		=> 'no',
 				]
 			);
@@ -53,14 +53,14 @@ class Mellis_Elementor_Product_List extends Widget_Base {
 			$this->add_control(
 				'columns',
 				[
-					'label' 	=> esc_html__( 'Columns', 'mellis' ),
+					'label' 	=> esc_html__( 'Columns', 'spalisho' ),
 					'type' 		=> \Elementor\Controls_Manager::SELECT,
 					'default' 	=> 'column3',
 					'options' 	=> [
-						'column1' => esc_html__( 'Column 1', 'mellis' ),
-						'column2' => esc_html__( 'Column 2', 'mellis' ),
-						'column3' => esc_html__( 'Column 3', 'mellis' ),
-						'column4' => esc_html__( 'Column 4', 'mellis' ),
+						'column1' => esc_html__( 'Column 1', 'spalisho' ),
+						'column2' => esc_html__( 'Column 2', 'spalisho' ),
+						'column3' => esc_html__( 'Column 3', 'spalisho' ),
+						'column4' => esc_html__( 'Column 4', 'spalisho' ),
 					],
 				]
 			);
@@ -72,7 +72,7 @@ class Mellis_Elementor_Product_List extends Widget_Base {
 			];
 
 			$categories 		= get_categories( $args_query );
-			$defautl_category 	= array( 'all' => esc_html__( 'All', 'mellis' ) );
+			$defautl_category 	= array( 'all' => esc_html__( 'All', 'spalisho' ) );
 			$args_category 		= array();
 			$result 			= array();
 
@@ -87,7 +87,7 @@ class Mellis_Elementor_Product_List extends Widget_Base {
 			$this->add_control(
 				'categories',
 				[
-					'label' 	=> esc_html__( 'Select Category', 'mellis' ),
+					'label' 	=> esc_html__( 'Select Category', 'spalisho' ),
 					'type' 		=> \Elementor\Controls_Manager::SELECT,
 					'default' 	=> 'all',
 					'options' 	=> $result,
@@ -97,7 +97,7 @@ class Mellis_Elementor_Product_List extends Widget_Base {
 			$this->add_control(
 				'posts_per_page',
 				[
-					'label' 	=> esc_html__( 'Posts Per Page', 'mellis' ),
+					'label' 	=> esc_html__( 'Posts Per Page', 'spalisho' ),
 					'type' 		=> \Elementor\Controls_Manager::NUMBER,
 					'default' 	=> 3,
 				]
@@ -106,13 +106,13 @@ class Mellis_Elementor_Product_List extends Widget_Base {
 			$this->add_control(
 				'orderby',
 				[
-					'label' 	=> esc_html__( 'Order By', 'mellis' ),
+					'label' 	=> esc_html__( 'Order By', 'spalisho' ),
 					'type' 		=> \Elementor\Controls_Manager::SELECT,
 					'default' 	=> 'title',
 					'options' 	=> [
-						'title' => esc_html__( 'Title', 'mellis' ),
-						'ID' 	=> esc_html__( 'ID', 'mellis' ),
-						'date' 	=> esc_html__( 'Date', 'mellis' ),
+						'title' => esc_html__( 'Title', 'spalisho' ),
+						'ID' 	=> esc_html__( 'ID', 'spalisho' ),
+						'date' 	=> esc_html__( 'Date', 'spalisho' ),
 					],
 				]
 			);
@@ -120,12 +120,12 @@ class Mellis_Elementor_Product_List extends Widget_Base {
 			$this->add_control(
 				'order',
 				[
-					'label' 	=> esc_html__( 'Order', 'mellis' ),
+					'label' 	=> esc_html__( 'Order', 'spalisho' ),
 					'type' 		=> \Elementor\Controls_Manager::SELECT,
 					'default' 	=> 'ASC',
 					'options' 	=> [
-						'ASC' 	=> esc_html__( 'Ascending', 'mellis' ),
-						'DESC' 	=> esc_html__( 'Descending', 'mellis' ),
+						'ASC' 	=> esc_html__( 'Ascending', 'spalisho' ),
+						'DESC' 	=> esc_html__( 'Descending', 'spalisho' ),
 					],
 				]
 			);
@@ -133,18 +133,18 @@ class Mellis_Elementor_Product_List extends Widget_Base {
 			$this->add_control(
 				'category_in',
 				[
-					'label'   		=> esc_html__( 'Category In', 'mellis' ),
+					'label'   		=> esc_html__( 'Category In', 'spalisho' ),
 					'type'    		=> Controls_Manager::TEXT,
-					'description' 	=> esc_html__( 'Enter the product category IDs. IDs are separated by "|". Ex: 1|2|3.', 'mellis' ),
+					'description' 	=> esc_html__( 'Enter the product category IDs. IDs are separated by "|". Ex: 1|2|3.', 'spalisho' ),
 				]
 			);
 
 			$this->add_control(
 				'category_not_in',
 				[
-					'label'   		=> esc_html__( 'Category Not In', 'mellis' ),
+					'label'   		=> esc_html__( 'Category Not In', 'spalisho' ),
 					'type'    		=> Controls_Manager::TEXT,
-					'description' 	=> esc_html__( 'Enter the product category IDs. IDs are separated by "|". Ex: 1|2|3.', 'mellis' ),
+					'description' 	=> esc_html__( 'Enter the product category IDs. IDs are separated by "|". Ex: 1|2|3.', 'spalisho' ),
 				]
 			);
 
@@ -154,7 +154,7 @@ class Mellis_Elementor_Product_List extends Widget_Base {
 		$this->start_controls_section(
 			'section_product_list_style',
 			[
-				'label' => esc_html__( 'Content', 'mellis' ),
+				'label' => esc_html__( 'Content', 'spalisho' ),
 				'tab' 	=> Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -162,7 +162,7 @@ class Mellis_Elementor_Product_List extends Widget_Base {
 			$this->add_responsive_control(
 				'content_gap',
 				[
-					'label' 		=> esc_html__( 'Gap', 'mellis' ),
+					'label' 		=> esc_html__( 'Gap', 'spalisho' ),
 					'type' 			=> Controls_Manager::SLIDER,
 					'size_units' 	=> [ 'px', '%' ],
 					'range' => [
@@ -189,7 +189,7 @@ class Mellis_Elementor_Product_List extends Widget_Base {
 			$this->add_control(
 				'content_background',
 				[
-					'label' 	=> esc_html__( 'Background', 'mellis' ),
+					'label' 	=> esc_html__( 'Background', 'spalisho' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
 						'{{WRAPPER}} .ova-product-list li.product' => 'background-color: {{VALUE}}',
@@ -201,7 +201,7 @@ class Mellis_Elementor_Product_List extends Widget_Base {
 				\Elementor\Group_Control_Box_Shadow::get_type(),
 				[
 					'name' 		=> 'content_box_shadow',
-					'label' 	=> esc_html__( 'Box Shadow', 'mellis' ),
+					'label' 	=> esc_html__( 'Box Shadow', 'spalisho' ),
 					'selector' 	=> '{{WRAPPER}} .ova-product-list li.product',
 				]
 			);
@@ -210,7 +210,7 @@ class Mellis_Elementor_Product_List extends Widget_Base {
 				Group_Control_Border::get_type(),
 				[
 					'name' 		=> 'content_border',
-					'label' 	=> esc_html__( 'Border', 'mellis' ),
+					'label' 	=> esc_html__( 'Border', 'spalisho' ),
 					'selector' 	=> '{{WRAPPER}} .ova-product-list li.product',
 					'separator' => 'before',
 				]
@@ -219,7 +219,7 @@ class Mellis_Elementor_Product_List extends Widget_Base {
 			$this->add_responsive_control(
 				'content_border_radius',
 				[
-					'label' 		=> esc_html__( 'Border Radius', 'mellis' ),
+					'label' 		=> esc_html__( 'Border Radius', 'spalisho' ),
 					'type' 			=> Controls_Manager::DIMENSIONS,
 					'size_units' 	=> [ 'px', '%', 'em' ],
 					'selectors' 	=> [
@@ -231,7 +231,7 @@ class Mellis_Elementor_Product_List extends Widget_Base {
 			$this->add_responsive_control(
 				'content_padding',
 				[
-					'label' 		=> esc_html__( 'Padding', 'mellis' ),
+					'label' 		=> esc_html__( 'Padding', 'spalisho' ),
 					'type' 			=> Controls_Manager::DIMENSIONS,
 					'size_units' 	=> [ 'px', '%', 'em' ],
 					'selectors' 	=> [
@@ -246,7 +246,7 @@ class Mellis_Elementor_Product_List extends Widget_Base {
 		$this->start_controls_section(
 			'section_title_style',
 			[
-				'label' => esc_html__( 'Title', 'mellis' ),
+				'label' => esc_html__( 'Title', 'spalisho' ),
 				'tab' 	=> Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -263,14 +263,14 @@ class Mellis_Elementor_Product_List extends Widget_Base {
 				$this->start_controls_tab(
 					'title_normal_tab',
 					[
-						'label' => esc_html__( 'Normal', 'mellis' ),
+						'label' => esc_html__( 'Normal', 'spalisho' ),
 					]
 				);
 
 					$this->add_control(
 						'title_normal_color',
 						[
-							'label' 	=> esc_html__( 'Color', 'mellis' ),
+							'label' 	=> esc_html__( 'Color', 'spalisho' ),
 							'type' 		=> Controls_Manager::COLOR,
 							'selectors' => [
 								'{{WRAPPER}} .ova-product-list li.product .woocommerce-loop-product__title' => 'color: {{VALUE}}',
@@ -283,14 +283,14 @@ class Mellis_Elementor_Product_List extends Widget_Base {
 				$this->start_controls_tab(
 					'title_hover_tab',
 					[
-						'label' => esc_html__( 'Hover', 'mellis' ),
+						'label' => esc_html__( 'Hover', 'spalisho' ),
 					]
 				);
 
 					$this->add_control(
 						'title_hover_color',
 						[
-							'label' 	=> esc_html__( 'Color', 'mellis' ),
+							'label' 	=> esc_html__( 'Color', 'spalisho' ),
 							'type' 		=> Controls_Manager::COLOR,
 							'selectors' => [
 								'{{WRAPPER}} .ova-product-list li.product .woocommerce-loop-product__title:hover' => 'color: {{VALUE}}',
@@ -304,7 +304,7 @@ class Mellis_Elementor_Product_List extends Widget_Base {
 			$this->add_responsive_control(
 				'title_margin',
 				[
-					'label' 		=> esc_html__( 'Margin', 'mellis' ),
+					'label' 		=> esc_html__( 'Margin', 'spalisho' ),
 					'type' 			=> Controls_Manager::DIMENSIONS,
 					'size_units' 	=> [ 'px', '%', 'em' ],
 					'selectors' 	=> [
@@ -318,7 +318,7 @@ class Mellis_Elementor_Product_List extends Widget_Base {
 		$this->start_controls_section(
 			'section_review_style',
 			[
-				'label' => esc_html__( 'Review', 'mellis' ),
+				'label' => esc_html__( 'Review', 'spalisho' ),
 				'tab' 	=> Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -326,7 +326,7 @@ class Mellis_Elementor_Product_List extends Widget_Base {
 			$this->add_control(
 				'star_color',
 				[
-					'label' 	=> esc_html__( 'Star Color', 'mellis' ),
+					'label' 	=> esc_html__( 'Star Color', 'spalisho' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
 						'{{WRAPPER}} .ova-product-list li.product .star-rating' => 'color: {{VALUE}}',
@@ -340,7 +340,7 @@ class Mellis_Elementor_Product_List extends Widget_Base {
 		$this->start_controls_section(
 			'section_price_style',
 			[
-				'label' => esc_html__( 'Price', 'mellis' ),
+				'label' => esc_html__( 'Price', 'spalisho' ),
 				'tab' 	=> Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -356,7 +356,7 @@ class Mellis_Elementor_Product_List extends Widget_Base {
 			$this->add_control(
 				'price_color',
 				[
-					'label' 	=> esc_html__( 'Color', 'mellis' ),
+					'label' 	=> esc_html__( 'Color', 'spalisho' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
 						'{{WRAPPER}} .ova-product-list li.product .price' => 'color: {{VALUE}}',
@@ -370,7 +370,7 @@ class Mellis_Elementor_Product_List extends Widget_Base {
 		$this->start_controls_section(
 			'section_button',
 			[
-				'label' => esc_html__( 'Button', 'mellis' ),
+				'label' => esc_html__( 'Button', 'spalisho' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -382,7 +382,7 @@ class Mellis_Elementor_Product_List extends Widget_Base {
 			$this->start_controls_tab(
 				'style_normal_tab',
 				[
-					'label' => esc_html__( 'Normal', 'mellis' ),
+					'label' => esc_html__( 'Normal', 'spalisho' ),
 				]
 			);
 
@@ -390,7 +390,7 @@ class Mellis_Elementor_Product_List extends Widget_Base {
 					Group_Control_Typography::get_type(),
 					[
 						'name' => 'button_typography',		
-						'label' => esc_html__( 'Typography', 'mellis' ),
+						'label' => esc_html__( 'Typography', 'spalisho' ),
 						'selector' => '{{WRAPPER}} .ova-product-list li.product a.add_to_cart_button',
 						
 					]
@@ -399,7 +399,7 @@ class Mellis_Elementor_Product_List extends Widget_Base {
 				$this->add_control(	
 					'color_button',
 					[
-						'label' => esc_html__( 'Color', 'mellis' ),
+						'label' => esc_html__( 'Color', 'spalisho' ),
 						'type' => Controls_Manager::COLOR,
 						'selectors' => [
 							'{{WRAPPER}} .ova-product-list li.product a.add_to_cart_button' => 'color : {{VALUE}};',
@@ -410,7 +410,7 @@ class Mellis_Elementor_Product_List extends Widget_Base {
 				$this->add_control(
 					'color_button_background',
 					[
-						'label' => esc_html__( 'Background ', 'mellis' ),
+						'label' => esc_html__( 'Background ', 'spalisho' ),
 						'type' => Controls_Manager::COLOR,
 						'selectors' => [
 							'{{WRAPPER}} .ova-product-list li.product a.add_to_cart_button' => 'background-color : {{VALUE}};',
@@ -422,7 +422,7 @@ class Mellis_Elementor_Product_List extends Widget_Base {
 					\Elementor\Group_Control_Border::get_type(),
 					[
 						'name' => 'button_border',
-						'label' => esc_html__( 'Border', 'mellis' ),
+						'label' => esc_html__( 'Border', 'spalisho' ),
 						'selector' => '{{WRAPPER}} .ova-product-list li.product a.add_to_cart_button',
 					]
 				);
@@ -430,7 +430,7 @@ class Mellis_Elementor_Product_List extends Widget_Base {
 				$this->add_control(
 					'border_radius_button',
 					array(
-						'label'      => esc_html__( 'Border Radius', 'mellis' ),
+						'label'      => esc_html__( 'Border Radius', 'spalisho' ),
 						'type'       => Controls_Manager::DIMENSIONS,
 						'size_units' => array( 'px', '%' ),
 						'selectors'  => array(
@@ -444,14 +444,14 @@ class Mellis_Elementor_Product_List extends Widget_Base {
 			$this->start_controls_tab(
 				'style_hover_tab',
 				[
-					'label' => esc_html__( 'Hover', 'mellis' ),
+					'label' => esc_html__( 'Hover', 'spalisho' ),
 				]
 			);
 
 				$this->add_control(	
 					'color_button_hover',
 					[
-						'label' => esc_html__( 'Color', 'mellis' ),
+						'label' => esc_html__( 'Color', 'spalisho' ),
 						'type' => Controls_Manager::COLOR,
 						'selectors' => [
 							'{{WRAPPER}} .ova-product-list li.product:hover a.add_to_cart_button' => 'color : {{VALUE}};',
@@ -462,7 +462,7 @@ class Mellis_Elementor_Product_List extends Widget_Base {
 				$this->add_control(
 					'color_button_background_hover',
 					[
-						'label' => esc_html__( 'Background ', 'mellis' ),
+						'label' => esc_html__( 'Background ', 'spalisho' ),
 						'type' => Controls_Manager::COLOR,
 						'selectors' => [
 							'{{WRAPPER}} .ova-product-list li.product:hover a.add_to_cart_button' => 'background-color : {{VALUE}};',
@@ -474,7 +474,7 @@ class Mellis_Elementor_Product_List extends Widget_Base {
 					\Elementor\Group_Control_Border::get_type(),
 					[
 						'name' => 'button_border_hover',
-						'label' => esc_html__( 'Border', 'mellis' ),
+						'label' => esc_html__( 'Border', 'spalisho' ),
 						'selector' => '{{WRAPPER}} .ova-product-list li.product:hover a.add_to_cart_button',
 					]
 				);
@@ -488,7 +488,7 @@ class Mellis_Elementor_Product_List extends Widget_Base {
 
 	}
 
-	protected function mellis_get_product_list( $args ) {
+	protected function spalisho_get_product_list( $args ) {
 
 		$args_query = [
 			'post_type' 		=> 'product',
@@ -563,7 +563,7 @@ class Mellis_Elementor_Product_List extends Widget_Base {
 			'show_featured'		=> $settings['show_featured']
 		];
 		
-		$products = $this->mellis_get_product_list( $args );
+		$products = $this->spalisho_get_product_list( $args );
 
 		?>
 
@@ -576,7 +576,7 @@ class Mellis_Elementor_Product_List extends Widget_Base {
 
 		<?php else: ?>
 			<div class="ova-no-products-found">
-				<?php echo esc_html__( 'No products found', 'mellis' ); ?>
+				<?php echo esc_html__( 'No products found', 'spalisho' ); ?>
 			</div>
 		<?php endif; wp_reset_postdata(); ?>
 
@@ -585,4 +585,4 @@ class Mellis_Elementor_Product_List extends Widget_Base {
 	}
 }
 
-$widgets_manager->register( new Mellis_Elementor_Product_List() );
+$widgets_manager->register( new Spalisho_Elementor_Product_List() );

@@ -9,14 +9,14 @@ use Elementor\Utils;
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
-class Mellis_Elementor_Testimonial extends Widget_Base {
+class Spalisho_Elementor_Testimonial extends Widget_Base {
 
 	public function get_name() {
-		return 'mellis_elementor_testimonial';
+		return 'spalisho_elementor_testimonial';
 	}
 
 	public function get_title() {
-		return esc_html__( 'Ova Testimonial', 'mellis' );
+		return esc_html__( 'Ova Testimonial', 'spalisho' );
 	}
 
 	public function get_icon() {
@@ -24,7 +24,7 @@ class Mellis_Elementor_Testimonial extends Widget_Base {
 	}
 
 	public function get_categories() {
-		return [ 'mellis' ];
+		return [ 'spalisho' ];
 	}
 
 	public function get_script_depends() {
@@ -33,7 +33,7 @@ class Mellis_Elementor_Testimonial extends Widget_Base {
 		wp_enqueue_style( 'slick-carousel-theme', get_template_directory_uri().'/assets/libs/slick/slick-theme.css' );
 		wp_enqueue_script( 'slick-carousel', get_template_directory_uri().'/assets/libs/slick/slick.min.js', array('jquery'), false, true );
 
-		return [ 'mellis-elementor-testimonial' ];
+		return [ 'spalisho-elementor-testimonial' ];
 	}
 
 	protected function register_controls() {
@@ -42,19 +42,19 @@ class Mellis_Elementor_Testimonial extends Widget_Base {
 		$this->start_controls_section(
 			'section_content',
 			[
-				'label' => esc_html__( 'Content', 'mellis' ),
+				'label' => esc_html__( 'Content', 'spalisho' ),
 			]
 		);
 
 			$this->add_control(
 				'version',
 				[
-					'label' => esc_html__( 'Version', 'mellis' ),
+					'label' => esc_html__( 'Version', 'spalisho' ),
 					'type' => Controls_Manager::SELECT,
 					'default' => 'version_1',
 					'options' => [
-						'version_1' => esc_html__( 'Version 1', 'mellis' ),
-						'version_2' => esc_html__( 'Version 2', 'mellis' ),
+						'version_1' => esc_html__( 'Version 1', 'spalisho' ),
+						'version_2' => esc_html__( 'Version 2', 'spalisho' ),
 					]
 				]
 			);
@@ -62,7 +62,7 @@ class Mellis_Elementor_Testimonial extends Widget_Base {
             $this->add_control(
 				'class_icon',
 				[
-					'label' => esc_html__( 'Icon Quote', 'mellis' ),
+					'label' => esc_html__( 'Icon Quote', 'spalisho' ),
 					'type' => Controls_Manager::ICONS,
 					'default' 	=> [
 						'value' 	=> 'ovaicon ovaicon-left-quotes-sign',
@@ -82,25 +82,25 @@ class Mellis_Elementor_Testimonial extends Widget_Base {
 				$repeater->add_control(
 					'name_author',
 					[
-						'label'   => esc_html__( 'Author Name', 'mellis' ),
+						'label'   => esc_html__( 'Author Name', 'spalisho' ),
 						'type'    => \Elementor\Controls_Manager::TEXT,
-						'default' => esc_html__( 'Mike Hardson', 'mellis' ),
+						'default' => esc_html__( 'Mike Hardson', 'spalisho' ),
 					]
 				);
 
 				$repeater->add_control(
 					'job',
 					[
-						'label'   => esc_html__( 'Job', 'mellis' ),
+						'label'   => esc_html__( 'Job', 'spalisho' ),
 						'type'    => \Elementor\Controls_Manager::TEXT,
-						'default' => esc_html__( 'Customer', 'mellis' ),
+						'default' => esc_html__( 'Customer', 'spalisho' ),
 					]
 				);
 
 				$repeater->add_control(
 					'image_author',
 					[
-						'label'   => esc_html__( 'Author Image', 'mellis' ),
+						'label'   => esc_html__( 'Author Image', 'spalisho' ),
 						'type'    => \Elementor\Controls_Manager::MEDIA,
 						'default' => [
 							'url' => Utils::get_placeholder_image_src(),
@@ -111,33 +111,33 @@ class Mellis_Elementor_Testimonial extends Widget_Base {
 				$repeater->add_control(
 					'testimonial',
 					[
-						'label'   => esc_html__( 'Testimonial ', 'mellis' ),
+						'label'   => esc_html__( 'Testimonial ', 'spalisho' ),
 						'type'    => \Elementor\Controls_Manager::TEXTAREA,
-						'default' => esc_html__( "Saturday is a day for the spa. It's not selfish to love yourself, take care of yourself, and to make your happiness a priority.", 'mellis' ),
+						'default' => esc_html__( "Saturday is a day for the spa. It's not selfish to love yourself, take care of yourself, and to make your happiness a priority.", 'spalisho' ),
 					]
 				);
 
 				$this->add_control(
 					'tab_item',
 					[
-						'label'       => esc_html__( 'Items Testimonial', 'mellis' ),
+						'label'       => esc_html__( 'Items Testimonial', 'spalisho' ),
 						'type'        => Controls_Manager::REPEATER,
 						'fields'      => $repeater->get_controls(),
 						'default' => [
 							[
-								'name_author' => esc_html__('Mike Hardson', 'mellis'),
+								'name_author' => esc_html__('Mike Hardson', 'spalisho'),
 							],
 							[
-								'name_author' => esc_html__('Edna Marxten', 'mellis'),
+								'name_author' => esc_html__('Edna Marxten', 'spalisho'),
 							],
 							[
-								'name_author' => esc_html__('Kevin Martin', 'mellis'),
+								'name_author' => esc_html__('Kevin Martin', 'spalisho'),
 							],
 							[
-								'name_author' => esc_html__('Jessica Brown', 'mellis'),
+								'name_author' => esc_html__('Jessica Brown', 'spalisho'),
 							],
 							[
-								'name_author' => esc_html__('David Cooper', 'mellis'),
+								'name_author' => esc_html__('David Cooper', 'spalisho'),
 							],
 						],
 						'title_field' => '{{{ name_author }}}',
@@ -154,14 +154,14 @@ class Mellis_Elementor_Testimonial extends Widget_Base {
 		$this->start_controls_section(
 			'section_additional_options',
 			[
-				'label' => esc_html__( 'Additional Options', 'mellis' ),
+				'label' => esc_html__( 'Additional Options', 'spalisho' ),
 			]
 		);
 
 			$this->add_control(
 				'items_v1',
 				[
-					'label'     => esc_html__( 'Item', 'mellis' ),
+					'label'     => esc_html__( 'Item', 'spalisho' ),
 					'type'      => Controls_Manager::NUMBER,
 					'default'   => 1,
 					'frontend_available' => true,
@@ -176,7 +176,7 @@ class Mellis_Elementor_Testimonial extends Widget_Base {
 			$this->add_control(
 				'items_v2',
 				[
-					'label'     => esc_html__( 'Item', 'mellis' ),
+					'label'     => esc_html__( 'Item', 'spalisho' ),
 					'type'      => Controls_Manager::NUMBER,
 					'default'   => 3,
 					'frontend_available' => true,
@@ -191,12 +191,12 @@ class Mellis_Elementor_Testimonial extends Widget_Base {
 			$this->add_control(
 				'infinite',
 				[
-					'label'   => esc_html__( 'Infinite Loop', 'mellis' ),
+					'label'   => esc_html__( 'Infinite Loop', 'spalisho' ),
 					'type'    => Controls_Manager::SWITCHER,
 					'default' => 'yes',
 					'options' => [
-						'yes' => esc_html__( 'Yes', 'mellis' ),
-						'no'  => esc_html__( 'No', 'mellis' ),
+						'yes' => esc_html__( 'Yes', 'spalisho' ),
+						'no'  => esc_html__( 'No', 'spalisho' ),
 					],
 					'frontend_available' => true,
 				]
@@ -205,12 +205,12 @@ class Mellis_Elementor_Testimonial extends Widget_Base {
 			$this->add_control(
 				'autoplay',
 				[
-					'label'   => esc_html__( 'Autoplay', 'mellis' ),
+					'label'   => esc_html__( 'Autoplay', 'spalisho' ),
 					'type'    => Controls_Manager::SWITCHER,
 					'default' => 'no',
 					'options' => [
-						'yes' => esc_html__( 'Yes', 'mellis' ),
-						'no'  => esc_html__( 'No', 'mellis' ),
+						'yes' => esc_html__( 'Yes', 'spalisho' ),
+						'no'  => esc_html__( 'No', 'spalisho' ),
 					],
 					'frontend_available' => true,
 				]
@@ -219,7 +219,7 @@ class Mellis_Elementor_Testimonial extends Widget_Base {
 			$this->add_control(
 				'autoplay_speed',
 				[
-					'label'     => esc_html__( 'Autoplay Speed', 'mellis' ),
+					'label'     => esc_html__( 'Autoplay Speed', 'spalisho' ),
 					'type'      => Controls_Manager::NUMBER,
 					'default'   => 3000,
 					'step'      => 500,
@@ -233,7 +233,7 @@ class Mellis_Elementor_Testimonial extends Widget_Base {
 			$this->add_control(
 				'smartspeed',
 				[
-					'label'   => esc_html__( 'Smart Speed', 'mellis' ),
+					'label'   => esc_html__( 'Smart Speed', 'spalisho' ),
 					'type'    => Controls_Manager::NUMBER,
 					'default' => 300,
 				]
@@ -242,12 +242,12 @@ class Mellis_Elementor_Testimonial extends Widget_Base {
 			$this->add_control(
 				'arrows',
 				[
-					'label'   => esc_html__( 'Arrows', 'mellis' ),
+					'label'   => esc_html__( 'Arrows', 'spalisho' ),
 					'type'    => Controls_Manager::SWITCHER,
 					'default' => 'no',
 					'options' => [
-						'yes' => esc_html__( 'Yes', 'mellis' ),
-						'no'  => esc_html__( 'No', 'mellis' ),
+						'yes' => esc_html__( 'Yes', 'spalisho' ),
+						'no'  => esc_html__( 'No', 'spalisho' ),
 					],
 					'frontend_available' => true,
 					'condition' 	=>[
@@ -261,12 +261,12 @@ class Mellis_Elementor_Testimonial extends Widget_Base {
 			$this->add_control(
 				'dots',
 				[
-					'label'   => esc_html__( 'Dots', 'mellis' ),
+					'label'   => esc_html__( 'Dots', 'spalisho' ),
 					'type'    => Controls_Manager::SWITCHER,
 					'default' => 'no',
 					'options' => [
-						'yes' => esc_html__( 'Yes', 'mellis' ),
-						'no'  => esc_html__( 'No', 'mellis' ),
+						'yes' => esc_html__( 'Yes', 'spalisho' ),
+						'no'  => esc_html__( 'No', 'spalisho' ),
 					],
 					'frontend_available' => true,
 				]
@@ -280,7 +280,7 @@ class Mellis_Elementor_Testimonial extends Widget_Base {
 		$this->start_controls_section(
 			'section_general_style',
 			[
-				'label' 	=> esc_html__( 'General', 'mellis' ),
+				'label' 	=> esc_html__( 'General', 'spalisho' ),
 				'tab' 		=> Controls_Manager::TAB_STYLE,
 				'condition' => [
 					'version' => 'version_2',
@@ -290,7 +290,7 @@ class Mellis_Elementor_Testimonial extends Widget_Base {
 			$this->add_responsive_control(
 				'general_v2_padding',
 				[
-					'label' 		=> esc_html__( 'Padding', 'mellis' ),
+					'label' 		=> esc_html__( 'Padding', 'spalisho' ),
 					'type' 			=> Controls_Manager::DIMENSIONS,
 					'size_units' 	=> [ 'px', '%', 'em' ],
 					'selectors' 	=> [
@@ -303,7 +303,7 @@ class Mellis_Elementor_Testimonial extends Widget_Base {
 				\Elementor\Group_Control_Border::get_type(),
 				[
 					'name' => 'general_border',
-					'label' => esc_html__( 'Border', 'mellis' ),
+					'label' => esc_html__( 'Border', 'spalisho' ),
 					'selector' => '{{WRAPPER}} .ova-testimonial.version_2 .slide-testimonials .client-info',
 				]
 			);
@@ -312,7 +312,7 @@ class Mellis_Elementor_Testimonial extends Widget_Base {
 				\Elementor\Group_Control_Box_Shadow::get_type(),
 				[
 					'name' => 'general_box_shadow',
-					'label' => esc_html__( 'Box Shadow', 'mellis' ),
+					'label' => esc_html__( 'Box Shadow', 'spalisho' ),
 					'selector' => '{{WRAPPER}} .ova-testimonial.version_2 .slide-testimonials .client-info',
 				]
 			);
@@ -324,7 +324,7 @@ class Mellis_Elementor_Testimonial extends Widget_Base {
 		$this->start_controls_section(
             'icon_star_style',
             [
-                'label' => esc_html__( 'Star Icon', 'mellis' ),
+                'label' => esc_html__( 'Star Icon', 'spalisho' ),
                 'tab' 	=> Controls_Manager::TAB_STYLE,
             ]
         );
@@ -332,7 +332,7 @@ class Mellis_Elementor_Testimonial extends Widget_Base {
 			$this->add_responsive_control(
 				'size_icon_star',
 				[
-					'label' 		=> esc_html__( 'Size', 'mellis' ),
+					'label' 		=> esc_html__( 'Size', 'spalisho' ),
 					'type' 			=> Controls_Manager::SLIDER,
 					'size_units' 	=> [ 'px'],
 					'range' => [
@@ -351,7 +351,7 @@ class Mellis_Elementor_Testimonial extends Widget_Base {
             $this->add_control(
 				'icon_color_star',
 				[
-					'label' 	=> esc_html__( 'Color', 'mellis' ),
+					'label' 	=> esc_html__( 'Color', 'spalisho' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
 						'{{WRAPPER}} .ova-testimonial .slide-testimonials .client-info .info .icon-star i' => 'color: {{VALUE}};',
@@ -366,7 +366,7 @@ class Mellis_Elementor_Testimonial extends Widget_Base {
 		$this->start_controls_section(
             'icon_style',
             [
-                'label' => esc_html__( 'Quote Icon', 'mellis' ),
+                'label' => esc_html__( 'Quote Icon', 'spalisho' ),
                 'tab' 	=> Controls_Manager::TAB_STYLE,
                 'condition' 	=>[
 					'version' => [
@@ -379,7 +379,7 @@ class Mellis_Elementor_Testimonial extends Widget_Base {
 			$this->add_responsive_control(
 				'size_icon',
 				[
-					'label' 		=> esc_html__( 'Size', 'mellis' ),
+					'label' 		=> esc_html__( 'Size', 'spalisho' ),
 					'type' 			=> Controls_Manager::SLIDER,
 					'size_units' 	=> [ 'px'],
 					'range' => [
@@ -398,7 +398,7 @@ class Mellis_Elementor_Testimonial extends Widget_Base {
             $this->add_control(
 				'icon_color',
 				[
-					'label' 	=> esc_html__( 'Color', 'mellis' ),
+					'label' 	=> esc_html__( 'Color', 'spalisho' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
 						'{{WRAPPER}} .ova-testimonial.version_2 .slide-testimonials .client-info .info .icon-quote i' => 'color: {{VALUE}};',
@@ -413,7 +413,7 @@ class Mellis_Elementor_Testimonial extends Widget_Base {
 		$this->start_controls_section(
 			'section_author_name_job',
 			[
-				'label' => esc_html__( 'Author Name - Job', 'mellis' ),
+				'label' => esc_html__( 'Author Name - Job', 'spalisho' ),
 				'tab'   => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -421,7 +421,7 @@ class Mellis_Elementor_Testimonial extends Widget_Base {
 		    $this->add_responsive_control(
 				'name_job_padding',
 				[
-					'label'      => esc_html__( 'Padding', 'mellis' ),
+					'label'      => esc_html__( 'Padding', 'spalisho' ),
 					'type'       => Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', 'em', '%' ],
 					'selectors'  => [
@@ -433,7 +433,7 @@ class Mellis_Elementor_Testimonial extends Widget_Base {
 		    $this->add_control(
 				'author_name_heading',
 				[
-					'label'     => esc_html__( 'Author Name', 'mellis' ),
+					'label'     => esc_html__( 'Author Name', 'spalisho' ),
 					'type'      => Controls_Manager::HEADING,
 					'separator' => 'before'
 				]
@@ -468,7 +468,7 @@ class Mellis_Elementor_Testimonial extends Widget_Base {
 			$this->add_control(
 				'author_name_color',
 				[
-					'label'     => esc_html__( 'Color', 'mellis' ),
+					'label'     => esc_html__( 'Color', 'spalisho' ),
 					'type'      => Controls_Manager::COLOR,
 					'selectors' => [
 						'{{WRAPPER}} .ova-testimonial .slide-testimonials .client-info .info .name-job .name, {{WRAPPER}} .ova-testimonial .slide-for .name-job .name' => 'color : {{VALUE}};',
@@ -479,7 +479,7 @@ class Mellis_Elementor_Testimonial extends Widget_Base {
 			$this->add_control(
 				'job_heading',
 				[
-					'label'     => esc_html__( 'Job', 'mellis' ),
+					'label'     => esc_html__( 'Job', 'spalisho' ),
 					'type'      => Controls_Manager::HEADING,
 					'separator' => 'before'
 				]
@@ -514,7 +514,7 @@ class Mellis_Elementor_Testimonial extends Widget_Base {
 			$this->add_control(
 				'job_color',
 				[
-					'label'     => esc_html__( 'Color', 'mellis' ),
+					'label'     => esc_html__( 'Color', 'spalisho' ),
 					'type'      => Controls_Manager::COLOR,
 					'selectors' => [
 						'
@@ -532,7 +532,7 @@ class Mellis_Elementor_Testimonial extends Widget_Base {
 		$this->start_controls_section(
 			'section_content_testimonial',
 			[
-				'label' => esc_html__( 'Content Testimonial', 'mellis' ),
+				'label' => esc_html__( 'Content Testimonial', 'spalisho' ),
 				'tab'   => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -548,7 +548,7 @@ class Mellis_Elementor_Testimonial extends Widget_Base {
 			$this->add_control(
 				'content_color',
 				[
-					'label'     => esc_html__( 'Color', 'mellis' ),
+					'label'     => esc_html__( 'Color', 'spalisho' ),
 					'type'      => Controls_Manager::COLOR,
 					'selectors' => [
 						'{{WRAPPER}} .ova-testimonial .slide-testimonials .client-info p.ova-evaluate' => 'color : {{VALUE}};',
@@ -559,7 +559,7 @@ class Mellis_Elementor_Testimonial extends Widget_Base {
 			$this->add_responsive_control(
 				'content_padding',
 				[
-					'label'      => esc_html__( 'Padding', 'mellis' ),
+					'label'      => esc_html__( 'Padding', 'spalisho' ),
 					'type'       => Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', 'em', '%' ],
 					'selectors'  => [
@@ -576,7 +576,7 @@ class Mellis_Elementor_Testimonial extends Widget_Base {
 		$this->start_controls_section(
             'nav_style',
             [
-                'label' => esc_html__( 'Arrows Control', 'mellis' ),
+                'label' => esc_html__( 'Arrows Control', 'spalisho' ),
                 'tab' 	=> Controls_Manager::TAB_STYLE,
                 'condition' => [
                 	'arrows' 	=> 'yes',
@@ -589,7 +589,7 @@ class Mellis_Elementor_Testimonial extends Widget_Base {
             $this->add_responsive_control(
 				'size_nav_icon',
 				[
-					'label' 		=> esc_html__( 'Icon Size', 'mellis' ),
+					'label' 		=> esc_html__( 'Icon Size', 'spalisho' ),
 					'type' 			=> Controls_Manager::SLIDER,
 					'size_units' 	=> [ 'px'],
 					'range' => [
@@ -608,7 +608,7 @@ class Mellis_Elementor_Testimonial extends Widget_Base {
 			 $this->add_control(
 				'color_nav_icon',
 				[
-					'label' => esc_html__( 'Color', 'mellis' ),
+					'label' => esc_html__( 'Color', 'spalisho' ),
 					'type' => Controls_Manager::COLOR,
 					'selectors' => [
 						'{{WRAPPER}} .ova-testimonial .slide-testimonials .slick-next:before, {{WRAPPER}} .ova-testimonial .slide-testimonials .slick-prev:before' => 'color : {{VALUE}};',
@@ -620,7 +620,7 @@ class Mellis_Elementor_Testimonial extends Widget_Base {
             $this->add_control(
 				'color_nav_icon_hover',
 				[
-					'label' => esc_html__( 'Color Hover', 'mellis' ),
+					'label' => esc_html__( 'Color Hover', 'spalisho' ),
 					'type' => Controls_Manager::COLOR,
 					'selectors' => [
 						'{{WRAPPER}} .ova-testimonial .slide-testimonials .slick-next:hover:before, {{WRAPPER}} .ova-testimonial .slide-testimonials .slick-prev:hover:before' => 'color : {{VALUE}};',
@@ -635,7 +635,7 @@ class Mellis_Elementor_Testimonial extends Widget_Base {
 		$this->start_controls_section(
 			'section_dots',
 			[
-				'label' => esc_html__( 'Dots', 'mellis' ),
+				'label' => esc_html__( 'Dots', 'spalisho' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 				'condition' => [
 					'dots' => 'yes',
@@ -646,7 +646,7 @@ class Mellis_Elementor_Testimonial extends Widget_Base {
 			$this->add_responsive_control(
 				'position_bottom',
 				[
-					'label' 		=> esc_html__( 'Position Bottom', 'mellis' ),
+					'label' 		=> esc_html__( 'Position Bottom', 'spalisho' ),
 					'type' 			=> Controls_Manager::SLIDER,
 					'size_units' 	=> [ 'px' ],
 					'range' => [
@@ -669,14 +669,14 @@ class Mellis_Elementor_Testimonial extends Widget_Base {
 				$this->start_controls_tab(
 					'style_dots_tab',
 						[
-						'label' => esc_html__( 'Normal', 'mellis' ),
+						'label' => esc_html__( 'Normal', 'spalisho' ),
 						]
 					);
 
 				$this->add_control(
 					'style_dots',
 					[
-						'label' => esc_html__( 'Dots', 'mellis' ),
+						'label' => esc_html__( 'Dots', 'spalisho' ),
 						'type' => \Elementor\Controls_Manager::HEADING,
 						'separator' => 'before',
 						
@@ -686,7 +686,7 @@ class Mellis_Elementor_Testimonial extends Widget_Base {
 				$this->add_control(
 					'dot_color',
 					[
-						'label'     => esc_html__( 'Dot Color', 'mellis' ),
+						'label'     => esc_html__( 'Dot Color', 'spalisho' ),
 						'type'      => Controls_Manager::COLOR,
 						'selectors' => [
 							'{{WRAPPER}} .ova-testimonial .slide-testimonials .slick-dots button ' => 'background-color : {{VALUE}};',
@@ -699,7 +699,7 @@ class Mellis_Elementor_Testimonial extends Widget_Base {
 				$this->add_control(
 					'dot_width',
 					[
-						'label' 		=> esc_html__( 'Dots Width', 'mellis' ),
+						'label' 		=> esc_html__( 'Dots Width', 'spalisho' ),
 						'type' 			=> Controls_Manager::SLIDER,
 						'size_units' 	=> [ 'px' ],
 						'range' => [
@@ -718,7 +718,7 @@ class Mellis_Elementor_Testimonial extends Widget_Base {
 				$this->add_control(
 					'dot_height',
 					[
-						'label' 		=> esc_html__( 'Dots Height', 'mellis' ),
+						'label' 		=> esc_html__( 'Dots Height', 'spalisho' ),
 						'type' 			=> Controls_Manager::SLIDER,
 						'size_units' 	=> [ 'px' ],
 						'range' => [
@@ -737,7 +737,7 @@ class Mellis_Elementor_Testimonial extends Widget_Base {
 				$this->add_responsive_control(
 					'border_radius_dot',
 					array(
-						'label'      => esc_html__( 'Border Radius', 'mellis' ),
+						'label'      => esc_html__( 'Border Radius', 'spalisho' ),
 						'type'       => Controls_Manager::DIMENSIONS,
 						'size_units' => array( 'px', '%' ),
 						'selectors'  => array(
@@ -751,14 +751,14 @@ class Mellis_Elementor_Testimonial extends Widget_Base {
 			$this->start_controls_tab(
 				'style_dots_active_tab',
 				[
-				'label' => esc_html__( 'Active', 'mellis' ),
+				'label' => esc_html__( 'Active', 'spalisho' ),
 				]
 			);
 
 			$this->add_control(
 				'style_dot_active',
 				[
-					'label' => esc_html__( 'Dots Active', 'mellis' ),
+					'label' => esc_html__( 'Dots Active', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::HEADING,
 					'separator' => 'before',
 					
@@ -768,7 +768,7 @@ class Mellis_Elementor_Testimonial extends Widget_Base {
 			$this->add_control(
 				'dot_color_active',
 				[
-					'label'     => esc_html__( 'Dot Color Active', 'mellis' ),
+					'label'     => esc_html__( 'Dot Color Active', 'spalisho' ),
 					'type'      => Controls_Manager::COLOR,
 					'selectors' => [
 						'{{WRAPPER}} .ova-testimonial .slide-testimonials .slick-dots li.slick-active button' => 'background-color : {{VALUE}};',
@@ -781,7 +781,7 @@ class Mellis_Elementor_Testimonial extends Widget_Base {
 			$this->add_control(
 				'dot_width_active',
 				[
-					'label' 		=> esc_html__( 'Dots Width Active', 'mellis' ),
+					'label' 		=> esc_html__( 'Dots Width Active', 'spalisho' ),
 					'type' 			=> Controls_Manager::SLIDER,
 					'size_units' 	=> [ 'px' ],
 					'range' => [
@@ -844,7 +844,7 @@ class Mellis_Elementor_Testimonial extends Widget_Base {
 
 				<?php if(!empty($tab_item)) : foreach ($tab_item as $item) : ?>
 
-					<?php $alt = isset($item['name_author']) && $item['name_author'] ? $item['name_author'] : esc_html__( 'testimonial','mellis' ); ?>
+					<?php $alt = isset($item['name_author']) && $item['name_author'] ? $item['name_author'] : esc_html__( 'testimonial','spalisho' ); ?>
 
 					<div class="item">
 
@@ -909,7 +909,7 @@ class Mellis_Elementor_Testimonial extends Widget_Base {
 
 	            	<?php if(!empty($tab_item)) : foreach ($tab_item as $k => $item) :  if ($k >= 5) break; ?>
 
-	            		<?php $alt = isset($item['name_author']) && $item['name_author'] ? $item['name_author'] : esc_html__( 'testimonial','mellis' ); ?>
+	            		<?php $alt = isset($item['name_author']) && $item['name_author'] ? $item['name_author'] : esc_html__( 'testimonial','spalisho' ); ?>
                         
                         <div class="slide-for-content">
 
@@ -945,4 +945,4 @@ class Mellis_Elementor_Testimonial extends Widget_Base {
 	}
 }
 
-$widgets_manager->register( new Mellis_Elementor_Testimonial() );
+$widgets_manager->register( new Spalisho_Elementor_Testimonial() );

@@ -5,7 +5,7 @@
 	$(window).on('elementor/frontend/init', function () {
 		
         
-		elementorFrontend.hooks.addAction('frontend/element_ready/mellis_elementor_testimonial.default', function(){
+		elementorFrontend.hooks.addAction('frontend/element_ready/spalisho_elementor_testimonial.default', function(){
 
 			$(".ova-testimonial .slider-version_1").each(function(){
 		        var slk = $(this) ;

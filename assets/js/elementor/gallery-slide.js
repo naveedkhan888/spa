@@ -3,7 +3,7 @@
 	
 	$(window).on('elementor/frontend/init', function () {
 		
-        elementorFrontend.hooks.addAction('frontend/element_ready/mellis_elementor_gallery_slide.default', function(){
+        elementorFrontend.hooks.addAction('frontend/element_ready/spalisho_elementor_gallery_slide.default', function(){
 	       
 	        /* Add your code here */
 	    	$(".ova-gallery-slide .gallery-slide").each(function(){

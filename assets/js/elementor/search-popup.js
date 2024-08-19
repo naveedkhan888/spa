@@ -4,7 +4,7 @@
 
 	$(window).on('elementor/frontend/init', function () {
 		
-        elementorFrontend.hooks.addAction('frontend/element_ready/mellis_elementor_search_popup.default', function(){
+        elementorFrontend.hooks.addAction('frontend/element_ready/spalisho_elementor_search_popup.default', function(){
 	       
 	        /* Add your code here */
 	    	

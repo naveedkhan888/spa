@@ -88,7 +88,7 @@ if (!class_exists( 'Ova_Sev_Customize' )){
 						'section' => 'ova_sev_archive_section',
 						'settings' => 'header_archive_sev',
 						'type' =>'select',
-						'choices' => apply_filters('mellis_list_header', '')
+						'choices' => apply_filters('spalisho_list_header', '')
 					));
 
 					$wp_customize->add_setting( 'archive_footer_sev', array(
@@ -106,7 +106,7 @@ if (!class_exists( 'Ova_Sev_Customize' )){
 						'section' => 'ova_sev_archive_section',
 						'settings' => 'archive_footer_sev',
 						'type' =>'select',
-						'choices' => apply_filters('mellis_list_footer', '')
+						'choices' => apply_filters('spalisho_list_footer', '')
 					));
 
 				// Single
@@ -131,7 +131,7 @@ if (!class_exists( 'Ova_Sev_Customize' )){
 						'section' => 'ova_sev_single_section',
 						'settings' => 'header_single_sev',
 						'type' =>'select',
-						'choices' => apply_filters('mellis_list_header', '')
+						'choices' => apply_filters('spalisho_list_header', '')
 					));
 
 
@@ -150,7 +150,7 @@ if (!class_exists( 'Ova_Sev_Customize' )){
 						'section' => 'ova_sev_single_section',
 						'settings' => 'single_footer_sev',
 						'type' =>'select',
-						'choices' => apply_filters('mellis_list_footer', '')
+						'choices' => apply_filters('spalisho_list_footer', '')
 					));
 
 		}

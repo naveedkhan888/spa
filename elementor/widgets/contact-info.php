@@ -6,14 +6,14 @@ use Elementor\Group_Control_Typography;
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
-class Mellis_Elementor_Contact_Info extends Widget_Base {
+class Spalisho_Elementor_Contact_Info extends Widget_Base {
 
 	public function get_name() {
-		return 'mellis_elementor_contact_info';
+		return 'spalisho_elementor_contact_info';
 	}
 
 	public function get_title() {
-		return esc_html__( 'Contact Info', 'mellis' );
+		return esc_html__( 'Contact Info', 'spalisho' );
 	}
 
 	public function get_icon() {
@@ -21,7 +21,7 @@ class Mellis_Elementor_Contact_Info extends Widget_Base {
 	}
 
 	public function get_categories() {
-		return [ 'mellis' ];
+		return [ 'spalisho' ];
 	}
 
 	public function get_script_depends() {
@@ -36,7 +36,7 @@ class Mellis_Elementor_Contact_Info extends Widget_Base {
 		$this->start_controls_section(
 			'section_content',
 			[
-				'label' => esc_html__( 'Content', 'mellis' ),
+				'label' => esc_html__( 'Content', 'spalisho' ),
 				
 			]
 		);
@@ -44,12 +44,12 @@ class Mellis_Elementor_Contact_Info extends Widget_Base {
 			$this->add_control(
 				'template',
 				[
-					'label' => esc_html__( 'Template', 'mellis' ),
+					'label' => esc_html__( 'Template', 'spalisho' ),
 					'type' => Controls_Manager::SELECT,
 					'default' => 'template_1',
 					'options' => [
-						'template_1' => esc_html__( 'Template 1', 'mellis' ),
-						'template_2' => esc_html__( 'Template 2', 'mellis' ),
+						'template_1' => esc_html__( 'Template 1', 'spalisho' ),
+						'template_2' => esc_html__( 'Template 2', 'spalisho' ),
 					]
 				]
 			);
@@ -57,7 +57,7 @@ class Mellis_Elementor_Contact_Info extends Widget_Base {
 			$this->add_control(
 				'icon',
 				[
-					'label' => esc_html__( 'Icon', 'mellis' ),
+					'label' => esc_html__( 'Icon', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::ICONS,
 					'default' 	=> [
 						'value' 	=> 'flaticon flaticon-email',
@@ -69,9 +69,9 @@ class Mellis_Elementor_Contact_Info extends Widget_Base {
 			$this->add_control(
 				'label',
 				[
-					'label' => esc_html__( 'Label', 'mellis' ),
+					'label' => esc_html__( 'Label', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::TEXT,
-					'default' => esc_html__('', 'mellis'),
+					'default' => esc_html__('', 'spalisho'),
 				]
 			);
 
@@ -81,14 +81,14 @@ class Mellis_Elementor_Contact_Info extends Widget_Base {
 				$repeater->add_control(
 					'type',
 					[
-						'label' => esc_html__( 'Type', 'mellis' ),
+						'label' => esc_html__( 'Type', 'spalisho' ),
 						'type' => Controls_Manager::SELECT,
 						'default' => 'email',
 						'options' => [
-							'email' => esc_html__('Email', 'mellis'),
-							'phone' => esc_html__('Phone', 'mellis'),
-							'link' => esc_html__('Link', 'mellis'),
-							'text' => esc_html__('Text', 'mellis'),
+							'email' => esc_html__('Email', 'spalisho'),
+							'phone' => esc_html__('Phone', 'spalisho'),
+							'link' => esc_html__('Link', 'spalisho'),
+							'text' => esc_html__('Text', 'spalisho'),
 						]
 					]
 				);
@@ -96,9 +96,9 @@ class Mellis_Elementor_Contact_Info extends Widget_Base {
 				$repeater->add_control(
 					'email_label',
 					[
-						'label'   => esc_html__( 'Email Label', 'mellis' ),
+						'label'   => esc_html__( 'Email Label', 'spalisho' ),
 						'type'    => \Elementor\Controls_Manager::TEXT,
-						'description' => esc_html__( 'email@company.com', 'mellis' ),
+						'description' => esc_html__( 'email@company.com', 'spalisho' ),
 						'condition' => [
 							'type' => 'email',
 						]
@@ -109,9 +109,9 @@ class Mellis_Elementor_Contact_Info extends Widget_Base {
 				$repeater->add_control(
 					'email_address',
 					[
-						'label'   => esc_html__( 'Email Adress', 'mellis' ),
+						'label'   => esc_html__( 'Email Adress', 'spalisho' ),
 						'type'    => \Elementor\Controls_Manager::TEXT,
-						'description' => esc_html__( 'email@company.com', 'mellis' ),
+						'description' => esc_html__( 'email@company.com', 'spalisho' ),
 						'condition' => [
 							'type' => 'email',
 						]
@@ -123,9 +123,9 @@ class Mellis_Elementor_Contact_Info extends Widget_Base {
 				$repeater->add_control(
 					'phone_label',
 					[
-						'label'   => esc_html__( 'Phone Label', 'mellis' ),
+						'label'   => esc_html__( 'Phone Label', 'spalisho' ),
 						'type'    => \Elementor\Controls_Manager::TEXT,
-						'description' => esc_html__( '+012 (345) 678', 'mellis' ),
+						'description' => esc_html__( '+012 (345) 678', 'spalisho' ),
 						'condition' => [
 							'type' => 'phone',
 						]
@@ -136,9 +136,9 @@ class Mellis_Elementor_Contact_Info extends Widget_Base {
 				$repeater->add_control(
 					'phone_address',
 					[
-						'label'   => esc_html__( 'Phone Adress', 'mellis' ),
+						'label'   => esc_html__( 'Phone Adress', 'spalisho' ),
 						'type'    => \Elementor\Controls_Manager::TEXT,
-						'description' => esc_html__( '+012345678', 'mellis' ),
+						'description' => esc_html__( '+012345678', 'spalisho' ),
 						'condition' => [
 							'type' => 'phone',
 						]
@@ -149,9 +149,9 @@ class Mellis_Elementor_Contact_Info extends Widget_Base {
 				$repeater->add_control(
 					'link_label',
 					[
-						'label'   => esc_html__( 'Link Label', 'mellis' ),
+						'label'   => esc_html__( 'Link Label', 'spalisho' ),
 						'type'    => \Elementor\Controls_Manager::TEXT,
-						'description' => esc_html__( 'https://your-domain.com', 'mellis' ),
+						'description' => esc_html__( 'https://your-domain.com', 'spalisho' ),
 						'condition' => [
 							'type' => 'link',
 						]
@@ -162,9 +162,9 @@ class Mellis_Elementor_Contact_Info extends Widget_Base {
 				$repeater->add_control(
 					'link_address',
 					[
-						'label'   => esc_html__( 'Link Adress', 'mellis' ),
+						'label'   => esc_html__( 'Link Adress', 'spalisho' ),
 						'type'    => \Elementor\Controls_Manager::URL,
-						'description' => esc_html__( 'https://your-domain.com', 'mellis' ),
+						'description' => esc_html__( 'https://your-domain.com', 'spalisho' ),
 						'condition' => [
 							'type' => 'link',
 						],
@@ -181,9 +181,9 @@ class Mellis_Elementor_Contact_Info extends Widget_Base {
 				$repeater->add_control(
 					'text_title',
 					[
-						'label'   => esc_html__( 'Title - Template 2', 'mellis' ),
+						'label'   => esc_html__( 'Title - Template 2', 'spalisho' ),
 						'type'    => \Elementor\Controls_Manager::TEXT,
-						'description' => esc_html__( 'Your Title', 'mellis' ),
+						'description' => esc_html__( 'Your Title', 'spalisho' ),
 						'condition' => [
 							'type' => 'text',
 						]
@@ -193,9 +193,9 @@ class Mellis_Elementor_Contact_Info extends Widget_Base {
 				$repeater->add_control(
 					'text',
 					[
-						'label'   => esc_html__( 'Text', 'mellis' ),
+						'label'   => esc_html__( 'Text', 'spalisho' ),
 						'type'    => \Elementor\Controls_Manager::TEXT,
-						'description' => esc_html__( 'Your text', 'mellis' ),
+						'description' => esc_html__( 'Your text', 'spalisho' ),
 						'condition' => [
 							'type' => 'text',
 						]
@@ -206,14 +206,14 @@ class Mellis_Elementor_Contact_Info extends Widget_Base {
 				$this->add_control(
 					'items_info',
 					[
-						'label'       => esc_html__( 'Items Info', 'mellis' ),
+						'label'       => esc_html__( 'Items Info', 'spalisho' ),
 						'type'        => Controls_Manager::REPEATER,
 						'fields'      => $repeater->get_controls(),
 						'default' => [
 							[
 								'type' => 'email',
-								'email_label' => esc_html__('email@company.com', 'mellis'),
-								'email_address' => esc_html__('email@company.com', 'mellis'),
+								'email_label' => esc_html__('email@company.com', 'spalisho'),
+								'email_address' => esc_html__('email@company.com', 'spalisho'),
 							],
 							
 						],
@@ -224,19 +224,19 @@ class Mellis_Elementor_Contact_Info extends Widget_Base {
 			$this->add_responsive_control(
 				'align_items',
 				[
-					'label' 	=> esc_html__( 'Items Alignment', 'mellis' ),
+					'label' 	=> esc_html__( 'Items Alignment', 'spalisho' ),
 					'type' 		=> \Elementor\Controls_Manager::CHOOSE,
 					'options' 	=> [
 						'flex-start' => [
-							'title' => esc_html__( 'Top', 'mellis' ),
+							'title' => esc_html__( 'Top', 'spalisho' ),
 							'icon' 	=> 'eicon-align-center-v',
 						],
 						'center' => [
-							'title' => esc_html__( 'Center', 'mellis' ),
+							'title' => esc_html__( 'Center', 'spalisho' ),
 							'icon' 	=> 'eicon-align-center-v',
 						],
 						'flex-end' => [
-							'title' => esc_html__( 'Bottom', 'mellis' ),
+							'title' => esc_html__( 'Bottom', 'spalisho' ),
 							'icon' 	=> 'eicon-align-end-v',
 						],
 					],
@@ -257,7 +257,7 @@ class Mellis_Elementor_Contact_Info extends Widget_Base {
 		$this->start_controls_section(
 			'section_icon_style',
 			[
-				'label' => esc_html__( 'Icon', 'mellis' ),
+				'label' => esc_html__( 'Icon', 'spalisho' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -265,19 +265,19 @@ class Mellis_Elementor_Contact_Info extends Widget_Base {
 			$this->add_responsive_control(
 				'icon_align',
 				[
-					'label' 	=> esc_html__( 'Alignment', 'mellis' ),
+					'label' 	=> esc_html__( 'Alignment', 'spalisho' ),
 					'type' 		=> \Elementor\Controls_Manager::CHOOSE,
 					'options' 	=> [
 						'flex-start' => [
-							'title' => esc_html__( 'Start', 'mellis' ),
+							'title' => esc_html__( 'Start', 'spalisho' ),
 							'icon' 	=> 'eicon-text-align-left',
 						],
 						'center' => [
-							'title' => esc_html__( 'Center', 'mellis' ),
+							'title' => esc_html__( 'Center', 'spalisho' ),
 							'icon' 	=> 'eicon-text-align-center',
 						],
 						'flex-end' => [
-							'title' => esc_html__( 'End', 'mellis' ),
+							'title' => esc_html__( 'End', 'spalisho' ),
 							'icon' 	=> 'eicon-text-align-right',
 						],
 					],
@@ -292,7 +292,7 @@ class Mellis_Elementor_Contact_Info extends Widget_Base {
 			$this->add_control(
 				'icon_tranform',
 				[
-					'label' => esc_html__( 'Rolate', 'mellis' ),
+					'label' => esc_html__( 'Rolate', 'spalisho' ),
 					'type' => Controls_Manager::SLIDER,
 					'size_units' => [ 'px' ],
 					'range' => [
@@ -312,7 +312,7 @@ class Mellis_Elementor_Contact_Info extends Widget_Base {
 			$this->add_responsive_control(
 				'icon_width',
 				[
-					'label' => esc_html__( 'Width', 'mellis' ),
+					'label' => esc_html__( 'Width', 'spalisho' ),
 					'type' => Controls_Manager::SLIDER,
 					'size_units' => [ 'px' ],
 					'range' => [
@@ -332,7 +332,7 @@ class Mellis_Elementor_Contact_Info extends Widget_Base {
 			$this->add_control(
 				'icon_fontsize',
 				[
-					'label' => esc_html__( 'Font Size', 'mellis' ),
+					'label' => esc_html__( 'Font Size', 'spalisho' ),
 					'type' => Controls_Manager::SLIDER,
 					'size_units' => [ 'px' ],
 					'range' => [
@@ -352,7 +352,7 @@ class Mellis_Elementor_Contact_Info extends Widget_Base {
 			$this->add_control(
 				'icon_color',
 				[
-					'label' => esc_html__( 'Color', 'mellis' ),
+					'label' => esc_html__( 'Color', 'spalisho' ),
 					'type' => Controls_Manager::COLOR,
 					'selectors' => [
 						'{{WRAPPER}} .ova-contact-info .icon' => 'color : {{VALUE}};',
@@ -364,7 +364,7 @@ class Mellis_Elementor_Contact_Info extends Widget_Base {
 			$this->add_control(
 				'icon_background',
 				[
-					'label' => esc_html__( 'Background', 'mellis' ),
+					'label' => esc_html__( 'Background', 'spalisho' ),
 					'type' => Controls_Manager::COLOR,
 					'selectors' => [
 						'{{WRAPPER}} .ova-contact-info .icon' => 'background-color : {{VALUE}};',
@@ -375,7 +375,7 @@ class Mellis_Elementor_Contact_Info extends Widget_Base {
 			$this->add_responsive_control(
 				'icon_margin',
 				[
-					'label' => esc_html__( 'Margin', 'mellis' ),
+					'label' => esc_html__( 'Margin', 'spalisho' ),
 					'type' => Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', 'em', '%' ],
 					'selectors' => [
@@ -387,7 +387,7 @@ class Mellis_Elementor_Contact_Info extends Widget_Base {
 			$this->add_responsive_control(
 				'icon_padding',
 				[
-					'label' => esc_html__( 'Padding', 'mellis' ),
+					'label' => esc_html__( 'Padding', 'spalisho' ),
 					'type' => Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', 'em', '%' ],
 					'selectors' => [
@@ -399,7 +399,7 @@ class Mellis_Elementor_Contact_Info extends Widget_Base {
 			$this->add_responsive_control(
 				'border_radius_icon',
 				array(
-					'label'      => esc_html__( 'Border Radius', 'mellis' ),
+					'label'      => esc_html__( 'Border Radius', 'spalisho' ),
 					'type'       => Controls_Manager::DIMENSIONS,
 					'size_units' => array( 'px', '%' ),
 					'selectors'  => array(
@@ -412,7 +412,7 @@ class Mellis_Elementor_Contact_Info extends Widget_Base {
 				\Elementor\Group_Control_Border::get_type(),
 				[
 					'name' 		=> 'border_icon',
-					'label' 	=> esc_html__( 'Border', 'mellis' ),
+					'label' 	=> esc_html__( 'Border', 'spalisho' ),
 					'selector' 	=> '{{WRAPPER}} .ova-contact-info .icon',
 				]
 			);
@@ -421,7 +421,7 @@ class Mellis_Elementor_Contact_Info extends Widget_Base {
 				\Elementor\Group_Control_Box_Shadow::get_type(),
 				[
 					'name' => 'icon_box_shadow',
-					'label' => esc_html__( 'Box Shadow', 'mellis' ),
+					'label' => esc_html__( 'Box Shadow', 'spalisho' ),
 					'selector' => '{{WRAPPER}}  .ova-contact-info .icon',
 				]
 			);
@@ -434,7 +434,7 @@ class Mellis_Elementor_Contact_Info extends Widget_Base {
 		$this->start_controls_section(
 			'section_label_style',
 			[
-				'label' => esc_html__( 'Label', 'mellis' ),
+				'label' => esc_html__( 'Label', 'spalisho' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 				'condition' => [
 					'label!' => '',
@@ -445,7 +445,7 @@ class Mellis_Elementor_Contact_Info extends Widget_Base {
 			$this->add_control(
 				'label_color',
 				[
-					'label' => esc_html__( 'Color', 'mellis' ),
+					'label' => esc_html__( 'Color', 'spalisho' ),
 					'type' => Controls_Manager::COLOR,
 					'selectors' => [
 						'{{WRAPPER}} .ova-contact-info .contact .label' => 'color : {{VALUE}};',
@@ -464,7 +464,7 @@ class Mellis_Elementor_Contact_Info extends Widget_Base {
 			$this->add_responsive_control(
 				'label_margin',
 				[
-					'label' => esc_html__( 'Margin', 'mellis' ),
+					'label' => esc_html__( 'Margin', 'spalisho' ),
 					'type' => Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', 'em', '%' ],
 					'selectors' => [
@@ -476,19 +476,19 @@ class Mellis_Elementor_Contact_Info extends Widget_Base {
 			$this->add_responsive_control(
 				'align_label',
 				[
-					'label' 	=> esc_html__( 'Alignment', 'mellis' ),
+					'label' 	=> esc_html__( 'Alignment', 'spalisho' ),
 					'type' 		=> \Elementor\Controls_Manager::CHOOSE,
 					'options' 	=> [
 						'left' => [
-							'title' => esc_html__( 'Left', 'mellis' ),
+							'title' => esc_html__( 'Left', 'spalisho' ),
 							'icon' 	=> 'eicon-text-align-left',
 						],
 						'center' => [
-							'title' => esc_html__( 'Center', 'mellis' ),
+							'title' => esc_html__( 'Center', 'spalisho' ),
 							'icon' 	=> 'eicon-text-align-center',
 						],
 						'right' => [
-							'title' => esc_html__( 'Right', 'mellis' ),
+							'title' => esc_html__( 'Right', 'spalisho' ),
 							'icon' 	=> 'eicon-text-align-right',
 						],
 					],
@@ -509,7 +509,7 @@ class Mellis_Elementor_Contact_Info extends Widget_Base {
 		$this->start_controls_section(
 			'section_info_style',
 			[
-				'label' => esc_html__( 'Info', 'mellis' ),
+				'label' => esc_html__( 'Info', 'spalisho' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -517,19 +517,19 @@ class Mellis_Elementor_Contact_Info extends Widget_Base {
 			$this->add_responsive_control(
 				'contact_align_content',
 				[
-					'label' 	=> esc_html__( 'Alignment', 'mellis' ),
+					'label' 	=> esc_html__( 'Alignment', 'spalisho' ),
 					'type' 		=> \Elementor\Controls_Manager::CHOOSE,
 					'options' 	=> [
 						'left' => [
-							'title' => esc_html__( 'Left', 'mellis' ),
+							'title' => esc_html__( 'Left', 'spalisho' ),
 							'icon' 	=> 'eicon-text-align-left',
 						],
 						'center' => [
-							'title' => esc_html__( 'Center', 'mellis' ),
+							'title' => esc_html__( 'Center', 'spalisho' ),
 							'icon' 	=> 'eicon-text-align-center',
 						],
 						'right' => [
-							'title' => esc_html__( 'Right', 'mellis' ),
+							'title' => esc_html__( 'Right', 'spalisho' ),
 							'icon' 	=> 'eicon-text-align-right',
 						],
 						
@@ -558,7 +558,7 @@ class Mellis_Elementor_Contact_Info extends Widget_Base {
 			$this->add_control(
 				'info_color',
 				[
-					'label' => esc_html__( 'Color', 'mellis' ),
+					'label' => esc_html__( 'Color', 'spalisho' ),
 					'type' => Controls_Manager::COLOR,
 					'selectors' => [
 						'{{WRAPPER}} .ova-contact-info .contact .info .item' => 'color : {{VALUE}};',
@@ -570,7 +570,7 @@ class Mellis_Elementor_Contact_Info extends Widget_Base {
 			$this->add_control(
 				'info_color_hover',
 				[
-					'label' => esc_html__( 'Link Color hover', 'mellis' ),
+					'label' => esc_html__( 'Link Color hover', 'spalisho' ),
 					'type' => Controls_Manager::COLOR,
 					'selectors' => [
 						'{{WRAPPER}} .ova-contact-info .contact .info .item a:hover' => 'color : {{VALUE}};',
@@ -581,7 +581,7 @@ class Mellis_Elementor_Contact_Info extends Widget_Base {
 			$this->add_control(
 				'underline_hover_color',
 				[
-					'label' => esc_html__( 'Underline Color hover', 'mellis' ),
+					'label' => esc_html__( 'Underline Color hover', 'spalisho' ),
 					'type' => Controls_Manager::COLOR,
 					'selectors' => [
 						'{{WRAPPER}} .ova-contact-info .contact .info .item a:before' => 'background-color : {{VALUE}};',
@@ -592,7 +592,7 @@ class Mellis_Elementor_Contact_Info extends Widget_Base {
 			$this->add_responsive_control(
 				'info_margin',
 				[
-					'label' => esc_html__( 'Margin', 'mellis' ),
+					'label' => esc_html__( 'Margin', 'spalisho' ),
 					'type' => Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', 'em', '%' ],
 					'selectors' => [
@@ -604,7 +604,7 @@ class Mellis_Elementor_Contact_Info extends Widget_Base {
 			$this->add_responsive_control(
 				'info_padding',
 				[
-					'label' => esc_html__( 'Padding', 'mellis' ),
+					'label' => esc_html__( 'Padding', 'spalisho' ),
 					'type' => Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', 'em', '%' ],
 					'selectors' => [
@@ -621,7 +621,7 @@ class Mellis_Elementor_Contact_Info extends Widget_Base {
 		$this->start_controls_section(
 			'section_contact_info_style',
 			[
-				'label' => esc_html__( 'Contact Info', 'mellis' ),
+				'label' => esc_html__( 'Contact Info', 'spalisho' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -630,7 +630,7 @@ class Mellis_Elementor_Contact_Info extends Widget_Base {
 				\Elementor\Group_Control_Background::get_type(),
 				[
 					'name' => 'contact_info_bgcolor',
-					'label' => esc_html__( 'Background', 'mellis' ),
+					'label' => esc_html__( 'Background', 'spalisho' ),
 					'types' => [ 'classic' ],
 					'selector' => '{{WRAPPER}} .ova-contact-info',
 				]
@@ -639,7 +639,7 @@ class Mellis_Elementor_Contact_Info extends Widget_Base {
 			$this->add_responsive_control(
 				'contact_info_padding',
 				[
-					'label' => esc_html__( 'Padding', 'mellis' ),
+					'label' => esc_html__( 'Padding', 'spalisho' ),
 					'type' => Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', 'em', '%' ],
 					'selectors' => [
@@ -781,4 +781,4 @@ class Mellis_Elementor_Contact_Info extends Widget_Base {
 }
 
 
-$widgets_manager->register( new Mellis_Elementor_Contact_Info() );
+$widgets_manager->register( new Spalisho_Elementor_Contact_Info() );

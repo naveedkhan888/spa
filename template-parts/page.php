@@ -4,7 +4,7 @@
 			<?php					
 			if ( have_posts() ) : while ( have_posts() ) : the_post();
 
-					if( apply_filters( 'mellis_show_singular_title', true ) ){ ?>
+					if( apply_filters( 'spalisho_show_singular_title', true ) ){ ?>
 						<header class="page-header">
 							<h1 class="page-title">
 								<?php the_title();?>
@@ -16,11 +16,11 @@
 						the_content();
 					
 						wp_link_pages( array(
-							'before'      => '<div class="page-links"><span class="page-links-title">' . esc_html__( 'Pages:', 'mellis' ) . '</span>',
+							'before'      => '<div class="page-links"><span class="page-links-title">' . esc_html__( 'Pages:', 'spalisho' ) . '</span>',
 							'after'       => '</div>',
 							'link_before' => '<span>',
 							'link_after'  => '</span>',
-							'pagelink'    => '<span class="screen-reader-text">' . esc_html__( 'Page', 'mellis' ) . ' </span>%',
+							'pagelink'    => '<span class="screen-reader-text">' . esc_html__( 'Page', 'spalisho' ) . ' </span>%',
 							'separator'   => '',
 						) );
 					?>
@@ -31,7 +31,7 @@
 
 				endwhile; else : ?>
 			        <p>
-			        	<?php esc_html_e('Sorry, no pages matched your criteria.', 'mellis'); ?>
+			        	<?php esc_html_e('Sorry, no pages matched your criteria.', 'spalisho'); ?>
 			        </p>
 			<?php endif; ?>	
 

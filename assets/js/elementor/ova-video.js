@@ -4,7 +4,7 @@
 
 	$(window).on('elementor/frontend/init', function () {
 		
-        elementorFrontend.hooks.addAction('frontend/element_ready/mellis_elementor_ova_video.default', function(){
+        elementorFrontend.hooks.addAction('frontend/element_ready/spalisho_elementor_ova_video.default', function(){
 	       
 	        $('.ova-video').each( function() {
 	        	var that = $(this);

@@ -15,7 +15,7 @@
 	}
     
     // content
-    $thumbnail   = wp_get_attachment_image_url( get_post_thumbnail_id( $id ), 'mellis_thumbnail' );
+    $thumbnail   = wp_get_attachment_image_url( get_post_thumbnail_id( $id ), 'spalisho_thumbnail' );
 
     if ( $thumbnail == '') {
     	$thumbnail   =  \Elementor\Utils::get_placeholder_image_src();

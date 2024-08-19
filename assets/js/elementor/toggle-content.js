@@ -3,7 +3,7 @@
 	
 	$(window).on('elementor/frontend/init', function () {
 		
-        elementorFrontend.hooks.addAction('frontend/element_ready/mellis_elementor_toggle_content.default', function(){
+        elementorFrontend.hooks.addAction('frontend/element_ready/spalisho_elementor_toggle_content.default', function(){
 	   
 	        $('.ova-toggle-content .button-toggle').each(function(){
 		        $(this).off().on('click', function() {

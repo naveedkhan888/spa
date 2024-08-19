@@ -4,7 +4,7 @@
 
 	$(window).on('elementor/frontend/init', function () {
 		
-		elementorFrontend.hooks.addAction('frontend/element_ready/mellis_elementor_before_after.default', function(){
+		elementorFrontend.hooks.addAction('frontend/element_ready/spalisho_elementor_before_after.default', function(){
 
 			$(".ova_before_after").each(function(){
 

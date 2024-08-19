@@ -1,5 +1,5 @@
 <?php if ( is_singular() ) : ?>
-	<?php if( apply_filters( 'mellis_show_singular_title', true ) ){ ?>
+	<?php if( apply_filters( 'spalisho_show_singular_title', true ) ){ ?>
 		<h1 class="post-title">
 		  <?php the_title(); ?>
 		</h1>

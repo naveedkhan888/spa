@@ -8,16 +8,16 @@ use Elementor\Utils;
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 
-class Mellis_Elementor_Search_Popup extends Widget_Base {
+class Spalisho_Elementor_Search_Popup extends Widget_Base {
 
 	
 	public function get_name() {
-		return 'mellis_elementor_search_popup';
+		return 'spalisho_elementor_search_popup';
 	}
 
 	
 	public function get_title() {
-		return esc_html__( 'Search Popup', 'mellis' );
+		return esc_html__( 'Search Popup', 'spalisho' );
 	}
 
 	
@@ -27,11 +27,11 @@ class Mellis_Elementor_Search_Popup extends Widget_Base {
 
 	
 	public function get_categories() {
-		return [ 'mellis' ];
+		return [ 'spalisho' ];
 	}
 
 	public function get_script_depends() {
-		return [ 'mellis-elementor-search-popup' ];
+		return [ 'spalisho-elementor-search-popup' ];
 	}
 	
 	// Add Your Controll In This Function
@@ -41,14 +41,14 @@ class Mellis_Elementor_Search_Popup extends Widget_Base {
 		$this->start_controls_section(
 			'section_search',
 			[
-				'label' => esc_html__( 'Search', 'mellis' ),
+				'label' => esc_html__( 'Search', 'spalisho' ),
 			]
 		);	
 			
 			$this->add_control(
 				'color_icon_search',
 				[
-					'label' => __( 'Icon Color', 'mellis' ),
+					'label' => __( 'Icon Color', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::COLOR,
 					'selectors' => [
 						'{{WRAPPER}} .ova_wrap_search_popup i' => 'color: {{VALUE}}',
@@ -59,7 +59,7 @@ class Mellis_Elementor_Search_Popup extends Widget_Base {
 			$this->add_control(
 				'color_hover_icon_search',
 				[
-					'label' => __( 'Icon Hover Color', 'mellis' ),
+					'label' => __( 'Icon Hover Color', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::COLOR,
 					'selectors' => [
 						'{{WRAPPER}} .ova_wrap_search_popup i:hover' => 'color: {{VALUE}}',
@@ -70,7 +70,7 @@ class Mellis_Elementor_Search_Popup extends Widget_Base {
 			$this->add_control(
 				'background_icon_search',
 				[
-					'label' => __( 'Background', 'mellis' ),
+					'label' => __( 'Background', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::COLOR,
 					'selectors' => [
 						'{{WRAPPER}} .ova_wrap_search_popup i' => 'background-color: {{VALUE}}',
@@ -81,7 +81,7 @@ class Mellis_Elementor_Search_Popup extends Widget_Base {
 			$this->add_control(
 				'background_icon_search_hover',
 				[
-					'label' => __( 'Background hover', 'mellis' ),
+					'label' => __( 'Background hover', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::COLOR,
 					'selectors' => [
 						'{{WRAPPER}} .ova_wrap_search_popup i:hover' => 'background-color: {{VALUE}}',
@@ -92,7 +92,7 @@ class Mellis_Elementor_Search_Popup extends Widget_Base {
 			$this->add_responsive_control(
 				'icon_search_padding',
 				[
-					'label'      => esc_html__( 'Padding', 'mellis' ),
+					'label'      => esc_html__( 'Padding', 'spalisho' ),
 					'type'       => Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', 'em', '%' ],
 					'selectors'  => [
@@ -104,7 +104,7 @@ class Mellis_Elementor_Search_Popup extends Widget_Base {
 			$this->add_responsive_control(
 				'border_radius_icon',
 				array(
-					'label'      => esc_html__( 'Border Radius', 'mellis' ),
+					'label'      => esc_html__( 'Border Radius', 'spalisho' ),
 					'type'       => Controls_Manager::DIMENSIONS,
 					'size_units' => array( 'px', '%' ),
 					'selectors'  => array(
@@ -117,7 +117,7 @@ class Mellis_Elementor_Search_Popup extends Widget_Base {
 				\Elementor\Group_Control_Border::get_type(),
 				[
 					'name' 		=> 'border_icon',
-					'label' 	=> esc_html__( 'Border', 'mellis' ),
+					'label' 	=> esc_html__( 'Border', 'spalisho' ),
 					'selector' 	=> '{{WRAPPER}} .ova_wrap_search_popup',
 				]
 			);
@@ -127,7 +127,7 @@ class Mellis_Elementor_Search_Popup extends Widget_Base {
 			$this->add_control(
 				'size_icon',
 				[
-					'label' => __( 'Size Icon', 'mellis' ),
+					'label' => __( 'Size Icon', 'spalisho' ),
 					'type' => Controls_Manager::SLIDER,
 					'size_units' => [ 'px', '%' ],
 					'range' => [
@@ -156,14 +156,14 @@ class Mellis_Elementor_Search_Popup extends Widget_Base {
 		$this->start_controls_section(
 			'section_search_POPUP',
 			[
-				'label' => esc_html__( 'Search popup', 'mellis' ),
+				'label' => esc_html__( 'Search popup', 'spalisho' ),
 			]
 		);	
 
 			$this->add_control(
 				'color_icon_search_popup',
 				[
-					'label' => __( 'Icon Color', 'mellis' ),
+					'label' => __( 'Icon Color', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::COLOR,
 					'selectors' => [
 						'{{WRAPPER}} .ova_wrap_search_popup .ova_search_popup .container .search-form .search-submit i' => 'color: {{VALUE}}',
@@ -174,7 +174,7 @@ class Mellis_Elementor_Search_Popup extends Widget_Base {
 			$this->add_control(
 				'color_hover_icon_search_popup',
 				[
-					'label' => __( 'Icon Hover Color', 'mellis' ),
+					'label' => __( 'Icon Hover Color', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::COLOR,
 					'selectors' => [
 						'{{WRAPPER}} .ova_wrap_search_popup .ova_search_popup .container .search-form .search-submit:hover i' => 'color: {{VALUE}}',
@@ -185,7 +185,7 @@ class Mellis_Elementor_Search_Popup extends Widget_Base {
 			$this->add_control(
 				'background_icon_search_popup',
 				[
-					'label' => __( 'Background', 'mellis' ),
+					'label' => __( 'Background', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::COLOR,
 					'selectors' => [
 						'{{WRAPPER}} .ova_wrap_search_popup .ova_search_popup .container .search-form .search-submit' => 'background-color: {{VALUE}}',
@@ -196,7 +196,7 @@ class Mellis_Elementor_Search_Popup extends Widget_Base {
 			$this->add_control(
 				'background_icon_search_hover_popup',
 				[
-					'label' => __( 'Background hover', 'mellis' ),
+					'label' => __( 'Background hover', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::COLOR,
 					'selectors' => [
 						'{{WRAPPER}} .ova_wrap_search_popup .ova_search_popup .container .search-form .search-submit:hover' => 'background-color: {{VALUE}}',
@@ -223,7 +223,7 @@ class Mellis_Elementor_Search_Popup extends Widget_Base {
 					<div class="search-popup__overlay"></div>
 					<div class="container">
 						<form role="search" method="get" class="search-form" action="<?php echo esc_url( home_url( '/' ) ) ; ?>">
-						        <input type="search" class="search-field" placeholder="<?php esc_attr_e( 'Search …', 'mellis' ) ?>" value="<?php echo get_search_query() ?>" name="s" title="<?php esc_attr_e( 'Search for:', 'mellis' ) ?>" />
+						        <input type="search" class="search-field" placeholder="<?php esc_attr_e( 'Search …', 'spalisho' ) ?>" value="<?php echo get_search_query() ?>" name="s" title="<?php esc_attr_e( 'Search for:', 'spalisho' ) ?>" />
 				   			 	<button type="submit" class="search-submit">
 				   			 		<i class="ovaicon ovaicon-search"></i>
 				   			 	</button>
@@ -236,4 +236,4 @@ class Mellis_Elementor_Search_Popup extends Widget_Base {
 
 	
 }
-$widgets_manager->register( new Mellis_Elementor_Search_Popup() );
+$widgets_manager->register( new Spalisho_Elementor_Search_Popup() );

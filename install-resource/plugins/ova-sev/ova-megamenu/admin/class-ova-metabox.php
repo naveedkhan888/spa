@@ -35,7 +35,7 @@ function ova_sev_metaboxes() {
         $sev_settings->add_field( array(
             'name' => esc_html__( 'Service Icon', 'ova-sev' ),
             'id'   => $prefix . 'icon',
-            'desc' => esc_html__( 'Use in Service Box Element ( Example : flaticon flaticon-massage .You can find here: https://ova-themes.gitbook.io/mellis/find-icons)', 'ova-sev' ),
+            'desc' => esc_html__( 'Use in Service Box Element ( Example : flaticon flaticon-massage .You can find here: https://ova-themes.gitbook.io/spalisho/find-icons)', 'ova-sev' ),
             'type' => 'text',
         ) );
         

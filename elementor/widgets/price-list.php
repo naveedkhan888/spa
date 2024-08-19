@@ -9,16 +9,16 @@ use Elementor\Utils;
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 
-class Mellis_Elementor_Price_List extends Widget_Base {
+class Spalisho_Elementor_Price_List extends Widget_Base {
 
 	
 	public function get_name() {
-		return 'mellis_elementor_price_list';
+		return 'spalisho_elementor_price_list';
 	}
 
 	
 	public function get_title() {
-		return esc_html__( 'Price List', 'mellis' );
+		return esc_html__( 'Price List', 'spalisho' );
 	}
 
 	
@@ -28,7 +28,7 @@ class Mellis_Elementor_Price_List extends Widget_Base {
 
 	
 	public function get_categories() {
-		return [ 'mellis' ];
+		return [ 'spalisho' ];
 	}
 
 	public function get_script_depends() {
@@ -41,7 +41,7 @@ class Mellis_Elementor_Price_List extends Widget_Base {
 		$this->start_controls_section(
 			'section_content',
 			[
-				'label' => esc_html__( 'Content', 'mellis' ),
+				'label' => esc_html__( 'Content', 'spalisho' ),
 			]
 		);		
 			
@@ -49,9 +49,9 @@ class Mellis_Elementor_Price_List extends Widget_Base {
 		    $this->add_control(
 				'heading',
 				[
-					'label' => esc_html__( 'Heading', 'mellis' ),
+					'label' => esc_html__( 'Heading', 'spalisho' ),
 					'type' => Controls_Manager::TEXTAREA,
-					'default' => esc_html__('Massages & Prices', 'mellis')
+					'default' => esc_html__('Massages & Prices', 'spalisho')
 				]
 			);
             
@@ -60,12 +60,12 @@ class Mellis_Elementor_Price_List extends Widget_Base {
             $repeater->add_control(
 				'link',
 				[
-					'label' => esc_html__( 'Link', 'mellis' ),
+					'label' => esc_html__( 'Link', 'spalisho' ),
 					'type' => Controls_Manager::URL,
 					'dynamic' => [
 						'active' => true,
 					],
-					'placeholder' => esc_html__( 'https://your-link.com', 'mellis' ),
+					'placeholder' => esc_html__( 'https://your-link.com', 'spalisho' ),
 					'show_label' => true,
 				]
 			);
@@ -73,7 +73,7 @@ class Mellis_Elementor_Price_List extends Widget_Base {
 			$repeater->add_control(
 				'image',
 				[
-					'label' => esc_html__( 'Image on Hover', 'mellis' ),
+					'label' => esc_html__( 'Image on Hover', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::MEDIA,
 				]
 			);
@@ -81,7 +81,7 @@ class Mellis_Elementor_Price_List extends Widget_Base {
 		    $repeater->add_control(
 				'title',
 				[
-					'label' 	=> esc_html__( 'Title', 'mellis' ),
+					'label' 	=> esc_html__( 'Title', 'spalisho' ),
 					'type' 		=> Controls_Manager::TEXTAREA,
 					'default' 	=> 'Relaxation'
 				]
@@ -90,7 +90,7 @@ class Mellis_Elementor_Price_List extends Widget_Base {
 			$repeater->add_control(
 				'time',
 				[
-					'label' => esc_html__( 'Time', 'mellis' ),
+					'label' => esc_html__( 'Time', 'spalisho' ),
 					'type' => Controls_Manager::TEXT,
 					'default' => '20 Minutes',
 				]
@@ -99,28 +99,28 @@ class Mellis_Elementor_Price_List extends Widget_Base {
 			$repeater->add_control(
 	            'currency_symbol',
 	            [
-	                'label' => esc_html__( 'Currency Symbol', 'mellis' ),
+	                'label' => esc_html__( 'Currency Symbol', 'spalisho' ),
 	                'type' => Controls_Manager::SELECT,
 	                'options' => [
-	                    '' => esc_html__( 'None', 'mellis' ),
-	                    'dollar' => '&#36; ' . _x( 'Dollar', 'Currency Symbol', 'mellis' ),
-	                    'euro' => '&#128; ' . _x( 'Euro', 'Currency Symbol', 'mellis' ),
-	                    'baht' => '&#3647; ' . _x( 'Baht', 'Currency Symbol', 'mellis' ),
-	                    'franc' => '&#8355; ' . _x( 'Franc', 'Currency Symbol', 'mellis' ),
-	                    'guilder' => '&fnof; ' . _x( 'Guilder', 'Currency Symbol', 'mellis' ),
-	                    'krona' => 'kr ' . _x( 'Krona', 'Currency Symbol', 'mellis' ),
-	                    'lira' => '&#8356; ' . _x( 'Lira', 'Currency Symbol', 'mellis' ),
-	                    'peseta' => '&#8359 ' . _x( 'Peseta', 'Currency Symbol', 'mellis' ),
-	                    'peso' => '&#8369; ' . _x( 'Peso', 'Currency Symbol', 'mellis' ),
-	                    'pound' => '&#163; ' . _x( 'Pound Sterling', 'Currency Symbol', 'mellis' ),
-	                    'real' => 'R$ ' . _x( 'Real', 'Currency Symbol', 'mellis' ),
-	                    'ruble' => '&#8381; ' . _x( 'Ruble', 'Currency Symbol', 'mellis' ),
-	                    'rupee' => '&#8360; ' . _x( 'Rupee', 'Currency Symbol', 'mellis' ),
-	                    'indian_rupee' => '&#8377; ' . _x( 'Rupee (Indian)', 'Currency Symbol', 'mellis' ),
-	                    'shekel' => '&#8362; ' . _x( 'Shekel', 'Currency Symbol', 'mellis' ),
-	                    'yen' => '&#165; ' . _x( 'Yen/Yuan', 'Currency Symbol', 'mellis' ),
-	                    'won' => '&#8361; ' . _x( 'Won', 'Currency Symbol', 'mellis' ),
-	                    'custom' => esc_html__( 'Custom', 'mellis' ),
+	                    '' => esc_html__( 'None', 'spalisho' ),
+	                    'dollar' => '&#36; ' . _x( 'Dollar', 'Currency Symbol', 'spalisho' ),
+	                    'euro' => '&#128; ' . _x( 'Euro', 'Currency Symbol', 'spalisho' ),
+	                    'baht' => '&#3647; ' . _x( 'Baht', 'Currency Symbol', 'spalisho' ),
+	                    'franc' => '&#8355; ' . _x( 'Franc', 'Currency Symbol', 'spalisho' ),
+	                    'guilder' => '&fnof; ' . _x( 'Guilder', 'Currency Symbol', 'spalisho' ),
+	                    'krona' => 'kr ' . _x( 'Krona', 'Currency Symbol', 'spalisho' ),
+	                    'lira' => '&#8356; ' . _x( 'Lira', 'Currency Symbol', 'spalisho' ),
+	                    'peseta' => '&#8359 ' . _x( 'Peseta', 'Currency Symbol', 'spalisho' ),
+	                    'peso' => '&#8369; ' . _x( 'Peso', 'Currency Symbol', 'spalisho' ),
+	                    'pound' => '&#163; ' . _x( 'Pound Sterling', 'Currency Symbol', 'spalisho' ),
+	                    'real' => 'R$ ' . _x( 'Real', 'Currency Symbol', 'spalisho' ),
+	                    'ruble' => '&#8381; ' . _x( 'Ruble', 'Currency Symbol', 'spalisho' ),
+	                    'rupee' => '&#8360; ' . _x( 'Rupee', 'Currency Symbol', 'spalisho' ),
+	                    'indian_rupee' => '&#8377; ' . _x( 'Rupee (Indian)', 'Currency Symbol', 'spalisho' ),
+	                    'shekel' => '&#8362; ' . _x( 'Shekel', 'Currency Symbol', 'spalisho' ),
+	                    'yen' => '&#165; ' . _x( 'Yen/Yuan', 'Currency Symbol', 'spalisho' ),
+	                    'won' => '&#8361; ' . _x( 'Won', 'Currency Symbol', 'spalisho' ),
+	                    'custom' => esc_html__( 'Custom', 'spalisho' ),
 	                ],
 	                'default' => 'dollar',
 	            ]
@@ -129,7 +129,7 @@ class Mellis_Elementor_Price_List extends Widget_Base {
 			$repeater->add_control(
 				'currency_symbol_custom',
 				[
-					'label' => esc_html__( 'Custom Symbol', 'mellis' ),
+					'label' => esc_html__( 'Custom Symbol', 'spalisho' ),
 					'type' => Controls_Manager::TEXT,
 					'condition' => [
 	                    'currency_symbol' => 'custom',
@@ -140,7 +140,7 @@ class Mellis_Elementor_Price_List extends Widget_Base {
 			$repeater->add_control(
 				'price',
 				[
-					'label' 	=> esc_html__( 'Price', 'mellis' ),
+					'label' 	=> esc_html__( 'Price', 'spalisho' ),
 					'type' 		=> Controls_Manager::TEXT,
 					'default' 	=> '2.20',
 				]
@@ -149,28 +149,28 @@ class Mellis_Elementor_Price_List extends Widget_Base {
 			$this->add_control(
 				'items',
 				[
-					'label' => esc_html__( 'Items', 'mellis' ),
+					'label' => esc_html__( 'Items', 'spalisho' ),
 					'type' => Controls_Manager::REPEATER,
 					'fields' => $repeater->get_controls(),
 					'default' => [
 						[	
 							'title' => 'Relaxation',
-							'time'  => esc_html__( '20 Minutes', 'mellis' ),
+							'time'  => esc_html__( '20 Minutes', 'spalisho' ),
                             'price' => '2.20',	
 						],
 						[	
 							'title' => 'Athlete Recovery',
-							'time'  => esc_html__( '30 Minutes', 'mellis' ),
+							'time'  => esc_html__( '30 Minutes', 'spalisho' ),
                             'price' => '4.00',	
 						],
 						[	
 							'title' => 'Thai',
-							'time'  => esc_html__( '40 Minutes', 'mellis' ),
+							'time'  => esc_html__( '40 Minutes', 'spalisho' ),
                             'price' => '3.99',	
 						],
 						[	
 							'title' => 'Hot Stones',
-							'time'  => esc_html__( '50 Minutes', 'mellis' ),
+							'time'  => esc_html__( '50 Minutes', 'spalisho' ),
                             'price' => '6.20',	
 						],
 					],
@@ -184,7 +184,7 @@ class Mellis_Elementor_Price_List extends Widget_Base {
 		$this->start_controls_section(
             'heading_style',
             [
-                'label' => esc_html__( 'Heading', 'mellis' ),
+                'label' => esc_html__( 'Heading', 'spalisho' ),
                 'tab' 	=> Controls_Manager::TAB_STYLE,
             ]
         );
@@ -200,7 +200,7 @@ class Mellis_Elementor_Price_List extends Widget_Base {
 			$this->add_control(
 				'heading_color',
 				[
-					'label' 	=> esc_html__( 'Color', 'mellis' ),
+					'label' 	=> esc_html__( 'Color', 'spalisho' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
 						'{{WRAPPER}} .ova-price-list .heading' => 'color: {{VALUE}};',
@@ -211,7 +211,7 @@ class Mellis_Elementor_Price_List extends Widget_Base {
 			$this->add_responsive_control(
 	            'heading_padding',
 	            [
-	                'label' 		=> esc_html__( 'Padding', 'mellis' ),
+	                'label' 		=> esc_html__( 'Padding', 'spalisho' ),
 	                'type' 			=> Controls_Manager::DIMENSIONS,
 	                'size_units' 	=> [ 'px', '%', 'em' ],
 	                'selectors' 	=> [
@@ -226,7 +226,7 @@ class Mellis_Elementor_Price_List extends Widget_Base {
 		$this->start_controls_section(
             'title_style',
             [
-                'label' => esc_html__( 'Title', 'mellis' ),
+                'label' => esc_html__( 'Title', 'spalisho' ),
                 'tab' 	=> Controls_Manager::TAB_STYLE,
             ]
         );
@@ -242,7 +242,7 @@ class Mellis_Elementor_Price_List extends Widget_Base {
 			$this->add_control(
 				'title_color',
 				[
-					'label' 	=> esc_html__( 'Color', 'mellis' ),
+					'label' 	=> esc_html__( 'Color', 'spalisho' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
 						'{{WRAPPER}} .ova-price-list .item-price-list .title-time .title' => 'color: {{VALUE}};',
@@ -253,7 +253,7 @@ class Mellis_Elementor_Price_List extends Widget_Base {
 			$this->add_control(
 				'title_color_hover',
 				[
-					'label' 	=> esc_html__( 'Color Hover', 'mellis' ),
+					'label' 	=> esc_html__( 'Color Hover', 'spalisho' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
 						'{{WRAPPER}} .ova-price-list .item-price-list:hover .title-time .title' => 'color: {{VALUE}};',
@@ -264,7 +264,7 @@ class Mellis_Elementor_Price_List extends Widget_Base {
 			$this->add_responsive_control(
 	            'title_padding',
 	            [
-	                'label' 		=> esc_html__( 'Padding', 'mellis' ),
+	                'label' 		=> esc_html__( 'Padding', 'spalisho' ),
 	                'type' 			=> Controls_Manager::DIMENSIONS,
 	                'size_units' 	=> [ 'px', '%', 'em' ],
 	                'selectors' 	=> [
@@ -280,7 +280,7 @@ class Mellis_Elementor_Price_List extends Widget_Base {
 		$this->start_controls_section(
             'time_style',
             [
-                'label' => esc_html__( 'Time', 'mellis' ),
+                'label' => esc_html__( 'Time', 'spalisho' ),
                 'tab' 	=> Controls_Manager::TAB_STYLE,
             ]
         );
@@ -296,7 +296,7 @@ class Mellis_Elementor_Price_List extends Widget_Base {
 			$this->add_control(
 				'time_color',
 				[
-					'label' 	=> esc_html__( 'Color', 'mellis' ),
+					'label' 	=> esc_html__( 'Color', 'spalisho' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
 						'{{WRAPPER}} .ova-price-list .item-price-list .title-time .time' => 'color: {{VALUE}};',
@@ -307,7 +307,7 @@ class Mellis_Elementor_Price_List extends Widget_Base {
 			$this->add_responsive_control(
 	            'time_padding',
 	            [
-	                'label' 		=> esc_html__( 'Padding', 'mellis' ),
+	                'label' 		=> esc_html__( 'Padding', 'spalisho' ),
 	                'type' 			=> Controls_Manager::DIMENSIONS,
 	                'size_units' 	=> [ 'px', '%', 'em' ],
 	                'selectors' 	=> [
@@ -322,7 +322,7 @@ class Mellis_Elementor_Price_List extends Widget_Base {
 		$this->start_controls_section(
             'title_and_time_style',
             [
-                'label' => esc_html__( 'Title & Time', 'mellis' ),
+                'label' => esc_html__( 'Title & Time', 'spalisho' ),
                 'tab' 	=> Controls_Manager::TAB_STYLE,
             ]
         );
@@ -330,7 +330,7 @@ class Mellis_Elementor_Price_List extends Widget_Base {
         	$this->add_responsive_control(
 				'title_and_time_max_width',
 				[
-					'label' => esc_html__( 'Max Width', 'mellis' ),
+					'label' => esc_html__( 'Max Width', 'spalisho' ),
 					'type' => Controls_Manager::SLIDER,
 					'size_units' => [ 'px' ],
 					'range' => [
@@ -353,7 +353,7 @@ class Mellis_Elementor_Price_List extends Widget_Base {
 		$this->start_controls_section(
             'price_style',
             [
-                'label' => esc_html__( 'Price', 'mellis' ),
+                'label' => esc_html__( 'Price', 'spalisho' ),
                 'tab' 	=> Controls_Manager::TAB_STYLE,
             ]
         );
@@ -369,7 +369,7 @@ class Mellis_Elementor_Price_List extends Widget_Base {
 			$this->add_control(
 				'price_color',
 				[
-					'label' 	=> esc_html__( 'Color', 'mellis' ),
+					'label' 	=> esc_html__( 'Color', 'spalisho' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
 						'{{WRAPPER}} .ova-price-list .item-price-list .price-wrapper .price' => 'color: {{VALUE}};',
@@ -384,7 +384,7 @@ class Mellis_Elementor_Price_List extends Widget_Base {
 		$this->start_controls_section(
             'item_price_list_style',
             [
-                'label' => esc_html__( 'Item Price List', 'mellis' ),
+                'label' => esc_html__( 'Item Price List', 'spalisho' ),
                 'tab' 	=> Controls_Manager::TAB_STYLE,
             ]
         );
@@ -392,7 +392,7 @@ class Mellis_Elementor_Price_List extends Widget_Base {
 			$this->add_control(
 				'price_list_bgcolor',
 				[
-					'label' 	=> esc_html__( 'Background Color', 'mellis' ),
+					'label' 	=> esc_html__( 'Background Color', 'spalisho' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
 						'{{WRAPPER}} .ova-price-list' => 'background-color: {{VALUE}};',
@@ -403,7 +403,7 @@ class Mellis_Elementor_Price_List extends Widget_Base {
 			$this->add_responsive_control(
 	            'item_padding',
 	            [
-	                'label' 		=> esc_html__( 'Padding', 'mellis' ),
+	                'label' 		=> esc_html__( 'Padding', 'spalisho' ),
 	                'type' 			=> Controls_Manager::DIMENSIONS,
 	                'size_units' 	=> [ 'px', '%', 'em' ],
 	                'selectors' 	=> [
@@ -415,7 +415,7 @@ class Mellis_Elementor_Price_List extends Widget_Base {
 			$this->add_responsive_control(
 	            'item_price_list_padding',
 	            [
-	                'label' 		=> esc_html__( 'List Padding', 'mellis' ),
+	                'label' 		=> esc_html__( 'List Padding', 'spalisho' ),
 	                'type' 			=> Controls_Manager::DIMENSIONS,
 	                'size_units' 	=> [ 'px', '%', 'em' ],
 	                'selectors' 	=> [
@@ -428,7 +428,7 @@ class Mellis_Elementor_Price_List extends Widget_Base {
 				\Elementor\Group_Control_Border::get_type(),
 				[
 					'name' => 'item_price_list_border',
-					'label' => esc_html__( 'Border', 'mellis' ),
+					'label' => esc_html__( 'Border', 'spalisho' ),
 					'selector' => '{{WRAPPER}} .ova-price-list .item-price-list',
 				]
 			);
@@ -552,4 +552,4 @@ class Mellis_Elementor_Price_List extends Widget_Base {
 
 	
 }
-$widgets_manager->register( new Mellis_Elementor_Price_List() );
+$widgets_manager->register( new Spalisho_Elementor_Price_List() );

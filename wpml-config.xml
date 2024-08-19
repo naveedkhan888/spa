@@ -1,14 +1,14 @@
 <wpml-config>
     <custom-fields>
         
-        <custom-field action="translate">mellis_met_embed_media</custom-field>
-        <custom-field action="translate">mellis_met_file_list</custom-field>
-        <custom-field action="translate">mellis_met_header_version</custom-field>
-        <custom-field action="translate">mellis_met_footer_version</custom-field>
-        <custom-field action="translate">mellis_met_main_layout</custom-field>
-        <custom-field action="translate">mellis_met_width_site</custom-field>
-        <custom-field action="translate">mellis_met_seo_key</custom-field>
-        <custom-field action="translate">mellis_met_seo_desc</custom-field>
+        <custom-field action="translate">spalisho_met_embed_media</custom-field>
+        <custom-field action="translate">spalisho_met_file_list</custom-field>
+        <custom-field action="translate">spalisho_met_header_version</custom-field>
+        <custom-field action="translate">spalisho_met_footer_version</custom-field>
+        <custom-field action="translate">spalisho_met_main_layout</custom-field>
+        <custom-field action="translate">spalisho_met_width_site</custom-field>
+        <custom-field action="translate">spalisho_met_seo_key</custom-field>
+        <custom-field action="translate">spalisho_met_seo_desc</custom-field>
     </custom-fields>
   
     

@@ -8,14 +8,14 @@ use Elementor\Utils;
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
-class Mellis_Elementor_Before_After extends Widget_Base {
+class Spalisho_Elementor_Before_After extends Widget_Base {
 
 	public function get_name() {
-		return 'mellis_elementor_before_after';
+		return 'spalisho_elementor_before_after';
 	}
 
 	public function get_title() {
-		return esc_html__( 'Before After', 'mellis' );
+		return esc_html__( 'Before After', 'spalisho' );
 	}
 
 	public function get_icon() {
@@ -23,11 +23,11 @@ class Mellis_Elementor_Before_After extends Widget_Base {
 	}
 
 	public function get_categories() {
-		return [ 'mellis' ];
+		return [ 'spalisho' ];
 	}
 
 	public function get_script_depends() {
-		return [ 'mellis-elementor-before-after' ];
+		return [ 'spalisho-elementor-before-after' ];
 	}
 
 	protected function register_controls() {
@@ -36,14 +36,14 @@ class Mellis_Elementor_Before_After extends Widget_Base {
 		$this->start_controls_section(
 			'section_content',
 			[
-				'label' => esc_html__( 'Content', 'mellis' ),
+				'label' => esc_html__( 'Content', 'spalisho' ),
 			]
 		);
 
 			$this->add_control(
 				'image_before',
 				[
-					'label'   => esc_html__( 'Before Image', 'mellis' ),
+					'label'   => esc_html__( 'Before Image', 'spalisho' ),
 					'type'    => \Elementor\Controls_Manager::MEDIA,
 					'default' => [
 						'url' => Utils::get_placeholder_image_src(),
@@ -54,7 +54,7 @@ class Mellis_Elementor_Before_After extends Widget_Base {
 			$this->add_control(
 				'image_after',
 				[
-					'label'   => esc_html__( 'After Image', 'mellis' ),
+					'label'   => esc_html__( 'After Image', 'spalisho' ),
 					'type'    => \Elementor\Controls_Manager::MEDIA,
 					'default' => [
 						'url' => Utils::get_placeholder_image_src(),
@@ -65,7 +65,7 @@ class Mellis_Elementor_Before_After extends Widget_Base {
 			$this->add_responsive_control(
 				'image_height',
 				[
-					'label' 		=> esc_html__( 'Height', 'mellis' ),
+					'label' 		=> esc_html__( 'Height', 'spalisho' ),
 					'type' 			=> Controls_Manager::SLIDER,
 					'range' => [
 						'px' => [
@@ -111,4 +111,4 @@ class Mellis_Elementor_Before_After extends Widget_Base {
 
 }
 
-$widgets_manager->register( new Mellis_Elementor_Before_After() );
+$widgets_manager->register( new Spalisho_Elementor_Before_After() );

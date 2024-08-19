@@ -8,16 +8,16 @@ use Elementor\Utils;
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 
-class Mellis_Elementor_Ova_Video extends Widget_Base {
+class Spalisho_Elementor_Ova_Video extends Widget_Base {
 
 	
 	public function get_name() {
-		return 'mellis_elementor_ova_video';
+		return 'spalisho_elementor_ova_video';
 	}
 
 	
 	public function get_title() {
-		return esc_html__( 'Ova Video', 'mellis' );
+		return esc_html__( 'Ova Video', 'spalisho' );
 	}
 
 	
@@ -27,11 +27,11 @@ class Mellis_Elementor_Ova_Video extends Widget_Base {
 
 	
 	public function get_categories() {
-		return [ 'mellis' ];
+		return [ 'spalisho' ];
 	}
 
 	public function get_script_depends() {
-		return [ 'mellis-elementor-ova-video' ];
+		return [ 'spalisho-elementor-ova-video' ];
 	}
 	
 	// Add Your Controll In This Function
@@ -40,7 +40,7 @@ class Mellis_Elementor_Ova_Video extends Widget_Base {
 		$this->start_controls_section(
 			'section_content',
 			[
-				'label' => esc_html__( 'Content', 'mellis' ),
+				'label' => esc_html__( 'Content', 'spalisho' ),
 			]
 		);	
 			
@@ -48,12 +48,12 @@ class Mellis_Elementor_Ova_Video extends Widget_Base {
 			$this->add_control(
 				'version',
 				[
-					'label' => esc_html__( 'Version', 'mellis' ),
+					'label' => esc_html__( 'Version', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::SELECT,
 					'default' => 'version_1',
 					'options' => [
-						'version_1' => esc_html__( 'Version 1', 'mellis' ),
-						'version_2' => esc_html__( 'Version 2', 'mellis' ),
+						'version_1' => esc_html__( 'Version 1', 'spalisho' ),
+						'version_2' => esc_html__( 'Version 2', 'spalisho' ),
 					]
 				]
 			);
@@ -61,7 +61,7 @@ class Mellis_Elementor_Ova_Video extends Widget_Base {
 			$this->add_control(
 				'ova_image',
 				[
-					'label' => esc_html__( 'Choose Image Background', 'mellis' ),
+					'label' => esc_html__( 'Choose Image Background', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::MEDIA,
 					'default' => [
 						'url' => \Elementor\Utils::get_placeholder_image_src(),
@@ -75,9 +75,9 @@ class Mellis_Elementor_Ova_Video extends Widget_Base {
 			$this->add_control(
 				'title',
 				[
-					'label' 	=> esc_html__( 'Title', 'mellis' ),
+					'label' 	=> esc_html__( 'Title', 'spalisho' ),
 					'type' 		=> Controls_Manager::TEXTAREA,
-					'default' 	=> esc_html__( 'Place of beauty', 'mellis' ),
+					'default' 	=> esc_html__( 'Place of beauty', 'spalisho' ),
 					'rows'      => 4
 				]
 			);
@@ -85,7 +85,7 @@ class Mellis_Elementor_Ova_Video extends Widget_Base {
 			$this->add_control(
 				'title_font_family',
 				[
-					'label' 	=> esc_html__( 'Font Family', 'mellis' ),
+					'label' 	=> esc_html__( 'Font Family', 'spalisho' ),
 					'type' 		=> \Elementor\Controls_Manager::FONT,
 					'default' 	=> "Parisienne",
 					'selectors' => [
@@ -97,7 +97,7 @@ class Mellis_Elementor_Ova_Video extends Widget_Base {
 			$this->add_control(
 	            'title_color',
 	            [
-	                'label' 	=> esc_html__( 'Title Color', 'mellis' ),
+	                'label' 	=> esc_html__( 'Title Color', 'spalisho' ),
 	                'type' 		=> \Elementor\Controls_Manager::COLOR,
 	                'selectors' => [
 	                    '{{WRAPPER}} .ova-video .title' => 'color: {{VALUE}};',
@@ -108,19 +108,19 @@ class Mellis_Elementor_Ova_Video extends Widget_Base {
 			$this->add_control(
 				'html_tag',
 				[
-					'label' 	=> esc_html__( 'HTML Tag', 'mellis' ),
+					'label' 	=> esc_html__( 'HTML Tag', 'spalisho' ),
 					'type' 		=> \Elementor\Controls_Manager::SELECT,
 					'default' 	=> 'h3',
 					'options' 	=> [
-						'h1' 		=> esc_html__( 'H1', 'mellis' ),
-						'h2'  		=> esc_html__( 'H2', 'mellis' ),
-						'h3'  		=> esc_html__( 'H3', 'mellis' ),
-						'h4' 		=> esc_html__( 'H4', 'mellis' ),
-						'h5' 		=> esc_html__( 'H5', 'mellis' ),
-						'h6' 		=> esc_html__( 'H6', 'mellis' ),
-						'div' 		=> esc_html__( 'Div', 'mellis' ),
-						'span' 		=> esc_html__( 'span', 'mellis' ),
-						'p' 		=> esc_html__( 'p', 'mellis' ),
+						'h1' 		=> esc_html__( 'H1', 'spalisho' ),
+						'h2'  		=> esc_html__( 'H2', 'spalisho' ),
+						'h3'  		=> esc_html__( 'H3', 'spalisho' ),
+						'h4' 		=> esc_html__( 'H4', 'spalisho' ),
+						'h5' 		=> esc_html__( 'H5', 'spalisho' ),
+						'h6' 		=> esc_html__( 'H6', 'spalisho' ),
+						'div' 		=> esc_html__( 'Div', 'spalisho' ),
+						'span' 		=> esc_html__( 'span', 'spalisho' ),
+						'p' 		=> esc_html__( 'p', 'spalisho' ),
 					],
 				]
 			);
@@ -128,7 +128,7 @@ class Mellis_Elementor_Ova_Video extends Widget_Base {
 			$this->add_control(
 				'icon_class',
 				[
-					'label' 	=> esc_html__( 'Icon Class', 'mellis' ),
+					'label' 	=> esc_html__( 'Icon Class', 'spalisho' ),
 					'type' 		=> \Elementor\Controls_Manager::TEXT,
 					'default' 	=> 'flaticon flaticon-play',
 				]
@@ -138,9 +138,9 @@ class Mellis_Elementor_Ova_Video extends Widget_Base {
 			$this->add_control(
 				'icon_url_video',
 				[
-					'label' 	=> esc_html__( 'URL Video', 'mellis' ),
+					'label' 	=> esc_html__( 'URL Video', 'spalisho' ),
 					'type' 		=> \Elementor\Controls_Manager::TEXT,
-					'placeholder' 	=> esc_html__( 'Enter your URL', 'mellis' ) . ' (YouTube)',
+					'placeholder' 	=> esc_html__( 'Enter your URL', 'spalisho' ) . ' (YouTube)',
 					'default' 		=> 'https://www.youtube.com/watch?v=XHOmBV4js_E',
 				]
 			);
@@ -148,7 +148,7 @@ class Mellis_Elementor_Ova_Video extends Widget_Base {
 			$this->add_control(
 	            'link',
 	            [
-	                'label' 	=> esc_html__( 'Link', 'mellis' ),
+	                'label' 	=> esc_html__( 'Link', 'spalisho' ),
 	                'type' 		=> \Elementor\Controls_Manager::URL,
 	                'dynamic' 	=> [
 	                    'active' => true,
@@ -162,7 +162,7 @@ class Mellis_Elementor_Ova_Video extends Widget_Base {
 	        $this->add_control(
 				'video_options',
 				[
-					'label' 	=> esc_html__( 'Video Options', 'mellis' ),
+					'label' 	=> esc_html__( 'Video Options', 'spalisho' ),
 					'type' 		=> \Elementor\Controls_Manager::HEADING,
 					'separator' => 'before',
 					'condition' => [
@@ -174,10 +174,10 @@ class Mellis_Elementor_Ova_Video extends Widget_Base {
 			$this->add_control(
 				'autoplay_video',
 				[
-					'label' 	=> esc_html__( 'Autoplay', 'mellis' ),
+					'label' 	=> esc_html__( 'Autoplay', 'spalisho' ),
 					'type' 		=> \Elementor\Controls_Manager::SWITCHER,
-					'label_on' 	=> esc_html__( 'Yes', 'mellis' ),
-					'label_off' => esc_html__( 'No', 'mellis' ),
+					'label_on' 	=> esc_html__( 'Yes', 'spalisho' ),
+					'label_off' => esc_html__( 'No', 'spalisho' ),
 					'default' 	=> 'yes',
 					'condition' => [
 						'icon_url_video!' => '',
@@ -188,10 +188,10 @@ class Mellis_Elementor_Ova_Video extends Widget_Base {
 			$this->add_control(
 				'mute_video',
 				[
-					'label' 	=> esc_html__( 'Mute', 'mellis' ),
+					'label' 	=> esc_html__( 'Mute', 'spalisho' ),
 					'type' 		=> \Elementor\Controls_Manager::SWITCHER,
-					'label_on' 	=> esc_html__( 'Yes', 'mellis' ),
-					'label_off' => esc_html__( 'No', 'mellis' ),
+					'label_on' 	=> esc_html__( 'Yes', 'spalisho' ),
+					'label_off' => esc_html__( 'No', 'spalisho' ),
 					'default' 	=> 'no',
 					'condition' => [
 						'icon_url_video!' => '',
@@ -202,10 +202,10 @@ class Mellis_Elementor_Ova_Video extends Widget_Base {
 			$this->add_control(
 				'loop_video',
 				[
-					'label' 	=> esc_html__( 'Loop', 'mellis' ),
+					'label' 	=> esc_html__( 'Loop', 'spalisho' ),
 					'type' 		=> \Elementor\Controls_Manager::SWITCHER,
-					'label_on' 	=> esc_html__( 'Yes', 'mellis' ),
-					'label_off' => esc_html__( 'No', 'mellis' ),
+					'label_on' 	=> esc_html__( 'Yes', 'spalisho' ),
+					'label_off' => esc_html__( 'No', 'spalisho' ),
 					'default' 	=> 'yes',
 					'condition' => [
 						'icon_url_video!' => '',
@@ -216,10 +216,10 @@ class Mellis_Elementor_Ova_Video extends Widget_Base {
 			$this->add_control(
 				'player_controls_video',
 				[
-					'label' 	=> esc_html__( 'Player Controls', 'mellis' ),
+					'label' 	=> esc_html__( 'Player Controls', 'spalisho' ),
 					'type' 		=> \Elementor\Controls_Manager::SWITCHER,
-					'label_on' 	=> esc_html__( 'Yes', 'mellis' ),
-					'label_off' => esc_html__( 'No', 'mellis' ),
+					'label_on' 	=> esc_html__( 'Yes', 'spalisho' ),
+					'label_off' => esc_html__( 'No', 'spalisho' ),
 					'default' 	=> 'yes',
 					'condition' => [
 						'icon_url_video!' => '',
@@ -230,10 +230,10 @@ class Mellis_Elementor_Ova_Video extends Widget_Base {
 			$this->add_control(
 				'modest_branding_video',
 				[
-					'label' 	=> esc_html__( 'Modest Branding', 'mellis' ),
+					'label' 	=> esc_html__( 'Modest Branding', 'spalisho' ),
 					'type' 		=> \Elementor\Controls_Manager::SWITCHER,
-					'label_on' 	=> esc_html__( 'Yes', 'mellis' ),
-					'label_off' => esc_html__( 'No', 'mellis' ),
+					'label_on' 	=> esc_html__( 'Yes', 'spalisho' ),
+					'label_off' => esc_html__( 'No', 'spalisho' ),
 					'default' 	=> 'yes',
 					'condition' => [
 						'icon_url_video!' => '',
@@ -244,10 +244,10 @@ class Mellis_Elementor_Ova_Video extends Widget_Base {
 			$this->add_control(
 				'show_info_video',
 				[
-					'label' 	=> esc_html__( 'Show Info', 'mellis' ),
+					'label' 	=> esc_html__( 'Show Info', 'spalisho' ),
 					'type' 		=> \Elementor\Controls_Manager::SWITCHER,
-					'label_on' 	=> esc_html__( 'Yes', 'mellis' ),
-					'label_off' => esc_html__( 'No', 'mellis' ),
+					'label_on' 	=> esc_html__( 'Yes', 'spalisho' ),
+					'label_off' => esc_html__( 'No', 'spalisho' ),
 					'default' 	=> 'no',
 					'condition' => [
 						'icon_url_video!' => '',
@@ -261,7 +261,7 @@ class Mellis_Elementor_Ova_Video extends Widget_Base {
 		$this->start_controls_section(
 			'section_image_style',
 			[
-				'label' => esc_html__( 'Image', 'mellis' ),
+				'label' => esc_html__( 'Image', 'spalisho' ),
 				'tab' 	=> \Elementor\Controls_Manager::TAB_STYLE,
 				'condition' =>[
 					'version' => 'version_2'
@@ -271,7 +271,7 @@ class Mellis_Elementor_Ova_Video extends Widget_Base {
 			$this->add_responsive_control(
 				'image_min_height',
 				[
-					'label' 	=> esc_html__( 'Min Height', 'mellis' ),
+					'label' 	=> esc_html__( 'Min Height', 'spalisho' ),
 					'type' 		=> \Elementor\Controls_Manager::SLIDER,
 					'default' 	=> [
 						'unit' 	=> 'px',
@@ -300,7 +300,7 @@ class Mellis_Elementor_Ova_Video extends Widget_Base {
 		$this->start_controls_section(
 			'section_icon_style',
 			[
-				'label' => esc_html__( 'Icon', 'mellis' ),
+				'label' => esc_html__( 'Icon', 'spalisho' ),
 				'tab' 	=> \Elementor\Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -308,7 +308,7 @@ class Mellis_Elementor_Ova_Video extends Widget_Base {
 			$this->add_responsive_control(
 				'icon_width',
 				[
-					'label' 	=> esc_html__( 'Width', 'mellis' ),
+					'label' 	=> esc_html__( 'Width', 'spalisho' ),
 					'type' 		=> \Elementor\Controls_Manager::SLIDER,
 					'default' 	=> [
 						'unit' 	=> 'px',
@@ -334,7 +334,7 @@ class Mellis_Elementor_Ova_Video extends Widget_Base {
 			$this->add_responsive_control(
 				'icon_height',
 				[
-					'label' 	=> esc_html__( 'Height', 'mellis' ),
+					'label' 	=> esc_html__( 'Height', 'spalisho' ),
 					'type' 		=> \Elementor\Controls_Manager::SLIDER,
 					'default' 	=> [
 						'unit' 	=> 'px',
@@ -368,14 +368,14 @@ class Mellis_Elementor_Ova_Video extends Widget_Base {
 				$this->start_controls_tab(
 		            'tab_icon_normal',
 		            [
-		                'label' => esc_html__( 'Normal', 'mellis' ),
+		                'label' => esc_html__( 'Normal', 'spalisho' ),
 		            ]
 		        );
 
 		        	$this->add_control(
 			            'icon_color_normal',
 			            [
-			                'label' 	=> esc_html__( 'Color', 'mellis' ),
+			                'label' 	=> esc_html__( 'Color', 'spalisho' ),
 			                'type' 		=> \Elementor\Controls_Manager::COLOR,
 			                'selectors' => [
 			                    '{{WRAPPER}} .ova-video .icon-content-view .content i' => 'color: {{VALUE}};',
@@ -386,7 +386,7 @@ class Mellis_Elementor_Ova_Video extends Widget_Base {
 			        $this->add_control(
 			            'icon_background_normal',
 			            [
-			                'label' 	=> esc_html__( 'Background', 'mellis' ),
+			                'label' 	=> esc_html__( 'Background', 'spalisho' ),
 			                'type' 		=> \Elementor\Controls_Manager::COLOR,
 			                'selectors' => [
 			                    '{{WRAPPER}} .ova-video .icon-content-view .content' => 'background-color: {{VALUE}};',
@@ -398,7 +398,7 @@ class Mellis_Elementor_Ova_Video extends Widget_Base {
 						\Elementor\Group_Control_Background::get_type(),
 						[
 							'name' 		=> 'icon_bg_gradient_normal',
-							'label' 	=> esc_html__( 'Background Gradient', 'mellis' ),
+							'label' 	=> esc_html__( 'Background Gradient', 'spalisho' ),
 							'types' 	=> [ 'gradient' ],
 							'selector' 	=> '{{WRAPPER}} .ova-video .icon-content-view .content',
 						]
@@ -409,14 +409,14 @@ class Mellis_Elementor_Ova_Video extends Widget_Base {
 		        $this->start_controls_tab(
 		            'tab_icon_hover',
 		            [
-		                'label' => esc_html__( 'Hover', 'mellis' ),
+		                'label' => esc_html__( 'Hover', 'spalisho' ),
 		            ]
 		        );
 
 		        	$this->add_control(
 			            'icon_color_hover',
 			            [
-			                'label' 	=> esc_html__( 'Color', 'mellis' ),
+			                'label' 	=> esc_html__( 'Color', 'spalisho' ),
 			                'type' 		=> \Elementor\Controls_Manager::COLOR,
 			                'selectors' => [
 			                    '{{WRAPPER}} .ova-video .icon-content-view .content:hover i' => 'color: {{VALUE}};',
@@ -427,7 +427,7 @@ class Mellis_Elementor_Ova_Video extends Widget_Base {
 		        	$this->add_control(
 			            'icon_background_hover',
 			            [
-			                'label' 	=> esc_html__( 'Background', 'mellis' ),
+			                'label' 	=> esc_html__( 'Background', 'spalisho' ),
 			                'type' 		=> \Elementor\Controls_Manager::COLOR,
 			                'selectors' => [
 			                    '{{WRAPPER}} .ova-video .icon-content-view .content:hover' => 'background-color: {{VALUE}};',
@@ -439,7 +439,7 @@ class Mellis_Elementor_Ova_Video extends Widget_Base {
 						\Elementor\Group_Control_Background::get_type(),
 						[
 							'name' 		=> 'icon_bg_gradient_hover',
-							'label' 	=> esc_html__( 'Background Gradient', 'mellis' ),
+							'label' 	=> esc_html__( 'Background Gradient', 'spalisho' ),
 							'types' 	=> [ 'gradient' ],
 							'selector' 	=> '{{WRAPPER}} .ova-video .icon-content-view .content:hover',
 						]
@@ -448,7 +448,7 @@ class Mellis_Elementor_Ova_Video extends Widget_Base {
 					$this->add_control(
 			            'icon_border_color_hover',
 			            [
-			                'label' 	=> esc_html__( 'Border', 'mellis' ),
+			                'label' 	=> esc_html__( 'Border', 'spalisho' ),
 			                'type' 		=> \Elementor\Controls_Manager::COLOR,
 			                'selectors' => [
 			                    '{{WRAPPER}} .ova-video .icon-content-view .content:hover' => 'border-color: {{VALUE}};',
@@ -471,7 +471,7 @@ class Mellis_Elementor_Ova_Video extends Widget_Base {
 				\Elementor\Group_Control_Box_Shadow::get_type(),
 				[
 					'name' 		=> 'icon_box_shadow',
-					'label' 	=> esc_html__( 'Box Shadow', 'mellis' ),
+					'label' 	=> esc_html__( 'Box Shadow', 'spalisho' ),
 					'selector' 	=> '{{WRAPPER}} .ova-video .icon-content-view .content',
 				]
 			);
@@ -479,7 +479,7 @@ class Mellis_Elementor_Ova_Video extends Widget_Base {
 			 $this->add_responsive_control(
 	            'content_border_radius',
 	            [
-	                'label' 		=> esc_html__( 'Border Radius', 'mellis' ),
+	                'label' 		=> esc_html__( 'Border Radius', 'spalisho' ),
 	                'type' 			=> \Elementor\Controls_Manager::DIMENSIONS,
 	                'size_units' 	=> [ 'px', '%', 'em' ],
 	                'selectors' 	=> [
@@ -491,7 +491,7 @@ class Mellis_Elementor_Ova_Video extends Widget_Base {
 	        $this->add_responsive_control(
 	            'content_margin',
 	            [
-	                'label' 		=> esc_html__( 'Margin', 'mellis' ),
+	                'label' 		=> esc_html__( 'Margin', 'spalisho' ),
 	                'type' 			=> \Elementor\Controls_Manager::DIMENSIONS,
 	                'size_units' 	=> [ 'px', '%', 'em' ],
 	                'selectors' 	=> [
@@ -585,4 +585,4 @@ class Mellis_Elementor_Ova_Video extends Widget_Base {
 
 	
 }
-$widgets_manager->register( new Mellis_Elementor_Ova_Video() );
+$widgets_manager->register( new Spalisho_Elementor_Ova_Video() );

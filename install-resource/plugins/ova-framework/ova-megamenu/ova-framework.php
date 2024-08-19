@@ -38,7 +38,7 @@ if (!function_exists('OvaFramework')) {
             add_action( 'admin_enqueue_scripts', array( $this, 'ova_admin_scripts' ) );
 
             // Share Social in Single Post
-            add_filter( 'ova_share_social', array( $this, 'mellis_content_social' ), 2, 10 );
+            add_filter( 'ova_share_social', array( $this, 'spalisho_content_social' ), 2, 10 );
 
             add_filter( 'upload_mimes', array( $this, 'ova_upload_mimes' ), 1, 10);
 
@@ -58,7 +58,7 @@ if (!function_exists('OvaFramework')) {
         }
 
 
-        public function mellis_content_social( $link, $title ) {
+        public function spalisho_content_social( $link, $title ) {
             $html = '<ul class="share-social-icons clearfix">
                 
                         <li><a class="share-ico ico-facebook" target="_blank" href="http://www.facebook.com/sharer.php?u='.$link.'"><i class="fa fa-facebook"></i></a></li>

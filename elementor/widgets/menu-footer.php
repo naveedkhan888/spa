@@ -8,16 +8,16 @@ use Elementor\Utils;
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 
-class Mellis_Elementor_Menu_Footer extends Widget_Base {
+class Spalisho_Elementor_Menu_Footer extends Widget_Base {
 
 	
 	public function get_name() {
-		return 'mellis_elementor_menu_footer';
+		return 'spalisho_elementor_menu_footer';
 	}
 
 	
 	public function get_title() {
-		return esc_html__( 'Menu Footer', 'mellis' );
+		return esc_html__( 'Menu Footer', 'spalisho' );
 	}
 
 	
@@ -27,7 +27,7 @@ class Mellis_Elementor_Menu_Footer extends Widget_Base {
 
 	
 	public function get_categories() {
-		return [ 'mellis' ];
+		return [ 'spalisho' ];
 	}
 
 	public function get_script_depends() {
@@ -41,7 +41,7 @@ class Mellis_Elementor_Menu_Footer extends Widget_Base {
 		$this->start_controls_section(
 			'section_menu',
 			[
-				'label' => esc_html__( 'Menu', 'mellis' ),
+				'label' => esc_html__( 'Menu', 'spalisho' ),
 			]
 		);
 
@@ -55,7 +55,7 @@ class Mellis_Elementor_Menu_Footer extends Widget_Base {
 			$this->add_control(
 				'menu_slug',
 				[
-					'label' 	=> esc_html__( 'Select Menu', 'mellis' ),
+					'label' 	=> esc_html__( 'Select Menu', 'spalisho' ),
 					'type' 		=> Controls_Manager::SELECT,
 					'options' 	=> $list_menu,
 					'default' 	=> '',
@@ -69,7 +69,7 @@ class Mellis_Elementor_Menu_Footer extends Widget_Base {
 		$this->start_controls_section(
             'menu_style',
             [
-                'label' => esc_html__( 'Menu', 'mellis' ),
+                'label' => esc_html__( 'Menu', 'spalisho' ),
                 'tab' 	=> Controls_Manager::TAB_STYLE,
             ]
         );
@@ -77,15 +77,15 @@ class Mellis_Elementor_Menu_Footer extends Widget_Base {
         	$this->add_responsive_control(
 				'menu_view',
 				[
-					'label' => esc_html__( 'Layout', 'mellis' ),
+					'label' => esc_html__( 'Layout', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::CHOOSE,
 					'options' => [
 						'block' => [
-							'title' => esc_html__( 'Default', 'mellis' ),
+							'title' => esc_html__( 'Default', 'spalisho' ),
 							'icon' => 'eicon-editor-list-ul',
 						],
 						'inline-flex' => [
-							'title' => esc_html__( 'Inline Flex', 'mellis' ),
+							'title' => esc_html__( 'Inline Flex', 'spalisho' ),
 							'icon' => 'eicon-ellipsis-h',
 						],
 					],
@@ -99,7 +99,7 @@ class Mellis_Elementor_Menu_Footer extends Widget_Base {
 			$this->add_control(
 	            'menu_bg',
 	            [
-	                'label' 	=> esc_html__( 'Background', 'mellis' ),
+	                'label' 	=> esc_html__( 'Background', 'spalisho' ),
 	                'type' 		=> Controls_Manager::COLOR,
 	                'selectors' => [
 	                    '{{WRAPPER}} .ova-menu-footer .menu' => 'background-color: {{VALUE}}',
@@ -112,14 +112,14 @@ class Mellis_Elementor_Menu_Footer extends Widget_Base {
 				$this->start_controls_tab(
 		            'tab_text_normal',
 		            [
-		                'label' => esc_html__( 'Normal', 'mellis' ),
+		                'label' => esc_html__( 'Normal', 'spalisho' ),
 		            ]
 		        );
 
 			        $this->add_control(
 			            'menu_color_normal',
 			            [
-			                'label' 	=> esc_html__( 'Color', 'mellis' ),
+			                'label' 	=> esc_html__( 'Color', 'spalisho' ),
 			                'type' 		=> Controls_Manager::COLOR,
 			                'selectors' => [
 			                    '{{WRAPPER}} .ova-menu-footer .menu li > a' => 'color: {{VALUE}}',
@@ -132,14 +132,14 @@ class Mellis_Elementor_Menu_Footer extends Widget_Base {
 			    $this->start_controls_tab(
 		            'tab_text_hover',
 		            [
-		                'label' => esc_html__( 'Hover', 'mellis' ),
+		                'label' => esc_html__( 'Hover', 'spalisho' ),
 		            ]
 		        );
 		        
 			        $this->add_control(
 			            'menu_color_hover',
 			            [
-			                'label' 	=> esc_html__( 'Color', 'mellis' ),
+			                'label' 	=> esc_html__( 'Color', 'spalisho' ),
 			                'type' 		=> Controls_Manager::COLOR,
 			                'selectors' => [
 			                    '{{WRAPPER}} .ova-menu-footer .menu li:hover > a' => 'color: {{VALUE}}',
@@ -153,7 +153,7 @@ class Mellis_Elementor_Menu_Footer extends Widget_Base {
 	        $this->add_responsive_control(
 	            'text_margin',
 	            [
-	                'label' 		=> esc_html__( 'Margin', 'mellis' ),
+	                'label' 		=> esc_html__( 'Margin', 'spalisho' ),
 	                'type' 			=> Controls_Manager::DIMENSIONS,
 	                'size_units' 	=> [ 'px', '%', 'em' ],
 	                'selectors' 	=> [
@@ -165,7 +165,7 @@ class Mellis_Elementor_Menu_Footer extends Widget_Base {
 	        $this->add_responsive_control(
 	            'text_padding',
 	            [
-	                'label' 		=> esc_html__( 'Padding', 'mellis' ),
+	                'label' 		=> esc_html__( 'Padding', 'spalisho' ),
 	                'type' 			=> Controls_Manager::DIMENSIONS,
 	                'size_units' 	=> [ 'px', '%', 'em' ],
 	                'selectors' 	=> [
@@ -177,7 +177,7 @@ class Mellis_Elementor_Menu_Footer extends Widget_Base {
 	         $this->add_responsive_control(
 	            'text_a_padding',
 	            [
-	                'label' 		=> esc_html__( 'Content Padding', 'mellis' ),
+	                'label' 		=> esc_html__( 'Content Padding', 'spalisho' ),
 	                'type' 			=> Controls_Manager::DIMENSIONS,
 	                'size_units' 	=> [ 'px', '%', 'em' ],
 	                'selectors' 	=> [
@@ -201,7 +201,7 @@ class Mellis_Elementor_Menu_Footer extends Widget_Base {
 		$this->start_controls_section(
             'sub_menu_style',
             [
-                'label' => esc_html__( 'Sub Menu', 'mellis' ),
+                'label' => esc_html__( 'Sub Menu', 'spalisho' ),
                 'tab' 	=> Controls_Manager::TAB_STYLE,
             ]
         );
@@ -209,7 +209,7 @@ class Mellis_Elementor_Menu_Footer extends Widget_Base {
 			$this->add_control(
 	            'sub_menu_bg',
 	            [
-	                'label' 	=> esc_html__( 'Background', 'mellis' ),
+	                'label' 	=> esc_html__( 'Background', 'spalisho' ),
 	                'type' 		=> Controls_Manager::COLOR,
 	                'selectors' => [
 	                    '{{WRAPPER}} .ova-menu-footer .menu li .sub-menu' => 'background-color: {{VALUE}}',
@@ -222,14 +222,14 @@ class Mellis_Elementor_Menu_Footer extends Widget_Base {
 				$this->start_controls_tab(
 		            'tab_subtext_normal',
 		            [
-		                'label' => esc_html__( 'Normal', 'mellis' ),
+		                'label' => esc_html__( 'Normal', 'spalisho' ),
 		            ]
 		        );
 
 			        $this->add_control(
 			            'sub_menu_color_normal',
 			            [
-			                'label' 	=> esc_html__( 'Color', 'mellis' ),
+			                'label' 	=> esc_html__( 'Color', 'spalisho' ),
 			                'type' 		=> Controls_Manager::COLOR,
 			                'selectors' => [
 			                    '{{WRAPPER}} .ova-menu-footer .menu li .sub-menu li a' => 'color: {{VALUE}}',
@@ -242,14 +242,14 @@ class Mellis_Elementor_Menu_Footer extends Widget_Base {
 			    $this->start_controls_tab(
 		            'tab_subtext_hover',
 		            [
-		                'label' => esc_html__( 'Hover', 'mellis' ),
+		                'label' => esc_html__( 'Hover', 'spalisho' ),
 		            ]
 		        );
 		        
 			        $this->add_control(
 			            'sub_menu_color_hover',
 			            [
-			                'label' 	=> esc_html__( 'Color', 'mellis' ),
+			                'label' 	=> esc_html__( 'Color', 'spalisho' ),
 			                'type' 		=> Controls_Manager::COLOR,
 			                'selectors' => [
 			                    '{{WRAPPER}} .ova-menu-footer .menu li .sub-menu li:hover a' => 'color: {{VALUE}}',
@@ -263,7 +263,7 @@ class Mellis_Elementor_Menu_Footer extends Widget_Base {
 	        $this->add_responsive_control(
 	            'subtext_margin',
 	            [
-	                'label' 		=> esc_html__( 'Margin', 'mellis' ),
+	                'label' 		=> esc_html__( 'Margin', 'spalisho' ),
 	                'type' 			=> Controls_Manager::DIMENSIONS,
 	                'size_units' 	=> [ 'px', '%', 'em' ],
 	                'selectors' 	=> [
@@ -275,7 +275,7 @@ class Mellis_Elementor_Menu_Footer extends Widget_Base {
 	        $this->add_responsive_control(
 	            'subtext_padding',
 	            [
-	                'label' 		=> esc_html__( 'Padding', 'mellis' ),
+	                'label' 		=> esc_html__( 'Padding', 'spalisho' ),
 	                'type' 			=> Controls_Manager::DIMENSIONS,
 	                'size_units' 	=> [ 'px', '%', 'em' ],
 	                'selectors' 	=> [
@@ -322,4 +322,4 @@ class Mellis_Elementor_Menu_Footer extends Widget_Base {
 
 	
 }
-$widgets_manager->register( new Mellis_Elementor_Menu_Footer() );
+$widgets_manager->register( new Spalisho_Elementor_Menu_Footer() );

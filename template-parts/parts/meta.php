@@ -1,15 +1,15 @@
  <?php if( !is_search() ){ 
 
  	if( is_single() ){
- 		$show_date = mellis_post_show_date() == 'yes' ? true: false;
-	 	$show_cat  = mellis_post_show_cat() == 'yes' ? true: false;
-	 	$show_author = mellis_post_show_author() == 'yes' ? true: false;
-	 	$show_comment = mellis_post_show_comment() == 'yes' ? true: false;	
+ 		$show_date = spalisho_post_show_date() == 'yes' ? true: false;
+	 	$show_cat  = spalisho_post_show_cat() == 'yes' ? true: false;
+	 	$show_author = spalisho_post_show_author() == 'yes' ? true: false;
+	 	$show_comment = spalisho_post_show_comment() == 'yes' ? true: false;	
  	}else{
- 		$show_date = mellis_blog_show_date() == 'yes' ? true: false;
-	 	$show_cat  = mellis_blog_show_cat() == 'yes' ? true: false;
-	 	$show_author = mellis_blog_show_author() == 'yes' ? true: false;
-	 	$show_comment = mellis_blog_show_comment() == 'yes' ? true: false;	
+ 		$show_date = spalisho_blog_show_date() == 'yes' ? true: false;
+	 	$show_cat  = spalisho_blog_show_cat() == 'yes' ? true: false;
+	 	$show_author = spalisho_blog_show_author() == 'yes' ? true: false;
+	 	$show_comment = spalisho_blog_show_comment() == 'yes' ? true: false;	
  	}
  	
 
@@ -51,11 +51,11 @@
 	 		<li class="comment">
 	 			<i class="ovaicon-chat-comment-oval-speech-bubble-with-text-lines"></i>
 	            <?php comments_popup_link(
-	            	esc_html__(' 0 Comments', 'mellis'), 
-	            	esc_html__(' 1 Comment', 'mellis'), 
-	            	' % '.esc_html__('Comments', 'mellis'),
+	            	esc_html__(' 0 Comments', 'spalisho'), 
+	            	esc_html__(' 1 Comment', 'spalisho'), 
+	            	' % '.esc_html__('Comments', 'spalisho'),
 	            	'',
-	          		esc_html__( 'Comment off', 'mellis' )
+	          		esc_html__( 'Comment off', 'spalisho' )
 	            ); ?>
 	 		</li>
  		<?php } ?>

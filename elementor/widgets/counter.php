@@ -9,16 +9,16 @@ use Elementor\Utils;
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 
-class Mellis_Elementor_Counter extends Widget_Base {
+class Spalisho_Elementor_Counter extends Widget_Base {
 
 	
 	public function get_name() {
-		return 'mellis_elementor_counter';
+		return 'spalisho_elementor_counter';
 	}
 
 	
 	public function get_title() {
-		return esc_html__( 'Ova Counter', 'mellis' );
+		return esc_html__( 'Ova Counter', 'spalisho' );
 	}
 
 	
@@ -28,16 +28,16 @@ class Mellis_Elementor_Counter extends Widget_Base {
 
 	
 	public function get_categories() {
-		return [ 'mellis' ];
+		return [ 'spalisho' ];
 	}
 
 	public function get_script_depends() {
 		// appear js
-		wp_enqueue_script( 'mellis-counter-appear', get_theme_file_uri('/assets/libs/appear/appear.js'), array('jquery'), false, true);
+		wp_enqueue_script( 'spalisho-counter-appear', get_theme_file_uri('/assets/libs/appear/appear.js'), array('jquery'), false, true);
 		// Odometer for counter
 		wp_enqueue_style( 'odometer', get_template_directory_uri().'/assets/libs/odometer/odometer.min.css' );
 		wp_enqueue_script( 'odometer', get_template_directory_uri().'/assets/libs/odometer/odometer.min.js', array('jquery'), false, true );
-		return [ 'mellis-elementor-counter' ];
+		return [ 'spalisho-elementor-counter' ];
 	}
 	
 	// Add Your Controll In This Function
@@ -46,7 +46,7 @@ class Mellis_Elementor_Counter extends Widget_Base {
 		$this->start_controls_section(
 			'section_content',
 			[
-				'label' => esc_html__( 'Ova Counter', 'mellis' ),
+				'label' => esc_html__( 'Ova Counter', 'spalisho' ),
 			]
 		);	
 			
@@ -54,13 +54,13 @@ class Mellis_Elementor_Counter extends Widget_Base {
 		    $this->add_control(
 				'template',
 				[
-					'label' => esc_html__( 'Template', 'mellis' ),
+					'label' => esc_html__( 'Template', 'spalisho' ),
 					'type' => Controls_Manager::SELECT,
 					'default' => 'template1',
 					'options' => [
-						'template1' => esc_html__('Template 1', 'mellis'),
-						'template2' => esc_html__('Template 2', 'mellis'),
-						'template3' => esc_html__('Template 3', 'mellis'),
+						'template1' => esc_html__('Template 1', 'spalisho'),
+						'template2' => esc_html__('Template 2', 'spalisho'),
+						'template3' => esc_html__('Template 3', 'spalisho'),
 					]
 				]
 			);
@@ -68,7 +68,7 @@ class Mellis_Elementor_Counter extends Widget_Base {
 		    $this->add_control(
 				'icon',
 				[
-					'label' => esc_html__( 'Icon', 'mellis' ),
+					'label' => esc_html__( 'Icon', 'spalisho' ),
 					'type' => Controls_Manager::ICONS,
 					'default' 	=> [
 						'value' 	=> 'flaticon flaticon-massage-1',
@@ -80,46 +80,46 @@ class Mellis_Elementor_Counter extends Widget_Base {
 		    $this->add_control(
 				'number',
 				[
-					'label' 	=> esc_html__( 'Number', 'mellis' ),
+					'label' 	=> esc_html__( 'Number', 'spalisho' ),
 					'type'    => Controls_Manager::NUMBER,
-					'default' => esc_html__( '23', 'mellis' ),
+					'default' => esc_html__( '23', 'spalisho' ),
 				]
 			);
 
 			$this->add_control(
 				'suffix',
 				[
-					'label'  => esc_html__( 'Suffix', 'mellis' ),
+					'label'  => esc_html__( 'Suffix', 'spalisho' ),
 					'type'   => Controls_Manager::TEXT,
-					'placeholder' => esc_html__( 'Plus', 'mellis' ),
+					'placeholder' => esc_html__( 'Plus', 'spalisho' ),
 				]
 			);
 
 			$this->add_control(
 				'title',
 				[
-					'label' 	=> esc_html__( 'Title', 'mellis' ),
+					'label' 	=> esc_html__( 'Title', 'spalisho' ),
 					'type' 	=> Controls_Manager::TEXTAREA,
-					'default' => esc_html__( 'Years Experience', 'mellis' ),
+					'default' => esc_html__( 'Years Experience', 'spalisho' ),
 				]
 			);
 
 			$this->add_responsive_control(
 				'align',
 				[
-					'label' 	=> esc_html__( 'Alignment', 'mellis' ),
+					'label' 	=> esc_html__( 'Alignment', 'spalisho' ),
 					'type' 		=> Controls_Manager::CHOOSE,
 					'options' 	=> [
 						'flex-start' 	=> [
-							'title' => esc_html__( 'Left', 'mellis' ),
+							'title' => esc_html__( 'Left', 'spalisho' ),
 							'icon' 	=> 'eicon-text-align-left',
 						],
 						'center' => [
-							'title' => esc_html__( 'Center', 'mellis' ),
+							'title' => esc_html__( 'Center', 'spalisho' ),
 							'icon' 	=> 'eicon-text-align-center',
 						],
 						'flex-end' => [
-							'title' => esc_html__( 'Right', 'mellis' ),
+							'title' => esc_html__( 'Right', 'spalisho' ),
 							'icon' 	=> 'eicon-text-align-right',
 						],
 					],
@@ -132,10 +132,10 @@ class Mellis_Elementor_Counter extends Widget_Base {
 			$this->add_control(
 				'show_star',
 				[
-					'label' => esc_html__( 'Show Star', 'mellis' ),
+					'label' => esc_html__( 'Show Star', 'spalisho' ),
 					'type' => \Elementor\Controls_Manager::SWITCHER,
-					'label_on' => esc_html__( 'Show', 'mellis' ),
-					'label_off' => esc_html__( 'Hide', 'mellis' ),
+					'label_on' => esc_html__( 'Show', 'spalisho' ),
+					'label_off' => esc_html__( 'Hide', 'spalisho' ),
 					'return_value' => 'yes',
 					'default' => 'no',
 				]
@@ -147,7 +147,7 @@ class Mellis_Elementor_Counter extends Widget_Base {
 		$this->start_controls_section(
             'counter_style',
             [
-               'label' => esc_html__( 'Ova Counter', 'mellis' ),
+               'label' => esc_html__( 'Ova Counter', 'spalisho' ),
                'tab' 	=> Controls_Manager::TAB_STYLE,
             ]
         );
@@ -155,16 +155,16 @@ class Mellis_Elementor_Counter extends Widget_Base {
         	$this->add_responsive_control(
 				'order_column',
 				[
-					'label' 	=> esc_html__( 'Column Content', 'mellis' ),
+					'label' 	=> esc_html__( 'Column Content', 'spalisho' ),
 					'type' 		=> \Elementor\Controls_Manager::CHOOSE,
 					'options' 	=> [
 						'column' => [
-							'title' => esc_html__( 'Default', 'mellis' ),
+							'title' => esc_html__( 'Default', 'spalisho' ),
 							'icon' 	=> 'eicon-h-align-left',
 						],
 						
 						'column-reverse' => [
-							'title' => esc_html__( 'Reverse', 'mellis' ),
+							'title' => esc_html__( 'Reverse', 'spalisho' ),
 							'icon' 	=> 'eicon-h-align-right',
 						],
 					],
@@ -180,7 +180,7 @@ class Mellis_Elementor_Counter extends Widget_Base {
             $this->add_control(
 				'counter_bgcolor',
 				[
-					'label' 	=> esc_html__( 'Background Color', 'mellis' ),
+					'label' 	=> esc_html__( 'Background Color', 'spalisho' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
 						'{{WRAPPER}} .ova-counter' => 'background-color: {{VALUE}};',
@@ -191,7 +191,7 @@ class Mellis_Elementor_Counter extends Widget_Base {
 		    $this->add_responsive_control(
 	            'counter_padding',
 	            [
-	                'label' 		=> esc_html__( 'Padding', 'mellis' ),
+	                'label' 		=> esc_html__( 'Padding', 'spalisho' ),
 	                'type' 			=> Controls_Manager::DIMENSIONS,
 	                'size_units' 	=> [ 'px', '%', 'em' ],
 	                'selectors' 	=> [
@@ -203,7 +203,7 @@ class Mellis_Elementor_Counter extends Widget_Base {
 			$this->add_responsive_control(
 				'counter_max_width',
 				[
-					'label' 		=> esc_html__( 'Max Width', 'mellis' ),
+					'label' 		=> esc_html__( 'Max Width', 'spalisho' ),
 					'type' 			=> Controls_Manager::SLIDER,
 					'size_units' 	=> ['px'],
 					'range' => [
@@ -226,7 +226,7 @@ class Mellis_Elementor_Counter extends Widget_Base {
 		$this->start_controls_section(
             'icon_style',
             [
-                'label' => esc_html__( 'Icon', 'mellis' ),
+                'label' => esc_html__( 'Icon', 'spalisho' ),
                 'tab' 	=> Controls_Manager::TAB_STYLE,
             ]
         );
@@ -234,7 +234,7 @@ class Mellis_Elementor_Counter extends Widget_Base {
 			$this->add_responsive_control(
 				'size_icon',
 				[
-					'label' 		=> esc_html__( 'Size', 'mellis' ),
+					'label' 		=> esc_html__( 'Size', 'spalisho' ),
 					'type' 			=> Controls_Manager::SLIDER,
 					'size_units' 	=> [ 'px'],
 					'range' => [
@@ -254,7 +254,7 @@ class Mellis_Elementor_Counter extends Widget_Base {
             $this->add_control(
 				'icon_color',
 				[
-					'label' 	=> esc_html__( 'Color', 'mellis' ),
+					'label' 	=> esc_html__( 'Color', 'spalisho' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
 						'{{WRAPPER}} .ova-counter .icon i' => 'color: {{VALUE}};',
@@ -266,7 +266,7 @@ class Mellis_Elementor_Counter extends Widget_Base {
 			$this->add_control(
 				'icon_color_hover',
 				[
-					'label' 	=> esc_html__( 'Color Hover', 'mellis' ),
+					'label' 	=> esc_html__( 'Color Hover', 'spalisho' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
 						'{{WRAPPER}} .ova-counter:hover .icon i' => 'color: {{VALUE}};',
@@ -282,7 +282,7 @@ class Mellis_Elementor_Counter extends Widget_Base {
 		$this->start_controls_section(
             'title_style',
             [
-                'label' => esc_html__( 'Title', 'mellis' ),
+                'label' => esc_html__( 'Title', 'spalisho' ),
                 'tab' 	=> Controls_Manager::TAB_STYLE,
             ]
         );
@@ -298,7 +298,7 @@ class Mellis_Elementor_Counter extends Widget_Base {
 			$this->add_control(
 				'title_color',
 				[
-					'label' 	=> esc_html__( 'Color', 'mellis' ),
+					'label' 	=> esc_html__( 'Color', 'spalisho' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
 						'{{WRAPPER}} .ova-counter .title' => 'color: {{VALUE}};',
@@ -309,7 +309,7 @@ class Mellis_Elementor_Counter extends Widget_Base {
 			$this->add_control(
 				'title_color_hover',
 				[
-					'label' 	=> esc_html__( 'Color Hover', 'mellis' ),
+					'label' 	=> esc_html__( 'Color Hover', 'spalisho' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
 						'{{WRAPPER}} .ova-counter:hover .title' => 'color: {{VALUE}};',
@@ -320,7 +320,7 @@ class Mellis_Elementor_Counter extends Widget_Base {
 			$this->add_responsive_control(
 	            'title_padding',
 	            [
-	                'label' 		=> esc_html__( 'Padding', 'mellis' ),
+	                'label' 		=> esc_html__( 'Padding', 'spalisho' ),
 	                'type' 			=> Controls_Manager::DIMENSIONS,
 	                'size_units' 	=> [ 'px', '%', 'em' ],
 	                'selectors' 	=> [
@@ -333,7 +333,7 @@ class Mellis_Elementor_Counter extends Widget_Base {
 				\Elementor\Group_Control_Border::get_type(),
 				[
 					'name' => 'title_border',
-					'label' => esc_html__( 'Border', 'mellis' ),
+					'label' => esc_html__( 'Border', 'spalisho' ),
 					'selector' => '{{WRAPPER}} .ova-counter .title',
 				]
 			);
@@ -345,7 +345,7 @@ class Mellis_Elementor_Counter extends Widget_Base {
 		$this->start_controls_section(
             'number_style',
             [
-                'label' => esc_html__( 'Number', 'mellis' ),
+                'label' => esc_html__( 'Number', 'spalisho' ),
                 'tab' 	=> Controls_Manager::TAB_STYLE,
             ]
         );
@@ -361,7 +361,7 @@ class Mellis_Elementor_Counter extends Widget_Base {
 			$this->add_control(
 				'number_color',
 				[
-					'label' 	=> esc_html__( 'Color', 'mellis' ),
+					'label' 	=> esc_html__( 'Color', 'spalisho' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
 						'{{WRAPPER}} .ova-counter .odometer' => 'color: {{VALUE}};',
@@ -372,7 +372,7 @@ class Mellis_Elementor_Counter extends Widget_Base {
 			$this->add_control(
 				'number_color_hover',
 				[
-					'label' 	=> esc_html__( 'Color Hover', 'mellis' ),
+					'label' 	=> esc_html__( 'Color Hover', 'spalisho' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
 						'{{WRAPPER}} .ova-counter:hover .odometer' => 'color: {{VALUE}};',
@@ -387,7 +387,7 @@ class Mellis_Elementor_Counter extends Widget_Base {
 		$this->start_controls_section(
             'suffix_style',
             [
-                'label' => esc_html__( 'Suffix', 'mellis' ),
+                'label' => esc_html__( 'Suffix', 'spalisho' ),
                 'tab' 	=> Controls_Manager::TAB_STYLE,
             ]
         );
@@ -403,7 +403,7 @@ class Mellis_Elementor_Counter extends Widget_Base {
 			$this->add_control(
 				'suffix_color',
 				[
-					'label' 	=> esc_html__( 'Color', 'mellis' ),
+					'label' 	=> esc_html__( 'Color', 'spalisho' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
 						'{{WRAPPER}} .ova-counter .suffix' => 'color: {{VALUE}};',
@@ -414,7 +414,7 @@ class Mellis_Elementor_Counter extends Widget_Base {
 			$this->add_control(
 				'suffix_color_hover',
 				[
-					'label' 	=> esc_html__( 'Color Hover', 'mellis' ),
+					'label' 	=> esc_html__( 'Color Hover', 'spalisho' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
 						'{{WRAPPER}} .ova-counter:hover .suffix' => 'color: {{VALUE}};',
@@ -425,7 +425,7 @@ class Mellis_Elementor_Counter extends Widget_Base {
 			$this->add_responsive_control(
 	            'suffix_padding',
 	            [
-	                'label' 		=> esc_html__( 'Padding', 'mellis' ),
+	                'label' 		=> esc_html__( 'Padding', 'spalisho' ),
 	                'type' 			=> Controls_Manager::DIMENSIONS,
 	                'size_units' 	=> [ 'px', '%', 'em' ],
 	                'selectors' 	=> [
@@ -509,4 +509,4 @@ class Mellis_Elementor_Counter extends Widget_Base {
 
 	
 }
-$widgets_manager->register( new Mellis_Elementor_Counter() );
+$widgets_manager->register( new Spalisho_Elementor_Counter() );

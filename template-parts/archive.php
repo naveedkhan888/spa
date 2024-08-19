@@ -1,4 +1,4 @@
-<?php $blog_template = apply_filters( 'mellis_blog_template', '' ); ?>
+<?php $blog_template = apply_filters( 'spalisho_blog_template', '' ); ?>
 <div class="row_site">
 	<div class="container_site">
 		<div id="main-content" class="main">
