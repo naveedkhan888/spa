@@ -2366,7 +2366,7 @@ msgid "OvaTheme Framework"
 msgstr ""
 
 #: install-resource/active-plugins.php:78
-msgid "Ovatheme MegaMenu"
+msgid "OvaTheme MegaMenu"
 msgstr ""
 
 #: install-resource/active-plugins.php:66
