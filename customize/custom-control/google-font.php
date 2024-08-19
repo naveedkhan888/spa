@@ -7,7 +7,7 @@ if ( ! class_exists( 'WP_Customize_Control' ) ) return NULL;
  * @license http://www.gnu.org/licenses/gpl-2.0.html
  * @link https://github.com/maddisondesigns
  */
-class Spalisho_Google_Font_Select_Custom_Control extends WP_Customize_Control {
+class Mellis_Google_Font_Select_Custom_Control extends WP_Customize_Control {
 	/**
 	 * The type of control being rendered
 	 */
@@ -65,8 +65,8 @@ class Spalisho_Google_Font_Select_Custom_Control extends WP_Customize_Control {
 	 */
 	public function enqueue() {
 		
-		wp_enqueue_script( 'ova-custom-controls', SPALISHO_URI . '/customize/assets/customizer.js', array( 'jquery' ), '1.0', true );
-		wp_enqueue_style( 'ova-custom-controls', SPALISHO_URI . '/customize/assets/customizer.css', array(), '1.1', 'all' );
+		wp_enqueue_script( 'ova-custom-controls', MELLIS_URI . '/customize/assets/customizer.js', array( 'jquery' ), '1.0', true );
+		wp_enqueue_style( 'ova-custom-controls', MELLIS_URI . '/customize/assets/customizer.css', array(), '1.1', 'all' );
 		
 
 	}
@@ -119,7 +119,7 @@ class Spalisho_Google_Font_Select_Custom_Control extends WP_Customize_Control {
 					</select>
 				</div>
 
-				<div class="customize-control-description"><?php esc_html_e( 'Load Font Weight', 'spalisho' ); ?></div>
+				<div class="customize-control-description"><?php esc_html_e( 'Load Font Weight', 'mellis' ); ?></div>
 				<div class="weight-style">
 					<select multiple="multiple" class="google-fonts-regularweight-style">
 						<?php 
@@ -154,9 +154,9 @@ class Spalisho_Google_Font_Select_Custom_Control extends WP_Customize_Control {
 	 */
 	public function ova_getGoogleFontsx( $count = 30 ) {
 		// Google Fonts json generated from https://www.googleapis.com/webfonts/v1/webfonts?sort=popularity&key=YOUR-API-KEY
-		$fontFile = SPALISHO_URI . '/customize/custom-control/api/google-fonts-alphabetical.json';
+		$fontFile = MELLIS_URI . '/customize/custom-control/api/google-fonts-alphabetical.json';
 		if ( $this->fontOrderBy === 'popular' ) {
-			$fontFile =  SPALISHO_URI . '/customize/custom-control/api/google-fonts-popularity.json' ;
+			$fontFile =  MELLIS_URI . '/customize/custom-control/api/google-fonts-popularity.json' ;
 		}
 
 		$request = wp_remote_get( $fontFile );
@@ -199,9 +199,9 @@ class Spalisho_Google_Font_Select_Custom_Control extends WP_Customize_Control {
 
 	public function ova_getGoogleFont( $count = 30 ) {
 		// Google Fonts json generated from https://www.googleapis.com/webfonts/v1/webfonts?sort=popularity&key=YOUR-API-KEY
-		$fontFile = SPALISHO_URI . '/customize/custom-control/api/google-fonts-alphabetical.json';
+		$fontFile = MELLIS_URI . '/customize/custom-control/api/google-fonts-alphabetical.json';
 		if ( $this->fontOrderBy === 'popular' ) {
-			$fontFile =  SPALISHO_URI . '/customize/custom-control/api/google-fonts-popularity.json' ;
+			$fontFile =  MELLIS_URI . '/customize/custom-control/api/google-fonts-popularity.json' ;
 		}
 
 		$request = wp_remote_get( $fontFile );

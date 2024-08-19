@@ -1,43 +1,43 @@
 <?php if (!defined( 'ABSPATH' )) exit;
 
-if( !class_exists('Spalisho_Woo') ){
+if( !class_exists('Mellis_Woo') ){
 
-	class Spalisho_Woo {
+	class Mellis_Woo {
 
 		public function __construct() {
 
 			// Show title archive shop page
-			add_filter( 'woocommerce_show_page_title', array( $this, 'spalisho_woocommerce_show_title_shop_page' ) );
+			add_filter( 'woocommerce_show_page_title', array( $this, 'mellis_woocommerce_show_title_shop_page' ) );
 
 			// Insert category to loop product
-			add_action( 'woocommerce_shop_loop_item_title', array( $this, 'spalisho_woocommerce_template_loop_product_cat' ), 5 );
+			add_action( 'woocommerce_shop_loop_item_title', array( $this, 'mellis_woocommerce_template_loop_product_cat' ), 5 );
 
 
 			remove_action( 'woocommerce_before_main_content', 'woocommerce_output_content_wrapper', 10 );
 			// Remove breadcrumb woo
 			remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20 );
-			add_action( 'woocommerce_before_main_content',  array( $this, 'spalisho_woocommerce_before_main_content' ), 10 );
+			add_action( 'woocommerce_before_main_content',  array( $this, 'mellis_woocommerce_before_main_content' ), 10 );
 
 
 			remove_action( 'woocommerce_sidebar', 'woocommerce_get_sidebar', 10 );
-			add_action( 'woocommerce_sidebar',  array( $this, 'spalisho_woocommerce_sidebar' ), 10 );
+			add_action( 'woocommerce_sidebar',  array( $this, 'mellis_woocommerce_sidebar' ), 10 );
 
 
 			/*
 			 * Pagination change next, pre text
 			 */
-			add_filter( 'woocommerce_pagination_args', array( $this, 'spalisho_woocommerce_pagination_args' ) );
+			add_filter( 'woocommerce_pagination_args', array( $this, 'mellis_woocommerce_pagination_args' ) );
 
 			/* Change number product related */
-			add_filter( 'woocommerce_output_related_products_args', array( $this, 'spalisho_change_number_product_related' ) );
+			add_filter( 'woocommerce_output_related_products_args', array( $this, 'mellis_change_number_product_related' ) );
 
 
 
 			/* add data prettyPhoto in gallery */
-			add_filter( 'woocommerce_single_product_image_thumbnail_html', array( $this, 'spalisho_single_product_image_thumbnail_html' ), 10, 2 );
+			add_filter( 'woocommerce_single_product_image_thumbnail_html', array( $this, 'mellis_single_product_image_thumbnail_html' ), 10, 2 );
 			
 
-			add_action( 'woocommerce_before_customer_login_form', array( $this, 'spalisho_woocommerce_before_customer_login_form' ), 100 );
+			add_action( 'woocommerce_before_customer_login_form', array( $this, 'mellis_woocommerce_before_customer_login_form' ), 100 );
 
 			// Remove title in Product Detail
 			if( get_theme_mod( 'woo_product_detail_show_title', 'yes' ) != 'yes' ){
@@ -49,15 +49,15 @@ if( !class_exists('Spalisho_Woo') ){
 			// Remove Heading in Content Description Tab Woo
 			add_filter('woocommerce_product_description_heading', '__return_null');
 
-			add_action('wp_enqueue_scripts', array( $this, 'spalisho_enqueue_scripts_woo' ) );
+			add_action('wp_enqueue_scripts', array( $this, 'mellis_enqueue_scripts_woo' ) );
 
 			// add social share buttons Product Detail
-            add_action('woocommerce_single_product_summary', array( $this, 'spalisho_woocommerce_share_social_product' ), 50 );
+            add_action('woocommerce_single_product_summary', array( $this, 'mellis_woocommerce_share_social_product' ), 50 );
 
             // Remove social share buttons in Product Detail
 			if( get_theme_mod( 'woo_product_detail_show_share_social', 'yes' ) != 'yes' ){
 				
-				remove_action( 'woocommerce_single_product_summary', array( $this, 'spalisho_woocommerce_share_social_product' ), 50 );
+				remove_action( 'woocommerce_single_product_summary', array( $this, 'mellis_woocommerce_share_social_product' ), 50 );
 
 			}
 			
@@ -65,7 +65,7 @@ if( !class_exists('Spalisho_Woo') ){
 		}
 
         
-        function spalisho_woocommerce_share_social_product(){
+        function mellis_woocommerce_share_social_product(){
 
 			if( is_singular( 'product' ) ) {
 				apply_filters( 'ova_share_social', get_the_permalink(), get_the_title() );
@@ -73,7 +73,7 @@ if( !class_exists('Spalisho_Woo') ){
 
 		}
 
-		function spalisho_woocommerce_show_title_shop_page( $param ){
+		function mellis_woocommerce_show_title_shop_page( $param ){
 
 			if ( ( is_shop() || is_product_category() || is_product_tag() ) && get_theme_mod( 'woo_archive_show_title', 'yes' ) == 'yes' ) {
 				return true;
@@ -83,7 +83,7 @@ if( !class_exists('Spalisho_Woo') ){
 		}
 
 
-		function spalisho_woocommerce_template_loop_product_cat(){
+		function mellis_woocommerce_template_loop_product_cat(){
 
 			$id = get_the_id();
 
@@ -102,7 +102,7 @@ if( !class_exists('Spalisho_Woo') ){
 			
 		}
 
-		function spalisho_woocommerce_before_main_content(){ ?>
+		function mellis_woocommerce_before_main_content(){ ?>
 
 			<div class="row_site">
 				<div class="container_site">
@@ -114,10 +114,10 @@ if( !class_exists('Spalisho_Woo') ){
 
 
 		
-		function spalisho_woocommerce_sidebar(){ ?>
+		function mellis_woocommerce_sidebar(){ ?>
 			
 			</div>
-				<?php if( spalisho_woo_sidebar() != 'woo_layout_1c' && is_active_sidebar('woo-sidebar') ){ ?>
+				<?php if( mellis_woo_sidebar() != 'woo_layout_1c' && is_active_sidebar('woo-sidebar') ){ ?>
 					<div id="woo_sidebar">
 						<?php
 							wc_get_template( 'global/sidebar.php' );
@@ -130,11 +130,11 @@ if( !class_exists('Spalisho_Woo') ){
 		<?php }
 
 
-		function spalisho_woocommerce_pagination_args( $array ) { 
+		function mellis_woocommerce_pagination_args( $array ) { 
 
 			$args = array(
-                'next_text' => '<i class="xpicon-next"></i>',
-                'prev_text' => '<i class="xpicon-back"></i>',
+                'next_text' => '<i class="ovaicon-next"></i>',
+                'prev_text' => '<i class="ovaicon-back"></i>',
             );
 
 		    $agrs = array_merge( $array, $args );
@@ -143,7 +143,7 @@ if( !class_exists('Spalisho_Woo') ){
 		}
 
 
-		function spalisho_change_number_product_related( $agrs ){
+		function mellis_change_number_product_related( $agrs ){
 			$agrs_setting = [
 				'posts_per_page' => apply_filters( 'number_product_realated_posts_per_page', 3 ),
 				'columns'        => apply_filters( 'number_product_realated_columns', 3 ),
@@ -154,7 +154,7 @@ if( !class_exists('Spalisho_Woo') ){
 
 
 
-		function spalisho_single_product_image_thumbnail_html( $html, $attachment_id ){
+		function mellis_single_product_image_thumbnail_html( $html, $attachment_id ){
 			
 			if ( $attachment_id ) {
 
@@ -168,7 +168,7 @@ if( !class_exists('Spalisho_Woo') ){
 			} else {
 
 				$html  = '<div class="woocommerce-product-gallery__image--placeholder">';
-					$html .= sprintf( '<img src="%s" alt="%s" class="wp-post-image"  />', esc_url( wc_placeholder_img_src() ), esc_html__( 'Awaiting product image', 'spalisho' ) );
+					$html .= sprintf( '<img src="%s" alt="%s" class="wp-post-image"  />', esc_url( wc_placeholder_img_src() ), esc_html__( 'Awaiting product image', 'mellis' ) );
 					$html .= '</div>';
 			}
 			return $html;
@@ -178,18 +178,18 @@ if( !class_exists('Spalisho_Woo') ){
 
 
 		
-		function spalisho_woocommerce_before_customer_login_form(){ ?>
+		function mellis_woocommerce_before_customer_login_form(){ ?>
 			
-			<ul class="xp-login-register-woo">
+			<ul class="ova-login-register-woo">
 				<li class="active">
 					<a href="javascript:void(0)" data-type="login">
-						<?php esc_html_e( 'Login', 'spalisho' ); ?>
+						<?php esc_html_e( 'Login', 'mellis' ); ?>
 					</a>
 				</li>
 				<?php if ( 'yes' === get_option( 'woocommerce_enable_myaccount_registration' ) ) : ?>
 				<li>
 					<a href="javascript:void(0)" data-type="register">
-						<?php esc_html_e( 'Register', 'spalisho' ); ?>
+						<?php esc_html_e( 'Register', 'mellis' ); ?>
 					</a>
 				</li>
 				<?php endif; ?>
@@ -198,15 +198,15 @@ if( !class_exists('Spalisho_Woo') ){
 		<?php }
 
 
-		function spalisho_enqueue_scripts_woo() {
+		function mellis_enqueue_scripts_woo() {
 
 			if( is_product() ){
 				// Carousel
-				wp_enqueue_script('fancybox', SPALISHO_URI.'/assets/libs/fancybox/fancybox.umd.js', array('jquery'),null,true);
-				wp_enqueue_style('fancybox', SPALISHO_URI.'/assets/libs/fancybox/fancybox.css', array(), null);
+				wp_enqueue_script('fancybox', MELLIS_URI.'/assets/libs/fancybox/fancybox.umd.js', array('jquery'),null,true);
+				wp_enqueue_style('fancybox', MELLIS_URI.'/assets/libs/fancybox/fancybox.css', array(), null);
 			}
 			
-		    wp_enqueue_script('spalisho-woo', SPALISHO_URI.'/assets/js/woo.js', array('jquery'),null,true);
+		    wp_enqueue_script('mellis-woo', MELLIS_URI.'/assets/js/woo.js', array('jquery'),null,true);
 		    
 		}
 
@@ -216,4 +216,4 @@ if( !class_exists('Spalisho_Woo') ){
 
 	}
 }
-new Spalisho_Woo();
+new Mellis_Woo();

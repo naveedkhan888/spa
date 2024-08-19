@@ -17,7 +17,7 @@ use Elementor\Group_Control_Border;
  *
  * @since 1.0.0
  */
-class Spalisho_Elementor_Tabs extends Widget_Tabs {
+class Mellis_Elementor_Tabs extends Widget_Tabs {
 
    
     /**
@@ -37,7 +37,7 @@ class Spalisho_Elementor_Tabs extends Widget_Tabs {
         $this->start_controls_section(
             'section_tabs',
             [
-                'label' => esc_html__( 'Tabs', 'spalisho' ),
+                'label' => esc_html__( 'Tabs', 'mellis' ),
             ]
         );
 
@@ -48,19 +48,19 @@ class Spalisho_Elementor_Tabs extends Widget_Tabs {
         $repeater->add_control(
             'tab_icon_image',
             [
-                'label' => esc_html__( 'Icon/Image', 'spalisho' ),
+                'label' => esc_html__( 'Icon/Image', 'mellis' ),
                 'type' => Controls_Manager::CHOOSE,
                 'options' => [
                     'none' => [
-                        'title' => esc_html__( 'None', 'spalisho' ),
+                        'title' => esc_html__( 'None', 'mellis' ),
                         'icon' => 'eicon-ban',
                     ],
                     'icon' => [
-                        'title' => esc_html__( 'Icon', 'spalisho' ),
+                        'title' => esc_html__( 'Icon', 'mellis' ),
                         'icon' => 'eicon-caret-right',
                     ],
                     'image' => [
-                        'title' => esc_html__( 'Image', 'spalisho' ),
+                        'title' => esc_html__( 'Image', 'mellis' ),
                         'icon' => 'eicon-image',
                     ],
                 ],
@@ -72,7 +72,7 @@ class Spalisho_Elementor_Tabs extends Widget_Tabs {
         $repeater->add_control(
             'ova_icon',
             [
-                'label'     => esc_html__( 'Choose Icon', 'spalisho' ),
+                'label'     => esc_html__( 'Choose Icon', 'mellis' ),
                 'type'      => Controls_Manager::ICONS,
                 'condition' => [
                     'tab_icon_image' => 'icon',
@@ -83,7 +83,7 @@ class Spalisho_Elementor_Tabs extends Widget_Tabs {
         $repeater->add_control(
             'ova_image',
             [
-                'label'     => esc_html__( 'Choose Image', 'spalisho' ),
+                'label'     => esc_html__( 'Choose Image', 'mellis' ),
                 'type'      => Controls_Manager::MEDIA,
                 'condition' => [
                     'tab_icon_image' => 'image',
@@ -94,10 +94,10 @@ class Spalisho_Elementor_Tabs extends Widget_Tabs {
         $repeater->add_control(
             'tab_title',
             [
-                'label' => esc_html__( 'Title & Description', 'spalisho' ),
+                'label' => esc_html__( 'Title & Description', 'mellis' ),
                 'type' => Controls_Manager::TEXT,
-                'default' => esc_html__( 'Tab Title', 'spalisho' ),
-                'placeholder' => esc_html__( 'Tab Title', 'spalisho' ),
+                'default' => esc_html__( 'Tab Title', 'mellis' ),
+                'placeholder' => esc_html__( 'Tab Title', 'mellis' ),
                 'label_block' => true,
                 'dynamic' => [
                     'active' => true,
@@ -108,9 +108,9 @@ class Spalisho_Elementor_Tabs extends Widget_Tabs {
         $repeater->add_control(
             'tab_content',
             [
-                'label' => esc_html__( 'Content', 'spalisho' ),
-                'default' => esc_html__( 'Tab Content', 'spalisho' ),
-                'placeholder' => esc_html__( 'Tab Content', 'spalisho' ),
+                'label' => esc_html__( 'Content', 'mellis' ),
+                'default' => esc_html__( 'Tab Content', 'mellis' ),
+                'placeholder' => esc_html__( 'Tab Content', 'mellis' ),
                 'type' => Controls_Manager::WYSIWYG,
                 'show_label' => false,
             ]
@@ -119,17 +119,17 @@ class Spalisho_Elementor_Tabs extends Widget_Tabs {
         $this->add_control(
             'tabs',
             [
-                'label' => esc_html__( 'Tabs Items', 'spalisho' ),
+                'label' => esc_html__( 'Tabs Items', 'mellis' ),
                 'type' => Controls_Manager::REPEATER,
                 'fields' => $repeater->get_controls(),
                 'default' => [
                     [
-                        'tab_title' => esc_html__( 'Tab #1', 'spalisho' ),
-                        'tab_content' => esc_html__( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.', 'spalisho' ),
+                        'tab_title' => esc_html__( 'Tab #1', 'mellis' ),
+                        'tab_content' => esc_html__( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.', 'mellis' ),
                     ],
                     [
-                        'tab_title' => esc_html__( 'Tab #2', 'spalisho' ),
-                        'tab_content' => esc_html__( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.', 'spalisho' ),
+                        'tab_title' => esc_html__( 'Tab #2', 'mellis' ),
+                        'tab_content' => esc_html__( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.', 'mellis' ),
                     ],
                 ],
                 'title_field' => '{{{ tab_title }}}',
@@ -139,7 +139,7 @@ class Spalisho_Elementor_Tabs extends Widget_Tabs {
         $this->add_control(
             'view',
             [
-                'label' => esc_html__( 'View', 'spalisho' ),
+                'label' => esc_html__( 'View', 'mellis' ),
                 'type' => Controls_Manager::HIDDEN,
                 'default' => 'traditional',
             ]
@@ -148,12 +148,12 @@ class Spalisho_Elementor_Tabs extends Widget_Tabs {
         $this->add_control(
             'type',
             [
-                'label' => esc_html__( 'Position', 'spalisho' ),
+                'label' => esc_html__( 'Position', 'mellis' ),
                 'type' => Controls_Manager::SELECT,
                 'default' => 'horizontal',
                 'options' => [
-                    'horizontal' => esc_html__( 'Horizontal', 'spalisho' ),
-                    'vertical' => esc_html__( 'Vertical', 'spalisho' ),
+                    'horizontal' => esc_html__( 'Horizontal', 'mellis' ),
+                    'vertical' => esc_html__( 'Vertical', 'mellis' ),
                 ],
                 'prefix_class' => 'elementor-tabs-view-',
                 'separator' => 'before',
@@ -163,23 +163,23 @@ class Spalisho_Elementor_Tabs extends Widget_Tabs {
         $this->add_control(
             'tabs_align_horizontal',
             [
-                'label' => esc_html__( 'Alignment', 'spalisho' ),
+                'label' => esc_html__( 'Alignment', 'mellis' ),
                 'type' => Controls_Manager::CHOOSE,
                 'options' => [
                     '' => [
-                        'title' => esc_html__( 'Start', 'spalisho' ),
+                        'title' => esc_html__( 'Start', 'mellis' ),
                         'icon' => 'eicon-h-align-left',
                     ],
                     'center' => [
-                        'title' => esc_html__( 'Center', 'spalisho' ),
+                        'title' => esc_html__( 'Center', 'mellis' ),
                         'icon' => 'eicon-h-align-center',
                     ],
                     'end' => [
-                        'title' => esc_html__( 'End', 'spalisho' ),
+                        'title' => esc_html__( 'End', 'mellis' ),
                         'icon' => 'eicon-h-align-right',
                     ],
                     'stretch' => [
-                        'title' => esc_html__( 'Justified', 'spalisho' ),
+                        'title' => esc_html__( 'Justified', 'mellis' ),
                         'icon' => 'eicon-h-align-stretch',
                     ],
                 ],
@@ -193,23 +193,23 @@ class Spalisho_Elementor_Tabs extends Widget_Tabs {
         $this->add_control(
             'tabs_align_vertical',
             [
-                'label' => esc_html__( 'Alignment', 'spalisho' ),
+                'label' => esc_html__( 'Alignment', 'mellis' ),
                 'type' => Controls_Manager::CHOOSE,
                 'options' => [
                     '' => [
-                        'title' => esc_html__( 'Start', 'spalisho' ),
+                        'title' => esc_html__( 'Start', 'mellis' ),
                         'icon' => 'eicon-v-align-top',
                     ],
                     'center' => [
-                        'title' => esc_html__( 'Center', 'spalisho' ),
+                        'title' => esc_html__( 'Center', 'mellis' ),
                         'icon' => 'eicon-v-align-middle',
                     ],
                     'end' => [
-                        'title' => esc_html__( 'End', 'spalisho' ),
+                        'title' => esc_html__( 'End', 'mellis' ),
                         'icon' => 'eicon-v-align-bottom',
                     ],
                     'stretch' => [
-                        'title' => esc_html__( 'Justified', 'spalisho' ),
+                        'title' => esc_html__( 'Justified', 'mellis' ),
                         'icon' => 'eicon-v-align-stretch',
                     ],
                 ],
@@ -230,7 +230,7 @@ class Spalisho_Elementor_Tabs extends Widget_Tabs {
         $this->start_controls_section(
             'section_tabs_style',
             [
-                'label' => esc_html__( 'General', 'spalisho' ),
+                'label' => esc_html__( 'General', 'mellis' ),
                 'tab' => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -238,7 +238,7 @@ class Spalisho_Elementor_Tabs extends Widget_Tabs {
         $this->add_control(
             'navigation_width',
             [
-                'label' => esc_html__( 'Navigation Width', 'spalisho' ),
+                'label' => esc_html__( 'Navigation Width', 'mellis' ),
                 'type' => Controls_Manager::SLIDER,
                 'default' => [
                     'unit' => '%',
@@ -261,7 +261,7 @@ class Spalisho_Elementor_Tabs extends Widget_Tabs {
         $this->add_control(
             'border_width',
             [
-                'label' => esc_html__( 'Border Width', 'spalisho' ),
+                'label' => esc_html__( 'Border Width', 'mellis' ),
                 'type' => Controls_Manager::SLIDER,
                 'default' => [
                     'size' => 1,
@@ -281,7 +281,7 @@ class Spalisho_Elementor_Tabs extends Widget_Tabs {
         $this->add_control(
             'border_color',
             [
-                'label' => esc_html__( 'Border Color', 'spalisho' ),
+                'label' => esc_html__( 'Border Color', 'mellis' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .elementor-tab-mobile-title, {{WRAPPER}} .elementor-tab-desktop-title.elementor-active, {{WRAPPER}} .elementor-tab-title:before, {{WRAPPER}} .elementor-tab-title:after, {{WRAPPER}} .elementor-tab-content, {{WRAPPER}} .elementor-tabs-content-wrapper' => 'border-color: {{VALUE}};',
@@ -292,7 +292,7 @@ class Spalisho_Elementor_Tabs extends Widget_Tabs {
         $this->add_control(
             'background_color',
             [
-                'label' => esc_html__( 'Background Color', 'spalisho' ),
+                'label' => esc_html__( 'Background Color', 'mellis' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .elementor-tab-desktop-title.elementor-active' => 'background-color: {{VALUE}};',
@@ -309,7 +309,7 @@ class Spalisho_Elementor_Tabs extends Widget_Tabs {
         $this->start_controls_section(
             'section_ova_tabs_style',
             [
-                'label' => esc_html__( 'Navigation', 'spalisho' ),
+                'label' => esc_html__( 'Navigation', 'mellis' ),
                 'tab'   => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -317,19 +317,19 @@ class Spalisho_Elementor_Tabs extends Widget_Tabs {
             $this->add_responsive_control(
                 'ova_tabs_wrapper_displaya',
                 [
-                    'label' => esc_html__( 'Alignment', 'spalisho' ),
+                    'label' => esc_html__( 'Alignment', 'mellis' ),
                     'type' => Controls_Manager::CHOOSE,
                     'options' => [
                         'flex' => [
-                            'title' => esc_html__( 'Flex', 'spalisho' ),
+                            'title' => esc_html__( 'Flex', 'mellis' ),
                             'icon' => 'eicon-h-align-left',
                         ],
                         'block' => [
-                            'title' => esc_html__( 'Block', 'spalisho' ),
+                            'title' => esc_html__( 'Block', 'mellis' ),
                             'icon' => 'eicon-h-align-stretch',
                         ],
                         'none' => [
-                            'title' => esc_html__( 'None', 'spalisho' ),
+                            'title' => esc_html__( 'None', 'mellis' ),
                             'icon' => 'eicon-h-align-right',
                         ],
                     ],
@@ -343,7 +343,7 @@ class Spalisho_Elementor_Tabs extends Widget_Tabs {
                 Group_Control_Border::get_type(),
                 [
                     'name'      => 'ova_tabs_wrapper_border',
-                    'label'     => esc_html__( 'Border', 'spalisho' ),
+                    'label'     => esc_html__( 'Border', 'mellis' ),
                     'selector'  => '{{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-wrapper',
                 ]
             );
@@ -351,7 +351,7 @@ class Spalisho_Elementor_Tabs extends Widget_Tabs {
             $this->add_responsive_control(
                 'ova_tabs_wrapper_border_radius',
                 [
-                    'label'         => esc_html__( 'Border Radius', 'spalisho' ),
+                    'label'         => esc_html__( 'Border Radius', 'mellis' ),
                     'type'          => Controls_Manager::DIMENSIONS,
                     'size_units'    => [ 'px', '%', 'em' ],
                     'selectors'     => [
@@ -363,7 +363,7 @@ class Spalisho_Elementor_Tabs extends Widget_Tabs {
             $this->add_responsive_control(
                 'ova_tabs_wrapper_padding',
                 [
-                    'label'         => esc_html__( 'Padding', 'spalisho' ),
+                    'label'         => esc_html__( 'Padding', 'mellis' ),
                     'type'          => Controls_Manager::DIMENSIONS,
                     'size_units'    => [ 'px', '%', 'em' ],
                     'selectors'     => [
@@ -375,7 +375,7 @@ class Spalisho_Elementor_Tabs extends Widget_Tabs {
             $this->add_responsive_control(
                 'ova_tabs_wrapper_margin',
                 [
-                    'label'         => esc_html__( 'Margin', 'spalisho' ),
+                    'label'         => esc_html__( 'Margin', 'mellis' ),
                     'type'          => Controls_Manager::DIMENSIONS,
                     'size_units'    => [ 'px', '%', 'em' ],
                     'selectors'     => [
@@ -391,7 +391,7 @@ class Spalisho_Elementor_Tabs extends Widget_Tabs {
         $this->start_controls_section(
             'section_ova_title_style',
             [
-                'label' => esc_html__( 'Title', 'spalisho' ),
+                'label' => esc_html__( 'Title', 'mellis' ),
                 'tab'   => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -419,14 +419,14 @@ class Spalisho_Elementor_Tabs extends Widget_Tabs {
                 $this->start_controls_tab(
                     'ova_title_normal_tab',
                     [
-                        'label' => esc_html__( 'Normal', 'spalisho' ),
+                        'label' => esc_html__( 'Normal', 'mellis' ),
                     ]
                 );
 
                     $this->add_control(
                         'ova_title_color_normal',
                         [
-                            'label'     => esc_html__( 'Color', 'spalisho' ),
+                            'label'     => esc_html__( 'Color', 'mellis' ),
                             'type'      => Controls_Manager::COLOR,
                             'selectors' => [
                                 '{{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-wrapper > .elementor-tab-desktop-title' => 'color: {{VALUE}}',
@@ -438,7 +438,7 @@ class Spalisho_Elementor_Tabs extends Widget_Tabs {
                     $this->add_control(
                         'ova_title_background_normal',
                         [
-                            'label'     => esc_html__( 'Background', 'spalisho' ),
+                            'label'     => esc_html__( 'Background', 'mellis' ),
                             'type'      => Controls_Manager::COLOR,
                             'selectors' => [
                                 '{{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-wrapper > .elementor-tab-desktop-title' => 'background-color: {{VALUE}}',
@@ -450,7 +450,7 @@ class Spalisho_Elementor_Tabs extends Widget_Tabs {
                     $this->add_control(
                         'ova_title_mobile_color_normal',
                         [
-                            'label'     => esc_html__( 'Color Mobile', 'spalisho' ),
+                            'label'     => esc_html__( 'Color Mobile', 'mellis' ),
                             'type'      => Controls_Manager::COLOR,
                             'selectors' => [
                                 '{{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-content-wrapper > .elementor-tab-mobile-title' => 'color: {{VALUE}}',
@@ -461,7 +461,7 @@ class Spalisho_Elementor_Tabs extends Widget_Tabs {
                     $this->add_control(
                         'ova_title_mobile_background_normal',
                         [
-                            'label'     => esc_html__( 'Background Mobile', 'spalisho' ),
+                            'label'     => esc_html__( 'Background Mobile', 'mellis' ),
                             'type'      => Controls_Manager::COLOR,
                             'selectors' => [
                                 '{{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-content-wrapper > .elementor-tab-mobile-title' => 'background-color: {{VALUE}}',
@@ -474,14 +474,14 @@ class Spalisho_Elementor_Tabs extends Widget_Tabs {
                 $this->start_controls_tab(
                     'ova_title_hover_tab',
                     [
-                        'label' => esc_html__( 'Hover', 'spalisho' ),
+                        'label' => esc_html__( 'Hover', 'mellis' ),
                     ]
                 );
 
                     $this->add_control(
                         'ova_title_color_hover',
                         [
-                            'label'     => esc_html__( 'Color', 'spalisho' ),
+                            'label'     => esc_html__( 'Color', 'mellis' ),
                             'type'      => Controls_Manager::COLOR,
                             'selectors' => [
                                 '{{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-wrapper > .elementor-tab-desktop-title:hover' => 'color: {{VALUE}}',
@@ -493,7 +493,7 @@ class Spalisho_Elementor_Tabs extends Widget_Tabs {
                     $this->add_control(
                         'ova_title_background_hover',
                         [
-                            'label'     => esc_html__( 'Background', 'spalisho' ),
+                            'label'     => esc_html__( 'Background', 'mellis' ),
                             'type'      => Controls_Manager::COLOR,
                             'selectors' => [
                                 '{{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-wrapper > .elementor-tab-desktop-title:hover' => 'background-color: {{VALUE}}',
@@ -505,7 +505,7 @@ class Spalisho_Elementor_Tabs extends Widget_Tabs {
                     $this->add_control(
                         'ova_title_mobile_color_hover',
                         [
-                            'label'     => esc_html__( 'Color Mobile', 'spalisho' ),
+                            'label'     => esc_html__( 'Color Mobile', 'mellis' ),
                             'type'      => Controls_Manager::COLOR,
                             'selectors' => [
                                 '{{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-content-wrapper > .elementor-tab-mobile-title:hover' => 'color: {{VALUE}}',
@@ -516,7 +516,7 @@ class Spalisho_Elementor_Tabs extends Widget_Tabs {
                     $this->add_control(
                         'ova_title_mobile_background_hover',
                         [
-                            'label'     => esc_html__( 'Background Mobile', 'spalisho' ),
+                            'label'     => esc_html__( 'Background Mobile', 'mellis' ),
                             'type'      => Controls_Manager::COLOR,
                             'selectors' => [
                                 '{{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-content-wrapper > .elementor-tab-mobile-title:hover' => 'background-color: {{VALUE}}',
@@ -529,14 +529,14 @@ class Spalisho_Elementor_Tabs extends Widget_Tabs {
                 $this->start_controls_tab(
                     'ova_title_active_tab',
                     [
-                        'label' => esc_html__( 'Active', 'spalisho' ),
+                        'label' => esc_html__( 'Active', 'mellis' ),
                     ]
                 );
 
                     $this->add_control(
                         'ova_title_color_active',
                         [
-                            'label'     => esc_html__( 'Color', 'spalisho' ),
+                            'label'     => esc_html__( 'Color', 'mellis' ),
                             'type'      => Controls_Manager::COLOR,
                             'selectors' => [
                                 '{{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-wrapper > .elementor-tab-desktop-title.elementor-active' => 'color: {{VALUE}}',
@@ -548,7 +548,7 @@ class Spalisho_Elementor_Tabs extends Widget_Tabs {
                     $this->add_control(
                         'ova_title_background_active',
                         [
-                            'label'     => esc_html__( 'Background', 'spalisho' ),
+                            'label'     => esc_html__( 'Background', 'mellis' ),
                             'type'      => Controls_Manager::COLOR,
                             'selectors' => [
                                 '{{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-wrapper > .elementor-tab-desktop-title.elementor-active' => 'background-color: {{VALUE}}',
@@ -560,7 +560,7 @@ class Spalisho_Elementor_Tabs extends Widget_Tabs {
                     $this->add_control(
                         'ova_title_mobile_color_active',
                         [
-                            'label'     => esc_html__( 'Color Mobile', 'spalisho' ),
+                            'label'     => esc_html__( 'Color Mobile', 'mellis' ),
                             'type'      => Controls_Manager::COLOR,
                             'selectors' => [
                                 '{{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-content-wrapper > .elementor-tab-mobile-title.elementor-active' => 'color: {{VALUE}}',
@@ -571,7 +571,7 @@ class Spalisho_Elementor_Tabs extends Widget_Tabs {
                     $this->add_control(
                         'ova_title_mobile_background_active',
                         [
-                            'label'     => esc_html__( 'Background Mobile', 'spalisho' ),
+                            'label'     => esc_html__( 'Background Mobile', 'mellis' ),
                             'type'      => Controls_Manager::COLOR,
                             'selectors' => [
                                 '{{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-content-wrapper > .elementor-tab-mobile-title.elementor-active' => 'background-color: {{VALUE}}',
@@ -586,7 +586,7 @@ class Spalisho_Elementor_Tabs extends Widget_Tabs {
                 Group_Control_Border::get_type(),
                 [
                     'name'      => 'ova_title_border',
-                    'label'     => esc_html__( 'Border', 'spalisho' ),
+                    'label'     => esc_html__( 'Border', 'mellis' ),
                     'selector'  => '{{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-wrapper > .elementor-tab-desktop-title, {{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-content-wrapper > .elementor-tab-mobile-title',
                     'separator' => 'before',
                 ]
@@ -595,7 +595,7 @@ class Spalisho_Elementor_Tabs extends Widget_Tabs {
             $this->add_control(
                 'ova_title_border_color_hover',
                 [
-                    'label'     => esc_html__( 'Border Color Hover', 'spalisho' ),
+                    'label'     => esc_html__( 'Border Color Hover', 'mellis' ),
                     'type'      => Controls_Manager::COLOR,
                     'selectors' => [
                         '{{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-wrapper > .elementor-tab-desktop-title:hover' => 'border-color: {{VALUE}}',
@@ -607,7 +607,7 @@ class Spalisho_Elementor_Tabs extends Widget_Tabs {
             $this->add_control(
                 'ova_title_border_color_active',
                 [
-                    'label'     => esc_html__( 'Border Color Active', 'spalisho' ),
+                    'label'     => esc_html__( 'Border Color Active', 'mellis' ),
                     'type'      => Controls_Manager::COLOR,
                     'selectors' => [
                         '{{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-wrapper > .elementor-tab-desktop-title.elementor-active' => 'border-color: {{VALUE}}',
@@ -619,7 +619,7 @@ class Spalisho_Elementor_Tabs extends Widget_Tabs {
             $this->add_responsive_control(
                 'ova_title_border_radius',
                 [
-                    'label'         => esc_html__( 'Border Radius', 'spalisho' ),
+                    'label'         => esc_html__( 'Border Radius', 'mellis' ),
                     'type'          => Controls_Manager::DIMENSIONS,
                     'size_units'    => [ 'px', '%', 'em' ],
                     'selectors'     => [
@@ -632,7 +632,7 @@ class Spalisho_Elementor_Tabs extends Widget_Tabs {
             $this->add_responsive_control(
                 'ova_title_padding',
                 [
-                    'label'         => esc_html__( 'Padding', 'spalisho' ),
+                    'label'         => esc_html__( 'Padding', 'mellis' ),
                     'type'          => Controls_Manager::DIMENSIONS,
                     'size_units'    => [ 'px', '%', 'em' ],
                     'selectors'     => [
@@ -645,7 +645,7 @@ class Spalisho_Elementor_Tabs extends Widget_Tabs {
             $this->add_responsive_control(
                 'ova_title_margin',
                 [
-                    'label'         => esc_html__( 'Margin', 'spalisho' ),
+                    'label'         => esc_html__( 'Margin', 'mellis' ),
                     'type'          => Controls_Manager::DIMENSIONS,
                     'size_units'    => [ 'px', '%', 'em' ],
                     'selectors'     => [
@@ -658,7 +658,7 @@ class Spalisho_Elementor_Tabs extends Widget_Tabs {
             $this->add_responsive_control(
                 'ova_first_title_border_radius',
                 [
-                    'label'         => esc_html__( 'Border Radius (first-child)', 'spalisho' ),
+                    'label'         => esc_html__( 'Border Radius (first-child)', 'mellis' ),
                     'type'          => Controls_Manager::DIMENSIONS,
                     'size_units'    => [ 'px', '%', 'em' ],
                     'selectors'     => [
@@ -670,7 +670,7 @@ class Spalisho_Elementor_Tabs extends Widget_Tabs {
             $this->add_responsive_control(
                 'ova_last_title_border_radius',
                 [
-                    'label'         => esc_html__( 'Border Radius (last-child)', 'spalisho' ),
+                    'label'         => esc_html__( 'Border Radius (last-child)', 'mellis' ),
                     'type'          => Controls_Manager::DIMENSIONS,
                     'size_units'    => [ 'px', '%', 'em' ],
                     'selectors'     => [
@@ -686,7 +686,7 @@ class Spalisho_Elementor_Tabs extends Widget_Tabs {
         $this->start_controls_section(
             'section_ova_content_style',
             [
-                'label' => esc_html__( 'Content', 'spalisho' ),
+                'label' => esc_html__( 'Content', 'mellis' ),
                 'tab'   => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -694,7 +694,7 @@ class Spalisho_Elementor_Tabs extends Widget_Tabs {
             $this->add_control(
                 'content_color',
                 [
-                    'label' => esc_html__( 'Color', 'spalisho' ),
+                    'label' => esc_html__( 'Color', 'mellis' ),
                     'type' => Controls_Manager::COLOR,
                     'selectors' => [
                         '{{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-content-wrapper > .elementor-tab-content' => 'color: {{VALUE}};',
@@ -712,7 +712,7 @@ class Spalisho_Elementor_Tabs extends Widget_Tabs {
                 Group_Control_Border::get_type(),
                 [
                     'name'      => 'ova_content_border',
-                    'label'     => esc_html__( 'Border', 'spalisho' ),
+                    'label'     => esc_html__( 'Border', 'mellis' ),
                     'selector'  => '{{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-content-wrapper > .elementor-tab-content',
                 ]
             );
@@ -728,7 +728,7 @@ class Spalisho_Elementor_Tabs extends Widget_Tabs {
             $this->add_responsive_control(
                 'ova_content_padding',
                 [
-                    'label'         => esc_html__( 'Padding', 'spalisho' ),
+                    'label'         => esc_html__( 'Padding', 'mellis' ),
                     'type'          => Controls_Manager::DIMENSIONS,
                     'size_units'    => [ 'px', '%', 'em' ],
                     'selectors'     => [
@@ -742,7 +742,7 @@ class Spalisho_Elementor_Tabs extends Widget_Tabs {
             $this->add_responsive_control(
                 'ova_content_margin',
                 [
-                    'label'         => esc_html__( 'Margin', 'spalisho' ),
+                    'label'         => esc_html__( 'Margin', 'mellis' ),
                     'type'          => Controls_Manager::DIMENSIONS,
                     'size_units'    => [ 'px', '%', 'em' ],
                     'selectors'     => [
@@ -759,7 +759,7 @@ class Spalisho_Elementor_Tabs extends Widget_Tabs {
         $this->start_controls_section(
             'section_ova_icon_image_style',
             [
-                'label'     => esc_html__( 'Icon/Image', 'spalisho' ),
+                'label'     => esc_html__( 'Icon/Image', 'mellis' ),
                 'tab'       => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -767,15 +767,15 @@ class Spalisho_Elementor_Tabs extends Widget_Tabs {
             $this->add_control(
                 'icon_image_align',
                 [
-                    'label' => esc_html__( 'Alignment', 'spalisho' ),
+                    'label' => esc_html__( 'Alignment', 'mellis' ),
                     'type' => Controls_Manager::CHOOSE,
                     'options' => [
                         'left' => [
-                            'title' => esc_html__( 'Start', 'spalisho' ),
+                            'title' => esc_html__( 'Start', 'mellis' ),
                             'icon' => 'eicon-h-align-left',
                         ],
                         'right' => [
-                            'title' => esc_html__( 'End', 'spalisho' ),
+                            'title' => esc_html__( 'End', 'mellis' ),
                             'icon' => 'eicon-h-align-right',
                         ],
                     ],
@@ -787,7 +787,7 @@ class Spalisho_Elementor_Tabs extends Widget_Tabs {
             $this->add_control(
                 'ova_tab_icon',
                 [
-                    'label'     => esc_html__( 'Icon', 'spalisho' ),
+                    'label'     => esc_html__( 'Icon', 'mellis' ),
                     'type'      => \Elementor\Controls_Manager::HEADING,
                     'separator' => 'before',
                 ]
@@ -797,7 +797,7 @@ class Spalisho_Elementor_Tabs extends Widget_Tabs {
                     Group_Control_Typography::get_type(),
                     [
                         'name'      => 'ova_tab_icon_typography',
-                        'selector'  => '{{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-wrapper > .elementor-tab-desktop-title span.xp-tab-icon i, {{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-content-wrapper > .elementor-tab-mobile-title span.xp-tab-icon i',
+                        'selector'  => '{{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-wrapper > .elementor-tab-desktop-title span.ova-tab-icon i, {{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-content-wrapper > .elementor-tab-mobile-title span.ova-tab-icon i',
                     ]
                 );
 
@@ -808,18 +808,18 @@ class Spalisho_Elementor_Tabs extends Widget_Tabs {
                     $this->start_controls_tab(
                         'ova_tab_icon_normal_tab',
                         [
-                            'label' => esc_html__( 'Normal', 'spalisho' ),
+                            'label' => esc_html__( 'Normal', 'mellis' ),
                         ]
                     );
 
                         $this->add_control(
                             'ova_tab_icon_color_normal',
                             [
-                                'label'     => esc_html__( 'Color', 'spalisho' ),
+                                'label'     => esc_html__( 'Color', 'mellis' ),
                                 'type'      => Controls_Manager::COLOR,
                                 'selectors' => [
-                                    '{{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-wrapper > .elementor-tab-desktop-title span.xp-tab-icon i' => 'color: {{VALUE}}',
-                                    '{{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-content-wrapper > .elementor-tab-mobile-title span.xp-tab-icon i' => 'color: {{VALUE}}',
+                                    '{{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-wrapper > .elementor-tab-desktop-title span.ova-tab-icon i' => 'color: {{VALUE}}',
+                                    '{{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-content-wrapper > .elementor-tab-mobile-title span.ova-tab-icon i' => 'color: {{VALUE}}',
                                 ],
                             ]
                         );
@@ -829,18 +829,18 @@ class Spalisho_Elementor_Tabs extends Widget_Tabs {
                     $this->start_controls_tab(
                         'ova_tab_icon_hover_tab',
                         [
-                            'label' => esc_html__( 'Hover', 'spalisho' ),
+                            'label' => esc_html__( 'Hover', 'mellis' ),
                         ]
                     );
 
                         $this->add_control(
                             'ova_tab_icon_color_hover',
                             [
-                                'label'     => esc_html__( 'Color', 'spalisho' ),
+                                'label'     => esc_html__( 'Color', 'mellis' ),
                                 'type'      => Controls_Manager::COLOR,
                                 'selectors' => [
-                                    '{{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-wrapper > .elementor-tab-desktop-title:hover span.xp-tab-icon i' => 'color: {{VALUE}}',
-                                    '{{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-content-wrapper > .elementor-tab-mobile-title:hover span.xp-tab-icon i' => 'color: {{VALUE}}',
+                                    '{{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-wrapper > .elementor-tab-desktop-title:hover span.ova-tab-icon i' => 'color: {{VALUE}}',
+                                    '{{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-content-wrapper > .elementor-tab-mobile-title:hover span.ova-tab-icon i' => 'color: {{VALUE}}',
                                 ],
                             ]
                         );
@@ -850,18 +850,18 @@ class Spalisho_Elementor_Tabs extends Widget_Tabs {
                     $this->start_controls_tab(
                         'ova_tab_icon_active_tab',
                         [
-                            'label' => esc_html__( 'Active', 'spalisho' ),
+                            'label' => esc_html__( 'Active', 'mellis' ),
                         ]
                     );
 
                         $this->add_control(
                             'ova_tab_icon_color_active',
                             [
-                                'label'     => esc_html__( 'Color', 'spalisho' ),
+                                'label'     => esc_html__( 'Color', 'mellis' ),
                                 'type'      => Controls_Manager::COLOR,
                                 'selectors' => [
-                                    '{{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-wrapper > .elementor-tab-desktop-title.elementor-active span.xp-tab-icon i' => 'color: {{VALUE}}',
-                                    '{{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-content-wrapper > .elementor-tab-mobile-title.elementor-active span.xp-tab-icon i' => 'color: {{VALUE}}',
+                                    '{{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-wrapper > .elementor-tab-desktop-title.elementor-active span.ova-tab-icon i' => 'color: {{VALUE}}',
+                                    '{{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-content-wrapper > .elementor-tab-mobile-title.elementor-active span.ova-tab-icon i' => 'color: {{VALUE}}',
                                 ],
                             ]
                         );
@@ -872,12 +872,12 @@ class Spalisho_Elementor_Tabs extends Widget_Tabs {
                 $this->add_responsive_control(
                     'ova_tab_icon_padding',
                     [
-                        'label'         => esc_html__( 'Padding', 'spalisho' ),
+                        'label'         => esc_html__( 'Padding', 'mellis' ),
                         'type'          => Controls_Manager::DIMENSIONS,
                         'size_units'    => [ 'px', '%', 'em' ],
                         'selectors'     => [
-                            '{{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-wrapper > .elementor-tab-desktop-title span.xp-tab-icon i' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
-                            '{{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-content-wrapper > .elementor-tab-mobile-title span.xp-tab-icon i' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+                            '{{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-wrapper > .elementor-tab-desktop-title span.ova-tab-icon i' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+                            '{{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-content-wrapper > .elementor-tab-mobile-title span.ova-tab-icon i' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
                         ],
                     ]
                 );
@@ -885,12 +885,12 @@ class Spalisho_Elementor_Tabs extends Widget_Tabs {
                 $this->add_responsive_control(
                     'ova_tab_icon_margin',
                     [
-                        'label'         => esc_html__( 'Margin', 'spalisho' ),
+                        'label'         => esc_html__( 'Margin', 'mellis' ),
                         'type'          => Controls_Manager::DIMENSIONS,
                         'size_units'    => [ 'px', '%', 'em' ],
                         'selectors'     => [
-                            '{{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-wrapper > .elementor-tab-desktop-title span.xp-tab-icon i' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
-                            '{{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-content-wrapper > .elementor-tab-mobile-title span.xp-tab-icon i' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+                            '{{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-wrapper > .elementor-tab-desktop-title span.ova-tab-icon i' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+                            '{{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-content-wrapper > .elementor-tab-mobile-title span.ova-tab-icon i' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
                         ],
                     ]
                 );
@@ -898,7 +898,7 @@ class Spalisho_Elementor_Tabs extends Widget_Tabs {
             $this->add_control(
                 'ova_tab_image',
                 [
-                    'label'     => esc_html__( 'Image', 'spalisho' ),
+                    'label'     => esc_html__( 'Image', 'mellis' ),
                     'type'      => \Elementor\Controls_Manager::HEADING,
                     'separator' => 'before',
                 ]
@@ -907,7 +907,7 @@ class Spalisho_Elementor_Tabs extends Widget_Tabs {
                 $this->add_responsive_control(
                     'ova_tab_image_width',
                     [
-                        'label'         => esc_html__( 'Width', 'spalisho' ),
+                        'label'         => esc_html__( 'Width', 'mellis' ),
                         'type'          => Controls_Manager::SLIDER,
                         'size_units'    => [ 'px', '%', 'vw' ],
                         'range' => [
@@ -926,8 +926,8 @@ class Spalisho_Elementor_Tabs extends Widget_Tabs {
                             ],
                         ],
                         'selectors' => [
-                            '{{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-wrapper > .elementor-tab-desktop-title span.xp-tab-image img' => 'width: {{SIZE}}{{UNIT}};min-width: {{SIZE}}{{UNIT}};',
-                            '{{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-content-wrapper > .elementor-tab-mobile-title span.xp-tab-image img' => 'width: {{SIZE}}{{UNIT}};min-width: {{SIZE}}{{UNIT}};',
+                            '{{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-wrapper > .elementor-tab-desktop-title span.ova-tab-image img' => 'width: {{SIZE}}{{UNIT}};min-width: {{SIZE}}{{UNIT}};',
+                            '{{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-content-wrapper > .elementor-tab-mobile-title span.ova-tab-image img' => 'width: {{SIZE}}{{UNIT}};min-width: {{SIZE}}{{UNIT}};',
                         ],
                     ]
                 );
@@ -935,7 +935,7 @@ class Spalisho_Elementor_Tabs extends Widget_Tabs {
                 $this->add_responsive_control(
                     'ova_tab_image_height',
                     [
-                        'label'         => esc_html__( 'Height', 'spalisho' ),
+                        'label'         => esc_html__( 'Height', 'mellis' ),
                         'type'          => Controls_Manager::SLIDER,
                         'size_units'    => [ 'px', '%', 'vh' ],
                         'range' => [
@@ -954,8 +954,8 @@ class Spalisho_Elementor_Tabs extends Widget_Tabs {
                             ],
                         ],
                         'selectors' => [
-                            '{{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-wrapper > .elementor-tab-desktop-title span.xp-tab-image img' => 'height: {{SIZE}}{{UNIT}};',
-                            '{{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-content-wrapper > .elementor-tab-mobile-title span.xp-tab-image img' => 'height: {{SIZE}}{{UNIT}};',
+                            '{{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-wrapper > .elementor-tab-desktop-title span.ova-tab-image img' => 'height: {{SIZE}}{{UNIT}};',
+                            '{{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-content-wrapper > .elementor-tab-mobile-title span.ova-tab-image img' => 'height: {{SIZE}}{{UNIT}};',
                         ],
                     ]
                 );
@@ -963,12 +963,12 @@ class Spalisho_Elementor_Tabs extends Widget_Tabs {
                 $this->add_responsive_control(
                     'ova_tab_image_border_radius',
                     [
-                        'label'         => esc_html__( 'Border Radius', 'spalisho' ),
+                        'label'         => esc_html__( 'Border Radius', 'mellis' ),
                         'type'          => Controls_Manager::DIMENSIONS,
                         'size_units'    => [ 'px', '%', 'em' ],
                         'selectors'     => [
-                            '{{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-wrapper > .elementor-tab-desktop-title span.xp-tab-image img' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
-                            '{{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-content-wrapper > .elementor-tab-mobile-title span.xp-tab-image img' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+                            '{{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-wrapper > .elementor-tab-desktop-title span.ova-tab-image img' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+                            '{{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-content-wrapper > .elementor-tab-mobile-title span.ova-tab-image img' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
                         ],
                     ]
                 );
@@ -976,12 +976,12 @@ class Spalisho_Elementor_Tabs extends Widget_Tabs {
                 $this->add_responsive_control(
                     'ova_tab_image_padding',
                     [
-                        'label'         => esc_html__( 'Padding', 'spalisho' ),
+                        'label'         => esc_html__( 'Padding', 'mellis' ),
                         'type'          => Controls_Manager::DIMENSIONS,
                         'size_units'    => [ 'px', '%', 'em' ],
                         'selectors'     => [
-                            '{{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-wrapper > .elementor-tab-desktop-title span.xp-tab-image img' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
-                            '{{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-content-wrapper > .elementor-tab-mobile-title span.xp-tab-image img' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+                            '{{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-wrapper > .elementor-tab-desktop-title span.ova-tab-image img' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+                            '{{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-content-wrapper > .elementor-tab-mobile-title span.ova-tab-image img' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
                         ],
                     ]
                 );
@@ -989,12 +989,12 @@ class Spalisho_Elementor_Tabs extends Widget_Tabs {
                 $this->add_responsive_control(
                     'ova_tab_image_margin',
                     [
-                        'label'         => esc_html__( 'Margin', 'spalisho' ),
+                        'label'         => esc_html__( 'Margin', 'mellis' ),
                         'type'          => Controls_Manager::DIMENSIONS,
                         'size_units'    => [ 'px', '%', 'em' ],
                         'selectors'     => [
-                            '{{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-wrapper > .elementor-tab-desktop-title span.xp-tab-image img' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
-                            '{{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-content-wrapper > .elementor-tab-mobile-title span.xp-tab-image img' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+                            '{{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-wrapper > .elementor-tab-desktop-title span.ova-tab-image img' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+                            '{{WRAPPER}}.elementor-widget-tabs .elementor-tabs .elementor-tabs-content-wrapper > .elementor-tab-mobile-title span.ova-tab-image img' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
                         ],
                     ]
                 );
@@ -1049,17 +1049,17 @@ class Spalisho_Elementor_Tabs extends Widget_Tabs {
                     <div <?php $this->print_render_attribute_string( $tab_title_setting_key ); ?>><?php
                         if ( 'icon' === $item['tab_icon_image'] && $tab_icon ) {
                             if ( 'left' === $settings['icon_image_align'] ) { ?>
-                                <span class="xp-tab-icon"><i class="<?php echo esc_attr( $tab_icon ); ?>"></i></span>
+                                <span class="ova-tab-icon"><i class="<?php echo esc_attr( $tab_icon ); ?>"></i></span>
                             <?php
                             }
                             printf( $tab_title );
                             
                             if ( 'right' === $settings['icon_image_align'] ) { ?>
-                                <span class="xp-tab-icon"><i class="<?php echo esc_attr( $tab_icon ); ?>"></i></span>
+                                <span class="ova-tab-icon"><i class="<?php echo esc_attr( $tab_icon ); ?>"></i></span>
                             <?php }
                         } elseif ( 'image' === $item['tab_icon_image'] && $img_url ) {
                             if ( 'left' === $settings['icon_image_align'] ) { ?>
-                                <span class="xp-tab-image">
+                                <span class="ova-tab-image">
                                     <img src="<?php echo esc_url( $img_url ); ?>" alt="<?php echo esc_attr( $img_alt ); ?>">
                                 </span>
                             <?php
@@ -1067,7 +1067,7 @@ class Spalisho_Elementor_Tabs extends Widget_Tabs {
                             printf( $tab_title );
                             
                             if ( 'right' === $settings['icon_image_align'] ) { ?>
-                                <span class="xp-tab-image">
+                                <span class="ova-tab-image">
                                     <img src="<?php echo esc_url( $img_url ); ?>" alt="<?php echo esc_attr( $img_alt ); ?>">
                                 </span>
                             <?php }
@@ -1119,17 +1119,17 @@ class Spalisho_Elementor_Tabs extends Widget_Tabs {
 
                         if ( 'icon' === $item['tab_icon_image'] && $tab_icon ) {
                             if ( 'left' === $settings['icon_image_align'] ) { ?>
-                                <span class="xp-tab-icon"><i class="<?php echo esc_attr( $tab_icon ); ?>"></i></span>
+                                <span class="ova-tab-icon"><i class="<?php echo esc_attr( $tab_icon ); ?>"></i></span>
                             <?php }
 
                             $this->print_unescaped_setting( 'tab_title', 'tabs', $index );
 
                             if ( 'right' === $settings['icon_image_align'] ) { ?>
-                                <span class="xp-tab-icon"><i class="<?php echo esc_attr( $tab_icon ); ?>"></i></span>
+                                <span class="ova-tab-icon"><i class="<?php echo esc_attr( $tab_icon ); ?>"></i></span>
                             <?php }
                         } elseif ( 'image' === $item['tab_icon_image'] && $img_url ) {
                             if ( 'left' === $settings['icon_image_align'] ) { ?>
-                                <span class="xp-tab-image">
+                                <span class="ova-tab-image">
                                     <img src="<?php echo esc_url( $img_url ); ?>" alt="<?php echo esc_attr( $img_alt ); ?>">
                                 </span>
                             <?php }
@@ -1137,7 +1137,7 @@ class Spalisho_Elementor_Tabs extends Widget_Tabs {
                             $this->print_unescaped_setting( 'tab_title', 'tabs', $index );
 
                             if ( 'right' === $settings['icon_image_align'] ) { ?>
-                                <span class="xp-tab-image">
+                                <span class="ova-tab-image">
                                     <img src="<?php echo esc_url( $img_url ); ?>" alt="<?php echo esc_attr( $img_alt ); ?>">
                                 </span>
                             <?php }
@@ -1186,28 +1186,28 @@ class Spalisho_Elementor_Tabs extends Widget_Tabs {
                     #>
                         <div {{{ view.getRenderAttributeString( tabTitleKey ) }}}>
                             <#
-                                if ( 'icon' === item.tab_icon_image && item.xp_icon.value ) {
+                                if ( 'icon' === item.tab_icon_image && item.ova_icon.value ) {
                                     if ( 'left' === settings.icon_image_align ) { #>
-                                        <span class="xp-tab-icon"><i class="{{{ item.xp_icon.value }}}"></i></span>
+                                        <span class="ova-tab-icon"><i class="{{{ item.ova_icon.value }}}"></i></span>
                                     <# } #>
 
                                     {{{ item.tab_title }}}
 
                                     <# if ( 'right' === settings.icon_image_align ) { #>
-                                        <span class="xp-tab-icon"><i class="{{{ item.xp_icon.value }}}"></i></span>
+                                        <span class="ova-tab-icon"><i class="{{{ item.ova_icon.value }}}"></i></span>
                                     <# } #>
-                                <# } else if ( 'image' === item.tab_icon_image && item.xp_image.url ) { 
+                                <# } else if ( 'image' === item.tab_icon_image && item.ova_image.url ) { 
                                     if ( 'left' === settings.icon_image_align ) { #>
-                                        <span class="xp-tab-image">
-                                            <img src="{{{ item.xp_image.url }}}" alt="{{{ item.xp_image.alt }}}">
+                                        <span class="ova-tab-image">
+                                            <img src="{{{ item.ova_image.url }}}" alt="{{{ item.ova_image.alt }}}">
                                         </span>
                                     <# } #>
 
                                     {{{ item.tab_title }}}
 
                                     <# if ( 'right' === settings.icon_image_align ) { #>
-                                        <span class="xp-tab-image">
-                                            <img src="{{{ item.xp_image.url }}}" alt="{{{ item.xp_image.alt }}}">
+                                        <span class="ova-tab-image">
+                                            <img src="{{{ item.ova_image.url }}}" alt="{{{ item.ova_image.alt }}}">
                                         </span>
                                     <# } #>
 
@@ -1233,28 +1233,28 @@ class Spalisho_Elementor_Tabs extends Widget_Tabs {
                         view.addInlineEditingAttributes( tabContentKey, 'advanced' ); #>
                         <div class="elementor-tab-title elementor-tab-mobile-title" data-tab="{{ tabCount }}" role="tab">
                         <#
-                            if ( 'icon' === item.tab_icon_image && item.xp_icon.value ) {
+                            if ( 'icon' === item.tab_icon_image && item.ova_icon.value ) {
                                 if ( 'left' === settings.icon_image_align ) { #>
-                                    <span class="xp-tab-icon"><i class="{{{ item.xp_icon.value }}}"></i></span>
+                                    <span class="ova-tab-icon"><i class="{{{ item.ova_icon.value }}}"></i></span>
                                 <# } #>
 
                                 {{{ item.tab_title }}}
 
                                 <# if ( 'right' === settings.icon_image_align ) { #>
-                                    <span class="xp-tab-icon"><i class="{{{ item.xp_icon.value }}}"></i></span>
+                                    <span class="ova-tab-icon"><i class="{{{ item.ova_icon.value }}}"></i></span>
                                 <# } #>
-                            <# } else if ( 'image' === item.tab_icon_image && item.xp_image.url ) { 
+                            <# } else if ( 'image' === item.tab_icon_image && item.ova_image.url ) { 
                                 if ( 'left' === settings.icon_image_align ) { #>
-                                    <span class="xp-tab-image">
-                                        <img src="{{{ item.xp_image.url }}}" alt="{{{ item.xp_image.alt }}}">
+                                    <span class="ova-tab-image">
+                                        <img src="{{{ item.ova_image.url }}}" alt="{{{ item.ova_image.alt }}}">
                                     </span>
                                 <# } #>
 
                                 {{{ item.tab_title }}}
 
                                 <# if ( 'right' === settings.icon_image_align ) { #>
-                                    <span class="xp-tab-image">
-                                        <img src="{{{ item.xp_image.url }}}" alt="{{{ item.xp_image.alt }}}">
+                                    <span class="ova-tab-image">
+                                        <img src="{{{ item.ova_image.url }}}" alt="{{{ item.ova_image.alt }}}">
                                     </span>
                                 <# } #>
 
@@ -1271,4 +1271,4 @@ class Spalisho_Elementor_Tabs extends Widget_Tabs {
     }
 }
 
-$widgets_manager->register(new Spalisho_Elementor_Tabs());
+$widgets_manager->register(new Mellis_Elementor_Tabs());

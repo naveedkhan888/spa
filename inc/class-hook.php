@@ -1,53 +1,53 @@
 <?php if (!defined( 'ABSPATH' )) exit;
 
-if( !class_exists('Spalisho_Hooks') ){
+if( !class_exists('Mellis_Hooks') ){
 	
-	class Spalisho_Hooks {
+	class Mellis_Hooks {
 
 		public function __construct() {
 			
 			// Return HTML for Header
-			add_filter( 'spalisho_render_header', array( $this, 'spalisho_render_header' ) );
+			add_filter( 'mellis_render_header', array( $this, 'mellis_render_header' ) );
 
 			// Return HTML for Footer
-			add_filter( 'spalisho_render_footer', array( $this, 'spalisho_render_footer' ) );
+			add_filter( 'mellis_render_footer', array( $this, 'mellis_render_footer' ) );
 
 
 			/* Get All Header */
-			add_filter( 'spalisho_list_header', array( $this, 'spalisho_list_header' ) );
+			add_filter( 'mellis_list_header', array( $this, 'mellis_list_header' ) );
 
 			/* Get All Footer */
-			add_filter( 'spalisho_list_footer', array( $this,  'spalisho_list_footer' ) );
+			add_filter( 'mellis_list_footer', array( $this,  'mellis_list_footer' ) );
 
 			/* Define Layout */
-			add_filter( 'spalisho_define_layout', array( $this,  'spalisho_define_layout' ) );
+			add_filter( 'mellis_define_layout', array( $this,  'mellis_define_layout' ) );
 
 			/* Define Wide */
-			add_filter( 'spalisho_define_wide_boxed', array( $this,  'spalisho_define_wide_boxed' ) );
+			add_filter( 'mellis_define_wide_boxed', array( $this,  'mellis_define_wide_boxed' ) );
 
 			/* Get layout */
-			add_filter( 'spalisho_get_layout', array( $this, 'spalisho_get_layout' ) );
+			add_filter( 'mellis_get_layout', array( $this, 'mellis_get_layout' ) );
 
 			/* Get sidebar */
-			add_filter( 'spalisho_theme_sidebar', array( $this, 'spalisho_theme_sidebar' )  );
+			add_filter( 'mellis_theme_sidebar', array( $this, 'mellis_theme_sidebar' )  );
 			
 
 			/* Wide or Boxed */
-			add_filter( 'spalisho_wide_site', array( $this, 'spalisho_wide_site' ) );
+			add_filter( 'mellis_wide_site', array( $this, 'mellis_wide_site' ) );
 
 			/* Get Blog Template */
-			add_filter( 'spalisho_blog_template', array( $this, 'spalisho_blog_template' ) );
+			add_filter( 'mellis_blog_template', array( $this, 'mellis_blog_template' ) );
 			
 			// Comment Form Default Field
-			add_filter( 'comment_form_default_fields', array( $this, 'spalisho_comment_form_default_fields') );
-			add_filter( 'comment_form_defaults', array( $this, 'spalisho_comment_form_defaults' ) );
+			add_filter( 'comment_form_default_fields', array( $this, 'mellis_comment_form_default_fields') );
+			add_filter( 'comment_form_defaults', array( $this, 'mellis_comment_form_defaults' ) );
 
 	    }
 
 		
-		public function spalisho_render_header(){
+		public function mellis_render_header(){
 
-			$current_id = spalisho_get_current_id();
+			$current_id = mellis_get_current_id();
 
 			// Get header default from customizer
 			$global_header = get_theme_mod('global_header','default');
@@ -60,7 +60,7 @@ if( !class_exists('Spalisho_Hooks') ){
 
 		    	$header = $meta_header;
 
-		  	}else if( spalisho_is_blog_archive() ){ // Header use in blog
+		  	}else if( mellis_is_blog_archive() ){ // Header use in blog
 
 		  		$header = get_theme_mod('blog_header', 'default');
 
@@ -74,28 +74,28 @@ if( !class_exists('Spalisho_Hooks') ){
 		  	}
 			
 
-			$header_split = explode(',', apply_filters( 'spalisho_header_customize', $header, $header ));
+			$header_split = explode(',', apply_filters( 'mellis_header_customize', $header, $header ));
 
-			if ( spalisho_is_elementor_active() && isset( $header_split[1] ) ) {
+			if ( mellis_is_elementor_active() && isset( $header_split[1] ) ) {
 
-				$post_id_header = spalisho_get_id_by_slug( $header_split[1] );
+				$post_id_header = mellis_get_id_by_slug( $header_split[1] );
 
 				// Check WPML 
 				if( function_exists( 'icl_object_id' ) ){
 					$post_id_header = icl_object_id($post_id_header, 'ova_framework_hf_el', false);
 
 					if ( ! $post_id_header ) {
-						$post_id_header = spalisho_get_id_by_slug( $header_split[1] );
+						$post_id_header = mellis_get_id_by_slug( $header_split[1] );
 					}
 				}
 				
 				return Elementor\Plugin::instance()->frontend->get_builder_content_for_display( $post_id_header );
 
-			}else if ( spalisho_is_elementor_active() && !isset( $header_split[1] ) ) {
+			}else if ( mellis_is_elementor_active() && !isset( $header_split[1] ) ) {
 
 				return get_template_part( 'template-parts/header', $header_split[0] );
 
-			}else if ( !spalisho_is_elementor_active()  ) {
+			}else if ( !mellis_is_elementor_active()  ) {
 
 				return get_template_part( 'template-parts/header', 'default' );
 
@@ -105,9 +105,9 @@ if( !class_exists('Spalisho_Hooks') ){
 
 
 		
-		public function spalisho_render_footer(){
+		public function mellis_render_footer(){
 
-			$current_id = spalisho_get_current_id();
+			$current_id = mellis_get_current_id();
 
 			// Get Footer default from customizer
 			$global_footer = get_theme_mod('global_footer', 'default' );
@@ -121,7 +121,7 @@ if( !class_exists('Spalisho_Hooks') ){
 
 		  		$footer = $meta_footer;
 
-		  	}else if( spalisho_is_blog_archive() ){
+		  	}else if( mellis_is_blog_archive() ){
 
 		  		$footer = get_theme_mod('blog_footer', 'default');
 
@@ -136,37 +136,37 @@ if( !class_exists('Spalisho_Hooks') ){
 		  	}
 
 		  	
-		  	$footer_split = explode(',', apply_filters( 'spalisho_footer_customize', $footer, $footer ));
+		  	$footer_split = explode(',', apply_filters( 'mellis_footer_customize', $footer, $footer ));
 
-			if ( spalisho_is_elementor_active() && isset( $footer_split[1] ) ) {
+			if ( mellis_is_elementor_active() && isset( $footer_split[1] ) ) {
 
-				$post_id_footer = spalisho_get_id_by_slug( $footer_split[1] );
+				$post_id_footer = mellis_get_id_by_slug( $footer_split[1] );
 
 				// Check WPML 
 				if( function_exists( 'icl_object_id' ) ){
 					$post_id_footer = icl_object_id($post_id_footer, 'ova_framework_hf_el', false);
 
 					if ( ! $post_id_footer ) {
-						$post_id_footer = spalisho_get_id_by_slug( $footer_split[1] );
+						$post_id_footer = mellis_get_id_by_slug( $footer_split[1] );
 					}
 				}
 
 				return Elementor\Plugin::instance()->frontend->get_builder_content_for_display( $post_id_footer );
 				
-			}else if ( spalisho_is_elementor_active() && !isset( $footer_split[1] ) ) {
+			}else if ( mellis_is_elementor_active() && !isset( $footer_split[1] ) ) {
 
 				get_template_part( 'template-parts/footer', $footer_split[0] );
 
-			}else if( !spalisho_is_elementor_active() ){
+			}else if( !mellis_is_elementor_active() ){
 
 				get_template_part( 'template-parts/footer', 'default' );			
 			}
 		}
 
-		function spalisho_list_header() {
-		    $hf_header_array['default'] = esc_html__( 'Default', 'spalisho' );
+		function mellis_list_header() {
+		    $hf_header_array['default'] = esc_html__( 'Default', 'mellis' );
 
-		    if ( ! spalisho_is_elementor_active() ) return $hf_header_array;
+		    if ( ! mellis_is_elementor_active() ) return $hf_header_array;
 
 		    $args_hf = array(
 		        'post_type' 		=> 'ova_framework_hf_el',
@@ -193,10 +193,10 @@ if( !class_exists('Spalisho_Hooks') ){
 		    return $hf_header_array;
 		}
 
-		function spalisho_list_footer() {
-		    $hf_footer_array['default'] = esc_html__( 'Default', 'spalisho' );
+		function mellis_list_footer() {
+		    $hf_footer_array['default'] = esc_html__( 'Default', 'mellis' );
 
-		    if ( ! spalisho_is_elementor_active() ) return $hf_footer_array;
+		    if ( ! mellis_is_elementor_active() ) return $hf_footer_array;
 
 		    $args_hf = array(
 		        'post_type' 		=> 'ova_framework_hf_el',
@@ -224,16 +224,16 @@ if( !class_exists('Spalisho_Hooks') ){
 		}
 
 
-		function spalisho_define_layout(){
+		function mellis_define_layout(){
 			return array(
-				'layout_1c' => esc_html__('No Sidebar', 'spalisho'),
-				'layout_2r' => esc_html__('Right Sidebar', 'spalisho'),
-				'layout_2l' => esc_html__('Left Sidebar', 'spalisho'),
+				'layout_1c' => esc_html__('No Sidebar', 'mellis'),
+				'layout_2r' => esc_html__('Right Sidebar', 'mellis'),
+				'layout_2l' => esc_html__('Left Sidebar', 'mellis'),
 			);
 		}
 		
 
-		function spalisho_get_layout(){
+		function mellis_get_layout(){
 			
 			$layout = '';
 			
@@ -243,16 +243,16 @@ if( !class_exists('Spalisho_Hooks') ){
 
 			    $layout = get_theme_mod( 'single_layout', 'layout_2r' );
 
-			}else if( spalisho_is_blog_archive() ){
+			}else if( mellis_is_blog_archive() ){
 
 			    $layout = get_theme_mod( 'blog_layout', 'layout_2r' );
 
-			}else if( spalisho_is_woo_active() && is_product() ){
+			}else if( mellis_is_woo_active() && is_product() ){
 
 				$layout = get_theme_mod( 'woo_product_layout', 'woo_layout_1c' );
 				$width_sidebar = get_theme_mod( 'woo_sidebar_width', '320' );
 
-			} else if( spalisho_is_woo_active() && ( is_product_category() || is_product_tag() || is_shop() ) ){
+			} else if( mellis_is_woo_active() && ( is_product_category() || is_product_tag() || is_shop() ) ){
 				
 				$layout = get_theme_mod( 'woo_archive_layout', 'woo_layout_1c' );
 				$width_sidebar = get_theme_mod( 'woo_sidebar_width', '320' );
@@ -260,7 +260,7 @@ if( !class_exists('Spalisho_Hooks') ){
 			}
 
 
-			$current_id = spalisho_get_current_id();
+			$current_id = mellis_get_current_id();
 
 			if( $current_id ){
 
@@ -295,12 +295,12 @@ if( !class_exists('Spalisho_Hooks') ){
 			}
 
 			// Check if Woo Sidebar is inactive
-			if( spalisho_is_woo_active() && ( is_product_category() || is_product_tag() || is_shop() ) ){
+			if( mellis_is_woo_active() && ( is_product_category() || is_product_tag() || is_shop() ) ){
 				if( !is_active_sidebar('woo-sidebar') ){
 					$layout = 'woo_layout_1c';
 					$width_sidebar = 0;
 				}
-			}else if( spalisho_is_woo_active() && is_product() ){
+			}else if( mellis_is_woo_active() && is_product() ){
 				if( !is_active_sidebar('woo-sidebar') ){
 					$layout = 'woo_layout_1c';
 					$width_sidebar = 0;
@@ -317,8 +317,8 @@ if( !class_exists('Spalisho_Hooks') ){
 		
 
 
-		function spalisho_wide_site(){
-			$current_id = spalisho_get_current_id();
+		function mellis_wide_site(){
+			$current_id = mellis_get_current_id();
 			$width_site = get_post_meta( $current_id, 'ova_met_wide_site', true );
 
 			if( $current_id && $width_site != 'global' ){
@@ -330,19 +330,19 @@ if( !class_exists('Spalisho_Hooks') ){
 			return $width;
 		}
 
-		function spalisho_theme_sidebar(){
-			$layout_sidebar = apply_filters( 'spalisho_get_layout', '' );
+		function mellis_theme_sidebar(){
+			$layout_sidebar = apply_filters( 'mellis_get_layout', '' );
 			return $layout_sidebar[0];
 		}
 
-		function spalisho_define_wide_boxed(){
+		function mellis_define_wide_boxed(){
 			return array(
-				'wide' => esc_html__('Wide', 'spalisho'),
-				'boxed' => esc_html__('Boxed', 'spalisho'),
+				'wide' => esc_html__('Wide', 'mellis'),
+				'boxed' => esc_html__('Boxed', 'mellis'),
 			);
 		}
 
-		function spalisho_blog_template(){
+		function mellis_blog_template(){
 			$blog_template = get_theme_mod( 'blog_template', 'default' );
 			if( isset( $_GET['blog_template'] ) ){
 				$blog_template = $_GET['blog_template'];
@@ -351,18 +351,18 @@ if( !class_exists('Spalisho_Hooks') ){
 		}
 		
 
-		function spalisho_comment_form_defaults( $defaults ){
+		function mellis_comment_form_defaults( $defaults ){
 
 			$defaults['comment_field'] = sprintf(
 											'<p class="comment-form-comment"> %s</p>',
-											'<textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required" placeholder="'.esc_attr__( 'Comment', 'spalisho' ).'"></textarea>'
+											'<textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required" placeholder="'.esc_attr__( 'Comment', 'mellis' ).'"></textarea>'
 										);
 
 			return $defaults;
 		
 		}
 
-		function spalisho_comment_form_default_fields( $fields ){
+		function mellis_comment_form_default_fields( $fields ){
 
 			$commenter     = wp_get_current_commenter();
 
@@ -373,7 +373,7 @@ if( !class_exists('Spalisho_Hooks') ){
 
 			$fields['author'] = sprintf( '<p class="comment-form-author">%s</p>',
 								sprintf(
-									'<input id="author" name="author" type="text" value="%s" placeholder="'.esc_attr__( 'Name', 'spalisho' ).'" size="30" maxlength="245"%s />',
+									'<input id="author" name="author" type="text" value="%s" placeholder="'.esc_attr__( 'Name', 'mellis' ).'" size="30" maxlength="245"%s />',
 									esc_attr( $commenter['comment_author'] ),
 									$html_req
 								) );
@@ -382,7 +382,7 @@ if( !class_exists('Spalisho_Hooks') ){
 								'<p class="comment-form-email"> %s</p>',
 								
 								sprintf(
-									'<input id="email" name="email" %s value="%s" size="30" maxlength="100" placeholder="'.esc_attr__( 'Email', 'spalisho' ).'" aria-describedby="email-notes"%s />',
+									'<input id="email" name="email" %s value="%s" size="30" maxlength="100" placeholder="'.esc_attr__( 'Email', 'mellis' ).'" aria-describedby="email-notes"%s />',
 									( $html5 ? 'type="email"' : 'type="text"' ),
 									esc_attr( $commenter['comment_author_email'] ),
 									$html_req
@@ -391,7 +391,7 @@ if( !class_exists('Spalisho_Hooks') ){
 			$fields['url'] = sprintf(
 							'<p class="comment-form-url">%s</p>',
 							sprintf(
-								'<input id="url" name="url" %s value="%s" size="30" maxlength="200" placeholder="'.esc_attr__( 'Website', 'spalisho' ).'" />',
+								'<input id="url" name="url" %s value="%s" size="30" maxlength="200" placeholder="'.esc_attr__( 'Website', 'mellis' ).'" />',
 								( $html5 ? 'type="url"' : 'type="text"' ),
 								esc_attr( $commenter['comment_author_url'] )
 							)
@@ -406,5 +406,5 @@ if( !class_exists('Spalisho_Hooks') ){
 	}
 }
 
-new Spalisho_Hooks();
+new Mellis_Hooks();
 

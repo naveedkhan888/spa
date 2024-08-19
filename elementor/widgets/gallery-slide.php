@@ -8,14 +8,14 @@ use Elementor\Group_Control_Border;
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
-class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
+class Mellis_Elementor_Gallery_Slide extends Widget_Base {
 
 	public function get_name() {
-		return 'spalisho_elementor_gallery_slide';
+		return 'mellis_elementor_gallery_slide';
 	}
 
 	public function get_title() {
-		return esc_html__( 'Ova Gallery Slide', 'spalisho' );
+		return esc_html__( 'Ova Gallery Slide', 'mellis' );
 	}
 
 	public function get_icon() {
@@ -23,13 +23,13 @@ class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
 	}
 
 	public function get_categories() {
-		return [ 'spalisho' ];
+		return [ 'mellis' ];
 	}
 
 	public function get_script_depends() {
 		wp_enqueue_style( 'fancybox', get_template_directory_uri().'/assets/libs/fancybox/fancybox.css' );
 		wp_enqueue_script( 'fancybox', get_template_directory_uri().'/assets/libs/fancybox/fancybox.umd.js', array('jquery'), false, true );
-		return [ 'spalisho-elementor-gallery-slide' ];
+		return [ 'mellis-elementor-gallery-slide' ];
 	}
 	
 	// Add Your Controll In This Function
@@ -39,7 +39,7 @@ class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
 		$this->start_controls_section(
 				'section_content',
 				[
-					'label' => esc_html__( 'Content', 'spalisho' ),
+					'label' => esc_html__( 'Content', 'mellis' ),
 				]
 			);	
 
@@ -49,7 +49,7 @@ class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
 			$repeater->add_control(
 				'icon',
 				[
-					'label' => esc_html__( 'Icon', 'spalisho' ),
+					'label' => esc_html__( 'Icon', 'mellis' ),
 					'type' => \Elementor\Controls_Manager::ICONS,
 					'default' => [
 						'value' => 'ovaicon-diagonal-arrow',
@@ -61,16 +61,16 @@ class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
 			$repeater->add_control(
 				'link',
 				[
-					'label' => esc_html__( 'Link', 'spalisho' ),
+					'label' => esc_html__( 'Link', 'mellis' ),
 					'type' => \Elementor\Controls_Manager::URL,
-					'placeholder' => esc_html__( 'https://your-link.com', 'spalisho' ),
+					'placeholder' => esc_html__( 'https://your-link.com', 'mellis' ),
 					'options' => [ 'url', 'is_external', 'nofollow' ],
 					'default' => [
 						'url' => '',
 						'is_external' => false,
 						'nofollow' => false,
 					],
-					'description' => esc_html__('( If you enter the link, it will redirect to the link instead of Fancybox popup )','spalisho'),
+					'description' => esc_html__('( If you enter the link, it will redirect to the link instead of Fancybox popup )','mellis'),
 					'dynamic' => [
 						'active' => true,
 					],
@@ -80,9 +80,9 @@ class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
 			$repeater->add_control(
 				'video_link',
 				[
-					'label' => esc_html__( 'Embed Video Link', 'spalisho' ),
+					'label' => esc_html__( 'Embed Video Link', 'mellis' ),
 					'type' => \Elementor\Controls_Manager::URL,
-					'placeholder' => esc_html__( 'https://your-link.com', 'spalisho' ),
+					'placeholder' => esc_html__( 'https://your-link.com', 'mellis' ),
 					'options' => [ 'url', 'is_external', 'nofollow' ],
 					'default' => [
 						'url' => '',
@@ -99,27 +99,27 @@ class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
 			$repeater->add_control(
 				'title',
 				[
-					'label' => esc_html__( 'Title', 'spalisho' ),
+					'label' => esc_html__( 'Title', 'mellis' ),
 					'type' => \Elementor\Controls_Manager::TEXTAREA,
 					'rows' => 3,
-					'default' => esc_html__( 'Body Massage', 'spalisho' ),
+					'default' => esc_html__( 'Body Massage', 'mellis' ),
 				]
 			);
 
 			$repeater->add_control(
 				'category',
 				[
-					'label' => esc_html__( 'Category', 'spalisho' ),
+					'label' => esc_html__( 'Category', 'mellis' ),
 					'type' => \Elementor\Controls_Manager::TEXTAREA,
 					'rows' => 3,
-					'default' => esc_html__( 'Spa & Beauty', 'spalisho' ),
+					'default' => esc_html__( 'Spa & Beauty', 'mellis' ),
 				]
 			);
 
 			$repeater->add_control(
 				'image',
 				[
-					'label' => esc_html__( 'Gallery Image', 'spalisho' ),
+					'label' => esc_html__( 'Gallery Image', 'mellis' ),
 					'type' => \Elementor\Controls_Manager::MEDIA,
 					'default' => [
 						'url' => \Elementor\Utils::get_placeholder_image_src(),
@@ -130,7 +130,7 @@ class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
 			$repeater->add_control(
 				'image_popup',
 				[
-					'label' => esc_html__( 'Popup Image', 'spalisho' ),
+					'label' => esc_html__( 'Popup Image', 'mellis' ),
 					'type' => \Elementor\Controls_Manager::MEDIA,
 					'default' => [
 						'url' => \Elementor\Utils::get_placeholder_image_src(),
@@ -141,24 +141,24 @@ class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
 			$this->add_control(
 				'list',
 				[
-					'label' => esc_html__( 'Items', 'spalisho' ),
+					'label' => esc_html__( 'Items', 'mellis' ),
 					'type' => \Elementor\Controls_Manager::REPEATER,
 					'fields' => $repeater->get_controls(),
 					'default' => [
 						[
-							'title' => esc_html__( 'Skin Treatments', 'spalisho' ),
+							'title' => esc_html__( 'Skin Treatments', 'mellis' ),
 						],
 						[
-							'title' => esc_html__( 'Body Massage', 'spalisho' ),
+							'title' => esc_html__( 'Body Massage', 'mellis' ),
 						],
 						[
-							'title' => esc_html__( 'Body Massage 2', 'spalisho' ),
+							'title' => esc_html__( 'Body Massage 2', 'mellis' ),
 						],
 						[
-							'title' => esc_html__( 'Hydro Therapy', 'spalisho' ),
+							'title' => esc_html__( 'Hydro Therapy', 'mellis' ),
 						],
 						[
-							'title' => esc_html__( 'Skin Treatments 2', 'spalisho' ),
+							'title' => esc_html__( 'Skin Treatments 2', 'mellis' ),
 						],
 					],
 					'title_field' => '{{{ title }}}',
@@ -171,14 +171,14 @@ class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
 		$this->start_controls_section(
 				'section_additional_options',
 				[
-					'label' => esc_html__( 'Additional Options', 'spalisho' ),
+					'label' => esc_html__( 'Additional Options', 'mellis' ),
 				]
 			);
 
 			$this->add_control(
 				'margin_items',
 				[
-					'label'   => esc_html__( 'Margin Right Items', 'spalisho' ),
+					'label'   => esc_html__( 'Margin Right Items', 'mellis' ),
 					'type'    => Controls_Manager::NUMBER,
 					'default' => 45,
 				]
@@ -188,9 +188,9 @@ class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
 			$this->add_control(
 				'item_number',
 				[
-					'label'       => esc_html__( 'Item Number', 'spalisho' ),
+					'label'       => esc_html__( 'Item Number', 'mellis' ),
 					'type'        => Controls_Manager::NUMBER,
-					'description' => esc_html__( 'Number Item', 'spalisho' ),
+					'description' => esc_html__( 'Number Item', 'mellis' ),
 					'default'     => 3,
 				]
 			);
@@ -198,9 +198,9 @@ class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
 			$this->add_control(
 				'slides_to_scroll',
 				[
-					'label'       => esc_html__( 'Slides to Scroll', 'spalisho' ),
+					'label'       => esc_html__( 'Slides to Scroll', 'mellis' ),
 					'type'        => Controls_Manager::NUMBER,
-					'description' => esc_html__( 'Set how many slides are scrolled per swipe.', 'spalisho' ),
+					'description' => esc_html__( 'Set how many slides are scrolled per swipe.', 'mellis' ),
 					'default'     => 1,
 				]
 			);
@@ -208,12 +208,12 @@ class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
 			$this->add_control(
 				'pause_on_hover',
 				[
-					'label'   => esc_html__( 'Pause on Hover', 'spalisho' ),
+					'label'   => esc_html__( 'Pause on Hover', 'mellis' ),
 					'type'    => Controls_Manager::SWITCHER,
 					'default' => 'yes',
 					'options' => [
-						'yes' => esc_html__( 'Yes', 'spalisho' ),
-						'no'  => esc_html__( 'No', 'spalisho' ),
+						'yes' => esc_html__( 'Yes', 'mellis' ),
+						'no'  => esc_html__( 'No', 'mellis' ),
 					],
 					'frontend_available' => true,
 				]
@@ -223,12 +223,12 @@ class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
 			$this->add_control(
 				'infinite',
 				[
-					'label'   => esc_html__( 'Infinite Loop', 'spalisho' ),
+					'label'   => esc_html__( 'Infinite Loop', 'mellis' ),
 					'type'    => Controls_Manager::SWITCHER,
 					'default' => 'yes',
 					'options' => [
-						'yes' => esc_html__( 'Yes', 'spalisho' ),
-						'no'  => esc_html__( 'No', 'spalisho' ),
+						'yes' => esc_html__( 'Yes', 'mellis' ),
+						'no'  => esc_html__( 'No', 'mellis' ),
 					],
 					'frontend_available' => true,
 				]
@@ -237,12 +237,12 @@ class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
 			$this->add_control(
 				'autoplay',
 				[
-					'label'   => esc_html__( 'Autoplay', 'spalisho' ),
+					'label'   => esc_html__( 'Autoplay', 'mellis' ),
 					'type'    => Controls_Manager::SWITCHER,
 					'default' => 'no',
 					'options' => [
-						'yes' => esc_html__( 'Yes', 'spalisho' ),
-						'no'  => esc_html__( 'No', 'spalisho' ),
+						'yes' => esc_html__( 'Yes', 'mellis' ),
+						'no'  => esc_html__( 'No', 'mellis' ),
 					],
 					'frontend_available' => true,
 				]
@@ -251,7 +251,7 @@ class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
 			$this->add_control(
 				'autoplay_speed',
 				[
-					'label'     => esc_html__( 'Autoplay Speed', 'spalisho' ),
+					'label'     => esc_html__( 'Autoplay Speed', 'mellis' ),
 					'type'      => Controls_Manager::NUMBER,
 					'default'   => 3000,
 					'step'      => 500,
@@ -265,7 +265,7 @@ class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
 			$this->add_control(
 				'smartspeed',
 				[
-					'label'   => esc_html__( 'Smart Speed', 'spalisho' ),
+					'label'   => esc_html__( 'Smart Speed', 'mellis' ),
 					'type'    => Controls_Manager::NUMBER,
 					'default' => 500,
 				]
@@ -274,12 +274,12 @@ class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
 			$this->add_control(
 				'dot_control',
 				[
-					'label'   => esc_html__( 'Show Dots', 'spalisho' ),
+					'label'   => esc_html__( 'Show Dots', 'mellis' ),
 					'type'    => Controls_Manager::SWITCHER,
 					'default' => 'no',
 					'options' => [
-						'yes' => esc_html__( 'Yes', 'spalisho' ),
-						'no'  => esc_html__( 'No', 'spalisho' ),
+						'yes' => esc_html__( 'Yes', 'mellis' ),
+						'no'  => esc_html__( 'No', 'mellis' ),
 					],
 					'frontend_available' => true,
 				]
@@ -288,12 +288,12 @@ class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
 			$this->add_control(
 				'nav_control',
 				[
-					'label'   => esc_html__( 'Show Nav', 'spalisho' ),
+					'label'   => esc_html__( 'Show Nav', 'mellis' ),
 					'type'    => Controls_Manager::SWITCHER,
 					'default' => 'no',
 					'options' => [
-						'yes' => esc_html__( 'Yes', 'spalisho' ),
-						'no'  => esc_html__( 'No', 'spalisho' ),
+						'yes' => esc_html__( 'Yes', 'mellis' ),
+						'no'  => esc_html__( 'No', 'mellis' ),
 					],
 					'frontend_available' => true,
 				]
@@ -305,7 +305,7 @@ class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
 		$this->start_controls_section(
 				'section_general_style',
 				[
-					'label' => esc_html__( 'General', 'spalisho' ),
+					'label' => esc_html__( 'General', 'mellis' ),
 					'tab' 	=> Controls_Manager::TAB_STYLE,
 				]
 			);
@@ -313,11 +313,11 @@ class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
 			$this->add_responsive_control(
 				'icon_box_padding',
 				[
-					'label' => esc_html__( 'Padding', 'spalisho' ),
+					'label' => esc_html__( 'Padding', 'mellis' ),
 					'type' => \Elementor\Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', '%', 'em', 'rem', 'custom' ],
 					'selectors' => [
-						'{{WRAPPER}} .xp-gallery-slide .gallery-slide .gallery-box .list-gallery .icon-box' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+						'{{WRAPPER}} .ova-gallery-slide .gallery-slide .gallery-box .list-gallery .icon-box' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 					],
 				]
 			);
@@ -325,7 +325,7 @@ class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
 			$this->add_control(
 				'icon_heading',
 				[
-					'label' => esc_html__( 'Icon', 'spalisho' ),
+					'label' => esc_html__( 'Icon', 'mellis' ),
 					'type' => \Elementor\Controls_Manager::HEADING,
 					'separator' => 'before'
 				]
@@ -334,7 +334,7 @@ class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
 			$this->add_responsive_control(
 				'icon_box_size',
 				[
-					'label' => esc_html__( 'Icon Size', 'spalisho' ),
+					'label' => esc_html__( 'Icon Size', 'mellis' ),
 					'type' => \Elementor\Controls_Manager::SLIDER,
 					'size_units' => [ 'px' ],
 					'range' => [
@@ -345,8 +345,8 @@ class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
 						],
 					],
 					'selectors' => [
-						'{{WRAPPER}} .xp-gallery-slide .gallery-slide .gallery-box .list-gallery .icon-box .icon i' => 'font-size: {{SIZE}}{{UNIT}};',
-						'{{WRAPPER}} .xp-gallery-slide .gallery-slide .gallery-box .list-gallery .icon-box .icon svg' => 'width: {{SIZE}}{{UNIT}};',
+						'{{WRAPPER}} .ova-gallery-slide .gallery-slide .gallery-box .list-gallery .icon-box .icon i' => 'font-size: {{SIZE}}{{UNIT}};',
+						'{{WRAPPER}} .ova-gallery-slide .gallery-slide .gallery-box .list-gallery .icon-box .icon svg' => 'width: {{SIZE}}{{UNIT}};',
 					],
 				]
 			);
@@ -354,7 +354,7 @@ class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
 			$this->add_responsive_control(
 				'icon_rotate',
 				[
-					'label' => esc_html__( 'Rotate', 'spalisho' ),
+					'label' => esc_html__( 'Rotate', 'mellis' ),
 					'type' => Controls_Manager::SLIDER,
 					'size_units' => [ 'deg', 'grad', 'rad', 'turn', 'custom' ],
 					'default' => [
@@ -367,7 +367,7 @@ class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
 						'unit' => 'deg',
 					],
 					'selectors' => [
-						'{{WRAPPER}} .xp-gallery-slide .gallery-slide .gallery-box .list-gallery .icon-box .icon i, {{WRAPPER}} .xp-gallery-slide .gallery-slide .gallery-box .list-gallery .icon-box .icon svg' => 'transform: rotate({{SIZE}}{{UNIT}});',
+						'{{WRAPPER}} .ova-gallery-slide .gallery-slide .gallery-box .list-gallery .icon-box .icon i, {{WRAPPER}} .ova-gallery-slide .gallery-slide .gallery-box .list-gallery .icon-box .icon svg' => 'transform: rotate({{SIZE}}{{UNIT}});',
 					],
 				]
 			);
@@ -375,12 +375,12 @@ class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
 			$this->add_control(
 				'icon_box_color',
 				[
-					'label' => esc_html__( 'Icon Color', 'spalisho' ),
+					'label' => esc_html__( 'Icon Color', 'mellis' ),
 					'type' => \Elementor\Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .xp-gallery-slide .gallery-slide .gallery-box .list-gallery .icon-box .icon i' => 'color: {{VALUE}}',
-						'{{WRAPPER}} .xp-gallery-slide .gallery-slide .gallery-box .list-gallery .icon-box .icon svg' => 'fill: {{VALUE}}',
-						'{{WRAPPER}} .xp-gallery-slide .gallery-slide .gallery-box .list-gallery .icon-box .icon svg path' => 'fill: {{VALUE}}',
+						'{{WRAPPER}} .ova-gallery-slide .gallery-slide .gallery-box .list-gallery .icon-box .icon i' => 'color: {{VALUE}}',
+						'{{WRAPPER}} .ova-gallery-slide .gallery-slide .gallery-box .list-gallery .icon-box .icon svg' => 'fill: {{VALUE}}',
+						'{{WRAPPER}} .ova-gallery-slide .gallery-slide .gallery-box .list-gallery .icon-box .icon svg path' => 'fill: {{VALUE}}',
 					],
 				]
 			);
@@ -388,10 +388,10 @@ class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
 			$this->add_control(
 				'icon_box_background_color',
 				[
-					'label' => esc_html__( 'Background Color', 'spalisho' ),
+					'label' => esc_html__( 'Background Color', 'mellis' ),
 					'type' => \Elementor\Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .xp-gallery-slide .gallery-slide .gallery-box .list-gallery .icon-box .icon' => 'background-color: {{VALUE}}',
+						'{{WRAPPER}} .ova-gallery-slide .gallery-slide .gallery-box .list-gallery .icon-box .icon' => 'background-color: {{VALUE}}',
 					],
 				]
 			);
@@ -399,7 +399,7 @@ class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
 			$this->add_control(
 				'overlay_heading',
 				[
-					'label' => esc_html__( 'Overlay', 'spalisho' ),
+					'label' => esc_html__( 'Overlay', 'mellis' ),
 					'type' => \Elementor\Controls_Manager::HEADING,
 					'separator' => 'before'
 				]
@@ -408,10 +408,10 @@ class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
 			$this->add_control(
 				'image_overlay_hover',
 				[
-					'label' => esc_html__( 'Background Color', 'spalisho' ),
+					'label' => esc_html__( 'Background Color', 'mellis' ),
 					'type' => \Elementor\Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .xp-gallery-slide .gallery-slide .gallery-box .list-gallery:before' => 'background-color: {{VALUE}}',
+						'{{WRAPPER}} .ova-gallery-slide .gallery-slide .gallery-box .list-gallery:before' => 'background-color: {{VALUE}}',
 					],
 				]
 			);
@@ -423,7 +423,7 @@ class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
 		$this->start_controls_section(
 				'title_style_section',
 				[
-					'label' => esc_html__( 'Title', 'spalisho' ),
+					'label' => esc_html__( 'Title', 'mellis' ),
 					'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 				]
 			);
@@ -431,11 +431,11 @@ class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
 			$this->add_responsive_control(
 				'title_margin',
 				[
-					'label' => esc_html__( 'Margin', 'spalisho' ),
+					'label' => esc_html__( 'Margin', 'mellis' ),
 					'type' => \Elementor\Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', '%', 'em', 'rem', 'custom' ],
 					'selectors' => [
-						'{{WRAPPER}} .xp-gallery-slide .gallery-slide .gallery-box .list-gallery .icon-box .title' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+						'{{WRAPPER}} .ova-gallery-slide .gallery-slide .gallery-box .list-gallery .icon-box .title' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 					],
 				]
 			);
@@ -443,11 +443,11 @@ class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
 			$this->add_responsive_control(
 				'title_padding',
 				[
-					'label' => esc_html__( 'Padding', 'spalisho' ),
+					'label' => esc_html__( 'Padding', 'mellis' ),
 					'type' => \Elementor\Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', '%', 'em', 'rem', 'custom' ],
 					'selectors' => [
-						'{{WRAPPER}} .xp-gallery-slide .gallery-slide .gallery-box .list-gallery .icon-box .title' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+						'{{WRAPPER}} .ova-gallery-slide .gallery-slide .gallery-box .list-gallery .icon-box .title' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 					],
 				]
 			);
@@ -456,17 +456,17 @@ class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
 				\Elementor\Group_Control_Typography::get_type(),
 				[
 					'name' => 'title_typography',
-					'selector' => '{{WRAPPER}} .xp-gallery-slide .gallery-slide .gallery-box .list-gallery .icon-box .title',
+					'selector' => '{{WRAPPER}} .ova-gallery-slide .gallery-slide .gallery-box .list-gallery .icon-box .title',
 				]
 			);
 
 			$this->add_control(
 				'title_color',
 				[
-					'label' => esc_html__( 'Color', 'spalisho' ),
+					'label' => esc_html__( 'Color', 'mellis' ),
 					'type' => \Elementor\Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .xp-gallery-slide .gallery-slide .gallery-box .list-gallery .icon-box .title' => 'color: {{VALUE}}',
+						'{{WRAPPER}} .ova-gallery-slide .gallery-slide .gallery-box .list-gallery .icon-box .title' => 'color: {{VALUE}}',
 					],
 				]
 			);
@@ -474,10 +474,10 @@ class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
 			$this->add_control(
 				'title_bgcolor',
 				[
-					'label' => esc_html__( 'Background Color', 'spalisho' ),
+					'label' => esc_html__( 'Background Color', 'mellis' ),
 					'type' => \Elementor\Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .xp-gallery-slide .gallery-slide .gallery-box .list-gallery .icon-box .title' => 'background-color: {{VALUE}}',
+						'{{WRAPPER}} .ova-gallery-slide .gallery-slide .gallery-box .list-gallery .icon-box .title' => 'background-color: {{VALUE}}',
 					],
 				]
 			);
@@ -488,7 +488,7 @@ class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
 		$this->start_controls_section(
 				'category_style_section',
 				[
-					'label' => esc_html__( 'Category', 'spalisho' ),
+					'label' => esc_html__( 'Category', 'mellis' ),
 					'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 				]
 			);
@@ -496,11 +496,11 @@ class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
 			$this->add_responsive_control(
 				'category_margin',
 				[
-					'label' => esc_html__( 'Margin', 'spalisho' ),
+					'label' => esc_html__( 'Margin', 'mellis' ),
 					'type' => \Elementor\Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', '%', 'em', 'rem', 'custom' ],
 					'selectors' => [
-						'{{WRAPPER}} .xp-gallery-slide .gallery-slide .gallery-box .list-gallery .icon-box .category' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+						'{{WRAPPER}} .ova-gallery-slide .gallery-slide .gallery-box .list-gallery .icon-box .category' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 					],
 				]
 			);
@@ -508,11 +508,11 @@ class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
 			$this->add_responsive_control(
 				'category_padding',
 				[
-					'label' => esc_html__( 'Padding', 'spalisho' ),
+					'label' => esc_html__( 'Padding', 'mellis' ),
 					'type' => \Elementor\Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', '%', 'em', 'rem', 'custom' ],
 					'selectors' => [
-						'{{WRAPPER}} .xp-gallery-slide .gallery-slide .gallery-box .list-gallery .icon-box .category' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+						'{{WRAPPER}} .ova-gallery-slide .gallery-slide .gallery-box .list-gallery .icon-box .category' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 					],
 				]
 			);
@@ -521,17 +521,17 @@ class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
 				\Elementor\Group_Control_Typography::get_type(),
 				[
 					'name' => 'category_typography',
-					'selector' => '{{WRAPPER}} .xp-gallery-slide .gallery-slide .gallery-box .list-gallery .icon-box .category',
+					'selector' => '{{WRAPPER}} .ova-gallery-slide .gallery-slide .gallery-box .list-gallery .icon-box .category',
 				]
 			);
 
 			$this->add_control(
 				'category_color',
 				[
-					'label' => esc_html__( 'Color', 'spalisho' ),
+					'label' => esc_html__( 'Color', 'mellis' ),
 					'type' => \Elementor\Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .xp-gallery-slide .gallery-slide .gallery-box .list-gallery .icon-box .category' => 'color: {{VALUE}}',
+						'{{WRAPPER}} .ova-gallery-slide .gallery-slide .gallery-box .list-gallery .icon-box .category' => 'color: {{VALUE}}',
 					],
 				]
 			);
@@ -539,10 +539,10 @@ class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
 			$this->add_control(
 				'category_bgcolor',
 				[
-					'label' => esc_html__( 'Background Color', 'spalisho' ),
+					'label' => esc_html__( 'Background Color', 'mellis' ),
 					'type' => \Elementor\Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .xp-gallery-slide .gallery-slide .gallery-box .list-gallery .icon-box .category' => 'background-color: {{VALUE}}',
+						'{{WRAPPER}} .ova-gallery-slide .gallery-slide .gallery-box .list-gallery .icon-box .category' => 'background-color: {{VALUE}}',
 					],
 				]
 			);
@@ -553,7 +553,7 @@ class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
 		$this->start_controls_section(
 			'section_dots',
 			[
-				'label' 	=> esc_html__( 'Dots', 'spalisho' ),
+				'label' 	=> esc_html__( 'Dots', 'mellis' ),
 				'tab' 		=> Controls_Manager::TAB_STYLE,
 				'condition' => [
 					'dot_control' => 'yes',
@@ -564,22 +564,22 @@ class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
 			$this->add_responsive_control(
 			 	'position_dots',
 			  	[
-				  	'label' 	=> esc_html__( 'Position', 'spalisho' ),
+				  	'label' 	=> esc_html__( 'Position', 'mellis' ),
 				  	'type' 		=> \Elementor\Controls_Manager::CHOOSE,
 				  	'options' 	=> [
 					  	'absolute' => [
-						  	'title' => esc_html__( 'Absolute', 'spalisho' ),
+						  	'title' => esc_html__( 'Absolute', 'mellis' ),
 						  	'icon' 	=> 'eicon-text-align-left',
 					  	],
 					  	'relative' => [
-						  	'title' => esc_html__( 'Relative', 'spalisho' ),
+						  	'title' => esc_html__( 'Relative', 'mellis' ),
 						  	'icon' 	=> 'eicon-text-align-center',
 					  	],
 					  	 
 				  	],
 				  	'toggle' 	=> true,
 				  	'selectors' => [
-					  	'{{WRAPPER}} .xp-gallery-slide .gallery-slide .owl-dots' => 'position: {{VALUE}};',
+					  	'{{WRAPPER}} .ova-gallery-slide .gallery-slide .owl-dots' => 'position: {{VALUE}};',
 				  	],
 			  	]
 			);
@@ -587,7 +587,7 @@ class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
 			$this->add_responsive_control(
 				'position_bottom',
 				[
-					'label' 		=> esc_html__( 'Position Bottom', 'spalisho' ),
+					'label' 		=> esc_html__( 'Position Bottom', 'mellis' ),
 					'type' 			=> Controls_Manager::SLIDER,
 					'size_units' 	=> [ 'px' ],
 					'range' => [
@@ -598,7 +598,7 @@ class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
 						]
 					],
 					'selectors' 	=> [
-						'{{WRAPPER}} .xp-gallery-slide .gallery-slide .owl-dots' => 'bottom: {{SIZE}}{{UNIT}};',
+						'{{WRAPPER}} .ova-gallery-slide .gallery-slide .owl-dots' => 'bottom: {{SIZE}}{{UNIT}};',
 					],
 				]
 			);
@@ -606,11 +606,11 @@ class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
 			$this->add_responsive_control(
 				'dots_margin',
 				[
-					'label' => esc_html__( 'Margin', 'spalisho' ),
+					'label' => esc_html__( 'Margin', 'mellis' ),
 					'type' => Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', 'em', '%' ],
 					'selectors' => [
-						'{{WRAPPER}} .xp-gallery-slide .gallery-slide .owl-dots' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+						'{{WRAPPER}} .ova-gallery-slide .gallery-slide .owl-dots' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 					],
 					'condition' => [
 						'position_dots' => 'relative',
@@ -622,7 +622,7 @@ class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
 			$this->add_control(
 				'style_dots',
 				[
-					'label' 	=> esc_html__( 'Dots', 'spalisho' ),
+					'label' 	=> esc_html__( 'Dots', 'mellis' ),
 					'type' 		=> \Elementor\Controls_Manager::HEADING,
 					'separator' => 'before',
 					'condition' => [
@@ -634,10 +634,10 @@ class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
 			$this->add_control(
 				'dot_color',
 				[
-					'label'     => esc_html__( 'Dot Color', 'spalisho' ),
+					'label'     => esc_html__( 'Dot Color', 'mellis' ),
 					'type'      => Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .xp-gallery-slide .owl-carousel .owl-dots button' => 'background-color : {{VALUE}};',
+						'{{WRAPPER}} .ova-gallery-slide .owl-carousel .owl-dots button' => 'background-color : {{VALUE}};',
 						
 					],
 					'condition' => [
@@ -649,7 +649,7 @@ class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
 			$this->add_responsive_control(
 				'dot_width',
 				[
-					'label' 		=> esc_html__( 'Dots width', 'spalisho' ),
+					'label' 		=> esc_html__( 'Dots width', 'mellis' ),
 					'type' 			=> Controls_Manager::SLIDER,
 					'size_units' 	=> [ 'px' ],
 					'range' => [
@@ -660,7 +660,7 @@ class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
 						]
 					],
 					'selectors' 	=> [
-						'{{WRAPPER}} .xp-gallery-slide .gallery-slide .owl-dots button' => 'width: {{SIZE}}{{UNIT}};',
+						'{{WRAPPER}} .ova-gallery-slide .gallery-slide .owl-dots button' => 'width: {{SIZE}}{{UNIT}};',
 					],
 				]
 			);
@@ -668,7 +668,7 @@ class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
 			$this->add_responsive_control(
 				'dot_height',
 				[
-					'label' 		=> esc_html__( 'Dots Height', 'spalisho' ),
+					'label' 		=> esc_html__( 'Dots Height', 'mellis' ),
 					'type' 			=> Controls_Manager::SLIDER,
 					'size_units' 	=> [ 'px' ],
 					'range' => [
@@ -679,7 +679,7 @@ class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
 						]
 					],
 					'selectors' 	=> [
-						'{{WRAPPER}} .xp-gallery-slide .gallery-slide .owl-dots button' => 'height: {{SIZE}}{{UNIT}};',
+						'{{WRAPPER}} .ova-gallery-slide .gallery-slide .owl-dots button' => 'height: {{SIZE}}{{UNIT}};',
 					],
 				]
 			);
@@ -687,11 +687,11 @@ class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
 			$this->add_responsive_control(
 				'border_radius_dot',
 				array(
-					'label'      => esc_html__( 'Border Radius', 'spalisho' ),
+					'label'      => esc_html__( 'Border Radius', 'mellis' ),
 					'type'       => Controls_Manager::DIMENSIONS,
 					'size_units' => array( 'px', '%' ),
 					'selectors'  => array(
-						'{{WRAPPER}} .xp-gallery-slide .gallery-slide .owl-dots button' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+						'{{WRAPPER}} .ova-gallery-slide .gallery-slide .owl-dots button' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 					),
 				)
 			);
@@ -699,7 +699,7 @@ class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
 			$this->add_control(
 				'style_dot_active',
 				[
-					'label' 	=> esc_html__( 'Dots Active', 'spalisho' ),
+					'label' 	=> esc_html__( 'Dots Active', 'mellis' ),
 					'type' 		=> \Elementor\Controls_Manager::HEADING,
 					'separator' => 'before',
 					'condition' => [
@@ -711,10 +711,10 @@ class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
 			$this->add_control(
 				'dot_color_active',
 				[
-					'label'     => esc_html__( 'Dot Color Active', 'spalisho' ),
+					'label'     => esc_html__( 'Dot Color Active', 'mellis' ),
 					'type'      => Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .xp-gallery-slide .gallery-slide .owl-dots button.active' => 'background-color : {{VALUE}};',
+						'{{WRAPPER}} .ova-gallery-slide .gallery-slide .owl-dots button.active' => 'background-color : {{VALUE}};',
 						
 					],
 					'condition' => [
@@ -726,7 +726,7 @@ class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
 			$this->add_responsive_control(
 				'dot_width_active',
 				[
-					'label' 		=> esc_html__( 'Dots Width Active', 'spalisho' ),
+					'label' 		=> esc_html__( 'Dots Width Active', 'mellis' ),
 					'type' 			=> Controls_Manager::SLIDER,
 					'size_units' 	=> [ 'px' ],
 					'range' => [
@@ -737,14 +737,14 @@ class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
 						]
 					],
 					'selectors' 	=> [
-						'{{WRAPPER}} .xp-gallery-slide .gallery-slide .owl-dots button.active' => 'width: {{SIZE}}{{UNIT}};',
+						'{{WRAPPER}} .ova-gallery-slide .gallery-slide .owl-dots button.active' => 'width: {{SIZE}}{{UNIT}};',
 					],
 				]
 			);
 			$this->add_responsive_control(
 				'dot_height_active',
 				[
-					'label' 		=> esc_html__( 'Dots Height Active', 'spalisho' ),
+					'label' 		=> esc_html__( 'Dots Height Active', 'mellis' ),
 					'type' 			=> Controls_Manager::SLIDER,
 					'size_units' 	=> [ 'px' ],
 					'range' => [
@@ -755,7 +755,7 @@ class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
 						]
 					],
 					'selectors' 	=> [
-						'{{WRAPPER}} .xp-gallery-slide .gallery-slide .owl-dots button.active' => 'height: {{SIZE}}{{UNIT}};',
+						'{{WRAPPER}} .ova-gallery-slide .gallery-slide .owl-dots button.active' => 'height: {{SIZE}}{{UNIT}};',
 					],
 				]
 			);
@@ -768,7 +768,7 @@ class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
 		$this->start_controls_section(
 			'section_nav',
 			[
-				'label' 	=> esc_html__( 'Nav', 'spalisho' ),
+				'label' 	=> esc_html__( 'Nav', 'mellis' ),
 				'tab' 		=> Controls_Manager::TAB_STYLE,
 				'condition' => [
 					'nav_control' => 'yes',
@@ -779,7 +779,7 @@ class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
 			$this->add_responsive_control(
 				'nav_size',
 				[
-					'label' 		=> esc_html__( 'Nav Size', 'spalisho' ),
+					'label' 		=> esc_html__( 'Nav Size', 'mellis' ),
 					'type' 			=> Controls_Manager::SLIDER,
 					'size_units' 	=> [ 'px' ],
 					'range' => [
@@ -790,7 +790,7 @@ class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
 						]
 					],
 					'selectors' 	=> [
-						'{{WRAPPER}} .xp-gallery-slide .gallery-slide .owl-nav button' => 'width: {{SIZE}}{{UNIT}};height: {{SIZE}}{{UNIT}};',
+						'{{WRAPPER}} .ova-gallery-slide .gallery-slide .owl-nav button' => 'width: {{SIZE}}{{UNIT}};height: {{SIZE}}{{UNIT}};',
 					],
 				]
 			);
@@ -798,7 +798,7 @@ class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
 			$this->add_responsive_control(
 				'icon_size',
 				[
-					'label' 		=> esc_html__( 'Icon Size', 'spalisho' ),
+					'label' 		=> esc_html__( 'Icon Size', 'mellis' ),
 					'type' 			=> Controls_Manager::SLIDER,
 					'size_units' 	=> [ 'px' ],
 					'range' => [
@@ -809,7 +809,7 @@ class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
 						]
 					],
 					'selectors' 	=> [
-						'{{WRAPPER}} .xp-gallery-slide .gallery-slide .owl-nav button i' => 'font-size: {{SIZE}}{{UNIT}};',
+						'{{WRAPPER}} .ova-gallery-slide .gallery-slide .owl-nav button i' => 'font-size: {{SIZE}}{{UNIT}};',
 					],
 				]
 			);
@@ -818,11 +818,11 @@ class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
 			$this->add_responsive_control(
 				'border_radius_nav',
 				array(
-					'label'      => esc_html__( 'Border Radius', 'spalisho' ),
+					'label'      => esc_html__( 'Border Radius', 'mellis' ),
 					'type'       => Controls_Manager::DIMENSIONS,
 					'size_units' => array( 'px', '%' ),
 					'selectors'  => array(
-						'{{WRAPPER}} .xp-gallery-slide .gallery-slide .owl-nav button' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+						'{{WRAPPER}} .ova-gallery-slide .gallery-slide .owl-nav button' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 					),
 				)
 			);
@@ -832,17 +832,17 @@ class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
 				$this->start_controls_tab(
 		            'tab_nav',
 		            [
-		                'label' => esc_html__( 'Normal', 'spalisho' ),
+		                'label' => esc_html__( 'Normal', 'mellis' ),
 		            ]
 		        );
 
 					$this->add_control(
 						'nav_color',
 						[
-							'label'     => esc_html__( 'Color', 'spalisho' ),
+							'label'     => esc_html__( 'Color', 'mellis' ),
 							'type'      => Controls_Manager::COLOR,
 							'selectors' => [
-								'{{WRAPPER}} .xp-gallery-slide .gallery-slide .owl-nav button' => 'color : {{VALUE}};',		
+								'{{WRAPPER}} .ova-gallery-slide .gallery-slide .owl-nav button' => 'color : {{VALUE}};',		
 							],
 							'condition' => [
 								'nav_control' => 'yes',
@@ -853,10 +853,10 @@ class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
 					$this->add_control(
 						'nav_bg',
 						[
-							'label'     => esc_html__( 'Background', 'spalisho' ),
+							'label'     => esc_html__( 'Background', 'mellis' ),
 							'type'      => Controls_Manager::COLOR,
 							'selectors' => [
-								'{{WRAPPER}} .xp-gallery-slide .gallery-slide .owl-nav button' => 'background-color : {{VALUE}};',
+								'{{WRAPPER}} .ova-gallery-slide .gallery-slide .owl-nav button' => 'background-color : {{VALUE}};',
 							],
 							'condition' => [
 								'nav_control' => 'yes',
@@ -869,16 +869,16 @@ class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
 			    $this->start_controls_tab(
 		            'tab_hover',
 		            [
-		                'label' => esc_html__( 'Hover', 'spalisho' ),
+		                'label' => esc_html__( 'Hover', 'mellis' ),
 		            ]
 		        );
 		        	$this->add_control(
 						'nav_next_color_hover',
 						[
-							'label'     => esc_html__( 'Color', 'spalisho' ),
+							'label'     => esc_html__( 'Color', 'mellis' ),
 							'type'      => Controls_Manager::COLOR,
 							'selectors' => [
-								'{{WRAPPER}} .xp-gallery-slide .gallery-slide .owl-nav button:hover ' => 'color : {{VALUE}};',		
+								'{{WRAPPER}} .ova-gallery-slide .gallery-slide .owl-nav button:hover ' => 'color : {{VALUE}};',		
 							],
 							'condition' => [
 								'nav_control' => 'yes',
@@ -889,10 +889,10 @@ class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
 					$this->add_control(
 						'nav_bg_hover',
 						[
-							'label'     => esc_html__( 'Background', 'spalisho' ),
+							'label'     => esc_html__( 'Background', 'mellis' ),
 							'type'      => Controls_Manager::COLOR,
 							'selectors' => [
-								'{{WRAPPER}} .xp-gallery-slide .gallery-slide .owl-nav button:hover' => 'background-color : {{VALUE}};',
+								'{{WRAPPER}} .ova-gallery-slide .gallery-slide .owl-nav button:hover' => 'background-color : {{VALUE}};',
 								
 							],
 							'condition' => [
@@ -933,7 +933,7 @@ class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
 
 		<?php if ( !empty($list) ) : ?>
 
-			<div class="xp-gallery-slide">
+			<div class="ova-gallery-slide">
 				<div class="gallery-slide owl-carousel" data-options="<?php echo esc_attr(json_encode($data_options)); ?>" >
 
 					<?php foreach ( $list as $key => $item ) :
@@ -946,7 +946,7 @@ class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
                         $img_popup_id 	= $item['image_popup']['id'];
                         $img_popup_url 	= $item['image_popup']['url'];
 
-                        $alt 			= get_post_meta($image_id, '_wp_attachment_image_alt', true) ? get_post_meta($image_id, '_wp_attachment_image_alt', true) : esc_html__('Gallery Slide','spalisho');  
+                        $alt 			= get_post_meta($image_id, '_wp_attachment_image_alt', true) ? get_post_meta($image_id, '_wp_attachment_image_alt', true) : esc_html__('Gallery Slide','mellis');  
 
                         $caption        = wp_get_attachment_caption( $image_id );
 
@@ -1016,4 +1016,4 @@ class Spalisho_Elementor_Gallery_Slide extends Widget_Base {
 
 	
 }
-$widgets_manager->register( new Spalisho_Elementor_Gallery_Slide() );
+$widgets_manager->register( new Mellis_Elementor_Gallery_Slide() );

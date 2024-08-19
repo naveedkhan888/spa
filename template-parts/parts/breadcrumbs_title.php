@@ -2,19 +2,19 @@
 
  if ( is_home () && is_front_page () ) {
         
-    esc_html_e('Home','spalisho');
+    esc_html_e('Home','mellis');
 
 } elseif ( is_front_page() ) {
     
-    esc_html_e('Home','spalisho');
+    esc_html_e('Home','mellis');
 
 }elseif ( is_home () ) {
 
-    esc_html_e('Blog','spalisho');
+    esc_html_e('Blog','mellis');
 
 } elseif ( is_search () ) {
 
-    esc_html_e('Search','spalisho');
+    esc_html_e('Search','mellis');
 
 } else if(is_category () ){
 
@@ -22,7 +22,7 @@
 
 }else if (is_tag ()){
 
-    esc_html_e('Tags','spalisho');
+    esc_html_e('Tags','mellis');
 
 }else if( is_tax () || is_archive() ){
 
@@ -33,5 +33,5 @@
     echo get_the_title();
 
 }else if(  is_404() ) {
-    esc_html_e('page not found','spalisho');
+    esc_html_e('page not found','mellis');
 }

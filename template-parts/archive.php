@@ -1,4 +1,4 @@
-<?php $blog_template = apply_filters( 'spalisho_blog_template', '' ); ?>
+<?php $blog_template = apply_filters( 'mellis_blog_template', '' ); ?>
 <div class="row_site">
 	<div class="container_site">
 		<div id="main-content" class="main">
@@ -15,8 +15,8 @@
 		    	<?php 
 		    		 $args = array(
 		                'type'      => 'list',
-		                'next_text' => '<i class="xpicon-next"></i>',
-		                'prev_text' => '<i class="xpicon-back"></i>',
+		                'next_text' => '<i class="ovaicon-next"></i>',
+		                'prev_text' => '<i class="ovaicon-back"></i>',
 		            );
 
 		            the_posts_pagination($args);

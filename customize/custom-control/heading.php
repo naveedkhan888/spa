@@ -3,7 +3,7 @@ if ( ! class_exists( 'WP_Customize_Control' ) ) return NULL;
 /**
  * Class OTF_Customize_Control_Heading
  */
-class Spalisho_Customize_Control_Heading extends WP_Customize_Control {
+class Mellis_Customize_Control_Heading extends WP_Customize_Control {
 
     public $type = 'heading';
 

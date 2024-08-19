@@ -1,4 +1,4 @@
-.xp-blog{
+.ova-blog{
 	position: relative;
 	list-style-type: none;
 	padding: 0;
@@ -8,7 +8,7 @@
 	gap:30px;
     grid-template-columns: 1fr 1fr 1fr;
 
-	&.xp-column_2{
+	&.ova-column_2{
 		grid-template-columns: 1fr 1fr;
 		.item{
 			.img{
@@ -19,39 +19,39 @@
 		}
     } 
 
-    &.xp-column_4{
+    &.ova-column_4{
     	grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 
     @media (max-width: 1200px) {
-		&.xp-column_2{
+		&.ova-column_2{
     	    grid-template-columns: 1fr 1fr;
 	    }
-	    &.xp-column_3{
+	    &.ova-column_3{
     	    grid-template-columns: 1fr 1fr 1fr;
 	    }
-	    &.xp-column_4{
+	    &.ova-column_4{
     	    grid-template-columns: 1fr 1fr 1fr;
 	    }
 	}
 
 	@media (max-width: 1024px) {
-		&.xp-column_2,
-		&.xp-column_3,
-		&.xp-column_4{
+		&.ova-column_2,
+		&.ova-column_3,
+		&.ova-column_4{
     	    grid-template-columns: 1fr 1fr;
 	    }    
 	}
 
 	@media (max-width: 600px) {
-		&.xp-column_2,
-		&.xp-column_3,
-		&.xp-column_4{
+		&.ova-column_2,
+		&.ova-column_3,
+		&.ova-column_4{
     	    grid-template-columns: 1fr;
 	    }    
 	}
 
-	&.xp-blog-template_2 {
+	&.ova-blog-template_2 {
 		&.template_2_style2 {
 			.item {
 				.content {

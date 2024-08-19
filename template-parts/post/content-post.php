@@ -2,7 +2,7 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class('post-wrap '. $sticky_class); ?>  >
 		
-		<?php if( ( has_post_format('audio') || has_post_format('gallery') || has_post_format('video' ) || has_post_thumbnail() ) && spalisho_post_show_media() == 'yes' ): ?>	
+		<?php if( ( has_post_format('audio') || has_post_format('gallery') || has_post_format('video' ) || has_post_thumbnail() ) && mellis_post_show_media() == 'yes' ): ?>	
 			<div class="post-media">
 				<?php 
 					if( has_post_format('audio') ){
@@ -27,7 +27,7 @@
 		<?php endif; ?>
 
 		
-		<?php if( spalisho_post_show_title() == 'yes' ){
+		<?php if( mellis_post_show_title() == 'yes' ){
 			get_template_part( 'template-parts/parts/title' );
 		} ?>
 		
@@ -40,7 +40,7 @@
 			<?php get_template_part( 'template-parts/parts/content' ); ?>
 		</div>
 
-		<?php if(has_tag() &&  spalisho_post_show_tag() == 'yes' ){ ?>
+		<?php if(has_tag() &&  mellis_post_show_tag() == 'yes' ){ ?>
 			<div class="post-tags">
 				<?php get_template_part( 'template-parts/parts/tags' ); ?>
 			</div>

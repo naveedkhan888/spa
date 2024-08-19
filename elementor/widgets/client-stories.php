@@ -9,16 +9,16 @@ use Elementor\Utils;
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 
-class Spalisho_Elementor_Client_Stories extends Widget_Base {
+class Mellis_Elementor_Client_Stories extends Widget_Base {
 
 	
 	public function get_name() {
-		return 'spalisho_elementor_client_stories';
+		return 'mellis_elementor_client_stories';
 	}
 
 	
 	public function get_title() {
-		return esc_html__( 'Client Stories', 'spalisho' );
+		return esc_html__( 'Client Stories', 'mellis' );
 	}
 
 	
@@ -28,7 +28,7 @@ class Spalisho_Elementor_Client_Stories extends Widget_Base {
 
 	
 	public function get_categories() {
-		return [ 'spalisho' ];
+		return [ 'mellis' ];
 	}
 
 	public function get_script_depends() {
@@ -41,20 +41,20 @@ class Spalisho_Elementor_Client_Stories extends Widget_Base {
 		$this->start_controls_section(
 			'section_content',
 			[
-				'label' => esc_html__( 'Content', 'spalisho' ),
+				'label' => esc_html__( 'Content', 'mellis' ),
 			]
 		);
 
 		    $this->add_control(
 				'columns',
 				[
-					'label' 	=> esc_html__( 'Columns', 'spalisho' ),
+					'label' 	=> esc_html__( 'Columns', 'mellis' ),
 					'type' 		=> \Elementor\Controls_Manager::SELECT,
 					'default' 	=> 'column2',
 					'options' 	=> [
-						'column1' => esc_html__( 'Column 1', 'spalisho' ),
-						'column2' => esc_html__( 'Column 2', 'spalisho' ),
-						'column3' => esc_html__( 'Column 3', 'spalisho' ),
+						'column1' => esc_html__( 'Column 1', 'mellis' ),
+						'column2' => esc_html__( 'Column 2', 'mellis' ),
+						'column3' => esc_html__( 'Column 3', 'mellis' ),
 					],
 				]
 			);
@@ -62,7 +62,7 @@ class Spalisho_Elementor_Client_Stories extends Widget_Base {
 			$this->add_control(
 				'icon',
 				[
-					'label' => esc_html__( 'Icon', 'spalisho' ),
+					'label' => esc_html__( 'Icon', 'mellis' ),
 					'type' => Controls_Manager::ICONS,
 					'default' 	=> [
 						'value' 	=> 'flaticon flaticon-quotation',
@@ -74,7 +74,7 @@ class Spalisho_Elementor_Client_Stories extends Widget_Base {
 			$this->add_control(
 				'background_image',
 				[
-					'label'   => esc_html__( 'Hover Background Image', 'spalisho' ),
+					'label'   => esc_html__( 'Hover Background Image', 'mellis' ),
 					'type'    => \Elementor\Controls_Manager::MEDIA,
 				]
 			);
@@ -85,7 +85,7 @@ class Spalisho_Elementor_Client_Stories extends Widget_Base {
 			    $repeater->add_control(
 					'link_address',
 					[
-						'label'   => esc_html__( 'Link', 'spalisho' ),
+						'label'   => esc_html__( 'Link', 'mellis' ),
 						'type'    => \Elementor\Controls_Manager::URL,
 						'dynamic' => [
 							'active' => true,
@@ -96,7 +96,7 @@ class Spalisho_Elementor_Client_Stories extends Widget_Base {
 			    $repeater->add_control(
 					'image_author',
 					[
-						'label'   => esc_html__( 'Author Image', 'spalisho' ),
+						'label'   => esc_html__( 'Author Image', 'mellis' ),
 						'type'    => \Elementor\Controls_Manager::MEDIA,
 						'default' => [
 							'url' => Utils::get_placeholder_image_src(),
@@ -107,16 +107,16 @@ class Spalisho_Elementor_Client_Stories extends Widget_Base {
 				$repeater->add_control(
 					'name_author',
 					[
-						'label'   => esc_html__( 'Author Name', 'spalisho' ),
+						'label'   => esc_html__( 'Author Name', 'mellis' ),
 						'type'    => \Elementor\Controls_Manager::TEXT,
-						'default' => esc_html__( 'Edna Marxten', 'spalisho' ),
+						'default' => esc_html__( 'Edna Marxten', 'mellis' ),
 					]
 				);
 
 				$repeater->add_control(
 					'date',
 					[
-						'label'   => esc_html__( 'Date', 'spalisho' ),
+						'label'   => esc_html__( 'Date', 'mellis' ),
 						'type'    => \Elementor\Controls_Manager::TEXT,
 		                'default' => '20 / 6 / 2022',
 					]
@@ -125,36 +125,36 @@ class Spalisho_Elementor_Client_Stories extends Widget_Base {
 				$repeater->add_control(
 					'story',
 					[
-						'label'   => esc_html__( 'Story ', 'spalisho' ),
+						'label'   => esc_html__( 'Story ', 'mellis' ),
 						'type'    => \Elementor\Controls_Manager::TEXTAREA,
-						'default' => esc_html__( "Aliquam hendrerit a augue insuscipit. Etiam aliquam massa quis des mauris commodo venenatis ligula commodo leez sed blandit convallis dignissim simply free text onec vel pellentesque neque.", 'spalisho' ),
+						'default' => esc_html__( "Aliquam hendrerit a augue insuscipit. Etiam aliquam massa quis des mauris commodo venenatis ligula commodo leez sed blandit convallis dignissim simply free text onec vel pellentesque neque.", 'mellis' ),
 					]
 				);
 
 			$this->add_control(
 				'tab_item',
 				[
-					'label'       => esc_html__( 'Items Story', 'spalisho' ),
+					'label'       => esc_html__( 'Items Story', 'mellis' ),
 					'type'        => Controls_Manager::REPEATER,
 					'fields'      => $repeater->get_controls(),
 					'default' => [
 						[
-							'name_author' => esc_html__('Edna Marxten', 'spalisho'),
+							'name_author' => esc_html__('Edna Marxten', 'mellis'),
 						],
 						[
-							'name_author' => esc_html__('Mike Hardson', 'spalisho'),
+							'name_author' => esc_html__('Mike Hardson', 'mellis'),
 						],
 						[
-							'name_author' => esc_html__('Kevin Martin', 'spalisho'),
+							'name_author' => esc_html__('Kevin Martin', 'mellis'),
 						],
 						[
-							'name_author' => esc_html__('Jessica Brown', 'spalisho'),
+							'name_author' => esc_html__('Jessica Brown', 'mellis'),
 						],
 						[
-							'name_author' => esc_html__('Sarah Albert', 'spalisho'),
+							'name_author' => esc_html__('Sarah Albert', 'mellis'),
 						],
 						[
-							'name_author' => esc_html__('David Cooper', 'spalisho'),
+							'name_author' => esc_html__('David Cooper', 'mellis'),
 						],
 					],
 					'title_field' => '{{{ name_author }}}',
@@ -167,7 +167,7 @@ class Spalisho_Elementor_Client_Stories extends Widget_Base {
 		$this->start_controls_section(
 			'section_quote_story',
 			[
-				'label' => esc_html__( 'Quote', 'spalisho' ),
+				'label' => esc_html__( 'Quote', 'mellis' ),
 				'tab'   => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -175,10 +175,10 @@ class Spalisho_Elementor_Client_Stories extends Widget_Base {
 			$this->add_control(
 				'quote_color',
 				[
-					'label'     => esc_html__( 'Color', 'spalisho' ),
+					'label'     => esc_html__( 'Color', 'mellis' ),
 					'type'      => Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .xp-client-stories .item-client-stories .quote-icon i' => 'color : {{VALUE}};',
+						'{{WRAPPER}} .ova-client-stories .item-client-stories .quote-icon i' => 'color : {{VALUE}};',
 					],
 				]
 			);
@@ -186,10 +186,10 @@ class Spalisho_Elementor_Client_Stories extends Widget_Base {
 			$this->add_control(
 				'quote_bgcolor',
 				[
-					'label'     => esc_html__( 'Background Color', 'spalisho' ),
+					'label'     => esc_html__( 'Background Color', 'mellis' ),
 					'type'      => Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .xp-client-stories .item-client-stories .quote-icon' => 'background-color : {{VALUE}};',
+						'{{WRAPPER}} .ova-client-stories .item-client-stories .quote-icon' => 'background-color : {{VALUE}};',
 					],
 				]
 			);
@@ -201,7 +201,7 @@ class Spalisho_Elementor_Client_Stories extends Widget_Base {
 		$this->start_controls_section(
 			'section_name_story',
 			[
-				'label' => esc_html__( 'Name', 'spalisho' ),
+				'label' => esc_html__( 'Name', 'mellis' ),
 				'tab'   => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -210,17 +210,17 @@ class Spalisho_Elementor_Client_Stories extends Widget_Base {
 				Group_Control_Typography::get_type(),
 				[
 					'name'     => 'name_typography',
-					'selector' => '{{WRAPPER}} .xp-client-stories .item-client-stories .client_info .name',
+					'selector' => '{{WRAPPER}} .ova-client-stories .item-client-stories .client_info .name',
 				]
 			);
 
 			$this->add_control(
 				'name_color',
 				[
-					'label'     => esc_html__( 'Color', 'spalisho' ),
+					'label'     => esc_html__( 'Color', 'mellis' ),
 					'type'      => Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .xp-client-stories .item-client-stories .client_info .name' => 'color : {{VALUE}};',
+						'{{WRAPPER}} .ova-client-stories .item-client-stories .client_info .name' => 'color : {{VALUE}};',
 					],
 				]
 			);
@@ -228,11 +228,11 @@ class Spalisho_Elementor_Client_Stories extends Widget_Base {
 			$this->add_responsive_control(
 				'name_margin',
 				[
-					'label'      => esc_html__( 'Margin', 'spalisho' ),
+					'label'      => esc_html__( 'Margin', 'mellis' ),
 					'type'       => Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', 'em', '%' ],
 					'selectors'  => [
-						'{{WRAPPER}} .xp-client-stories .item-client-stories .client_info .name' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+						'{{WRAPPER}} .ova-client-stories .item-client-stories .client_info .name' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 					],
 				]
 			);
@@ -244,7 +244,7 @@ class Spalisho_Elementor_Client_Stories extends Widget_Base {
 		$this->start_controls_section(
 			'section_date_story',
 			[
-				'label' => esc_html__( 'Date', 'spalisho' ),
+				'label' => esc_html__( 'Date', 'mellis' ),
 				'tab'   => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -253,17 +253,17 @@ class Spalisho_Elementor_Client_Stories extends Widget_Base {
 				Group_Control_Typography::get_type(),
 				[
 					'name'     => 'date_typography',
-					'selector' => '{{WRAPPER}} .xp-client-stories .item-client-stories .client_info .date',
+					'selector' => '{{WRAPPER}} .ova-client-stories .item-client-stories .client_info .date',
 				]
 			);
 
 			$this->add_control(
 				'date_color',
 				[
-					'label'     => esc_html__( 'Color', 'spalisho' ),
+					'label'     => esc_html__( 'Color', 'mellis' ),
 					'type'      => Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .xp-client-stories .item-client-stories .client_info .date' => 'color : {{VALUE}};',
+						'{{WRAPPER}} .ova-client-stories .item-client-stories .client_info .date' => 'color : {{VALUE}};',
 					],
 				]
 			);
@@ -271,10 +271,10 @@ class Spalisho_Elementor_Client_Stories extends Widget_Base {
 			$this->add_control(
 				'date_bgcolor',
 				[
-					'label'     => esc_html__( 'Background Color', 'spalisho' ),
+					'label'     => esc_html__( 'Background Color', 'mellis' ),
 					'type'      => Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .xp-client-stories .item-client-stories .client_info .date' => 'background-color : {{VALUE}};',
+						'{{WRAPPER}} .ova-client-stories .item-client-stories .client_info .date' => 'background-color : {{VALUE}};',
 					],
 				]
 			);
@@ -282,11 +282,11 @@ class Spalisho_Elementor_Client_Stories extends Widget_Base {
 			$this->add_responsive_control(
 				'date_padding',
 				[
-					'label'      => esc_html__( 'Padding', 'spalisho' ),
+					'label'      => esc_html__( 'Padding', 'mellis' ),
 					'type'       => Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', 'em', '%' ],
 					'selectors'  => [
-						'{{WRAPPER}} .xp-client-stories .item-client-stories .client_info .date' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+						'{{WRAPPER}} .ova-client-stories .item-client-stories .client_info .date' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 					],
 				]
 			);
@@ -298,7 +298,7 @@ class Spalisho_Elementor_Client_Stories extends Widget_Base {
 		$this->start_controls_section(
 			'section_content_story',
 			[
-				'label' => esc_html__( 'Content Story', 'spalisho' ),
+				'label' => esc_html__( 'Content Story', 'mellis' ),
 				'tab'   => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -307,17 +307,17 @@ class Spalisho_Elementor_Client_Stories extends Widget_Base {
 				Group_Control_Typography::get_type(),
 				[
 					'name'     => 'content_story_typography',
-					'selector' => '{{WRAPPER}} .xp-client-stories .item-client-stories .story',
+					'selector' => '{{WRAPPER}} .ova-client-stories .item-client-stories .story',
 				]
 			);
 
 			$this->add_control(
 				'content_color',
 				[
-					'label'     => esc_html__( 'Color', 'spalisho' ),
+					'label'     => esc_html__( 'Color', 'mellis' ),
 					'type'      => Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .xp-client-stories .item-client-stories .story' => 'color : {{VALUE}};',
+						'{{WRAPPER}} .ova-client-stories .item-client-stories .story' => 'color : {{VALUE}};',
 					],
 				]
 			);
@@ -325,11 +325,11 @@ class Spalisho_Elementor_Client_Stories extends Widget_Base {
 			$this->add_responsive_control(
 				'content_margin',
 				[
-					'label'      => esc_html__( 'Margin', 'spalisho' ),
+					'label'      => esc_html__( 'Margin', 'mellis' ),
 					'type'       => Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', 'em', '%' ],
 					'selectors'  => [
-						'{{WRAPPER}} .xp-client-stories .item-client-stories .story' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+						'{{WRAPPER}} .ova-client-stories .item-client-stories .story' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 					],
 				]
 			);
@@ -337,11 +337,11 @@ class Spalisho_Elementor_Client_Stories extends Widget_Base {
 			$this->add_responsive_control(
 				'content_padding',
 				[
-					'label'      => esc_html__( 'Padding', 'spalisho' ),
+					'label'      => esc_html__( 'Padding', 'mellis' ),
 					'type'       => Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', 'em', '%' ],
 					'selectors'  => [
-						'{{WRAPPER}} .xp-client-stories .item-client-stories .story' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+						'{{WRAPPER}} .ova-client-stories .item-client-stories .story' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 					],
 				]
 			);
@@ -355,7 +355,7 @@ class Spalisho_Elementor_Client_Stories extends Widget_Base {
 		$this->start_controls_section(
 			'section_item_client_stories',
 			[
-				'label' => esc_html__( 'Item Client Stories', 'spalisho' ),
+				'label' => esc_html__( 'Item Client Stories', 'mellis' ),
 				'tab'   => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -363,10 +363,10 @@ class Spalisho_Elementor_Client_Stories extends Widget_Base {
 			$this->add_control(
 				'item_client_stories_background_color',
 				[
-					'label'     => esc_html__( 'Background Color', 'spalisho' ),
+					'label'     => esc_html__( 'Background Color', 'mellis' ),
 					'type'      => Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .xp-client-stories .item-client-stories' => 'background-color : {{VALUE}};',
+						'{{WRAPPER}} .ova-client-stories .item-client-stories' => 'background-color : {{VALUE}};',
 					],
 				]
 			);
@@ -374,11 +374,11 @@ class Spalisho_Elementor_Client_Stories extends Widget_Base {
 			$this->add_responsive_control(
 				'item_client_stories_padding',
 				[
-					'label'      => esc_html__( 'Padding', 'spalisho' ),
+					'label'      => esc_html__( 'Padding', 'mellis' ),
 					'type'       => Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', 'em', '%' ],
 					'selectors'  => [
-						'{{WRAPPER}} .xp-client-stories .item-client-stories' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+						'{{WRAPPER}} .ova-client-stories .item-client-stories' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 					],
 				]
 			);
@@ -387,8 +387,8 @@ class Spalisho_Elementor_Client_Stories extends Widget_Base {
 				\Elementor\Group_Control_Border::get_type(),
 				[
 					'name' => 'item_client_stories_border',
-					'label' => esc_html__( 'Border', 'spalisho' ),
-					'selector' => '{{WRAPPER}} .xp-client-stories .item-client-stories',
+					'label' => esc_html__( 'Border', 'mellis' ),
+					'selector' => '{{WRAPPER}} .ova-client-stories .item-client-stories',
 				]
 			);
 
@@ -409,7 +409,7 @@ class Spalisho_Elementor_Client_Stories extends Widget_Base {
 		$background_image = $settings['background_image']['url'];
 
 		 ?>
-		    <div class="xp-client-stories <?php echo esc_attr( $column ); ?>">
+		    <div class="ova-client-stories <?php echo esc_attr( $column ); ?>">
 
 				<?php if(!empty($tab_item)) : foreach ($tab_item as $item) :
                     
@@ -426,7 +426,7 @@ class Spalisho_Elementor_Client_Stories extends Widget_Base {
 					<div class="item-client-stories">
                         
 						<?php if( $item['image_author'] != '' ) { ?>
-							<?php $alt = isset($item['name_author']) && $item['name_author'] ? $item['name_author'] : esc_html__( 'story','spalisho' ); ?>
+							<?php $alt = isset($item['name_author']) && $item['name_author'] ? $item['name_author'] : esc_html__( 'story','mellis' ); ?>
 							<img class="client-img" src="<?php echo esc_attr($item['image_author']['url']) ?>" alt="<?php echo esc_attr( $alt ); ?>" >
 						<?php } ?>
                         
@@ -480,4 +480,4 @@ class Spalisho_Elementor_Client_Stories extends Widget_Base {
 
 	
 }
-$widgets_manager->register( new Spalisho_Elementor_Client_Stories() );
+$widgets_manager->register( new Mellis_Elementor_Client_Stories() );

@@ -8,16 +8,16 @@ use Elementor\Utils;
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 
-class Spalisho_Elementor_Search_Popup extends Widget_Base {
+class Mellis_Elementor_Search_Popup extends Widget_Base {
 
 	
 	public function get_name() {
-		return 'spalisho_elementor_search_popup';
+		return 'mellis_elementor_search_popup';
 	}
 
 	
 	public function get_title() {
-		return esc_html__( 'Search Popup', 'spalisho' );
+		return esc_html__( 'Search Popup', 'mellis' );
 	}
 
 	
@@ -27,11 +27,11 @@ class Spalisho_Elementor_Search_Popup extends Widget_Base {
 
 	
 	public function get_categories() {
-		return [ 'spalisho' ];
+		return [ 'mellis' ];
 	}
 
 	public function get_script_depends() {
-		return [ 'spalisho-elementor-search-popup' ];
+		return [ 'mellis-elementor-search-popup' ];
 	}
 	
 	// Add Your Controll In This Function
@@ -41,17 +41,17 @@ class Spalisho_Elementor_Search_Popup extends Widget_Base {
 		$this->start_controls_section(
 			'section_search',
 			[
-				'label' => esc_html__( 'Search', 'spalisho' ),
+				'label' => esc_html__( 'Search', 'mellis' ),
 			]
 		);	
 			
 			$this->add_control(
 				'color_icon_search',
 				[
-					'label' => __( 'Icon Color', 'spalisho' ),
+					'label' => __( 'Icon Color', 'mellis' ),
 					'type' => \Elementor\Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .xp_wrap_search_popup i' => 'color: {{VALUE}}',
+						'{{WRAPPER}} .ova_wrap_search_popup i' => 'color: {{VALUE}}',
 					],
 				]
 			);
@@ -59,10 +59,10 @@ class Spalisho_Elementor_Search_Popup extends Widget_Base {
 			$this->add_control(
 				'color_hover_icon_search',
 				[
-					'label' => __( 'Icon Hover Color', 'spalisho' ),
+					'label' => __( 'Icon Hover Color', 'mellis' ),
 					'type' => \Elementor\Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .xp_wrap_search_popup i:hover' => 'color: {{VALUE}}',
+						'{{WRAPPER}} .ova_wrap_search_popup i:hover' => 'color: {{VALUE}}',
 					],
 				]
 			);
@@ -70,10 +70,10 @@ class Spalisho_Elementor_Search_Popup extends Widget_Base {
 			$this->add_control(
 				'background_icon_search',
 				[
-					'label' => __( 'Background', 'spalisho' ),
+					'label' => __( 'Background', 'mellis' ),
 					'type' => \Elementor\Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .xp_wrap_search_popup i' => 'background-color: {{VALUE}}',
+						'{{WRAPPER}} .ova_wrap_search_popup i' => 'background-color: {{VALUE}}',
 					],
 				]
 			);
@@ -81,10 +81,10 @@ class Spalisho_Elementor_Search_Popup extends Widget_Base {
 			$this->add_control(
 				'background_icon_search_hover',
 				[
-					'label' => __( 'Background hover', 'spalisho' ),
+					'label' => __( 'Background hover', 'mellis' ),
 					'type' => \Elementor\Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .xp_wrap_search_popup i:hover' => 'background-color: {{VALUE}}',
+						'{{WRAPPER}} .ova_wrap_search_popup i:hover' => 'background-color: {{VALUE}}',
 					],
 				]
 			);
@@ -92,11 +92,11 @@ class Spalisho_Elementor_Search_Popup extends Widget_Base {
 			$this->add_responsive_control(
 				'icon_search_padding',
 				[
-					'label'      => esc_html__( 'Padding', 'spalisho' ),
+					'label'      => esc_html__( 'Padding', 'mellis' ),
 					'type'       => Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', 'em', '%' ],
 					'selectors'  => [
-						'{{WRAPPER}} .xp_wrap_search_popup i' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+						'{{WRAPPER}} .ova_wrap_search_popup i' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 					],
 				]
 			);
@@ -104,11 +104,11 @@ class Spalisho_Elementor_Search_Popup extends Widget_Base {
 			$this->add_responsive_control(
 				'border_radius_icon',
 				array(
-					'label'      => esc_html__( 'Border Radius', 'spalisho' ),
+					'label'      => esc_html__( 'Border Radius', 'mellis' ),
 					'type'       => Controls_Manager::DIMENSIONS,
 					'size_units' => array( 'px', '%' ),
 					'selectors'  => array(
-						'{{WRAPPER}} .xp_wrap_search_popup i' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+						'{{WRAPPER}} .ova_wrap_search_popup i' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 					),
 				)
 			);
@@ -117,8 +117,8 @@ class Spalisho_Elementor_Search_Popup extends Widget_Base {
 				\Elementor\Group_Control_Border::get_type(),
 				[
 					'name' 		=> 'border_icon',
-					'label' 	=> esc_html__( 'Border', 'spalisho' ),
-					'selector' 	=> '{{WRAPPER}} .xp_wrap_search_popup',
+					'label' 	=> esc_html__( 'Border', 'mellis' ),
+					'selector' 	=> '{{WRAPPER}} .ova_wrap_search_popup',
 				]
 			);
 
@@ -127,7 +127,7 @@ class Spalisho_Elementor_Search_Popup extends Widget_Base {
 			$this->add_control(
 				'size_icon',
 				[
-					'label' => __( 'Size Icon', 'spalisho' ),
+					'label' => __( 'Size Icon', 'mellis' ),
 					'type' => Controls_Manager::SLIDER,
 					'size_units' => [ 'px', '%' ],
 					'range' => [
@@ -144,7 +144,7 @@ class Spalisho_Elementor_Search_Popup extends Widget_Base {
 						'unit' => 'px',
 					],
 					'selectors' => [
-						'{{WRAPPER}} .xp_wrap_search_popup i' => 'font-size: {{SIZE}}{{UNIT}};',
+						'{{WRAPPER}} .ova_wrap_search_popup i' => 'font-size: {{SIZE}}{{UNIT}};',
 					],
 				]
 			);
@@ -156,17 +156,17 @@ class Spalisho_Elementor_Search_Popup extends Widget_Base {
 		$this->start_controls_section(
 			'section_search_POPUP',
 			[
-				'label' => esc_html__( 'Search popup', 'spalisho' ),
+				'label' => esc_html__( 'Search popup', 'mellis' ),
 			]
 		);	
 
 			$this->add_control(
 				'color_icon_search_popup',
 				[
-					'label' => __( 'Icon Color', 'spalisho' ),
+					'label' => __( 'Icon Color', 'mellis' ),
 					'type' => \Elementor\Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .xp_wrap_search_popup .xp_search_popup .container .search-form .search-submit i' => 'color: {{VALUE}}',
+						'{{WRAPPER}} .ova_wrap_search_popup .ova_search_popup .container .search-form .search-submit i' => 'color: {{VALUE}}',
 					],
 				]
 			);
@@ -174,10 +174,10 @@ class Spalisho_Elementor_Search_Popup extends Widget_Base {
 			$this->add_control(
 				'color_hover_icon_search_popup',
 				[
-					'label' => __( 'Icon Hover Color', 'spalisho' ),
+					'label' => __( 'Icon Hover Color', 'mellis' ),
 					'type' => \Elementor\Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .xp_wrap_search_popup .xp_search_popup .container .search-form .search-submit:hover i' => 'color: {{VALUE}}',
+						'{{WRAPPER}} .ova_wrap_search_popup .ova_search_popup .container .search-form .search-submit:hover i' => 'color: {{VALUE}}',
 					],
 				]
 			);
@@ -185,10 +185,10 @@ class Spalisho_Elementor_Search_Popup extends Widget_Base {
 			$this->add_control(
 				'background_icon_search_popup',
 				[
-					'label' => __( 'Background', 'spalisho' ),
+					'label' => __( 'Background', 'mellis' ),
 					'type' => \Elementor\Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .xp_wrap_search_popup .xp_search_popup .container .search-form .search-submit' => 'background-color: {{VALUE}}',
+						'{{WRAPPER}} .ova_wrap_search_popup .ova_search_popup .container .search-form .search-submit' => 'background-color: {{VALUE}}',
 					],
 				]
 			);
@@ -196,10 +196,10 @@ class Spalisho_Elementor_Search_Popup extends Widget_Base {
 			$this->add_control(
 				'background_icon_search_hover_popup',
 				[
-					'label' => __( 'Background hover', 'spalisho' ),
+					'label' => __( 'Background hover', 'mellis' ),
 					'type' => \Elementor\Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .xp_wrap_search_popup .xp_search_popup .container .search-form .search-submit:hover' => 'background-color: {{VALUE}}',
+						'{{WRAPPER}} .ova_wrap_search_popup .ova_search_popup .container .search-form .search-submit:hover' => 'background-color: {{VALUE}}',
 					],
 				]
 			);
@@ -217,15 +217,15 @@ class Spalisho_Elementor_Search_Popup extends Widget_Base {
 		$settings = $this->get_settings();
 
 		?>
-			<div class="xp_wrap_search_popup">
-				<i class="xpicon ovaicon-search"></i>
-				<div class="xp_search_popup">
+			<div class="ova_wrap_search_popup">
+				<i class="ovaicon ovaicon-search"></i>
+				<div class="ova_search_popup">
 					<div class="search-popup__overlay"></div>
 					<div class="container">
 						<form role="search" method="get" class="search-form" action="<?php echo esc_url( home_url( '/' ) ) ; ?>">
-						        <input type="search" class="search-field" placeholder="<?php esc_attr_e( 'Search …', 'spalisho' ) ?>" value="<?php echo get_search_query() ?>" name="s" title="<?php esc_attr_e( 'Search for:', 'spalisho' ) ?>" />
+						        <input type="search" class="search-field" placeholder="<?php esc_attr_e( 'Search …', 'mellis' ) ?>" value="<?php echo get_search_query() ?>" name="s" title="<?php esc_attr_e( 'Search for:', 'mellis' ) ?>" />
 				   			 	<button type="submit" class="search-submit">
-				   			 		<i class="xpicon ovaicon-search"></i>
+				   			 		<i class="ovaicon ovaicon-search"></i>
 				   			 	</button>
 						</form>									
 					</div>
@@ -236,4 +236,4 @@ class Spalisho_Elementor_Search_Popup extends Widget_Base {
 
 	
 }
-$widgets_manager->register( new Spalisho_Elementor_Search_Popup() );
+$widgets_manager->register( new Mellis_Elementor_Search_Popup() );

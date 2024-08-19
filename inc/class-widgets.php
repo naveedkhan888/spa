@@ -1,25 +1,25 @@
 <?php if (!defined( 'ABSPATH' )) exit;
 
-if( !class_exists('Spalisho_Widgets') ){
+if( !class_exists('Mellis_Widgets') ){
 	
-	class Spalisho_Widgets {
+	class Mellis_Widgets {
 
 		function __construct(){
 
 			/**
 			 * Regsiter Widget
 			 */
-			add_action( 'widgets_init', array( $this, 'spalisho_register_widgets' ) );
+			add_action( 'widgets_init', array( $this, 'mellis_register_widgets' ) );
 
 		}
 		
 
-		function spalisho_register_widgets() {
+		function mellis_register_widgets() {
 		  
 		  $args_blog = array(
-		    'name' => esc_html__( 'Main Sidebar', 'spalisho'),
+		    'name' => esc_html__( 'Main Sidebar', 'mellis'),
 		    'id' => "main-sidebar",
-		    'description' => esc_html__( 'Main Sidebar', 'spalisho' ),
+		    'description' => esc_html__( 'Main Sidebar', 'mellis' ),
 		    'class' => '',
 		    'before_widget' => '<div id="%1$s" class="widget %2$s">',
 		    'after_widget' => "</div>",
@@ -28,11 +28,11 @@ if( !class_exists('Spalisho_Widgets') ){
 		  );
 		  register_sidebar( $args_blog );
 
-		  if( spalisho_is_woo_active() ){
+		  if( mellis_is_woo_active() ){
 		    $args_woo = array(
-		      'name' => esc_html__( 'WooCommerce Sidebar', 'spalisho'),
+		      'name' => esc_html__( 'WooCommerce Sidebar', 'mellis'),
 		      'id' => "woo-sidebar",
-		      'description' => esc_html__( 'WooCommerce Sidebar', 'spalisho' ),
+		      'description' => esc_html__( 'WooCommerce Sidebar', 'mellis' ),
 		      'class' => '',
 		      'before_widget' => '<div id="%1$s" class="widget woo_widget %2$s">',
 		      'after_widget' => "</div>",
@@ -51,4 +51,4 @@ if( !class_exists('Spalisho_Widgets') ){
 	}
 }
 
-return new Spalisho_Widgets();
+return new Mellis_Widgets();

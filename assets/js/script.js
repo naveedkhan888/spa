@@ -1,7 +1,7 @@
 (function($){
 	"use strict";
 
-	function spalisho_menu(){
+	function mellis_menu(){
 
 		var $btn = $('.main-navigation .menu-toggle'),
         $menu = $('.main-navigation');
@@ -23,8 +23,8 @@
         }
 	}
 
-	function spalisho_set_menu_direction($item) {
-        var sub = $item.children('.sub-menu').filter(':not(.xp-mega-menu)'),
+	function mellis_set_menu_direction($item) {
+        var sub = $item.children('.sub-menu').filter(':not(.ova-mega-menu)'),
             offset = $item.offset(),
             width = $item.outerWidth(),
             screen_width = $(window).width(),
@@ -41,16 +41,16 @@
         }
     }
 
-    function spalisho_hover_submenu() {
+    function mellis_hover_submenu() {
         $('.primary-navigation .menu-item-has-children').hover(function (event) {
             var $item = $(event.currentTarget);
-            spalisho_set_menu_direction($item);
+            mellis_set_menu_direction($item);
         });
     }
 
 		
 	/* Click scroll button at bottom */	
-	function spalisho_scrollUp(options) {
+	function mellis_scrollUp(options) {
 	       
 		var defaults = {
 		    scrollName: 'scrollUp', 
@@ -59,7 +59,7 @@
 		    animation: 'fade', 
 		    animationInSpeed: 200, 
 		    animationOutSpeed: 200, 
-		    scrollText: '<i class="xpicon-up-arrow"></i>', 
+		    scrollText: '<i class="ovaicon-up-arrow"></i>', 
 		    scrollImg: false, 
 		    activeOverlay: false 
 		};
@@ -220,28 +220,28 @@
         
     });
 
-    $('.spalisho_stretch_column_left').each( function() {
+    $('.mellis_stretch_column_left').each( function() {
 		var that = $(this);
 		if ( that.length != null ) {
-			spalisho_calculate_width( that );
+			mellis_calculate_width( that );
 		}
 	});
 
-    $('.spalisho_stretch_column_right').each( function() {
+    $('.mellis_stretch_column_right').each( function() {
 		var that = $(this);
 		if ( that.length != null ) {
-			spalisho_calculate_width( that );
+			mellis_calculate_width( that );
 		}
 	});
 
 	/* Calculate width with special class */
-	function spalisho_calculate_width( directly ){
+	function mellis_calculate_width( directly ){
 
 		if( $(directly).length ){
 
 			var col_offset = $(directly).offset();
 
-			if( directly.hasClass('spalisho_stretch_column_left') ){
+			if( directly.hasClass('mellis_stretch_column_left') ){
 
 				var ending_left = col_offset.left;
 				var width_left 	= $(directly).outerWidth() + ending_left;
@@ -251,15 +251,15 @@
 				
 
 				if ( $('body').hasClass('rtl') ) {
-					$('.spalisho_stretch_column_left .elementor-widget-wrap').css('width', width_right);
-					$('.spalisho_stretch_column_left .elementor-widget-wrap').css('margin-right', -ending_right);
+					$('.mellis_stretch_column_left .elementor-widget-wrap').css('width', width_right);
+					$('.mellis_stretch_column_left .elementor-widget-wrap').css('margin-right', -ending_right);
 				} else {
-					$('.spalisho_stretch_column_left .elementor-widget-wrap').css('width', width_left);
-					$('.spalisho_stretch_column_left .elementor-widget-wrap').css('margin-left', -ending_left);
+					$('.mellis_stretch_column_left .elementor-widget-wrap').css('width', width_left);
+					$('.mellis_stretch_column_left .elementor-widget-wrap').css('margin-left', -ending_left);
 				}
 			}
 
-			if( directly.hasClass('spalisho_stretch_column_right') ){
+			if( directly.hasClass('mellis_stretch_column_right') ){
 
 				var ending_left = col_offset.left;
 				var width_left 	= $(directly).outerWidth() + ending_left;
@@ -279,25 +279,25 @@
 	}
 
 	$(window).resize(function () {
-		$('.spalisho_stretch_column_left').each( function() {
+		$('.mellis_stretch_column_left').each( function() {
 			var that = $(this);
 			if ( that.length != null ) {
-				spalisho_calculate_width( that );
+				mellis_calculate_width( that );
 			}
 		});
 
-		$('.spalisho_stretch_column_right').each( function() {
+		$('.mellis_stretch_column_right').each( function() {
 			var that = $(this);
 			if ( that.length != null ) {
-				spalisho_calculate_width( that );
+				mellis_calculate_width( that );
 			}
 		});
 	});
 
-    spalisho_hover_submenu();
-	spalisho_menu();
+    mellis_hover_submenu();
+	mellis_menu();
 	
 	/* Scroll to top */
-	spalisho_scrollUp();
+	mellis_scrollUp();
 
 })(jQuery);

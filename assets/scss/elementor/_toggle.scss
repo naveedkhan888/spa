@@ -2,18 +2,18 @@
 	.elementor-toggle {
 		.elementor-toggle-item {
 			.elementor-tab-title {
-				.xp-toggle-title {
+				.ova-toggle-title {
 					display: flex;
 					padding-right: 5px;
 				}
 
-				.xp-icon {
+				.ova-icon {
 					i {
 						line-height: 26px;
 					}
 				}
 				
-				.xp-before-title {
+				.ova-before-title {
 					position: relative;
 
 					&:before {
@@ -28,7 +28,7 @@
 					}
 				}
 
-				.xp-boxes-icon {
+				.ova-boxes-icon {
 					display: inline-flex;
 					align-items: center;
 					justify-content: center;

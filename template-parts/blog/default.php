@@ -2,7 +2,7 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class('post-wrap '. $sticky_class); ?>  >
 		
-		<?php if( ( has_post_format('audio') || has_post_format('gallery') || has_post_format('video' ) || has_post_thumbnail() ) && spalisho_blog_show_media() == 'yes' ) : ?>
+		<?php if( ( has_post_format('audio') || has_post_format('gallery') || has_post_format('video' ) || has_post_thumbnail() ) && mellis_blog_show_media() == 'yes' ) : ?>
 			<div class="post-media">
 				<?php 
 					if( has_post_format('audio') ){
@@ -26,21 +26,21 @@
 			</div>
 		<?php endif; ?>
 
-		<?php if( spalisho_blog_show_title() == 'yes' ){
+		<?php if( mellis_blog_show_title() == 'yes' ){
 			get_template_part( 'template-parts/parts/title' );
 		} ?>
 		
 		<?php get_template_part( 'template-parts/parts/meta' ); ?>
 		
 
-		<?php if( spalisho_blog_show_excerpt() == 'yes' ){ ?>
+		<?php if( mellis_blog_show_excerpt() == 'yes' ){ ?>
 			<div class="post-excerpt">
 				<?php get_template_part( 'template-parts/parts/excerpt' ); ?>
 			</div>
 		<?php } ?>
 
 		
-		<?php if( spalisho_blog_show_readmore() == 'yes' ){
+		<?php if( mellis_blog_show_readmore() == 'yes' ){
 			get_template_part( 'template-parts/parts/readmore' ); 
 		} ?>
 		

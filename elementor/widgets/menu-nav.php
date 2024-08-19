@@ -6,14 +6,14 @@ use Elementor\Controls_Manager;
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
-class Spalisho_Elementor_Menu_Nav extends Widget_Base {
+class Mellis_Elementor_Menu_Nav extends Widget_Base {
 
 	public function get_name() {
-		return 'spalisho_elementor_menu_nav';
+		return 'mellis_elementor_menu_nav';
 	}
 
 	public function get_title() {
-		return esc_html__( 'Menu', 'spalisho' );
+		return esc_html__( 'Menu', 'mellis' );
 	}
 
 	public function get_icon() {
@@ -33,7 +33,7 @@ class Spalisho_Elementor_Menu_Nav extends Widget_Base {
 		$this->start_controls_section(
 			'section_menu_type',
 			[
-				'label' => esc_html__( 'Global', 'spalisho' ),
+				'label' => esc_html__( 'Global', 'mellis' ),
 			]
 		);
 
@@ -47,7 +47,7 @@ class Spalisho_Elementor_Menu_Nav extends Widget_Base {
 			$this->add_control(
 				'menu_slug',
 				[
-					'label' => esc_html__( 'Select Menu', 'spalisho' ),
+					'label' => esc_html__( 'Select Menu', 'mellis' ),
 					'type' => Controls_Manager::SELECT,
 					'options' => $list_menu,
 					'default' => '',
@@ -64,7 +64,7 @@ class Spalisho_Elementor_Menu_Nav extends Widget_Base {
 		$this->start_controls_section(
 			'section_content',
 			[
-				'label' => esc_html__( 'Parent Menu', 'spalisho' ),
+				'label' => esc_html__( 'Parent Menu', 'mellis' ),
 			]
 		);
 			
@@ -81,7 +81,7 @@ class Spalisho_Elementor_Menu_Nav extends Widget_Base {
 			$this->add_responsive_control(
 				'menu_padding',
 				[
-					'label' => esc_html__( 'Padding', 'spalisho' ),
+					'label' => esc_html__( 'Padding', 'mellis' ),
 					'type' => Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', 'em', '%' ],
 					'selectors' => [
@@ -93,7 +93,7 @@ class Spalisho_Elementor_Menu_Nav extends Widget_Base {
 			$this->add_responsive_control(
 				'menu_li_padding',
 				[
-					'label' => esc_html__( 'Item Padding', 'spalisho' ),
+					'label' => esc_html__( 'Item Padding', 'mellis' ),
 					'type' => Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', 'em', '%' ],
 					'selectors' => [
@@ -105,7 +105,7 @@ class Spalisho_Elementor_Menu_Nav extends Widget_Base {
 			$this->add_responsive_control(
 				'menu_a_padding',
 				[
-					'label' => esc_html__( 'Content Padding', 'spalisho' ),
+					'label' => esc_html__( 'Content Padding', 'mellis' ),
 					'type' => Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', 'em', '%' ],
 					'selectors' => [
@@ -124,14 +124,14 @@ class Spalisho_Elementor_Menu_Nav extends Widget_Base {
 				$this->start_controls_tab(
 					'style_parent_menu_normal_tab',
 					[
-						'label' => esc_html__( 'Normal', 'spalisho' ),
+						'label' => esc_html__( 'Normal', 'mellis' ),
 					]
 				);
 
 					$this->add_control(
 						'link_color',
 						[
-							'label' => esc_html__( 'Menu Color', 'spalisho' ),
+							'label' => esc_html__( 'Menu Color', 'mellis' ),
 							'type' => Controls_Manager::COLOR,
 							'default' => '',
 							'selectors' => [
@@ -143,13 +143,13 @@ class Spalisho_Elementor_Menu_Nav extends Widget_Base {
 					$this->add_control(
 						'line_color',
 						[
-							'label' => esc_html__( 'Line Color', 'spalisho' ),
+							'label' => esc_html__( 'Line Color', 'mellis' ),
 							'type' => Controls_Manager::COLOR,
 							'default' => '',
 							'selectors' => [
 								'{{WRAPPER}} .main-navigation ul.menu > li > a:before' => 'background-color: {{VALUE}};',
 							],
-							'description' => esc_html__( '( Use with class ova-menu-custom-line )', 'spalisho' ),
+							'description' => esc_html__( '( Use with class ova-menu-custom-line )', 'mellis' ),
 						]
 					);
 
@@ -161,14 +161,14 @@ class Spalisho_Elementor_Menu_Nav extends Widget_Base {
 				$this->start_controls_tab(
 					'style_parent_menu_hover_tab',
 					[
-						'label' => esc_html__( 'Hover', 'spalisho' ),
+						'label' => esc_html__( 'Hover', 'mellis' ),
 					]
 				);
 
 					$this->add_control(
 						'link_color_hover',
 						[
-							'label' => esc_html__( 'Menu Color', 'spalisho' ),
+							'label' => esc_html__( 'Menu Color', 'mellis' ),
 							'type' => Controls_Manager::COLOR,
 							'default' => '',
 							'selectors' => [
@@ -186,14 +186,14 @@ class Spalisho_Elementor_Menu_Nav extends Widget_Base {
 				$this->start_controls_tab(
 					'style_parent_menu_active_tab',
 					[
-						'label' => esc_html__( 'Active', 'spalisho' ),
+						'label' => esc_html__( 'Active', 'mellis' ),
 					]
 				);
 
 					$this->add_control(
 						'link_color_active',
 						[
-							'label' => esc_html__( 'Menu Color', 'spalisho' ),
+							'label' => esc_html__( 'Menu Color', 'mellis' ),
 							'type' => Controls_Manager::COLOR,
 							'default' => '',
 							'selectors' => [
@@ -206,8 +206,8 @@ class Spalisho_Elementor_Menu_Nav extends Widget_Base {
 					$this->add_control(
 						'custom_line_width',
 						[
-							'label' => esc_html__( 'Line Width', 'spalisho' ),
-							'description' => esc_html__( '( Use with class ova-menu-custom-line )', 'spalisho' ),
+							'label' => esc_html__( 'Line Width', 'mellis' ),
+							'description' => esc_html__( '( Use with class ova-menu-custom-line )', 'mellis' ),
 							'type' => Controls_Manager::SLIDER,
 							'size_units' => [ 'px', '%' ],
 							'range' => [
@@ -240,7 +240,7 @@ class Spalisho_Elementor_Menu_Nav extends Widget_Base {
 		$this->start_controls_section(
 			'section_submenu_content',
 			[
-				'label' => esc_html__( 'Sub Menu', 'spalisho' ),
+				'label' => esc_html__( 'Sub Menu', 'mellis' ),
 			]
 		);	
 
@@ -257,7 +257,7 @@ class Spalisho_Elementor_Menu_Nav extends Widget_Base {
 			$this->add_control(
 				'submenu_bg_color',
 				[
-					'label' => esc_html__( 'Background', 'spalisho' ),
+					'label' => esc_html__( 'Background', 'mellis' ),
 					'type' => Controls_Manager::COLOR,
 					'default' => '',
 					'selectors' => [
@@ -271,7 +271,7 @@ class Spalisho_Elementor_Menu_Nav extends Widget_Base {
 			$this->add_control(
 				'submenu_bg_item_hover_color',
 				[
-					'label' => esc_html__( 'Background Item Hover', 'spalisho' ),
+					'label' => esc_html__( 'Background Item Hover', 'mellis' ),
 					'type' => Controls_Manager::COLOR,
 					'default' => '',
 					'selectors' => [
@@ -292,14 +292,14 @@ class Spalisho_Elementor_Menu_Nav extends Widget_Base {
 				$this->start_controls_tab(
 					'style_sub_menu_normal_tab',
 					[
-						'label' => esc_html__( 'Normal', 'spalisho' ),
+						'label' => esc_html__( 'Normal', 'mellis' ),
 					]
 				);
 
 					$this->add_control(
 						'submenu_link_color',
 						[
-							'label' => esc_html__( 'Menu Color', 'spalisho' ),
+							'label' => esc_html__( 'Menu Color', 'mellis' ),
 							'type' => Controls_Manager::COLOR,
 							'default' => '',
 							'selectors' => [
@@ -317,14 +317,14 @@ class Spalisho_Elementor_Menu_Nav extends Widget_Base {
 				$this->start_controls_tab(
 					'style_sub_menu_hover_tab',
 					[
-						'label' => esc_html__( 'Hover', 'spalisho' ),
+						'label' => esc_html__( 'Hover', 'mellis' ),
 					]
 				);
 
 					$this->add_control(
 						'submenu_link_color_hover',
 						[
-							'label' => esc_html__( 'Menu Color', 'spalisho' ),
+							'label' => esc_html__( 'Menu Color', 'mellis' ),
 							'type' => Controls_Manager::COLOR,
 							'default' => '',
 							'selectors' => [
@@ -341,14 +341,14 @@ class Spalisho_Elementor_Menu_Nav extends Widget_Base {
 				$this->start_controls_tab(
 					'style_sub_menu_active_tab',
 					[
-						'label' => esc_html__( 'Active', 'spalisho' ),
+						'label' => esc_html__( 'Active', 'mellis' ),
 					]
 				);
 
 					$this->add_control(
 						'submenu_link_color_active',
 						[
-							'label' => esc_html__( 'Menu Color', 'spalisho' ),
+							'label' => esc_html__( 'Menu Color', 'mellis' ),
 							'type' => Controls_Manager::COLOR,
 							'default' => '',
 							'selectors' => [
@@ -386,7 +386,7 @@ class Spalisho_Elementor_Menu_Nav extends Widget_Base {
 		<nav class="main-navigation">
             <button class="menu-toggle">
             	<span>
-            		<?php echo esc_html__( 'Menu', 'spalisho' ); ?>
+            		<?php echo esc_html__( 'Menu', 'mellis' ); ?>
             	</span>
             </button>
 			<?php $fallback_cb = $walker = '';
@@ -414,6 +414,6 @@ class Spalisho_Elementor_Menu_Nav extends Widget_Base {
 }
 
 
-$widgets_manager->register( new Spalisho_Elementor_Menu_Nav() );
+$widgets_manager->register( new Mellis_Elementor_Menu_Nav() );
 
 

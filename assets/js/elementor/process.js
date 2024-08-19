@@ -4,10 +4,10 @@
 
 	$(window).on('elementor/frontend/init', function () {
 		
-        elementorFrontend.hooks.addAction('frontend/element_ready/spalisho_elementor_process.default', function(){
+        elementorFrontend.hooks.addAction('frontend/element_ready/mellis_elementor_process.default', function(){
 	       
 	        /* Add your code here */
-	      	$('.xp-process .xp-invisible').each(function() {
+	      	$('.ova-process .ova-invisible').each(function() {
 	      		var that = $(this);
 
 	      		if ( $(window).width() <= 1024 ) {

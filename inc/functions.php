@@ -1,8 +1,8 @@
 <?php if (!defined( 'ABSPATH' )) exit;
 
 // Get current ID of post/page, etc
-if( !function_exists( 'spalisho_get_current_id' )):
-	function spalisho_get_current_id(){
+if( !function_exists( 'mellis_get_current_id' )):
+	function mellis_get_current_id(){
 	    
 	    $current_page_id = '';
 	    // Get The Page ID You Need
@@ -38,20 +38,20 @@ endif;
 
 
 
-if (!function_exists('spalisho_is_elementor_active')) {
-    function spalisho_is_elementor_active(){
+if (!function_exists('mellis_is_elementor_active')) {
+    function mellis_is_elementor_active(){
         return did_action( 'elementor/loaded' );
     }
 }
 
-if (!function_exists('spalisho_is_woo_active')) {
-    function spalisho_is_woo_active(){
+if (!function_exists('mellis_is_woo_active')) {
+    function mellis_is_woo_active(){
         return class_exists('woocommerce');    
     }
 }
 
-if (!function_exists('spalisho_is_blog_archive')) {
-    function spalisho_is_blog_archive() {
+if (!function_exists('mellis_is_blog_archive')) {
+    function mellis_is_blog_archive() {
         return (is_home() && is_front_page()) || is_archive() || is_category() || is_tag() || is_home();
     }
 }
@@ -59,7 +59,7 @@ if (!function_exists('spalisho_is_blog_archive')) {
 
 
 /* Get ID from Slug of Header Footer Builder - Post Type */
-function spalisho_get_id_by_slug( $page_slug ) {
+function mellis_get_id_by_slug( $page_slug ) {
     $page = get_page_by_path( $page_slug, OBJECT, 'ova_framework_hf_el' ) ;
     if ($page) {
         return $page->ID;
@@ -69,7 +69,7 @@ function spalisho_get_id_by_slug( $page_slug ) {
 }
 
 
-function spalisho_custom_text ($content = "",$limit = 15) {
+function mellis_custom_text ($content = "",$limit = 15) {
 
     $content = explode(' ', $content, $limit);
 
@@ -93,8 +93,8 @@ function spalisho_custom_text ($content = "",$limit = 15) {
  * @param  string   JSON string to be sanitized
  * @return string   Sanitized input
  */
-if ( ! function_exists( 'spalisho_google_font_sanitization' ) ) {
-    function spalisho_google_font_sanitization( $input ) {
+if ( ! function_exists( 'mellis_google_font_sanitization' ) ) {
+    function mellis_google_font_sanitization( $input ) {
         $val =  json_decode( $input, true );
         if( is_array( $val ) ) {
             foreach ( $val as $key => $value ) {
@@ -111,8 +111,8 @@ if ( ! function_exists( 'spalisho_google_font_sanitization' ) ) {
 
 
 /* Default Primary Font in Customize */
-if ( ! function_exists( 'spalisho_default_primary_font' ) ) {
-    function spalisho_default_primary_font() {
+if ( ! function_exists( 'mellis_default_primary_font' ) ) {
+    function mellis_default_primary_font() {
         $customizer_defaults = json_encode(
             array(
                 'font' => 'Manrope',
@@ -126,8 +126,8 @@ if ( ! function_exists( 'spalisho_default_primary_font' ) ) {
 }
 
 /* Default Second Font in Customize */
-if ( ! function_exists( 'spalisho_default_second_font' ) ) {
-    function spalisho_default_second_font() {
+if ( ! function_exists( 'mellis_default_second_font' ) ) {
+    function mellis_default_second_font() {
         $customizer_defaults = json_encode(
             array(
                 'font' => 'Libre Baskerville',
@@ -140,8 +140,8 @@ if ( ! function_exists( 'spalisho_default_second_font' ) ) {
     }
 }
 
-if ( ! function_exists( 'spalisho_woo_sidebar' ) ) {
-    function spalisho_woo_sidebar(){
+if ( ! function_exists( 'mellis_woo_sidebar' ) ) {
+    function mellis_woo_sidebar(){
         if( class_exists('woocommerce') && is_product() ){
             return get_theme_mod( 'woo_product_layout', 'woo_layout_1c' );
         }else{
@@ -150,58 +150,58 @@ if ( ! function_exists( 'spalisho_woo_sidebar' ) ) {
     }
 }
 
-if( !function_exists( 'spalisho_blog_show_media' ) ){
-    function spalisho_blog_show_media(){
+if( !function_exists( 'mellis_blog_show_media' ) ){
+    function mellis_blog_show_media(){
         $show_media = get_theme_mod( 'blog_archive_show_media', 'yes' );
         return isset( $_GET['show_media'] ) ? $_GET['show_media'] : $show_media;
     }
 }
 
-if( !function_exists( 'spalisho_blog_show_title' ) ){
-    function spalisho_blog_show_title(){
+if( !function_exists( 'mellis_blog_show_title' ) ){
+    function mellis_blog_show_title(){
         $show_title = get_theme_mod( 'blog_archive_show_title', 'yes' );
         return isset( $_GET['show_title'] ) ? $_GET['show_title'] : $show_title;
     }
 }
 
-if( !function_exists( 'spalisho_blog_show_date' ) ){
-    function spalisho_blog_show_date(){
+if( !function_exists( 'mellis_blog_show_date' ) ){
+    function mellis_blog_show_date(){
         $show_date = get_theme_mod( 'blog_archive_show_date', 'yes' );
         return isset( $_GET['show_date'] ) ? $_GET['show_date'] : $show_date;
     }
 }
 
-if( !function_exists( 'spalisho_blog_show_cat' ) ){
-    function spalisho_blog_show_cat(){
+if( !function_exists( 'mellis_blog_show_cat' ) ){
+    function mellis_blog_show_cat(){
         $show_cat = get_theme_mod( 'blog_archive_show_cat', 'yes' );
         return isset( $_GET['show_cat'] ) ? $_GET['show_cat'] : $show_cat;
     }
 }
 
-if( !function_exists( 'spalisho_blog_show_author' ) ){
-    function spalisho_blog_show_author(){
+if( !function_exists( 'mellis_blog_show_author' ) ){
+    function mellis_blog_show_author(){
         $show_author = get_theme_mod( 'blog_archive_show_author', 'yes' );
         return isset( $_GET['show_author'] ) ? $_GET['show_author'] : $show_author;
     }
 }
 
-if( !function_exists( 'spalisho_blog_show_comment' ) ){
-    function spalisho_blog_show_comment(){
+if( !function_exists( 'mellis_blog_show_comment' ) ){
+    function mellis_blog_show_comment(){
         $show_comment = get_theme_mod( 'blog_archive_show_comment', 'yes' );
         return isset( $_GET['show_comment'] ) ? $_GET['show_comment'] : $show_comment;
     }
 }
 
-if( !function_exists( 'spalisho_blog_show_excerpt' ) ){
-    function spalisho_blog_show_excerpt(){
+if( !function_exists( 'mellis_blog_show_excerpt' ) ){
+    function mellis_blog_show_excerpt(){
         $show_excerpt = get_theme_mod( 'blog_archive_show_excerpt', 'yes' );
         return isset( $_GET['show_excerpt'] ) ? $_GET['show_excerpt'] : $show_excerpt;
     }
 }
 
 
-if( !function_exists( 'spalisho_blog_show_readmore' ) ){
-    function spalisho_blog_show_readmore(){
+if( !function_exists( 'mellis_blog_show_readmore' ) ){
+    function mellis_blog_show_readmore(){
         $show_readmore = get_theme_mod( 'blog_archive_show_readmore', 'yes' );
         return isset( $_GET['show_readmore'] ) ? $_GET['show_readmore'] : $show_readmore;
     }
@@ -209,57 +209,57 @@ if( !function_exists( 'spalisho_blog_show_readmore' ) ){
 
 
 
-if( !function_exists( 'spalisho_post_show_media' ) ){
-    function spalisho_post_show_media(){
+if( !function_exists( 'mellis_post_show_media' ) ){
+    function mellis_post_show_media(){
         $show_media = get_theme_mod( 'blog_single_show_media', 'yes' );
         return isset( $_GET['show_media'] ) ? $_GET['show_media'] : $show_media;
     }
 }
 
-if( !function_exists( 'spalisho_post_show_title' ) ){
-    function spalisho_post_show_title(){
+if( !function_exists( 'mellis_post_show_title' ) ){
+    function mellis_post_show_title(){
         $show_title = get_theme_mod( 'blog_single_show_title', 'yes' );
         return isset( $_GET['show_title'] ) ? $_GET['show_title'] : $show_title;
     }
 }
 
-if( !function_exists( 'spalisho_post_show_date' ) ){
-    function spalisho_post_show_date(){
+if( !function_exists( 'mellis_post_show_date' ) ){
+    function mellis_post_show_date(){
         $show_date = get_theme_mod( 'blog_single_show_date', 'yes' );
         return isset( $_GET['show_date'] ) ? $_GET['show_date'] : $show_date;
     }
 }
 
-if( !function_exists( 'spalisho_post_show_cat' ) ){
-    function spalisho_post_show_cat(){
+if( !function_exists( 'mellis_post_show_cat' ) ){
+    function mellis_post_show_cat(){
         $show_cat = get_theme_mod( 'blog_single_show_cat', 'yes' );
         return isset( $_GET['show_cat'] ) ? $_GET['show_cat'] : $show_cat;
     }
 }
 
-if( !function_exists( 'spalisho_post_show_author' ) ){
-    function spalisho_post_show_author(){
+if( !function_exists( 'mellis_post_show_author' ) ){
+    function mellis_post_show_author(){
         $show_author = get_theme_mod( 'blog_single_show_author', 'yes' );
         return isset( $_GET['show_author'] ) ? $_GET['show_author'] : $show_author;
     }
 }
 
-if( !function_exists( 'spalisho_post_show_comment' ) ){
-    function spalisho_post_show_comment(){
+if( !function_exists( 'mellis_post_show_comment' ) ){
+    function mellis_post_show_comment(){
         $show_comment = get_theme_mod( 'blog_single_show_comment', 'yes' );
         return isset( $_GET['show_comment'] ) ? $_GET['show_comment'] : $show_comment;
     }
 }
 
-if( !function_exists( 'spalisho_post_show_tag' ) ){
-    function spalisho_post_show_tag(){
+if( !function_exists( 'mellis_post_show_tag' ) ){
+    function mellis_post_show_tag(){
         $show_tag = get_theme_mod( 'blog_single_show_tag', 'yes' );
         return isset( $_GET['show_tag'] ) ? $_GET['show_tag'] : $show_tag;
     }
 }
 
 // cpt registering on theme activation elementor post types support
-function xperttheme_add_cpt_support() {
+function ovatheme_add_cpt_support() {
     
     //if exists, assign to $cpt_support var
     $cpt_support = get_option( 'elementor_cpt_support' );
@@ -283,4 +283,4 @@ function xperttheme_add_cpt_support() {
     update_option('elementor_disable_typography_schemes','yes');
 
 }
-add_action( 'after_switch_theme', 'xperttheme_add_cpt_support' );
+add_action( 'after_switch_theme', 'ovatheme_add_cpt_support' );

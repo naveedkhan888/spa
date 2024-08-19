@@ -14,7 +14,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
  *
  * @since 1.0.0
  */
-class Spalisho_Elementor_Header_Banner extends Widget_Base {
+class Mellis_Elementor_Header_Banner extends Widget_Base {
 
 	/**
 	 * Retrieve the widget name.
@@ -26,7 +26,7 @@ class Spalisho_Elementor_Header_Banner extends Widget_Base {
 	 * @return string Widget name.
 	 */
 	public function get_name() {
-		return 'spalisho_elementor_header_banner';
+		return 'mellis_elementor_header_banner';
 	}
 
 	/**
@@ -39,7 +39,7 @@ class Spalisho_Elementor_Header_Banner extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return esc_html__( 'Header Banner', 'spalisho' );
+		return esc_html__( 'Header Banner', 'mellis' );
 	}
 
 	/**
@@ -89,7 +89,7 @@ class Spalisho_Elementor_Header_Banner extends Widget_Base {
 		$this->start_controls_section(
 			'section_content',
 			[
-				'label' => esc_html__( 'Content', 'spalisho' ),
+				'label' => esc_html__( 'Content', 'mellis' ),
 			]
 		);
 
@@ -97,7 +97,7 @@ class Spalisho_Elementor_Header_Banner extends Widget_Base {
 			$this->add_control(
 				'header_boxed_content',
 				[
-					'label'        => esc_html__( 'Display Boxed Content', 'spalisho' ),
+					'label'        => esc_html__( 'Display Boxed Content', 'mellis' ),
 					'type'         => Controls_Manager::SWITCHER,
 					'default'      => 'no'
 				]
@@ -106,7 +106,7 @@ class Spalisho_Elementor_Header_Banner extends Widget_Base {
 			$this->add_control(
 				'header_bg_source',
 				[
-					'label'        => esc_html__( 'Display Background by Feature Image in Post/Page', 'spalisho' ),
+					'label'        => esc_html__( 'Display Background by Feature Image in Post/Page', 'mellis' ),
 					'type'         => Controls_Manager::SWITCHER,
 					'default'      => 'no'
 				]
@@ -117,10 +117,10 @@ class Spalisho_Elementor_Header_Banner extends Widget_Base {
 			$this->add_control(
 				'cover_color',
 				[
-					'label' => esc_html__( 'Background Cover Color', 'spalisho' ),
+					'label' => esc_html__( 'Background Cover Color', 'mellis' ),
 					'type' => Controls_Manager::COLOR,
 					'default' => 'rgba(0,0,0,0.51)',
-					'description' => esc_html__( 'You can add background image in Advanced Tab', 'spalisho' ),
+					'description' => esc_html__( 'You can add background image in Advanced Tab', 'mellis' ),
 					'selectors' => [
 						'{{WRAPPER}} .cover_color' => 'background-color: {{VALUE}};',
 					],
@@ -132,7 +132,7 @@ class Spalisho_Elementor_Header_Banner extends Widget_Base {
 			$this->add_control(
 				'show_title',
 				[
-					'label'        => esc_html__( 'Show Title', 'spalisho' ),
+					'label'        => esc_html__( 'Show Title', 'mellis' ),
 					'type'         => Controls_Manager::SWITCHER,
 					'default'      => 'yes',
 					'selector'	=> '{{WRAPPER}} .header_banner_el .header_title',
@@ -142,7 +142,7 @@ class Spalisho_Elementor_Header_Banner extends Widget_Base {
 			$this->add_control(
 				'title_color',
 				[
-					'label' => esc_html__( 'Title Color', 'spalisho' ),
+					'label' => esc_html__( 'Title Color', 'mellis' ),
 					'type' => Controls_Manager::COLOR,
 					'default' => '#343434',
 					'selectors' => [
@@ -154,7 +154,7 @@ class Spalisho_Elementor_Header_Banner extends Widget_Base {
 			$this->add_responsive_control(
 				'title_padding',
 				[
-					'label' => esc_html__( 'Title Padding', 'spalisho' ),
+					'label' => esc_html__( 'Title Padding', 'mellis' ),
 					'type' => Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', 'em', '%' ],
 					'selectors' => [
@@ -165,16 +165,16 @@ class Spalisho_Elementor_Header_Banner extends Widget_Base {
 			$this->add_control(
 				'title_tag',
 				[
-					'label' => esc_html__( 'Choose Title Format', 'spalisho' ),
+					'label' => esc_html__( 'Choose Title Format', 'mellis' ),
 					'type' => Controls_Manager::SELECT,
 					'options' => [
-						'h1' => esc_html__('H1', 'spalisho'),
-						'h2' => esc_html__('H2', 'spalisho'),
-						'h3' => esc_html__('H3', 'spalisho'),
-						'h4' => esc_html__('H4', 'spalisho'),
-						'h5' => esc_html__('H5', 'spalisho'),
-						'h6' => esc_html__('H6', 'spalisho'),
-						'div' => esc_html__('DIV', 'spalisho'),
+						'h1' => esc_html__('H1', 'mellis'),
+						'h2' => esc_html__('H2', 'mellis'),
+						'h3' => esc_html__('H3', 'mellis'),
+						'h4' => esc_html__('H4', 'mellis'),
+						'h5' => esc_html__('H5', 'mellis'),
+						'h6' => esc_html__('H6', 'mellis'),
+						'div' => esc_html__('DIV', 'mellis'),
 					],
 					'default' => 'h1'
 				]
@@ -188,7 +188,7 @@ class Spalisho_Elementor_Header_Banner extends Widget_Base {
 				\Elementor\Group_Control_Typography::get_type(),
 				[
 					'name' => 'header_title',
-					'label' => esc_html__( 'Title Typo', 'spalisho' ),
+					'label' => esc_html__( 'Title Typo', 'mellis' ),
 					'selector'	=> '{{WRAPPER}} .header_banner_el .header_title'
 				]
 			);
@@ -198,7 +198,7 @@ class Spalisho_Elementor_Header_Banner extends Widget_Base {
 			$this->add_control(
 				'show_breadcrumbs',
 				[
-					'label'        => esc_html__( 'Show Breadcrumbs', 'spalisho' ),
+					'label'        => esc_html__( 'Show Breadcrumbs', 'mellis' ),
 					'type'         => Controls_Manager::SWITCHER,
 					'default'      => 'yes',
 					'selector'	=> '{{WRAPPER}} .header_breadcrumbs',
@@ -209,7 +209,7 @@ class Spalisho_Elementor_Header_Banner extends Widget_Base {
 			$this->add_control(
 				'breadcrumbs_color',
 				[
-					'label' => esc_html__( 'Breadcrumbs Color', 'spalisho' ),
+					'label' => esc_html__( 'Breadcrumbs Color', 'mellis' ),
 					'type' => Controls_Manager::COLOR,
 					'default' => '#343434',
 					'selectors' => [
@@ -224,7 +224,7 @@ class Spalisho_Elementor_Header_Banner extends Widget_Base {
 			$this->add_control(
 				'breadcrumbs_color_hover',
 				[
-					'label' => esc_html__( 'Breadcrumbs Color hover', 'spalisho' ),
+					'label' => esc_html__( 'Breadcrumbs Color hover', 'mellis' ),
 					'type' => Controls_Manager::COLOR,
 					'default' => '#343434',
 					'selectors' => [
@@ -239,7 +239,7 @@ class Spalisho_Elementor_Header_Banner extends Widget_Base {
 				\Elementor\Group_Control_Typography::get_type(),
 				[
 					'name' => 'header_breadcrumbs_typo',
-					'label' => esc_html__( 'Breadcrumbs Typography', 'spalisho' ),
+					'label' => esc_html__( 'Breadcrumbs Typography', 'mellis' ),
 					'selector'	=> '{{WRAPPER}} .header_banner_el ul.breadcrumb li'
 				]
 			);
@@ -247,7 +247,7 @@ class Spalisho_Elementor_Header_Banner extends Widget_Base {
 			$this->add_responsive_control(
 				'breadcrumbs_padding',
 				[
-					'label' => esc_html__( 'Breadcrumbs Padding', 'spalisho' ),
+					'label' => esc_html__( 'Breadcrumbs Padding', 'mellis' ),
 					'type' => Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', 'em', '%' ],
 					'selectors' => [
@@ -263,19 +263,19 @@ class Spalisho_Elementor_Header_Banner extends Widget_Base {
 			$this->add_responsive_control(
 				'align',
 				[
-					'label' => esc_html__( 'Alignment', 'spalisho' ),
+					'label' => esc_html__( 'Alignment', 'mellis' ),
 					'type' => Controls_Manager::CHOOSE,
 					'options' => [
 						'left' => [
-							'title' => esc_html__( 'Left', 'spalisho' ),
+							'title' => esc_html__( 'Left', 'mellis' ),
 							'icon' => 'eicon-text-align-left',
 						],
 						'center' => [
-							'title' => esc_html__( 'Center', 'spalisho' ),
+							'title' => esc_html__( 'Center', 'mellis' ),
 							'icon' => 'eicon-text-align-center',
 						],
 						'right' => [
-							'title' => esc_html__( 'Right', 'spalisho' ),
+							'title' => esc_html__( 'Right', 'mellis' ),
 							'icon' => 'eicon-text-align-right',
 						],
 					],
@@ -292,7 +292,7 @@ class Spalisho_Elementor_Header_Banner extends Widget_Base {
 			$this->add_control(
 				'class',
 				[
-					'label' => esc_html__( 'Class', 'spalisho' ),
+					'label' => esc_html__( 'Class', 'mellis' ),
 					'type' => Controls_Manager::TEXT,
 				]
 			);
@@ -318,7 +318,7 @@ class Spalisho_Elementor_Header_Banner extends Widget_Base {
 
 		$class_bg = $attr_style = '';
 		if( $settings['header_bg_source'] == 'yes' ){
-			$current_id = spalisho_get_current_id();
+			$current_id = mellis_get_current_id();
 			$header_bg_source =  get_the_post_thumbnail_url( $current_id, 'full' );	
 			$class_bg = 'bg_feature_img';
 			$attr_style = 'style="background: url( '.$header_bg_source.' )" ';
@@ -344,7 +344,7 @@ class Spalisho_Elementor_Header_Banner extends Widget_Base {
 
 						<?php if( $settings['show_title'] == 'yes' ){ ?>
 							
-							<?php add_filter( 'spalisho_show_singular_title', '__return_false' ); ?>
+							<?php add_filter( 'mellis_show_singular_title', '__return_false' ); ?>
 
 							<?php $title_tag = $settings['title_tag']; ?>
 							<<?php echo esc_html( $title_tag ); ?> class=" header_title">
@@ -363,4 +363,4 @@ class Spalisho_Elementor_Header_Banner extends Widget_Base {
 
 	
 }
-$widgets_manager->register( new Spalisho_Elementor_Header_Banner() );
+$widgets_manager->register( new Mellis_Elementor_Header_Banner() );

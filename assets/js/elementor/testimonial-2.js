@@ -5,9 +5,9 @@
 	$(window).on('elementor/frontend/init', function () {
 		
         
-		elementorFrontend.hooks.addAction('frontend/element_ready/spalisho_elementor_testimonial_2.default', function(){
+		elementorFrontend.hooks.addAction('frontend/element_ready/mellis_elementor_testimonial_2.default', function(){
 
-			$(".xp-testimonial-2 .slide-testimonials-2").each(function(){
+			$(".ova-testimonial-2 .slide-testimonials-2").each(function(){
 
 		        var slk 	= $(this) ;
 		        var slk_ops = slk.data('options') ? slk.data('options') : {};
@@ -52,7 +52,7 @@
 		    });
 
 		    //slide syncing
-		    $(".xp-testimonial-2 .slide-for").each(function(){
+		    $(".ova-testimonial-2 .slide-for").each(function(){
 		    	
 		        var slk2 = $(this);
 

@@ -9,14 +9,14 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 
-class Spalisho_Elementor_Logo extends Widget_Base {
+class Mellis_Elementor_Logo extends Widget_Base {
 
 	public function get_name() {
 		return 'ova_logo';
 	}
 
 	public function get_title() {
-		return esc_html__( 'Logo', 'spalisho' );
+		return esc_html__( 'Logo', 'mellis' );
 	}
 
 	public function get_icon() {
@@ -36,7 +36,7 @@ class Spalisho_Elementor_Logo extends Widget_Base {
 		$this->start_controls_section(
 			'section_image',
 			[
-				'label' => esc_html__( 'Image', 'spalisho' ),
+				'label' => esc_html__( 'Image', 'mellis' ),
 			]
 		);
 
@@ -44,12 +44,12 @@ class Spalisho_Elementor_Logo extends Widget_Base {
 		$this->add_control(
 			'link_to',
 			[
-				'label' => esc_html__( 'Link', 'spalisho' ),
+				'label' => esc_html__( 'Link', 'mellis' ),
 				'type' => Controls_Manager::SELECT,
 				'options' => [
-					'home' => esc_html__( 'Home Page', 'spalisho' ),
-					'none' => esc_html__( 'None', 'spalisho' ),
-					'custom' => esc_html__( 'Custom URL', 'spalisho' ),
+					'home' => esc_html__( 'Home Page', 'mellis' ),
+					'none' => esc_html__( 'None', 'mellis' ),
+					'custom' => esc_html__( 'Custom URL', 'mellis' ),
 				],
 				'default' => 'home',
 
@@ -60,12 +60,12 @@ class Spalisho_Elementor_Logo extends Widget_Base {
 		$this->add_control(
 			'link',
 			[
-				'label' => esc_html__( 'Link', 'spalisho' ),
+				'label' => esc_html__( 'Link', 'mellis' ),
 				'type' => Controls_Manager::URL,
 				'dynamic' => [
 					'active' => true,
 				],
-				'placeholder' => esc_html__( 'https://your-link.com', 'spalisho' ),
+				'placeholder' => esc_html__( 'https://your-link.com', 'mellis' ),
 				'condition' => [
 					'link_to' => 'custom',
 				],
@@ -76,19 +76,19 @@ class Spalisho_Elementor_Logo extends Widget_Base {
 		$this->add_responsive_control(
 			'align',
 			[
-				'label' => esc_html__( 'Alignment', 'spalisho' ),
+				'label' => esc_html__( 'Alignment', 'mellis' ),
 				'type' => Controls_Manager::CHOOSE,
 				'options' => [
 					'flex-start' => [
-						'title' => esc_html__( 'Left', 'spalisho' ),
+						'title' => esc_html__( 'Left', 'mellis' ),
 						'icon' => 'eicon-text-align-left',
 					],
 					'center' => [
-						'title' => esc_html__( 'Center', 'spalisho' ),
+						'title' => esc_html__( 'Center', 'mellis' ),
 						'icon' => 'eicon-text-align-center',
 					],
 					'flex-end' => [
-						'title' => esc_html__( 'Right', 'spalisho' ),
+						'title' => esc_html__( 'Right', 'mellis' ),
 						'icon' => 'eicon-text-align-right',
 					],
 				],
@@ -102,7 +102,7 @@ class Spalisho_Elementor_Logo extends Widget_Base {
 		$this->add_control(
 			'desk_logo',
 			[
-				'label' => esc_html__( 'Desktop Logo', 'spalisho' ),
+				'label' => esc_html__( 'Desktop Logo', 'mellis' ),
 				'type' => Controls_Manager::MEDIA,
 				'dynamic' => [
 					'active' => true,
@@ -126,7 +126,7 @@ class Spalisho_Elementor_Logo extends Widget_Base {
 		$this->add_control(
 			'desk_w',
 			[
-				'label' => esc_html__( 'Desktop Logo Width', 'spalisho' ),
+				'label' => esc_html__( 'Desktop Logo Width', 'mellis' ),
 				'type' => Controls_Manager::SLIDER,
 				'size_units' => [ 'px' ],
 				'range' => [
@@ -146,7 +146,7 @@ class Spalisho_Elementor_Logo extends Widget_Base {
 		$this->add_control(
 			'desk_h',
 			[
-				'label' => esc_html__( 'Desktop Logo Height', 'spalisho' ),
+				'label' => esc_html__( 'Desktop Logo Height', 'mellis' ),
 				'type' => Controls_Manager::SLIDER,
 				'size_units' => [ 'px' ],
 				'range' => [
@@ -169,7 +169,7 @@ class Spalisho_Elementor_Logo extends Widget_Base {
 		$this->add_control(
 			'mobile_logo',
 			[
-				'label' => esc_html__( 'Mobile Logo', 'spalisho' ),
+				'label' => esc_html__( 'Mobile Logo', 'mellis' ),
 				'type' => Controls_Manager::MEDIA,
 				'dynamic' => [
 					'active' => true,
@@ -184,7 +184,7 @@ class Spalisho_Elementor_Logo extends Widget_Base {
 		$this->add_control(
 			'mobile_w',
 			[
-				'label' => esc_html__( 'Mobile Logo Width', 'spalisho' ),
+				'label' => esc_html__( 'Mobile Logo Width', 'mellis' ),
 				'type' => Controls_Manager::SLIDER,
 				'size_units' => [ 'px' ],
 				'range' => [
@@ -204,7 +204,7 @@ class Spalisho_Elementor_Logo extends Widget_Base {
 		$this->add_control(
 			'mobile_h',
 			[
-				'label' => esc_html__( 'Mobile Logo Height', 'spalisho' ),
+				'label' => esc_html__( 'Mobile Logo Height', 'mellis' ),
 				'type' => Controls_Manager::SLIDER,
 				'size_units' => [ 'px' ],
 				'range' => [
@@ -236,7 +236,7 @@ class Spalisho_Elementor_Logo extends Widget_Base {
 		$this->add_control(
 			'sticky_logo',
 			[
-				'label' => esc_html__( 'Sticky Logo', 'spalisho' ),
+				'label' => esc_html__( 'Sticky Logo', 'mellis' ),
 				'type' => Controls_Manager::MEDIA,
 				'dynamic' => [
 					'active' => true,
@@ -253,7 +253,7 @@ class Spalisho_Elementor_Logo extends Widget_Base {
 		$this->add_control(
 			'sticky_w',
 			[
-				'label' => esc_html__( 'Sticky Logo Width', 'spalisho' ),
+				'label' => esc_html__( 'Sticky Logo Width', 'mellis' ),
 				'type' => Controls_Manager::SLIDER,
 				'size_units' => [ 'px' ],
 				'range' => [
@@ -273,7 +273,7 @@ class Spalisho_Elementor_Logo extends Widget_Base {
 		$this->add_control(
 			'sticky_h',
 			[
-				'label' => esc_html__( 'Sticky Logo Height', 'spalisho' ),
+				'label' => esc_html__( 'Sticky Logo Height', 'mellis' ),
 				'type' => Controls_Manager::SLIDER,
 				'size_units' => [ 'px' ],
 				'range' => [
@@ -388,4 +388,4 @@ class Spalisho_Elementor_Logo extends Widget_Base {
 	
 }
 
-$widgets_manager->register( new Spalisho_Elementor_Logo() );
+$widgets_manager->register( new Mellis_Elementor_Logo() );

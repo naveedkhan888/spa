@@ -1,54 +1,54 @@
 <?php if (!defined( 'ABSPATH' )) exit;
 
-if( !class_exists('Spalisho_Main') ){
+if( !class_exists('Mellis_Main') ){
 
-	class Spalisho_Main {
+	class Mellis_Main {
 
 		public function __construct() {
            	
            	
 			/* Add theme support */
-			add_action( 'after_setup_theme', array( $this, 'spalisho_theme_support' ) );
+			add_action( 'after_setup_theme', array( $this, 'mellis_theme_support' ) );
 	
 
 			/**
 			 * Register Menu
 			 */
-			add_action( 'init', array( $this, 'spalisho_register_menus' ) );
+			add_action( 'init', array( $this, 'mellis_register_menus' ) );
 
 			
 
 			/**
 			 * Load google font from customize
 			 */
-			add_action('wp_enqueue_scripts', array( $this, 'spalisho_load_google_fonts' ) );
+			add_action('wp_enqueue_scripts', array( $this, 'mellis_load_google_fonts' ) );
 
 			/**
 			 * Add Body class
 			 */
-			add_filter('body_class', array( $this, 'spalisho_body_classes' ) );
+			add_filter('body_class', array( $this, 'mellis_body_classes' ) );
 			
 
 			/**
 			 * Enqueue CSS, Javascript
 			 */
-			add_action('wp_enqueue_scripts', array( $this, 'spalisho_enqueue_scripts' ) );
+			add_action('wp_enqueue_scripts', array( $this, 'mellis_enqueue_scripts' ) );
 
 			
 
 			/**
 			 * Enqueue style from customize
 			 */
-			add_action('wp_enqueue_scripts', array( $this, 'spalisho_enqueue_customize' ), 11 );
+			add_action('wp_enqueue_scripts', array( $this, 'mellis_enqueue_customize' ), 11 );
 			
 
         }
 
 
 
-		function spalisho_theme_support(){
+		function mellis_theme_support(){
 
-			$GLOBALS['content_width'] = apply_filters('spalisho_content_width', 800);
+			$GLOBALS['content_width'] = apply_filters('mellis_content_width', 800);
 		    
 
 		    add_theme_support('title-tag');
@@ -79,24 +79,24 @@ if( !class_exists('Spalisho_Main') ){
 		    add_filter('gutenberg_use_widgets_block_editor', '__return_false');
             add_filter('use_widgets_block_editor', '__return_false');
 
-		    add_image_size( 'spalisho_thumbnail', 768, 660, true );
-		    add_image_size( 'spalisho_small', 200, 200, true );
+		    add_image_size( 'mellis_thumbnail', 768, 660, true );
+		    add_image_size( 'mellis_small', 200, 200, true );
 		    
 		}
 
-		function spalisho_register_menus() {
+		function mellis_register_menus() {
 		  register_nav_menus( array(
-		    'primary'   => esc_html__( 'Primary Menu', 'spalisho' )
+		    'primary'   => esc_html__( 'Primary Menu', 'mellis' )
 
 		  ) );
 		}
 
-		function spalisho_load_google_fonts(){
+		function mellis_load_google_fonts(){
 
 		    $fonts_url = '';
 
-		    $default_primary_font = json_decode( spalisho_default_primary_font() );
-		    $default_second_font = json_decode( spalisho_default_second_font() );
+		    $default_primary_font = json_decode( mellis_default_primary_font() );
+		    $default_second_font = json_decode( mellis_default_second_font() );
 
 		    $custom_fonts = get_theme_mod('ova_custom_font','');
 
@@ -112,8 +112,8 @@ if( !class_exists('Spalisho_Main') ){
 		    $second_font_weights_string = $second_font->regularweight ? $second_font->regularweight : '100,200,300,400,500,600,700,800,900';
 		    $is_custom_second_font = $custom_fonts != '' ? !strpos($second_font_family, $custom_fonts) : true;
 		    
-		    $general_flag = _x( 'on', $primary_font_family.': on or off', 'spalisho');
-		    $second_flag = _x( 'on', $second_font_family.': on or off', 'spalisho');
+		    $general_flag = _x( 'on', $primary_font_family.': on or off', 'mellis');
+		    $second_flag = _x( 'on', $second_font_family.': on or off', 'mellis');
 		 
 		    if ( 'off' !== $general_flag || 'off' !== $second_flag || 'off' !== $three_flag  ) {
 		        $font_families = array();
@@ -144,7 +144,7 @@ if( !class_exists('Spalisho_Main') ){
 		}
 
 
-		function spalisho_body_classes( $classes ){
+		function mellis_body_classes( $classes ){
 
             global $is_lynx, $is_gecko, $is_IE, $is_opera, $is_NS4, $is_safari, $is_chrome, $is_iphone;
             if ($is_lynx) {
@@ -179,11 +179,11 @@ if( !class_exists('Spalisho_Main') ){
 
             
 
-            $classes[] = apply_filters( 'spalisho_theme_sidebar','' );
+            $classes[] = apply_filters( 'mellis_theme_sidebar','' );
 
-            $classes[] = spalisho_woo_sidebar();
+            $classes[] = mellis_woo_sidebar();
 
-            $wide_site = apply_filters( 'spalisho_wide_site', '' );
+            $wide_site = apply_filters( 'mellis_wide_site', '' );
             if( $wide_site == 'boxed' ){
 				$classes[] = 'container_boxed';
             }
@@ -196,7 +196,7 @@ if( !class_exists('Spalisho_Main') ){
 
 		
 
-		function spalisho_enqueue_scripts() {
+		function mellis_enqueue_scripts() {
 
 		    // enqueue the javascript that performs in-link comment reply fanciness
 		    if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
@@ -204,26 +204,26 @@ if( !class_exists('Spalisho_Main') ){
 		    }
 
 		    // Carousel
-			wp_enqueue_script('carousel', SPALISHO_URI.'/assets/libs/carousel/owl.carousel.min.js', array('jquery'),null,true);
-			wp_enqueue_style('carousel', SPALISHO_URI.'/assets/libs/carousel/assets/owl.carousel.min.css', array(), null);
+			wp_enqueue_script('carousel', MELLIS_URI.'/assets/libs/carousel/owl.carousel.min.js', array('jquery'),null,true);
+			wp_enqueue_style('carousel', MELLIS_URI.'/assets/libs/carousel/assets/owl.carousel.min.css', array(), null);
 
 
 		    // Font Icon
-		    wp_enqueue_style('ovaicon', SPALISHO_URI.'/assets/libs/ovaicon/font/ovaicon.css', array(), null);
+		    wp_enqueue_style('ovaicon', MELLIS_URI.'/assets/libs/ovaicon/font/ovaicon.css', array(), null);
 
 		    // Flaticon
-		    wp_enqueue_style('ova-flaticon', SPALISHO_URI.'/assets/libs/flaticon/font/flaticon.css', array(), null);
+		    wp_enqueue_style('ova-flaticon', MELLIS_URI.'/assets/libs/flaticon/font/flaticon.css', array(), null);
 
-		    wp_enqueue_script('masonry', SPALISHO_URI.'/assets/libs/masonry.min.js', array('jquery'),null,true);
+		    wp_enqueue_script('masonry', MELLIS_URI.'/assets/libs/masonry.min.js', array('jquery'),null,true);
 		    
-		    wp_enqueue_script('spalisho-script', SPALISHO_URI.'/assets/js/script.js', array('jquery'),null,true);
-		    wp_localize_script( 'spalisho-script', 'ScrollUpText', array('value' => esc_html__( 'Go to top', 'spalisho' )));
-		    wp_enqueue_style( 'spalisho-style', get_template_directory_uri() . '/style.css' );
+		    wp_enqueue_script('mellis-script', MELLIS_URI.'/assets/js/script.js', array('jquery'),null,true);
+		    wp_localize_script( 'mellis-script', 'ScrollUpText', array('value' => esc_html__( 'Go to top', 'mellis' )));
+		    wp_enqueue_style( 'mellis-style', get_template_directory_uri() . '/style.css' );
 		}
 
 		
 
-        function spalisho_enqueue_customize(){
+        function mellis_enqueue_customize(){
         	$css = '';
            
 			$primary_color 	= get_theme_mod( 'primary_color', '#de968d' );
@@ -232,7 +232,7 @@ if( !class_exists('Spalisho_Main') ){
 			$light_color 	= get_theme_mod( 'light_color', '#f0e8e8' );
 
 			/* Primary Font */
-			$default_primary_font = json_decode( spalisho_default_primary_font() );
+			$default_primary_font = json_decode( mellis_default_primary_font() );
 			$primary_font = json_decode( get_theme_mod( 'primary_font' ) ) ? json_decode( get_theme_mod( 'primary_font' ) ) : $default_primary_font;
 			$primary_font_family = $primary_font->font;
 
@@ -242,12 +242,12 @@ if( !class_exists('Spalisho_Main') ){
 			$general_letter_space = get_theme_mod( 'general_letter_space', '0px' );
 
 			/* Second Font */
-			$default_second_font = json_decode( spalisho_default_second_font() );
+			$default_second_font = json_decode( mellis_default_second_font() );
 			$second_font = json_decode( get_theme_mod( 'second_font' ) ) ? json_decode( get_theme_mod( 'second_font' ) ) : $default_second_font;
 			$second_font_family = $second_font->font;
 			
 			// Width Sidebar
-			$global_layout_sidebar = apply_filters( 'spalisho_get_layout', '' );
+			$global_layout_sidebar = apply_filters( 'mellis_get_layout', '' );
 			$width_sidebar = is_array( $global_layout_sidebar ) ? $global_layout_sidebar[1] : '0';
 
 			// Container width
@@ -293,10 +293,10 @@ if( !class_exists('Spalisho_Main') ){
 		        }
 		    }';
 
-            wp_add_inline_style( 'spalisho-style', $var );
+            wp_add_inline_style( 'mellis-style', $var );
 
         }
 	}
 }
 
-return new Spalisho_Main();
+return new Mellis_Main();

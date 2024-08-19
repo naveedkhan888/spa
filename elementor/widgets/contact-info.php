@@ -6,14 +6,14 @@ use Elementor\Group_Control_Typography;
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
-class Spalisho_Elementor_Contact_Info extends Widget_Base {
+class Mellis_Elementor_Contact_Info extends Widget_Base {
 
 	public function get_name() {
-		return 'spalisho_elementor_contact_info';
+		return 'mellis_elementor_contact_info';
 	}
 
 	public function get_title() {
-		return esc_html__( 'Contact Info', 'spalisho' );
+		return esc_html__( 'Contact Info', 'mellis' );
 	}
 
 	public function get_icon() {
@@ -21,7 +21,7 @@ class Spalisho_Elementor_Contact_Info extends Widget_Base {
 	}
 
 	public function get_categories() {
-		return [ 'spalisho' ];
+		return [ 'mellis' ];
 	}
 
 	public function get_script_depends() {
@@ -36,7 +36,7 @@ class Spalisho_Elementor_Contact_Info extends Widget_Base {
 		$this->start_controls_section(
 			'section_content',
 			[
-				'label' => esc_html__( 'Content', 'spalisho' ),
+				'label' => esc_html__( 'Content', 'mellis' ),
 				
 			]
 		);
@@ -44,12 +44,12 @@ class Spalisho_Elementor_Contact_Info extends Widget_Base {
 			$this->add_control(
 				'template',
 				[
-					'label' => esc_html__( 'Template', 'spalisho' ),
+					'label' => esc_html__( 'Template', 'mellis' ),
 					'type' => Controls_Manager::SELECT,
 					'default' => 'template_1',
 					'options' => [
-						'template_1' => esc_html__( 'Template 1', 'spalisho' ),
-						'template_2' => esc_html__( 'Template 2', 'spalisho' ),
+						'template_1' => esc_html__( 'Template 1', 'mellis' ),
+						'template_2' => esc_html__( 'Template 2', 'mellis' ),
 					]
 				]
 			);
@@ -57,7 +57,7 @@ class Spalisho_Elementor_Contact_Info extends Widget_Base {
 			$this->add_control(
 				'icon',
 				[
-					'label' => esc_html__( 'Icon', 'spalisho' ),
+					'label' => esc_html__( 'Icon', 'mellis' ),
 					'type' => \Elementor\Controls_Manager::ICONS,
 					'default' 	=> [
 						'value' 	=> 'flaticon flaticon-email',
@@ -69,9 +69,9 @@ class Spalisho_Elementor_Contact_Info extends Widget_Base {
 			$this->add_control(
 				'label',
 				[
-					'label' => esc_html__( 'Label', 'spalisho' ),
+					'label' => esc_html__( 'Label', 'mellis' ),
 					'type' => \Elementor\Controls_Manager::TEXT,
-					'default' => esc_html__('', 'spalisho'),
+					'default' => esc_html__('', 'mellis'),
 				]
 			);
 
@@ -81,14 +81,14 @@ class Spalisho_Elementor_Contact_Info extends Widget_Base {
 				$repeater->add_control(
 					'type',
 					[
-						'label' => esc_html__( 'Type', 'spalisho' ),
+						'label' => esc_html__( 'Type', 'mellis' ),
 						'type' => Controls_Manager::SELECT,
 						'default' => 'email',
 						'options' => [
-							'email' => esc_html__('Email', 'spalisho'),
-							'phone' => esc_html__('Phone', 'spalisho'),
-							'link' => esc_html__('Link', 'spalisho'),
-							'text' => esc_html__('Text', 'spalisho'),
+							'email' => esc_html__('Email', 'mellis'),
+							'phone' => esc_html__('Phone', 'mellis'),
+							'link' => esc_html__('Link', 'mellis'),
+							'text' => esc_html__('Text', 'mellis'),
 						]
 					]
 				);
@@ -96,9 +96,9 @@ class Spalisho_Elementor_Contact_Info extends Widget_Base {
 				$repeater->add_control(
 					'email_label',
 					[
-						'label'   => esc_html__( 'Email Label', 'spalisho' ),
+						'label'   => esc_html__( 'Email Label', 'mellis' ),
 						'type'    => \Elementor\Controls_Manager::TEXT,
-						'description' => esc_html__( 'email@company.com', 'spalisho' ),
+						'description' => esc_html__( 'email@company.com', 'mellis' ),
 						'condition' => [
 							'type' => 'email',
 						]
@@ -109,9 +109,9 @@ class Spalisho_Elementor_Contact_Info extends Widget_Base {
 				$repeater->add_control(
 					'email_address',
 					[
-						'label'   => esc_html__( 'Email Adress', 'spalisho' ),
+						'label'   => esc_html__( 'Email Adress', 'mellis' ),
 						'type'    => \Elementor\Controls_Manager::TEXT,
-						'description' => esc_html__( 'email@company.com', 'spalisho' ),
+						'description' => esc_html__( 'email@company.com', 'mellis' ),
 						'condition' => [
 							'type' => 'email',
 						]
@@ -123,9 +123,9 @@ class Spalisho_Elementor_Contact_Info extends Widget_Base {
 				$repeater->add_control(
 					'phone_label',
 					[
-						'label'   => esc_html__( 'Phone Label', 'spalisho' ),
+						'label'   => esc_html__( 'Phone Label', 'mellis' ),
 						'type'    => \Elementor\Controls_Manager::TEXT,
-						'description' => esc_html__( '+012 (345) 678', 'spalisho' ),
+						'description' => esc_html__( '+012 (345) 678', 'mellis' ),
 						'condition' => [
 							'type' => 'phone',
 						]
@@ -136,9 +136,9 @@ class Spalisho_Elementor_Contact_Info extends Widget_Base {
 				$repeater->add_control(
 					'phone_address',
 					[
-						'label'   => esc_html__( 'Phone Adress', 'spalisho' ),
+						'label'   => esc_html__( 'Phone Adress', 'mellis' ),
 						'type'    => \Elementor\Controls_Manager::TEXT,
-						'description' => esc_html__( '+012345678', 'spalisho' ),
+						'description' => esc_html__( '+012345678', 'mellis' ),
 						'condition' => [
 							'type' => 'phone',
 						]
@@ -149,9 +149,9 @@ class Spalisho_Elementor_Contact_Info extends Widget_Base {
 				$repeater->add_control(
 					'link_label',
 					[
-						'label'   => esc_html__( 'Link Label', 'spalisho' ),
+						'label'   => esc_html__( 'Link Label', 'mellis' ),
 						'type'    => \Elementor\Controls_Manager::TEXT,
-						'description' => esc_html__( 'https://your-domain.com', 'spalisho' ),
+						'description' => esc_html__( 'https://your-domain.com', 'mellis' ),
 						'condition' => [
 							'type' => 'link',
 						]
@@ -162,9 +162,9 @@ class Spalisho_Elementor_Contact_Info extends Widget_Base {
 				$repeater->add_control(
 					'link_address',
 					[
-						'label'   => esc_html__( 'Link Adress', 'spalisho' ),
+						'label'   => esc_html__( 'Link Adress', 'mellis' ),
 						'type'    => \Elementor\Controls_Manager::URL,
-						'description' => esc_html__( 'https://your-domain.com', 'spalisho' ),
+						'description' => esc_html__( 'https://your-domain.com', 'mellis' ),
 						'condition' => [
 							'type' => 'link',
 						],
@@ -181,9 +181,9 @@ class Spalisho_Elementor_Contact_Info extends Widget_Base {
 				$repeater->add_control(
 					'text_title',
 					[
-						'label'   => esc_html__( 'Title - Template 2', 'spalisho' ),
+						'label'   => esc_html__( 'Title - Template 2', 'mellis' ),
 						'type'    => \Elementor\Controls_Manager::TEXT,
-						'description' => esc_html__( 'Your Title', 'spalisho' ),
+						'description' => esc_html__( 'Your Title', 'mellis' ),
 						'condition' => [
 							'type' => 'text',
 						]
@@ -193,9 +193,9 @@ class Spalisho_Elementor_Contact_Info extends Widget_Base {
 				$repeater->add_control(
 					'text',
 					[
-						'label'   => esc_html__( 'Text', 'spalisho' ),
+						'label'   => esc_html__( 'Text', 'mellis' ),
 						'type'    => \Elementor\Controls_Manager::TEXT,
-						'description' => esc_html__( 'Your text', 'spalisho' ),
+						'description' => esc_html__( 'Your text', 'mellis' ),
 						'condition' => [
 							'type' => 'text',
 						]
@@ -206,14 +206,14 @@ class Spalisho_Elementor_Contact_Info extends Widget_Base {
 				$this->add_control(
 					'items_info',
 					[
-						'label'       => esc_html__( 'Items Info', 'spalisho' ),
+						'label'       => esc_html__( 'Items Info', 'mellis' ),
 						'type'        => Controls_Manager::REPEATER,
 						'fields'      => $repeater->get_controls(),
 						'default' => [
 							[
 								'type' => 'email',
-								'email_label' => esc_html__('email@company.com', 'spalisho'),
-								'email_address' => esc_html__('email@company.com', 'spalisho'),
+								'email_label' => esc_html__('email@company.com', 'mellis'),
+								'email_address' => esc_html__('email@company.com', 'mellis'),
 							],
 							
 						],
@@ -224,26 +224,26 @@ class Spalisho_Elementor_Contact_Info extends Widget_Base {
 			$this->add_responsive_control(
 				'align_items',
 				[
-					'label' 	=> esc_html__( 'Items Alignment', 'spalisho' ),
+					'label' 	=> esc_html__( 'Items Alignment', 'mellis' ),
 					'type' 		=> \Elementor\Controls_Manager::CHOOSE,
 					'options' 	=> [
 						'flex-start' => [
-							'title' => esc_html__( 'Top', 'spalisho' ),
+							'title' => esc_html__( 'Top', 'mellis' ),
 							'icon' 	=> 'eicon-align-center-v',
 						],
 						'center' => [
-							'title' => esc_html__( 'Center', 'spalisho' ),
+							'title' => esc_html__( 'Center', 'mellis' ),
 							'icon' 	=> 'eicon-align-center-v',
 						],
 						'flex-end' => [
-							'title' => esc_html__( 'Bottom', 'spalisho' ),
+							'title' => esc_html__( 'Bottom', 'mellis' ),
 							'icon' 	=> 'eicon-align-end-v',
 						],
 					],
 					'toggle' 	=> true,
 					'separator' => 'before',
 					'selectors' => [
-						'{{WRAPPER}} .xp-contact-info' => 'align-items: {{VALUE}}',
+						'{{WRAPPER}} .ova-contact-info' => 'align-items: {{VALUE}}',
 					],
 				]
 			);
@@ -257,7 +257,7 @@ class Spalisho_Elementor_Contact_Info extends Widget_Base {
 		$this->start_controls_section(
 			'section_icon_style',
 			[
-				'label' => esc_html__( 'Icon', 'spalisho' ),
+				'label' => esc_html__( 'Icon', 'mellis' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -265,26 +265,26 @@ class Spalisho_Elementor_Contact_Info extends Widget_Base {
 			$this->add_responsive_control(
 				'icon_align',
 				[
-					'label' 	=> esc_html__( 'Alignment', 'spalisho' ),
+					'label' 	=> esc_html__( 'Alignment', 'mellis' ),
 					'type' 		=> \Elementor\Controls_Manager::CHOOSE,
 					'options' 	=> [
 						'flex-start' => [
-							'title' => esc_html__( 'Start', 'spalisho' ),
+							'title' => esc_html__( 'Start', 'mellis' ),
 							'icon' 	=> 'eicon-text-align-left',
 						],
 						'center' => [
-							'title' => esc_html__( 'Center', 'spalisho' ),
+							'title' => esc_html__( 'Center', 'mellis' ),
 							'icon' 	=> 'eicon-text-align-center',
 						],
 						'flex-end' => [
-							'title' => esc_html__( 'End', 'spalisho' ),
+							'title' => esc_html__( 'End', 'mellis' ),
 							'icon' 	=> 'eicon-text-align-right',
 						],
 					],
 					'default' 	=> 'center',
 					'toggle' 	=> true,
 					'selectors' => [
-						'{{WRAPPER}} .xp-contact-info .icon' => 'align-items: {{VALUE}}',
+						'{{WRAPPER}} .ova-contact-info .icon' => 'align-items: {{VALUE}}',
 					],
 				]
 			);
@@ -292,7 +292,7 @@ class Spalisho_Elementor_Contact_Info extends Widget_Base {
 			$this->add_control(
 				'icon_tranform',
 				[
-					'label' => esc_html__( 'Rolate', 'spalisho' ),
+					'label' => esc_html__( 'Rolate', 'mellis' ),
 					'type' => Controls_Manager::SLIDER,
 					'size_units' => [ 'px' ],
 					'range' => [
@@ -303,7 +303,7 @@ class Spalisho_Elementor_Contact_Info extends Widget_Base {
 						]
 					],
 					'selectors' => [
-						'{{WRAPPER}} .xp-contact-info .icon' => 'transform: rotate({{SIZE}}deg);', 
+						'{{WRAPPER}} .ova-contact-info .icon' => 'transform: rotate({{SIZE}}deg);', 
 						
 					],
 				]
@@ -312,7 +312,7 @@ class Spalisho_Elementor_Contact_Info extends Widget_Base {
 			$this->add_responsive_control(
 				'icon_width',
 				[
-					'label' => esc_html__( 'Width', 'spalisho' ),
+					'label' => esc_html__( 'Width', 'mellis' ),
 					'type' => Controls_Manager::SLIDER,
 					'size_units' => [ 'px' ],
 					'range' => [
@@ -323,7 +323,7 @@ class Spalisho_Elementor_Contact_Info extends Widget_Base {
 						]
 					],
 					'selectors' => [
-						'{{WRAPPER}} .xp-contact-info .icon' => 'width: {{SIZE}}{{UNIT}};height: {{SIZE}}{{UNIT}};',
+						'{{WRAPPER}} .ova-contact-info .icon' => 'width: {{SIZE}}{{UNIT}};height: {{SIZE}}{{UNIT}};',
 						
 					],
 				]
@@ -332,7 +332,7 @@ class Spalisho_Elementor_Contact_Info extends Widget_Base {
 			$this->add_control(
 				'icon_fontsize',
 				[
-					'label' => esc_html__( 'Font Size', 'spalisho' ),
+					'label' => esc_html__( 'Font Size', 'mellis' ),
 					'type' => Controls_Manager::SLIDER,
 					'size_units' => [ 'px' ],
 					'range' => [
@@ -343,8 +343,8 @@ class Spalisho_Elementor_Contact_Info extends Widget_Base {
 						]
 					],
 					'selectors' => [
-						'{{WRAPPER}} .xp-contact-info .icon' => 'font-size: {{SIZE}}{{UNIT}};',
-						'{{WRAPPER}} .xp-contact-info .icon svg' => 'width: {{SIZE}}{{UNIT}};',
+						'{{WRAPPER}} .ova-contact-info .icon' => 'font-size: {{SIZE}}{{UNIT}};',
+						'{{WRAPPER}} .ova-contact-info .icon svg' => 'width: {{SIZE}}{{UNIT}};',
 					],
 				]
 			);
@@ -352,11 +352,11 @@ class Spalisho_Elementor_Contact_Info extends Widget_Base {
 			$this->add_control(
 				'icon_color',
 				[
-					'label' => esc_html__( 'Color', 'spalisho' ),
+					'label' => esc_html__( 'Color', 'mellis' ),
 					'type' => Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .xp-contact-info .icon' => 'color : {{VALUE}};',
-						'{{WRAPPER}} .xp-contact-info .icon svg, {{WRAPPER}} .xp-contact-info .icon svg path' => 'fill : {{VALUE}};'
+						'{{WRAPPER}} .ova-contact-info .icon' => 'color : {{VALUE}};',
+						'{{WRAPPER}} .ova-contact-info .icon svg, {{WRAPPER}} .ova-contact-info .icon svg path' => 'fill : {{VALUE}};'
 					],
 				]
 			);
@@ -364,10 +364,10 @@ class Spalisho_Elementor_Contact_Info extends Widget_Base {
 			$this->add_control(
 				'icon_background',
 				[
-					'label' => esc_html__( 'Background', 'spalisho' ),
+					'label' => esc_html__( 'Background', 'mellis' ),
 					'type' => Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .xp-contact-info .icon' => 'background-color : {{VALUE}};',
+						'{{WRAPPER}} .ova-contact-info .icon' => 'background-color : {{VALUE}};',
 					],
 				]
 			);
@@ -375,11 +375,11 @@ class Spalisho_Elementor_Contact_Info extends Widget_Base {
 			$this->add_responsive_control(
 				'icon_margin',
 				[
-					'label' => esc_html__( 'Margin', 'spalisho' ),
+					'label' => esc_html__( 'Margin', 'mellis' ),
 					'type' => Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', 'em', '%' ],
 					'selectors' => [
-						'{{WRAPPER}} .xp-contact-info .icon' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+						'{{WRAPPER}} .ova-contact-info .icon' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 					],
 				]
 			);
@@ -387,11 +387,11 @@ class Spalisho_Elementor_Contact_Info extends Widget_Base {
 			$this->add_responsive_control(
 				'icon_padding',
 				[
-					'label' => esc_html__( 'Padding', 'spalisho' ),
+					'label' => esc_html__( 'Padding', 'mellis' ),
 					'type' => Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', 'em', '%' ],
 					'selectors' => [
-						'{{WRAPPER}} .xp-contact-info .icon' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+						'{{WRAPPER}} .ova-contact-info .icon' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 					],
 				]
 			);
@@ -399,11 +399,11 @@ class Spalisho_Elementor_Contact_Info extends Widget_Base {
 			$this->add_responsive_control(
 				'border_radius_icon',
 				array(
-					'label'      => esc_html__( 'Border Radius', 'spalisho' ),
+					'label'      => esc_html__( 'Border Radius', 'mellis' ),
 					'type'       => Controls_Manager::DIMENSIONS,
 					'size_units' => array( 'px', '%' ),
 					'selectors'  => array(
-						'{{WRAPPER}} .xp-contact-info .icon' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+						'{{WRAPPER}} .ova-contact-info .icon' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 					),
 				)
 			);
@@ -412,8 +412,8 @@ class Spalisho_Elementor_Contact_Info extends Widget_Base {
 				\Elementor\Group_Control_Border::get_type(),
 				[
 					'name' 		=> 'border_icon',
-					'label' 	=> esc_html__( 'Border', 'spalisho' ),
-					'selector' 	=> '{{WRAPPER}} .xp-contact-info .icon',
+					'label' 	=> esc_html__( 'Border', 'mellis' ),
+					'selector' 	=> '{{WRAPPER}} .ova-contact-info .icon',
 				]
 			);
 
@@ -421,8 +421,8 @@ class Spalisho_Elementor_Contact_Info extends Widget_Base {
 				\Elementor\Group_Control_Box_Shadow::get_type(),
 				[
 					'name' => 'icon_box_shadow',
-					'label' => esc_html__( 'Box Shadow', 'spalisho' ),
-					'selector' => '{{WRAPPER}}  .xp-contact-info .icon',
+					'label' => esc_html__( 'Box Shadow', 'mellis' ),
+					'selector' => '{{WRAPPER}}  .ova-contact-info .icon',
 				]
 			);
 
@@ -434,7 +434,7 @@ class Spalisho_Elementor_Contact_Info extends Widget_Base {
 		$this->start_controls_section(
 			'section_label_style',
 			[
-				'label' => esc_html__( 'Label', 'spalisho' ),
+				'label' => esc_html__( 'Label', 'mellis' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 				'condition' => [
 					'label!' => '',
@@ -445,10 +445,10 @@ class Spalisho_Elementor_Contact_Info extends Widget_Base {
 			$this->add_control(
 				'label_color',
 				[
-					'label' => esc_html__( 'Color', 'spalisho' ),
+					'label' => esc_html__( 'Color', 'mellis' ),
 					'type' => Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .xp-contact-info .contact .label' => 'color : {{VALUE}};',
+						'{{WRAPPER}} .ova-contact-info .contact .label' => 'color : {{VALUE}};',
 					],
 				]
 			);
@@ -457,18 +457,18 @@ class Spalisho_Elementor_Contact_Info extends Widget_Base {
 				Group_Control_Typography::get_type(),
 				[
 					'name' => 'label_typography',
-					'selector' => '{{WRAPPER}} .xp-contact-info .contact .label',
+					'selector' => '{{WRAPPER}} .ova-contact-info .contact .label',
 				]
 			);
 
 			$this->add_responsive_control(
 				'label_margin',
 				[
-					'label' => esc_html__( 'Margin', 'spalisho' ),
+					'label' => esc_html__( 'Margin', 'mellis' ),
 					'type' => Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', 'em', '%' ],
 					'selectors' => [
-						'{{WRAPPER}} .xp-contact-info .contact .label' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+						'{{WRAPPER}} .ova-contact-info .contact .label' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 					],
 				]
 			);
@@ -476,26 +476,26 @@ class Spalisho_Elementor_Contact_Info extends Widget_Base {
 			$this->add_responsive_control(
 				'align_label',
 				[
-					'label' 	=> esc_html__( 'Alignment', 'spalisho' ),
+					'label' 	=> esc_html__( 'Alignment', 'mellis' ),
 					'type' 		=> \Elementor\Controls_Manager::CHOOSE,
 					'options' 	=> [
 						'left' => [
-							'title' => esc_html__( 'Left', 'spalisho' ),
+							'title' => esc_html__( 'Left', 'mellis' ),
 							'icon' 	=> 'eicon-text-align-left',
 						],
 						'center' => [
-							'title' => esc_html__( 'Center', 'spalisho' ),
+							'title' => esc_html__( 'Center', 'mellis' ),
 							'icon' 	=> 'eicon-text-align-center',
 						],
 						'right' => [
-							'title' => esc_html__( 'Right', 'spalisho' ),
+							'title' => esc_html__( 'Right', 'mellis' ),
 							'icon' 	=> 'eicon-text-align-right',
 						],
 					],
 					
 					'toggle' 	=> true,
 					'selectors' => [
-						'{{WRAPPER}} .xp-contact-info .contact .label' => 'text-align: {{VALUE}}',
+						'{{WRAPPER}} .ova-contact-info .contact .label' => 'text-align: {{VALUE}}',
 					],
 				]
 			);
@@ -509,7 +509,7 @@ class Spalisho_Elementor_Contact_Info extends Widget_Base {
 		$this->start_controls_section(
 			'section_info_style',
 			[
-				'label' => esc_html__( 'Info', 'spalisho' ),
+				'label' => esc_html__( 'Info', 'mellis' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -517,27 +517,27 @@ class Spalisho_Elementor_Contact_Info extends Widget_Base {
 			$this->add_responsive_control(
 				'contact_align_content',
 				[
-					'label' 	=> esc_html__( 'Alignment', 'spalisho' ),
+					'label' 	=> esc_html__( 'Alignment', 'mellis' ),
 					'type' 		=> \Elementor\Controls_Manager::CHOOSE,
 					'options' 	=> [
 						'left' => [
-							'title' => esc_html__( 'Left', 'spalisho' ),
+							'title' => esc_html__( 'Left', 'mellis' ),
 							'icon' 	=> 'eicon-text-align-left',
 						],
 						'center' => [
-							'title' => esc_html__( 'Center', 'spalisho' ),
+							'title' => esc_html__( 'Center', 'mellis' ),
 							'icon' 	=> 'eicon-text-align-center',
 						],
 						'right' => [
-							'title' => esc_html__( 'Right', 'spalisho' ),
+							'title' => esc_html__( 'Right', 'mellis' ),
 							'icon' 	=> 'eicon-text-align-right',
 						],
 						
 					],
 					'toggle' 	=> true,
 					'selectors' => [
-						'{{WRAPPER}} .xp-contact-info .contact .info .item ' => 'text-align: {{VALUE}};',
-						'{{WRAPPER}} .xp-contact-info .contact .info .item a' => 'text-align: {{VALUE}};',
+						'{{WRAPPER}} .ova-contact-info .contact .info .item ' => 'text-align: {{VALUE}};',
+						'{{WRAPPER}} .ova-contact-info .contact .info .item a' => 'text-align: {{VALUE}};',
 					],
 					'condition' => [
 						'template' => [
@@ -551,18 +551,18 @@ class Spalisho_Elementor_Contact_Info extends Widget_Base {
 				Group_Control_Typography::get_type(),
 				[
 					'name' => 'info_typography',
-					'selector' => '{{WRAPPER}} .xp-contact-info .contact .info .item, {{WRAPPER}} .xp-contact-info .contact .info .item a',
+					'selector' => '{{WRAPPER}} .ova-contact-info .contact .info .item, {{WRAPPER}} .ova-contact-info .contact .info .item a',
 				]
 			);
 
 			$this->add_control(
 				'info_color',
 				[
-					'label' => esc_html__( 'Color', 'spalisho' ),
+					'label' => esc_html__( 'Color', 'mellis' ),
 					'type' => Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .xp-contact-info .contact .info .item' => 'color : {{VALUE}};',
-						'{{WRAPPER}} .xp-contact-info .contact .info .item a' => 'color : {{VALUE}};',
+						'{{WRAPPER}} .ova-contact-info .contact .info .item' => 'color : {{VALUE}};',
+						'{{WRAPPER}} .ova-contact-info .contact .info .item a' => 'color : {{VALUE}};',
 					],
 				]
 			);
@@ -570,10 +570,10 @@ class Spalisho_Elementor_Contact_Info extends Widget_Base {
 			$this->add_control(
 				'info_color_hover',
 				[
-					'label' => esc_html__( 'Link Color hover', 'spalisho' ),
+					'label' => esc_html__( 'Link Color hover', 'mellis' ),
 					'type' => Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .xp-contact-info .contact .info .item a:hover' => 'color : {{VALUE}};',
+						'{{WRAPPER}} .ova-contact-info .contact .info .item a:hover' => 'color : {{VALUE}};',
 					],
 				]
 			);
@@ -581,10 +581,10 @@ class Spalisho_Elementor_Contact_Info extends Widget_Base {
 			$this->add_control(
 				'underline_hover_color',
 				[
-					'label' => esc_html__( 'Underline Color hover', 'spalisho' ),
+					'label' => esc_html__( 'Underline Color hover', 'mellis' ),
 					'type' => Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .xp-contact-info .contact .info .item a:before' => 'background-color : {{VALUE}};',
+						'{{WRAPPER}} .ova-contact-info .contact .info .item a:before' => 'background-color : {{VALUE}};',
 					],
 				]
 			);
@@ -592,11 +592,11 @@ class Spalisho_Elementor_Contact_Info extends Widget_Base {
 			$this->add_responsive_control(
 				'info_margin',
 				[
-					'label' => esc_html__( 'Margin', 'spalisho' ),
+					'label' => esc_html__( 'Margin', 'mellis' ),
 					'type' => Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', 'em', '%' ],
 					'selectors' => [
-						'{{WRAPPER}} .xp-contact-info .contact .info .item' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+						'{{WRAPPER}} .ova-contact-info .contact .info .item' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 					],
 				]
 			);
@@ -604,11 +604,11 @@ class Spalisho_Elementor_Contact_Info extends Widget_Base {
 			$this->add_responsive_control(
 				'info_padding',
 				[
-					'label' => esc_html__( 'Padding', 'spalisho' ),
+					'label' => esc_html__( 'Padding', 'mellis' ),
 					'type' => Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', 'em', '%' ],
 					'selectors' => [
-						'{{WRAPPER}} .xp-contact-info .contact .info .item' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+						'{{WRAPPER}} .ova-contact-info .contact .info .item' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 					],
 				]
 			);
@@ -621,7 +621,7 @@ class Spalisho_Elementor_Contact_Info extends Widget_Base {
 		$this->start_controls_section(
 			'section_contact_info_style',
 			[
-				'label' => esc_html__( 'Contact Info', 'spalisho' ),
+				'label' => esc_html__( 'Contact Info', 'mellis' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -630,20 +630,20 @@ class Spalisho_Elementor_Contact_Info extends Widget_Base {
 				\Elementor\Group_Control_Background::get_type(),
 				[
 					'name' => 'contact_info_bgcolor',
-					'label' => esc_html__( 'Background', 'spalisho' ),
+					'label' => esc_html__( 'Background', 'mellis' ),
 					'types' => [ 'classic' ],
-					'selector' => '{{WRAPPER}} .xp-contact-info',
+					'selector' => '{{WRAPPER}} .ova-contact-info',
 				]
 			);
 
 			$this->add_responsive_control(
 				'contact_info_padding',
 				[
-					'label' => esc_html__( 'Padding', 'spalisho' ),
+					'label' => esc_html__( 'Padding', 'mellis' ),
 					'type' => Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', 'em', '%' ],
 					'selectors' => [
-						'{{WRAPPER}} .xp-contact-info' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+						'{{WRAPPER}} .ova-contact-info' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 					],
 				]
 			);
@@ -662,7 +662,7 @@ class Spalisho_Elementor_Contact_Info extends Widget_Base {
 
 		?>
 
-			<div class="xp-contact-info <?php echo esc_html( $template ); ?>">
+			<div class="ova-contact-info <?php echo esc_html( $template ); ?>">
 				
 				<?php if( $icon['value'] ){ ?>
 					<div class="icon">
@@ -781,4 +781,4 @@ class Spalisho_Elementor_Contact_Info extends Widget_Base {
 }
 
 
-$widgets_manager->register( new Spalisho_Elementor_Contact_Info() );
+$widgets_manager->register( new Mellis_Elementor_Contact_Info() );

@@ -1,4 +1,4 @@
-.xp-contact-page{
+.ova-contact-page{
 	position: relative;
 	input,textarea{
 		font-size: 14px;
@@ -39,7 +39,7 @@
 		@media(max-width: 479px){
 			flex-flow:column;
 		}
-		.xp-text{
+		.ova-text{
 			position: relative;
 			width: 50%;
 			overflow: hidden;
@@ -51,7 +51,7 @@
 				margin-bottom: 20px;
 			}	
 		}
-		.xp-email{
+		.ova-email{
 			position: relative;
 			width: 50%;
 			overflow: hidden;
@@ -73,7 +73,7 @@
 		}
 	}
 
-	.xp-textarea{
+	.ova-textarea{
 		margin-bottom: 20px;
 		position: relative;
 		i{
@@ -97,7 +97,7 @@
 			}
 		}
 	}
-	.xp-submit{
+	.ova-submit{
 		button{
 			padding: 20px 47px;
 		    font-size: 12px;
@@ -114,27 +114,27 @@
 				padding: 17px 20px;
 			}
 		} 
-		.xp-textarea {
+		.ova-textarea {
 			textarea{
 				max-height: 125px;
 			    padding: 25px 20px;
 			}
 		}
-		.xp-full-witdh{
+		.ova-full-witdh{
 			width: 100%;
 		}
 	}
 }
 
 // custom cf7 style with class ova-wpcf7-wrapper
-.xp-wpcf7-input-bgwhite {
-	.xp-contact-page {
+.ova-wpcf7-input-bgwhite {
+	.ova-contact-page {
 		.text-email {
 			input {
 				background-color: #fff;
 			}
 		} 
-		.xp-textarea {
+		.ova-textarea {
 			textarea {
 				background-color: #fff;
 			}

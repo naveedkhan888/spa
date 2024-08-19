@@ -9,7 +9,7 @@
             <?php
                 $comments_number = get_comments_number();
                 if ( '1' === $comments_number ) {
-                    printf( esc_html_x( 'One Comment', 'comments title', 'spalisho' ) );
+                    printf( esc_html_x( 'One Comment', 'comments title', 'mellis' ) );
                 } else {
                     printf(
                         esc_html( /* translators: 1: number of comments */
@@ -18,7 +18,7 @@
                                 '%1$s Comments',
                                 $comments_number,
                                 'comments title',
-                                'spalisho'
+                                'mellis'
                             )
                         ),
                         esc_html( number_format_i18n( $comments_number ) )
@@ -52,7 +52,7 @@
 
     <?php if ( ! comments_open() && get_comments_number() && post_type_supports( get_post_type(), 'comments' ) ) : ?>
         <p class="no-comments">
-            <?php esc_html_e( 'Comments are closed.', 'spalisho' ); ?>
+            <?php esc_html_e( 'Comments are closed.', 'mellis' ); ?>
         </p>
     <?php endif; ?>
 

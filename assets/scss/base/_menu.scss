@@ -167,7 +167,7 @@ ul.menu {
 
         &::after {
             content: "\f104";
-            font-family: "xpicon";
+            font-family: "ovaicon";
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
             display: inline-block;
@@ -187,7 +187,7 @@ ul.menu {
         &.toggled-on {
             &:after {
                 content: "\f10c";
-                font-family: "xpicon";
+                font-family: "ovaicon";
             }
         }
         @media (min-width: $desktop ) {
@@ -316,7 +316,7 @@ ul.menu {
                     > a {
                         &:after {
                             content: "\f104";
-                            font-family: "xpicon";
+                            font-family: "ovaicon";
                             -webkit-font-smoothing: antialiased;
                             -moz-osx-font-smoothing: grayscale;
                             display: inline-block;
@@ -372,7 +372,7 @@ ul.menu {
                         > a {
                             &::after {
                                 content: "\f104";
-                                font-family: "xpicon";
+                                font-family: "ovaicon";
                                 -webkit-font-smoothing: antialiased;
                                 -moz-osx-font-smoothing: grayscale;
                                 display: inline-block;

@@ -8,14 +8,14 @@ use Elementor\Group_Control_Border;
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
-class Spalisho_Elementor_Icon_List extends Widget_Base {
+class Mellis_Elementor_Icon_List extends Widget_Base {
 
 	public function get_name() {
-		return 'spalisho_elementor_icon_list';
+		return 'mellis_elementor_icon_list';
 	}
 
 	public function get_title() {
-		return esc_html__( 'Ova Icon List', 'spalisho' );
+		return esc_html__( 'Ova Icon List', 'mellis' );
 	}
 
 	public function get_icon() {
@@ -23,7 +23,7 @@ class Spalisho_Elementor_Icon_List extends Widget_Base {
 	}
 
 	public function get_categories() {
-		return [ 'spalisho' ];
+		return [ 'mellis' ];
 	}
 
 	public function get_script_depends() {
@@ -36,7 +36,7 @@ class Spalisho_Elementor_Icon_List extends Widget_Base {
 		$this->start_controls_section(
 			'section_content',
 			[
-				'label' => esc_html__( 'Content', 'spalisho' ),
+				'label' => esc_html__( 'Content', 'mellis' ),
 			]
 		);	
 			
@@ -47,7 +47,7 @@ class Spalisho_Elementor_Icon_List extends Widget_Base {
 			$repeater->add_control(
 				'icon',
 				[
-					'label' => esc_html__( 'Icon', 'spalisho' ),
+					'label' => esc_html__( 'Icon', 'mellis' ),
 					'type' => \Elementor\Controls_Manager::ICONS,
 					'default' => [
 						'value' => 'fas fa-check',
@@ -59,28 +59,28 @@ class Spalisho_Elementor_Icon_List extends Widget_Base {
 			$repeater->add_control(
 				'title',
 				[
-					'label' 	=> esc_html__( 'Title', 'spalisho' ),
+					'label' 	=> esc_html__( 'Title', 'mellis' ),
 					'type' 		=> Controls_Manager::TEXT,
-					'default' 	=> esc_html__('Quality Products', 'spalisho' ),
+					'default' 	=> esc_html__('Quality Products', 'mellis' ),
 				]
 			);
 
             $repeater->add_control(
 				'desc',
 				[
-					'label' 		=> esc_html__( 'Description', 'spalisho' ),
+					'label' 		=> esc_html__( 'Description', 'mellis' ),
 					'type' 			=> Controls_Manager::TEXTAREA,
-					'default' 		=> esc_html__('Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam aperiam', 'spalisho' ),
+					'default' 		=> esc_html__('Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam aperiam', 'mellis' ),
 				]
 			);
 
 			$repeater->add_control(
 				'active_mode',
 				[
-					'label' 	=> esc_html__( 'Active', 'spalisho' ),
+					'label' 	=> esc_html__( 'Active', 'mellis' ),
 					'type' 		=> Controls_Manager::SWITCHER,
-					'label_on' 	=> esc_html__( 'Yes', 'spalisho' ),
-					'label_off' => esc_html__( 'No', 'spalisho' ),
+					'label_on' 	=> esc_html__( 'Yes', 'mellis' ),
+					'label_off' => esc_html__( 'No', 'mellis' ),
 					'default' 	=> 'no',
 				]
 			);
@@ -88,20 +88,20 @@ class Spalisho_Elementor_Icon_List extends Widget_Base {
 			$this->add_control(
 				'ico_items',
 				[
-					'label' 	=> esc_html__( 'Items', 'spalisho' ),
+					'label' 	=> esc_html__( 'Items', 'mellis' ),
 					'type' 		=> Controls_Manager::REPEATER,
 					'fields' 	=> $repeater->get_controls(),
 					'default' 	=> [
 						[
-							'title' 	=> esc_html__( 'Quality Products', 'spalisho' ),
+							'title' 	=> esc_html__( 'Quality Products', 'mellis' ),
 							'active_mode' => 'no',
 						],
 						[
-							'title' 	=> esc_html__( 'Best Pricing & 100% Organic', 'spalisho' ),
+							'title' 	=> esc_html__( 'Best Pricing & 100% Organic', 'mellis' ),
 							'active_mode' => 'yes',
 						],
 						[
-							'title' 	=> esc_html__( 'Professional & Expert Staff', 'spalisho' ),
+							'title' 	=> esc_html__( 'Professional & Expert Staff', 'mellis' ),
 							'active_mode' => 'no',
 						],
 					
@@ -113,10 +113,10 @@ class Spalisho_Elementor_Icon_List extends Widget_Base {
 			$this->add_control(
 				'show_line_before',
 				[
-					'label' 	=> esc_html__( 'Line Before', 'spalisho' ),
+					'label' 	=> esc_html__( 'Line Before', 'mellis' ),
 					'type' 		=> Controls_Manager::SWITCHER,
-					'label_on' 	=> esc_html__( 'Show', 'spalisho' ),
-					'label_off' => esc_html__( 'Hide', 'spalisho' ),
+					'label_on' 	=> esc_html__( 'Show', 'mellis' ),
+					'label_off' => esc_html__( 'Hide', 'mellis' ),
 					'default' 	=> 'yes',
 				]
 			);
@@ -126,7 +126,7 @@ class Spalisho_Elementor_Icon_List extends Widget_Base {
 				[
 					'name' => 'line_background',
 					'types' => [ 'classic', 'gradient' ],
-					'selector' => '{{WRAPPER}} .xp-icon-list .item:before',
+					'selector' => '{{WRAPPER}} .ova-icon-list .item:before',
 					'condition' => [
 						'show_line_before' => 'yes'
 					]
@@ -138,7 +138,7 @@ class Spalisho_Elementor_Icon_List extends Widget_Base {
 		$this->start_controls_section(
 			'section_icon_style',
 			[
-				'label' => esc_html__( 'Icon', 'spalisho' ),
+				'label' => esc_html__( 'Icon', 'mellis' ),
 				'tab' 	=> Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -146,10 +146,10 @@ class Spalisho_Elementor_Icon_List extends Widget_Base {
 			$this->add_control(
 				'color_icon',
 				[
-					'label' => esc_html__( 'Color', 'spalisho' ),
+					'label' => esc_html__( 'Color', 'mellis' ),
 					'type' 	=> Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .xp-icon-list .item i' => 'color : {{VALUE}};',
+						'{{WRAPPER}} .ova-icon-list .item i' => 'color : {{VALUE}};',
 					],
 				]
 			);
@@ -157,10 +157,10 @@ class Spalisho_Elementor_Icon_List extends Widget_Base {
 			$this->add_control(
 				'bg_color_icon',
 				[
-					'label' 	=> esc_html__( 'Background Color', 'spalisho' ),
+					'label' 	=> esc_html__( 'Background Color', 'mellis' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .xp-icon-list .item i' => 'background-color : {{VALUE}};',
+						'{{WRAPPER}} .ova-icon-list .item i' => 'background-color : {{VALUE}};',
 					],
 				]
 			);
@@ -170,7 +170,7 @@ class Spalisho_Elementor_Icon_List extends Widget_Base {
 		$this->start_controls_section(
 			'section_title_style',
 			[
-				'label' => esc_html__( 'Title', 'spalisho' ),
+				'label' => esc_html__( 'Title', 'mellis' ),
 				'tab' 	=> Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -179,17 +179,17 @@ class Spalisho_Elementor_Icon_List extends Widget_Base {
 				Group_Control_Typography::get_type(),
 				[
 					'name' 		=> 'title_typography',
-					'selector' 	=> '{{WRAPPER}} .xp-icon-list .item .title',
+					'selector' 	=> '{{WRAPPER}} .ova-icon-list .item .title',
 				]
 			);
 
 			$this->add_control(
 				'color_title',
 				[
-					'label' 	=> esc_html__( 'Color', 'spalisho' ),
+					'label' 	=> esc_html__( 'Color', 'mellis' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .xp-icon-list .item .title' => 'color : {{VALUE}};',
+						'{{WRAPPER}} .ova-icon-list .item .title' => 'color : {{VALUE}};',
 					],
 				]
 			);
@@ -197,11 +197,11 @@ class Spalisho_Elementor_Icon_List extends Widget_Base {
 			$this->add_responsive_control(
 				'padding_title',
 				[
-					'label' 		=> esc_html__( 'Padding', 'spalisho' ),
+					'label' 		=> esc_html__( 'Padding', 'mellis' ),
 					'type' 			=> Controls_Manager::DIMENSIONS,
 					'size_units' 	=> [ 'px', 'em', '%' ],
 					'selectors' 	=> [
-						'{{WRAPPER}} .xp-icon-list .title' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+						'{{WRAPPER}} .ova-icon-list .title' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 					],
 				]
 			);
@@ -209,11 +209,11 @@ class Spalisho_Elementor_Icon_List extends Widget_Base {
 			$this->add_responsive_control(
 				'margin_title',
 				[
-					'label' 		=> esc_html__( 'Margin', 'spalisho' ),
+					'label' 		=> esc_html__( 'Margin', 'mellis' ),
 					'type' 			=> Controls_Manager::DIMENSIONS,
 					'size_units' 	=> [ 'px', 'em', '%' ],
 					'selectors' 	=> [
-						'{{WRAPPER}} .xp-icon-list .title' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+						'{{WRAPPER}} .ova-icon-list .title' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 					],
 				]
 			);
@@ -223,7 +223,7 @@ class Spalisho_Elementor_Icon_List extends Widget_Base {
 		$this->start_controls_section(
 			'section_desc_style',
 			[
-				'label' => esc_html__( 'Description', 'spalisho' ),
+				'label' => esc_html__( 'Description', 'mellis' ),
 				'tab' 	=> Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -232,17 +232,17 @@ class Spalisho_Elementor_Icon_List extends Widget_Base {
 				Group_Control_Typography::get_type(),
 				[
 					'name' 		=> 'desc_typography',
-					'selector' 	=> '{{WRAPPER}} .xp-icon-list .item .desc',
+					'selector' 	=> '{{WRAPPER}} .ova-icon-list .item .desc',
 				]
 			);
 
 			$this->add_control(
 				'color_desc',
 				[
-					'label' 	=> esc_html__( 'Color', 'spalisho' ),
+					'label' 	=> esc_html__( 'Color', 'mellis' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .xp-icon-list .item .desc' => 'color : {{VALUE}};',
+						'{{WRAPPER}} .ova-icon-list .item .desc' => 'color : {{VALUE}};',
 					],
 				]
 			);
@@ -259,7 +259,7 @@ class Spalisho_Elementor_Icon_List extends Widget_Base {
 
 		?>
 
-			<div class="xp-icon-list">
+			<div class="ova-icon-list">
 				<?php if( !empty( $items ) ) : ?>
 					<?php foreach( $items as $item ): ?>
 						<div class="item <?php if ('yes' == $show_line_before) echo 'item-line'; ?> <?php if ('yes' == $item['active_mode']) echo 'active'; ?>">
@@ -286,4 +286,4 @@ class Spalisho_Elementor_Icon_List extends Widget_Base {
 	
 }
 
-$widgets_manager->register( new Spalisho_Elementor_Icon_List() );
+$widgets_manager->register( new Mellis_Elementor_Icon_List() );

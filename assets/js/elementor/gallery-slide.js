@@ -3,10 +3,10 @@
 	
 	$(window).on('elementor/frontend/init', function () {
 		
-        elementorFrontend.hooks.addAction('frontend/element_ready/spalisho_elementor_gallery_slide.default', function(){
+        elementorFrontend.hooks.addAction('frontend/element_ready/mellis_elementor_gallery_slide.default', function(){
 	       
 	        /* Add your code here */
-	    	$(".xp-gallery-slide .gallery-slide").each(function(){
+	    	$(".ova-gallery-slide .gallery-slide").each(function(){
                 
                 var owlsl       = $(this) ;
                 var owlsl_ops   = owlsl.data('options') ? owlsl.data('options') : {};
@@ -68,8 +68,8 @@
                     smartSpeed: owlsl_ops.smartSpeed,
                     rtl: owlsl_ops.rtl,
                     navText:[
-                    '<i class="xpicon ovaicon-back" ></i>',
-                    '<i class="xpicon ovaicon-next" ></i>'
+                    '<i class="ovaicon ovaicon-back" ></i>',
+                    '<i class="ovaicon ovaicon-next" ></i>'
                     ],
                     responsive: responsive_value,
                 });

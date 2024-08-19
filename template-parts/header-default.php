@@ -19,7 +19,7 @@
 				<nav class="main-navigation" role="navigation">
 	                <button class="menu-toggle">
 	                	<span>
-	                		<?php echo esc_html__( 'Menu', 'spalisho' ); ?>
+	                		<?php echo esc_html__( 'Menu', 'mellis' ); ?>
 	                	</span>
 	                </button>
 					<?php

@@ -8,16 +8,16 @@ use Elementor\Utils;
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 
-class Spalisho_Elementor_Pricing extends Widget_Base {
+class Mellis_Elementor_Pricing extends Widget_Base {
 
 	
 	public function get_name() {
-		return 'spalisho_elementor_pricing';
+		return 'mellis_elementor_pricing';
 	}
 
 	
 	public function get_title() {
-		return esc_html__( 'Ova Pricing', 'spalisho' );
+		return esc_html__( 'Ova Pricing', 'mellis' );
 	}
 
 	
@@ -27,7 +27,7 @@ class Spalisho_Elementor_Pricing extends Widget_Base {
 
 	
 	public function get_categories() {
-		return [ 'spalisho' ];
+		return [ 'mellis' ];
 	}
 
 	public function get_script_depends() {
@@ -40,7 +40,7 @@ class Spalisho_Elementor_Pricing extends Widget_Base {
 		$this->start_controls_section(
 			'section_content',
 			[
-				'label' => esc_html__( 'Content', 'spalisho' ),
+				'label' => esc_html__( 'Content', 'mellis' ),
 			]
 		);	
 			
@@ -49,12 +49,12 @@ class Spalisho_Elementor_Pricing extends Widget_Base {
 			$this->add_control(
 				'template',
 				[
-					'label' => esc_html__( 'Template', 'spalisho' ),
+					'label' => esc_html__( 'Template', 'mellis' ),
 					'type' => Controls_Manager::SELECT,
 					'default' => 'template1',
 					'options' => [
-						'template1' => esc_html__( 'Template 1', 'spalisho' ),
-						'template2' => esc_html__( 'Template 2', 'spalisho' ),
+						'template1' => esc_html__( 'Template 1', 'mellis' ),
+						'template2' => esc_html__( 'Template 2', 'mellis' ),
 					]
 				]
 			);
@@ -62,10 +62,10 @@ class Spalisho_Elementor_Pricing extends Widget_Base {
 			$this->add_control(
 				'active_mode',
 				[
-					'label' 	=> esc_html__( 'Active', 'spalisho' ),
+					'label' 	=> esc_html__( 'Active', 'mellis' ),
 					'type' 		=> Controls_Manager::SWITCHER,
-					'label_on' 	=> esc_html__( 'Yes', 'spalisho' ),
-					'label_off' => esc_html__( 'No', 'spalisho' ),
+					'label_on' 	=> esc_html__( 'Yes', 'mellis' ),
+					'label_off' => esc_html__( 'No', 'mellis' ),
 					'default' 	=> 'no',
 				]
 			);
@@ -73,7 +73,7 @@ class Spalisho_Elementor_Pricing extends Widget_Base {
 			$this->add_control(
 				'class_icon',
 				[
-					'label' => esc_html__( 'Icon', 'spalisho' ),
+					'label' => esc_html__( 'Icon', 'mellis' ),
 					'type' => Controls_Manager::ICONS,
 					'default' 	=> [
 						'value' 	=> 'flaticon flaticon-spa-candles',
@@ -85,17 +85,17 @@ class Spalisho_Elementor_Pricing extends Widget_Base {
 			$this->add_control(
 				'title',
 				[
-					'label' => esc_html__( 'Title', 'spalisho' ),
+					'label' => esc_html__( 'Title', 'mellis' ),
 					'type' => Controls_Manager::TEXTAREA,
 					'rows' => 3,
-					'default' => esc_html__( 'Comfort Relax', 'spalisho' ),
+					'default' => esc_html__( 'Comfort Relax', 'mellis' ),
 				]
 			);
 
 			$this->add_control(
 				'description',
 				[
-					'label' => esc_html__( 'Description', 'spalisho' ),
+					'label' => esc_html__( 'Description', 'mellis' ),
 					'type' => Controls_Manager::TEXTAREA,
 					'rows' => 4,
 				]
@@ -104,16 +104,16 @@ class Spalisho_Elementor_Pricing extends Widget_Base {
 			$this->add_control(
 				'currency_unit',
 				[
-					'label' => esc_html__( 'Currency Unit', 'spalisho' ),
+					'label' => esc_html__( 'Currency Unit', 'mellis' ),
 					'type' => Controls_Manager::TEXT,
-					'default' => esc_html__( '$', 'spalisho' ),
+					'default' => esc_html__( '$', 'mellis' ),
 				]
 			);
 
 			$this->add_control(
 				'price',
 				[
-					'label' => esc_html__( 'Price', 'spalisho' ),
+					'label' => esc_html__( 'Price', 'mellis' ),
 					'type' => Controls_Manager::NUMBER,
 					'default' => 60,
 				]
@@ -122,9 +122,9 @@ class Spalisho_Elementor_Pricing extends Widget_Base {
 			$this->add_control(
 				'period',
 				[
-					'label' => esc_html__( 'Period', 'spalisho' ),
+					'label' => esc_html__( 'Period', 'mellis' ),
 					'type' => Controls_Manager::TEXT,
-					'default' => esc_html__( '/ Per Day', 'spalisho' ),
+					'default' => esc_html__( '/ Per Day', 'mellis' ),
 				]
 			);
 
@@ -133,7 +133,7 @@ class Spalisho_Elementor_Pricing extends Widget_Base {
 			$repeater->add_control(
 				'class_icon_text_service',
 				[
-					'label' => esc_html__( 'Icon', 'spalisho' ),
+					'label' => esc_html__( 'Icon', 'mellis' ),
 					'type' => Controls_Manager::ICONS,
 					'default' 	=> [
 						'value' 	=> 'fas fa-check',
@@ -145,30 +145,30 @@ class Spalisho_Elementor_Pricing extends Widget_Base {
 			$repeater->add_control(
 				'text_service',
 				[
-					'label' => esc_html__( 'Text Service', 'spalisho' ),
+					'label' => esc_html__( 'Text Service', 'mellis' ),
 					'type' => Controls_Manager::TEXT,
-					'default' => esc_html__( 'Add list text service', 'spalisho' ),
+					'default' => esc_html__( 'Add list text service', 'mellis' ),
 				]
 			);
 
 			$this->add_control(
 				'list_service_text',
 				[
-					'label' => esc_html__( 'List Text Service', 'spalisho' ),
+					'label' => esc_html__( 'List Text Service', 'mellis' ),
 					'type' => Controls_Manager::REPEATER,
 					'fields' => $repeater->get_controls(),
 					'default' => [
 						[	
-							'text_service'      => esc_html__( 'Lorem ipsum dolor sit amet', 'spalisho' ),
+							'text_service'      => esc_html__( 'Lorem ipsum dolor sit amet', 'mellis' ),
 						],
 						[	
-							'text_service'      => esc_html__( 'Eam impedit molestie ett', 'spalisho' ),
+							'text_service'      => esc_html__( 'Eam impedit molestie ett', 'mellis' ),
 						],
 						[	
-							'text_service'      => esc_html__( 'Mei populo est', 'spalisho' ),
+							'text_service'      => esc_html__( 'Mei populo est', 'mellis' ),
 						],
 						[	
-							'text_service'      => esc_html__( 'Vivendo oportere', 'spalisho' ),
+							'text_service'      => esc_html__( 'Vivendo oportere', 'mellis' ),
 						],
 					],
 					'title_field' => '{{{ text_service }}}',
@@ -178,12 +178,12 @@ class Spalisho_Elementor_Pricing extends Widget_Base {
 			$this->add_control(
 				'link',
 				[
-					'label' => esc_html__( 'Link', 'spalisho' ),
+					'label' => esc_html__( 'Link', 'mellis' ),
 					'type' => Controls_Manager::URL,
 					'dynamic' => [
 						'active' => true,
 					],
-					'placeholder' => esc_html__( 'https://your-link.com', 'spalisho' ),
+					'placeholder' => esc_html__( 'https://your-link.com', 'mellis' ),
 					'show_label' => true,
 				]
 			);
@@ -191,9 +191,9 @@ class Spalisho_Elementor_Pricing extends Widget_Base {
 			$this->add_control(
 				'text_button',
 				[
-					'label' 	=> esc_html__( 'Text Button', 'spalisho' ),
+					'label' 	=> esc_html__( 'Text Button', 'mellis' ),
 					'type' 		=> Controls_Manager::TEXT,
-					'default' 	=> esc_html__( 'Book now', 'spalisho' ),
+					'default' 	=> esc_html__( 'Book now', 'mellis' ),
 				]
 			);
 
@@ -203,7 +203,7 @@ class Spalisho_Elementor_Pricing extends Widget_Base {
 		$this->start_controls_section(
             'content_pricing_style',
             [
-                'label' => esc_html__( 'Content', 'spalisho' ),
+                'label' => esc_html__( 'Content', 'mellis' ),
                 'tab' 	=> Controls_Manager::TAB_STYLE,
             ]
         );
@@ -211,10 +211,10 @@ class Spalisho_Elementor_Pricing extends Widget_Base {
             $this->add_control(
 				'content_pricing_bgcolor',
 				[
-					'label' 	=> esc_html__( 'Background Color', 'spalisho' ),
+					'label' 	=> esc_html__( 'Background Color', 'mellis' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .xp-pricing' => 'background-color: {{VALUE}};',
+						'{{WRAPPER}} .ova-pricing' => 'background-color: {{VALUE}};',
 					],
 				]
 			);
@@ -222,10 +222,10 @@ class Spalisho_Elementor_Pricing extends Widget_Base {
             $this->add_control(
 				'content_pricing_bgcolor_hover',
 				[
-					'label' 	=> esc_html__( 'Background Color Hover', 'spalisho' ),
+					'label' 	=> esc_html__( 'Background Color Hover', 'mellis' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .xp-pricing:hover, {{WRAPPER}} .xp-pricing.active' => 'background-color: {{VALUE}};',
+						'{{WRAPPER}} .ova-pricing:hover, {{WRAPPER}} .ova-pricing.active' => 'background-color: {{VALUE}};',
 					],
 				]
 			);
@@ -233,11 +233,11 @@ class Spalisho_Elementor_Pricing extends Widget_Base {
 			$this->add_responsive_control(
 	            'content_pricing_padding',
 	            [
-	                'label' 		=> esc_html__( 'Padding', 'spalisho' ),
+	                'label' 		=> esc_html__( 'Padding', 'mellis' ),
 	                'type' 			=> Controls_Manager::DIMENSIONS,
 	                'size_units' 	=> [ 'px', '%', 'em' ],
 	                'selectors' 	=> [
-	                    '{{WRAPPER}} .xp-pricing' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+	                    '{{WRAPPER}} .ova-pricing' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 	                ],
 	            ]
 	        );
@@ -245,7 +245,7 @@ class Spalisho_Elementor_Pricing extends Widget_Base {
 	        $this->add_control(
 				'pricing_hover_animation',
 				[
-					'label' => __( 'Hover Animation', 'spalisho' ),
+					'label' => __( 'Hover Animation', 'mellis' ),
 					'type' => \Elementor\Controls_Manager::HOVER_ANIMATION,
 					'prefix_class' => 'elementor-animation-',
 				]
@@ -255,8 +255,8 @@ class Spalisho_Elementor_Pricing extends Widget_Base {
 				\Elementor\Group_Control_Box_Shadow::get_type(),
 				[
 					'name' => 'box_shadow',
-					'label' => esc_html__( 'Box Shadow', 'spalisho' ),
-					'selector' => '{{WRAPPER}} .xp-pricing',
+					'label' => esc_html__( 'Box Shadow', 'mellis' ),
+					'selector' => '{{WRAPPER}} .ova-pricing',
 				]
 			);
 
@@ -264,8 +264,8 @@ class Spalisho_Elementor_Pricing extends Widget_Base {
 				\Elementor\Group_Control_Border::get_type(),
 				[
 					'name' => 'box_border',
-					'label' => esc_html__( 'Border', 'spalisho' ),
-					'selector' => '{{WRAPPER}} .xp-pricing',
+					'label' => esc_html__( 'Border', 'mellis' ),
+					'selector' => '{{WRAPPER}} .ova-pricing',
 				]
 			);
 
@@ -277,7 +277,7 @@ class Spalisho_Elementor_Pricing extends Widget_Base {
 		$this->start_controls_section(
             'title_style',
             [
-                'label' => esc_html__( 'Title', 'spalisho' ),
+                'label' => esc_html__( 'Title', 'mellis' ),
                 'tab' 	=> Controls_Manager::TAB_STYLE,
             ]
         );
@@ -286,17 +286,17 @@ class Spalisho_Elementor_Pricing extends Widget_Base {
 				Group_Control_Typography::get_type(),
 				[
 					'name' 		=> 'title_typography',
-					'selector' 	=> '{{WRAPPER}} .xp-pricing .icon-title .title',
+					'selector' 	=> '{{WRAPPER}} .ova-pricing .icon-title .title',
 				]
 			);
 
 			$this->add_control(
 				'title_color',
 				[
-					'label' 	=> esc_html__( 'Color', 'spalisho' ),
+					'label' 	=> esc_html__( 'Color', 'mellis' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .xp-pricing .icon-title .title' => 'color: {{VALUE}};',
+						'{{WRAPPER}} .ova-pricing .icon-title .title' => 'color: {{VALUE}};',
 					],
 				]
 			);	
@@ -304,10 +304,10 @@ class Spalisho_Elementor_Pricing extends Widget_Base {
 			$this->add_control(
 				'title_color_hover',
 				[
-					'label' 	=> esc_html__( 'Color Hover', 'spalisho' ),
+					'label' 	=> esc_html__( 'Color Hover', 'mellis' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .xp-pricing:hover .icon-title .title,{{WRAPPER}} .xp-pricing.active .icon-title .title' => 'color: {{VALUE}};',
+						'{{WRAPPER}} .ova-pricing:hover .icon-title .title,{{WRAPPER}} .ova-pricing.active .icon-title .title' => 'color: {{VALUE}};',
 					],
 				]
 			);			
@@ -315,11 +315,11 @@ class Spalisho_Elementor_Pricing extends Widget_Base {
 			$this->add_responsive_control(
 	            'title_padding',
 	            [
-	                'label' 		=> esc_html__( 'Padding', 'spalisho' ),
+	                'label' 		=> esc_html__( 'Padding', 'mellis' ),
 	                'type' 			=> Controls_Manager::DIMENSIONS,
 	                'size_units' 	=> [ 'px', '%', 'em' ],
 	                'selectors' 	=> [
-	                    '{{WRAPPER}} .xp-pricing .icon-title .title' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+	                    '{{WRAPPER}} .ova-pricing .icon-title .title' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 	                ],
 	            ]
 	        );
@@ -331,7 +331,7 @@ class Spalisho_Elementor_Pricing extends Widget_Base {
 		$this->start_controls_section(
             'icon_style',
             [
-                'label' => esc_html__( 'Icon', 'spalisho' ),
+                'label' => esc_html__( 'Icon', 'mellis' ),
                 'tab' 	=> Controls_Manager::TAB_STYLE,
             ]
         );
@@ -339,7 +339,7 @@ class Spalisho_Elementor_Pricing extends Widget_Base {
 			$this->add_responsive_control(
 				'size_icon',
 				[
-					'label' 		=> esc_html__( 'Size', 'spalisho' ),
+					'label' 		=> esc_html__( 'Size', 'mellis' ),
 					'type' 			=> Controls_Manager::SLIDER,
 					'size_units' 	=> [ 'px'],
 					'range' => [
@@ -350,7 +350,7 @@ class Spalisho_Elementor_Pricing extends Widget_Base {
 						],
 					],
 					'selectors' => [
-						'{{WRAPPER}} .xp-pricing .icon-title i' => 'font-size: {{SIZE}}{{UNIT}};',
+						'{{WRAPPER}} .ova-pricing .icon-title i' => 'font-size: {{SIZE}}{{UNIT}};',
 					],
 				]
 			);
@@ -358,10 +358,10 @@ class Spalisho_Elementor_Pricing extends Widget_Base {
             $this->add_control(
 				'icon_color',
 				[
-					'label' 	=> esc_html__( 'Color', 'spalisho' ),
+					'label' 	=> esc_html__( 'Color', 'mellis' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .xp-pricing .icon-title i' => 'color: {{VALUE}};',
+						'{{WRAPPER}} .ova-pricing .icon-title i' => 'color: {{VALUE}};',
 					],
 				]
 			);
@@ -369,10 +369,10 @@ class Spalisho_Elementor_Pricing extends Widget_Base {
 			$this->add_control(
 				'icon_color_hover',
 				[
-					'label' 	=> esc_html__( 'Color Hover', 'spalisho' ),
+					'label' 	=> esc_html__( 'Color Hover', 'mellis' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .xp-pricing:hover .icon-title i, {{WRAPPER}} .xp-pricing.active .icon-title i' => 'color: {{VALUE}};',
+						'{{WRAPPER}} .ova-pricing:hover .icon-title i, {{WRAPPER}} .ova-pricing.active .icon-title i' => 'color: {{VALUE}};',
 					],
 				]
 			);
@@ -385,7 +385,7 @@ class Spalisho_Elementor_Pricing extends Widget_Base {
 		$this->start_controls_section(
             'price_style',
             [
-                'label' => esc_html__( 'Price', 'spalisho' ),
+                'label' => esc_html__( 'Price', 'mellis' ),
                 'tab' 	=> Controls_Manager::TAB_STYLE,
             ]
         );
@@ -394,17 +394,17 @@ class Spalisho_Elementor_Pricing extends Widget_Base {
 				Group_Control_Typography::get_type(),
 				[
 					'name' 		=> 'price_typography',
-					'selector' 	=> '{{WRAPPER}} .xp-pricing .price .xp-price',
+					'selector' 	=> '{{WRAPPER}} .ova-pricing .price .ova-price',
 				]
 			);
 
 			$this->add_control(
 				'price_color',
 				[
-					'label' 	=> esc_html__( 'Color', 'spalisho' ),
+					'label' 	=> esc_html__( 'Color', 'mellis' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .xp-pricing .price .xp-price' => 'color: {{VALUE}};',
+						'{{WRAPPER}} .ova-pricing .price .ova-price' => 'color: {{VALUE}};',
 					],
 				]
 			);
@@ -412,10 +412,10 @@ class Spalisho_Elementor_Pricing extends Widget_Base {
 			$this->add_control(
 				'price_color_hover',
 				[
-					'label' 	=> esc_html__( 'Color Hover', 'spalisho' ),
+					'label' 	=> esc_html__( 'Color Hover', 'mellis' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .xp-pricing:hover .price .xp-price, {{WRAPPER}} .xp-pricing.active .price .xp-price' => 'color: {{VALUE}};',
+						'{{WRAPPER}} .ova-pricing:hover .price .ova-price, {{WRAPPER}} .ova-pricing.active .price .ova-price' => 'color: {{VALUE}};',
 					],
 				]
 			);
@@ -423,23 +423,23 @@ class Spalisho_Elementor_Pricing extends Widget_Base {
 			$this->add_responsive_control(
 				'position_currency',
 				[
-					'label' 	=> esc_html__( 'Position Currency', 'spalisho' ),
+					'label' 	=> esc_html__( 'Position Currency', 'mellis' ),
 					'type' 		=> \Elementor\Controls_Manager::CHOOSE,
 					'options' 	=> [
 						'row' => [
-							'title' => esc_html__( 'Left', 'spalisho' ),
+							'title' => esc_html__( 'Left', 'mellis' ),
 							'icon' 	=> 'eicon-h-align-left',
 						],
 						
 						'row-reverse' => [
-							'title' => esc_html__( 'Right', 'spalisho' ),
+							'title' => esc_html__( 'Right', 'mellis' ),
 							'icon' 	=> 'eicon-h-align-right',
 						],
 					],
 				
 					'toggle' 	=> true,
 					'selectors' => [
-						'{{WRAPPER}} .xp-pricing .price .xp-price' => 'flex-direction: {{VALUE}}',
+						'{{WRAPPER}} .ova-pricing .price .ova-price' => 'flex-direction: {{VALUE}}',
 
 					],
 				]
@@ -452,7 +452,7 @@ class Spalisho_Elementor_Pricing extends Widget_Base {
 		$this->start_controls_section(
             'period_style',
             [
-                'label' => esc_html__( 'Period', 'spalisho' ),
+                'label' => esc_html__( 'Period', 'mellis' ),
                 'tab' 	=> Controls_Manager::TAB_STYLE,
             ]
         );
@@ -461,17 +461,17 @@ class Spalisho_Elementor_Pricing extends Widget_Base {
 				Group_Control_Typography::get_type(),
 				[
 					'name' 		=> 'period_typography',
-					'selector' 	=> '{{WRAPPER}} .xp-pricing .price .period',
+					'selector' 	=> '{{WRAPPER}} .ova-pricing .price .period',
 				]
 			);
 
 			$this->add_control(
 				'period_color',
 				[
-					'label' 	=> esc_html__( 'Color', 'spalisho' ),
+					'label' 	=> esc_html__( 'Color', 'mellis' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .xp-pricing .price .period' => 'color: {{VALUE}};',
+						'{{WRAPPER}} .ova-pricing .price .period' => 'color: {{VALUE}};',
 					],
 				]
 			);
@@ -484,7 +484,7 @@ class Spalisho_Elementor_Pricing extends Widget_Base {
 		$this->start_controls_section(
             'list_text_service_style',
             [
-                'label' => esc_html__( 'List Text Service', 'spalisho' ),
+                'label' => esc_html__( 'List Text Service', 'mellis' ),
                 'tab' 	=> Controls_Manager::TAB_STYLE,
             ]
         );   
@@ -492,7 +492,7 @@ class Spalisho_Elementor_Pricing extends Widget_Base {
  			$this->add_control(
 				'list_text_service_general_heading',
 				[
-					'label' 	=> esc_html__( 'General', 'spalisho' ),
+					'label' 	=> esc_html__( 'General', 'mellis' ),
 					'type' 		=> Controls_Manager::HEADING,
 				]
 			);
@@ -500,7 +500,7 @@ class Spalisho_Elementor_Pricing extends Widget_Base {
 	            $this->add_responsive_control(
 					'space_between_text_service',
 					[
-						'label' 		=> esc_html__( 'Space Between', 'spalisho' ),
+						'label' 		=> esc_html__( 'Space Between', 'mellis' ),
 						'type' 			=> Controls_Manager::SLIDER,
 						'size_units' 	=> [ 'px'],
 						'range' => [
@@ -511,7 +511,7 @@ class Spalisho_Elementor_Pricing extends Widget_Base {
 							],
 						],
 						'selectors' => [
-							'{{WRAPPER}} .xp-pricing .pricing-service .pricing-service-list .item' => 'margin-bottom: {{SIZE}}{{UNIT}};',
+							'{{WRAPPER}} .ova-pricing .pricing-service .pricing-service-list .item' => 'margin-bottom: {{SIZE}}{{UNIT}};',
 						],
 					]
 				);
@@ -520,19 +520,19 @@ class Spalisho_Elementor_Pricing extends Widget_Base {
 					\Elementor\Group_Control_Border::get_type(),
 					[
 						'name' => 'general_border',
-						'label' => esc_html__( 'Border', 'spalisho' ),
-						'selector' => '{{WRAPPER}} .xp-pricing .pricing-service',
+						'label' => esc_html__( 'Border', 'mellis' ),
+						'selector' => '{{WRAPPER}} .ova-pricing .pricing-service',
 					]
 				);
 
 				$this->add_responsive_control(
 					'service_general_margin',
 					[
-						'label' => esc_html__( 'Margin', 'spalisho' ),
+						'label' => esc_html__( 'Margin', 'mellis' ),
 						'type' => Controls_Manager::DIMENSIONS,
 						'size_units' => [ 'px', 'em', '%' ],
 						'selectors' => [
-							'{{WRAPPER}} .xp-pricing .pricing-service' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+							'{{WRAPPER}} .ova-pricing .pricing-service' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 						],
 						
 					]
@@ -540,11 +540,11 @@ class Spalisho_Elementor_Pricing extends Widget_Base {
 				$this->add_responsive_control(
 					'service_general_padding',
 					[
-						'label' => esc_html__( 'Padding', 'spalisho' ),
+						'label' => esc_html__( 'Padding', 'mellis' ),
 						'type' => Controls_Manager::DIMENSIONS,
 						'size_units' => [ 'px', 'em', '%' ],
 						'selectors' => [
-							'{{WRAPPER}} .xp-pricing .pricing-service' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+							'{{WRAPPER}} .ova-pricing .pricing-service' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 						],
 						
 					]
@@ -553,7 +553,7 @@ class Spalisho_Elementor_Pricing extends Widget_Base {
 			$this->add_control(
 				'list_text_service_icon_heading',
 				[
-					'label' 	=> esc_html__( 'Icon', 'spalisho' ),
+					'label' 	=> esc_html__( 'Icon', 'mellis' ),
 					'type' 		=> Controls_Manager::HEADING,
 				]
 			);
@@ -561,7 +561,7 @@ class Spalisho_Elementor_Pricing extends Widget_Base {
 				$this->add_responsive_control(
 					'size_icon_service',
 					[
-						'label' 		=> esc_html__( 'Size', 'spalisho' ),
+						'label' 		=> esc_html__( 'Size', 'mellis' ),
 						'type' 			=> Controls_Manager::SLIDER,
 						'size_units' 	=> [ 'px'],
 						'range' => [
@@ -572,7 +572,7 @@ class Spalisho_Elementor_Pricing extends Widget_Base {
 							],
 						],
 						'selectors' => [
-							'{{WRAPPER}} .xp-pricing .pricing-service .pricing-service-list .item i' => 'font-size: {{SIZE}}{{UNIT}};',
+							'{{WRAPPER}} .ova-pricing .pricing-service .pricing-service-list .item i' => 'font-size: {{SIZE}}{{UNIT}};',
 						],
 					]
 				);
@@ -580,10 +580,10 @@ class Spalisho_Elementor_Pricing extends Widget_Base {
 	            $this->add_control(
 					'icon_service_color',
 					[
-						'label' 	=> esc_html__( 'Color', 'spalisho' ),
+						'label' 	=> esc_html__( 'Color', 'mellis' ),
 						'type' 		=> Controls_Manager::COLOR,
 						'selectors' => [
-							'{{WRAPPER}} .xp-pricing .pricing-service .pricing-service-list .item i' => 'color: {{VALUE}};',
+							'{{WRAPPER}} .ova-pricing .pricing-service .pricing-service-list .item i' => 'color: {{VALUE}};',
 						],
 					]
 				);
@@ -591,11 +591,11 @@ class Spalisho_Elementor_Pricing extends Widget_Base {
 				$this->add_responsive_control(
 					'icon_service_margin',
 					[
-						'label' => esc_html__( 'Margin', 'spalisho' ),
+						'label' => esc_html__( 'Margin', 'mellis' ),
 						'type' => Controls_Manager::DIMENSIONS,
 						'size_units' => [ 'px', 'em', '%' ],
 						'selectors' => [
-							'{{WRAPPER}} .xp-pricing .pricing-service .pricing-service-list .item i' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+							'{{WRAPPER}} .ova-pricing .pricing-service .pricing-service-list .item i' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 						],
 						
 					]
@@ -604,7 +604,7 @@ class Spalisho_Elementor_Pricing extends Widget_Base {
             $this->add_control(
 				'list_text_service_heading',
 				[
-					'label' 	=> esc_html__( 'Text Service', 'spalisho' ),
+					'label' 	=> esc_html__( 'Text Service', 'mellis' ),
 					'type' 		=> Controls_Manager::HEADING,
 					'separator' => 'before'
 				]
@@ -614,17 +614,17 @@ class Spalisho_Elementor_Pricing extends Widget_Base {
 					Group_Control_Typography::get_type(),
 					[
 						'name' 		=> 'list_text_service_typography',
-						'selector' 	=> '{{WRAPPER}} .xp-pricing .pricing-service .pricing-service-list .item .text_service',
+						'selector' 	=> '{{WRAPPER}} .ova-pricing .pricing-service .pricing-service-list .item .text_service',
 					]
 				);
 
 				$this->add_control(
 					'list_text_service_color',
 					[
-						'label' 	=> esc_html__( 'Color', 'spalisho' ),
+						'label' 	=> esc_html__( 'Color', 'mellis' ),
 						'type' 		=> Controls_Manager::COLOR,
 						'selectors' => [
-							'{{WRAPPER}}  .xp-pricing .pricing-service .pricing-service-list .item .text_service' => 'color: {{VALUE}};',
+							'{{WRAPPER}}  .ova-pricing .pricing-service .pricing-service-list .item .text_service' => 'color: {{VALUE}};',
 						],
 					]
 				);
@@ -632,10 +632,10 @@ class Spalisho_Elementor_Pricing extends Widget_Base {
 				$this->add_control(
 					'list_text_service_color_hover',
 					[
-						'label' 	=> esc_html__( 'Color Hover', 'spalisho' ),
+						'label' 	=> esc_html__( 'Color Hover', 'mellis' ),
 						'type' 		=> Controls_Manager::COLOR,
 						'selectors' => [
-							'{{WRAPPER}} .xp-pricing:hover .pricing-service .pricing-service-list .item .text_service, {{WRAPPER}} .xp-pricing.active .pricing-service .pricing-service-list .item .text_service' => 'color: {{VALUE}};',
+							'{{WRAPPER}} .ova-pricing:hover .pricing-service .pricing-service-list .item .text_service, {{WRAPPER}} .ova-pricing.active .pricing-service .pricing-service-list .item .text_service' => 'color: {{VALUE}};',
 						],
 					]
 				);
@@ -643,11 +643,11 @@ class Spalisho_Elementor_Pricing extends Widget_Base {
 				$this->add_responsive_control(
 					'text_service_margin',
 					[
-						'label' => esc_html__( 'Margin', 'spalisho' ),
+						'label' => esc_html__( 'Margin', 'mellis' ),
 						'type' => Controls_Manager::DIMENSIONS,
 						'size_units' => [ 'px', 'em', '%' ],
 						'selectors' => [
-							'{{WRAPPER}} .xp-pricing .pricing-service .pricing-service-list .item .text_service' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+							'{{WRAPPER}} .ova-pricing .pricing-service .pricing-service-list .item .text_service' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 						],
 						
 					]
@@ -661,7 +661,7 @@ class Spalisho_Elementor_Pricing extends Widget_Base {
 		$this->start_controls_section(
             'button_style',
             [
-                'label' => esc_html__( 'Button', 'spalisho' ),
+                'label' => esc_html__( 'Button', 'mellis' ),
                 'tab' 	=> Controls_Manager::TAB_STYLE,
             ]
         );
@@ -670,17 +670,17 @@ class Spalisho_Elementor_Pricing extends Widget_Base {
 				Group_Control_Typography::get_type(),
 				[
 					'name' 		=> 'text_button_typography',
-					'selector' 	=> '{{WRAPPER}} .xp-pricing .pricing-btn',
+					'selector' 	=> '{{WRAPPER}} .ova-pricing .pricing-btn',
 				]
 			);
             
             $this->add_control(
 				'button_text_color',
 				[
-					'label' 	=> esc_html__( 'Color', 'spalisho' ),
+					'label' 	=> esc_html__( 'Color', 'mellis' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .xp-pricing .pricing-btn' => 'color: {{VALUE}};',
+						'{{WRAPPER}} .ova-pricing .pricing-btn' => 'color: {{VALUE}};',
 					],
 				]
 			);
@@ -688,10 +688,10 @@ class Spalisho_Elementor_Pricing extends Widget_Base {
 			 $this->add_control(
 				'button_text_color_hover',
 				[
-					'label' 	=> esc_html__( 'Color Hover', 'spalisho' ),
+					'label' 	=> esc_html__( 'Color Hover', 'mellis' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .xp-pricing .pricing-btn:hover' => 'color: {{VALUE}};',
+						'{{WRAPPER}} .ova-pricing .pricing-btn:hover' => 'color: {{VALUE}};',
 					],
 				]
 			);
@@ -699,10 +699,10 @@ class Spalisho_Elementor_Pricing extends Widget_Base {
             $this->add_control(
 				'button_bgcolor',
 				[
-					'label' 	=> esc_html__( 'Background Color', 'spalisho' ),
+					'label' 	=> esc_html__( 'Background Color', 'mellis' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .xp-pricing .pricing-btn' => 'background-color: {{VALUE}};',
+						'{{WRAPPER}} .ova-pricing .pricing-btn' => 'background-color: {{VALUE}};',
 					],
 				]
 			);
@@ -710,10 +710,10 @@ class Spalisho_Elementor_Pricing extends Widget_Base {
             $this->add_control(
 				'button_bgcolor_hover',
 				[
-					'label' 	=> esc_html__( 'Background Color Hover', 'spalisho' ),
+					'label' 	=> esc_html__( 'Background Color Hover', 'mellis' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .xp-pricing .pricing-btn:hover' => 'background-color: {{VALUE}};',
+						'{{WRAPPER}} .ova-pricing .pricing-btn:hover' => 'background-color: {{VALUE}};',
 					],
 				]
 			);
@@ -721,22 +721,22 @@ class Spalisho_Elementor_Pricing extends Widget_Base {
 			$this->add_responsive_control(
 	            'button_padding',
 	            [
-	                'label' 		=> esc_html__( 'Padding', 'spalisho' ),
+	                'label' 		=> esc_html__( 'Padding', 'mellis' ),
 	                'type' 			=> Controls_Manager::DIMENSIONS,
 	                'size_units' 	=> [ 'px', '%', 'em' ],
 	                'selectors' 	=> [
-	                    '{{WRAPPER}} .xp-pricing .pricing-btn' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+	                    '{{WRAPPER}} .ova-pricing .pricing-btn' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 	                ],
 	            ]
 	        );
 	        $this->add_responsive_control(
 	            'button_margin',
 	            [
-	                'label' 		=> esc_html__( 'Margin', 'spalisho' ),
+	                'label' 		=> esc_html__( 'Margin', 'mellis' ),
 	                'type' 			=> Controls_Manager::DIMENSIONS,
 	                'size_units' 	=> [ 'px', '%', 'em' ],
 	                'selectors' 	=> [
-	                    '{{WRAPPER}} .xp-pricing .pricing-btn' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+	                    '{{WRAPPER}} .ova-pricing .pricing-btn' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 	                ],
 	            ]
 	        );
@@ -744,11 +744,11 @@ class Spalisho_Elementor_Pricing extends Widget_Base {
 	        $this->add_responsive_control(
 	            'button_border_radius',
 	            [
-	                'label' 		=> esc_html__( 'Border Radius', 'spalisho' ),
+	                'label' 		=> esc_html__( 'Border Radius', 'mellis' ),
 	                'type' 			=> Controls_Manager::DIMENSIONS,
 	                'size_units' 	=> [ 'px', '%', 'em' ],
 	                'selectors' 	=> [
-	                    '{{WRAPPER}} .xp-pricing .pricing-btn' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+	                    '{{WRAPPER}} .ova-pricing .pricing-btn' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 	                ],
 	            ]
 	        );
@@ -757,8 +757,8 @@ class Spalisho_Elementor_Pricing extends Widget_Base {
 				\Elementor\Group_Control_Border::get_type(),
 				[
 					'name' => 'button_border',
-					'label' => esc_html__( 'Border', 'spalisho' ),
-					'selector' => '{{WRAPPER}} .xp-pricing .pricing-btn',
+					'label' => esc_html__( 'Border', 'mellis' ),
+					'selector' => '{{WRAPPER}} .ova-pricing .pricing-btn',
 				]
 			);
 
@@ -766,10 +766,10 @@ class Spalisho_Elementor_Pricing extends Widget_Base {
 			$this->add_control(
 				'button_border_hover',
 				[
-					'label' 	=> esc_html__( 'Border Color Hover', 'spalisho' ),
+					'label' 	=> esc_html__( 'Border Color Hover', 'mellis' ),
 					'type' 		=> Controls_Manager::COLOR,
 					'selectors' => [
-						'{{WRAPPER}} .xp-pricing .pricing-btn:hover' => 'border-color: {{VALUE}};',
+						'{{WRAPPER}} .ova-pricing .pricing-btn:hover' => 'border-color: {{VALUE}};',
 					],
 				]
 			);
@@ -810,7 +810,7 @@ class Spalisho_Elementor_Pricing extends Widget_Base {
 		?>
            
 
-           <div class="xp-pricing <?php echo esc_attr( $template ); ?> <?php echo esc_attr( $active ); ?>"> 
+           <div class="ova-pricing <?php echo esc_attr( $template ); ?> <?php echo esc_attr( $active ); ?>"> 
 
            		<?php if( $template == 'template1' ) : ?>
                     <div class="icon-title">
@@ -837,7 +837,7 @@ class Spalisho_Elementor_Pricing extends Widget_Base {
 
 	                	<div class="price">
 							<?php if( !empty( $price ) ) :?>
-				                <div class="xp-price">
+				                <div class="ova-price">
 				                	<span><?php echo esc_html( $currency_unit ) ;?></span> 
 				                	<span> <?php echo esc_html( $price ); ?></span>
 				                </div>
@@ -865,7 +865,7 @@ class Spalisho_Elementor_Pricing extends Widget_Base {
                 	<?php if( $template == 'template1' ) : ?>
 	                	<div class="price">
 							<?php if( !empty( $price ) ) :?>
-				                <div class="xp-price">
+				                <div class="ova-price">
 				                	<span><?php echo esc_html( $currency_unit ) ;?></span> 
 				                	<span> <?php echo esc_html( $price ); ?></span>
 				                </div>
@@ -909,4 +909,4 @@ class Spalisho_Elementor_Pricing extends Widget_Base {
 
 	
 }
-$widgets_manager->register( new Spalisho_Elementor_Pricing() );
+$widgets_manager->register( new Mellis_Elementor_Pricing() );
