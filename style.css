@@ -4672,6 +4672,15 @@ body.woocommerce #woo_sidebar {
 }
 
 /*19.0 Elementor*/
+.xp-service-box-template4 .count {
+  display: none;
+}
+.xp-service-box-template4 .icon i {
+  vertical-align: middle;
+}
+.xp-service-box-template4 {
+  padding: 30px 25px 25px 25px;
+}
 .elementor-button.elementor-button-link {
   font-family: var(--secondary-font);
 }
