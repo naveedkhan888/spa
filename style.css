@@ -4671,6 +4671,9 @@ body.woocommerce #woo_sidebar {
 }
 
 /*19.0 Elementor*/
+.elementor-button.elementor-button-link {
+  font-family: var(--secondary-font);
+}
 .brand_el .logo_desktop {
   display: block;
 }
@@ -6111,11 +6114,11 @@ body.woocommerce #woo_sidebar {
   margin: 0;
   font-family: var(--primary-font);
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 700;
   /* color: var(--primary); */
   line-height: 1.2;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 0;
 }
 .xp-title .title {
   margin: 8px 0 30px 0;
@@ -6149,6 +6152,7 @@ body.woocommerce #woo_sidebar {
   font-size: 16px;
   font-weight: 400;
   margin-bottom: 0;
+  line-height: 1.6;
 }
 .xp-title.template_3 .sub-title {
   font-size: 20px;
