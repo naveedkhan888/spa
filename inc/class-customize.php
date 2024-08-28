@@ -277,7 +277,7 @@ if (!class_exists( 'Spalisho_Customize' )){
 					'capability' 		=> 'edit_theme_options',
 					'theme_supports' 	=> '', // Rarely needed.
 					'transport' 		=> 'refresh', // or postMessage
-					'default'			=> '#de968d',
+					'default'			=> '#e7a391',
 					'sanitize_callback' => 'sanitize_text_field' // Get function name 
 				) );
 				$wp_customize->add_control(
@@ -296,7 +296,7 @@ if (!class_exists( 'Spalisho_Customize' )){
 					'type' 				=> 'theme_mod', // or 'option'
 					'capability' 		=> 'edit_theme_options',
 					'theme_supports' 	=> '', // Rarely needed.
-					'default'			=> '#27252a',		
+					'default'			=> '#0a132e',		
 					'transport' 		=> 'refresh', // or postMessage
 					'sanitize_callback' => 'sanitize_text_field' // Get function name 
 				) );
@@ -315,7 +315,7 @@ if (!class_exists( 'Spalisho_Customize' )){
 				  'type' 				=> 'theme_mod', // or 'option'
 				  'capability' 			=> 'edit_theme_options',
 				  'theme_supports' 		=> '', // Rarely needed.
-				  'default'				=> '#89868d',
+				  'default'				=> '#666666',
 				  'transport' 			=> 'refresh', // or postMessage
 				  'sanitize_callback' 	=> 'sanitize_text_field' // Get function name 
 				  

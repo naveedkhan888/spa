@@ -226,9 +226,9 @@ if( !class_exists('Spalisho_Main') ){
         function spalisho_enqueue_customize(){
         	$css = '';
            
-			$primary_color 	= get_theme_mod( 'primary_color', '#de968d' );
-			$heading_color 	= get_theme_mod( 'heading_color', '#27252a' );
-			$text_color 	= get_theme_mod( 'text_color', '#89868d' );
+			$primary_color 	= get_theme_mod( 'primary_color', '#e7a391' );
+			$heading_color 	= get_theme_mod( 'heading_color', '#0a132e' );
+			$text_color 	= get_theme_mod( 'text_color', '#666666' );
 			$light_color 	= get_theme_mod( 'light_color', '#f0e8e8' );
 
 			/* Primary Font */
