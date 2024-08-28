@@ -4709,7 +4709,7 @@ body.woocommerce #woo_sidebar {
 
 
 
-.avatar {
+.avatar_img {
   box-sizing: border-box;
   transform: translatey(0px);
   animation: float 6s ease-in-out infinite;
