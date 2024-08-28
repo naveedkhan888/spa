@@ -115,7 +115,7 @@ if ( ! function_exists( 'spalisho_default_primary_font' ) ) {
     function spalisho_default_primary_font() {
         $customizer_defaults = json_encode(
             array(
-                'font' => 'Mulish',
+                'font' => 'DM Sans',
                 'regularweight' => '100,200,300,400,500,600,700,800,900, regular',
                 'category' => 'serif'
             )
@@ -130,7 +130,7 @@ if ( ! function_exists( 'spalisho_default_second_font' ) ) {
     function spalisho_default_second_font() {
         $customizer_defaults = json_encode(
             array(
-                'font' => 'Bitter',
+                'font' => 'Span',
                 'regularweight' => '100,200,300,400,500,600,700,800,900, regular, italic',
                 'category' => 'serif'
             )
