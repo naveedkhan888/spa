@@ -4672,6 +4672,25 @@ body.woocommerce #woo_sidebar {
 }
 
 /*19.0 Elementor*/
+.move_object img{
+    animation: rotate 20s linear infinite;
+}
+@-webkit-keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .xp-service-box-template4 .count {
   display: none;
 }
