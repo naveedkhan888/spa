@@ -840,9 +840,10 @@ ul.menu li.current-menu-item > a, ul.menu li.current-menu-ancestor > a, ul.menu 
   background-color: rgba(0, 0, 0, 0.03);
 }
 .main-navigation ul li a {
-  color: var(--text);
+  color: var(--heading);
   padding: 0.6180469716em;
   display: block;
+  font-family: var(--secondary-font);
 }
 .main-navigation ul li a:hover {
   color: var(--primary);
