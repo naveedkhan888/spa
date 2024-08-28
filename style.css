@@ -963,7 +963,7 @@ ul.menu li.current-menu-item > a, ul.menu li.current-menu-ancestor > a, ul.menu 
   }
   .main-navigation ul.menu > li > a {
     padding: 1em;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 600;
     text-transform: uppercase;
   }
@@ -981,9 +981,9 @@ ul.menu li.current-menu-item > a, ul.menu li.current-menu-ancestor > a, ul.menu 
     font-weight: normal;
     line-height: 1;
     vertical-align: middle;
-    margin: 0 0.35em;
-    font-size: 0.5em;
-    font-weight: 500;
+    margin: 0 0.80em;
+    font-size: 0.6em;
+    font-weight: 600;
     -ms-transition: transform 0.3s ease;
     -o-transition: transform 0.3s ease;
     -moz-transition: transform 0.3s ease;
