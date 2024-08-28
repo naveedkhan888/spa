@@ -115,7 +115,7 @@ if ( ! function_exists( 'spalisho_default_primary_font' ) ) {
     function spalisho_default_primary_font() {
         $customizer_defaults = json_encode(
             array(
-                'font' => 'DM Sans',
+                'font' => 'Mulish',
                 'regularweight' => '100,200,300,400,500,600,700,800,900, regular',
                 'category' => 'serif'
             )
