@@ -215,7 +215,7 @@ if( !class_exists('Spalisho_Main') ){
 		    wp_enqueue_style('xp-flaticon', SPALISHO_URI.'/assets/libs/flaticon/font/flaticon.css', array(), null);
 
 		    // Xp Spa Icon
-		    wp_enqueue_style('xp-spaicon', SPALISHO_URI.'/assets/libs/xpspaicon/font/flaticon.css', array(), null);
+		    wp_enqueue_style('xp-spaicon', SPALISHO_URI.'/assets/libs/xpspaicon/style.css', array(), null);
 
 		    wp_enqueue_script('masonry', SPALISHO_URI.'/assets/libs/masonry.min.js', array('jquery'),null,true);
 		    
