@@ -10,16 +10,16 @@
 */
 
 @font-face {
-    font-family: "flaticon_mycollection";
-    src: url("./flaticon_mycollection.woff2?157b7fb2562ec90e3bf2021b1c33ae5e") format("woff2"),
-url("./flaticon_mycollection.woff?157b7fb2562ec90e3bf2021b1c33ae5e") format("woff"),
-url("./flaticon_mycollection.eot?157b7fb2562ec90e3bf2021b1c33ae5e#iefix") format("embedded-opentype"),
-url("./flaticon_mycollection.ttf?157b7fb2562ec90e3bf2021b1c33ae5e") format("truetype"),
-url("./flaticon_mycollection.svg?157b7fb2562ec90e3bf2021b1c33ae5e#flaticon_mycollection") format("svg")
+    font-family: "flaticon";
+    src: url("./flaticon.woff2?157b7fb2562ec90e3bf2021b1c33ae5e") format("woff2"),
+url("./flaticon.woff?157b7fb2562ec90e3bf2021b1c33ae5e") format("woff"),
+url("./flaticon.eot?157b7fb2562ec90e3bf2021b1c33ae5e#iefix") format("embedded-opentype"),
+url("./flaticon.ttf?157b7fb2562ec90e3bf2021b1c33ae5e") format("truetype"),
+url("./flaticon.svg?157b7fb2562ec90e3bf2021b1c33ae5e#flaticon") format("svg")
 }
 
 i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
-    font-family: flaticon_mycollection !important;
+    font-family: flaticon !important;
     font-style: normal;
     font-weight: normal !important;
     font-variant: normal;
