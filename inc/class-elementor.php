@@ -318,6 +318,9 @@ class Spalisho_Elementor {
 
 	    // Flaticon
 	    wp_enqueue_style('xp-flaticon', SPALISHO_URI.'/assets/libs/flaticon/font/flaticon.css', array(), null);
+
+	    // Xp Spa Icon
+	    wp_enqueue_style('xp-spaicon', SPALISHO_URI.'/assets/libs/xpspaicon/font/flaticon.css', array(), null);
 	}
 	
 	
@@ -346,6 +349,21 @@ class Spalisho_Elementor {
 		$newicons[ $flaticon_data['name'] ] = [
 			'name'          => $flaticon_data['name'],
 			'label'         => esc_html__( 'Flaticon', 'spalisho' ),
+			'url'           => '',
+			'enqueue'       => '',
+			'prefix'        => 'flaticon-',
+			'displayPrefix' => '',
+			'ver'           => '1.0',
+			'fetchJson'     => $flaticon_data['json_url'],
+		];
+
+		// Xp Spa Icon
+		$flaticon_data['json_url'] = SPALISHO_URI.'/assets/libs/xpspaicon/flaticon.json';
+		$flaticon_data['name'] = 'flaticon';
+
+		$newicons[ $flaticon_data['name'] ] = [
+			'name'          => $flaticon_data['name'],
+			'label'         => esc_html__( 'Xp Spa Icon', 'spalisho' ),
 			'url'           => '',
 			'enqueue'       => '',
 			'prefix'        => 'flaticon-',
