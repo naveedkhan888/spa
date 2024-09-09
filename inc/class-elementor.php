@@ -316,8 +316,8 @@ class Spalisho_Elementor {
 		 // Font Icon
 	    wp_enqueue_style('xpicon', SPALISHO_URI.'/assets/libs/xpicon/font/xpicon.css', array(), null);
 
-	    // Flaticon
-	    wp_enqueue_style('xp-flaticon', SPALISHO_URI.'/assets/libs/flaticon/font/flaticon.css', array(), null);
+	    // Webicon
+	    wp_enqueue_style('xp-webicon', SPALISHO_URI.'/assets/libs/webicon/font/webicon.css', array(), null);
 
 	    // Xp Spa Icon
 	    wp_enqueue_style('xp-spaicon', SPALISHO_URI.'/assets/libs/xpspaicon/style.css', array(), null);
@@ -343,15 +343,15 @@ class Spalisho_Elementor {
 		];
 
 		// Flaticon
-		$flaticon_data['json_url'] = SPALISHO_URI.'/assets/libs/flaticon/flaticon.json';
-		$flaticon_data['name'] = 'flaticon';
+		$flaticon_data['json_url'] = SPALISHO_URI.'/assets/libs/webicon/webicon.json';
+		$flaticon_data['name'] = 'webicon';
 
 		$newicons[ $flaticon_data['name'] ] = [
 			'name'          => $flaticon_data['name'],
-			'label'         => esc_html__( 'Flaticon', 'spalisho' ),
+			'label'         => esc_html__( 'Webicon', 'spalisho' ),
 			'url'           => '',
 			'enqueue'       => '',
-			'prefix'        => 'flaticon-',
+			'prefix'        => 'webicon-',
 			'displayPrefix' => '',
 			'ver'           => '1.0',
 			'fetchJson'     => $flaticon_data['json_url'],

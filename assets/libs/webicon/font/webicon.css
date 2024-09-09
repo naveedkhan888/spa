@@ -1,0 +1,248 @@
+/*!
+*    ______ _       _   _
+*    |  ____| |     | | (_)
+*    | |__  | | __ _| |_ _  ___ ___  _ __
+*    |  __| | |/ _` | __| |/ __/ _ \| '_ \
+*    | |    | | (_| | |_| | (_| (_) | | | |
+*    |_|    |_|\__,_|\__|_|\___\___/|_| |_|
+*
+*         https://www.webicon.com
+*/
+
+@font-face {
+    font-family: "webicon";
+    src: url("./webicon.woff2?93d1e7b19a3ba150fea1f1b85829a737") format("woff2"),
+url("./webicon.woff?93d1e7b19a3ba150fea1f1b85829a737") format("woff"),
+url("./webicon.eot?93d1e7b19a3ba150fea1f1b85829a737#iefix") format("embedded-opentype"),
+url("./webicon.ttf?93d1e7b19a3ba150fea1f1b85829a737") format("truetype"),
+url("./webicon.svg?93d1e7b19a3ba150fea1f1b85829a737#webicon") format("svg")
+}
+
+i[class^="webicon-"]:before, i[class*=" webicon-"]:before {
+    font-family: webicon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.webicon-envelope:before {
+    content: "\f101";
+}
+.webicon-telephone:before {
+    content: "\f102";
+}
+.webicon-phone:before {
+    content: "\f103";
+}
+.webicon-shopping-cart:before {
+    content: "\f104";
+}
+.webicon-special:before {
+    content: "\f105";
+}
+.webicon-special-1:before {
+    content: "\f106";
+}
+.webicon-search:before {
+    content: "\f107";
+}
+.webicon-gift:before {
+    content: "\f108";
+}
+.webicon-facial-mask:before {
+    content: "\f109";
+}
+.webicon-massage:before {
+    content: "\f10a";
+}
+.webicon-lotus:before {
+    content: "\f10b";
+}
+.webicon-right-arrow:before {
+    content: "\f10c";
+}
+.webicon-play:before {
+    content: "\f10d";
+}
+.webicon-massage-1:before {
+    content: "\f10e";
+}
+.webicon-facial-massage:before {
+    content: "\f10f";
+}
+.webicon-lotus-1:before {
+    content: "\f110";
+}
+.webicon-herbal:before {
+    content: "\f111";
+}
+.webicon-customer-service:before {
+    content: "\f112";
+}
+.webicon-quotation:before {
+    content: "\f113";
+}
+.webicon-time:before {
+    content: "\f114";
+}
+.webicon-user:before {
+    content: "\f115";
+}
+.webicon-chat:before {
+    content: "\f116";
+}
+.webicon-send:before {
+    content: "\f117";
+}
+.webicon-telephone-1:before {
+    content: "\f118";
+}
+.webicon-alarm-clock:before {
+    content: "\f119";
+}
+.webicon-spa-candles:before {
+    content: "\f11a";
+}
+.webicon-meditation:before {
+    content: "\f11b";
+}
+.webicon-facial-massage-1:before {
+    content: "\f11c";
+}
+.webicon-hot-stones:before {
+    content: "\f11d";
+}
+.webicon-save-water:before {
+    content: "\f11e";
+}
+.webicon-facial-mask-1:before {
+    content: "\f11f";
+}
+.webicon-facial-treatment:before {
+    content: "\f120";
+}
+.webicon-massage-2:before {
+    content: "\f121";
+}
+.webicon-stones:before {
+    content: "\f122";
+}
+.webicon-herbs:before {
+    content: "\f123";
+}
+.webicon-lotus-flower:before {
+    content: "\f124";
+}
+.webicon-facial:before {
+    content: "\f125";
+}
+.webicon-spa:before {
+    content: "\f126";
+}
+.webicon-caret-right:before {
+    content: "\f127";
+}
+.webicon-email:before {
+    content: "\f128";
+}
+.webicon-aroma:before {
+    content: "\f129";
+}
+.webicon-aroma-1:before {
+    content: "\f12a";
+}
+.webicon-add:before {
+    content: "\f12b";
+}
+.webicon-add-1:before {
+    content: "\f12c";
+}
+.webicon-plus:before {
+    content: "\f12d";
+}
+.webicon-checking-mark:before {
+    content: "\f12e";
+}
+.webicon-check:before {
+    content: "\f12f";
+}
+.webicon-spa-1:before {
+    content: "\f130";
+}
+.webicon-spa-2:before {
+    content: "\f131";
+}
+.webicon-facial-treatment-1:before {
+    content: "\f132";
+}
+.webicon-spa-3:before {
+    content: "\f133";
+}
+.webicon-foot-massage:before {
+    content: "\f134";
+}
+.webicon-flower:before {
+    content: "\f135";
+}
+.webicon-herb:before {
+    content: "\f136";
+}
+.webicon-massage-3:before {
+    content: "\f137";
+}
+.webicon-stress:before {
+    content: "\f138";
+}
+.webicon-herbal-1:before {
+    content: "\f139";
+}
+.webicon-treatment:before {
+    content: "\f13a";
+}
+.webicon-hot-stones-1:before {
+    content: "\f13b";
+}
+.webicon-quote:before {
+    content: "\f13c";
+}
+.webicon-herbal-treatment:before {
+    content: "\f13d";
+}
+.webicon-zen-stones:before {
+    content: "\f13e";
+}
+.webicon-relax:before {
+    content: "\f13f";
+}
+.webicon-herbal-2:before {
+    content: "\f140";
+}
+.webicon-beauty-treatment:before {
+    content: "\f141";
+}
+.webicon-spa-4:before {
+    content: "\f142";
+}
+.webicon-body-massage:before {
+    content: "\f143";
+}
+.webicon-manicure:before {
+    content: "\f144";
+}
+.webicon-hot-stone:before {
+    content: "\f145";
+}
+.webicon-hair-removal:before {
+    content: "\f146";
+}
+.webicon-beauty:before {
+    content: "\f147";
+}
+.webicon-leaf:before {
+    content: "\f148";
+}
+
