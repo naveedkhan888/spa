@@ -997,8 +997,7 @@ ul.menu li.current-menu-item > a, ul.menu li.current-menu-ancestor > a, ul.menu 
   }
   .main-navigation ul.menu ul.sub-menu li.menu-item a {
     padding: 8px 25px 8px;
-    font-weight: 400;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 1.5;
   }
   .main-navigation ul.menu ul.sub-menu li.menu-item:last-child {
@@ -10921,6 +10920,7 @@ body.woocommerce #woo_sidebar {
 .xp-latest-products .item .info .title {
   margin: 3px 0 6px 0;
   font-size: 16px;
+  font-weight: normal;
   line-height: 1.2;
 }
 .xp-latest-products .item .info .price {
