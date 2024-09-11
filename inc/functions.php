@@ -130,9 +130,9 @@ if ( ! function_exists( 'spalisho_default_second_font' ) ) {
     function spalisho_default_second_font() {
         $customizer_defaults = json_encode(
             array(
-                'font' => 'Bitter',
-                'regularweight' => '100,200,300,400,500,600,700,800,900, regular, italic',
-                'category' => 'serif'
+                'font' => 'Teko',
+                'regularweight' => '300,400,500,600,700, regular, italic',
+                'category' => 'sans-serif'
             )
         );
 
