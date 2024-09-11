@@ -435,7 +435,6 @@ h5,
 h6 {
   color: var(--heading);
   font-family: var(--secondary-font);
-  font-weight: bold;
   clear: both;
   margin: 1em 0 0.5em 0px;
 }
@@ -962,9 +961,8 @@ ul.menu li.current-menu-item > a, ul.menu li.current-menu-ancestor > a, ul.menu 
     transition: none;
   }
   .main-navigation ul.menu > li > a {
-    padding: 1em;
-    font-size: 16px;
-    font-weight: 600;
+    padding: 0 15px;
+    font-size: 19px;
     text-transform: uppercase;
   }
   .main-navigation ul.menu > li.menu-item-has-children:hover::after, .main-navigation ul.menu > li.page_item_has_children:hover::after {
