@@ -130,9 +130,9 @@ if ( ! function_exists( 'spalisho_default_second_font' ) ) {
     function spalisho_default_second_font() {
         $customizer_defaults = json_encode(
             array(
-                'font' => 'Teko',
+                'font' => 'Cormorant Garamond',
                 'regularweight' => '300,400,500,600,700, regular, italic',
-                'category' => 'sans-serif'
+                'category' => 'serif'
             )
         );
 
