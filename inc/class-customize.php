@@ -277,7 +277,7 @@ if (!class_exists( 'Spalisho_Customize' )){
 					'capability' 		=> 'edit_theme_options',
 					'theme_supports' 	=> '', // Rarely needed.
 					'transport' 		=> 'refresh', // or postMessage
-					'default'			=> '#dc8275',
+					'default'			=> '#AC3E3E',
 					'sanitize_callback' => 'sanitize_text_field' // Get function name 
 				) );
 				$wp_customize->add_control(

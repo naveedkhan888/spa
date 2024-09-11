@@ -6173,7 +6173,7 @@ body.woocommerce #woo_sidebar {
 .xp-title .title {
   margin: 8px 0 30px 0;
   font-size: 54px;
-  line-height: 1.21;
+  line-height: 1em;
   white-space: pre-line;
 }
 @media (max-width: 1024px) {

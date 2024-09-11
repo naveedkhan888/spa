@@ -229,7 +229,7 @@ if( !class_exists('Spalisho_Main') ){
         function spalisho_enqueue_customize(){
         	$css = '';
            
-			$primary_color 	= get_theme_mod( 'primary_color', '#dc8275' );
+			$primary_color 	= get_theme_mod( 'primary_color', '#AC3E3E' );
 			$heading_color 	= get_theme_mod( 'heading_color', '#0a132e' );
 			$text_color 	= get_theme_mod( 'text_color', '#666666' );
 			$light_color 	= get_theme_mod( 'light_color', '#f0e8e8' );
