@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?hufnp6');
-  src:  url('fonts/icomoon.eot?hufnp6#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?hufnp6') format('truetype'),
-    url('fonts/icomoon.woff?hufnp6') format('woff'),
-    url('fonts/icomoon.svg?hufnp6#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?fxr1pl');
+  src:  url('fonts/icomoon.eot?fxr1pl#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?fxr1pl') format('truetype'),
+    url('fonts/icomoon.woff?fxr1pl') format('woff'),
+    url('fonts/icomoon.svg?fxr1pl#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,441 +25,168 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-bucket:before {
+.icon-haircut-2:before {
   content: "\e900";
 }
-.icon-teapot:before {
+.icon-hair-cut-1:before {
   content: "\e901";
 }
-.icon-stones:before {
+.icon-scissors:before {
   content: "\e902";
 }
-.icon-wax:before {
+.icon-curling-iron:before {
   content: "\e903";
 }
-.icon-bathtub:before {
+.icon-hair-curler:before {
   content: "\e904";
 }
-.icon-towels:before {
+.icon-curl:before {
   content: "\e905";
 }
-.icon-slippers:before {
+.icon-curler:before {
   content: "\e906";
 }
-.icon-sauna:before {
+.icon-braid:before {
   content: "\e907";
 }
-.icon-bathrobe:before {
+.icon-bun:before {
   content: "\e908";
 }
-.icon-hot-stone:before {
+.icon-braids:before {
   content: "\e909";
 }
-.icon-spa-bed:before {
+.icon-long-hair:before {
   content: "\e90a";
 }
-.icon-acupuncture:before {
+.icon-bun-1:before {
   content: "\e90b";
 }
-.icon-tulip:before {
+.icon-ponytail:before {
   content: "\e90c";
 }
-.icon-masseuse:before {
+.icon-breads:before {
   content: "\e90d";
 }
-.icon-hot-stone-1:before {
+.icon-ponytail-1:before {
   content: "\e90e";
 }
-.icon-hot-stone-2:before {
+.icon-mohawk:before {
   content: "\e90f";
 }
-.icon-towel:before {
+.icon-mohawk-1:before {
   content: "\e910";
 }
-.icon-massage:before {
+.icon-long-hair-1:before {
   content: "\e911";
 }
-.icon-booking:before {
+.icon-hairstyle:before {
   content: "\e912";
 }
-.icon-honey:before {
+.icon-nail:before {
   content: "\e913";
 }
-.icon-sauna-1:before {
+.icon-manicure:before {
   content: "\e914";
 }
-.icon-comb:before {
+.icon-manicure-1:before {
   content: "\e915";
 }
-.icon-bamboo:before {
+.icon-nail-art:before {
   content: "\e916";
 }
-.icon-relax:before {
+.icon-nail-art-1:before {
   content: "\e917";
 }
-.icon-honey-1:before {
+.icon-nails:before {
   content: "\e918";
 }
-.icon-face-mask:before {
+.icon-nail-art-2:before {
   content: "\e919";
 }
-.icon-foot-spa:before {
+.icon-pedicure:before {
   content: "\e91a";
 }
-.icon-massage-1:before {
+.icon-pedicure-1:before {
   content: "\e91b";
 }
-.icon-hot-stone-3:before {
+.icon-foot-massage:before {
   content: "\e91c";
 }
-.icon-cream:before {
+.icon-foot-massage-1:before {
   content: "\e91d";
 }
-.icon-spa-candles:before {
+.icon-facial-massage:before {
   content: "\e91e";
 }
-.icon-beauty-treatment:before {
+.icon-massage:before {
   content: "\e91f";
 }
-.icon-lotion:before {
+.icon-sheet-mask:before {
   content: "\e920";
 }
-.icon-cream-1:before {
+.icon-salon:before {
   content: "\e921";
 }
-.icon-jacuzzi:before {
+.icon-barber-shop:before {
   content: "\e922";
 }
-.icon-infrared:before {
+.icon-scissors-1:before {
   content: "\e923";
 }
-.icon-mask:before {
+.icon-open:before {
   content: "\e924";
 }
-.icon-aloe-vera:before {
+.icon-closed:before {
   content: "\e925";
 }
-.icon-towels-1:before {
+.icon-hair-salon:before {
   content: "\e926";
 }
-.icon-massage-2:before {
+.icon-dermaroller:before {
   content: "\e927";
 }
-.icon-mortar:before {
+.icon-scissors-2:before {
   content: "\e928";
 }
-.icon-lotus:before {
+.icon-hair-cut:before {
   content: "\e929";
 }
-.icon-reflexology:before {
+.icon-hair-cutting:before {
   content: "\e92a";
 }
-.icon-massage-3:before {
+.icon-hair-dye:before {
   content: "\e92b";
 }
-.icon-oil:before {
+.icon-comb:before {
   content: "\e92c";
 }
-.icon-drop:before {
+.icon-scissors-opened-tool:before {
   content: "\e92d";
 }
-.icon-incense-sticks:before {
+.icon-haircut:before {
   content: "\e92e";
 }
-.icon-woman:before {
+.icon-shampoo:before {
   content: "\e92f";
 }
-.icon-herbal:before {
+.icon-haircut-1:before {
   content: "\e930";
 }
-.icon-face-mask-1:before {
+.icon-hair-straightener:before {
   content: "\e931";
 }
-.icon-acupuncture-1:before {
+.icon-hair-dye-1:before {
   content: "\e932";
 }
-.icon-clock:before {
+.icon-hairdresser:before {
   content: "\e933";
 }
-.icon-flip-flops:before {
+.icon-hairdress:before {
   content: "\e934";
 }
-.icon-honey-2:before {
+.icon-hair:before {
   content: "\e935";
 }
-.icon-sponge:before {
+.icon-hair-cutting-1:before {
   content: "\e936";
-}
-.icon-beauty-treatment-1:before {
-  content: "\e937";
-}
-.icon-facial-treatment:before {
-  content: "\e938";
-}
-.icon-hot-stones:before {
-  content: "\e939";
-}
-.icon-aroma:before {
-  content: "\e93a";
-}
-.icon-pedicure:before {
-  content: "\e93b";
-}
-.icon-dropper:before {
-  content: "\e93c";
-}
-.icon-lotion-1:before {
-  content: "\e93d";
-}
-.icon-therapy:before {
-  content: "\e93e";
-}
-.icon-sauna-2:before {
-  content: "\e93f";
-}
-.icon-cream-2:before {
-  content: "\e940";
-}
-.icon-bamboo-1:before {
-  content: "\e941";
-}
-.icon-acupuncture-2:before {
-  content: "\e942";
-}
-.icon-massage-4:before {
-  content: "\e943";
-}
-.icon-aromatherapy:before {
-  content: "\e944";
-}
-.icon-mortar-1:before {
-  content: "\e945";
-}
-.icon-bathrope:before {
-  content: "\e946";
-}
-.icon-scalp:before {
-  content: "\e947";
-}
-.icon-beverage:before {
-  content: "\e948";
-}
-.icon-bathroom:before {
-  content: "\e949";
-}
-.icon-wrapping:before {
-  content: "\e94a";
-}
-.icon-wrap:before {
-  content: "\e94b";
-}
-.icon-water:before {
-  content: "\e94c";
-}
-.icon-slippers-1:before {
-  content: "\e94d";
-}
-.icon-eye-treatment:before {
-  content: "\e94e";
-}
-.icon-wax-1:before {
-  content: "\e94f";
-}
-.icon-essential-oil:before {
-  content: "\e950";
-}
-.icon-shower:before {
-  content: "\e951";
-}
-.icon-candle:before {
-  content: "\e952";
-}
-.icon-eye:before {
-  content: "\e953";
-}
-.icon-bathtub-1:before {
-  content: "\e954";
-}
-.icon-scent:before {
-  content: "\e955";
-}
-.icon-facial-mask:before {
-  content: "\e956";
-}
-.icon-clipboard:before {
-  content: "\e957";
-}
-.icon-aromatherapy-1:before {
-  content: "\e958";
-}
-.icon-oil-1:before {
-  content: "\e959";
-}
-.icon-massage-5:before {
-  content: "\e95a";
-}
-.icon-massage-6:before {
-  content: "\e95b";
-}
-.icon-bamboo-2:before {
-  content: "\e95c";
-}
-.icon-oil-2:before {
-  content: "\e95d";
-}
-.icon-acupuncture-3:before {
-  content: "\e95e";
-}
-.icon-massage-7:before {
-  content: "\e95f";
-}
-.icon-lotion-2:before {
-  content: "\e960";
-}
-.icon-woman-1:before {
-  content: "\e961";
-}
-.icon-sauna-3:before {
-  content: "\e962";
-}
-.icon-collagen:before {
-  content: "\e963";
-}
-.icon-body-lotion:before {
-  content: "\e964";
-}
-.icon-bathrope-1:before {
-  content: "\e965";
-}
-.icon-foot-massage:before {
-  content: "\e966";
-}
-.icon-wax-2:before {
-  content: "\e967";
-}
-.icon-cream-3:before {
-  content: "\e968";
-}
-.icon-candle-1:before {
-  content: "\e969";
-}
-.icon-massage-8:before {
-  content: "\e96a";
-}
-.icon-towels-2:before {
-  content: "\e96b";
-}
-.icon-spa:before {
-  content: "\e96c";
-}
-.icon-candles:before {
-  content: "\e96d";
-}
-.icon-body-scrub:before {
-  content: "\e96e";
-}
-.icon-wrap-1:before {
-  content: "\e96f";
-}
-.icon-depilation:before {
-  content: "\e970";
-}
-.icon-citrus:before {
-  content: "\e971";
-}
-.icon-beauty-treatment-2:before {
-  content: "\e972";
-}
-.icon-manicure:before {
-  content: "\e973";
-}
-.icon-sauna-4:before {
-  content: "\e974";
-}
-.icon-cream-4:before {
-  content: "\e975";
-}
-.icon-massage-therapist:before {
-  content: "\e976";
-}
-.icon-acupuncture-4:before {
-  content: "\e977";
-}
-.icon-coconut-oil:before {
-  content: "\e978";
-}
-.icon-face-mask-2:before {
-  content: "\e979";
-}
-.icon-facial-treatment-1:before {
-  content: "\e97a";
-}
-.icon-aromatherapy-2:before {
-  content: "\e97b";
-}
-.icon-skincare:before {
-  content: "\e97c";
-}
-.icon-wax-3:before {
-  content: "\e97d";
-}
-.icon-soap:before {
-  content: "\e97e";
-}
-.icon-bath:before {
-  content: "\e97f";
-}
-.icon-essential-oil-1:before {
-  content: "\e980";
-}
-.icon-bathrobe-1:before {
-  content: "\e981";
-}
-.icon-herb:before {
-  content: "\e982";
-}
-.icon-flower:before {
-  content: "\e983";
-}
-.icon-aromatherapy-3:before {
-  content: "\e984";
-}
-.icon-body-scrub-1:before {
-  content: "\e985";
-}
-.icon-massage-9:before {
-  content: "\e986";
-}
-.icon-facial-massage:before {
-  content: "\e987";
-}
-.icon-spa-1:before {
-  content: "\e988";
-}
-.icon-spa-2:before {
-  content: "\e989";
-}
-.icon-shop:before {
-  content: "\e98a";
-}
-.icon-stones-1:before {
-  content: "\e98b";
-}
-.icon-flower-1:before {
-  content: "\e98c";
-}
-.icon-spa-3:before {
-  content: "\e98d";
-}
-.icon-nature:before {
-  content: "\e98e";
-}
-.icon-spa-4:before {
-  content: "\e98f";
-}
-.icon-spa-and-relaxation:before {
-  content: "\e990";
-}
-.icon-towel-1:before {
-  content: "\e991";
 }
