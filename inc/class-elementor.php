@@ -320,7 +320,7 @@ class Spalisho_Elementor {
 	    wp_enqueue_style('xp-webicon', SPALISHO_URI.'/assets/libs/webicon/font/webicon.css', array(), null);
 
 	    // Xp Spa Icon
-	    wp_enqueue_style('xp-spaicon', SPALISHO_URI.'/assets/libs/xpspaicon/style.css', array(), null);
+	    wp_enqueue_style('xp-hairicon', SPALISHO_URI.'/assets/libs/xphairicon/style.css', array(), null);
 	}
 	
 	
@@ -358,12 +358,12 @@ class Spalisho_Elementor {
 		];
 
 		// Xp Spa Icon
-		$icon_data_new['json_url'] = SPALISHO_URI.'/assets/libs/xpspaicon/selection.json';
+		$icon_data_new['json_url'] = SPALISHO_URI.'/assets/libs/xphairicon/selection.json';
 		$icon_data_new['name'] = 'icomoon';
 
 		$newicons[ $icon_data_new['name'] ] = [
 			'name'          => $icon_data_new['name'],
-			'label'         => esc_html__( 'Xp Spa Icon', 'spalisho' ),
+			'label'         => esc_html__( 'Xp Hair Icon', 'spalisho' ),
 			'url'           => '',
 			'enqueue'       => '',
 			'prefix'        => 'icon-',
