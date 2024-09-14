@@ -130,9 +130,9 @@ if ( ! function_exists( 'spalisho_default_second_font' ) ) {
     function spalisho_default_second_font() {
         $customizer_defaults = json_encode(
             array(
-                'font' => 'Bebas Neue',
+                'font' => 'Belleza',
                 'regularweight' => 'regular',
-                'category' => 'display'
+                'category' => 'sans-serif'
             )
         );
 
